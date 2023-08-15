@@ -1,0 +1,21 @@
+<unk>
+<s>
+</s>
+<padding>
+float
+pointer
+bool
+function
+O
+array
+int
+enum
+union
+char
+void
+struct
+long double
+long long
+long
+short
+double

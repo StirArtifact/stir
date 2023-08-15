@@ -1,0 +1,24 @@
+# develop files
+*/__pycache__
+*/.git
+*/.idea
+*/.vscode
+__pycache__
+.git
+.idea
+.vscode
+
+# data files and pretrained models
+data/
+pretrained/
+models/
+second/func_data
+
+# docker files themselves
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# remember to delete
+gen_hash.py
+todo.md
