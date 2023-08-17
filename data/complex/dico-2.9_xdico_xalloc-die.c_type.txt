@@ -1,0 +1,18 @@
+void	O
+xalloc_die	()->(void)
+(	O
+void	O
+)	O
+{	O
+dico_die	(int,int,int,*(char))->(void)
+(	O
+EX_OSERR	int
+,	O
+L_CRIT	int
+,	O
+0	int
+,	O
+"Not enough memory"	*(char)
+)	O
+;	O
+}	O

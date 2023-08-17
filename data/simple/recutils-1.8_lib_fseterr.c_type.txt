@@ -1,0 +1,15 @@
+void	O
+fseterr	function
+(	O
+FILE	struct
+*	O
+fp	pointer
+)	O
+{	O
+fp	pointer
+->	O
+_flags	int
+|=	O
+_IO_ERR_SEEN	int
+;	O
+}	O

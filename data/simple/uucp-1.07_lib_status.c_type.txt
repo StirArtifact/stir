@@ -1,0 +1,25 @@
+const	O
+char	O
+*	O
+azStatus	array
+[	O
+]	O
+=	O
+{	O
+"Conversation complete"	pointer
+,	O
+"Port unavailable"	pointer
+,	O
+"Dial failed"	pointer
+,	O
+"Login failed"	pointer
+,	O
+"Handshake failed"	pointer
+,	O
+"Call failed"	pointer
+,	O
+"Talking"	pointer
+,	O
+"Wrong time to call"	pointer
+}	O
+;	O

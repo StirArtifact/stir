@@ -1,0 +1,10 @@
+int	O
+get_system_fdsetsize_value	()->(int)
+(	O
+void	O
+)	O
+{	O
+return	O
+FD_SETSIZE	O
+;	O
+}	O

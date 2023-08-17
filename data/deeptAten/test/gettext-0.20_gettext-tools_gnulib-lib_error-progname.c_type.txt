@@ -1,0 +1,24 @@
+bool	O
+error_with_progname	O
+=	O
+true	O
+;	O
+void	O
+maybe_print_progname	O
+(	O
+)	O
+{	O
+if	O
+(	O
+error_with_progname	O
+)	O
+fprintf	O
+(	O
+stderr	O
+,	O
+"%s: "	O
+,	O
+program_name	O
+)	O
+;	O
+}	O

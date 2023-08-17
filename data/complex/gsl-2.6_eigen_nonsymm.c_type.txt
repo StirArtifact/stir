@@ -1,0 +1,567 @@
+gsl_eigen_nonsymm_workspace	struct(long,*(struct(long,long,*(double),*(struct(long,*`)),int)),*(struct(long,long,*(double),*(struct(long,*`)),int)),*(struct(long,long,long,*(double),*(struct(long,*`)),int)),int,long,*(struct(long,long,long,long,int,*(struct(long,long,long,*`,*`,int)),*(struct(long,long,long,*`,*`,int)))))
+*	O
+gsl_eigen_nonsymm_alloc	(long)->(*(struct(long,*(struct(long,long,*`,*`,int)),*(struct(long,long,*`,*`,int)),*(struct(long,long,long,*`,*`,int)),int,long,*(struct(long,long,long,long,int,*`,*`)))))
+(	O
+const	O
+size_t	long
+n	long
+)	O
+{	O
+gsl_eigen_nonsymm_workspace	struct(long,*(struct(long,long,*(double),*(struct(long,*`)),int)),*(struct(long,long,*(double),*(struct(long,*`)),int)),*(struct(long,long,long,*(double),*(struct(long,*`)),int)),int,long,*(struct(long,long,long,long,int,*(struct(long,long,long,*`,*`,int)),*(struct(long,long,long,*`,*`,int)))))
+*	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+;	O
+if	O
+(	O
+n	long
+==	O
+0	int
+)	O
+{	O
+GSL_ERROR_NULL	O
+(	O
+"matrix dimension must be positive integer"	*(char)
+,	O
+GSL_EINVAL	int
+)	O
+;	O
+}	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+=	O
+(	O
+gsl_eigen_nonsymm_workspace	struct(long,*(struct(long,long,*(double),*(struct(long,*`)),int)),*(struct(long,long,*(double),*(struct(long,*`)),int)),*(struct(long,long,long,*(double),*(struct(long,*`)),int)),int,long,*(struct(long,long,long,long,int,*(struct(long,long,long,*`,*`,int)),*(struct(long,long,long,*`,*`,int)))))
+*	O
+)	O
+calloc	(long,long)->(*(void))
+(	O
+1	int
+,	O
+sizeof	O
+(	O
+gsl_eigen_nonsymm_workspace	struct(long,*(struct(long,long,*(double),*(struct(long,*`)),int)),*(struct(long,long,*(double),*(struct(long,*`)),int)),*(struct(long,long,long,*(double),*(struct(long,*`)),int)),int,long,*(struct(long,long,long,long,int,*(struct(long,long,long,*`,*`,int)),*(struct(long,long,long,*`,*`,int)))))
+)	O
+)	O
+;	O
+if	O
+(	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+==	O
+0	int
+)	O
+{	O
+GSL_ERROR_NULL	O
+(	O
+"failed to allocate space for workspace"	*(char)
+,	O
+GSL_ENOMEM	int
+)	O
+;	O
+}	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+size	long
+=	O
+n	long
+;	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+Z	*(struct(long,long,long,*(double),*(struct(long,*(double))),int))
+=	O
+NULL	O
+;	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+do_balance	int
+=	O
+0	int
+;	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+diag	*(struct(long,long,*(double),*(struct(long,*(double))),int))
+=	O
+gsl_vector_alloc	(long)->(*(struct(long,long,*(double),*(struct(long,*`)),int)))
+(	O
+n	long
+)	O
+;	O
+if	O
+(	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+diag	*(struct(long,long,*(double),*(struct(long,*(double))),int))
+==	O
+0	int
+)	O
+{	O
+gsl_eigen_nonsymm_free	(*(struct(long,*(struct(long,long,*`,*`,int)),*(struct(long,long,*`,*`,int)),*(struct(long,long,long,*`,*`,int)),int,long,*(struct(long,long,long,long,int,*`,*`)))))->(void)
+(	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+)	O
+;	O
+GSL_ERROR_NULL	O
+(	O
+"failed to allocate space for balancing vector"	*(char)
+,	O
+GSL_ENOMEM	int
+)	O
+;	O
+}	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+tau	*(double)
+=	O
+gsl_vector_alloc	(long)->(*(struct(long,long,*(double),*(struct(long,*`)),int)))
+(	O
+n	long
+)	O
+;	O
+if	O
+(	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+tau	*(double)
+==	O
+0	int
+)	O
+{	O
+gsl_eigen_nonsymm_free	(*(struct(long,*(struct(long,long,*`,*`,int)),*(struct(long,long,*`,*`,int)),*(struct(long,long,long,*`,*`,int)),int,long,*(struct(long,long,long,long,int,*`,*`)))))->(void)
+(	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+)	O
+;	O
+GSL_ERROR_NULL	O
+(	O
+"failed to allocate space for hessenberg coefficients"	*(char)
+,	O
+GSL_ENOMEM	int
+)	O
+;	O
+}	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+francis_workspace_p	*(struct(long,long,long,long,int,*(struct(long,long,long,*(double),*(struct`),int)),*(struct(long,long,long,*(double),*(struct`),int))))
+=	O
+gsl_eigen_francis_alloc	()->(*(struct(long,long,long,long,int,*(struct(long,long,long,*`,*`,int)),*(struct(long,long,long,*`,*`,int)))))
+(	O
+)	O
+;	O
+if	O
+(	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+francis_workspace_p	*(struct(long,long,long,long,int,*(struct(long,long,long,*(double),*(struct`),int)),*(struct(long,long,long,*(double),*(struct`),int))))
+==	O
+0	int
+)	O
+{	O
+gsl_eigen_nonsymm_free	(*(struct(long,*(struct(long,long,*`,*`,int)),*(struct(long,long,*`,*`,int)),*(struct(long,long,long,*`,*`,int)),int,long,*(struct(long,long,long,long,int,*`,*`)))))->(void)
+(	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+)	O
+;	O
+GSL_ERROR_NULL	O
+(	O
+"failed to allocate space for francis workspace"	*(char)
+,	O
+GSL_ENOMEM	int
+)	O
+;	O
+}	O
+return	O
+(	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+)	O
+;	O
+}	O
+void	O
+gsl_eigen_nonsymm_free	(*(struct(long,*(struct(long,long,*`,*`,int)),*(struct(long,long,*`,*`,int)),*(struct(long,long,long,*`,*`,int)),int,long,*(struct(long,long,long,long,int,*`,*`)))))->(void)
+(	O
+gsl_eigen_nonsymm_workspace	struct(long,*(struct(long,long,*(double),*(struct(long,*`)),int)),*(struct(long,long,*(double),*(struct(long,*`)),int)),*(struct(long,long,long,*(double),*(struct(long,*`)),int)),int,long,*(struct(long,long,long,long,int,*(struct(long,long,long,*`,*`,int)),*(struct(long,long,long,*`,*`,int)))))
+*	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+)	O
+{	O
+RETURN_IF_NULL	O
+(	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+)	O
+;	O
+if	O
+(	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+tau	*(double)
+)	O
+gsl_vector_free	(*(struct(long,long,*(double),*(struct(long,*`)),int)))->(void)
+(	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+tau	*(double)
+)	O
+;	O
+if	O
+(	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+diag	*(struct(long,long,*(double),*(struct(long,*(double))),int))
+)	O
+gsl_vector_free	(*(struct(long,long,*(double),*(struct(long,*`)),int)))->(void)
+(	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+diag	*(struct(long,long,*(double),*(struct(long,*(double))),int))
+)	O
+;	O
+if	O
+(	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+francis_workspace_p	*(struct(long,long,long,long,int,*(struct(long,long,long,*(double),*(struct`),int)),*(struct(long,long,long,*(double),*(struct`),int))))
+)	O
+gsl_eigen_francis_free	(*(struct(long,long,long,long,int,*(struct(long,long,long,*`,*`,int)),*(struct(long,long,long,*`,*`,int)))))->(void)
+(	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+francis_workspace_p	*(struct(long,long,long,long,int,*(struct(long,long,long,*(double),*(struct`),int)),*(struct(long,long,long,*(double),*(struct`),int))))
+)	O
+;	O
+free	(*(void))->(void)
+(	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+)	O
+;	O
+}	O
+void	O
+gsl_eigen_nonsymm_params	(int,int,*(struct(long,*(struct(long,long,*`,*`,int)),*(struct(long,long,*`,*`,int)),*(struct(long,long,long,*`,*`,int)),int,long,*(struct(long,long,long,long,int,*`,*`)))))->(void)
+(	O
+const	O
+int	O
+compute_t	int
+,	O
+const	O
+int	O
+balance	int
+,	O
+gsl_eigen_nonsymm_workspace	struct(long,*(struct(long,long,*(double),*(struct(long,*`)),int)),*(struct(long,long,*(double),*(struct(long,*`)),int)),*(struct(long,long,long,*(double),*(struct(long,*`)),int)),int,long,*(struct(long,long,long,long,int,*(struct(long,long,long,*`,*`,int)),*(struct(long,long,long,*`,*`,int)))))
+*	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+)	O
+{	O
+gsl_eigen_francis_T	(int,*(struct(long,long,long,long,int,*(struct(long,long,long,*`,*`,int)),*(struct(long,long,long,*`,*`,int)))))->(void)
+(	O
+compute_t	int
+,	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+francis_workspace_p	*(struct(long,long,long,long,int,*(struct(long,long,long,*(double),*(struct`),int)),*(struct(long,long,long,*(double),*(struct`),int))))
+)	O
+;	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+do_balance	int
+=	O
+balance	int
+;	O
+}	O
+int	O
+gsl_eigen_nonsymm	(*(struct(long,long,long,*(double),*(struct(long,*`)),int)),*(struct(long,long,*(double),*(struct(long,*`)),int)),*(struct(long,*(struct(long,long,*`,*`,int)),*(struct(long,long,*`,*`,int)),*(struct(long,long,long,*`,*`,int)),int,long,*(struct(long,long,long,long,int,*`,*`)))))->(int)
+(	O
+gsl_matrix	struct(long,long,long,*(double),*(struct(long,*(double))),int)
+*	O
+A	*(float)
+,	O
+gsl_vector_complex	struct(long,long,*(double),*(struct(long,*(double))),int)
+*	O
+eval	*(struct(long,long,*(double),*(struct(long,*(double))),int))
+,	O
+gsl_eigen_nonsymm_workspace	struct(long,*(struct(long,long,*(double),*(struct(long,*`)),int)),*(struct(long,long,*(double),*(struct(long,*`)),int)),*(struct(long,long,long,*(double),*(struct(long,*`)),int)),int,long,*(struct(long,long,long,long,int,*(struct(long,long,long,*`,*`,int)),*(struct(long,long,long,*`,*`,int)))))
+*	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+)	O
+{	O
+const	O
+size_t	long
+N	int
+=	O
+A	*(float)
+->	O
+size1	long
+;	O
+if	O
+(	O
+N	int
+!=	O
+A	*(float)
+->	O
+size2	long
+)	O
+{	O
+GSL_ERROR	O
+(	O
+"matrix must be square to compute eigenvalues"	*(char)
+,	O
+GSL_ENOTSQR	int
+)	O
+;	O
+}	O
+else	O
+if	O
+(	O
+eval	*(struct(long,long,*(double),*(struct(long,*(double))),int))
+->	O
+size	long
+!=	O
+N	int
+)	O
+{	O
+GSL_ERROR	O
+(	O
+"eigenvalue vector must match matrix size"	*(char)
+,	O
+GSL_EBADLEN	int
+)	O
+;	O
+}	O
+else	O
+{	O
+int	O
+s	*(float)
+;	O
+if	O
+(	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+do_balance	int
+)	O
+{	O
+gsl_linalg_balance_matrix	(*(struct(long,long,long,*(double),*(struct(long,*`)),int)),*(struct(long,long,*(double),*(struct(long,*`)),int)))->(int)
+(	O
+A	*(float)
+,	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+diag	*(struct(long,long,*(double),*(struct(long,*(double))),int))
+)	O
+;	O
+}	O
+gsl_linalg_hessenberg_decomp	(*(struct(long,long,long,*(double),*(struct(long,*`)),int)),*(struct(long,long,*(double),*(struct(long,*`)),int)))->(int)
+(	O
+A	*(float)
+,	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+tau	*(double)
+)	O
+;	O
+if	O
+(	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+Z	*(struct(long,long,long,*(double),*(struct(long,*(double))),int))
+)	O
+{	O
+gsl_linalg_hessenberg_unpack	(*(struct(long,long,long,*(double),*(struct(long,*`)),int)),*(struct(long,long,*(double),*(struct(long,*`)),int)),*(struct(long,long,long,*(double),*(struct(long,*`)),int)))->(int)
+(	O
+A	*(float)
+,	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+tau	*(double)
+,	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+Z	*(struct(long,long,long,*(double),*(struct(long,*(double))),int))
+)	O
+;	O
+s	*(float)
+=	O
+gsl_eigen_francis_Z	(*(struct(long,long,long,*(double),*(struct(long,*`)),int)),*(struct(long,long,*(double),*(struct(long,*`)),int)),*(struct(long,long,long,*(double),*(struct(long,*`)),int)),*(struct(long,long,long,long,int,*(struct(long,long,long,*`,*`,int)),*(struct(long,long,long,*`,*`,int)))))->(int)
+(	O
+A	*(float)
+,	O
+eval	*(struct(long,long,*(double),*(struct(long,*(double))),int))
+,	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+Z	*(struct(long,long,long,*(double),*(struct(long,*(double))),int))
+,	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+francis_workspace_p	*(struct(long,long,long,long,int,*(struct(long,long,long,*(double),*(struct`),int)),*(struct(long,long,long,*(double),*(struct`),int))))
+)	O
+;	O
+if	O
+(	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+do_balance	int
+)	O
+{	O
+gsl_linalg_balance_accum	(*(struct(long,long,long,*(double),*(struct(long,*`)),int)),*(struct(long,long,*(double),*(struct(long,*`)),int)))->(int)
+(	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+Z	*(struct(long,long,long,*(double),*(struct(long,*(double))),int))
+,	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+diag	*(struct(long,long,*(double),*(struct(long,*(double))),int))
+)	O
+;	O
+}	O
+}	O
+else	O
+{	O
+s	*(float)
+=	O
+gsl_eigen_francis	(*(struct(long,long,long,*(double),*(struct(long,*`)),int)),*(struct(long,long,*(double),*(struct(long,*`)),int)),*(struct(long,long,long,long,int,*(struct(long,long,long,*`,*`,int)),*(struct(long,long,long,*`,*`,int)))))->(int)
+(	O
+A	*(float)
+,	O
+eval	*(struct(long,long,*(double),*(struct(long,*(double))),int))
+,	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+francis_workspace_p	*(struct(long,long,long,long,int,*(struct(long,long,long,*(double),*(struct`),int)),*(struct(long,long,long,*(double),*(struct`),int))))
+)	O
+;	O
+}	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+n_evals	long
+=	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+francis_workspace_p	*(struct(long,long,long,long,int,*(struct(long,long,long,*(double),*(struct`),int)),*(struct(long,long,long,*(double),*(struct`),int))))
+->	O
+n_evals	long
+;	O
+return	O
+s	*(float)
+;	O
+}	O
+}	O
+int	O
+gsl_eigen_nonsymm_Z	(*(struct(long,long,long,*(double),*(struct(long,*`)),int)),*(struct(long,long,*(double),*(struct(long,*`)),int)),*(struct(long,long,long,*(double),*(struct(long,*`)),int)),*(struct(long,*(struct(long,long,*`,*`,int)),*(struct(long,long,*`,*`,int)),*(struct(long,long,long,*`,*`,int)),int,long,*(struct(long,long,long,long,int,*`,*`)))))->(int)
+(	O
+gsl_matrix	struct(long,long,long,*(double),*(struct(long,*(double))),int)
+*	O
+A	*(float)
+,	O
+gsl_vector_complex	struct(long,long,*(double),*(struct(long,*(double))),int)
+*	O
+eval	*(struct(long,long,*(double),*(struct(long,*(double))),int))
+,	O
+gsl_matrix	struct(long,long,long,*(double),*(struct(long,*(double))),int)
+*	O
+Z	*(struct(long,long,long,*(double),*(struct(long,*(double))),int))
+,	O
+gsl_eigen_nonsymm_workspace	struct(long,*(struct(long,long,*(double),*(struct(long,*`)),int)),*(struct(long,long,*(double),*(struct(long,*`)),int)),*(struct(long,long,long,*(double),*(struct(long,*`)),int)),int,long,*(struct(long,long,long,long,int,*(struct(long,long,long,*`,*`,int)),*(struct(long,long,long,*`,*`,int)))))
+*	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+)	O
+{	O
+if	O
+(	O
+A	*(float)
+->	O
+size1	long
+!=	O
+A	*(float)
+->	O
+size2	long
+)	O
+{	O
+GSL_ERROR	O
+(	O
+"matrix must be square to compute eigenvalues"	*(char)
+,	O
+GSL_ENOTSQR	int
+)	O
+;	O
+}	O
+else	O
+if	O
+(	O
+eval	*(struct(long,long,*(double),*(struct(long,*(double))),int))
+->	O
+size	long
+!=	O
+A	*(float)
+->	O
+size1	long
+)	O
+{	O
+GSL_ERROR	O
+(	O
+"eigenvalue vector must match matrix size"	*(char)
+,	O
+GSL_EBADLEN	int
+)	O
+;	O
+}	O
+else	O
+if	O
+(	O
+(	O
+Z	*(struct(long,long,long,*(double),*(struct(long,*(double))),int))
+->	O
+size1	long
+!=	O
+Z	*(struct(long,long,long,*(double),*(struct(long,*(double))),int))
+->	O
+size2	long
+)	O
+||	O
+(	O
+Z	*(struct(long,long,long,*(double),*(struct(long,*(double))),int))
+->	O
+size1	long
+!=	O
+A	*(float)
+->	O
+size1	long
+)	O
+)	O
+{	O
+GSL_ERROR	O
+(	O
+"Z matrix has wrong dimensions"	*(char)
+,	O
+GSL_EBADLEN	int
+)	O
+;	O
+}	O
+else	O
+{	O
+int	O
+s	*(float)
+;	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+Z	*(struct(long,long,long,*(double),*(struct(long,*(double))),int))
+=	O
+Z	*(struct(long,long,long,*(double),*(struct(long,*(double))),int))
+;	O
+s	*(float)
+=	O
+gsl_eigen_nonsymm	(*(struct(long,long,long,*(double),*(struct(long,*`)),int)),*(struct(long,long,*(double),*(struct(long,*`)),int)),*(struct(long,*(struct(long,long,*`,*`,int)),*(struct(long,long,*`,*`,int)),*(struct(long,long,long,*`,*`,int)),int,long,*(struct(long,long,long,long,int,*`,*`)))))->(int)
+(	O
+A	*(float)
+,	O
+eval	*(struct(long,long,*(double),*(struct(long,*(double))),int))
+,	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+)	O
+;	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+Z	*(struct(long,long,long,*(double),*(struct(long,*(double))),int))
+=	O
+NULL	O
+;	O
+return	O
+s	*(float)
+;	O
+}	O
+}	O

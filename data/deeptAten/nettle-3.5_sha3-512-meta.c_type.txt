@@ -1,0 +1,12 @@
+const	O
+struct	O
+nettle_hash	struct
+nettle_sha3_512	struct
+=	O
+_NETTLE_HASH	O
+(	O
+sha3_512	O
+,	O
+SHA3_512	O
+)	O
+;	O

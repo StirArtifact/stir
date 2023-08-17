@@ -1,0 +1,16 @@
+void	O
+__gmp_invalid_operation	function
+(	O
+void	O
+)	O
+{	O
+raise	function
+(	O
+SIGFPE	int
+)	O
+;	O
+abort	function
+(	O
+)	O
+;	O
+}	O

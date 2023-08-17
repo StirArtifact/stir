@@ -1,0 +1,49 @@
+static	O
+char	O
+const	O
+copyright_string	array(char)
+[	O
+]	O
+=	O
+"Copyright (C) 2003, 2009-2012 Free Software Foundation, Inc.\nCopyright (C) 1988 Larry Wall"	*(char)
+;	O
+static	O
+char	O
+const	O
+free_software_msgid	array(char)
+[	O
+]	O
+=	O
+"License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law."	*(char)
+;	O
+static	O
+char	O
+const	O
+authorship_msgid	array(char)
+[	O
+]	O
+=	O
+"Written by Larry Wall and Paul Eggert"	*(char)
+;	O
+void	O
+version	()->(void)
+(	O
+void	O
+)	O
+{	O
+printf	(*(char))->(int)
+(	O
+"%s %s\n%s\n\n%s\n\n%s\n"	*(char)
+,	O
+PACKAGE_NAME	*(char)
+,	O
+PACKAGE_VERSION	*(char)
+,	O
+copyright_string	array(char)
+,	O
+free_software_msgid	array(char)
+,	O
+authorship_msgid	array(char)
+)	O
+;	O
+}	O

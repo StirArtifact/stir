@@ -1,0 +1,17 @@
+int	O
+fpurge	function
+(	O
+FILE	struct
+*	O
+fp	*
+)	O
+{	O
+__fpurge	function
+(	O
+fp	*
+)	O
+;	O
+return	O
+0	int
+;	O
+}	O

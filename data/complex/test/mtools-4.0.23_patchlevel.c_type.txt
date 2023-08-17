@@ -1,0 +1,21 @@
+const	O
+char	O
+*	O
+mversion	*(char)
+=	O
+"4.0.23"	*(char)
+;	O
+const	O
+char	O
+*	O
+mdate	*(char)
+=	O
+"December 9th, 2018"	*(char)
+;	O
+const	O
+char	O
+*	O
+mformat_banner	*(char)
+=	O
+"MTOO4023"	*(char)
+;	O

@@ -1,0 +1,11 @@
+unsigned	O
+int	O
+bfd_init	()->(int)
+(	O
+void	O
+)	O
+{	O
+return	O
+BFD_INIT_MAGIC	O
+;	O
+}	O

@@ -1,0 +1,14 @@
+void	O
+mu_list_free_item	function
+(	O
+void	O
+*	O
+item	pointer
+)	O
+{	O
+free	function
+(	O
+item	pointer
+)	O
+;	O
+}	O

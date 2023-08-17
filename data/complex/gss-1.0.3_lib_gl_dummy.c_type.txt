@@ -1,0 +1,4 @@
+typedef	O
+int	O
+dummy	int
+;	O

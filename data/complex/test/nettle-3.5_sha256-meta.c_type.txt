@@ -1,0 +1,12 @@
+const	O
+struct	O
+nettle_hash	struct(*(char),int,int,int,*((*(void))->(void)),*((*(void),long,*(char))->(void)),*((*(void),long,*(char))->(void)))
+nettle_sha256	struct(*(char),int,int,int,*((*(void))->(void)),*((*(void),long,*(char))->(void)),*((*(void),long,*(char))->(void)))
+=	O
+_NETTLE_HASH	O
+(	O
+sha256	O
+,	O
+SHA256	O
+)	O
+;	O

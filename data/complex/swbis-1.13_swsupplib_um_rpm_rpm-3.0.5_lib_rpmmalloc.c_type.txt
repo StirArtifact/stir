@@ -1,0 +1,26 @@
+void	O
+*	O
+vmefail	()->(*(void))
+(	O
+void	O
+)	O
+{	O
+fprintf	(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(void),long,int,array(char))),*(char))->(int)
+(	O
+stderr	*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(void),long,int,array(char)))
+,	O
+_	O
+(	O
+"memory alloc returned NULL.\n"	*(char)
+)	O
+)	O
+;	O
+exit	(int)->(void)
+(	O
+EXIT_FAILURE	int
+)	O
+;	O
+return	O
+NULL	O
+;	O
+}	O

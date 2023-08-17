@@ -1,0 +1,211 @@
+double	O
+gsl_ran_rayleigh	(*(struct(*(struct(*`,long,long,long,*`,*`,*`)),*(void))),double)->(double)
+(	O
+const	O
+gsl_rng	struct(*(struct(*(char),long,long,long,*((*`,long)->(void)),*((*`)->(long)),*((*`)->(double)))),*(void))
+*	O
+r	*(struct(*(struct(*(char),long,long,long,*((*`,long)->(void)),*((*`)->(long)),*((*`)->(double)))),*(void)))
+,	O
+const	O
+double	O
+sigma	double
+)	O
+{	O
+double	O
+u	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+=	O
+gsl_rng_uniform_pos	(*(struct(*(struct(*`,long,long,long,*`,*`,*`)),*(void))))->(double)
+(	O
+r	*(struct(*(struct(*(char),long,long,long,*((*`,long)->(void)),*((*`)->(long)),*((*`)->(double)))),*(void)))
+)	O
+;	O
+return	O
+sigma	double
+*	O
+sqrt	(double)->(double)
+(	O
+-	O
+2.0	int
+*	O
+log	(double)->(double)
+(	O
+u	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+)	O
+)	O
+;	O
+}	O
+double	O
+gsl_ran_rayleigh_pdf	(double,double)->(double)
+(	O
+const	O
+double	O
+x	double
+,	O
+const	O
+double	O
+sigma	double
+)	O
+{	O
+if	O
+(	O
+x	double
+<	O
+0	int
+)	O
+{	O
+return	O
+0	int
+;	O
+}	O
+else	O
+{	O
+double	O
+u	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+=	O
+x	double
+/	O
+sigma	double
+;	O
+double	O
+p	int
+=	O
+(	O
+u	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+/	O
+sigma	double
+)	O
+*	O
+exp	(double)->(double)
+(	O
+-	O
+u	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+*	O
+u	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+/	O
+2.0	int
+)	O
+;	O
+return	O
+p	int
+;	O
+}	O
+}	O
+double	O
+gsl_ran_rayleigh_tail	(*(struct(*(struct(*`,long,long,long,*`,*`,*`)),*(void))),double,double)->(double)
+(	O
+const	O
+gsl_rng	struct(*(struct(*(char),long,long,long,*((*`,long)->(void)),*((*`)->(long)),*((*`)->(double)))),*(void))
+*	O
+r	*(struct(*(struct(*(char),long,long,long,*((*`,long)->(void)),*((*`)->(long)),*((*`)->(double)))),*(void)))
+,	O
+const	O
+double	O
+a	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+,	O
+const	O
+double	O
+sigma	double
+)	O
+{	O
+double	O
+u	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+=	O
+gsl_rng_uniform_pos	(*(struct(*(struct(*`,long,long,long,*`,*`,*`)),*(void))))->(double)
+(	O
+r	*(struct(*(struct(*(char),long,long,long,*((*`,long)->(void)),*((*`)->(long)),*((*`)->(double)))),*(void)))
+)	O
+;	O
+return	O
+sqrt	(double)->(double)
+(	O
+a	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+*	O
+a	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+-	O
+2.0	int
+*	O
+sigma	double
+*	O
+sigma	double
+*	O
+log	(double)->(double)
+(	O
+u	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+)	O
+)	O
+;	O
+}	O
+double	O
+gsl_ran_rayleigh_tail_pdf	(double,double,double)->(double)
+(	O
+const	O
+double	O
+x	double
+,	O
+const	O
+double	O
+a	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+,	O
+const	O
+double	O
+sigma	double
+)	O
+{	O
+if	O
+(	O
+x	double
+<	O
+a	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+)	O
+{	O
+return	O
+0	int
+;	O
+}	O
+else	O
+{	O
+double	O
+u	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+=	O
+x	double
+/	O
+sigma	double
+;	O
+double	O
+v	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+=	O
+a	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+/	O
+sigma	double
+;	O
+double	O
+p	int
+=	O
+(	O
+u	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+/	O
+sigma	double
+)	O
+*	O
+exp	(double)->(double)
+(	O
+(	O
+v	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
++	O
+u	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+)	O
+*	O
+(	O
+v	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+-	O
+u	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+)	O
+/	O
+2.0	int
+)	O
+;	O
+return	O
+p	int
+;	O
+}	O
+}	O

@@ -1,0 +1,12 @@
+const	O
+struct	O
+nettle_hash	struct
+nettle_sha256	struct
+=	O
+_NETTLE_HASH	O
+(	O
+sha256	pointer
+,	O
+SHA256	int
+)	O
+;	O

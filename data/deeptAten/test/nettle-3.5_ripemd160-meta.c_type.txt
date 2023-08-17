@@ -1,0 +1,12 @@
+const	O
+struct	O
+nettle_hash	O
+nettle_ripemd160	O
+=	O
+_NETTLE_HASH	O
+(	O
+ripemd160	O
+,	O
+RIPEMD160	O
+)	O
+;	O

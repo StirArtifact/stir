@@ -1,0 +1,5 @@
+int	O
+exit_status	O
+=	O
+PAXEXIT_SUCCESS	O
+;	O

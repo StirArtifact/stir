@@ -1,0 +1,14 @@
+mp_bitcnt_t	long
+mpf_get_default_prec	O
+(	O
+void	O
+)	O
+__GMP_NOTHROW	O
+{	O
+return	O
+__GMPF_PREC_TO_BITS	O
+(	O
+__gmp_default_fp_limb_precision	long
+)	O
+;	O
+}	O

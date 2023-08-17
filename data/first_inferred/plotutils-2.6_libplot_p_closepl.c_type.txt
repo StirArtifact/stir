@@ -1,0 +1,15 @@
+bool	enum
+_pl_p_end_page	function
+(	O
+S___	O
+(	O
+Plotter	struct
+*	O
+_plotter	pointer
+)	O
+)	O
+{	O
+return	O
+true	int
+;	O
+}	O

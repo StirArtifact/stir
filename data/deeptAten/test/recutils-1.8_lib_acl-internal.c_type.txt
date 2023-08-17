@@ -1,0 +1,10 @@
+void	O
+free_permission_context	O
+(	O
+struct	O
+permission_context	O
+*	O
+ctx	O
+)	O
+{	O
+}	O

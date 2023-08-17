@@ -1,0 +1,16 @@
+mach_port_t	O
+pager_get_port	function
+(	O
+struct	O
+pager	struct
+*	O
+p	pointer
+)	O
+{	O
+return	O
+ports_get_right	function
+(	O
+p	pointer
+)	O
+;	O
+}	O

@@ -1,0 +1,16 @@
+int	O
+dbm_pagfno	(*(struct(*(struct),int,struct(*(char),int),*(char),int)))->(int)
+(	O
+DBM	struct(*(struct),int,struct(*(char),int),*(char),int)
+*	O
+dbm	*(struct(*(struct(*(char),int,int,int,int,int,int,int,int,int,int,*(char),enum(int,int,int,int),*((*`)->(void)),int,*(struct`),*(long),*(struct`),long,long,*(struct`),int,*(struct`),int,int,int,int,long,*(void),long,long,long)),int,struct(*(char),int),*(char),int))
+)	O
+{	O
+return	O
+dbm	*(struct(*(struct(*(char),int,int,int,int,int,int,int,int,int,int,*(char),enum(int,int,int,int),*((*`)->(void)),int,*(struct`),*(long),*(struct`),long,long,*(struct`),int,*(struct`),int,int,int,int,long,*(void),long,long,long)),int,struct(*(char),int),*(char),int))
+->	O
+file	*(struct)
+->	O
+desc	int
+;	O
+}	O

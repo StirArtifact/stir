@@ -1,0 +1,25 @@
+void	O
+test_main	function
+(	O
+void	O
+)	O
+{	O
+test_hash_large	function
+(	O
+&	O
+nettle_sha1	struct
+,	O
+10000000	int
+,	O
+30000	int
+,	O
+'a'	O
+,	O
+SHEX	O
+(	O
+"0ba79364dc64648f 2074fb4bc5c28bcf"	pointer
+"b7a787b0"	pointer
+)	O
+)	O
+;	O
+}	O

@@ -1,0 +1,7 @@
+void	O
+init_3270	function
+(	O
+void	O
+)	O
+{	O
+}	O

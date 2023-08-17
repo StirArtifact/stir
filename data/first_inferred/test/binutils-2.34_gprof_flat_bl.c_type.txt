@@ -1,0 +1,247 @@
+void	O
+flat_blurb	function
+(	O
+FILE	struct
+*	O
+)	O
+;	O
+void	O
+flat_blurb	function
+(	O
+FILE	struct
+*	O
+file	*
+)	O
+{	O
+fputs	function
+(	O
+"\n"	*
+,	O
+file	*
+)	O
+;	O
+fputs	function
+(	O
+" %         the percentage of the total running time of the\n"	*
+,	O
+file	*
+)	O
+;	O
+fputs	function
+(	O
+"time       program used by this function.\n"	*
+,	O
+file	*
+)	O
+;	O
+fputs	function
+(	O
+"\n"	*
+,	O
+file	*
+)	O
+;	O
+fputs	function
+(	O
+"cumulative a running sum of the number of seconds accounted\n"	*
+,	O
+file	*
+)	O
+;	O
+fputs	function
+(	O
+" seconds   for by this function and those listed above it.\n"	*
+,	O
+file	*
+)	O
+;	O
+fputs	function
+(	O
+"\n"	*
+,	O
+file	*
+)	O
+;	O
+fputs	function
+(	O
+" self      the number of seconds accounted for by this\n"	*
+,	O
+file	*
+)	O
+;	O
+fputs	function
+(	O
+"seconds    function alone.  This is the major sort for this\n"	*
+,	O
+file	*
+)	O
+;	O
+fputs	function
+(	O
+"           listing.\n"	*
+,	O
+file	*
+)	O
+;	O
+fputs	function
+(	O
+"\n"	*
+,	O
+file	*
+)	O
+;	O
+fputs	function
+(	O
+"calls      the number of times this function was invoked, if\n"	*
+,	O
+file	*
+)	O
+;	O
+fputs	function
+(	O
+"           this function is profiled, else blank.\n"	*
+,	O
+file	*
+)	O
+;	O
+fputs	function
+(	O
+"\n"	*
+,	O
+file	*
+)	O
+;	O
+fputs	function
+(	O
+" self      the average number of milliseconds spent in this\n"	*
+,	O
+file	*
+)	O
+;	O
+fputs	function
+(	O
+"ms/call    function per call, if this function is profiled,\n"	*
+,	O
+file	*
+)	O
+;	O
+fputs	function
+(	O
+"	   else blank.\n"	*
+,	O
+file	*
+)	O
+;	O
+fputs	function
+(	O
+"\n"	*
+,	O
+file	*
+)	O
+;	O
+fputs	function
+(	O
+" total     the average number of milliseconds spent in this\n"	*
+,	O
+file	*
+)	O
+;	O
+fputs	function
+(	O
+"ms/call    function and its descendents per call, if this\n"	*
+,	O
+file	*
+)	O
+;	O
+fputs	function
+(	O
+"	   function is profiled, else blank.\n"	*
+,	O
+file	*
+)	O
+;	O
+fputs	function
+(	O
+"\n"	*
+,	O
+file	*
+)	O
+;	O
+fputs	function
+(	O
+"name       the name of the function.  This is the minor sort\n"	*
+,	O
+file	*
+)	O
+;	O
+fputs	function
+(	O
+"           for this listing. The index shows the location of\n"	*
+,	O
+file	*
+)	O
+;	O
+fputs	function
+(	O
+"	   the function in the gprof listing. If the index is\n"	*
+,	O
+file	*
+)	O
+;	O
+fputs	function
+(	O
+"	   in parenthesis it shows where it would appear in\n"	*
+,	O
+file	*
+)	O
+;	O
+fputs	function
+(	O
+"	   the gprof listing if it were to be printed.\n"	*
+,	O
+file	*
+)	O
+;	O
+fputs	function
+(	O
+"\n"	*
+,	O
+file	*
+)	O
+;	O
+fputs	function
+(	O
+"Copyright (C) 2012-2020 Free Software Foundation, Inc.\n"	*
+,	O
+file	*
+)	O
+;	O
+fputs	function
+(	O
+"\n"	*
+,	O
+file	*
+)	O
+;	O
+fputs	function
+(	O
+"Copying and distribution of this file, with or without modification,\n"	*
+,	O
+file	*
+)	O
+;	O
+fputs	function
+(	O
+"are permitted in any medium without royalty provided the copyright\n"	*
+,	O
+file	*
+)	O
+;	O
+fputs	function
+(	O
+"notice and this notice are preserved.\n"	*
+,	O
+file	*
+)	O
+;	O
+}	O

@@ -1,0 +1,15 @@
+struct	O
+bin_emulation_xfer_struct	O
+bin_vanilla_emulation	O
+=	O
+{	O
+ar_emul_default_usage	O
+,	O
+ar_emul_default_append	O
+,	O
+ar_emul_default_replace	O
+,	O
+ar_emul_default_parse_arg	O
+,	O
+}	O
+;	O

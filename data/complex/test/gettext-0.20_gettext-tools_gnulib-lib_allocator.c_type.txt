@@ -1,0 +1,15 @@
+struct	O
+allocator	struct(*((long)->(*(void))),*((*(void),long)->(*(void))),*((*(void))->(void)),*((long)->(void)))
+const	O
+stdlib_allocator	struct(*((long)->(*(void))),*((*(void),long)->(*(void))),*((*(void))->(void)),*((long)->(void)))
+=	O
+{	O
+malloc	(long)->(*(void))
+,	O
+realloc	(*(void),long)->(*(void))
+,	O
+free	*((*(void))->(void))
+,	O
+NULL	O
+}	O
+;	O

@@ -1,0 +1,8 @@
+const	O
+char	O
+version_etc_copyright	array(char)
+[	O
+]	O
+=	O
+"Copyright %s %d Free Software Foundation, Inc."	*(char)
+;	O

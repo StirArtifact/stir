@@ -1,0 +1,329 @@
+struct	O
+plural_table_entry	struct
+plural_table	array
+[	O
+]	O
+=	O
+{	O
+{	O
+"ja"	*
+,	O
+"Japanese"	*
+,	O
+"nplurals=1; plural=0;"	int
+}	O
+,	O
+{	O
+"vi"	*
+,	O
+"Vietnamese"	*
+,	O
+"nplurals=1; plural=0;"	int
+}	O
+,	O
+{	O
+"ko"	*
+,	O
+"Korean"	*
+,	O
+"nplurals=1; plural=0;"	int
+}	O
+,	O
+{	O
+"en"	*
+,	O
+"English"	*
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"de"	*
+,	O
+"German"	*
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"nl"	*
+,	O
+"Dutch"	*
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"sv"	*
+,	O
+"Swedish"	*
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"da"	*
+,	O
+"Danish"	*
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"no"	*
+,	O
+"Norwegian"	*
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"nb"	*
+,	O
+"Norwegian Bokmal"	*
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"nn"	*
+,	O
+"Norwegian Nynorsk"	*
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"fo"	*
+,	O
+"Faroese"	*
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"es"	*
+,	O
+"Spanish"	*
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"pt"	*
+,	O
+"Portuguese"	*
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"it"	*
+,	O
+"Italian"	*
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"bg"	*
+,	O
+"Bulgarian"	*
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"el"	*
+,	O
+"Greek"	*
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"fi"	*
+,	O
+"Finnish"	*
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"et"	*
+,	O
+"Estonian"	*
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"he"	*
+,	O
+"Hebrew"	int
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"eo"	*
+,	O
+"Esperanto"	*
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"hu"	*
+,	O
+"Hungarian"	*
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"tr"	*
+,	O
+"Turkish"	*
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"pt_BR"	*
+,	O
+"Brazilian"	*
+,	O
+"nplurals=2; plural=(n > 1);"	int
+}	O
+,	O
+{	O
+"fr"	*
+,	O
+"French"	*
+,	O
+"nplurals=2; plural=(n > 1);"	int
+}	O
+,	O
+{	O
+"lv"	*
+,	O
+"Latvian"	*
+,	O
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);"	int
+}	O
+,	O
+{	O
+"ga"	*
+,	O
+"Irish"	*
+,	O
+"nplurals=3; plural=n==1 ? 0 : n==2 ? 1 : 2;"	int
+}	O
+,	O
+{	O
+"ro"	*
+,	O
+"Romanian"	*
+,	O
+"nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2;"	int
+}	O
+,	O
+{	O
+"lt"	*
+,	O
+"Lithuanian"	*
+,	O
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);"	int
+}	O
+,	O
+{	O
+"ru"	*
+,	O
+"Russian"	*
+,	O
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);"	int
+}	O
+,	O
+{	O
+"uk"	*
+,	O
+"Ukrainian"	*
+,	O
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);"	int
+}	O
+,	O
+{	O
+"be"	*
+,	O
+"Belarusian"	*
+,	O
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);"	int
+}	O
+,	O
+{	O
+"sr"	*
+,	O
+"Serbian"	*
+,	O
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);"	int
+}	O
+,	O
+{	O
+"hr"	*
+,	O
+"Croatian"	*
+,	O
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);"	int
+}	O
+,	O
+{	O
+"cs"	*
+,	O
+"Czech"	*
+,	O
+"nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;"	int
+}	O
+,	O
+{	O
+"sk"	*
+,	O
+"Slovak"	*
+,	O
+"nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;"	int
+}	O
+,	O
+{	O
+"pl"	*
+,	O
+"Polish"	*
+,	O
+"nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);"	int
+}	O
+,	O
+{	O
+"sl"	int
+,	O
+"Slovenian"	int
+,	O
+"nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);"	int
+}	O
+}	O
+;	O
+const	O
+size_t	long
+plural_table_size	long
+=	O
+sizeof	O
+(	O
+plural_table	array
+)	O
+/	O
+sizeof	O
+(	O
+plural_table	array
+[	O
+0	int
+]	O
+)	O
+;	O

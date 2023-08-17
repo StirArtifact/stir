@@ -1,0 +1,2522 @@
+struct	O
+bucket_header	struct(*(union),*(char),long,long)
+{	O
+union	O
+mu_opool_bucket	union(struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long),long double,long,*(void))
+*	O
+next	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+;	O
+char	O
+*	O
+buf	array(struct(array(long),int,struct(array(long))))
+;	O
+size_t	long
+level	int
+;	O
+size_t	long
+size	long
+;	O
+}	O
+;	O
+union	O
+mu_opool_bucket	union(struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long),long double,long,*(void))
+{	O
+struct	O
+bucket_header	struct(*(union),*(char),long,long)
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+;	O
+long	O
+double	O
+align_double	long double
+;	O
+uintmax_t	long
+align_uintmax	long
+;	O
+void	O
+*	O
+align_ptr	*(void)
+;	O
+}	O
+;	O
+struct	O
+_mu_opool	struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`))))),*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void))),*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void))),*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void))))
+{	O
+int	O
+flags	int
+;	O
+size_t	long
+bucket_size	long
+;	O
+size_t	long
+itr_count	long
+;	O
+mu_nonlocal_jmp_t	struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*`)))))
+*	O
+jmp	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+;	O
+union	O
+mu_opool_bucket	union(struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long),long double,long,*(void))
+*	O
+bkt_head	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+,	O
+*	O
+bkt_tail	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+union	O
+mu_opool_bucket	union(struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long),long double,long,*(void))
+*	O
+bkt_fini	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+}	O
+;	O
+static	O
+union	O
+mu_opool_bucket	union(struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long),long double,long,*(void))
+*	O
+alloc_bucket	(*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*`)),*(union(struct`,long double,long,*`)),*(union(struct`,long double,long,*`)),*(union(struct`,long double,long,*`)))),long)->(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))))
+(	O
+struct	O
+_mu_opool	struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`))))),*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void))),*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void))),*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void))))
+*	O
+opool	*(struct)
+,	O
+size_t	long
+size	long
+)	O
+{	O
+union	O
+mu_opool_bucket	union(struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long),long double,long,*(void))
+*	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+=	O
+malloc	(long)->(*(void))
+(	O
+sizeof	O
+(	O
+*	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+)	O
++	O
+size	long
+)	O
+;	O
+if	O
+(	O
+!	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+)	O
+{	O
+if	O
+(	O
+opool	*(struct)
+->	O
+flags	int
+&	O
+MU_OPOOL_ENOMEMABRT	int
+)	O
+mu_alloc_die	()->(void)
+(	O
+)	O
+;	O
+if	O
+(	O
+opool	*(struct)
+->	O
+jmp	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+)	O
+longjmp	(array(struct(array(long),int,struct(array(long)))),int)->(void)
+(	O
+opool	*(struct)
+->	O
+jmp	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+->	O
+buf	array(struct(array(long),int,struct(array(long))))
+,	O
+ENOMEM	int
+)	O
+;	O
+}	O
+else	O
+{	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+buf	array(struct(array(long),int,struct(array(long))))
+=	O
+(	O
+char	O
+*	O
+)	O
+(	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
++	O
+1	int
+)	O
+;	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+level	int
+=	O
+0	int
+;	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+size	long
+=	O
+size	long
+;	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+next	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+=	O
+NULL	O
+;	O
+}	O
+return	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+}	O
+static	O
+int	O
+alloc_pool	(*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*`)),*(union(struct`,long double,long,*`)),*(union(struct`,long double,long,*`)),*(union(struct`,long double,long,*`)))),long)->(int)
+(	O
+mu_opool_t	*(struct)
+opool	*(struct)
+,	O
+size_t	long
+size	long
+)	O
+{	O
+union	O
+mu_opool_bucket	union(struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long),long double,long,*(void))
+*	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+=	O
+alloc_bucket	(*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*`)),*(union(struct`,long double,long,*`)),*(union(struct`,long double,long,*`)),*(union(struct`,long double,long,*`)))),long)->(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))))
+(	O
+opool	*(struct)
+,	O
+opool	*(struct)
+->	O
+bucket_size	long
+)	O
+;	O
+if	O
+(	O
+!	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+)	O
+return	O
+ENOMEM	int
+;	O
+if	O
+(	O
+opool	*(struct)
+->	O
+bkt_tail	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+)	O
+opool	*(struct)
+->	O
+bkt_tail	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+next	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+=	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+else	O
+opool	*(struct)
+->	O
+bkt_head	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+=	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+opool	*(struct)
+->	O
+bkt_tail	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+=	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+return	O
+0	int
+;	O
+}	O
+static	O
+int	O
+copy_chars	(*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*`)),*(union(struct`,long double,long,*`)),*(union(struct`,long double,long,*`)),*(union(struct`,long double,long,*`)))),*(char),long,*(long))->(int)
+(	O
+mu_opool_t	*(struct)
+opool	*(struct)
+,	O
+const	O
+char	O
+*	O
+str	*(void)
+,	O
+size_t	long
+n	long
+,	O
+size_t	long
+*	O
+psize	*(long)
+)	O
+{	O
+size_t	long
+rest	long
+;	O
+if	O
+(	O
+!	O
+opool	*(struct)
+->	O
+bkt_head	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+||	O
+opool	*(struct)
+->	O
+bkt_tail	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+level	int
+==	O
+opool	*(struct)
+->	O
+bkt_tail	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+size	long
+)	O
+if	O
+(	O
+alloc_pool	(*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*`)),*(union(struct`,long double,long,*`)),*(union(struct`,long double,long,*`)),*(union(struct`,long double,long,*`)))),long)->(int)
+(	O
+opool	*(struct)
+,	O
+opool	*(struct)
+->	O
+bucket_size	long
+)	O
+)	O
+return	O
+ENOMEM	int
+;	O
+rest	long
+=	O
+opool	*(struct)
+->	O
+bkt_tail	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+size	long
+-	O
+opool	*(struct)
+->	O
+bkt_tail	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+level	int
+;	O
+if	O
+(	O
+n	long
+>	O
+rest	long
+)	O
+n	long
+=	O
+rest	long
+;	O
+memcpy	(*(void),*(void),long)->(*(void))
+(	O
+opool	*(struct)
+->	O
+bkt_tail	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+buf	array(struct(array(long),int,struct(array(long))))
++	O
+opool	*(struct)
+->	O
+bkt_tail	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+level	int
+,	O
+str	*(void)
+,	O
+n	long
+)	O
+;	O
+opool	*(struct)
+->	O
+bkt_tail	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+level	int
++=	O
+n	long
+;	O
+*	O
+psize	*(long)
+=	O
+n	long
+;	O
+return	O
+0	int
+;	O
+}	O
+int	O
+mu_opool_create	(*(*(struct)),int)->(int)
+(	O
+mu_opool_t	*(struct)
+*	O
+pret	*(*(struct))
+,	O
+int	O
+flags	int
+)	O
+{	O
+struct	O
+_mu_opool	struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`))))),*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void))),*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void))),*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void))))
+*	O
+x	*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void)))))
+=	O
+malloc	(long)->(*(void))
+(	O
+sizeof	O
+(	O
+x	*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void)))))
+[	O
+0	int
+]	O
+)	O
+)	O
+;	O
+if	O
+(	O
+!	O
+x	*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void)))))
+)	O
+{	O
+if	O
+(	O
+flags	int
+&	O
+MU_OPOOL_ENOMEMABRT	int
+)	O
+mu_alloc_die	()->(void)
+(	O
+)	O
+;	O
+return	O
+ENOMEM	int
+;	O
+}	O
+x	*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void)))))
+->	O
+flags	int
+=	O
+flags	int
+;	O
+x	*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void)))))
+->	O
+bucket_size	long
+=	O
+MU_OPOOL_BUCKET_SIZE	int
+;	O
+x	*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void)))))
+->	O
+itr_count	long
+=	O
+0	int
+;	O
+x	*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void)))))
+->	O
+bkt_head	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+=	O
+x	*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void)))))
+->	O
+bkt_tail	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+=	O
+x	*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void)))))
+->	O
+bkt_fini	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+=	O
+NULL	O
+;	O
+x	*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void)))))
+->	O
+jmp	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+=	O
+NULL	O
+;	O
+*	O
+pret	*(*(struct))
+=	O
+x	*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void)))))
+;	O
+return	O
+0	int
+;	O
+}	O
+void	O
+mu_opool_setjmp	(*(struct),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*`)))))->(void)
+(	O
+mu_opool_t	*(struct)
+opool	*(struct)
+,	O
+mu_nonlocal_jmp_t	struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*`)))))
+*	O
+jmp	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+)	O
+{	O
+if	O
+(	O
+jmp	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+)	O
+{	O
+jmp	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+->	O
+next	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+=	O
+opool	*(struct)
+->	O
+jmp	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+;	O
+opool	*(struct)
+->	O
+jmp	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+=	O
+jmp	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+;	O
+}	O
+else	O
+mu_opool_clrjmp	(*(struct))->(void)
+(	O
+opool	*(struct)
+)	O
+;	O
+}	O
+void	O
+mu_opool_clrjmp	(*(struct))->(void)
+(	O
+mu_opool_t	*(struct)
+opool	*(struct)
+)	O
+{	O
+if	O
+(	O
+opool	*(struct)
+->	O
+jmp	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+)	O
+opool	*(struct)
+->	O
+jmp	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+=	O
+opool	*(struct)
+->	O
+jmp	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+->	O
+next	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+;	O
+}	O
+int	O
+mu_opool_set_bucket_size	(*(struct),long)->(int)
+(	O
+mu_opool_t	*(struct)
+opool	*(struct)
+,	O
+size_t	long
+size	long
+)	O
+{	O
+if	O
+(	O
+!	O
+opool	*(struct)
+)	O
+return	O
+EINVAL	int
+;	O
+opool	*(struct)
+->	O
+bucket_size	long
+=	O
+size	long
+;	O
+return	O
+0	int
+;	O
+}	O
+int	O
+mu_opool_get_bucket_size	(*(struct),*(long))->(int)
+(	O
+mu_opool_t	*(struct)
+opool	*(struct)
+,	O
+size_t	long
+*	O
+psize	*(long)
+)	O
+{	O
+if	O
+(	O
+!	O
+opool	*(struct)
+||	O
+!	O
+psize	*(long)
+)	O
+return	O
+EINVAL	int
+;	O
+*	O
+psize	*(long)
+=	O
+opool	*(struct)
+->	O
+bucket_size	long
+;	O
+return	O
+0	int
+;	O
+}	O
+void	O
+mu_opool_clear	(*(struct))->(void)
+(	O
+mu_opool_t	*(struct)
+opool	*(struct)
+)	O
+{	O
+if	O
+(	O
+!	O
+opool	*(struct)
+)	O
+return	O
+;	O
+if	O
+(	O
+opool	*(struct)
+->	O
+bkt_tail	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+)	O
+{	O
+opool	*(struct)
+->	O
+bkt_tail	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+next	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+=	O
+opool	*(struct)
+->	O
+bkt_fini	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+opool	*(struct)
+->	O
+bkt_fini	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+=	O
+opool	*(struct)
+->	O
+bkt_head	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+opool	*(struct)
+->	O
+bkt_head	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+=	O
+opool	*(struct)
+->	O
+bkt_tail	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+=	O
+NULL	O
+;	O
+}	O
+}	O
+void	O
+mu_opool_less	(*(struct),long)->(void)
+(	O
+mu_opool_t	*(struct)
+opool	*(struct)
+,	O
+size_t	long
+sz	long
+)	O
+{	O
+union	O
+mu_opool_bucket	union(struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long),long double,long,*(void))
+*	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+size_t	long
+total	long
+=	O
+0	int
+;	O
+if	O
+(	O
+!	O
+opool	*(struct)
+)	O
+return	O
+;	O
+for	O
+(	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+=	O
+opool	*(struct)
+->	O
+bkt_head	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+=	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+next	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+)	O
+{	O
+if	O
+(	O
+total	long
++	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+level	int
+>=	O
+sz	long
+)	O
+{	O
+union	O
+mu_opool_bucket	union(struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long),long double,long,*(void))
+*	O
+t	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+level	int
+=	O
+sz	long
+-	O
+total	long
+;	O
+t	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+=	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+next	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+;	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+next	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+=	O
+NULL	O
+;	O
+while	O
+(	O
+t	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+)	O
+{	O
+union	O
+mu_opool_bucket	union(struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long),long double,long,*(void))
+*	O
+next	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+=	O
+t	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+next	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+;	O
+free	(*(void))->(void)
+(	O
+t	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+)	O
+;	O
+t	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+=	O
+next	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+;	O
+}	O
+break	O
+;	O
+}	O
+total	long
++=	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+level	int
+;	O
+}	O
+}	O
+void	O
+mu_opool_destroy	(*(*(struct)))->(void)
+(	O
+mu_opool_t	*(struct)
+*	O
+popool	*(*(struct))
+)	O
+{	O
+union	O
+mu_opool_bucket	union(struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long),long double,long,*(void))
+*	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+if	O
+(	O
+popool	*(*(struct))
+&&	O
+*	O
+popool	*(*(struct))
+)	O
+{	O
+mu_opool_t	*(struct)
+opool	*(struct)
+=	O
+*	O
+popool	*(*(struct))
+;	O
+mu_opool_clear	(*(struct))->(void)
+(	O
+opool	*(struct)
+)	O
+;	O
+for	O
+(	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+=	O
+opool	*(struct)
+->	O
+bkt_fini	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+)	O
+{	O
+union	O
+mu_opool_bucket	union(struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long),long double,long,*(void))
+*	O
+next	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+=	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+next	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+;	O
+free	(*(void))->(void)
+(	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+)	O
+;	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+=	O
+next	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+;	O
+}	O
+free	(*(void))->(void)
+(	O
+opool	*(struct)
+)	O
+;	O
+*	O
+popool	*(*(struct))
+=	O
+NULL	O
+;	O
+}	O
+}	O
+int	O
+mu_opool_alloc	(*(struct),long)->(int)
+(	O
+mu_opool_t	*(struct)
+opool	*(struct)
+,	O
+size_t	long
+size	long
+)	O
+{	O
+while	O
+(	O
+size	long
+)	O
+{	O
+size_t	long
+rest	long
+;	O
+if	O
+(	O
+!	O
+opool	*(struct)
+->	O
+bkt_head	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+||	O
+opool	*(struct)
+->	O
+bkt_tail	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+level	int
+==	O
+opool	*(struct)
+->	O
+bkt_tail	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+size	long
+)	O
+if	O
+(	O
+alloc_pool	(*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*`)),*(union(struct`,long double,long,*`)),*(union(struct`,long double,long,*`)),*(union(struct`,long double,long,*`)))),long)->(int)
+(	O
+opool	*(struct)
+,	O
+opool	*(struct)
+->	O
+bucket_size	long
+)	O
+)	O
+return	O
+ENOMEM	int
+;	O
+rest	long
+=	O
+opool	*(struct)
+->	O
+bkt_tail	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+size	long
+-	O
+opool	*(struct)
+->	O
+bkt_tail	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+level	int
+;	O
+if	O
+(	O
+size	long
+<	O
+rest	long
+)	O
+rest	long
+=	O
+size	long
+;	O
+opool	*(struct)
+->	O
+bkt_tail	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+level	int
++=	O
+rest	long
+;	O
+size	long
+-=	O
+rest	long
+;	O
+}	O
+return	O
+0	int
+;	O
+}	O
+int	O
+mu_opool_append	(*(struct),*(void),long)->(int)
+(	O
+mu_opool_t	*(struct)
+opool	*(struct)
+,	O
+const	O
+void	O
+*	O
+str	*(void)
+,	O
+size_t	long
+n	long
+)	O
+{	O
+const	O
+char	O
+*	O
+ptr	*(*(void))
+=	O
+str	*(void)
+;	O
+while	O
+(	O
+n	long
+)	O
+{	O
+size_t	long
+s	*(char)
+;	O
+if	O
+(	O
+copy_chars	(*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*`)),*(union(struct`,long double,long,*`)),*(union(struct`,long double,long,*`)),*(union(struct`,long double,long,*`)))),*(char),long,*(long))->(int)
+(	O
+opool	*(struct)
+,	O
+ptr	*(*(void))
+,	O
+n	long
+,	O
+&	O
+s	*(char)
+)	O
+)	O
+return	O
+ENOMEM	int
+;	O
+ptr	*(*(void))
++=	O
+s	*(char)
+;	O
+n	long
+-=	O
+s	*(char)
+;	O
+}	O
+return	O
+0	int
+;	O
+}	O
+int	O
+mu_opool_append_char	(*(struct),char)->(int)
+(	O
+mu_opool_t	*(struct)
+opool	*(struct)
+,	O
+char	O
+c	char
+)	O
+{	O
+return	O
+mu_opool_append	(*(struct),*(void),long)->(int)
+(	O
+opool	*(struct)
+,	O
+&	O
+c	char
+,	O
+1	int
+)	O
+;	O
+}	O
+int	O
+mu_opool_appendz	(*(struct),*(char))->(int)
+(	O
+mu_opool_t	*(struct)
+opool	*(struct)
+,	O
+const	O
+char	O
+*	O
+str	*(void)
+)	O
+{	O
+return	O
+mu_opool_append	(*(struct),*(void),long)->(int)
+(	O
+opool	*(struct)
+,	O
+str	*(void)
+,	O
+strlen	(*(char))->(long)
+(	O
+str	*(void)
+)	O
+)	O
+;	O
+}	O
+size_t	long
+mu_opool_size	(*(struct))->(long)
+(	O
+mu_opool_t	*(struct)
+opool	*(struct)
+)	O
+{	O
+size_t	long
+size	long
+=	O
+0	int
+;	O
+union	O
+mu_opool_bucket	union(struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long),long double,long,*(void))
+*	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+for	O
+(	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+=	O
+opool	*(struct)
+->	O
+bkt_head	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+=	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+next	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+)	O
+size	long
++=	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+level	int
+;	O
+return	O
+size	long
+;	O
+}	O
+size_t	long
+mu_opool_copy	(*(struct),*(void),long)->(long)
+(	O
+mu_opool_t	*(struct)
+opool	*(struct)
+,	O
+void	O
+*	O
+buf	array(struct(array(long),int,struct(array(long))))
+,	O
+size_t	long
+size	long
+)	O
+{	O
+char	O
+*	O
+cp	*(char)
+=	O
+buf	array(struct(array(long),int,struct(array(long))))
+;	O
+size_t	long
+total	long
+=	O
+0	int
+;	O
+union	O
+mu_opool_bucket	union(struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long),long double,long,*(void))
+*	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+for	O
+(	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+=	O
+opool	*(struct)
+->	O
+bkt_head	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+&&	O
+total	long
+<	O
+size	long
+;	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+=	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+next	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+)	O
+{	O
+size_t	long
+cpsize	long
+=	O
+size	long
+-	O
+total	long
+;	O
+if	O
+(	O
+cpsize	long
+>	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+level	int
+)	O
+cpsize	long
+=	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+level	int
+;	O
+memcpy	(*(void),*(void),long)->(*(void))
+(	O
+cp	*(char)
+,	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+buf	array(struct(array(long),int,struct(array(long))))
+,	O
+cpsize	long
+)	O
+;	O
+cp	*(char)
++=	O
+cpsize	long
+;	O
+total	long
++=	O
+cpsize	long
+;	O
+}	O
+return	O
+total	long
+;	O
+}	O
+int	O
+mu_opool_coalesce	(*(struct),*(long))->(int)
+(	O
+mu_opool_t	*(struct)
+opool	*(struct)
+,	O
+size_t	long
+*	O
+psize	*(long)
+)	O
+{	O
+size_t	long
+size	long
+;	O
+if	O
+(	O
+opool	*(struct)
+->	O
+itr_count	long
+)	O
+return	O
+MU_ERR_FAILURE	O
+;	O
+if	O
+(	O
+opool	*(struct)
+->	O
+bkt_head	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+&&	O
+opool	*(struct)
+->	O
+bkt_head	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+next	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+==	O
+NULL	O
+)	O
+size	long
+=	O
+opool	*(struct)
+->	O
+bkt_head	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+level	int
+;	O
+else	O
+{	O
+union	O
+mu_opool_bucket	union(struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long),long double,long,*(void))
+*	O
+bucket	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+union	O
+mu_opool_bucket	union(struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long),long double,long,*(void))
+*	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+size	long
+=	O
+mu_opool_size	(*(struct))->(long)
+(	O
+opool	*(struct)
+)	O
+;	O
+bucket	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+=	O
+alloc_bucket	(*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*`)),*(union(struct`,long double,long,*`)),*(union(struct`,long double,long,*`)),*(union(struct`,long double,long,*`)))),long)->(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))))
+(	O
+opool	*(struct)
+,	O
+size	long
+)	O
+;	O
+if	O
+(	O
+!	O
+bucket	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+)	O
+return	O
+ENOMEM	int
+;	O
+for	O
+(	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+=	O
+opool	*(struct)
+->	O
+bkt_head	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+)	O
+{	O
+union	O
+mu_opool_bucket	union(struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long),long double,long,*(void))
+*	O
+next	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+=	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+next	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+;	O
+memcpy	(*(void),*(void),long)->(*(void))
+(	O
+bucket	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+buf	array(struct(array(long),int,struct(array(long))))
++	O
+bucket	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+level	int
+,	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+buf	array(struct(array(long),int,struct(array(long))))
+,	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+level	int
+)	O
+;	O
+bucket	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+level	int
++=	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+level	int
+;	O
+free	(*(void))->(void)
+(	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+)	O
+;	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+=	O
+next	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+;	O
+}	O
+opool	*(struct)
+->	O
+bkt_head	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+=	O
+opool	*(struct)
+->	O
+bkt_tail	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+=	O
+bucket	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+}	O
+if	O
+(	O
+psize	*(long)
+)	O
+*	O
+psize	*(long)
+=	O
+size	long
+;	O
+return	O
+0	int
+;	O
+}	O
+void	O
+*	O
+mu_opool_head	(*(struct),*(long))->(*(void))
+(	O
+mu_opool_t	*(struct)
+opool	*(struct)
+,	O
+size_t	long
+*	O
+psize	*(long)
+)	O
+{	O
+if	O
+(	O
+psize	*(long)
+)	O
+*	O
+psize	*(long)
+=	O
+opool	*(struct)
+->	O
+bkt_head	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+?	O
+opool	*(struct)
+->	O
+bkt_head	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+level	int
+:	O
+0	int
+;	O
+return	O
+opool	*(struct)
+->	O
+bkt_head	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+?	O
+opool	*(struct)
+->	O
+bkt_head	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+buf	array(struct(array(long),int,struct(array(long))))
+:	O
+NULL	O
+;	O
+}	O
+void	O
+*	O
+mu_opool_finish	(*(struct),*(long))->(*(void))
+(	O
+mu_opool_t	*(struct)
+opool	*(struct)
+,	O
+size_t	long
+*	O
+psize	*(long)
+)	O
+{	O
+if	O
+(	O
+mu_opool_coalesce	(*(struct),*(long))->(int)
+(	O
+opool	*(struct)
+,	O
+psize	*(long)
+)	O
+)	O
+return	O
+NULL	O
+;	O
+mu_opool_clear	(*(struct))->(void)
+(	O
+opool	*(struct)
+)	O
+;	O
+return	O
+opool	*(struct)
+->	O
+bkt_fini	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+buf	array(struct(array(long),int,struct(array(long))))
+;	O
+}	O
+void	O
+*	O
+mu_opool_detach	(*(struct),*(long))->(*(void))
+(	O
+mu_opool_t	*(struct)
+opool	*(struct)
+,	O
+size_t	long
+*	O
+psize	*(long)
+)	O
+{	O
+union	O
+mu_opool_bucket	union(struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long),long double,long,*(void))
+*	O
+bp	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+if	O
+(	O
+mu_opool_coalesce	(*(struct),*(long))->(int)
+(	O
+opool	*(struct)
+,	O
+psize	*(long)
+)	O
+)	O
+return	O
+NULL	O
+;	O
+mu_opool_clear	(*(struct))->(void)
+(	O
+opool	*(struct)
+)	O
+;	O
+bp	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+=	O
+opool	*(struct)
+->	O
+bkt_fini	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+opool	*(struct)
+->	O
+bkt_fini	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+=	O
+bp	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+next	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+;	O
+memmove	(*(void),*(void),long)->(*(void))
+(	O
+bp	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+,	O
+bp	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+buf	array(struct(array(long),int,struct(array(long))))
+,	O
+bp	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+level	int
+)	O
+;	O
+return	O
+bp	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+}	O
+void	O
+mu_opool_free	(*(struct),*(void))->(void)
+(	O
+mu_opool_t	*(struct)
+pool	*(struct)
+,	O
+void	O
+*	O
+obj	*(void)
+)	O
+{	O
+if	O
+(	O
+!	O
+pool	*(struct)
+)	O
+return	O
+;	O
+if	O
+(	O
+!	O
+obj	*(void)
+)	O
+{	O
+if	O
+(	O
+pool	*(struct)
+->	O
+bkt_head	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+)	O
+mu_opool_finish	(*(struct),*(long))->(*(void))
+(	O
+pool	*(struct)
+,	O
+NULL	O
+)	O
+;	O
+while	O
+(	O
+pool	*(struct)
+->	O
+bkt_fini	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+)	O
+{	O
+union	O
+mu_opool_bucket	union(struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long),long double,long,*(void))
+*	O
+next	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+=	O
+pool	*(struct)
+->	O
+bkt_fini	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+next	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+;	O
+free	(*(void))->(void)
+(	O
+pool	*(struct)
+->	O
+bkt_fini	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+)	O
+;	O
+pool	*(struct)
+->	O
+bkt_fini	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+=	O
+next	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+;	O
+}	O
+}	O
+else	O
+{	O
+union	O
+mu_opool_bucket	union(struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long),long double,long,*(void))
+*	O
+bucket	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+=	O
+pool	*(struct)
+->	O
+bkt_fini	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+,	O
+*	O
+*	O
+pprev	*(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))))
+=	O
+&	O
+pool	*(struct)
+->	O
+bkt_fini	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+while	O
+(	O
+bucket	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+)	O
+{	O
+if	O
+(	O
+bucket	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+buf	array(struct(array(long),int,struct(array(long))))
+==	O
+obj	*(void)
+)	O
+{	O
+*	O
+pprev	*(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))))
+=	O
+bucket	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+next	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+;	O
+free	(*(void))->(void)
+(	O
+bucket	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+)	O
+;	O
+return	O
+;	O
+}	O
+pprev	*(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))))
+=	O
+&	O
+bucket	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+next	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+;	O
+bucket	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+=	O
+bucket	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+next	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+;	O
+}	O
+}	O
+}	O
+void	O
+*	O
+mu_opool_dup	(*(struct),*(void),long)->(*(void))
+(	O
+mu_opool_t	*(struct)
+pool	*(struct)
+,	O
+void	O
+const	O
+*	O
+data	*(void)
+,	O
+size_t	long
+size	long
+)	O
+{	O
+if	O
+(	O
+mu_opool_append	(*(struct),*(void),long)->(int)
+(	O
+pool	*(struct)
+,	O
+data	*(void)
+,	O
+size	long
+)	O
+)	O
+return	O
+NULL	O
+;	O
+return	O
+mu_opool_finish	(*(struct),*(long))->(*(void))
+(	O
+pool	*(struct)
+,	O
+NULL	O
+)	O
+;	O
+}	O
+int	O
+mu_opool_union	(*(*(struct)),*(*(struct)))->(int)
+(	O
+mu_opool_t	*(struct)
+*	O
+pdst	*(*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*`)),*(union(struct`,long double,long,*`)),*(union(struct`,long double,long,*`)),*(union(struct`,long double,long,*`)))))
+,	O
+mu_opool_t	*(struct)
+*	O
+psrc	*(*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*`)),*(union(struct`,long double,long,*`)),*(union(struct`,long double,long,*`)),*(union(struct`,long double,long,*`)))))
+)	O
+{	O
+mu_opool_t	*(struct)
+src	*(*(struct))
+,	O
+dst	*(*(struct))
+;	O
+if	O
+(	O
+!	O
+psrc	*(*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*`)),*(union(struct`,long double,long,*`)),*(union(struct`,long double,long,*`)),*(union(struct`,long double,long,*`)))))
+)	O
+return	O
+EINVAL	int
+;	O
+if	O
+(	O
+!	O
+*	O
+psrc	*(*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*`)),*(union(struct`,long double,long,*`)),*(union(struct`,long double,long,*`)),*(union(struct`,long double,long,*`)))))
+)	O
+return	O
+0	int
+;	O
+src	*(*(struct))
+=	O
+*	O
+psrc	*(*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*`)),*(union(struct`,long double,long,*`)),*(union(struct`,long double,long,*`)),*(union(struct`,long double,long,*`)))))
+;	O
+if	O
+(	O
+!	O
+pdst	*(*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*`)),*(union(struct`,long double,long,*`)),*(union(struct`,long double,long,*`)),*(union(struct`,long double,long,*`)))))
+)	O
+return	O
+EINVAL	int
+;	O
+if	O
+(	O
+!	O
+*	O
+pdst	*(*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*`)),*(union(struct`,long double,long,*`)),*(union(struct`,long double,long,*`)),*(union(struct`,long double,long,*`)))))
+)	O
+{	O
+*	O
+pdst	*(*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*`)),*(union(struct`,long double,long,*`)),*(union(struct`,long double,long,*`)),*(union(struct`,long double,long,*`)))))
+=	O
+src	*(*(struct))
+;	O
+*	O
+psrc	*(*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*`)),*(union(struct`,long double,long,*`)),*(union(struct`,long double,long,*`)),*(union(struct`,long double,long,*`)))))
+=	O
+NULL	O
+;	O
+return	O
+0	int
+;	O
+}	O
+else	O
+dst	*(*(struct))
+=	O
+*	O
+pdst	*(*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*`)),*(union(struct`,long double,long,*`)),*(union(struct`,long double,long,*`)),*(union(struct`,long double,long,*`)))))
+;	O
+if	O
+(	O
+dst	*(*(struct))
+->	O
+bkt_tail	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+)	O
+dst	*(*(struct))
+->	O
+bkt_tail	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+next	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+=	O
+src	*(*(struct))
+->	O
+bkt_head	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+else	O
+dst	*(*(struct))
+->	O
+bkt_head	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+=	O
+src	*(*(struct))
+->	O
+bkt_head	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+dst	*(*(struct))
+->	O
+bkt_tail	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+=	O
+src	*(*(struct))
+->	O
+bkt_tail	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+if	O
+(	O
+src	*(*(struct))
+->	O
+bkt_fini	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+)	O
+{	O
+union	O
+mu_opool_bucket	union(struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long),long double,long,*(void))
+*	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+for	O
+(	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+=	O
+src	*(*(struct))
+->	O
+bkt_fini	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+next	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+;	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+=	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+next	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+)	O
+;	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+next	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+=	O
+dst	*(*(struct))
+->	O
+bkt_fini	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+dst	*(*(struct))
+->	O
+bkt_fini	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+=	O
+src	*(*(struct))
+->	O
+bkt_fini	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+}	O
+free	(*(void))->(void)
+(	O
+src	*(*(struct))
+)	O
+;	O
+*	O
+psrc	*(*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*`)),*(union(struct`,long double,long,*`)),*(union(struct`,long double,long,*`)),*(union(struct`,long double,long,*`)))))
+=	O
+NULL	O
+;	O
+return	O
+0	int
+;	O
+}	O
+struct	O
+opool_iterator	struct(*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void))))),*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void))))
+{	O
+mu_opool_t	*(struct)
+opool	*(struct)
+;	O
+union	O
+mu_opool_bucket	union(struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long),long double,long,*(void))
+*	O
+cur	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+}	O
+;	O
+static	O
+int	O
+opitr_first	(*(void))->(int)
+(	O
+void	O
+*	O
+owner	*(void)
+)	O
+{	O
+struct	O
+opool_iterator	struct(*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void))))),*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void))))
+*	O
+itr	*(struct)
+=	O
+owner	*(void)
+;	O
+itr	*(struct)
+->	O
+cur	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+=	O
+itr	*(struct)
+->	O
+opool	*(struct)
+->	O
+bkt_head	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+return	O
+0	int
+;	O
+}	O
+static	O
+int	O
+opitr_next	(*(void))->(int)
+(	O
+void	O
+*	O
+owner	*(void)
+)	O
+{	O
+struct	O
+opool_iterator	struct(*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void))))),*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void))))
+*	O
+itr	*(struct)
+=	O
+owner	*(void)
+;	O
+if	O
+(	O
+itr	*(struct)
+->	O
+cur	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+)	O
+{	O
+itr	*(struct)
+->	O
+cur	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+=	O
+itr	*(struct)
+->	O
+cur	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+next	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+;	O
+return	O
+0	int
+;	O
+}	O
+return	O
+EINVAL	int
+;	O
+}	O
+static	O
+int	O
+opitr_getitem	(*(void),*(*(void)),*(*(void)))->(int)
+(	O
+void	O
+*	O
+owner	*(void)
+,	O
+void	O
+*	O
+*	O
+pret	*(*(struct))
+,	O
+const	O
+void	O
+*	O
+*	O
+pkey	*(*(void))
+)	O
+{	O
+struct	O
+opool_iterator	struct(*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void))))),*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void))))
+*	O
+itr	*(struct)
+=	O
+owner	*(void)
+;	O
+if	O
+(	O
+!	O
+itr	*(struct)
+->	O
+cur	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+)	O
+return	O
+MU_ERR_NOENT	O
+;	O
+*	O
+pret	*(*(struct))
+=	O
+itr	*(struct)
+->	O
+cur	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+buf	array(struct(array(long),int,struct(array(long))))
+;	O
+if	O
+(	O
+pkey	*(*(void))
+)	O
+*	O
+(	O
+size_t	long
+*	O
+)	O
+pkey	*(*(void))
+=	O
+itr	*(struct)
+->	O
+cur	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+level	int
+;	O
+return	O
+0	int
+;	O
+}	O
+static	O
+int	O
+opitr_finished_p	(*(void))->(int)
+(	O
+void	O
+*	O
+owner	*(void)
+)	O
+{	O
+struct	O
+opool_iterator	struct(*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void))))),*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void))))
+*	O
+itr	*(struct)
+=	O
+owner	*(void)
+;	O
+return	O
+itr	*(struct)
+->	O
+cur	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+==	O
+NULL	O
+;	O
+}	O
+static	O
+int	O
+opitr_delitem	(*(void),*(void))->(int)
+(	O
+void	O
+*	O
+owner	*(void)
+,	O
+void	O
+*	O
+item	*(void)
+)	O
+{	O
+struct	O
+opool_iterator	struct(*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void))))),*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void))))
+*	O
+itr	*(struct)
+=	O
+owner	*(void)
+;	O
+return	O
+(	O
+itr	*(struct)
+->	O
+cur	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+&&	O
+itr	*(struct)
+->	O
+cur	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+buf	array(struct(array(long),int,struct(array(long))))
+==	O
+item	*(void)
+)	O
+?	O
+MU_ITR_DELITEM_NEXT	int
+:	O
+MU_ITR_DELITEM_NOTHING	int
+;	O
+}	O
+static	O
+int	O
+opitr_destroy	(*(struct),*(void))->(int)
+(	O
+mu_iterator_t	*(struct)
+iterator	*(struct)
+,	O
+void	O
+*	O
+data	*(void)
+)	O
+{	O
+struct	O
+opool_iterator	struct(*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void))))),*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void))))
+*	O
+itr	*(struct)
+=	O
+data	*(void)
+;	O
+if	O
+(	O
+itr	*(struct)
+->	O
+opool	*(struct)
+->	O
+itr_count	long
+==	O
+0	int
+)	O
+{	O
+mu_error	(*(char))->(int)
+(	O
+_	O
+(	O
+"%s: INTERNAL ERROR: zero reference count"	*(char)
+)	O
+,	O
+"opool_destroy"	*(char)
+)	O
+;	O
+}	O
+else	O
+itr	*(struct)
+->	O
+opool	*(struct)
+->	O
+itr_count	long
+--	O
+;	O
+free	(*(void))->(void)
+(	O
+data	*(void)
+)	O
+;	O
+return	O
+0	int
+;	O
+}	O
+static	O
+int	O
+opitr_data_dup	(*(*(void)),*(void))->(int)
+(	O
+void	O
+*	O
+*	O
+ptr	*(*(void))
+,	O
+void	O
+*	O
+owner	*(void)
+)	O
+{	O
+struct	O
+opool_iterator	struct(*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void))))),*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void))))
+*	O
+itr	*(struct)
+=	O
+owner	*(void)
+;	O
+*	O
+ptr	*(*(void))
+=	O
+malloc	(long)->(*(void))
+(	O
+sizeof	O
+(	O
+struct	O
+opool_iterator	struct(*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void))))),*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void))))
+)	O
+)	O
+;	O
+if	O
+(	O
+*	O
+ptr	*(*(void))
+==	O
+NULL	O
+)	O
+return	O
+ENOMEM	int
+;	O
+memcpy	(*(void),*(void),long)->(*(void))
+(	O
+*	O
+ptr	*(*(void))
+,	O
+owner	*(void)
+,	O
+sizeof	O
+(	O
+struct	O
+opool_iterator	struct(*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void))))),*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void))))
+)	O
+)	O
+;	O
+itr	*(struct)
+->	O
+opool	*(struct)
+->	O
+itr_count	long
+++	O
+;	O
+return	O
+0	int
+;	O
+}	O
+static	O
+int	O
+opitr_itrctl	(*(void),enum(int,int,int,int,int,int,int,int,int,int),*(void))->(int)
+(	O
+void	O
+*	O
+owner	*(void)
+,	O
+enum	O
+mu_itrctl_req	enum(int,int,int,int,int,int,int,int,int,int)
+req	enum(int,int,int,int,int,int,int,int,int,int)
+,	O
+void	O
+*	O
+arg	*(char)
+)	O
+{	O
+struct	O
+opool_iterator	struct(*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void))))),*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void))))
+*	O
+itr	*(struct)
+=	O
+owner	*(void)
+;	O
+switch	O
+(	O
+req	enum(int,int,int,int,int,int,int,int,int,int)
+)	O
+{	O
+case	O
+mu_itrctl_count	int
+:	O
+if	O
+(	O
+!	O
+arg	*(char)
+)	O
+return	O
+EINVAL	int
+;	O
+else	O
+{	O
+size_t	long
+n	long
+=	O
+0	int
+;	O
+union	O
+mu_opool_bucket	union(struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long),long double,long,*(void))
+*	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+for	O
+(	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+=	O
+itr	*(struct)
+->	O
+opool	*(struct)
+->	O
+bkt_head	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+=	O
+p	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+->	O
+hdr	struct(*(union(struct(*(union`),*(char),long,long),long double,long,*(void))),*(char),long,long)
+.	O
+next	*(struct(array(struct(array(long),int,struct(array(long)))),*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`)))))
+)	O
+n	long
+++	O
+;	O
+*	O
+(	O
+size_t	long
+*	O
+)	O
+arg	*(char)
+=	O
+n	long
+;	O
+}	O
+break	O
+;	O
+default	O
+:	O
+return	O
+ENOSYS	int
+;	O
+}	O
+return	O
+0	int
+;	O
+}	O
+int	O
+mu_opool_get_iterator	(*(struct),*(*(struct)))->(int)
+(	O
+mu_opool_t	*(struct)
+opool	*(struct)
+,	O
+mu_iterator_t	*(struct)
+*	O
+piterator	*(*(struct))
+)	O
+{	O
+mu_iterator_t	*(struct)
+iterator	*(struct)
+;	O
+int	O
+status	int
+;	O
+struct	O
+opool_iterator	struct(*(struct(int,long,long,*(struct(array(struct(array(long),int,struct(array(long)))),*(struct`))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void))),*(union(struct(*`,*`,long,long),long double,long,*(void))))),*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void))))
+*	O
+itr	*(struct)
+;	O
+if	O
+(	O
+!	O
+opool	*(struct)
+)	O
+return	O
+EINVAL	int
+;	O
+itr	*(struct)
+=	O
+calloc	(long,long)->(*(void))
+(	O
+1	int
+,	O
+sizeof	O
+*	O
+itr	*(struct)
+)	O
+;	O
+if	O
+(	O
+!	O
+itr	*(struct)
+)	O
+return	O
+ENOMEM	int
+;	O
+itr	*(struct)
+->	O
+opool	*(struct)
+=	O
+opool	*(struct)
+;	O
+itr	*(struct)
+->	O
+cur	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+=	O
+opool	*(struct)
+->	O
+bkt_head	*(union(struct(*(union(struct`,long double,long,*`)),*(char),long,long),long double,long,*(void)))
+;	O
+status	int
+=	O
+mu_iterator_create	(*(*(struct)),*(void))->(int)
+(	O
+&	O
+iterator	*(struct)
+,	O
+itr	*(struct)
+)	O
+;	O
+if	O
+(	O
+status	int
+)	O
+{	O
+free	(*(void))->(void)
+(	O
+itr	*(struct)
+)	O
+;	O
+return	O
+status	int
+;	O
+}	O
+mu_iterator_set_first	(*(struct),*((*(void))->(int)))->(int)
+(	O
+iterator	*(struct)
+,	O
+opitr_first	(*(void))->(int)
+)	O
+;	O
+mu_iterator_set_next	(*(struct),*((*(void))->(int)))->(int)
+(	O
+iterator	*(struct)
+,	O
+opitr_next	(*(void))->(int)
+)	O
+;	O
+mu_iterator_set_getitem	(*(struct),*((*(void),*(*(void)),*(*(void)))->(int)))->(int)
+(	O
+iterator	*(struct)
+,	O
+opitr_getitem	(*(void),*(*(void)),*(*(void)))->(int)
+)	O
+;	O
+mu_iterator_set_finished_p	(*(struct),*((*(void))->(int)))->(int)
+(	O
+iterator	*(struct)
+,	O
+opitr_finished_p	(*(void))->(int)
+)	O
+;	O
+mu_iterator_set_delitem	(*(struct),*((*(void),*(void))->(int)))->(int)
+(	O
+iterator	*(struct)
+,	O
+opitr_delitem	(*(void),*(void))->(int)
+)	O
+;	O
+mu_iterator_set_destroy	(*(struct),*((*(struct),*(void))->(int)))->(int)
+(	O
+iterator	*(struct)
+,	O
+opitr_destroy	(*(struct),*(void))->(int)
+)	O
+;	O
+mu_iterator_set_dup	(*(struct),*((*(*(void)),*(void))->(int)))->(int)
+(	O
+iterator	*(struct)
+,	O
+opitr_data_dup	(*(*(void)),*(void))->(int)
+)	O
+;	O
+mu_iterator_set_itrctl	(*(struct),*((*(void),enum(int,int,int,int,int,int,int,int,int,int),*(void))->(int)))->(int)
+(	O
+iterator	*(struct)
+,	O
+opitr_itrctl	(*(void),enum(int,int,int,int,int,int,int,int,int,int),*(void))->(int)
+)	O
+;	O
+opool	*(struct)
+->	O
+itr_count	long
+++	O
+;	O
+*	O
+piterator	*(*(struct))
+=	O
+iterator	*(struct)
+;	O
+return	O
+0	int
+;	O
+}	O

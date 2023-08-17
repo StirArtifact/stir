@@ -1,0 +1,247 @@
+void	O
+flat_blurb	O
+(	O
+FILE	O
+*	O
+)	pointer
+;	pointer
+void	O
+flat_blurb	O
+(	O
+FILE	O
+*	O
+file	pointer
+)	O
+{	O
+fputs	O
+(	O
+"\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+" %         the percentage of the total running time of the\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"time       program used by this function.\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"cumulative a running sum of the number of seconds accounted\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+" seconds   for by this function and those listed above it.\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+" self      the number of seconds accounted for by this\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"seconds    function alone.  This is the major sort for this\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"           listing.\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"calls      the number of times this function was invoked, if\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"           this function is profiled, else blank.\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+" self      the average number of milliseconds spent in this\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"ms/call    function per call, if this function is profiled,\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"	   else blank.\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+" total     the average number of milliseconds spent in this\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"ms/call    function and its descendents per call, if this\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"	   function is profiled, else blank.\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"name       the name of the function.  This is the minor sort\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"           for this listing. The index shows the location of\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"	   the function in the gprof listing. If the index is\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"	   in parenthesis it shows where it would appear in\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"	   the gprof listing if it were to be printed.\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"Copyright (C) 2012-2020 Free Software Foundation, Inc.\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"Copying and distribution of this file, with or without modification,\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"are permitted in any medium without royalty provided the copyright\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"notice and this notice are preserved.\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+}	O

@@ -1,0 +1,14 @@
+void	O
+mu_list_free_item	(*(void))->(void)
+(	O
+void	O
+*	O
+item	*(void)
+)	O
+{	O
+free	(*(void))->(void)
+(	O
+item	*(void)
+)	O
+;	O
+}	O

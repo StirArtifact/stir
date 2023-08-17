@@ -1,0 +1,17 @@
+size_t	long
+mpf_size	O
+(	O
+mpf_srcptr	*(struct(int,int,long,*(long)))
+f	*(struct(int,int,long,*(long)))
+)	O
+__GMP_NOTHROW	O
+{	O
+return	O
+__GMP_ABS	O
+(	O
+f	*(struct(int,int,long,*(long)))
+->	O
+_mp_size	int
+)	O
+;	O
+}	O

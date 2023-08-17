@@ -1,0 +1,252 @@
+ESint32	long
+EDMAPROC	O
+edma_thread_create	(*(long),*((*(void))->(*(void))),*(void))->(long)
+(	O
+ETHREAD	long
+*	O
+et	*(long)
+,	O
+EPROC	*((*(void))->(*(void)))
+func	*((*(void))->(*(void)))
+,	O
+ETHREAD_PARAMS	*(void)
+par	*(void)
+)	O
+{	O
+return	O
+pthread_create	(*(long),*(union(array(char),long)),*((*(void))->(*(void))),*(void))->(int)
+(	O
+et	*(long)
+,	O
+NULL	O
+,	O
+func	*((*(void))->(*(void)))
+,	O
+par	*(void)
+)	O
+;	O
+}	O
+ETHREAD	long
+EDMAPROC	O
+edma_thread_self	()->(long)
+(	O
+)	O
+{	O
+return	O
+pthread_self	()->(long)
+(	O
+)	O
+;	O
+}	O
+ESint32	long
+EDMAPROC	O
+edma_mutex_create	(*(union(struct(int,int,int,int,int,union(struct`,struct`)),array(char),long)))->(long)
+(	O
+EMUTEX	*(union(struct(int,int,int,int,int,union(struct(short,short),struct(*`))),array(char),long))
+emux	*(union(struct(int,int,int,int,int,union(struct(short,short),struct(*`))),array(char),long))
+)	O
+{	O
+return	O
+pthread_mutex_init	(*(union(struct(int,int,int,int,int,union(struct`,struct`)),array(char),long)),*(union(array(char),int)))->(int)
+(	O
+emux	*(union(struct(int,int,int,int,int,union(struct(short,short),struct(*`))),array(char),long))
+,	O
+NULL	O
+)	O
+;	O
+}	O
+ESint32	long
+EDMAPROC	O
+edma_mutex_destroy	(*(union(struct(int,int,int,int,int,union(struct`,struct`)),array(char),long)))->(long)
+(	O
+EMUTEX	*(union(struct(int,int,int,int,int,union(struct(short,short),struct(*`))),array(char),long))
+emux	*(union(struct(int,int,int,int,int,union(struct(short,short),struct(*`))),array(char),long))
+)	O
+{	O
+return	O
+pthread_mutex_destroy	(*(union(struct(int,int,int,int,int,union(struct`,struct`)),array(char),long)))->(int)
+(	O
+emux	*(union(struct(int,int,int,int,int,union(struct(short,short),struct(*`))),array(char),long))
+)	O
+;	O
+}	O
+ESint32	long
+EDMAPROC	O
+edma_mutex_lock	(*(union(struct(int,int,int,int,int,union(struct`,struct`)),array(char),long)))->(long)
+(	O
+EMUTEX	*(union(struct(int,int,int,int,int,union(struct(short,short),struct(*`))),array(char),long))
+emux	*(union(struct(int,int,int,int,int,union(struct(short,short),struct(*`))),array(char),long))
+)	O
+{	O
+return	O
+pthread_mutex_lock	(*(union(struct(int,int,int,int,int,union(struct`,struct`)),array(char),long)))->(int)
+(	O
+emux	*(union(struct(int,int,int,int,int,union(struct(short,short),struct(*`))),array(char),long))
+)	O
+;	O
+}	O
+ESint32	long
+EDMAPROC	O
+edma_mutex_unlock	(*(union(struct(int,int,int,int,int,union(struct`,struct`)),array(char),long)))->(long)
+(	O
+EMUTEX	*(union(struct(int,int,int,int,int,union(struct(short,short),struct(*`))),array(char),long))
+emux	*(union(struct(int,int,int,int,int,union(struct(short,short),struct(*`))),array(char),long))
+)	O
+{	O
+return	O
+pthread_mutex_unlock	(*(union(struct(int,int,int,int,int,union(struct`,struct`)),array(char),long)))->(int)
+(	O
+emux	*(union(struct(int,int,int,int,int,union(struct(short,short),struct(*`))),array(char),long))
+)	O
+;	O
+}	O
+ESint32	long
+EDMAPROC	O
+edma_cond_create	(*(union(struct(union(long long,struct`),union(long long,struct`),array(int),array(int),int,int,array(int)),array(char),long long)))->(long)
+(	O
+ECOND	*(union(struct(union(long long,struct(int,int)),union(long long,struct(int,int)),array(int),array(int),int,int,array(int)),array(char),long long))
+econd	*(union(struct(union(long long,struct(int,int)),union(long long,struct(int,int)),array(int),array(int),int,int,array(int)),array(char),long long))
+)	O
+{	O
+return	O
+pthread_cond_init	(*(union(struct(union(long long,struct`),union(long long,struct`),array(int),array(int),int,int,array(int)),array(char),long long)),*(union(array(char),int)))->(int)
+(	O
+econd	*(union(struct(union(long long,struct(int,int)),union(long long,struct(int,int)),array(int),array(int),int,int,array(int)),array(char),long long))
+,	O
+NULL	O
+)	O
+;	O
+}	O
+ESint32	long
+EDMAPROC	O
+edma_cond_destroy	(*(union(struct(union(long long,struct`),union(long long,struct`),array(int),array(int),int,int,array(int)),array(char),long long)))->(long)
+(	O
+ECOND	*(union(struct(union(long long,struct(int,int)),union(long long,struct(int,int)),array(int),array(int),int,int,array(int)),array(char),long long))
+econd	*(union(struct(union(long long,struct(int,int)),union(long long,struct(int,int)),array(int),array(int),int,int,array(int)),array(char),long long))
+)	O
+{	O
+return	O
+pthread_cond_destroy	(*(union(struct(union(long long,struct`),union(long long,struct`),array(int),array(int),int,int,array(int)),array(char),long long)))->(int)
+(	O
+econd	*(union(struct(union(long long,struct(int,int)),union(long long,struct(int,int)),array(int),array(int),int,int,array(int)),array(char),long long))
+)	O
+;	O
+}	O
+ESint32	long
+EDMAPROC	O
+edma_cond_signal	(*(union(struct(union(long long,struct`),union(long long,struct`),array(int),array(int),int,int,array(int)),array(char),long long)))->(long)
+(	O
+ECOND	*(union(struct(union(long long,struct(int,int)),union(long long,struct(int,int)),array(int),array(int),int,int,array(int)),array(char),long long))
+econd	*(union(struct(union(long long,struct(int,int)),union(long long,struct(int,int)),array(int),array(int),int,int,array(int)),array(char),long long))
+)	O
+{	O
+return	O
+pthread_cond_signal	(*(union(struct(union(long long,struct`),union(long long,struct`),array(int),array(int),int,int,array(int)),array(char),long long)))->(int)
+(	O
+econd	*(union(struct(union(long long,struct(int,int)),union(long long,struct(int,int)),array(int),array(int),int,int,array(int)),array(char),long long))
+)	O
+;	O
+}	O
+ESint32	long
+EDMAPROC	O
+edma_cond_broadcast	(*(union(struct(union(long long,struct`),union(long long,struct`),array(int),array(int),int,int,array(int)),array(char),long long)))->(long)
+(	O
+ECOND	*(union(struct(union(long long,struct(int,int)),union(long long,struct(int,int)),array(int),array(int),int,int,array(int)),array(char),long long))
+econd	*(union(struct(union(long long,struct(int,int)),union(long long,struct(int,int)),array(int),array(int),int,int,array(int)),array(char),long long))
+)	O
+{	O
+return	O
+pthread_cond_broadcast	(*(union(struct(union(long long,struct`),union(long long,struct`),array(int),array(int),int,int,array(int)),array(char),long long)))->(int)
+(	O
+econd	*(union(struct(union(long long,struct(int,int)),union(long long,struct(int,int)),array(int),array(int),int,int,array(int)),array(char),long long))
+)	O
+;	O
+}	O
+ESint32	long
+EDMAPROC	O
+edma_cond_wait	(*(union(struct(union(long long,struct`),union(long long,struct`),array(int),array(int),int,int,array(int)),array(char),long long)),*(union(struct(int,int,int,int,int,union(struct`,struct`)),array(char),long)))->(long)
+(	O
+ECOND	*(union(struct(union(long long,struct(int,int)),union(long long,struct(int,int)),array(int),array(int),int,int,array(int)),array(char),long long))
+econd	*(union(struct(union(long long,struct(int,int)),union(long long,struct(int,int)),array(int),array(int),int,int,array(int)),array(char),long long))
+,	O
+EMUTEX	*(union(struct(int,int,int,int,int,union(struct(short,short),struct(*`))),array(char),long))
+emux	*(union(struct(int,int,int,int,int,union(struct(short,short),struct(*`))),array(char),long))
+)	O
+{	O
+return	O
+pthread_cond_wait	(*(union(struct(union(long long,struct`),union(long long,struct`),array(int),array(int),int,int,array(int)),array(char),long long)),*(union(struct(int,int,int,int,int,union(struct`,struct`)),array(char),long)))->(int)
+(	O
+econd	*(union(struct(union(long long,struct(int,int)),union(long long,struct(int,int)),array(int),array(int),int,int,array(int)),array(char),long long))
+,	O
+emux	*(union(struct(int,int,int,int,int,union(struct(short,short),struct(*`))),array(char),long))
+)	O
+;	O
+}	O
+ESint32	long
+EDMAPROC	O
+edma_thread_key_create	(*(int))->(long)
+(	O
+ETKEY	int
+*	O
+key	*(int)
+)	O
+{	O
+return	O
+pthread_key_create	(*(int),*((*(void))->(void)))->(int)
+(	O
+key	*(int)
+,	O
+NULL	O
+)	O
+;	O
+}	O
+ESint32	long
+EDMAPROC	O
+edma_thread_key_destroy	(int)->(long)
+(	O
+ETKEY	int
+key	*(int)
+)	O
+{	O
+return	O
+pthread_key_delete	(int)->(int)
+(	O
+key	*(int)
+)	O
+;	O
+}	O
+ESint32	long
+EDMAPROC	O
+edma_tsd_set_data	(int,*(void))->(long)
+(	O
+ETKEY	int
+key	*(int)
+,	O
+EPVoid	*(void)
+dat	*(void)
+)	O
+{	O
+return	O
+pthread_setspecific	(int,*(void))->(int)
+(	O
+key	*(int)
+,	O
+dat	*(void)
+)	O
+;	O
+}	O
+EPVoid	*(void)
+EDMAPROC	O
+edma_tsd_get_data	(int)->(*(void))
+(	O
+ETKEY	int
+key	*(int)
+)	O
+{	O
+return	O
+pthread_getspecific	(int)->(*(void))
+(	O
+key	*(int)
+)	O
+;	O
+}	O

@@ -1,0 +1,8 @@
+char	O
+__gmp_rands_initialized	O
+=	O
+0	O
+;	O
+gmp_randstate_t	O
+__gmp_rands	O
+;	O

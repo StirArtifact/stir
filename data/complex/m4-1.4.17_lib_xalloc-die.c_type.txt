@@ -1,0 +1,25 @@
+void	O
+xalloc_die	()->(void)
+(	O
+void	O
+)	O
+{	O
+error	(int,int,*(char))->(void)
+(	O
+exit_failure	int
+,	O
+0	int
+,	O
+"%s"	*(char)
+,	O
+_	O
+(	O
+"memory exhausted"	*(char)
+)	O
+)	O
+;	O
+abort	()->(void)
+(	O
+)	O
+;	O
+}	O

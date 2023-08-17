@@ -1,0 +1,21 @@
+const	O
+char	O
+*	O
+mversion	pointer
+=	O
+"4.0.23"	pointer
+;	O
+const	O
+char	O
+*	O
+mdate	pointer
+=	O
+"December 9th, 2018"	pointer
+;	O
+const	O
+char	O
+*	O
+mformat_banner	pointer
+=	O
+"MTOO4023"	struct
+;	O

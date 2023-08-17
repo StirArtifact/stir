@@ -1,0 +1,15 @@
+struct	O
+options	struct(bool,bool,int,int,bool,bool,bool,bool,bool,bool,struct(long,long),struct(long,long),bool,int,long,enum(int,int,int),*((*(char),*(struct(long,long,long,int,int,int,int,long,long,long,long,struct(long,long),struct(long,long),struct(long,long),array(long))))->(int)),bool,int,*((int,*(char),*(*(char)))->(int)),short,enum(int,int,int,int,int,int,int,int,int,int,int))
+options	struct(bool,bool,int,int,bool,bool,bool,bool,bool,bool,struct(long,long),struct(long,long),bool,int,long,enum(int,int,int),*((*(char),*(struct(long,long,long,int,int,int,int,long,long,long,long,struct(long,long),struct(long,long),struct(long,long),array(long))))->(int)),bool,int,*((int,*(char),*(*(char)))->(int)),short,enum(int,int,int,int,int,int,int,int,int,int,int))
+;	O
+struct	O
+state	*(int)
+state	*(int)
+;	O
+struct	O
+saved_cwd	struct(int,*(char))
+*	O
+initial_wd	*(struct(int,*(char)))
+=	O
+NULL	O
+;	O

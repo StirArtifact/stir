@@ -1,0 +1,392 @@
+static	O
+const	O
+char	O
+*	O
+const	O
+invalid_hundred	array
+[	O
+]	O
+=	O
+{	O
+NULL	O
+}	O
+;	O
+static	O
+const	O
+char	O
+*	O
+const	O
+one_hundred	array
+[	O
+]	O
+=	O
+{	O
+"Continue"	*
+,	O
+"Switching Protocols"	*
+,	O
+"Processing"	*
+,	O
+"Early Hints"	*
+}	O
+;	O
+static	O
+const	O
+char	O
+*	O
+const	O
+two_hundred	array
+[	O
+]	O
+=	O
+{	O
+"OK"	*
+,	O
+"Created"	*
+,	O
+"Accepted"	*
+,	O
+"Non-Authoritative Information"	*
+,	O
+"No Content"	*
+,	O
+"Reset Content"	*
+,	O
+"Partial Content"	*
+,	O
+"Multi-Status"	*
+,	O
+"Already Reported"	*
+,	O
+"Unknown"	*
+,	O
+"Unknown"	*
+,	O
+"Unknown"	*
+,	O
+"Unknown"	*
+,	O
+"Unknown"	*
+,	O
+"Unknown"	*
+,	O
+"Unknown"	*
+,	O
+"Unknown"	*
+,	O
+"Unknown"	*
+,	O
+"Unknown"	*
+,	O
+"Unknown"	*
+,	O
+"Unknown"	*
+,	O
+"Unknown"	*
+,	O
+"Unknown"	*
+,	O
+"Unknown"	*
+,	O
+"Unknown"	*
+,	O
+"Unknown"	*
+,	O
+"IM Used"	*
+}	O
+;	O
+static	O
+const	O
+char	O
+*	O
+const	O
+three_hundred	array
+[	O
+]	O
+=	O
+{	O
+"Multiple Choices"	*
+,	O
+"Moved Permanently"	*
+,	O
+"Found"	*
+,	O
+"See Other"	*
+,	O
+"Not Modified"	*
+,	O
+"Use Proxy"	*
+,	O
+"Switch Proxy"	*
+,	O
+"Temporary Redirect"	*
+,	O
+"Permanent Redirect"	*
+}	O
+;	O
+static	O
+const	O
+char	O
+*	O
+const	O
+four_hundred	array
+[	O
+]	O
+=	O
+{	O
+"Bad Request"	*
+,	O
+"Unauthorized"	*
+,	O
+"Payment Required"	*
+,	O
+"Forbidden"	*
+,	O
+"Not Found"	*
+,	O
+"Method Not Allowed"	*
+,	O
+"Not Acceptable"	*
+,	O
+"Proxy Authentication Required"	*
+,	O
+"Request Timeout"	*
+,	O
+"Conflict"	*
+,	O
+"Gone"	*
+,	O
+"Length Required"	*
+,	O
+"Precondition Failed"	*
+,	O
+"Payload Too Large"	*
+,	O
+"URI Too Long"	*
+,	O
+"Unsupported Media Type"	*
+,	O
+"Range Not Satisfiable"	*
+,	O
+"Expectation Failed"	*
+,	O
+"Unknown"	*
+,	O
+"Unknown"	*
+,	O
+"Unknown"	*
+,	O
+"Misdirected Request"	*
+,	O
+"Unprocessable Entity"	*
+,	O
+"Locked"	*
+,	O
+"Failed Dependency"	*
+,	O
+"Too Early"	*
+,	O
+"Upgrade Required"	*
+,	O
+"Unknown"	*
+,	O
+"Precondition Required"	*
+,	O
+"Too Many Requests"	*
+,	O
+"Unknown"	*
+,	O
+"Request Header Fields Too Large"	*
+,	O
+"Unknown"	*
+,	O
+"Unknown"	*
+,	O
+"Unknown"	*
+,	O
+"Unknown"	*
+,	O
+"Unknown"	*
+,	O
+"Unknown"	*
+,	O
+"Unknown"	*
+,	O
+"Unknown"	*
+,	O
+"Unknown"	*
+,	O
+"Unknown"	*
+,	O
+"Unknown"	*
+,	O
+"Unknown"	*
+,	O
+"Unknown"	*
+,	O
+"Unknown"	*
+,	O
+"Unknown"	*
+,	O
+"Unknown"	*
+,	O
+"Unknown"	*
+,	O
+"Reply With"	*
+,	O
+"Blocked by Windows Parental Controls"	*
+,	O
+"Unavailable For Legal Reasons"	*
+}	O
+;	O
+static	O
+const	O
+char	O
+*	O
+const	O
+five_hundred	array
+[	O
+]	O
+=	O
+{	O
+"Internal Server Error"	*
+,	O
+"Not Implemented"	*
+,	O
+"Bad Gateway"	*
+,	O
+"Service Unavailable"	*
+,	O
+"Gateway Timeout"	*
+,	O
+"HTTP Version Not Supported"	*
+,	O
+"Variant Also Negotiates"	*
+,	O
+"Insufficient Storage"	*
+,	O
+"Loop Detected"	*
+,	O
+"Bandwidth Limit Exceeded"	*
+,	O
+"Not Extended"	*
+,	O
+"Network Authentication Required"	*
+}	O
+;	O
+struct	O
+MHD_Reason_Block	struct
+{	O
+size_t	long
+max	long
+;	O
+const	O
+char	O
+*	O
+const	O
+*	O
+data	*
+;	O
+}	O
+;	O
+static	O
+const	O
+struct	O
+MHD_Reason_Block	struct
+reasons	array
+[	O
+]	O
+=	O
+{	O
+BLOCK	O
+(	O
+invalid_hundred	*
+)	O
+,	O
+BLOCK	O
+(	O
+one_hundred	*
+)	O
+,	O
+BLOCK	O
+(	O
+two_hundred	int
+)	O
+,	O
+BLOCK	O
+(	O
+three_hundred	int
+)	O
+,	O
+BLOCK	O
+(	O
+four_hundred	int
+)	O
+,	O
+BLOCK	O
+(	O
+five_hundred	*
+)	O
+,	O
+}	O
+;	O
+const	O
+char	O
+*	O
+MHD_get_reason_phrase_for	function
+(	O
+unsigned	O
+int	O
+code	int
+)	O
+{	O
+if	O
+(	O
+(	O
+code	int
+>=	O
+100	int
+)	O
+&&	O
+(	O
+code	int
+<	O
+600	int
+)	O
+&&	O
+(	O
+reasons	array
+[	O
+code	int
+/	O
+100	int
+]	O
+.	O
+max	int
+>	O
+(	O
+code	int
+%	O
+100	int
+)	O
+)	O
+)	O
+return	O
+reasons	array
+[	O
+code	int
+/	O
+100	int
+]	O
+.	O
+data	*
+[	O
+code	int
+%	O
+100	int
+]	O
+;	O
+return	O
+"Unknown"	*
+;	O
+}	O

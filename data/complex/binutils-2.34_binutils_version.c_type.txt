@@ -1,0 +1,40 @@
+void	O
+print_version	O
+(	O
+const	O
+char	O
+*	O
+name	*(char)
+)	O
+{	O
+printf	(*(char))->(int)
+(	O
+"GNU %s %s\n"	*(char)
+,	O
+name	*(char)
+,	O
+BFD_VERSION_STRING	O
+)	O
+;	O
+printf	(*(char))->(int)
+(	O
+_	O
+(	O
+"Copyright (C) 2020 Free Software Foundation, Inc.\n"	*(char)
+)	O
+)	O
+;	O
+printf	(*(char))->(int)
+(	O
+_	O
+(	O
+"This program is free software; you may redistribute it under the terms of\nthe GNU General Public License version 3 or (at your option) any later version.\nThis program has absolutely no warranty.\n"	*(char)
+)	O
+)	O
+;	O
+exit	(int)->(void)
+(	O
+0	int
+)	O
+;	O
+}	O

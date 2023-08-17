@@ -1,0 +1,7 @@
+const	O
+char	O
+*	O
+gsl_version	*(char)
+=	O
+GSL_VERSION	*(char)
+;	O

@@ -1,0 +1,5 @@
+int	O
+libsigsegv_version	int
+=	O
+LIBSIGSEGV_VERSION	int
+;	O

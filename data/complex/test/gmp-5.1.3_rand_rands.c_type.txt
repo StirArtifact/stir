@@ -1,0 +1,8 @@
+char	O
+__gmp_rands_initialized	char
+=	O
+0	int
+;	O
+gmp_randstate_t	array(struct(array(struct(int,int,*(long))),enum(int,int),union(*(void))))
+__gmp_rands	array(struct(array(struct(int,int,*(long))),enum(int,int),union(*(void))))
+;	O

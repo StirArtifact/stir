@@ -1,0 +1,232 @@
+const	O
+char	O
+*	O
+gsl_strerror	function
+(	O
+const	O
+int	O
+gsl_errno	int
+)	O
+{	O
+switch	O
+(	O
+gsl_errno	int
+)	O
+{	O
+case	O
+GSL_SUCCESS	int
+:	O
+return	O
+"success"	pointer
+;	O
+case	O
+GSL_FAILURE	int
+:	O
+return	O
+"failure"	pointer
+;	O
+case	O
+GSL_CONTINUE	int
+:	O
+return	O
+"the iteration has not converged yet"	pointer
+;	O
+case	O
+GSL_EDOM	int
+:	O
+return	O
+"input domain error"	pointer
+;	O
+case	O
+GSL_ERANGE	int
+:	O
+return	O
+"output range error"	pointer
+;	O
+case	O
+GSL_EFAULT	int
+:	O
+return	O
+"invalid pointer"	pointer
+;	O
+case	O
+GSL_EINVAL	int
+:	O
+return	O
+"invalid argument supplied by user"	pointer
+;	O
+case	O
+GSL_EFAILED	int
+:	O
+return	O
+"generic failure"	pointer
+;	O
+case	O
+GSL_EFACTOR	int
+:	O
+return	O
+"factorization failed"	pointer
+;	O
+case	O
+GSL_ESANITY	int
+:	O
+return	O
+"sanity check failed - shouldn't happen"	pointer
+;	O
+case	O
+GSL_ENOMEM	int
+:	O
+return	O
+"malloc failed"	pointer
+;	O
+case	O
+GSL_EBADFUNC	int
+:	O
+return	O
+"problem with user-supplied function"	pointer
+;	O
+case	O
+GSL_ERUNAWAY	int
+:	O
+return	O
+"iterative process is out of control"	pointer
+;	O
+case	O
+GSL_EMAXITER	int
+:	O
+return	O
+"exceeded max number of iterations"	pointer
+;	O
+case	O
+GSL_EZERODIV	int
+:	O
+return	O
+"tried to divide by zero"	pointer
+;	O
+case	O
+GSL_EBADTOL	int
+:	O
+return	O
+"specified tolerance is invalid or theoretically unattainable"	pointer
+;	O
+case	O
+GSL_ETOL	int
+:	O
+return	O
+"failed to reach the specified tolerance"	pointer
+;	O
+case	O
+GSL_EUNDRFLW	int
+:	O
+return	O
+"underflow"	pointer
+;	O
+case	O
+GSL_EOVRFLW	int
+:	O
+return	O
+"overflow"	pointer
+;	O
+case	O
+GSL_ELOSS	int
+:	O
+return	O
+"loss of accuracy"	pointer
+;	O
+case	O
+GSL_EROUND	int
+:	O
+return	O
+"roundoff error"	pointer
+;	O
+case	O
+GSL_EBADLEN	int
+:	O
+return	O
+"matrix/vector sizes are not conformant"	pointer
+;	O
+case	O
+GSL_ENOTSQR	int
+:	O
+return	O
+"matrix not square"	pointer
+;	O
+case	O
+GSL_ESING	int
+:	O
+return	O
+"singularity or extremely bad function behavior detected"	pointer
+;	O
+case	O
+GSL_EDIVERGE	int
+:	O
+return	O
+"integral or series is divergent"	pointer
+;	O
+case	O
+GSL_EUNSUP	int
+:	O
+return	O
+"the required feature is not supported by this hardware platform"	pointer
+;	O
+case	O
+GSL_EUNIMPL	int
+:	O
+return	O
+"the requested feature is not (yet) implemented"	pointer
+;	O
+case	O
+GSL_ECACHE	int
+:	O
+return	O
+"cache limit exceeded"	pointer
+;	O
+case	O
+GSL_ETABLE	int
+:	O
+return	O
+"table limit exceeded"	pointer
+;	O
+case	O
+GSL_ENOPROG	int
+:	O
+return	O
+"iteration is not making progress towards solution"	pointer
+;	O
+case	O
+GSL_ENOPROGJ	int
+:	O
+return	O
+"jacobian evaluations are not improving the solution"	pointer
+;	O
+case	O
+GSL_ETOLF	int
+:	O
+return	O
+"cannot reach the specified tolerance in F"	pointer
+;	O
+case	O
+GSL_ETOLX	int
+:	O
+return	O
+"cannot reach the specified tolerance in X"	pointer
+;	O
+case	O
+GSL_ETOLG	int
+:	O
+return	O
+"cannot reach the specified tolerance in gradient"	pointer
+;	O
+case	O
+GSL_EOF	int
+:	O
+return	O
+"end of file"	pointer
+;	O
+default	O
+:	O
+return	O
+"unknown error code"	pointer
+;	O
+}	O
+}	O

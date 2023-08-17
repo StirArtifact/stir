@@ -1,0 +1,862 @@
+typedef	O
+struct	O
+{	O
+EPChar	*(char)
+FileName	*(char)
+;	O
+EUint32	long
+h	long
+;	O
+}	O
+DtAUTOTOOLS_PROJECT	struct(*(char),long)
+;	O
+ESint32	int
+EDMAPROC	O
+AUTOTOOLS_PROJECTbuildU32Z	(int,int,*(char))->(int)
+(	O
+OBJID	int
+IdObj	int
+,	O
+OBJID	int
+id	int
+,	O
+EPChar	*(char)
+filename	*(char)
+)	O
+{	O
+DtAUTOTOOLS_PROJECT	struct(*(char),long)
+*	O
+m	*(struct(*(char),long))
+;	O
+EChar	char
+prj_name	array(char)
+[	O
+80	int
+]	O
+,	O
+ClassName	*(char)
+[	O
+80	int
+]	O
+,	O
+ModuleName	array(char)
+[	O
+80	int
+]	O
+;	O
+EChar	char
+name_space	array(char)
+[	O
+256	int
+]	O
+;	O
+EChar	char
+src_dir	array(char)
+[	O
+128	int
+]	O
+,	O
+aux	array(char)
+[	O
+128	int
+]	O
+;	O
+FILE	struct
+*	O
+f	*(char)
+;	O
+OBJID	int
+builder	int
+;	O
+ESint32	int
+major_version	int
+,	O
+minor_version	int
+;	O
+EChar	char
+ver_string	array(char)
+[	O
+20	int
+]	O
+;	O
+m	*(struct(*(char),long))
+=	O
+(	O
+DtAUTOTOOLS_PROJECT	struct(*(char),long)
+*	O
+)	O
+edma_get_data_ref	(int)->(*(void))
+(	O
+IdObj	int
+)	O
+;	O
+major_version	int
+=	O
+minor_version	int
+=	O
+0	int
+;	O
+edma_rprop3	(int,*(char))->(int)
+(	O
+id	int
+,	O
+"ClassName"	*(char)
+,	O
+ClassName	*(char)
+)	O
+;	O
+edma_rprop3	(int,*(char))->(int)
+(	O
+id	int
+,	O
+"NameSpace"	*(char)
+,	O
+name_space	array(char)
+)	O
+;	O
+edma_rprop3	(int,*(char))->(int)
+(	O
+id	int
+,	O
+"MajorVersion"	*(char)
+,	O
+&	O
+major_version	int
+)	O
+;	O
+edma_rprop3	(int,*(char))->(int)
+(	O
+id	int
+,	O
+"MinorVersion"	*(char)
+,	O
+&	O
+minor_version	int
+)	O
+;	O
+snprintf	(*(char),int,*(char))->(int)
+(	O
+ver_string	array(char)
+,	O
+20	int
+,	O
+"_%ld_%ld"	*(char)
+,	O
+major_version	int
+,	O
+minor_version	int
+)	O
+;	O
+sprintf	(*(char),*(char))->(int)
+(	O
+prj_name	array(char)
+,	O
+"%s_v%s"	*(char)
+,	O
+ClassName	*(char)
+,	O
+ver_string	array(char)
+)	O
+;	O
+edma_printf_obj	(int,*(char))->(long)
+(	O
+IdObj	int
+,	O
+"+ Working on dir : %s for class %s"	*(char)
+,	O
+prj_name	array(char)
+,	O
+ClassName	*(char)
+)	O
+;	O
+if	O
+(	O
+(	O
+ESint32	int
+)	O
+(	O
+edma_smet3	(*(char),*(char))->(*(void))
+(	O
+"FILESYSTEM"	*(char)
+,	O
+"CreateDirectory"	*(char)
+,	O
+prj_name	array(char)
+)	O
+)	O
+==	O
+-	O
+1	int
+)	O
+{	O
+edma_printf_obj	(int,*(char))->(long)
+(	O
+IdObj	int
+,	O
+"[ERROR] Can't create directory %s"	*(char)
+,	O
+prj_name	array(char)
+)	O
+;	O
+return	O
+-	O
+1	int
+;	O
+}	O
+strcpy	(*(char),*(char))->(*(char))
+(	O
+src_dir	array(char)
+,	O
+prj_name	array(char)
+)	O
+;	O
+strcat	(*(char),*(char))->(*(char))
+(	O
+src_dir	array(char)
+,	O
+"/src"	*(char)
+)	O
+;	O
+if	O
+(	O
+(	O
+ESint32	int
+)	O
+(	O
+edma_smet3	(*(char),*(char))->(*(void))
+(	O
+"FILESYSTEM"	*(char)
+,	O
+"CreateDirectory"	*(char)
+,	O
+src_dir	array(char)
+)	O
+)	O
+==	O
+-	O
+1	int
+)	O
+{	O
+edma_printf_obj	(int,*(char))->(long)
+(	O
+IdObj	int
+,	O
+"[ERROR] Can't create directory %s"	*(char)
+,	O
+src_dir	array(char)
+)	O
+;	O
+return	O
+-	O
+1	int
+;	O
+}	O
+sprintf	(*(char),*(char))->(int)
+(	O
+aux	array(char)
+,	O
+"%s/configure.in"	*(char)
+,	O
+prj_name	array(char)
+)	O
+;	O
+edma_printf_obj	(int,*(char))->(long)
+(	O
+IdObj	int
+,	O
+"Writing file: %s for project: %s"	*(char)
+,	O
+aux	array(char)
+,	O
+prj_name	array(char)
+)	O
+;	O
+if	O
+(	O
+(	O
+f	*(char)
+=	O
+fopen	(*(char),*(char))->(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),int,int,long,short,char,array(char),*(void),long long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),*(void),int,int,array(char))))
+(	O
+aux	array(char)
+,	O
+"wt"	*(char)
+)	O
+)	O
+==	O
+NULL	O
+)	O
+{	O
+edma_printf_obj	(int,*(char))->(long)
+(	O
+IdObj	int
+,	O
+"Can't write configure.in"	*(char)
+)	O
+;	O
+return	O
+-	O
+1	int
+;	O
+}	O
+fprintf	(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),int,int,long,short,char,array(char),*(void),long long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),*(void),int,int,array(char))),*(char))->(int)
+(	O
+f	*(char)
+,	O
+"dnl\n"	*(char)
+"dnl   Copyright (C) YEAR\n"	*(char)
+"dnl             by AUTHOR\n"	*(char)
+"dnl\n"	*(char)
+"dnl   This program is free software: you can redistribute it and/or modify\n"	*(char)
+"dnl   it under the terms of the GNU General Public License as published by\n"	*(char)
+"dnl   the Free Software Foundation, either version 3 of the License, or\n"	*(char)
+"dnl   (at your option) any later version.\n"	*(char)
+"dnl\n"	*(char)
+"dnl   This program is distributed in the hope that it will be useful,\n"	*(char)
+"dnl   but WITHOUT ANY WARRANTY; without even the implied warranty of\n"	*(char)
+"dnl   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"	*(char)
+"dnl   GNU General Public License for more details.\n"	*(char)
+"dnl\n"	*(char)
+"dnl   You should have received a copy of the GNU General Public License\n"	*(char)
+"dnl   along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"	*(char)
+"dnl\n"	*(char)
+)	O
+;	O
+fprintf	(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),int,int,long,short,char,array(char),*(void),long long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),*(void),int,int,array(char))),*(char))->(int)
+(	O
+f	*(char)
+,	O
+"\nAC_INIT(src/%s%s_imp.c)"	*(char)
+,	O
+ClassName	*(char)
+,	O
+ver_string	array(char)
+)	O
+;	O
+fprintf	(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),int,int,long,short,char,array(char),*(void),long long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),*(void),int,int,array(char))),*(char))->(int)
+(	O
+f	*(char)
+,	O
+"\n\nAC_CONFIG_AUX_DIR(config)\n"	*(char)
+)	O
+;	O
+fprintf	(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),int,int,long,short,char,array(char),*(void),long long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),*(void),int,int,array(char))),*(char))->(int)
+(	O
+f	*(char)
+,	O
+"\nAM_INIT_AUTOMAKE(EDMA_CLASS_%s,%ld.%ld.0)\n"	*(char)
+,	O
+ClassName	*(char)
+,	O
+major_version	int
+,	O
+minor_version	int
+)	O
+;	O
+fprintf	(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),int,int,long,short,char,array(char),*(void),long long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),*(void),int,int,array(char))),*(char))->(int)
+(	O
+f	*(char)
+,	O
+"\nAC_PREFIX_DEFAULT(/usr/local)"	*(char)
+"\ndnl Checks for programs."	*(char)
+"\nAC_PROG_CXX"	*(char)
+"\nAC_PROG_AWK"	*(char)
+"\nAC_PROG_CC"	*(char)
+"\nAC_PROG_CPP"	*(char)
+"\nAC_PROG_INSTALL"	*(char)
+"\nAC_PROG_MAKE_SET"	*(char)
+"\nAC_PROG_LN_S"	*(char)
+"\nAC_LIBTOOL_DLOPEN"	*(char)
+"\nAC_DISABLE_STATIC"	*(char)
+"\nAM_PROG_LIBTOOL"	*(char)
+"\n"	*(char)
+"\ndnl Checks for libraries."	*(char)
+"\nAC_CHECK_LIB(dl,main)"	*(char)
+"\nAC_CHECK_LIB(EDMA, main)"	*(char)
+"\n"	*(char)
+"\ndnl How to check for our programs"	*(char)
+"\ndnl Be sure to not left any space between mactro and parenthesis"	*(char)
+"\nAC_CHECK_PROG(EDMACONFIG, edma-config, yes, no, $PATH)"	*(char)
+"\nif test ${EDMACONFIG} = no; then"	*(char)
+"\n	AC_MSG_WARN([---- Can't find edma-config                        ---])"	*(char)
+"\n	AC_MSG_WARN([---- Be sure it is installed and it's in your path ---])"	*(char)
+"\n	AC_MSG_ERROR([--- Aborting. edma-config needed. -------------------])"	*(char)
+"\nfi"	*(char)
+"\n"	*(char)
+"\ndnl Checks for header files."	*(char)
+"\nAC_C_CONST"	*(char)
+"\nAC_HEADER_STDC"	*(char)
+"\n"	*(char)
+"\ndnl Checks for typedefs, structures, and compiler characteristics."	*(char)
+"\n"	*(char)
+"\ndnl Checks for library functions."	*(char)
+"\ndnl AC_CHECK_FUNCS(strstr)"	*(char)
+"\nAC_MSG_RESULT(--- Building for $build_cpu in a $build_os)"	*(char)
+"\ncase \"$build_os\" in"	*(char)
+"\n	linux*)"	*(char)
+"\n		CFLAGS=\"-DLINUX \""	*(char)
+"\n		;;"	*(char)
+"\n"	*(char)
+"\n	*)"	*(char)
+"\n		AC_MSG_WARN([Unknow target OS. Build could fail])"	*(char)
+"\n	;;"	*(char)
+"\n"	*(char)
+"\nesac"	*(char)
+"\nif test ${CC} = gcc; then"	*(char)
+"\n	CFLAGS=\"$CFLAGS -DGCC\""	*(char)
+"\nfi"	*(char)
+"\n"	*(char)
+"\ndnl Test prefix directory"	*(char)
+"\nif test \"${prefix}\" = NONE; then"	*(char)
+"\n	AC_MSG_RESULT([prefix not defined... using default_prefix])"	*(char)
+"\n	mi_prefix=${ac_default_prefix}"	*(char)
+"\nelse"	*(char)
+"\n	mi_prefix=${prefix}"	*(char)
+"\nfi"	*(char)
+"\n"	*(char)
+"\nCFLAGS=\"$CFLAGS -c -fPIC -I ${mi_prefix}/include\""	*(char)
+"\n"	*(char)
+"\nAC_MSG_RESULT([--- Mi CFLAGS = ${CFLAGS} ---])"	*(char)
+"\n"	*(char)
+"\nAC_OUTPUT(Makefile src/Makefile)"	*(char)
+""	*(char)
+)	O
+;	O
+fclose	(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),int,int,long,short,char,array(char),*(void),long long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),*(void),int,int,array(char))))->(int)
+(	O
+f	*(char)
+)	O
+;	O
+sprintf	(*(char),*(char))->(int)
+(	O
+aux	array(char)
+,	O
+"%s/Makefile.am"	*(char)
+,	O
+prj_name	array(char)
+)	O
+;	O
+edma_printf_obj	(int,*(char))->(long)
+(	O
+IdObj	int
+,	O
+"+ Creating %s file"	*(char)
+,	O
+aux	array(char)
+)	O
+;	O
+if	O
+(	O
+(	O
+f	*(char)
+=	O
+fopen	(*(char),*(char))->(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),int,int,long,short,char,array(char),*(void),long long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),*(void),int,int,array(char))))
+(	O
+aux	array(char)
+,	O
+"wt"	*(char)
+)	O
+)	O
+==	O
+NULL	O
+)	O
+{	O
+edma_printf_obj	(int,*(char))->(long)
+(	O
+IdObj	int
+,	O
+"Can't write Makefile.am"	*(char)
+)	O
+;	O
+return	O
+-	O
+1	int
+;	O
+}	O
+fprintf	(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),int,int,long,short,char,array(char),*(void),long long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),*(void),int,int,array(char))),*(char))->(int)
+(	O
+f	*(char)
+,	O
+"#\n"	*(char)
+"#   Copyright (C) YEAR\n"	*(char)
+"#             by Author\n"	*(char)
+"#\n"	*(char)
+"#   This program is free software: you can redistribute it and/or modify\n"	*(char)
+"#   it under the terms of the GNU General Public License as published by\n"	*(char)
+"#   the Free Software Foundation, either version 3 of the License, or\n"	*(char)
+"#   (at your option) any later version.\n"	*(char)
+"#\n"	*(char)
+"#   This program is distributed in the hope that it will be useful,\n"	*(char)
+"#   but WITHOUT ANY WARRANTY; without even the implied warranty of\n"	*(char)
+"#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"	*(char)
+"#   GNU General Public License for more details.\n"	*(char)
+"#\n"	*(char)
+"#   You should have received a copy of the GNU General Public License\n"	*(char)
+"#   along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"	*(char)
+"#\n"	*(char)
+)	O
+;	O
+fprintf	(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),int,int,long,short,char,array(char),*(void),long long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),*(void),int,int,array(char))),*(char))->(int)
+(	O
+f	*(char)
+,	O
+"SUBDIRS = src"	*(char)
+"\n"	*(char)
+"\nEXTRA_DIST= config"	*(char)
+"\n## Deleted these files when make maintainer-clean"	*(char)
+"\nMAINTAINERCLEANFILES =  Makefile.in aclocal.m4 configure config.cache"	*(char)
+"\n"	*(char)
+"\nmaintainer-clean-local:"	*(char)
+"\n\trm -fr $(ac_aux_dir)"	*(char)
+"\n\trm -f @PACKAGE@-*.tar.gz"	*(char)
+""	*(char)
+)	O
+;	O
+fclose	(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),int,int,long,short,char,array(char),*(void),long long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),*(void),int,int,array(char))))->(int)
+(	O
+f	*(char)
+)	O
+;	O
+sprintf	(*(char),*(char))->(int)
+(	O
+aux	array(char)
+,	O
+"%s/src/Makefile.am"	*(char)
+,	O
+prj_name	array(char)
+)	O
+;	O
+edma_printf_obj	(int,*(char))->(long)
+(	O
+IdObj	int
+,	O
+"+ Creating %s dir"	*(char)
+,	O
+aux	array(char)
+)	O
+;	O
+if	O
+(	O
+(	O
+f	*(char)
+=	O
+fopen	(*(char),*(char))->(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),int,int,long,short,char,array(char),*(void),long long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),*(void),int,int,array(char))))
+(	O
+aux	array(char)
+,	O
+"wt"	*(char)
+)	O
+)	O
+==	O
+NULL	O
+)	O
+{	O
+edma_printf_obj	(int,*(char))->(long)
+(	O
+IdObj	int
+,	O
+"Can't write src/Makefile.am"	*(char)
+)	O
+;	O
+return	O
+-	O
+1	int
+;	O
+}	O
+edma_rprop3	(int,*(char))->(int)
+(	O
+id	int
+,	O
+"ModuleName"	*(char)
+,	O
+ModuleName	array(char)
+)	O
+;	O
+fprintf	(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),int,int,long,short,char,array(char),*(void),long long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),*(void),int,int,array(char))),*(char))->(int)
+(	O
+f	*(char)
+,	O
+"lib_LTLIBRARIES = lib%s.la\n\n"	*(char)
+,	O
+ClassName	*(char)
+)	O
+;	O
+fprintf	(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),int,int,long,short,char,array(char),*(void),long long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),*(void),int,int,array(char))),*(char))->(int)
+(	O
+f	*(char)
+,	O
+"NAMESPACE = %s\n"	*(char)
+,	O
+name_space	array(char)
+)	O
+;	O
+fprintf	(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),int,int,long,short,char,array(char),*(void),long long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),*(void),int,int,array(char))),*(char))->(int)
+(	O
+f	*(char)
+,	O
+"idfdir=${prefix}/share/edma/idf/${NAMESPACE}\n"	*(char)
+)	O
+;	O
+fprintf	(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),int,int,long,short,char,array(char),*(void),long long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),*(void),int,int,array(char))),*(char))->(int)
+(	O
+f	*(char)
+,	O
+"libdir=${exec_prefix}/lib/edma/${NAMESPACE}\n"	*(char)
+)	O
+;	O
+fprintf	(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),int,int,long,short,char,array(char),*(void),long long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),*(void),int,int,array(char))),*(char))->(int)
+(	O
+f	*(char)
+,	O
+"EXTRA_DIST = %s%s.idf %s%s.ines\n"	*(char)
+,	O
+ClassName	*(char)
+,	O
+ver_string	array(char)
+,	O
+ClassName	*(char)
+,	O
+ver_string	array(char)
+)	O
+;	O
+fprintf	(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),int,int,long,short,char,array(char),*(void),long long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),*(void),int,int,array(char))),*(char))->(int)
+(	O
+f	*(char)
+,	O
+"idf_DATA = %s%s.idf\n\n"	*(char)
+,	O
+ClassName	*(char)
+,	O
+ver_string	array(char)
+)	O
+;	O
+fprintf	(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),int,int,long,short,char,array(char),*(void),long long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),*(void),int,int,array(char))),*(char))->(int)
+(	O
+f	*(char)
+,	O
+"lib%s_la_SOURCES = %s%s_imp.c\n"	*(char)
+,	O
+ClassName	*(char)
+,	O
+ClassName	*(char)
+,	O
+ver_string	array(char)
+)	O
+;	O
+fprintf	(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),int,int,long,short,char,array(char),*(void),long long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),*(void),int,int,array(char))),*(char))->(int)
+(	O
+f	*(char)
+,	O
+"lib%s_la_LDFLAGS = -version-info %ld:%ld\n\n"	*(char)
+,	O
+ClassName	*(char)
+,	O
+major_version	int
+,	O
+minor_version	int
+)	O
+;	O
+fprintf	(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),int,int,long,short,char,array(char),*(void),long long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),*(void),int,int,array(char))),*(char))->(int)
+(	O
+f	*(char)
+,	O
+"MAINTAINERCLEANFILES =  Makefile.in config.h.in stamp-h.in\n"	*(char)
+)	O
+;	O
+fprintf	(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),int,int,long,short,char,array(char),*(void),long long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),*(void),int,int,array(char))),*(char))->(int)
+(	O
+f	*(char)
+,	O
+"\n"	*(char)
+)	O
+;	O
+fclose	(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),int,int,long,short,char,array(char),*(void),long long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long long,*`,*`,*`,*`,int,int,array(char))),*(void),int,int,array(char))))->(int)
+(	O
+f	*(char)
+)	O
+;	O
+if	O
+(	O
+(	O
+builder	int
+=	O
+edma_new_obj	(*(char))->(int)
+(	O
+"EDMAIDF_BUILDER"	*(char)
+)	O
+)	O
+==	O
+-	O
+1	int
+)	O
+{	O
+edma_printf_obj	(int,*(char))->(long)
+(	O
+IdObj	int
+,	O
+"Can't create IDF file for class %s"	*(char)
+,	O
+ClassName	*(char)
+)	O
+;	O
+return	O
+-	O
+1	int
+;	O
+}	O
+sprintf	(*(char),*(char))->(int)
+(	O
+aux	array(char)
+,	O
+"%s/src/%s%s.idf"	*(char)
+,	O
+prj_name	array(char)
+,	O
+ClassName	*(char)
+,	O
+ver_string	array(char)
+)	O
+;	O
+edma_met3	(int,*(char))->(int)
+(	O
+builder	int
+,	O
+"build"	*(char)
+,	O
+id	int
+,	O
+aux	array(char)
+)	O
+;	O
+edma_free_obj	(int)->(long)
+(	O
+builder	int
+)	O
+;	O
+if	O
+(	O
+(	O
+builder	int
+=	O
+edma_new_obj	(*(char))->(int)
+(	O
+"EDMA_C_IMP_BUILDER"	*(char)
+)	O
+)	O
+==	O
+-	O
+1	int
+)	O
+{	O
+edma_printf_obj	(int,*(char))->(long)
+(	O
+IdObj	int
+,	O
+"Can't create C skel file for class %s"	*(char)
+,	O
+ClassName	*(char)
+)	O
+;	O
+return	O
+-	O
+1	int
+;	O
+}	O
+sprintf	(*(char),*(char))->(int)
+(	O
+aux	array(char)
+,	O
+"%s/src/%s%s_imp.c"	*(char)
+,	O
+prj_name	array(char)
+,	O
+ClassName	*(char)
+,	O
+ver_string	array(char)
+)	O
+;	O
+edma_met3	(int,*(char))->(int)
+(	O
+builder	int
+,	O
+"build"	*(char)
+,	O
+id	int
+,	O
+aux	array(char)
+)	O
+;	O
+edma_free_obj	(int)->(long)
+(	O
+builder	int
+)	O
+;	O
+if	O
+(	O
+(	O
+builder	int
+=	O
+edma_new_obj	(*(char))->(int)
+(	O
+"EDMA_INES_BUILDER"	*(char)
+)	O
+)	O
+==	O
+-	O
+1	int
+)	O
+{	O
+edma_printf_obj	(int,*(char))->(long)
+(	O
+IdObj	int
+,	O
+"Can't create ines file for class %s"	*(char)
+,	O
+ClassName	*(char)
+)	O
+;	O
+return	O
+-	O
+1	int
+;	O
+}	O
+sprintf	(*(char),*(char))->(int)
+(	O
+aux	array(char)
+,	O
+"%s/src/%s%s.ines"	*(char)
+,	O
+prj_name	array(char)
+,	O
+ClassName	*(char)
+,	O
+ver_string	array(char)
+)	O
+;	O
+edma_met3	(int,*(char))->(int)
+(	O
+builder	int
+,	O
+"build"	*(char)
+,	O
+id	int
+,	O
+aux	array(char)
+)	O
+;	O
+edma_free_obj	(int)->(long)
+(	O
+builder	int
+)	O
+;	O
+edma_printf_obj	(int,*(char))->(long)
+(	O
+IdObj	int
+,	O
+" Project Built...."	*(char)
+)	O
+;	O
+return	O
+0	int
+;	O
+}	O

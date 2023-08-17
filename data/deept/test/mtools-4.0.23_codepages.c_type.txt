@@ -1,0 +1,4 @@
+typedef	O
+int	O
+make_iso_compilers_happy	struct
+;	O

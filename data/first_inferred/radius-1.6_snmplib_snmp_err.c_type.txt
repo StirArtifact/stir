@@ -1,0 +1,77 @@
+char	O
+*	O
+snmp_errlist	array
+[	O
+]	O
+=	O
+{	O
+"no error"	pointer
+,	O
+"ASN.1 encode"	pointer
+,	O
+"ASN.1 decode"	pointer
+,	O
+"not enough memory"	pointer
+,	O
+"malformed OID"	pointer
+,	O
+"bad IP address or hostname"	pointer
+,	O
+"can't open socket"	pointer
+,	O
+"can't bind socket"	pointer
+,	O
+"send"	pointer
+,	O
+"operation or type not supported"	pointer
+,	O
+"SNMP decode"	pointer
+,	O
+"bad version number"	pointer
+,	O
+"unknown request type"	pointer
+,	O
+"unknown variable type"	pointer
+,	O
+}	O
+;	O
+int	O
+snmp_nerr	int
+=	O
+sizeof	O
+(	O
+snmp_errlist	array
+)	O
+/	O
+sizeof	O
+(	O
+snmp_errlist	array
+[	O
+0	int
+]	O
+)	O
+;	O
+char	O
+*	O
+snmp_strerror	function
+(	O
+int	O
+en	int
+)	O
+{	O
+if	O
+(	O
+en	int
+<	O
+snmp_nerr	int
+)	O
+return	O
+snmp_errlist	array
+[	O
+en	int
+]	O
+;	O
+return	O
+"unknown error"	pointer
+;	O
+}	O

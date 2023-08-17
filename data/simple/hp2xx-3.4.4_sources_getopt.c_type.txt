@@ -1,0 +1,10 @@
+void	O
+Eprintf	function
+(	O
+const	O
+char	O
+*	O
+,	O
+...	O
+)	O
+;	O

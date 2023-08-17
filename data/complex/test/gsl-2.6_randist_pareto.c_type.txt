@@ -1,0 +1,97 @@
+double	O
+gsl_ran_pareto	(*(struct(*(struct(*`,long,long,long,*`,*`,*`)),*(void))),double,double)->(double)
+(	O
+const	O
+gsl_rng	struct(*(struct(*(char),long,long,long,*((*`,long)->(void)),*((*`)->(long)),*((*`)->(double)))),*(void))
+*	O
+r	*(struct(*(struct(*(char),long,long,long,*((*`,long)->(void)),*((*`)->(long)),*((*`)->(double)))),*(void)))
+,	O
+double	O
+a	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+,	O
+const	O
+double	O
+b	*(struct(long,*(long double)))
+)	O
+{	O
+double	O
+x	double
+=	O
+gsl_rng_uniform_pos	(*(struct(*(struct(*`,long,long,long,*`,*`,*`)),*(void))))->(double)
+(	O
+r	*(struct(*(struct(*(char),long,long,long,*((*`,long)->(void)),*((*`)->(long)),*((*`)->(double)))),*(void)))
+)	O
+;	O
+double	O
+z	struct(array(long double))
+=	O
+pow	(double,double)->(double)
+(	O
+x	double
+,	O
+-	O
+1	int
+/	O
+a	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+)	O
+;	O
+return	O
+b	*(struct(long,*(long double)))
+*	O
+z	struct(array(long double))
+;	O
+}	O
+double	O
+gsl_ran_pareto_pdf	(double,double,double)->(double)
+(	O
+const	O
+double	O
+x	double
+,	O
+const	O
+double	O
+a	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+,	O
+const	O
+double	O
+b	*(struct(long,*(long double)))
+)	O
+{	O
+if	O
+(	O
+x	double
+>=	O
+b	*(struct(long,*(long double)))
+)	O
+{	O
+double	O
+p	int
+=	O
+(	O
+a	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+/	O
+b	*(struct(long,*(long double)))
+)	O
+/	O
+pow	(double,double)->(double)
+(	O
+x	double
+/	O
+b	*(struct(long,*(long double)))
+,	O
+a	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
++	O
+1	int
+)	O
+;	O
+return	O
+p	int
+;	O
+}	O
+else	O
+{	O
+return	O
+0	int
+;	O
+}	O
+}	O

@@ -1,0 +1,24 @@
+static	O
+const	O
+char	O
+revid	array(char)
+[	O
+]	O
+=	O
+"$Id: os_root.c,v 1.3 2000/06/28 16:47:02 loic Exp $"	*(char)
+;	O
+int	O
+CDB___os_isroot	()->(int)
+(	O
+)	O
+{	O
+return	O
+(	O
+getuid	()->(int)
+(	O
+)	O
+==	O
+0	int
+)	O
+;	O
+}	O

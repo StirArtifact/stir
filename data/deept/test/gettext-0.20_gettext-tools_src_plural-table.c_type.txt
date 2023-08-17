@@ -1,0 +1,329 @@
+struct	O
+plural_table_entry	struct
+plural_table	pointer
+[	O
+]	O
+=	O
+{	O
+{	O
+"ja"	pointer
+,	O
+"Japanese"	int
+,	O
+"nplurals=1; plural=0;"	int
+}	O
+,	O
+{	O
+"vi"	pointer
+,	O
+"Vietnamese"	int
+,	O
+"nplurals=1; plural=0;"	int
+}	O
+,	O
+{	O
+"ko"	pointer
+,	O
+"Korean"	int
+,	O
+"nplurals=1; plural=0;"	int
+}	O
+,	O
+{	O
+"en"	pointer
+,	O
+"English"	int
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"de"	pointer
+,	O
+"German"	int
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"nl"	pointer
+,	O
+"Dutch"	int
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"sv"	pointer
+,	O
+"Swedish"	int
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"da"	pointer
+,	O
+"Danish"	int
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"no"	pointer
+,	O
+"Norwegian"	pointer
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"nb"	pointer
+,	O
+"Norwegian Bokmal"	int
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"nn"	pointer
+,	O
+"Norwegian Nynorsk"	int
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"fo"	pointer
+,	O
+"Faroese"	int
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"es"	pointer
+,	O
+"Spanish"	int
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"pt"	pointer
+,	O
+"Portuguese"	int
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"it"	pointer
+,	O
+"Italian"	int
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"bg"	pointer
+,	O
+"Bulgarian"	int
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"el"	pointer
+,	O
+"Greek"	pointer
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"fi"	pointer
+,	O
+"Finnish"	int
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"et"	pointer
+,	O
+"Estonian"	int
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"he"	pointer
+,	O
+"Hebrew"	pointer
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"eo"	pointer
+,	O
+"Esperanto"	int
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"hu"	pointer
+,	O
+"Hungarian"	int
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"tr"	pointer
+,	O
+"Turkish"	int
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"pt_BR"	pointer
+,	O
+"Brazilian"	int
+,	O
+"nplurals=2; plural=(n > 1);"	int
+}	O
+,	O
+{	O
+"fr"	pointer
+,	O
+"French"	int
+,	O
+"nplurals=2; plural=(n > 1);"	int
+}	O
+,	O
+{	O
+"lv"	pointer
+,	O
+"Latvian"	int
+,	O
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);"	int
+}	O
+,	O
+{	O
+"ga"	pointer
+,	O
+"Irish"	int
+,	O
+"nplurals=3; plural=n==1 ? 0 : n==2 ? 1 : 2;"	int
+}	O
+,	O
+{	O
+"ro"	pointer
+,	O
+"Romanian"	int
+,	O
+"nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2;"	int
+}	O
+,	O
+{	O
+"lt"	pointer
+,	O
+"Lithuanian"	int
+,	O
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);"	int
+}	O
+,	O
+{	O
+"ru"	pointer
+,	O
+"Russian"	int
+,	O
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);"	int
+}	O
+,	O
+{	O
+"uk"	pointer
+,	O
+"Ukrainian"	int
+,	O
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);"	int
+}	O
+,	O
+{	O
+"be"	pointer
+,	O
+"Belarusian"	int
+,	O
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);"	int
+}	O
+,	O
+{	O
+"sr"	pointer
+,	O
+"Serbian"	int
+,	O
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);"	int
+}	O
+,	O
+{	O
+"hr"	pointer
+,	O
+"Croatian"	int
+,	O
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);"	int
+}	O
+,	O
+{	O
+"cs"	pointer
+,	O
+"Czech"	int
+,	O
+"nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;"	int
+}	O
+,	O
+{	O
+"sk"	pointer
+,	O
+"Slovak"	int
+,	O
+"nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;"	int
+}	O
+,	O
+{	O
+"pl"	pointer
+,	O
+"Polish"	int
+,	O
+"nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);"	int
+}	O
+,	O
+{	O
+"sl"	pointer
+,	O
+"Slovenian"	int
+,	O
+"nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);"	int
+}	O
+}	O
+;	O
+const	O
+size_t	long
+plural_table_size	long
+=	O
+sizeof	O
+(	O
+plural_table	pointer
+)	O
+/	O
+sizeof	O
+(	O
+plural_table	array
+[	O
+0	int
+]	O
+)	O
+;	O

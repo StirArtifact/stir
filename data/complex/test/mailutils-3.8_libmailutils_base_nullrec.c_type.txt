@@ -1,0 +1,10 @@
+mu_record_t	*(struct)
+mu_nntp_record	*(struct(int,*(char),int,int,int,*((*(struct`))->(int)),*((*(struct`))->(int)),*((*(struct`))->(int)),*((*(struct`))->(int)),*(void),*((*(struct`),*(struct`),int)->(int)),*((*(struct`),*(*`))->(int)),*((*(struct`),*(*`))->(int)),*((*(struct`),*(*`))->(int)),*((*(struct`),*(*`))->(int)),*((*(struct`),*(char),int)->(int))))
+=	O
+NULL	O
+;	O
+mu_record_t	*(struct)
+mu_smtps_record	*(struct(int,*(char),int,int,int,*((*(struct`))->(int)),*((*(struct`))->(int)),*((*(struct`))->(int)),*((*(struct`))->(int)),*(void),*((*(struct`),*(struct`),int)->(int)),*((*(struct`),*(*`))->(int)),*((*(struct`),*(*`))->(int)),*((*(struct`),*(*`))->(int)),*((*(struct`),*(*`))->(int)),*((*(struct`),*(char),int)->(int))))
+=	O
+NULL	O
+;	O

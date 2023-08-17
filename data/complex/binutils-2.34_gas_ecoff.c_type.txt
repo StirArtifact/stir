@@ -1,0 +1,7 @@
+void	O
+ecoff_generate_asm_lineno	O
+(	O
+void	O
+)	O
+{	O
+}	O

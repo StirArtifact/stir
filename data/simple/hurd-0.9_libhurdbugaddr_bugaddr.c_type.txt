@@ -1,0 +1,7 @@
+const	O
+char	O
+*	O
+argp_program_bug_address	pointer
+=	O
+"<bug-hurd@gnu.org>"	pointer
+;	O

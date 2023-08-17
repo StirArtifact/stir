@@ -1,0 +1,7 @@
+static	O
+char	O
+*	O
+version_string	*(char)
+=	O
+"\n$Version: GNU termcap 1.3 $\n"	*(char)
+;	O

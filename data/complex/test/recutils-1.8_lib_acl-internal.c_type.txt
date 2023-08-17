@@ -1,0 +1,10 @@
+void	O
+free_permission_context	(*(struct(int)))->(void)
+(	O
+struct	O
+permission_context	struct(int)
+*	O
+ctx	*(struct(int))
+)	O
+{	O
+}	O

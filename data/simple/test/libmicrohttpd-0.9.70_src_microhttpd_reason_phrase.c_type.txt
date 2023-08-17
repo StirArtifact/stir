@@ -1,0 +1,392 @@
+static	O
+const	O
+char	O
+*	O
+const	O
+invalid_hundred	array
+[	O
+]	O
+=	O
+{	O
+NULL	O
+}	O
+;	O
+static	O
+const	O
+char	O
+*	O
+const	O
+one_hundred	array
+[	O
+]	O
+=	O
+{	O
+"Continue"	pointer
+,	O
+"Switching Protocols"	pointer
+,	O
+"Processing"	pointer
+,	O
+"Early Hints"	pointer
+}	O
+;	O
+static	O
+const	O
+char	O
+*	O
+const	O
+two_hundred	array
+[	O
+]	O
+=	O
+{	O
+"OK"	pointer
+,	O
+"Created"	pointer
+,	O
+"Accepted"	pointer
+,	O
+"Non-Authoritative Information"	pointer
+,	O
+"No Content"	pointer
+,	O
+"Reset Content"	pointer
+,	O
+"Partial Content"	pointer
+,	O
+"Multi-Status"	pointer
+,	O
+"Already Reported"	pointer
+,	O
+"Unknown"	pointer
+,	O
+"Unknown"	pointer
+,	O
+"Unknown"	pointer
+,	O
+"Unknown"	pointer
+,	O
+"Unknown"	pointer
+,	O
+"Unknown"	pointer
+,	O
+"Unknown"	pointer
+,	O
+"Unknown"	pointer
+,	O
+"Unknown"	pointer
+,	O
+"Unknown"	pointer
+,	O
+"Unknown"	pointer
+,	O
+"Unknown"	pointer
+,	O
+"Unknown"	pointer
+,	O
+"Unknown"	pointer
+,	O
+"Unknown"	pointer
+,	O
+"Unknown"	pointer
+,	O
+"Unknown"	pointer
+,	O
+"IM Used"	pointer
+}	O
+;	O
+static	O
+const	O
+char	O
+*	O
+const	O
+three_hundred	array
+[	O
+]	O
+=	O
+{	O
+"Multiple Choices"	pointer
+,	O
+"Moved Permanently"	pointer
+,	O
+"Found"	pointer
+,	O
+"See Other"	pointer
+,	O
+"Not Modified"	pointer
+,	O
+"Use Proxy"	pointer
+,	O
+"Switch Proxy"	pointer
+,	O
+"Temporary Redirect"	pointer
+,	O
+"Permanent Redirect"	pointer
+}	O
+;	O
+static	O
+const	O
+char	O
+*	O
+const	O
+four_hundred	array
+[	O
+]	O
+=	O
+{	O
+"Bad Request"	pointer
+,	O
+"Unauthorized"	pointer
+,	O
+"Payment Required"	pointer
+,	O
+"Forbidden"	pointer
+,	O
+"Not Found"	pointer
+,	O
+"Method Not Allowed"	pointer
+,	O
+"Not Acceptable"	pointer
+,	O
+"Proxy Authentication Required"	pointer
+,	O
+"Request Timeout"	pointer
+,	O
+"Conflict"	pointer
+,	O
+"Gone"	pointer
+,	O
+"Length Required"	pointer
+,	O
+"Precondition Failed"	pointer
+,	O
+"Payload Too Large"	pointer
+,	O
+"URI Too Long"	pointer
+,	O
+"Unsupported Media Type"	pointer
+,	O
+"Range Not Satisfiable"	pointer
+,	O
+"Expectation Failed"	pointer
+,	O
+"Unknown"	pointer
+,	O
+"Unknown"	pointer
+,	O
+"Unknown"	pointer
+,	O
+"Misdirected Request"	pointer
+,	O
+"Unprocessable Entity"	pointer
+,	O
+"Locked"	pointer
+,	O
+"Failed Dependency"	pointer
+,	O
+"Too Early"	pointer
+,	O
+"Upgrade Required"	pointer
+,	O
+"Unknown"	pointer
+,	O
+"Precondition Required"	pointer
+,	O
+"Too Many Requests"	pointer
+,	O
+"Unknown"	pointer
+,	O
+"Request Header Fields Too Large"	pointer
+,	O
+"Unknown"	pointer
+,	O
+"Unknown"	pointer
+,	O
+"Unknown"	pointer
+,	O
+"Unknown"	pointer
+,	O
+"Unknown"	pointer
+,	O
+"Unknown"	pointer
+,	O
+"Unknown"	pointer
+,	O
+"Unknown"	pointer
+,	O
+"Unknown"	pointer
+,	O
+"Unknown"	pointer
+,	O
+"Unknown"	pointer
+,	O
+"Unknown"	pointer
+,	O
+"Unknown"	pointer
+,	O
+"Unknown"	pointer
+,	O
+"Unknown"	pointer
+,	O
+"Unknown"	pointer
+,	O
+"Unknown"	pointer
+,	O
+"Reply With"	pointer
+,	O
+"Blocked by Windows Parental Controls"	pointer
+,	O
+"Unavailable For Legal Reasons"	pointer
+}	O
+;	O
+static	O
+const	O
+char	O
+*	O
+const	O
+five_hundred	array
+[	O
+]	O
+=	O
+{	O
+"Internal Server Error"	pointer
+,	O
+"Not Implemented"	pointer
+,	O
+"Bad Gateway"	pointer
+,	O
+"Service Unavailable"	pointer
+,	O
+"Gateway Timeout"	pointer
+,	O
+"HTTP Version Not Supported"	pointer
+,	O
+"Variant Also Negotiates"	pointer
+,	O
+"Insufficient Storage"	pointer
+,	O
+"Loop Detected"	pointer
+,	O
+"Bandwidth Limit Exceeded"	pointer
+,	O
+"Not Extended"	pointer
+,	O
+"Network Authentication Required"	pointer
+}	O
+;	O
+struct	O
+MHD_Reason_Block	struct
+{	O
+size_t	long
+max	long
+;	O
+const	O
+char	O
+*	O
+const	O
+*	O
+data	pointer
+;	O
+}	O
+;	O
+static	O
+const	O
+struct	O
+MHD_Reason_Block	struct
+reasons	array
+[	O
+]	O
+=	O
+{	O
+BLOCK	O
+(	O
+invalid_hundred	array
+)	O
+,	O
+BLOCK	O
+(	O
+one_hundred	array
+)	O
+,	O
+BLOCK	O
+(	O
+two_hundred	array
+)	O
+,	O
+BLOCK	O
+(	O
+three_hundred	array
+)	O
+,	O
+BLOCK	O
+(	O
+four_hundred	array
+)	O
+,	O
+BLOCK	O
+(	O
+five_hundred	array
+)	O
+,	O
+}	O
+;	O
+const	O
+char	O
+*	O
+MHD_get_reason_phrase_for	function
+(	O
+unsigned	O
+int	O
+code	int
+)	O
+{	O
+if	O
+(	O
+(	O
+code	int
+>=	O
+100	int
+)	O
+&&	O
+(	O
+code	int
+<	O
+600	int
+)	O
+&&	O
+(	O
+reasons	array
+[	O
+code	int
+/	O
+100	int
+]	O
+.	O
+max	long
+>	O
+(	O
+code	int
+%	O
+100	int
+)	O
+)	O
+)	O
+return	O
+reasons	array
+[	O
+code	int
+/	O
+100	int
+]	O
+.	O
+data	pointer
+[	O
+code	int
+%	O
+100	int
+]	O
+;	O
+return	O
+"Unknown"	pointer
+;	O
+}	O

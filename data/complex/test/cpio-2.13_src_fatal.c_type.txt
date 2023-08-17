@@ -1,0 +1,11 @@
+void	O
+fatal_exit	()->(void)
+(	O
+)	O
+{	O
+exit	(int)->(void)
+(	O
+PAXEXIT_FAILURE	int
+)	O
+;	O
+}	O

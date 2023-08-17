@@ -1,0 +1,25 @@
+void	O
+test_main	()->(void)
+(	O
+void	O
+)	O
+{	O
+test_hash_large	(*(struct(*(char),int,int,int,*((*`)->(void)),*((*`,long,*`)->(void)),*((*`,long,*`)->(void)))),long,long,char,*(struct(*(struct(*`,long,array(char))),long,array(char))))->(void)
+(	O
+&	O
+nettle_sha1	struct(*(char),int,int,int,*((*(void))->(void)),*((*(void),long,*(char))->(void)),*((*(void),long,*(char))->(void)))
+,	O
+10000000	int
+,	O
+30000	int
+,	O
+'a'	O
+,	O
+SHEX	O
+(	O
+"0ba79364dc64648f 2074fb4bc5c28bcf"	*(char)
+"b7a787b0"	*(char)
+)	O
+)	O
+;	O
+}	O

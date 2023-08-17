@@ -1,0 +1,16 @@
+void	O
+__gmp_invalid_operation	()->(void)
+(	O
+void	O
+)	O
+{	O
+raise	(int)->(int)
+(	O
+SIGFPE	int
+)	O
+;	O
+abort	()->(void)
+(	O
+)	O
+;	O
+}	O

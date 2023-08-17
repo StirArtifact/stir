@@ -1,0 +1,11 @@
+int	O
+mu_imap_starttls	function
+(	O
+mu_imap_t	pointer
+imap	pointer
+)	O
+{	O
+return	O
+ENOSYS	int
+;	O
+}	O

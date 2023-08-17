@@ -1,0 +1,247 @@
+void	O
+flat_blurb	(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(void),long,int,array(char))))->(void)
+(	O
+FILE	struct
+*	O
+)	O
+;	O
+void	O
+flat_blurb	(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(void),long,int,array(char))))->(void)
+(	O
+FILE	struct
+*	O
+file	*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(void),long,int,array(char)))
+)	O
+{	O
+fputs	(*(char),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(void),long,int,array(char))))->(int)
+(	O
+"\n"	*(char)
+,	O
+file	*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(void),long,int,array(char)))
+)	O
+;	O
+fputs	(*(char),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(void),long,int,array(char))))->(int)
+(	O
+" %         the percentage of the total running time of the\n"	*(char)
+,	O
+file	*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(void),long,int,array(char)))
+)	O
+;	O
+fputs	(*(char),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(void),long,int,array(char))))->(int)
+(	O
+"time       program used by this function.\n"	*(char)
+,	O
+file	*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(void),long,int,array(char)))
+)	O
+;	O
+fputs	(*(char),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(void),long,int,array(char))))->(int)
+(	O
+"\n"	*(char)
+,	O
+file	*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(void),long,int,array(char)))
+)	O
+;	O
+fputs	(*(char),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(void),long,int,array(char))))->(int)
+(	O
+"cumulative a running sum of the number of seconds accounted\n"	*(char)
+,	O
+file	*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(void),long,int,array(char)))
+)	O
+;	O
+fputs	(*(char),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(void),long,int,array(char))))->(int)
+(	O
+" seconds   for by this function and those listed above it.\n"	*(char)
+,	O
+file	*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(void),long,int,array(char)))
+)	O
+;	O
+fputs	(*(char),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(void),long,int,array(char))))->(int)
+(	O
+"\n"	*(char)
+,	O
+file	*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(void),long,int,array(char)))
+)	O
+;	O
+fputs	(*(char),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(void),long,int,array(char))))->(int)
+(	O
+" self      the number of seconds accounted for by this\n"	*(char)
+,	O
+file	*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(void),long,int,array(char)))
+)	O
+;	O
+fputs	(*(char),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(void),long,int,array(char))))->(int)
+(	O
+"seconds    function alone.  This is the major sort for this\n"	*(char)
+,	O
+file	*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(void),long,int,array(char)))
+)	O
+;	O
+fputs	(*(char),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(void),long,int,array(char))))->(int)
+(	O
+"           listing.\n"	*(char)
+,	O
+file	*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(void),long,int,array(char)))
+)	O
+;	O
+fputs	(*(char),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(void),long,int,array(char))))->(int)
+(	O
+"\n"	*(char)
+,	O
+file	*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(void),long,int,array(char)))
+)	O
+;	O
+fputs	(*(char),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(void),long,int,array(char))))->(int)
+(	O
+"calls      the number of times this function was invoked, if\n"	*(char)
+,	O
+file	*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(void),long,int,array(char)))
+)	O
+;	O
+fputs	(*(char),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(void),long,int,array(char))))->(int)
+(	O
+"           this function is profiled, else blank.\n"	*(char)
+,	O
+file	*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(void),long,int,array(char)))
+)	O
+;	O
+fputs	(*(char),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(void),long,int,array(char))))->(int)
+(	O
+"\n"	*(char)
+,	O
+file	*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(void),long,int,array(char)))
+)	O
+;	O
+fputs	(*(char),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(void),long,int,array(char))))->(int)
+(	O
+" self      the average number of milliseconds spent in this\n"	*(char)
+,	O
+file	*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(void),long,int,array(char)))
+)	O
+;	O
+fputs	(*(char),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(void),long,int,array(char))))->(int)
+(	O
+"ms/call    function per call, if this function is profiled,\n"	*(char)
+,	O
+file	*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(void),long,int,array(char)))
+)	O
+;	O
+fputs	(*(char),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(void),long,int,array(char))))->(int)
+(	O
+"	   else blank.\n"	*(char)
+,	O
+file	*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(void),long,int,array(char)))
+)	O
+;	O
+fputs	(*(char),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(void),long,int,array(char))))->(int)
+(	O
+"\n"	*(char)
+,	O
+file	*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(void),long,int,array(char)))
+)	O
+;	O
+fputs	(*(char),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(void),long,int,array(char))))->(int)
+(	O
+" total     the average number of milliseconds spent in this\n"	*(char)
+,	O
+file	*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(void),long,int,array(char)))
+)	O
+;	O
+fputs	(*(char),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(void),long,int,array(char))))->(int)
+(	O
+"ms/call    function and its descendents per call, if this\n"	*(char)
+,	O
+file	*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(void),long,int,array(char)))
+)	O
+;	O
+fputs	(*(char),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(void),long,int,array(char))))->(int)
+(	O
+"	   function is profiled, else blank.\n"	*(char)
+,	O
+file	*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(void),long,int,array(char)))
+)	O
+;	O
+fputs	(*(char),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(void),long,int,array(char))))->(int)
+(	O
+"\n"	*(char)
+,	O
+file	*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(void),long,int,array(char)))
+)	O
+;	O
+fputs	(*(char),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(void),long,int,array(char))))->(int)
+(	O
+"name       the name of the function.  This is the minor sort\n"	*(char)
+,	O
+file	*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(void),long,int,array(char)))
+)	O
+;	O
+fputs	(*(char),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(void),long,int,array(char))))->(int)
+(	O
+"           for this listing. The index shows the location of\n"	*(char)
+,	O
+file	*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(void),long,int,array(char)))
+)	O
+;	O
+fputs	(*(char),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(void),long,int,array(char))))->(int)
+(	O
+"	   the function in the gprof listing. If the index is\n"	*(char)
+,	O
+file	*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(void),long,int,array(char)))
+)	O
+;	O
+fputs	(*(char),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(void),long,int,array(char))))->(int)
+(	O
+"	   in parenthesis it shows where it would appear in\n"	*(char)
+,	O
+file	*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(void),long,int,array(char)))
+)	O
+;	O
+fputs	(*(char),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(void),long,int,array(char))))->(int)
+(	O
+"	   the gprof listing if it were to be printed.\n"	*(char)
+,	O
+file	*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(void),long,int,array(char)))
+)	O
+;	O
+fputs	(*(char),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(void),long,int,array(char))))->(int)
+(	O
+"\n"	*(char)
+,	O
+file	*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(void),long,int,array(char)))
+)	O
+;	O
+fputs	(*(char),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(void),long,int,array(char))))->(int)
+(	O
+"Copyright (C) 2012-2020 Free Software Foundation, Inc.\n"	*(char)
+,	O
+file	*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(void),long,int,array(char)))
+)	O
+;	O
+fputs	(*(char),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(void),long,int,array(char))))->(int)
+(	O
+"\n"	*(char)
+,	O
+file	*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(void),long,int,array(char)))
+)	O
+;	O
+fputs	(*(char),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(void),long,int,array(char))))->(int)
+(	O
+"Copying and distribution of this file, with or without modification,\n"	*(char)
+,	O
+file	*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(void),long,int,array(char)))
+)	O
+;	O
+fputs	(*(char),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(void),long,int,array(char))))->(int)
+(	O
+"are permitted in any medium without royalty provided the copyright\n"	*(char)
+,	O
+file	*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(void),long,int,array(char)))
+)	O
+;	O
+fputs	(*(char),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(void),long,int,array(char))))->(int)
+(	O
+"notice and this notice are preserved.\n"	*(char)
+,	O
+file	*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(void),long,int,array(char)))
+)	O
+;	O
+}	O

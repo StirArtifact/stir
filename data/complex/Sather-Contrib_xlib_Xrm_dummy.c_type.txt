@@ -1,0 +1,5 @@
+Xrm_dummy	()->(int)
+(	O
+)	O
+{	O
+}	O

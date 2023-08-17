@@ -1,0 +1,41 @@
+void	O
+version	int
+(	O
+void	O
+)	O
+{	O
+printf	function
+(	O
+"GNU OrgaDoc Copyright (C) 2017 - 2019  Adam Bilbrough\n"	pointer
+)	O
+;	O
+printf	function
+(	O
+"This program comes with ABSOLUTELY NO WARRANTY;\n"	pointer
+)	O
+;	O
+printf	function
+(	O
+"\nThis is free software, and you are welcome to redistribute it\n"	pointer
+)	O
+;	O
+printf	function
+(	O
+"under certain conditions;  for details visit <https://www.gnu.org/licenses/>.\n"	pointer
+)	O
+;	O
+printf	function
+(	O
+"\nGNU OrgaDoc %s\n"	pointer
+,	O
+VERSION	pointer
+)	O
+;	O
+printf	function
+(	O
+"%s\n\n"	pointer
+,	O
+COPYRIGHT	pointer
+)	O
+;	O
+}	O

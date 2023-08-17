@@ -1,0 +1,5 @@
+int	O
+is_strip	int
+=	O
+1	int
+;	O

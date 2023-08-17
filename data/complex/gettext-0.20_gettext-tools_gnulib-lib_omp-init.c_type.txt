@@ -1,0 +1,7 @@
+void	O
+openmp_init	()->(void)
+(	O
+void	O
+)	O
+{	O
+}	O

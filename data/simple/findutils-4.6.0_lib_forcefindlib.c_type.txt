@@ -1,0 +1,14 @@
+extern	O
+void	O
+forcefindlib	function
+(	O
+void	O
+)	O
+;	O
+void	O
+forcefindlib	function
+(	O
+void	O
+)	O
+{	O
+}	O

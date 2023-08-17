@@ -1,0 +1,10 @@
+mu_record_t	O
+mu_nntp_record	O
+=	O
+NULL	O
+;	O
+mu_record_t	O
+mu_smtps_record	O
+=	O
+NULL	O
+;	O

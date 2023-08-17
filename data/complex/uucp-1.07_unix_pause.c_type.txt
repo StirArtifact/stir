@@ -1,0 +1,16 @@
+void	O
+usysdep_pause	()->(void)
+(	O
+)	O
+{	O
+usleep	(int)->(int)
+(	O
+500	int
+*	O
+(	O
+long	O
+)	O
+1000	int
+)	O
+;	O
+}	O

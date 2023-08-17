@@ -1,0 +1,8 @@
+const	O
+char	O
+*	O
+const	O
+gmp_version	O
+=	O
+VERSION	*(char)
+;	O

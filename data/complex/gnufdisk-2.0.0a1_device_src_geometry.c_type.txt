@@ -1,0 +1,466 @@
+struct	O
+gnufdisk_geometry	struct(long long,long long)
+{	O
+gnufdisk_integer	long long
+start	long long
+;	O
+gnufdisk_integer	long long
+end	long long
+;	O
+}	O
+;	O
+static	O
+void	O
+check_geometry	(*(*(struct(long long,long long))))->(void)
+(	O
+struct	O
+gnufdisk_geometry	struct(long long,long long)
+*	O
+*	O
+_g	*(struct)
+)	O
+{	O
+GNUFDISK_RETRY	O
+rp0	array(struct(array(long),int,struct(array(long))))
+;	O
+union	O
+gnufdisk_device_exception_data	union(*(*(struct)),*(struct),*(*(struct)),*(struct),*(*(struct)),*(struct),*(long),*(*(struct)),*(struct),*(*(*(void))),*(*(long)),*(long long),*(*(struct)),*(struct),*(*(struct)),*(*(struct)),*(*(struct)),*(*(void)),*(*(void)),*(struct),*(long long),*(long long),*(long long),*(long long))
+data	union(*(*(struct)),*(struct),*(*(struct)),*(struct),*(*(struct)),*(struct),*(long),*(*(struct)),*(struct),*(*(*(void))),*(*(long)),*(long long),*(*(struct(long long,long long))),*(struct(long long,long long)),*(*(struct)),*(*(struct)),*(*(struct)),*(*(void)),*(*(void)),*(struct),*(long long),*(long long),*(long long),*(long long))
+;	O
+GNUFDISK_RETRY_SET	O
+(	O
+rp0	array(struct(array(long),int,struct(array(long))))
+)	O
+;	O
+if	O
+(	O
+gnufdisk_check_memory	(*(void),long,int)->(int)
+(	O
+*	O
+_g	*(struct)
+,	O
+sizeof	O
+(	O
+struct	O
+gnufdisk_geometry	struct(long long,long long)
+)	O
+,	O
+0	int
+)	O
+!=	O
+0	int
+)	O
+{	O
+data	union(*(*(struct)),*(struct),*(*(struct)),*(struct),*(*(struct)),*(struct),*(long),*(*(struct)),*(struct),*(*(*(void))),*(*(long)),*(long long),*(*(struct(long long,long long))),*(struct(long long,long long)),*(*(struct)),*(*(struct)),*(*(struct)),*(*(void)),*(*(void)),*(struct),*(long long),*(long long),*(long long),*(long long))
+.	O
+egeometrypointer	*(*(struct))
+=	O
+_g	*(struct)
+;	O
+GNUFDISK_THROW	O
+(	O
+GNUFDISK_EXCEPTION_ALL	int
+,	O
+&	O
+rp0	array(struct(array(long),int,struct(array(long))))
+,	O
+GNUFDISK_DEVICE_EGEOMETRYPOINTER	int
+,	O
+&	O
+data	union(*(*(struct)),*(struct),*(*(struct)),*(struct),*(*(struct)),*(struct),*(long),*(*(struct)),*(struct),*(*(*(void))),*(*(long)),*(long long),*(*(struct(long long,long long))),*(struct(long long,long long)),*(*(struct)),*(*(struct)),*(*(struct)),*(*(void)),*(*(void)),*(struct),*(long long),*(long long),*(long long),*(long long))
+,	O
+"invalid struct gnufdisk_geometry* %p"	*(char)
+,	O
+*	O
+_g	*(struct)
+)	O
+;	O
+}	O
+}	O
+static	O
+void	O
+free_pointer	(*(void))->(void)
+(	O
+void	O
+*	O
+_p	*(void)
+)	O
+{	O
+GNUFDISK_LOG	O
+(	O
+(	O
+GEOMETRY	O
+,	O
+"free ponter %p"	*(char)
+,	O
+_p	*(void)
+)	O
+)	O
+;	O
+free	(*(void))->(void)
+(	O
+_p	*(void)
+)	O
+;	O
+}	O
+struct	O
+gnufdisk_geometry	struct(long long,long long)
+*	O
+gnufdisk_geometry_new	(long long,long long)->(*(struct))
+(	O
+gnufdisk_integer	long long
+_start	long long
+,	O
+gnufdisk_integer	long long
+_length	long long
+)	O
+{	O
+struct	O
+gnufdisk_geometry	struct(long long,long long)
+*	O
+g	*(struct(long long,long long))
+;	O
+GNUFDISK_RETRY	O
+rp0	array(struct(array(long),int,struct(array(long))))
+;	O
+GNUFDISK_RETRY_SET	O
+(	O
+rp0	array(struct(array(long),int,struct(array(long))))
+)	O
+;	O
+if	O
+(	O
+(	O
+g	*(struct(long long,long long))
+=	O
+malloc	(long)->(*(void))
+(	O
+sizeof	O
+(	O
+struct	O
+gnufdisk_geometry	struct(long long,long long)
+)	O
+)	O
+)	O
+==	O
+NULL	O
+)	O
+GNUFDISK_THROW	O
+(	O
+0	int
+,	O
+NULL	O
+,	O
+GNUFDISK_DEVICE_ENOMEM	int
+,	O
+NULL	O
+,	O
+"cannot allocate memory"	*(char)
+)	O
+;	O
+if	O
+(	O
+gnufdisk_exception_register_unwind_handler	(*((*(void))->(void)),*(void))->(int)
+(	O
+&	O
+free_pointer	(*(void))->(void)
+,	O
+g	*(struct(long long,long long))
+)	O
+!=	O
+0	int
+)	O
+GNUFDISK_WARNING	O
+(	O
+"gnufdisk_exception_register_unwind_handler failed. Missing GNUFDISK_TRY?"	*(char)
+)	O
+;	O
+memset	()->(*(void))
+(	O
+g	*(struct(long long,long long))
+,	O
+0	int
+,	O
+sizeof	O
+(	O
+struct	O
+gnufdisk_geometry	struct(long long,long long)
+)	O
+)	O
+;	O
+g	*(struct(long long,long long))
+->	O
+start	long long
+=	O
+_start	long long
+;	O
+g	*(struct(long long,long long))
+->	O
+end	long long
+=	O
+_start	long long
++	O
+_length	long long
+;	O
+if	O
+(	O
+gnufdisk_exception_unregister_unwind_handler	(*((*(void))->(void)),*(void))->(int)
+(	O
+&	O
+free_pointer	(*(void))->(void)
+,	O
+g	*(struct(long long,long long))
+)	O
+!=	O
+0	int
+)	O
+GNUFDISK_WARNING	O
+(	O
+"gnufdisk_exception_unregister_unwind_handler failed. Missing GNUFDISK_TRY?"	*(char)
+)	O
+;	O
+return	O
+g	*(struct(long long,long long))
+;	O
+}	O
+struct	O
+gnufdisk_geometry	struct(long long,long long)
+*	O
+gnufdisk_geometry_duplicate	(*(struct))->(*(struct))
+(	O
+struct	O
+gnufdisk_geometry	struct(long long,long long)
+*	O
+_g	*(struct)
+)	O
+{	O
+struct	O
+gnufdisk_geometry	struct(long long,long long)
+*	O
+ret	*(struct(long long,long long))
+;	O
+check_geometry	(*(*(struct(long long,long long))))->(void)
+(	O
+&	O
+_g	*(struct)
+)	O
+;	O
+ret	*(struct(long long,long long))
+=	O
+gnufdisk_geometry_new	(long long,long long)->(*(struct))
+(	O
+0	int
+,	O
+0	int
+)	O
+;	O
+ret	*(struct(long long,long long))
+->	O
+start	long long
+=	O
+_g	*(struct)
+->	O
+start	long long
+;	O
+ret	*(struct(long long,long long))
+->	O
+end	long long
+=	O
+_g	*(struct)
+->	O
+end	long long
+;	O
+return	O
+ret	*(struct(long long,long long))
+;	O
+}	O
+struct	O
+gnufdisk_geometry	struct(long long,long long)
+*	O
+gnufdisk_geometry_set	(*(struct),long long,long long)->(*(struct))
+(	O
+struct	O
+gnufdisk_geometry	struct(long long,long long)
+*	O
+_g	*(struct)
+,	O
+gnufdisk_integer	long long
+_s	*(struct)
+,	O
+gnufdisk_integer	long long
+_l	struct(long long,long long,long long)
+)	O
+{	O
+GNUFDISK_RETRY	O
+rp0	array(struct(array(long),int,struct(array(long))))
+;	O
+check_geometry	(*(*(struct(long long,long long))))->(void)
+(	O
+&	O
+_g	*(struct)
+)	O
+;	O
+GNUFDISK_RETRY_SET	O
+(	O
+rp0	array(struct(array(long),int,struct(array(long))))
+)	O
+;	O
+if	O
+(	O
+_l	struct(long long,long long,long long)
+<=	O
+0	int
+)	O
+{	O
+union	O
+gnufdisk_device_exception_data	union(*(*(struct)),*(struct),*(*(struct)),*(struct),*(*(struct)),*(struct),*(long),*(*(struct)),*(struct),*(*(*(void))),*(*(long)),*(long long),*(*(struct)),*(struct),*(*(struct)),*(*(struct)),*(*(struct)),*(*(void)),*(*(void)),*(struct),*(long long),*(long long),*(long long),*(long long))
+data	union(*(*(struct)),*(struct),*(*(struct)),*(struct),*(*(struct)),*(struct),*(long),*(*(struct)),*(struct),*(*(*(void))),*(*(long)),*(long long),*(*(struct(long long,long long))),*(struct(long long,long long)),*(*(struct)),*(*(struct)),*(*(struct)),*(*(void)),*(*(void)),*(struct),*(long long),*(long long),*(long long),*(long long))
+;	O
+data	union(*(*(struct)),*(struct),*(*(struct)),*(struct),*(*(struct)),*(struct),*(long),*(*(struct)),*(struct),*(*(*(void))),*(*(long)),*(long long),*(*(struct(long long,long long))),*(struct(long long,long long)),*(*(struct)),*(*(struct)),*(*(struct)),*(*(void)),*(*(void)),*(struct),*(long long),*(long long),*(long long),*(long long))
+.	O
+egeometrylength	*(long long)
+=	O
+&	O
+_l	struct(long long,long long,long long)
+;	O
+GNUFDISK_THROW	O
+(	O
+GNUFDISK_EXCEPTION_ALL	int
+,	O
+&	O
+rp0	array(struct(array(long),int,struct(array(long))))
+,	O
+GNUFDISK_DEVICE_EGEOMETRYLENGTH	int
+,	O
+&	O
+data	union(*(*(struct)),*(struct),*(*(struct)),*(struct),*(*(struct)),*(struct),*(long),*(*(struct)),*(struct),*(*(*(void))),*(*(long)),*(long long),*(*(struct(long long,long long))),*(struct(long long,long long)),*(*(struct)),*(*(struct)),*(*(struct)),*(*(void)),*(*(void)),*(struct),*(long long),*(long long),*(long long),*(long long))
+,	O
+"invalid length: %lld"	*(char)
+,	O
+_l	struct(long long,long long,long long)
+)	O
+;	O
+}	O
+_g	*(struct)
+->	O
+start	long long
+=	O
+_s	*(struct)
+;	O
+_g	*(struct)
+->	O
+end	long long
+=	O
+_s	*(struct)
++	O
+_l	struct(long long,long long,long long)
+;	O
+return	O
+_g	*(struct)
+;	O
+}	O
+gnufdisk_integer	long long
+gnufdisk_geometry_start	(*(struct))->(long long)
+(	O
+struct	O
+gnufdisk_geometry	struct(long long,long long)
+*	O
+_g	*(struct)
+)	O
+{	O
+check_geometry	(*(*(struct(long long,long long))))->(void)
+(	O
+&	O
+_g	*(struct)
+)	O
+;	O
+return	O
+_g	*(struct)
+->	O
+start	long long
+;	O
+}	O
+gnufdisk_integer	long long
+gnufdisk_geometry_end	(*(struct))->(long long)
+(	O
+struct	O
+gnufdisk_geometry	struct(long long,long long)
+*	O
+_g	*(struct)
+)	O
+{	O
+check_geometry	(*(*(struct(long long,long long))))->(void)
+(	O
+&	O
+_g	*(struct)
+)	O
+;	O
+return	O
+_g	*(struct)
+->	O
+end	long long
+;	O
+}	O
+gnufdisk_integer	long long
+gnufdisk_geometry_length	(*(struct))->(long long)
+(	O
+struct	O
+gnufdisk_geometry	struct(long long,long long)
+*	O
+_g	*(struct)
+)	O
+{	O
+check_geometry	(*(*(struct(long long,long long))))->(void)
+(	O
+&	O
+_g	*(struct)
+)	O
+;	O
+return	O
+(	O
+_g	*(struct)
+->	O
+end	long long
+-	O
+_g	*(struct)
+->	O
+start	long long
+)	O
++	O
+1	int
+;	O
+}	O
+void	O
+gnufdisk_geometry_delete	(*(struct))->(void)
+(	O
+struct	O
+gnufdisk_geometry	struct(long long,long long)
+*	O
+_g	*(struct)
+)	O
+{	O
+check_geometry	(*(*(struct(long long,long long))))->(void)
+(	O
+&	O
+_g	*(struct)
+)	O
+;	O
+memset	()->(*(void))
+(	O
+_g	*(struct)
+,	O
+0	int
+,	O
+sizeof	O
+(	O
+struct	O
+gnufdisk_geometry	struct(long long,long long)
+)	O
+)	O
+;	O
+free	(*(void))->(void)
+(	O
+_g	*(struct)
+)	O
+;	O
+}	O

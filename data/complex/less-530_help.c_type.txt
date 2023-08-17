@@ -1,0 +1,24143 @@
+constant	O
+char	O
+helpdata	array(char)
+[	O
+]	O
+=	O
+{	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'S'	O
+,	O
+'\b'	O
+,	O
+'S'	O
+,	O
+'U'	O
+,	O
+'\b'	O
+,	O
+'U'	O
+,	O
+'M'	O
+,	O
+'\b'	O
+,	O
+'M'	O
+,	O
+'M'	O
+,	O
+'\b'	O
+,	O
+'M'	O
+,	O
+'A'	O
+,	O
+'\b'	O
+,	O
+'A'	O
+,	O
+'R'	O
+,	O
+'\b'	O
+,	O
+'R'	O
+,	O
+'Y'	O
+,	O
+'\b'	O
+,	O
+'Y'	O
+,	O
+' '	O
+,	O
+'O'	O
+,	O
+'\b'	O
+,	O
+'O'	O
+,	O
+'F'	O
+,	O
+'\b'	O
+,	O
+'F'	O
+,	O
+' '	O
+,	O
+'L'	O
+,	O
+'\b'	O
+,	O
+'L'	O
+,	O
+'E'	O
+,	O
+'\b'	O
+,	O
+'E'	O
+,	O
+'S'	O
+,	O
+'\b'	O
+,	O
+'S'	O
+,	O
+'S'	O
+,	O
+'\b'	O
+,	O
+'S'	O
+,	O
+' '	O
+,	O
+'C'	O
+,	O
+'\b'	O
+,	O
+'C'	O
+,	O
+'O'	O
+,	O
+'\b'	O
+,	O
+'O'	O
+,	O
+'M'	O
+,	O
+'\b'	O
+,	O
+'M'	O
+,	O
+'M'	O
+,	O
+'\b'	O
+,	O
+'M'	O
+,	O
+'A'	O
+,	O
+'\b'	O
+,	O
+'A'	O
+,	O
+'N'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+'D'	O
+,	O
+'\b'	O
+,	O
+'D'	O
+,	O
+'S'	O
+,	O
+'\b'	O
+,	O
+'S'	O
+,	O
+'\n'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'C'	O
+,	O
+'o'	O
+,	O
+'m'	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'k'	O
+,	O
+'e'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'w'	O
+,	O
+'i'	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+' '	O
+,	O
+'*'	O
+,	O
+' '	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'y'	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'p'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'c'	O
+,	O
+'e'	O
+,	O
+'d'	O
+,	O
+'e'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'y'	O
+,	O
+' '	O
+,	O
+'a'	O
+,	O
+' '	O
+,	O
+'n'	O
+,	O
+'u'	O
+,	O
+'m'	O
+,	O
+'b'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+','	O
+,	O
+' '	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'N'	O
+,	O
+'o'	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'p'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+'i'	O
+,	O
+'c'	O
+,	O
+'a'	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'e'	O
+,	O
+'h'	O
+,	O
+'a'	O
+,	O
+'v'	O
+,	O
+'i'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'i'	O
+,	O
+'f'	O
+,	O
+' '	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+' '	O
+,	O
+'i'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'g'	O
+,	O
+'i'	O
+,	O
+'v'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'A'	O
+,	O
+' '	O
+,	O
+'k'	O
+,	O
+'e'	O
+,	O
+'y'	O
+,	O
+' '	O
+,	O
+'p'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'c'	O
+,	O
+'e'	O
+,	O
+'d'	O
+,	O
+'e'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'y'	O
+,	O
+' '	O
+,	O
+'a'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+'i'	O
+,	O
+'c'	O
+,	O
+'a'	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'C'	O
+,	O
+'t'	O
+,	O
+'r'	O
+,	O
+'l'	O
+,	O
+' '	O
+,	O
+'k'	O
+,	O
+'e'	O
+,	O
+'y'	O
+,	O
+';'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'u'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'^'	O
+,	O
+'K'	O
+,	O
+' '	O
+,	O
+'i'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'t'	O
+,	O
+'r'	O
+,	O
+'l'	O
+,	O
+'-'	O
+,	O
+'K'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'h'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'H'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'D'	O
+,	O
+'i'	O
+,	O
+'s'	O
+,	O
+'p'	O
+,	O
+'l'	O
+,	O
+'a'	O
+,	O
+'y'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'i'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+'l'	O
+,	O
+'p'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'q'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+':'	O
+,	O
+'q'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'Q'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+':'	O
+,	O
+'Q'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'Z'	O
+,	O
+'Z'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'x'	O
+,	O
+'i'	O
+,	O
+'t'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'\n'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'M'	O
+,	O
+'\b'	O
+,	O
+'M'	O
+,	O
+'O'	O
+,	O
+'\b'	O
+,	O
+'O'	O
+,	O
+'V'	O
+,	O
+'\b'	O
+,	O
+'V'	O
+,	O
+'I'	O
+,	O
+'\b'	O
+,	O
+'I'	O
+,	O
+'N'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+'G'	O
+,	O
+'\b'	O
+,	O
+'G'	O
+,	O
+'\n'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'^'	O
+,	O
+'E'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'j'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'^'	O
+,	O
+'N'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'C'	O
+,	O
+'R'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'*'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'F'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+'w'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'('	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+')'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'y'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'^'	O
+,	O
+'Y'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'k'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'^'	O
+,	O
+'K'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'^'	O
+,	O
+'P'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'*'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'B'	O
+,	O
+'a'	O
+,	O
+'c'	O
+,	O
+'k'	O
+,	O
+'w'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'('	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+')'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'^'	O
+,	O
+'F'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'^'	O
+,	O
+'V'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'S'	O
+,	O
+'P'	O
+,	O
+'A'	O
+,	O
+'C'	O
+,	O
+'E'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'*'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'F'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+'w'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'w'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+'o'	O
+,	O
+'w'	O
+,	O
+' '	O
+,	O
+'('	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+')'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'^'	O
+,	O
+'B'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'S'	O
+,	O
+'C'	O
+,	O
+'-'	O
+,	O
+'v'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'*'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'B'	O
+,	O
+'a'	O
+,	O
+'c'	O
+,	O
+'k'	O
+,	O
+'w'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'w'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+'o'	O
+,	O
+'w'	O
+,	O
+' '	O
+,	O
+'('	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+')'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'z'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'*'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'F'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+'w'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'w'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+'o'	O
+,	O
+'w'	O
+,	O
+' '	O
+,	O
+'('	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'w'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+'o'	O
+,	O
+'w'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'o'	O
+,	O
+' '	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+')'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'w'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'*'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'B'	O
+,	O
+'a'	O
+,	O
+'c'	O
+,	O
+'k'	O
+,	O
+'w'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'w'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+'o'	O
+,	O
+'w'	O
+,	O
+' '	O
+,	O
+'('	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'w'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+'o'	O
+,	O
+'w'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'o'	O
+,	O
+' '	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+')'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'S'	O
+,	O
+'C'	O
+,	O
+'-'	O
+,	O
+'S'	O
+,	O
+'P'	O
+,	O
+'A'	O
+,	O
+'C'	O
+,	O
+'E'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'*'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'F'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+'w'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'w'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+'o'	O
+,	O
+'w'	O
+,	O
+','	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'u'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'d'	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'\''	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'t'	O
+,	O
+'o'	O
+,	O
+'p'	O
+,	O
+' '	O
+,	O
+'a'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+'-'	O
+,	O
+'o'	O
+,	O
+'f'	O
+,	O
+'-'	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'^'	O
+,	O
+'D'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'*'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'F'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+'w'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'h'	O
+,	O
+'a'	O
+,	O
+'l'	O
+,	O
+'f'	O
+,	O
+'-'	O
+,	O
+'w'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+'o'	O
+,	O
+'w'	O
+,	O
+' '	O
+,	O
+'('	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'h'	O
+,	O
+'a'	O
+,	O
+'l'	O
+,	O
+'f'	O
+,	O
+'-'	O
+,	O
+'w'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+'o'	O
+,	O
+'w'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'o'	O
+,	O
+' '	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+')'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'u'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'^'	O
+,	O
+'U'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'*'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'B'	O
+,	O
+'a'	O
+,	O
+'c'	O
+,	O
+'k'	O
+,	O
+'w'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'h'	O
+,	O
+'a'	O
+,	O
+'l'	O
+,	O
+'f'	O
+,	O
+'-'	O
+,	O
+'w'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+'o'	O
+,	O
+'w'	O
+,	O
+' '	O
+,	O
+'('	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'h'	O
+,	O
+'a'	O
+,	O
+'l'	O
+,	O
+'f'	O
+,	O
+'-'	O
+,	O
+'w'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+'o'	O
+,	O
+'w'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'o'	O
+,	O
+' '	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+')'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'S'	O
+,	O
+'C'	O
+,	O
+'-'	O
+,	O
+')'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'R'	O
+,	O
+'i'	O
+,	O
+'g'	O
+,	O
+'h'	O
+,	O
+'t'	O
+,	O
+'A'	O
+,	O
+'r'	O
+,	O
+'r'	O
+,	O
+'o'	O
+,	O
+'w'	O
+,	O
+' '	O
+,	O
+'*'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'R'	O
+,	O
+'i'	O
+,	O
+'g'	O
+,	O
+'h'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'h'	O
+,	O
+'a'	O
+,	O
+'l'	O
+,	O
+'f'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'c'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'w'	O
+,	O
+'i'	O
+,	O
+'d'	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+' '	O
+,	O
+'('	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+' '	O
+,	O
+'p'	O
+,	O
+'o'	O
+,	O
+'s'	O
+,	O
+'i'	O
+,	O
+'t'	O
+,	O
+'i'	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'s'	O
+,	O
+')'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'S'	O
+,	O
+'C'	O
+,	O
+'-'	O
+,	O
+'('	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'L'	O
+,	O
+'e'	O
+,	O
+'f'	O
+,	O
+'t'	O
+,	O
+'A'	O
+,	O
+'r'	O
+,	O
+'r'	O
+,	O
+'o'	O
+,	O
+'w'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'*'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'L'	O
+,	O
+'e'	O
+,	O
+'f'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'h'	O
+,	O
+'a'	O
+,	O
+'l'	O
+,	O
+'f'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'c'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'w'	O
+,	O
+'i'	O
+,	O
+'d'	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+' '	O
+,	O
+'('	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+' '	O
+,	O
+'p'	O
+,	O
+'o'	O
+,	O
+'s'	O
+,	O
+'i'	O
+,	O
+'t'	O
+,	O
+'i'	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'s'	O
+,	O
+')'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'S'	O
+,	O
+'C'	O
+,	O
+'-'	O
+,	O
+'}'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'^'	O
+,	O
+'R'	O
+,	O
+'i'	O
+,	O
+'g'	O
+,	O
+'h'	O
+,	O
+'t'	O
+,	O
+'A'	O
+,	O
+'r'	O
+,	O
+'r'	O
+,	O
+'o'	O
+,	O
+'w'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'R'	O
+,	O
+'i'	O
+,	O
+'g'	O
+,	O
+'h'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'o'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'a'	O
+,	O
+'s'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'o'	O
+,	O
+'l'	O
+,	O
+'u'	O
+,	O
+'m'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'d'	O
+,	O
+'i'	O
+,	O
+'s'	O
+,	O
+'p'	O
+,	O
+'l'	O
+,	O
+'a'	O
+,	O
+'y'	O
+,	O
+'e'	O
+,	O
+'d'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'S'	O
+,	O
+'C'	O
+,	O
+'-'	O
+,	O
+'{'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'^'	O
+,	O
+'L'	O
+,	O
+'e'	O
+,	O
+'f'	O
+,	O
+'t'	O
+,	O
+'A'	O
+,	O
+'r'	O
+,	O
+'r'	O
+,	O
+'o'	O
+,	O
+'w'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'L'	O
+,	O
+'e'	O
+,	O
+'f'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'o'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'r'	O
+,	O
+'s'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'o'	O
+,	O
+'l'	O
+,	O
+'u'	O
+,	O
+'m'	O
+,	O
+'n'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'F'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'F'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+'w'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'v'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+';'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'k'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'"'	O
+,	O
+'t'	O
+,	O
+'a'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'f'	O
+,	O
+'"'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'S'	O
+,	O
+'C'	O
+,	O
+'-'	O
+,	O
+'F'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'L'	O
+,	O
+'i'	O
+,	O
+'k'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'F'	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'u'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'t'	O
+,	O
+'o'	O
+,	O
+'p'	O
+,	O
+' '	O
+,	O
+'w'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+' '	O
+,	O
+'p'	O
+,	O
+'a'	O
+,	O
+'t'	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'i'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'o'	O
+,	O
+'u'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'^'	O
+,	O
+'R'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'^'	O
+,	O
+'L'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'R'	O
+,	O
+'e'	O
+,	O
+'p'	O
+,	O
+'a'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'c'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'R'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'R'	O
+,	O
+'e'	O
+,	O
+'p'	O
+,	O
+'a'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'c'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+','	O
+,	O
+' '	O
+,	O
+'d'	O
+,	O
+'i'	O
+,	O
+'s'	O
+,	O
+'c'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'d'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'g'	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'u'	O
+,	O
+'f'	O
+,	O
+'f'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'p'	O
+,	O
+'u'	O
+,	O
+'t'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'D'	O
+,	O
+'e'	O
+,	O
+'f'	O
+,	O
+'a'	O
+,	O
+'u'	O
+,	O
+'l'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'"'	O
+,	O
+'w'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+'o'	O
+,	O
+'w'	O
+,	O
+'"'	O
+,	O
+' '	O
+,	O
+'i'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'c'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+'i'	O
+,	O
+'g'	O
+,	O
+'h'	O
+,	O
+'t'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'D'	O
+,	O
+'e'	O
+,	O
+'f'	O
+,	O
+'a'	O
+,	O
+'u'	O
+,	O
+'l'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'"'	O
+,	O
+'h'	O
+,	O
+'a'	O
+,	O
+'l'	O
+,	O
+'f'	O
+,	O
+'-'	O
+,	O
+'w'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+'o'	O
+,	O
+'w'	O
+,	O
+'"'	O
+,	O
+' '	O
+,	O
+'i'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'h'	O
+,	O
+'a'	O
+,	O
+'l'	O
+,	O
+'f'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'f'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'c'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+'i'	O
+,	O
+'g'	O
+,	O
+'h'	O
+,	O
+'t'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'\n'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'S'	O
+,	O
+'\b'	O
+,	O
+'S'	O
+,	O
+'E'	O
+,	O
+'\b'	O
+,	O
+'E'	O
+,	O
+'A'	O
+,	O
+'\b'	O
+,	O
+'A'	O
+,	O
+'R'	O
+,	O
+'\b'	O
+,	O
+'R'	O
+,	O
+'C'	O
+,	O
+'\b'	O
+,	O
+'C'	O
+,	O
+'H'	O
+,	O
+'\b'	O
+,	O
+'H'	O
+,	O
+'I'	O
+,	O
+'\b'	O
+,	O
+'I'	O
+,	O
+'N'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+'G'	O
+,	O
+'\b'	O
+,	O
+'G'	O
+,	O
+'\n'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'/'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'p'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'a'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'t'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'t'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'e'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'r'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'*'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'S'	O
+,	O
+'e'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+'w'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'('	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+'-'	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+')'	O
+,	O
+' '	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'t'	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'g'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'?'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'p'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'a'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'t'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'t'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'e'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'r'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'*'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'S'	O
+,	O
+'e'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'a'	O
+,	O
+'c'	O
+,	O
+'k'	O
+,	O
+'w'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'('	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+'-'	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+')'	O
+,	O
+' '	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'t'	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'g'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'*'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'R'	O
+,	O
+'e'	O
+,	O
+'p'	O
+,	O
+'e'	O
+,	O
+'a'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'p'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'v'	O
+,	O
+'i'	O
+,	O
+'o'	O
+,	O
+'u'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+' '	O
+,	O
+'('	O
+,	O
+'f'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+'-'	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'c'	O
+,	O
+'c'	O
+,	O
+'u'	O
+,	O
+'r'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+'c'	O
+,	O
+'e'	O
+,	O
+')'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'N'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'*'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'R'	O
+,	O
+'e'	O
+,	O
+'p'	O
+,	O
+'e'	O
+,	O
+'a'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'p'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'v'	O
+,	O
+'i'	O
+,	O
+'o'	O
+,	O
+'u'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+' '	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'v'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'d'	O
+,	O
+'i'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'c'	O
+,	O
+'t'	O
+,	O
+'i'	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'S'	O
+,	O
+'C'	O
+,	O
+'-'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'*'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'R'	O
+,	O
+'e'	O
+,	O
+'p'	O
+,	O
+'e'	O
+,	O
+'a'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'p'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'v'	O
+,	O
+'i'	O
+,	O
+'o'	O
+,	O
+'u'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+','	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'p'	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+'n'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'g'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'S'	O
+,	O
+'C'	O
+,	O
+'-'	O
+,	O
+'N'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'*'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'R'	O
+,	O
+'e'	O
+,	O
+'p'	O
+,	O
+'e'	O
+,	O
+'a'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'p'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'v'	O
+,	O
+'i'	O
+,	O
+'o'	O
+,	O
+'u'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+','	O
+,	O
+' '	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'v'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'d'	O
+,	O
+'i'	O
+,	O
+'r'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+'&'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'p'	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+'n'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'g'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'S'	O
+,	O
+'C'	O
+,	O
+'-'	O
+,	O
+'u'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'U'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+'o'	O
+,	O
+' '	O
+,	O
+'('	O
+,	O
+'t'	O
+,	O
+'o'	O
+,	O
+'g'	O
+,	O
+'g'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+')'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+' '	O
+,	O
+'h'	O
+,	O
+'i'	O
+,	O
+'g'	O
+,	O
+'h'	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'g'	O
+,	O
+'h'	O
+,	O
+'t'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'g'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'&'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'p'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'a'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'t'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'t'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'e'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'r'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'*'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'D'	O
+,	O
+'i'	O
+,	O
+'s'	O
+,	O
+'p'	O
+,	O
+'l'	O
+,	O
+'a'	O
+,	O
+'y'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'l'	O
+,	O
+'y'	O
+,	O
+' '	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'t'	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'g'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'A'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+' '	O
+,	O
+'p'	O
+,	O
+'a'	O
+,	O
+'t'	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'y'	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'p'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'c'	O
+,	O
+'e'	O
+,	O
+'d'	O
+,	O
+'e'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'y'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'m'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'f'	O
+,	O
+':'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'^'	O
+,	O
+'N'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'!'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'S'	O
+,	O
+'e'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'N'	O
+,	O
+'O'	O
+,	O
+'N'	O
+,	O
+'-'	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'t'	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'g'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'^'	O
+,	O
+'E'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'*'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'S'	O
+,	O
+'e'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+' '	O
+,	O
+'m'	O
+,	O
+'u'	O
+,	O
+'l'	O
+,	O
+'t'	O
+,	O
+'i'	O
+,	O
+'p'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'('	O
+,	O
+'p'	O
+,	O
+'a'	O
+,	O
+'s'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'r'	O
+,	O
+'u'	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'N'	O
+,	O
+'D'	O
+,	O
+' '	O
+,	O
+'O'	O
+,	O
+'F'	O
+,	O
+' '	O
+,	O
+'F'	O
+,	O
+'I'	O
+,	O
+'L'	O
+,	O
+'E'	O
+,	O
+')'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'^'	O
+,	O
+'F'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'@'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'S'	O
+,	O
+'t'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+' '	O
+,	O
+'a'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'F'	O
+,	O
+'I'	O
+,	O
+'R'	O
+,	O
+'S'	O
+,	O
+'T'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'('	O
+,	O
+'f'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'/'	O
+,	O
+')'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'a'	O
+,	O
+'s'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'('	O
+,	O
+'f'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'?'	O
+,	O
+')'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'^'	O
+,	O
+'K'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'H'	O
+,	O
+'i'	O
+,	O
+'g'	O
+,	O
+'h'	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'g'	O
+,	O
+'h'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'t'	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+','	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'u'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'d'	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'\''	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'m'	O
+,	O
+'o'	O
+,	O
+'v'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'('	O
+,	O
+'K'	O
+,	O
+'E'	O
+,	O
+'E'	O
+,	O
+'P'	O
+,	O
+' '	O
+,	O
+'p'	O
+,	O
+'o'	O
+,	O
+'s'	O
+,	O
+'i'	O
+,	O
+'t'	O
+,	O
+'i'	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+')'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'^'	O
+,	O
+'R'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'D'	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'\''	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'u'	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'R'	O
+,	O
+'E'	O
+,	O
+'G'	O
+,	O
+'U'	O
+,	O
+'L'	O
+,	O
+'A'	O
+,	O
+'R'	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'X'	O
+,	O
+'P'	O
+,	O
+'R'	O
+,	O
+'E'	O
+,	O
+'S'	O
+,	O
+'S'	O
+,	O
+'I'	O
+,	O
+'O'	O
+,	O
+'N'	O
+,	O
+'S'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'\n'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'J'	O
+,	O
+'\b'	O
+,	O
+'J'	O
+,	O
+'U'	O
+,	O
+'\b'	O
+,	O
+'U'	O
+,	O
+'M'	O
+,	O
+'\b'	O
+,	O
+'M'	O
+,	O
+'P'	O
+,	O
+'\b'	O
+,	O
+'P'	O
+,	O
+'I'	O
+,	O
+'\b'	O
+,	O
+'I'	O
+,	O
+'N'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+'G'	O
+,	O
+'\b'	O
+,	O
+'G'	O
+,	O
+'\n'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'g'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'<'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'S'	O
+,	O
+'C'	O
+,	O
+'-'	O
+,	O
+'<'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'*'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'G'	O
+,	O
+'o'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'o'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'r'	O
+,	O
+'s'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'('	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+')'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'G'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'>'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'S'	O
+,	O
+'C'	O
+,	O
+'-'	O
+,	O
+'>'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'*'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'G'	O
+,	O
+'o'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'o'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'a'	O
+,	O
+'s'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'('	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+')'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'p'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'%'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'*'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'G'	O
+,	O
+'o'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'o'	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'e'	O
+,	O
+'g'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'n'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'g'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'f'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'('	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+' '	O
+,	O
+'p'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+'c'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'t'	O
+,	O
+'o'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+')'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'*'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'G'	O
+,	O
+'o'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'o'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'('	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+'-'	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+')'	O
+,	O
+' '	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+'x'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'a'	O
+,	O
+'g'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'T'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'*'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'G'	O
+,	O
+'o'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'o'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'('	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+'-'	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+')'	O
+,	O
+' '	O
+,	O
+'p'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'v'	O
+,	O
+'i'	O
+,	O
+'o'	O
+,	O
+'u'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'a'	O
+,	O
+'g'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'{'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'('	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'['	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'*'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'F'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'l'	O
+,	O
+'o'	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'r'	O
+,	O
+'a'	O
+,	O
+'c'	O
+,	O
+'k'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'}'	O
+,	O
+' '	O
+,	O
+')'	O
+,	O
+' '	O
+,	O
+']'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'}'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+')'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+']'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'*'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'F'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'p'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'r'	O
+,	O
+'a'	O
+,	O
+'c'	O
+,	O
+'k'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'{'	O
+,	O
+' '	O
+,	O
+'('	O
+,	O
+' '	O
+,	O
+'['	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'S'	O
+,	O
+'C'	O
+,	O
+'-'	O
+,	O
+'^'	O
+,	O
+'F'	O
+,	O
+' '	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'<'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'c'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'1'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'>'	O
+,	O
+' '	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'<'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'c'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'2'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'>'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'*'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'F'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'l'	O
+,	O
+'o'	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'r'	O
+,	O
+'a'	O
+,	O
+'c'	O
+,	O
+'k'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'<'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'c'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'2'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'>'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'S'	O
+,	O
+'C'	O
+,	O
+'-'	O
+,	O
+'^'	O
+,	O
+'B'	O
+,	O
+' '	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'<'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'c'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'1'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'>'	O
+,	O
+' '	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'<'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'c'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'2'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'>'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'*'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'F'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'p'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'r'	O
+,	O
+'a'	O
+,	O
+'c'	O
+,	O
+'k'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'<'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'c'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'1'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'>'	O
+,	O
+' '	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'a'	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+' '	O
+,	O
+'"'	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'l'	O
+,	O
+'o'	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'r'	O
+,	O
+'a'	O
+,	O
+'c'	O
+,	O
+'k'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+'"'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'o'	O
+,	O
+'m'	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'g'	O
+,	O
+'o'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+'w'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'o'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'l'	O
+,	O
+'o'	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'r'	O
+,	O
+'a'	O
+,	O
+'c'	O
+,	O
+'k'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'t'	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'g'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'('	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+'-'	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+')'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'p'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'r'	O
+,	O
+'a'	O
+,	O
+'c'	O
+,	O
+'k'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'o'	O
+,	O
+'p'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'a'	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+' '	O
+,	O
+'"'	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'p'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'r'	O
+,	O
+'a'	O
+,	O
+'c'	O
+,	O
+'k'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+'"'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'o'	O
+,	O
+'m'	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'g'	O
+,	O
+'o'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'a'	O
+,	O
+'c'	O
+,	O
+'k'	O
+,	O
+'w'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'o'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'p'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'r'	O
+,	O
+'a'	O
+,	O
+'c'	O
+,	O
+'k'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'t'	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'g'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'('	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+'-'	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+')'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'l'	O
+,	O
+'o'	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'r'	O
+,	O
+'a'	O
+,	O
+'c'	O
+,	O
+'k'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'o'	O
+,	O
+'t'	O
+,	O
+'t'	O
+,	O
+'o'	O
+,	O
+'m'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'m'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'<'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'l'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'e'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'t'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'t'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'e'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'r'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'>'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'M'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'k'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'u'	O
+,	O
+'r'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'o'	O
+,	O
+'p'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'w'	O
+,	O
+'i'	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+' '	O
+,	O
+'<'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+'>'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'M'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'<'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'l'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'e'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'t'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'t'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'e'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'r'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'>'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'M'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'k'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'u'	O
+,	O
+'r'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'o'	O
+,	O
+'t'	O
+,	O
+'t'	O
+,	O
+'o'	O
+,	O
+'m'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'w'	O
+,	O
+'i'	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+' '	O
+,	O
+'<'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+'>'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'\''	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'<'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'l'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'e'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'t'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'t'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'e'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'r'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'>'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'G'	O
+,	O
+'o'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'o'	O
+,	O
+' '	O
+,	O
+'a'	O
+,	O
+' '	O
+,	O
+'p'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'v'	O
+,	O
+'i'	O
+,	O
+'o'	O
+,	O
+'u'	O
+,	O
+'s'	O
+,	O
+'l'	O
+,	O
+'y'	O
+,	O
+' '	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'k'	O
+,	O
+'e'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'p'	O
+,	O
+'o'	O
+,	O
+'s'	O
+,	O
+'i'	O
+,	O
+'t'	O
+,	O
+'i'	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'\''	O
+,	O
+'\''	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'G'	O
+,	O
+'o'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'o'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'p'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'v'	O
+,	O
+'i'	O
+,	O
+'o'	O
+,	O
+'u'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'p'	O
+,	O
+'o'	O
+,	O
+'s'	O
+,	O
+'i'	O
+,	O
+'t'	O
+,	O
+'i'	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'^'	O
+,	O
+'X'	O
+,	O
+'^'	O
+,	O
+'X'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'S'	O
+,	O
+'a'	O
+,	O
+'m'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'a'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'\''	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'S'	O
+,	O
+'C'	O
+,	O
+'-'	O
+,	O
+'M'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'<'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'l'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'e'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'t'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'t'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'e'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'r'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'>'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'C'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'a'	O
+,	O
+' '	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'k'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'A'	O
+,	O
+' '	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'k'	O
+,	O
+' '	O
+,	O
+'i'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+'y'	O
+,	O
+' '	O
+,	O
+'u'	O
+,	O
+'p'	O
+,	O
+'p'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+'-'	O
+,	O
+'c'	O
+,	O
+'a'	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'o'	O
+,	O
+'w'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+'-'	O
+,	O
+'c'	O
+,	O
+'a'	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'C'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+'t'	O
+,	O
+'a'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'k'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'p'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'d'	O
+,	O
+'e'	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+'d'	O
+,	O
+':'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'^'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'m'	O
+,	O
+'e'	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'e'	O
+,	O
+'g'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'n'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'g'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'f'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'$'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'m'	O
+,	O
+'e'	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'f'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'\n'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'C'	O
+,	O
+'\b'	O
+,	O
+'C'	O
+,	O
+'H'	O
+,	O
+'\b'	O
+,	O
+'H'	O
+,	O
+'A'	O
+,	O
+'\b'	O
+,	O
+'A'	O
+,	O
+'N'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+'G'	O
+,	O
+'\b'	O
+,	O
+'G'	O
+,	O
+'I'	O
+,	O
+'\b'	O
+,	O
+'I'	O
+,	O
+'N'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+'G'	O
+,	O
+'\b'	O
+,	O
+'G'	O
+,	O
+' '	O
+,	O
+'F'	O
+,	O
+'\b'	O
+,	O
+'F'	O
+,	O
+'I'	O
+,	O
+'\b'	O
+,	O
+'I'	O
+,	O
+'L'	O
+,	O
+'\b'	O
+,	O
+'L'	O
+,	O
+'E'	O
+,	O
+'\b'	O
+,	O
+'E'	O
+,	O
+'S'	O
+,	O
+'\b'	O
+,	O
+'S'	O
+,	O
+'\n'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+':'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'['	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'f'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'i'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'l'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'e'	O
+,	O
+']'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'x'	O
+,	O
+'a'	O
+,	O
+'m'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'a'	O
+,	O
+' '	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+'w'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'^'	O
+,	O
+'X'	O
+,	O
+'^'	O
+,	O
+'V'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'S'	O
+,	O
+'a'	O
+,	O
+'m'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'a'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+':'	O
+,	O
+'e'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+':'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'*'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'x'	O
+,	O
+'a'	O
+,	O
+'m'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'('	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+'-'	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+')'	O
+,	O
+' '	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+'x'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'r'	O
+,	O
+'o'	O
+,	O
+'m'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'o'	O
+,	O
+'m'	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+':'	O
+,	O
+'p'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'*'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'x'	O
+,	O
+'a'	O
+,	O
+'m'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'('	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+'-'	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+')'	O
+,	O
+' '	O
+,	O
+'p'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'v'	O
+,	O
+'i'	O
+,	O
+'o'	O
+,	O
+'u'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'r'	O
+,	O
+'o'	O
+,	O
+'m'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'o'	O
+,	O
+'m'	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+':'	O
+,	O
+'x'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'*'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'x'	O
+,	O
+'a'	O
+,	O
+'m'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'r'	O
+,	O
+'s'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'('	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+'-'	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+')'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'r'	O
+,	O
+'o'	O
+,	O
+'m'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'o'	O
+,	O
+'m'	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+':'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'D'	O
+,	O
+'e'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'u'	O
+,	O
+'r'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'r'	O
+,	O
+'o'	O
+,	O
+'m'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'o'	O
+,	O
+'m'	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'s'	O
+,	O
+'t'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'='	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'^'	O
+,	O
+'G'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+':'	O
+,	O
+'f'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'P'	O
+,	O
+'r'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'u'	O
+,	O
+'r'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'n'	O
+,	O
+'a'	O
+,	O
+'m'	O
+,	O
+'e'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'\n'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'M'	O
+,	O
+'\b'	O
+,	O
+'M'	O
+,	O
+'I'	O
+,	O
+'\b'	O
+,	O
+'I'	O
+,	O
+'S'	O
+,	O
+'\b'	O
+,	O
+'S'	O
+,	O
+'C'	O
+,	O
+'\b'	O
+,	O
+'C'	O
+,	O
+'E'	O
+,	O
+'\b'	O
+,	O
+'E'	O
+,	O
+'L'	O
+,	O
+'\b'	O
+,	O
+'L'	O
+,	O
+'L'	O
+,	O
+'\b'	O
+,	O
+'L'	O
+,	O
+'A'	O
+,	O
+'\b'	O
+,	O
+'A'	O
+,	O
+'N'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+'E'	O
+,	O
+'\b'	O
+,	O
+'E'	O
+,	O
+'O'	O
+,	O
+'\b'	O
+,	O
+'O'	O
+,	O
+'U'	O
+,	O
+'\b'	O
+,	O
+'U'	O
+,	O
+'S'	O
+,	O
+'\b'	O
+,	O
+'S'	O
+,	O
+' '	O
+,	O
+'C'	O
+,	O
+'\b'	O
+,	O
+'C'	O
+,	O
+'O'	O
+,	O
+'\b'	O
+,	O
+'O'	O
+,	O
+'M'	O
+,	O
+'\b'	O
+,	O
+'M'	O
+,	O
+'M'	O
+,	O
+'\b'	O
+,	O
+'M'	O
+,	O
+'A'	O
+,	O
+'\b'	O
+,	O
+'A'	O
+,	O
+'N'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+'D'	O
+,	O
+'\b'	O
+,	O
+'D'	O
+,	O
+'S'	O
+,	O
+'\b'	O
+,	O
+'S'	O
+,	O
+'\n'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'<'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'f'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'l'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'a'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'g'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'>'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'T'	O
+,	O
+'o'	O
+,	O
+'g'	O
+,	O
+'g'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'a'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'o'	O
+,	O
+'m'	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'p'	O
+,	O
+'t'	O
+,	O
+'i'	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'['	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'O'	O
+,	O
+'P'	O
+,	O
+'T'	O
+,	O
+'I'	O
+,	O
+'O'	O
+,	O
+'N'	O
+,	O
+'S'	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'e'	O
+,	O
+'l'	O
+,	O
+'o'	O
+,	O
+'w'	O
+,	O
+']'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'<'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'n'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'a'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'m'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'e'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'>'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'T'	O
+,	O
+'o'	O
+,	O
+'g'	O
+,	O
+'g'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'a'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'o'	O
+,	O
+'m'	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'p'	O
+,	O
+'t'	O
+,	O
+'i'	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+','	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'y'	O
+,	O
+' '	O
+,	O
+'n'	O
+,	O
+'a'	O
+,	O
+'m'	O
+,	O
+'e'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'_'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'<'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'f'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'l'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'a'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'g'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'>'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'D'	O
+,	O
+'i'	O
+,	O
+'s'	O
+,	O
+'p'	O
+,	O
+'l'	O
+,	O
+'a'	O
+,	O
+'y'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+'t'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'g'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'f'	O
+,	O
+' '	O
+,	O
+'a'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'o'	O
+,	O
+'m'	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'p'	O
+,	O
+'t'	O
+,	O
+'i'	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'_'	O
+,	O
+'_'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'<'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'n'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'a'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'m'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'e'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'>'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'D'	O
+,	O
+'i'	O
+,	O
+'s'	O
+,	O
+'p'	O
+,	O
+'l'	O
+,	O
+'a'	O
+,	O
+'y'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+'t'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'g'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'f'	O
+,	O
+' '	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'p'	O
+,	O
+'t'	O
+,	O
+'i'	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+','	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'y'	O
+,	O
+' '	O
+,	O
+'n'	O
+,	O
+'a'	O
+,	O
+'m'	O
+,	O
+'e'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'+'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'c'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'m'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'x'	O
+,	O
+'e'	O
+,	O
+'c'	O
+,	O
+'u'	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'m'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'e'	O
+,	O
+'a'	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'i'	O
+,	O
+'m'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'a'	O
+,	O
+' '	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+'w'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'i'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'e'	O
+,	O
+'x'	O
+,	O
+'a'	O
+,	O
+'m'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+'d'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'!'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'c'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'o'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'m'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'m'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'a'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'n'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'x'	O
+,	O
+'e'	O
+,	O
+'c'	O
+,	O
+'u'	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+'l'	O
+,	O
+'l'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'o'	O
+,	O
+'m'	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'w'	O
+,	O
+'i'	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+' '	O
+,	O
+'$'	O
+,	O
+'S'	O
+,	O
+'H'	O
+,	O
+'E'	O
+,	O
+'L'	O
+,	O
+'L'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'|'	O
+,	O
+'X'	O
+,	O
+'\b'	O
+,	O
+'X'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'c'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'o'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'m'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'m'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'a'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'n'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'P'	O
+,	O
+'i'	O
+,	O
+'p'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+'w'	O
+,	O
+'e'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'u'	O
+,	O
+'r'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'p'	O
+,	O
+'o'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'&'	O
+,	O
+' '	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'k'	O
+,	O
+' '	O
+,	O
+'X'	O
+,	O
+'\b'	O
+,	O
+'X'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'o'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+'l'	O
+,	O
+'l'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'o'	O
+,	O
+'m'	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'f'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'i'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'l'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'S'	O
+,	O
+'a'	O
+,	O
+'v'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'p'	O
+,	O
+'u'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'o'	O
+,	O
+' '	O
+,	O
+'a'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'v'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'d'	O
+,	O
+'i'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'u'	O
+,	O
+'r'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'w'	O
+,	O
+'i'	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+' '	O
+,	O
+'$'	O
+,	O
+'V'	O
+,	O
+'I'	O
+,	O
+'S'	O
+,	O
+'U'	O
+,	O
+'A'	O
+,	O
+'L'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'$'	O
+,	O
+'E'	O
+,	O
+'D'	O
+,	O
+'I'	O
+,	O
+'T'	O
+,	O
+'O'	O
+,	O
+'R'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'V'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'P'	O
+,	O
+'r'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'v'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+'s'	O
+,	O
+'i'	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'n'	O
+,	O
+'u'	O
+,	O
+'m'	O
+,	O
+'b'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'f'	O
+,	O
+' '	O
+,	O
+'"'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+'s'	O
+,	O
+'"'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'\n'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'O'	O
+,	O
+'\b'	O
+,	O
+'O'	O
+,	O
+'P'	O
+,	O
+'\b'	O
+,	O
+'P'	O
+,	O
+'T'	O
+,	O
+'\b'	O
+,	O
+'T'	O
+,	O
+'I'	O
+,	O
+'\b'	O
+,	O
+'I'	O
+,	O
+'O'	O
+,	O
+'\b'	O
+,	O
+'O'	O
+,	O
+'N'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+'S'	O
+,	O
+'\b'	O
+,	O
+'S'	O
+,	O
+'\n'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'M'	O
+,	O
+'o'	O
+,	O
+'s'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'p'	O
+,	O
+'t'	O
+,	O
+'i'	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'y'	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+'g'	O
+,	O
+'e'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'e'	O
+,	O
+'i'	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'o'	O
+,	O
+'m'	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+','	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'r'	O
+,	O
+'o'	O
+,	O
+'m'	O
+,	O
+' '	O
+,	O
+'w'	O
+,	O
+'i'	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'y'	O
+,	O
+' '	O
+,	O
+'u'	O
+,	O
+'s'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'g'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'o'	O
+,	O
+'m'	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'O'	O
+,	O
+'p'	O
+,	O
+'t'	O
+,	O
+'i'	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'y'	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'g'	O
+,	O
+'i'	O
+,	O
+'v'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'f'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'w'	O
+,	O
+'o'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+'m'	O
+,	O
+'s'	O
+,	O
+':'	O
+,	O
+' '	O
+,	O
+'e'	O
+,	O
+'i'	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'a'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'g'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'a'	O
+,	O
+'c'	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'p'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'c'	O
+,	O
+'e'	O
+,	O
+'d'	O
+,	O
+'e'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'y'	O
+,	O
+' '	O
+,	O
+'a'	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+','	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'a'	O
+,	O
+' '	O
+,	O
+'n'	O
+,	O
+'a'	O
+,	O
+'m'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'p'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'c'	O
+,	O
+'e'	O
+,	O
+'d'	O
+,	O
+'e'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'y'	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'?'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+'l'	O
+,	O
+'p'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'D'	O
+,	O
+'i'	O
+,	O
+'s'	O
+,	O
+'p'	O
+,	O
+'l'	O
+,	O
+'a'	O
+,	O
+'y'	O
+,	O
+' '	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+'l'	O
+,	O
+'p'	O
+,	O
+' '	O
+,	O
+'('	O
+,	O
+'f'	O
+,	O
+'r'	O
+,	O
+'o'	O
+,	O
+'m'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'o'	O
+,	O
+'m'	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+')'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'a'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+'-'	O
+,	O
+'s'	O
+,	O
+'k'	O
+,	O
+'i'	O
+,	O
+'p'	O
+,	O
+'-'	O
+,	O
+'s'	O
+,	O
+'c'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'S'	O
+,	O
+'e'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'k'	O
+,	O
+'i'	O
+,	O
+'p'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'u'	O
+,	O
+'r'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'c'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'A'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'S'	O
+,	O
+'E'	O
+,	O
+'A'	O
+,	O
+'R'	O
+,	O
+'C'	O
+,	O
+'H'	O
+,	O
+'-'	O
+,	O
+'S'	O
+,	O
+'K'	O
+,	O
+'I'	O
+,	O
+'P'	O
+,	O
+'-'	O
+,	O
+'S'	O
+,	O
+'C'	O
+,	O
+'R'	O
+,	O
+'E'	O
+,	O
+'E'	O
+,	O
+'N'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'S'	O
+,	O
+'e'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'t'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'t'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'j'	O
+,	O
+'u'	O
+,	O
+'s'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'a'	O
+,	O
+'f'	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'g'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'b'	O
+,	O
+' '	O
+,	O
+'['	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+']'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'b'	O
+,	O
+'u'	O
+,	O
+'f'	O
+,	O
+'f'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+'s'	O
+,	O
+'='	O
+,	O
+'['	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+']'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'N'	O
+,	O
+'u'	O
+,	O
+'m'	O
+,	O
+'b'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'f'	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'u'	O
+,	O
+'f'	O
+,	O
+'f'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+'s'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'B'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'a'	O
+,	O
+'u'	O
+,	O
+'t'	O
+,	O
+'o'	O
+,	O
+'-'	O
+,	O
+'b'	O
+,	O
+'u'	O
+,	O
+'f'	O
+,	O
+'f'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+'s'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'D'	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'\''	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'a'	O
+,	O
+'u'	O
+,	O
+'t'	O
+,	O
+'o'	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'t'	O
+,	O
+'i'	O
+,	O
+'c'	O
+,	O
+'a'	O
+,	O
+'l'	O
+,	O
+'l'	O
+,	O
+'y'	O
+,	O
+' '	O
+,	O
+'a'	O
+,	O
+'l'	O
+,	O
+'l'	O
+,	O
+'o'	O
+,	O
+'c'	O
+,	O
+'a'	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'u'	O
+,	O
+'f'	O
+,	O
+'f'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'p'	O
+,	O
+'i'	O
+,	O
+'p'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'c'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'c'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'-'	O
+,	O
+'s'	O
+,	O
+'c'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'R'	O
+,	O
+'e'	O
+,	O
+'p'	O
+,	O
+'a'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'y'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'g'	O
+,	O
+' '	O
+,	O
+'r'	O
+,	O
+'a'	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'c'	O
+,	O
+'r'	O
+,	O
+'o'	O
+,	O
+'l'	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'g'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'d'	O
+,	O
+'u'	O
+,	O
+'m'	O
+,	O
+'b'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'D'	O
+,	O
+'u'	O
+,	O
+'m'	O
+,	O
+'b'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+'m'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'a'	O
+,	O
+'l'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'D'	O
+,	O
+' '	O
+,	O
+'['	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'x'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'n'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'.'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'n'	O
+,	O
+']'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'c'	O
+,	O
+'o'	O
+,	O
+'l'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+'='	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'x'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'n'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'.'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'n'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'S'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'c'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'o'	O
+,	O
+'l'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+'s'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+'('	O
+,	O
+'M'	O
+,	O
+'S'	O
+,	O
+'-'	O
+,	O
+'D'	O
+,	O
+'O'	O
+,	O
+'S'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'l'	O
+,	O
+'y'	O
+,	O
+')'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'E'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'q'	O
+,	O
+'u'	O
+,	O
+'i'	O
+,	O
+'t'	O
+,	O
+'-'	O
+,	O
+'a'	O
+,	O
+'t'	O
+,	O
+'-'	O
+,	O
+'e'	O
+,	O
+'o'	O
+,	O
+'f'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'Q'	O
+,	O
+'U'	O
+,	O
+'I'	O
+,	O
+'T'	O
+,	O
+'-'	O
+,	O
+'A'	O
+,	O
+'T'	O
+,	O
+'-'	O
+,	O
+'E'	O
+,	O
+'O'	O
+,	O
+'F'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'Q'	O
+,	O
+'u'	O
+,	O
+'i'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'a'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'f'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'f'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'f'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+'c'	O
+,	O
+'e'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'F'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+'c'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'p'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'n'	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'-'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'g'	O
+,	O
+'u'	O
+,	O
+'l'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'F'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'q'	O
+,	O
+'u'	O
+,	O
+'i'	O
+,	O
+'t'	O
+,	O
+'-'	O
+,	O
+'i'	O
+,	O
+'f'	O
+,	O
+'-'	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+'-'	O
+,	O
+'s'	O
+,	O
+'c'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'Q'	O
+,	O
+'u'	O
+,	O
+'i'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'i'	O
+,	O
+'f'	O
+,	O
+' '	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+'t'	O
+,	O
+'i'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'t'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'r'	O
+,	O
+'s'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'c'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'g'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'h'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+'-'	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'H'	O
+,	O
+'i'	O
+,	O
+'g'	O
+,	O
+'h'	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'g'	O
+,	O
+'h'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'l'	O
+,	O
+'y'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'a'	O
+,	O
+'s'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'t'	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'G'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'H'	O
+,	O
+'I'	O
+,	O
+'L'	O
+,	O
+'I'	O
+,	O
+'T'	O
+,	O
+'E'	O
+,	O
+'-'	O
+,	O
+'S'	O
+,	O
+'E'	O
+,	O
+'A'	O
+,	O
+'R'	O
+,	O
+'C'	O
+,	O
+'H'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'D'	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'\''	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'h'	O
+,	O
+'i'	O
+,	O
+'g'	O
+,	O
+'h'	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'g'	O
+,	O
+'h'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+'y'	O
+,	O
+' '	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'t'	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'h'	O
+,	O
+' '	O
+,	O
+'['	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+']'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'x'	O
+,	O
+'-'	O
+,	O
+'b'	O
+,	O
+'a'	O
+,	O
+'c'	O
+,	O
+'k'	O
+,	O
+'-'	O
+,	O
+'s'	O
+,	O
+'c'	O
+,	O
+'r'	O
+,	O
+'o'	O
+,	O
+'l'	O
+,	O
+'l'	O
+,	O
+'='	O
+,	O
+'['	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+']'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'B'	O
+,	O
+'a'	O
+,	O
+'c'	O
+,	O
+'k'	O
+,	O
+'w'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'c'	O
+,	O
+'r'	O
+,	O
+'o'	O
+,	O
+'l'	O
+,	O
+'l'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'m'	O
+,	O
+'i'	O
+,	O
+'t'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'i'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'i'	O
+,	O
+'g'	O
+,	O
+'n'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'-'	O
+,	O
+'c'	O
+,	O
+'a'	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'I'	O
+,	O
+'g'	O
+,	O
+'n'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'a'	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'a'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'d'	O
+,	O
+'o'	O
+,	O
+' '	O
+,	O
+'n'	O
+,	O
+'o'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'t'	O
+,	O
+'a'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'u'	O
+,	O
+'p'	O
+,	O
+'p'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+'c'	O
+,	O
+'a'	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'I'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'I'	O
+,	O
+'G'	O
+,	O
+'N'	O
+,	O
+'O'	O
+,	O
+'R'	O
+,	O
+'E'	O
+,	O
+'-'	O
+,	O
+'C'	O
+,	O
+'A'	O
+,	O
+'S'	O
+,	O
+'E'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'I'	O
+,	O
+'g'	O
+,	O
+'n'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'a'	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'a'	O
+,	O
+'l'	O
+,	O
+'l'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'j'	O
+,	O
+' '	O
+,	O
+'['	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+']'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'j'	O
+,	O
+'u'	O
+,	O
+'m'	O
+,	O
+'p'	O
+,	O
+'-'	O
+,	O
+'t'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'g'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+'='	O
+,	O
+'['	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+']'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'S'	O
+,	O
+'c'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'p'	O
+,	O
+'o'	O
+,	O
+'s'	O
+,	O
+'i'	O
+,	O
+'t'	O
+,	O
+'i'	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'f'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'g'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'J'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'s'	O
+,	O
+'t'	O
+,	O
+'a'	O
+,	O
+'t'	O
+,	O
+'u'	O
+,	O
+'s'	O
+,	O
+'-'	O
+,	O
+'c'	O
+,	O
+'o'	O
+,	O
+'l'	O
+,	O
+'u'	O
+,	O
+'m'	O
+,	O
+'n'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'D'	O
+,	O
+'i'	O
+,	O
+'s'	O
+,	O
+'p'	O
+,	O
+'l'	O
+,	O
+'a'	O
+,	O
+'y'	O
+,	O
+' '	O
+,	O
+'a'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'t'	O
+,	O
+'a'	O
+,	O
+'t'	O
+,	O
+'u'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'o'	O
+,	O
+'l'	O
+,	O
+'u'	O
+,	O
+'m'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'a'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'f'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'e'	O
+,	O
+'d'	O
+,	O
+'g'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'f'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'c'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'k'	O
+,	O
+' '	O
+,	O
+'['	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'f'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'i'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'l'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'e'	O
+,	O
+']'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+'s'	O
+,	O
+'k'	O
+,	O
+'e'	O
+,	O
+'y'	O
+,	O
+'-'	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'='	O
+,	O
+'['	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'f'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'i'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'l'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'e'	O
+,	O
+']'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'U'	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'a'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+'s'	O
+,	O
+'k'	O
+,	O
+'e'	O
+,	O
+'y'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'K'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'q'	O
+,	O
+'u'	O
+,	O
+'i'	O
+,	O
+'t'	O
+,	O
+'-'	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'-'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'t'	O
+,	O
+'r'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'x'	O
+,	O
+'i'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+'p'	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'o'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'t'	O
+,	O
+'r'	O
+,	O
+'l'	O
+,	O
+'-'	O
+,	O
+'C'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'L'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'n'	O
+,	O
+'o'	O
+,	O
+'-'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+'s'	O
+,	O
+'o'	O
+,	O
+'p'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'I'	O
+,	O
+'g'	O
+,	O
+'n'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'L'	O
+,	O
+'E'	O
+,	O
+'S'	O
+,	O
+'S'	O
+,	O
+'O'	O
+,	O
+'P'	O
+,	O
+'E'	O
+,	O
+'N'	O
+,	O
+' '	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+'v'	O
+,	O
+'i'	O
+,	O
+'r'	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'m'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'v'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'i'	O
+,	O
+'a'	O
+,	O
+'b'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'m'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'M'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'l'	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'g'	O
+,	O
+'-'	O
+,	O
+'p'	O
+,	O
+'r'	O
+,	O
+'o'	O
+,	O
+'m'	O
+,	O
+'p'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'L'	O
+,	O
+'O'	O
+,	O
+'N'	O
+,	O
+'G'	O
+,	O
+'-'	O
+,	O
+'P'	O
+,	O
+'R'	O
+,	O
+'O'	O
+,	O
+'M'	O
+,	O
+'P'	O
+,	O
+'T'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'S'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'p'	O
+,	O
+'r'	O
+,	O
+'o'	O
+,	O
+'m'	O
+,	O
+'p'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'t'	O
+,	O
+'y'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'N'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+'-'	O
+,	O
+'n'	O
+,	O
+'u'	O
+,	O
+'m'	O
+,	O
+'b'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'L'	O
+,	O
+'I'	O
+,	O
+'N'	O
+,	O
+'E'	O
+,	O
+'-'	O
+,	O
+'N'	O
+,	O
+'U'	O
+,	O
+'M'	O
+,	O
+'B'	O
+,	O
+'E'	O
+,	O
+'R'	O
+,	O
+'S'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'D'	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'\''	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'u'	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'n'	O
+,	O
+'u'	O
+,	O
+'m'	O
+,	O
+'b'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+'s'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'o'	O
+,	O
+' '	O
+,	O
+'['	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'f'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'i'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'l'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'e'	O
+,	O
+']'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'l'	O
+,	O
+'o'	O
+,	O
+'g'	O
+,	O
+'-'	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'='	O
+,	O
+'['	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'f'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'i'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'l'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'e'	O
+,	O
+']'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'C'	O
+,	O
+'o'	O
+,	O
+'p'	O
+,	O
+'y'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'o'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'o'	O
+,	O
+'g'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'('	O
+,	O
+'s'	O
+,	O
+'t'	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'p'	O
+,	O
+'u'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'l'	O
+,	O
+'y'	O
+,	O
+')'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'O'	O
+,	O
+' '	O
+,	O
+'['	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'f'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'i'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'l'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'e'	O
+,	O
+']'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'L'	O
+,	O
+'O'	O
+,	O
+'G'	O
+,	O
+'-'	O
+,	O
+'F'	O
+,	O
+'I'	O
+,	O
+'L'	O
+,	O
+'E'	O
+,	O
+'='	O
+,	O
+'['	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'f'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'i'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'l'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'e'	O
+,	O
+']'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'C'	O
+,	O
+'o'	O
+,	O
+'p'	O
+,	O
+'y'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'o'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'o'	O
+,	O
+'g'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'('	O
+,	O
+'u'	O
+,	O
+'n'	O
+,	O
+'c'	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+'i'	O
+,	O
+'t'	O
+,	O
+'i'	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'a'	O
+,	O
+'l'	O
+,	O
+'l'	O
+,	O
+'y'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'v'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+'w'	O
+,	O
+'r'	O
+,	O
+'i'	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+')'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'p'	O
+,	O
+' '	O
+,	O
+'['	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'p'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'a'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'t'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'t'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'e'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'r'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'n'	O
+,	O
+']'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'p'	O
+,	O
+'a'	O
+,	O
+'t'	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+'n'	O
+,	O
+'='	O
+,	O
+'['	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'p'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'a'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'t'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'t'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'e'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'r'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'n'	O
+,	O
+']'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'S'	O
+,	O
+'t'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'a'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'p'	O
+,	O
+'a'	O
+,	O
+'t'	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'('	O
+,	O
+'f'	O
+,	O
+'r'	O
+,	O
+'o'	O
+,	O
+'m'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'o'	O
+,	O
+'m'	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+')'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'P'	O
+,	O
+' '	O
+,	O
+'['	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'p'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'r'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'o'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'m'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'p'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'t'	O
+,	O
+']'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'p'	O
+,	O
+'r'	O
+,	O
+'o'	O
+,	O
+'m'	O
+,	O
+'p'	O
+,	O
+'t'	O
+,	O
+'='	O
+,	O
+'['	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'p'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'r'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'o'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'m'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'p'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'t'	O
+,	O
+']'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'D'	O
+,	O
+'e'	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+'w'	O
+,	O
+' '	O
+,	O
+'p'	O
+,	O
+'r'	O
+,	O
+'o'	O
+,	O
+'m'	O
+,	O
+'p'	O
+,	O
+'t'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'q'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'Q'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'q'	O
+,	O
+'u'	O
+,	O
+'i'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'Q'	O
+,	O
+'U'	O
+,	O
+'I'	O
+,	O
+'E'	O
+,	O
+'T'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'s'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'S'	O
+,	O
+'I'	O
+,	O
+'L'	O
+,	O
+'E'	O
+,	O
+'N'	O
+,	O
+'T'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'Q'	O
+,	O
+'u'	O
+,	O
+'i'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+'m'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'a'	O
+,	O
+'l'	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'e'	O
+,	O
+'l'	O
+,	O
+'l'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'R'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'r'	O
+,	O
+'a'	O
+,	O
+'w'	O
+,	O
+'-'	O
+,	O
+'c'	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'t'	O
+,	O
+'r'	O
+,	O
+'o'	O
+,	O
+'l'	O
+,	O
+'-'	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'R'	O
+,	O
+'A'	O
+,	O
+'W'	O
+,	O
+'-'	O
+,	O
+'C'	O
+,	O
+'O'	O
+,	O
+'N'	O
+,	O
+'T'	O
+,	O
+'R'	O
+,	O
+'O'	O
+,	O
+'L'	O
+,	O
+'-'	O
+,	O
+'C'	O
+,	O
+'H'	O
+,	O
+'A'	O
+,	O
+'R'	O
+,	O
+'S'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'O'	O
+,	O
+'u'	O
+,	O
+'t'	O
+,	O
+'p'	O
+,	O
+'u'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'"'	O
+,	O
+'r'	O
+,	O
+'a'	O
+,	O
+'w'	O
+,	O
+'"'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'t'	O
+,	O
+'r'	O
+,	O
+'o'	O
+,	O
+'l'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'a'	O
+,	O
+'c'	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+'s'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'s'	O
+,	O
+'q'	O
+,	O
+'u'	O
+,	O
+'e'	O
+,	O
+'e'	O
+,	O
+'z'	O
+,	O
+'e'	O
+,	O
+'-'	O
+,	O
+'b'	O
+,	O
+'l'	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+'k'	O
+,	O
+'-'	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'S'	O
+,	O
+'q'	O
+,	O
+'u'	O
+,	O
+'e'	O
+,	O
+'e'	O
+,	O
+'z'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'m'	O
+,	O
+'u'	O
+,	O
+'l'	O
+,	O
+'t'	O
+,	O
+'i'	O
+,	O
+'p'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'l'	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+'k'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'S'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+'o'	O
+,	O
+'p'	O
+,	O
+'-'	O
+,	O
+'l'	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'g'	O
+,	O
+'-'	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'C'	O
+,	O
+'h'	O
+,	O
+'o'	O
+,	O
+'p'	O
+,	O
+' '	O
+,	O
+'('	O
+,	O
+'t'	O
+,	O
+'r'	O
+,	O
+'u'	O
+,	O
+'n'	O
+,	O
+'c'	O
+,	O
+'a'	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+')'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'g'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'r'	O
+,	O
+'a'	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'w'	O
+,	O
+'r'	O
+,	O
+'a'	O
+,	O
+'p'	O
+,	O
+'p'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'g'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'['	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'t'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'a'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'g'	O
+,	O
+']'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'t'	O
+,	O
+'a'	O
+,	O
+'g'	O
+,	O
+'='	O
+,	O
+'['	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'t'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'a'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'g'	O
+,	O
+']'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'F'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'a'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'a'	O
+,	O
+'g'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'T'	O
+,	O
+' '	O
+,	O
+'['	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'t'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'a'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'g'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'s'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'f'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'i'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'l'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'e'	O
+,	O
+']'	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'t'	O
+,	O
+'a'	O
+,	O
+'g'	O
+,	O
+'-'	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'='	O
+,	O
+'['	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'t'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'a'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'g'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'s'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'f'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'i'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'l'	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'e'	O
+,	O
+']'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'U'	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'a'	O
+,	O
+'l'	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+'n'	O
+,	O
+'a'	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'a'	O
+,	O
+'g'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'u'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'U'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'u'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+'-'	O
+,	O
+'s'	O
+,	O
+'p'	O
+,	O
+'e'	O
+,	O
+'c'	O
+,	O
+'i'	O
+,	O
+'a'	O
+,	O
+'l'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'U'	O
+,	O
+'N'	O
+,	O
+'D'	O
+,	O
+'E'	O
+,	O
+'R'	O
+,	O
+'L'	O
+,	O
+'I'	O
+,	O
+'N'	O
+,	O
+'E'	O
+,	O
+'-'	O
+,	O
+'S'	O
+,	O
+'P'	O
+,	O
+'E'	O
+,	O
+'C'	O
+,	O
+'I'	O
+,	O
+'A'	O
+,	O
+'L'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'C'	O
+,	O
+'h'	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+'g'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'h'	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'g'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'f'	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'a'	O
+,	O
+'c'	O
+,	O
+'k'	O
+,	O
+'s'	O
+,	O
+'p'	O
+,	O
+'a'	O
+,	O
+'c'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'V'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'v'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+'s'	O
+,	O
+'i'	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'D'	O
+,	O
+'i'	O
+,	O
+'s'	O
+,	O
+'p'	O
+,	O
+'l'	O
+,	O
+'a'	O
+,	O
+'y'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'v'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+'s'	O
+,	O
+'i'	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'n'	O
+,	O
+'u'	O
+,	O
+'m'	O
+,	O
+'b'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'f'	O
+,	O
+' '	O
+,	O
+'"'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+'s'	O
+,	O
+'"'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'w'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'h'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+'-'	O
+,	O
+'u'	O
+,	O
+'n'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'a'	O
+,	O
+'d'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'H'	O
+,	O
+'i'	O
+,	O
+'g'	O
+,	O
+'h'	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'g'	O
+,	O
+'h'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'r'	O
+,	O
+'s'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+'w'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'a'	O
+,	O
+'f'	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+'w'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'d'	O
+,	O
+'-'	O
+,	O
+'s'	O
+,	O
+'c'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'W'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'H'	O
+,	O
+'I'	O
+,	O
+'L'	O
+,	O
+'I'	O
+,	O
+'T'	O
+,	O
+'E'	O
+,	O
+'-'	O
+,	O
+'U'	O
+,	O
+'N'	O
+,	O
+'R'	O
+,	O
+'E'	O
+,	O
+'A'	O
+,	O
+'D'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'H'	O
+,	O
+'i'	O
+,	O
+'g'	O
+,	O
+'h'	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'g'	O
+,	O
+'h'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'r'	O
+,	O
+'s'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+'w'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'a'	O
+,	O
+'f'	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+'y'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+'w'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'m'	O
+,	O
+'o'	O
+,	O
+'v'	O
+,	O
+'e'	O
+,	O
+'m'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+'t'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'x'	O
+,	O
+' '	O
+,	O
+'['	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+'['	O
+,	O
+','	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+']'	O
+,	O
+']'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'t'	O
+,	O
+'a'	O
+,	O
+'b'	O
+,	O
+'s'	O
+,	O
+'='	O
+,	O
+'['	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+'['	O
+,	O
+','	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+']'	O
+,	O
+']'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'S'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'a'	O
+,	O
+'b'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'t'	O
+,	O
+'o'	O
+,	O
+'p'	O
+,	O
+'s'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'X'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'n'	O
+,	O
+'o'	O
+,	O
+'-'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'i'	O
+,	O
+'t'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'D'	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'\''	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'u'	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+'m'	O
+,	O
+'c'	O
+,	O
+'a'	O
+,	O
+'p'	O
+,	O
+' '	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'i'	O
+,	O
+'t'	O
+,	O
+'/'	O
+,	O
+'d'	O
+,	O
+'e'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'i'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'t'	O
+,	O
+'r'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'g'	O
+,	O
+'s'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'y'	O
+,	O
+' '	O
+,	O
+'['	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+']'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'x'	O
+,	O
+'-'	O
+,	O
+'f'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+'w'	O
+,	O
+'-'	O
+,	O
+'s'	O
+,	O
+'c'	O
+,	O
+'r'	O
+,	O
+'o'	O
+,	O
+'l'	O
+,	O
+'l'	O
+,	O
+'='	O
+,	O
+'['	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+']'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'F'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+'w'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'c'	O
+,	O
+'r'	O
+,	O
+'o'	O
+,	O
+'l'	O
+,	O
+'l'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'m'	O
+,	O
+'i'	O
+,	O
+'t'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'z'	O
+,	O
+' '	O
+,	O
+'['	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+']'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'w'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+'o'	O
+,	O
+'w'	O
+,	O
+'='	O
+,	O
+'['	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+']'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'S'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'i'	O
+,	O
+'z'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'f'	O
+,	O
+' '	O
+,	O
+'w'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+'o'	O
+,	O
+'w'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'"'	O
+,	O
+' '	O
+,	O
+'['	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'c'	O
+,	O
+'['	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'c'	O
+,	O
+']'	O
+,	O
+']'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'q'	O
+,	O
+'u'	O
+,	O
+'o'	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+'='	O
+,	O
+'['	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'c'	O
+,	O
+'['	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'c'	O
+,	O
+']'	O
+,	O
+']'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'S'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+'l'	O
+,	O
+'l'	O
+,	O
+' '	O
+,	O
+'q'	O
+,	O
+'u'	O
+,	O
+'o'	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'a'	O
+,	O
+'c'	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+'s'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'~'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'t'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'d'	O
+,	O
+'e'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'D'	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'\''	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'d'	O
+,	O
+'i'	O
+,	O
+'s'	O
+,	O
+'p'	O
+,	O
+'l'	O
+,	O
+'a'	O
+,	O
+'y'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'d'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'a'	O
+,	O
+'f'	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'f'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'#'	O
+,	O
+' '	O
+,	O
+'['	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+']'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'s'	O
+,	O
+'h'	O
+,	O
+'i'	O
+,	O
+'f'	O
+,	O
+'t'	O
+,	O
+'='	O
+,	O
+'['	O
+,	O
+'_'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+']'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'H'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+'i'	O
+,	O
+'z'	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'t'	O
+,	O
+'a'	O
+,	O
+'l'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'c'	O
+,	O
+'r'	O
+,	O
+'o'	O
+,	O
+'l'	O
+,	O
+'l'	O
+,	O
+' '	O
+,	O
+'a'	O
+,	O
+'m'	O
+,	O
+'o'	O
+,	O
+'u'	O
+,	O
+'n'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'('	O
+,	O
+'0'	O
+,	O
+' '	O
+,	O
+'='	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'h'	O
+,	O
+'a'	O
+,	O
+'l'	O
+,	O
+'f'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'c'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'w'	O
+,	O
+'i'	O
+,	O
+'d'	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+')'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'n'	O
+,	O
+'o'	O
+,	O
+'-'	O
+,	O
+'k'	O
+,	O
+'e'	O
+,	O
+'y'	O
+,	O
+'p'	O
+,	O
+'a'	O
+,	O
+'d'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'D'	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'\''	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+'m'	O
+,	O
+'c'	O
+,	O
+'a'	O
+,	O
+'p'	O
+,	O
+' '	O
+,	O
+'k'	O
+,	O
+'e'	O
+,	O
+'y'	O
+,	O
+'p'	O
+,	O
+'a'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'i'	O
+,	O
+'t'	O
+,	O
+'/'	O
+,	O
+'d'	O
+,	O
+'e'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'i'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'t'	O
+,	O
+'r'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'g'	O
+,	O
+'s'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'f'	O
+,	O
+'o'	O
+,	O
+'l'	O
+,	O
+'l'	O
+,	O
+'o'	O
+,	O
+'w'	O
+,	O
+'-'	O
+,	O
+'n'	O
+,	O
+'a'	O
+,	O
+'m'	O
+,	O
+'e'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'T'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'F'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'o'	O
+,	O
+'m'	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+'g'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'i'	O
+,	O
+'f'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'p'	O
+,	O
+'u'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'i'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+'a'	O
+,	O
+'m'	O
+,	O
+'e'	O
+,	O
+'d'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'u'	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+'-'	O
+,	O
+'b'	O
+,	O
+'a'	O
+,	O
+'c'	O
+,	O
+'k'	O
+,	O
+'s'	O
+,	O
+'l'	O
+,	O
+'a'	O
+,	O
+'s'	O
+,	O
+'h'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'S'	O
+,	O
+'u'	O
+,	O
+'b'	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+'q'	O
+,	O
+'u'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'p'	O
+,	O
+'t'	O
+,	O
+'i'	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'u'	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'a'	O
+,	O
+'c'	O
+,	O
+'k'	O
+,	O
+'s'	O
+,	O
+'l'	O
+,	O
+'a'	O
+,	O
+'s'	O
+,	O
+'h'	O
+,	O
+' '	O
+,	O
+'a'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+'c'	O
+,	O
+'a'	O
+,	O
+'p'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+'\n'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'-'	O
+,	O
+'\n'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'L'	O
+,	O
+'\b'	O
+,	O
+'L'	O
+,	O
+'I'	O
+,	O
+'\b'	O
+,	O
+'I'	O
+,	O
+'N'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+'E'	O
+,	O
+'\b'	O
+,	O
+'E'	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'\b'	O
+,	O
+'E'	O
+,	O
+'D'	O
+,	O
+'\b'	O
+,	O
+'D'	O
+,	O
+'I'	O
+,	O
+'\b'	O
+,	O
+'I'	O
+,	O
+'T'	O
+,	O
+'\b'	O
+,	O
+'T'	O
+,	O
+'I'	O
+,	O
+'\b'	O
+,	O
+'I'	O
+,	O
+'N'	O
+,	O
+'\b'	O
+,	O
+'N'	O
+,	O
+'G'	O
+,	O
+'\b'	O
+,	O
+'G'	O
+,	O
+'\n'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'T'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'k'	O
+,	O
+'e'	O
+,	O
+'y'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'u'	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'o'	O
+,	O
+' '	O
+,	O
+'e'	O
+,	O
+'d'	O
+,	O
+'i'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+'x'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'e'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'g'	O
+,	O
+' '	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'"'	O
+,	O
+'c'	O
+,	O
+'o'	O
+,	O
+'m'	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+'"'	O
+,	O
+' '	O
+,	O
+'a'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'b'	O
+,	O
+'o'	O
+,	O
+'t'	O
+,	O
+'t'	O
+,	O
+'o'	O
+,	O
+'m'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'f'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'h'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'c'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+'R'	O
+,	O
+'i'	O
+,	O
+'g'	O
+,	O
+'h'	O
+,	O
+'t'	O
+,	O
+'A'	O
+,	O
+'r'	O
+,	O
+'r'	O
+,	O
+'o'	O
+,	O
+'w'	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'S'	O
+,	O
+'C'	O
+,	O
+'-'	O
+,	O
+'l'	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+'M'	O
+,	O
+'o'	O
+,	O
+'v'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'u'	O
+,	O
+'r'	O
+,	O
+'s'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'r'	O
+,	O
+'i'	O
+,	O
+'g'	O
+,	O
+'h'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'a'	O
+,	O
+'c'	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+'L'	O
+,	O
+'e'	O
+,	O
+'f'	O
+,	O
+'t'	O
+,	O
+'A'	O
+,	O
+'r'	O
+,	O
+'r'	O
+,	O
+'o'	O
+,	O
+'w'	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'S'	O
+,	O
+'C'	O
+,	O
+'-'	O
+,	O
+'h'	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+'M'	O
+,	O
+'o'	O
+,	O
+'v'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'u'	O
+,	O
+'r'	O
+,	O
+'s'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'f'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'a'	O
+,	O
+'c'	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'t'	O
+,	O
+'r'	O
+,	O
+'l'	O
+,	O
+'-'	O
+,	O
+'R'	O
+,	O
+'i'	O
+,	O
+'g'	O
+,	O
+'h'	O
+,	O
+'t'	O
+,	O
+'A'	O
+,	O
+'r'	O
+,	O
+'r'	O
+,	O
+'o'	O
+,	O
+'w'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'S'	O
+,	O
+'C'	O
+,	O
+'-'	O
+,	O
+'R'	O
+,	O
+'i'	O
+,	O
+'g'	O
+,	O
+'h'	O
+,	O
+'t'	O
+,	O
+'A'	O
+,	O
+'r'	O
+,	O
+'r'	O
+,	O
+'o'	O
+,	O
+'w'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'S'	O
+,	O
+'C'	O
+,	O
+'-'	O
+,	O
+'w'	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+'M'	O
+,	O
+'o'	O
+,	O
+'v'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'u'	O
+,	O
+'r'	O
+,	O
+'s'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'r'	O
+,	O
+'i'	O
+,	O
+'g'	O
+,	O
+'h'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'w'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+'d'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'t'	O
+,	O
+'r'	O
+,	O
+'l'	O
+,	O
+'-'	O
+,	O
+'L'	O
+,	O
+'e'	O
+,	O
+'f'	O
+,	O
+'t'	O
+,	O
+'A'	O
+,	O
+'r'	O
+,	O
+'r'	O
+,	O
+'o'	O
+,	O
+'w'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'S'	O
+,	O
+'C'	O
+,	O
+'-'	O
+,	O
+'L'	O
+,	O
+'e'	O
+,	O
+'f'	O
+,	O
+'t'	O
+,	O
+'A'	O
+,	O
+'r'	O
+,	O
+'r'	O
+,	O
+'o'	O
+,	O
+'w'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'S'	O
+,	O
+'C'	O
+,	O
+'-'	O
+,	O
+'b'	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+'M'	O
+,	O
+'o'	O
+,	O
+'v'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'u'	O
+,	O
+'r'	O
+,	O
+'s'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'f'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'w'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+'d'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+'H'	O
+,	O
+'O'	O
+,	O
+'M'	O
+,	O
+'E'	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'S'	O
+,	O
+'C'	O
+,	O
+'-'	O
+,	O
+'0'	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+'M'	O
+,	O
+'o'	O
+,	O
+'v'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'u'	O
+,	O
+'r'	O
+,	O
+'s'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'o'	O
+,	O
+' '	O
+,	O
+'s'	O
+,	O
+'t'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'f'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'N'	O
+,	O
+'D'	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'S'	O
+,	O
+'C'	O
+,	O
+'-'	O
+,	O
+'$'	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+'M'	O
+,	O
+'o'	O
+,	O
+'v'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'u'	O
+,	O
+'r'	O
+,	O
+'s'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'o'	O
+,	O
+' '	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'f'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+'B'	O
+,	O
+'A'	O
+,	O
+'C'	O
+,	O
+'K'	O
+,	O
+'S'	O
+,	O
+'P'	O
+,	O
+'A'	O
+,	O
+'C'	O
+,	O
+'E'	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+'D'	O
+,	O
+'e'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'o'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'f'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'f'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'u'	O
+,	O
+'r'	O
+,	O
+'s'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+'D'	O
+,	O
+'E'	O
+,	O
+'L'	O
+,	O
+'E'	O
+,	O
+'T'	O
+,	O
+'E'	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'S'	O
+,	O
+'C'	O
+,	O
+'-'	O
+,	O
+'x'	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+'D'	O
+,	O
+'e'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'h'	O
+,	O
+'a'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'u'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'u'	O
+,	O
+'r'	O
+,	O
+'s'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'t'	O
+,	O
+'r'	O
+,	O
+'l'	O
+,	O
+'-'	O
+,	O
+'B'	O
+,	O
+'A'	O
+,	O
+'C'	O
+,	O
+'K'	O
+,	O
+'S'	O
+,	O
+'P'	O
+,	O
+'A'	O
+,	O
+'C'	O
+,	O
+'E'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'S'	O
+,	O
+'C'	O
+,	O
+'-'	O
+,	O
+'B'	O
+,	O
+'A'	O
+,	O
+'C'	O
+,	O
+'K'	O
+,	O
+'S'	O
+,	O
+'P'	O
+,	O
+'A'	O
+,	O
+'C'	O
+,	O
+'E'	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+'D'	O
+,	O
+'e'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'w'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'t'	O
+,	O
+'o'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'f'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'f'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'u'	O
+,	O
+'r'	O
+,	O
+'s'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'t'	O
+,	O
+'r'	O
+,	O
+'l'	O
+,	O
+'-'	O
+,	O
+'D'	O
+,	O
+'E'	O
+,	O
+'L'	O
+,	O
+'E'	O
+,	O
+'T'	O
+,	O
+'E'	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'S'	O
+,	O
+'C'	O
+,	O
+'-'	O
+,	O
+'D'	O
+,	O
+'E'	O
+,	O
+'L'	O
+,	O
+'E'	O
+,	O
+'T'	O
+,	O
+'E'	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'S'	O
+,	O
+'C'	O
+,	O
+'-'	O
+,	O
+'X'	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+'D'	O
+,	O
+'e'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'w'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'u'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'u'	O
+,	O
+'r'	O
+,	O
+'s'	O
+,	O
+'o'	O
+,	O
+'r'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'t'	O
+,	O
+'r'	O
+,	O
+'l'	O
+,	O
+'-'	O
+,	O
+'U'	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'S'	O
+,	O
+'C'	O
+,	O
+' '	O
+,	O
+'('	O
+,	O
+'M'	O
+,	O
+'S'	O
+,	O
+'-'	O
+,	O
+'D'	O
+,	O
+'O'	O
+,	O
+'S'	O
+,	O
+' '	O
+,	O
+'o'	O
+,	O
+'n'	O
+,	O
+'l'	O
+,	O
+'y'	O
+,	O
+')'	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+'D'	O
+,	O
+'e'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+'t'	O
+,	O
+'i'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+'U'	O
+,	O
+'p'	O
+,	O
+'A'	O
+,	O
+'r'	O
+,	O
+'r'	O
+,	O
+'o'	O
+,	O
+'w'	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'S'	O
+,	O
+'C'	O
+,	O
+'-'	O
+,	O
+'k'	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+'R'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+'r'	O
+,	O
+'i'	O
+,	O
+'e'	O
+,	O
+'v'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'p'	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'v'	O
+,	O
+'i'	O
+,	O
+'o'	O
+,	O
+'u'	O
+,	O
+'s'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'o'	O
+,	O
+'m'	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+'D'	O
+,	O
+'o'	O
+,	O
+'w'	O
+,	O
+'n'	O
+,	O
+'A'	O
+,	O
+'r'	O
+,	O
+'r'	O
+,	O
+'o'	O
+,	O
+'w'	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'S'	O
+,	O
+'C'	O
+,	O
+'-'	O
+,	O
+'j'	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+'R'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+'r'	O
+,	O
+'i'	O
+,	O
+'e'	O
+,	O
+'v'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+'x'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'o'	O
+,	O
+'m'	O
+,	O
+'m'	O
+,	O
+'a'	O
+,	O
+'n'	O
+,	O
+'d'	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'n'	O
+,	O
+'e'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+'T'	O
+,	O
+'A'	O
+,	O
+'B'	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+'C'	O
+,	O
+'o'	O
+,	O
+'m'	O
+,	O
+'p'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+'a'	O
+,	O
+'m'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'&'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'y'	O
+,	O
+'c'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+'S'	O
+,	O
+'H'	O
+,	O
+'I'	O
+,	O
+'F'	O
+,	O
+'T'	O
+,	O
+'-'	O
+,	O
+'T'	O
+,	O
+'A'	O
+,	O
+'B'	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+'E'	O
+,	O
+'S'	O
+,	O
+'C'	O
+,	O
+'-'	O
+,	O
+'T'	O
+,	O
+'A'	O
+,	O
+'B'	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+' '	O
+,	O
+'C'	O
+,	O
+'o'	O
+,	O
+'m'	O
+,	O
+'p'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+'a'	O
+,	O
+'m'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'&'	O
+,	O
+' '	O
+,	O
+'r'	O
+,	O
+'e'	O
+,	O
+'v'	O
+,	O
+'e'	O
+,	O
+'r'	O
+,	O
+'s'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'y'	O
+,	O
+'c'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+' '	O
+,	O
+'c'	O
+,	O
+'t'	O
+,	O
+'r'	O
+,	O
+'l'	O
+,	O
+'-'	O
+,	O
+'L'	O
+,	O
+' '	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+'.'	O
+,	O
+' '	O
+,	O
+'C'	O
+,	O
+'o'	O
+,	O
+'m'	O
+,	O
+'p'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'t'	O
+,	O
+'e'	O
+,	O
+' '	O
+,	O
+'f'	O
+,	O
+'i'	O
+,	O
+'l'	O
+,	O
+'e'	O
+,	O
+'n'	O
+,	O
+'a'	O
+,	O
+'m'	O
+,	O
+'e'	O
+,	O
+','	O
+,	O
+' '	O
+,	O
+'l'	O
+,	O
+'i'	O
+,	O
+'s'	O
+,	O
+'t'	O
+,	O
+' '	O
+,	O
+'a'	O
+,	O
+'l'	O
+,	O
+'l'	O
+,	O
+'.'	O
+,	O
+'\n'	O
+,	O
+'\n'	O
+,	O
+'\n'	O
+,	O
+0	int
+}	O
+;	O
+constant	O
+int	O
+size_helpdata	int
+=	O
+sizeof	O
+(	O
+helpdata	array(char)
+)	O
+-	O
+1	int
+;	O

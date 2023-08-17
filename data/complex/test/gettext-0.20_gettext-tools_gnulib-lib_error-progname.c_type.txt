@@ -1,0 +1,24 @@
+bool	bool
+error_with_progname	bool
+=	O
+true	int
+;	O
+void	O
+maybe_print_progname	()->(void)
+(	O
+)	O
+{	O
+if	O
+(	O
+error_with_progname	bool
+)	O
+fprintf	(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(void),long,int,array(char))),*(char))->(int)
+(	O
+stderr	*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(void),long,int,array(char)))
+,	O
+"%s: "	*(char)
+,	O
+program_name	*(char)
+)	O
+;	O
+}	O

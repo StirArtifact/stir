@@ -1,0 +1,14 @@
+void	O
+pipe_dealloc_addr	function
+(	O
+void	O
+*	O
+addr	pointer
+)	O
+{	O
+ports_port_deref	function
+(	O
+addr	pointer
+)	O
+;	O
+}	O

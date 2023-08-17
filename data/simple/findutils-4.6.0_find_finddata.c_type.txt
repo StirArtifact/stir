@@ -1,0 +1,15 @@
+struct	O
+options	struct
+options	struct
+;	O
+struct	O
+state	pointer
+state	pointer
+;	O
+struct	O
+saved_cwd	struct
+*	O
+initial_wd	pointer
+=	O
+NULL	O
+;	O

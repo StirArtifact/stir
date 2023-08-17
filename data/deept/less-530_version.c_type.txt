@@ -1,0 +1,7 @@
+char	O
+version	array
+[	O
+]	O
+=	O
+"530"	pointer
+;	O

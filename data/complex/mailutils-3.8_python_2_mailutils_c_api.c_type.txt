@@ -1,0 +1,15 @@
+PyMODINIT_FUNC	O
+initc_api	()->(int)
+(	O
+void	O
+)	O
+{	O
+mu_py_init	()->(int)
+(	O
+)	O
+;	O
+mu_py_attach_modules	()->(int)
+(	O
+)	O
+;	O
+}	O

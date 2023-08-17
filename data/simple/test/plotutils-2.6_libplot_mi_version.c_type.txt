@@ -1,0 +1,9 @@
+const	O
+char	O
+mi_libxmi_ver	O
+[	O
+8	int
+]	O
+=	O
+MI_LIBXMI_VER_STRING	pointer
+;	O

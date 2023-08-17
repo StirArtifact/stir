@@ -1,0 +1,14 @@
+void	O
+idn2_free	(*(void))->(void)
+(	O
+void	O
+*	O
+ptr	*(void)
+)	O
+{	O
+free	(*(void))->(void)
+(	O
+ptr	*(void)
+)	O
+;	O
+}	O

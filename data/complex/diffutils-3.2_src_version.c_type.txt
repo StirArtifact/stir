@@ -1,0 +1,7 @@
+char	O
+const	O
+*	O
+Version	*(char)
+=	O
+"3.2"	*(char)
+;	O

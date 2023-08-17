@@ -1,0 +1,7 @@
+char	O
+const	O
+*	O
+Version	pointer
+=	O
+"1.10"	pointer
+;	O

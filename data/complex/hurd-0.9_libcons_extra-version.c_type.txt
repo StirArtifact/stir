@@ -1,0 +1,12 @@
+char	O
+*	O
+cons_extra_version	*(char)
+__attribute__	O
+(	O
+(	O
+weak	O
+)	O
+)	O
+=	O
+""	*(char)
+;	O

@@ -1,0 +1,6 @@
+char	O
+*	O
+version_string	*(char)
+=	O
+"2.0"	*(char)
+;	O

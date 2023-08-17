@@ -1,0 +1,632 @@
+void	O
+fsf_callg_blurb	function
+(	O
+FILE	O
+*	O
+)	pointer
+;	pointer
+void	O
+fsf_callg_blurb	function
+(	O
+FILE	O
+*	O
+file	pointer
+)	O
+{	O
+fputs	O
+(	O
+"\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+" This table describes the call tree of the program, and was sorted by\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+" the total amount of time spent in each function and its children.\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+" Each entry in this table consists of several lines.  The line with the\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+" index number at the left hand margin lists the current function.\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+" The lines above it list the functions that called this function,\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+" and the lines below it list the functions this one called.\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+" This line lists:\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"     index	A unique number given to each element of the table.\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"		Index numbers are sorted numerically.\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"		The index number is printed next to every function name so\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"		it is easier to look up where the function is in the table.\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"     % time	This is the percentage of the `total' time that was spent\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"		in this function and its children.  Note that due to\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"		different viewpoints, functions excluded by options, etc,\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"		these numbers will NOT add up to 100%.\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"     self	This is the total amount of time spent in this function.\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"     children	This is the total amount of time propagated into this\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"		function by its children.\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"     called	This is the number of times the function was called.\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"		If the function called itself recursively, the number\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"		only includes non-recursive calls, and is followed by\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"		a `+' and the number of recursive calls.\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"     name	The name of the current function.  The index number is\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"		printed after it.  If the function is a member of a\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"		cycle, the cycle number is printed between the\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"		function's name and the index number.\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+" For the function's parents, the fields have the following meanings:\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"     self	This is the amount of time that was propagated directly\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"		from the function into this parent.\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"     children	This is the amount of time that was propagated from\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"		the function's children into this parent.\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"     called	This is the number of times this parent called the\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"		function `/' the total number of times the function\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"		was called.  Recursive calls to the function are not\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"		included in the number after the `/'.\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"     name	This is the name of the parent.  The parent's index\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"		number is printed after it.  If the parent is a\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"		member of a cycle, the cycle number is printed between\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"		the name and the index number.\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+" If the parents of the function cannot be determined, the word\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+" `<spontaneous>' is printed in the `name' field, and all the other\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+" fields are blank.\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+" For the function's children, the fields have the following meanings:\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"     self	This is the amount of time that was propagated directly\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"		from the child into the function.\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"     children	This is the amount of time that was propagated from the\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"		child's children to the function.\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"     called	This is the number of times the function called\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"		this child `/' the total number of times the child\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"		was called.  Recursive calls by the child are not\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"		listed in the number after the `/'.\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"     name	This is the name of the child.  The child's index\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"		number is printed after it.  If the child is a\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"		member of a cycle, the cycle number is printed\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"		between the name and the index number.\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+" If there are any cycles (circles) in the call graph, there is an\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+" entry for the cycle-as-a-whole.  This entry shows who called the\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+" cycle (as parents) and the members of the cycle (as children.)\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+" The `+' recursive calls entry shows the number of function calls that\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+" were internal to the cycle, and the calls entry for each member shows,\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+" for that member, how many times it was called from other members of\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+" the cycle.\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"Copyright (C) 2012-2020 Free Software Foundation, Inc.\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"Copying and distribution of this file, with or without modification,\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"are permitted in any medium without royalty provided the copyright\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+fputs	O
+(	O
+"notice and this notice are preserved.\n"	pointer
+,	O
+file	pointer
+)	O
+;	O
+}	O

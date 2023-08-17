@@ -1,0 +1,12 @@
+int	O
+ping_router	function
+(	O
+char	O
+*	O
+hostname	pointer
+)	O
+{	O
+return	O
+0	int
+;	O
+}	O

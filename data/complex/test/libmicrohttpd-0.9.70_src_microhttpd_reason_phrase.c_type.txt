@@ -1,0 +1,392 @@
+static	O
+const	O
+char	O
+*	O
+const	O
+invalid_hundred	array(*(char))
+[	O
+]	O
+=	O
+{	O
+NULL	O
+}	O
+;	O
+static	O
+const	O
+char	O
+*	O
+const	O
+one_hundred	array(*(char))
+[	O
+]	O
+=	O
+{	O
+"Continue"	*(char)
+,	O
+"Switching Protocols"	*(char)
+,	O
+"Processing"	*(char)
+,	O
+"Early Hints"	*(char)
+}	O
+;	O
+static	O
+const	O
+char	O
+*	O
+const	O
+two_hundred	array(*(char))
+[	O
+]	O
+=	O
+{	O
+"OK"	*(char)
+,	O
+"Created"	*(char)
+,	O
+"Accepted"	*(char)
+,	O
+"Non-Authoritative Information"	*(char)
+,	O
+"No Content"	*(char)
+,	O
+"Reset Content"	*(char)
+,	O
+"Partial Content"	*(char)
+,	O
+"Multi-Status"	*(char)
+,	O
+"Already Reported"	*(char)
+,	O
+"Unknown"	*(char)
+,	O
+"Unknown"	*(char)
+,	O
+"Unknown"	*(char)
+,	O
+"Unknown"	*(char)
+,	O
+"Unknown"	*(char)
+,	O
+"Unknown"	*(char)
+,	O
+"Unknown"	*(char)
+,	O
+"Unknown"	*(char)
+,	O
+"Unknown"	*(char)
+,	O
+"Unknown"	*(char)
+,	O
+"Unknown"	*(char)
+,	O
+"Unknown"	*(char)
+,	O
+"Unknown"	*(char)
+,	O
+"Unknown"	*(char)
+,	O
+"Unknown"	*(char)
+,	O
+"Unknown"	*(char)
+,	O
+"Unknown"	*(char)
+,	O
+"IM Used"	*(char)
+}	O
+;	O
+static	O
+const	O
+char	O
+*	O
+const	O
+three_hundred	array(*(char))
+[	O
+]	O
+=	O
+{	O
+"Multiple Choices"	*(char)
+,	O
+"Moved Permanently"	*(char)
+,	O
+"Found"	*(char)
+,	O
+"See Other"	*(char)
+,	O
+"Not Modified"	*(char)
+,	O
+"Use Proxy"	*(char)
+,	O
+"Switch Proxy"	*(char)
+,	O
+"Temporary Redirect"	*(char)
+,	O
+"Permanent Redirect"	*(char)
+}	O
+;	O
+static	O
+const	O
+char	O
+*	O
+const	O
+four_hundred	array(*(char))
+[	O
+]	O
+=	O
+{	O
+"Bad Request"	*(char)
+,	O
+"Unauthorized"	*(char)
+,	O
+"Payment Required"	*(char)
+,	O
+"Forbidden"	*(char)
+,	O
+"Not Found"	*(char)
+,	O
+"Method Not Allowed"	*(char)
+,	O
+"Not Acceptable"	*(char)
+,	O
+"Proxy Authentication Required"	*(char)
+,	O
+"Request Timeout"	*(char)
+,	O
+"Conflict"	*(char)
+,	O
+"Gone"	*(char)
+,	O
+"Length Required"	*(char)
+,	O
+"Precondition Failed"	*(char)
+,	O
+"Payload Too Large"	*(char)
+,	O
+"URI Too Long"	*(char)
+,	O
+"Unsupported Media Type"	*(char)
+,	O
+"Range Not Satisfiable"	*(char)
+,	O
+"Expectation Failed"	*(char)
+,	O
+"Unknown"	*(char)
+,	O
+"Unknown"	*(char)
+,	O
+"Unknown"	*(char)
+,	O
+"Misdirected Request"	*(char)
+,	O
+"Unprocessable Entity"	*(char)
+,	O
+"Locked"	*(char)
+,	O
+"Failed Dependency"	*(char)
+,	O
+"Too Early"	*(char)
+,	O
+"Upgrade Required"	*(char)
+,	O
+"Unknown"	*(char)
+,	O
+"Precondition Required"	*(char)
+,	O
+"Too Many Requests"	*(char)
+,	O
+"Unknown"	*(char)
+,	O
+"Request Header Fields Too Large"	*(char)
+,	O
+"Unknown"	*(char)
+,	O
+"Unknown"	*(char)
+,	O
+"Unknown"	*(char)
+,	O
+"Unknown"	*(char)
+,	O
+"Unknown"	*(char)
+,	O
+"Unknown"	*(char)
+,	O
+"Unknown"	*(char)
+,	O
+"Unknown"	*(char)
+,	O
+"Unknown"	*(char)
+,	O
+"Unknown"	*(char)
+,	O
+"Unknown"	*(char)
+,	O
+"Unknown"	*(char)
+,	O
+"Unknown"	*(char)
+,	O
+"Unknown"	*(char)
+,	O
+"Unknown"	*(char)
+,	O
+"Unknown"	*(char)
+,	O
+"Unknown"	*(char)
+,	O
+"Reply With"	*(char)
+,	O
+"Blocked by Windows Parental Controls"	*(char)
+,	O
+"Unavailable For Legal Reasons"	*(char)
+}	O
+;	O
+static	O
+const	O
+char	O
+*	O
+const	O
+five_hundred	array(*(char))
+[	O
+]	O
+=	O
+{	O
+"Internal Server Error"	*(char)
+,	O
+"Not Implemented"	*(char)
+,	O
+"Bad Gateway"	*(char)
+,	O
+"Service Unavailable"	*(char)
+,	O
+"Gateway Timeout"	*(char)
+,	O
+"HTTP Version Not Supported"	*(char)
+,	O
+"Variant Also Negotiates"	*(char)
+,	O
+"Insufficient Storage"	*(char)
+,	O
+"Loop Detected"	*(char)
+,	O
+"Bandwidth Limit Exceeded"	*(char)
+,	O
+"Not Extended"	*(char)
+,	O
+"Network Authentication Required"	*(char)
+}	O
+;	O
+struct	O
+MHD_Reason_Block	struct(long,*(*(char)))
+{	O
+size_t	long
+max	long
+;	O
+const	O
+char	O
+*	O
+const	O
+*	O
+data	*(char)
+;	O
+}	O
+;	O
+static	O
+const	O
+struct	O
+MHD_Reason_Block	struct(long,*(*(char)))
+reasons	array(struct(long,*(*(char))))
+[	O
+]	O
+=	O
+{	O
+BLOCK	O
+(	O
+invalid_hundred	array(*(char))
+)	O
+,	O
+BLOCK	O
+(	O
+one_hundred	array(*(char))
+)	O
+,	O
+BLOCK	O
+(	O
+two_hundred	array(*(char))
+)	O
+,	O
+BLOCK	O
+(	O
+three_hundred	array(*(char))
+)	O
+,	O
+BLOCK	O
+(	O
+four_hundred	array(*(char))
+)	O
+,	O
+BLOCK	O
+(	O
+five_hundred	array(*(char))
+)	O
+,	O
+}	O
+;	O
+const	O
+char	O
+*	O
+MHD_get_reason_phrase_for	(int)->(*(char))
+(	O
+unsigned	O
+int	O
+code	int
+)	O
+{	O
+if	O
+(	O
+(	O
+code	int
+>=	O
+100	int
+)	O
+&&	O
+(	O
+code	int
+<	O
+600	int
+)	O
+&&	O
+(	O
+reasons	array(struct(long,*(*(char))))
+[	O
+code	int
+/	O
+100	int
+]	O
+.	O
+max	long
+>	O
+(	O
+code	int
+%	O
+100	int
+)	O
+)	O
+)	O
+return	O
+reasons	array(struct(long,*(*(char))))
+[	O
+code	int
+/	O
+100	int
+]	O
+.	O
+data	*(char)
+[	O
+code	int
+%	O
+100	int
+]	O
+;	O
+return	O
+"Unknown"	*(char)
+;	O
+}	O

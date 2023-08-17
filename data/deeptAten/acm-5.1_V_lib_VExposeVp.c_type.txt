@@ -1,0 +1,16 @@
+void	O
+VExposeViewport	function
+(	O
+Viewport	struct
+*	O
+v	struct
+)	O
+{	O
+ForceWindowRedraw	function
+(	O
+v	struct
+->	O
+w	pointer
+)	O
+;	O
+}	O

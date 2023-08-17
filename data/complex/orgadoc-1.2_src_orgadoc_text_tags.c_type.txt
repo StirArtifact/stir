@@ -1,0 +1,26 @@
+void	O
+orgadoc_text_start_tags	()->(void)
+(	O
+)	O
+{	O
+printf	(*(char))->(int)
+(	O
+"\nDOCUMENT LISTING\n"	*(char)
+)	O
+;	O
+}	O
+void	O
+orgadoc_text_end_tags	()->(void)
+(	O
+)	O
+{	O
+printf	(*(char))->(int)
+(	O
+"\n%s %s\n"	*(char)
+,	O
+FOOTER	*(char)
+,	O
+VERSION	*(char)
+)	O
+;	O
+}	O

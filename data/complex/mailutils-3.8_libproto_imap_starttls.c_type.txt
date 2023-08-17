@@ -1,0 +1,11 @@
+int	O
+mu_imap_starttls	(*(struct))->(int)
+(	O
+mu_imap_t	*(struct)
+imap	*(struct)
+)	O
+{	O
+return	O
+ENOSYS	int
+;	O
+}	O

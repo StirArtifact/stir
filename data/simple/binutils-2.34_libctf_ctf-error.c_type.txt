@@ -1,0 +1,202 @@
+static	O
+const	O
+char	O
+*	O
+const	O
+_ctf_errlist	array
+[	O
+]	O
+=	O
+{	O
+"File is not in CTF or ELF format"	pointer
+,	O
+"BFD error"	pointer
+,	O
+"File uses more recent CTF version than libctf"	pointer
+,	O
+"Ambiguous BFD target"	pointer
+,	O
+"Symbol table uses invalid entry size"	pointer
+,	O
+"Symbol table data buffer is not valid"	pointer
+,	O
+"String table data buffer is not valid"	pointer
+,	O
+"File data structure corruption detected"	pointer
+,	O
+"File does not contain CTF data"	pointer
+,	O
+"Buffer does not contain CTF data"	pointer
+,	O
+"Symbol table information is not available"	pointer
+,	O
+"Type information is in parent and unavailable"	pointer
+,	O
+"Cannot import types with different data model"	pointer
+,	O
+"File added to link too late"	pointer
+,	O
+"Failed to allocate (de)compression buffer"	pointer
+,	O
+"Failed to decompress CTF data"	pointer
+,	O
+"External string table is not available"	pointer
+,	O
+"String name offset is corrupt"	pointer
+,	O
+"Invalid type identifier"	pointer
+,	O
+"Type is not a struct or union"	pointer
+,	O
+"Type is not an enum"	pointer
+,	O
+"Type is not a struct, union, or enum"	pointer
+,	O
+"Type is not an integer, float, or enum"	pointer
+,	O
+"Type is not an array"	pointer
+,	O
+"Type does not reference another type"	pointer
+,	O
+"Input buffer is too small for type name"	pointer
+,	O
+"No type information available for that name"	pointer
+,	O
+"Syntax error in type name"	pointer
+,	O
+"Symbol table entry or type is not a function"	pointer
+,	O
+"No function information available for symbol"	pointer
+,	O
+"Symbol table entry is not a data object"	pointer
+,	O
+"No type information available for symbol"	pointer
+,	O
+"No label information available for that name"	pointer
+,	O
+"File does not contain any labels"	pointer
+,	O
+"Feature not supported"	pointer
+,	O
+"Invalid enum element name"	pointer
+,	O
+"Invalid member name"	pointer
+,	O
+"CTF container is read-only"	pointer
+,	O
+"Limit on number of dynamic type members reached"	pointer
+,	O
+"Limit on number of dynamic types reached"	pointer
+,	O
+"Duplicate member or variable name"	pointer
+,	O
+"Conflicting type is already defined"	pointer
+,	O
+"Attempt to roll back past a ctf_update"	pointer
+,	O
+"Failed to compress CTF data"	pointer
+,	O
+"Failed to create CTF archive"	pointer
+,	O
+"Name not found in CTF archive"	pointer
+,	O
+"Overflow of type bitness or offset in slice"	pointer
+,	O
+"Unknown section number in dump"	pointer
+,	O
+"Section changed in middle of dump"	pointer
+,	O
+"Feature not yet implemented"	pointer
+,	O
+"Internal error in link"	pointer
+,	O
+"Type not representable in CTF"	pointer
+}	O
+;	O
+static	O
+const	O
+int	O
+_ctf_nerr	int
+=	O
+sizeof	O
+(	O
+_ctf_errlist	array
+)	O
+/	O
+sizeof	O
+(	O
+_ctf_errlist	array
+[	O
+0	int
+]	O
+)	O
+;	O
+const	O
+char	O
+*	O
+ctf_errmsg	function
+(	O
+int	O
+error	int
+)	O
+{	O
+const	O
+char	O
+*	O
+str	pointer
+;	O
+if	O
+(	O
+error	int
+>=	O
+ECTF_BASE	int
+&&	O
+(	O
+error	int
+-	O
+ECTF_BASE	int
+)	O
+<	O
+_ctf_nerr	int
+)	O
+str	pointer
+=	O
+_ctf_errlist	array
+[	O
+error	int
+-	O
+ECTF_BASE	int
+]	O
+;	O
+else	O
+str	pointer
+=	O
+ctf_strerror	function
+(	O
+error	int
+)	O
+;	O
+return	O
+(	O
+str	pointer
+?	O
+str	pointer
+:	O
+"Unknown error"	pointer
+)	O
+;	O
+}	O
+int	O
+ctf_errno	function
+(	O
+ctf_file_t	struct
+*	O
+fp	pointer
+)	O
+{	O
+return	O
+fp	pointer
+->	O
+ctf_errno	function
+;	O
+}	O

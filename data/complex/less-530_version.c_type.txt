@@ -1,0 +1,7 @@
+char	O
+version	array(char)
+[	O
+]	O
+=	O
+"530"	*(char)
+;	O

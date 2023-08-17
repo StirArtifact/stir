@@ -1,0 +1,8 @@
+const	O
+char	O
+version_etc_copyright	O
+[	O
+]	O
+=	O
+"Copyright %s %d Free Software Foundation, Inc."	O
+;	O

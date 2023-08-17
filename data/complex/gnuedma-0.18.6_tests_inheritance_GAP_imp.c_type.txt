@@ -1,0 +1,19 @@
+ESint32	int
+EDMAPROC	O
+GAPgap	(int)->(int)
+(	O
+OBJID	int
+IdObj	int
+)	O
+{	O
+edma_printf_obj	(int,*(char))->(long)
+(	O
+IdObj	int
+,	O
+"Just a GAP!"	*(char)
+)	O
+;	O
+return	O
+0	int
+;	O
+}	O

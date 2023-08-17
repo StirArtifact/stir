@@ -1,0 +1,13 @@
+const	O
+char	O
+*	O
+default_program_authors	array(*(char))
+[	O
+]	O
+=	O
+{	O
+"many authors"	*(char)
+,	O
+NULL	O
+}	O
+;	O

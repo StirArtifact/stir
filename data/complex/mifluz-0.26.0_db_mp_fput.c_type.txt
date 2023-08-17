@@ -1,0 +1,600 @@
+static	O
+const	O
+char	O
+revid	array(char)
+[	O
+]	O
+=	O
+"$Id: mp_fput.c,v 1.3 2000/06/28 16:47:02 loic Exp $"	*(char)
+;	O
+int	O
+CDB_memp_fput	(*(struct),*(void),int)->(int)
+(	O
+dbmfp	*(struct(*(struct(union(struct`,array(char),long),union(struct`,array(char),long long),int,int,int,int,char)),struct(int,int,char),int,int,struct(*(struct(*`,struct`,int,int,struct`,*`,*`,*`,long,int)),*(*(struct`))),*(struct(*(struct`),struct(*`),struct(*`,*`),*(struct`),int,*(struct`))),*(struct(struct(long,long),int,int,int,int,int,int,int,int,int,int,int,int,struct(*`,long,int,int,int,int,int,int),int)),*(void),long,int))
+,	O
+pgaddr	*(void)
+,	O
+flags	int
+)	O
+DB_MPOOLFILE	struct
+*	O
+dbmfp	*(struct(*(struct(union(struct`,array(char),long),union(struct`,array(char),long long),int,int,int,int,char)),struct(int,int,char),int,int,struct(*(struct(*`,struct`,int,int,struct`,*`,*`,*`,long,int)),*(*(struct`))),*(struct(*(struct`),struct(*`),struct(*`,*`),*(struct`),int,*(struct`))),*(struct(struct(long,long),int,int,int,int,int,int,int,int,int,int,int,int,struct(*`,long,int,int,int,int,int,int),int)),*(void),long,int))
+;	O
+void	O
+*	O
+pgaddr	*(void)
+;	O
+u_int32_t	int
+flags	int
+;	O
+{	O
+BH	struct
+*	O
+bhp	*(struct(struct(union(struct(int,int,int,int,int,short,short,struct`),array(char),long),union(struct(union`,union`,array(int),array(int),int,int,array(int)),array(char),long long),int,int,int,int,char),short,short,*(int),struct(long,long),struct(long,long),int,int,array(char)))
+;	O
+DB_ENV	struct
+*	O
+dbenv	*(struct(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(char),*((*(char),*(char))->(void)),*((*(struct`),int,int)->(void)),*((*(struct`),int)->(void)),*((*(struct`))->(int)),int,*(char),int,int,int,int,int,int,int,long,int,long,*(struct(*((*`,*`,int,*`,*`,*`)->(int)),*((*`,*`,int,*`,int,*`)->(int)),char,char,*(void))),*(void),*(void),int,long,*((*(struct`),*(struct`),*(struct`),enum(int,int,int,int),*(void))->(int)),int,*(char),*(char),*(char),*(*(char)),int,int,int,*(void),*(struct),long,*(void),*(void),*(void),*(void),*(*((*`,*`,*`,enum(int,int,int,int),*`)->(int))),long,*(void),long,int,struct(*(struct(*`,*`,*`,*`,*`,*`,int,*`,int,int,int,int,int,int,int,long,int,long,*`,*`,*`,int,long,*`,int,*`,*`,*`,*`,int,int,int,*`,*`,long,*`,*`,*`,*`,*`,long,*`,long,int,struct`,int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int)),*(*(struct`))),int,*(struct),*(void),*((*(struct`),int)->(int)),*((*(struct`),int,*(char))->(void)),*((*(struct`),*(char))->(void)),*((*(struct`),*(char),int,int)->(int)),*((*(struct`),*(char),int)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),*((*`,*`)->(void)))->(void)),*((*(struct`),*(struct`))->(void)),*((*(struct`),*(char))->(void)),*((*(struct`),*((*`,int,int)->(void)))->(int)),*((*(struct`),*((*`,int)->(void)))->(int)),*((*(struct`),*((*`)->(int)))->(int)),*((*(struct`),*(char),long,long,int)->(int)),*((*(struct`),long)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),int,int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),int)->(int)),*((*(struct`),*(char),int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),long)->(int)),*((*(struct`),int,int,int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),*((*`,*`,*`,enum(int,int,int,int),*`)->(int)))->(int)),*((*(struct`),*(long))->(int)),int))
+;	O
+DB_MPOOL	struct
+*	O
+dbmp	*(struct(*(struct(union(struct`,array(char),long),union(struct`,array(char),long long),int,int,int,int,char)),struct(*(struct(struct`,int,*`,*`))),struct(*(struct(*`,struct`,int,int,struct`,*`,*`,*`,long,int)),*(*(struct`))),*(struct(*(struct`),*(char),*((*`,*`)->(void)),*((*`,int,int)->(void)),*((*`,int)->(void)),*((*`)->(int)),int,*(char),int,int,int,int,int,int,int,long,int,long,*(struct`),*(void),*(void),int,long,*((*`,*`,*`,enum(int,int,int,int),*`)->(int)),int,*(char),*(char),*(char),*(*`),int,int,int,*(void),*(struct`),long,*(void),*(void),*(void),*(void),*(*`),long,*(void),long,int,struct(*`,*`),int,*(struct`),*(void),*((*`,int)->(int)),*((*`,int,*`)->(void)),*((*`,*`)->(void)),*((*`,*`,int,int)->(int)),*((*`,*`,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(int)),*((*`,*`)->(int)),*((*`,*`)->(int)),*((*`,*`,long,long,int)->(int)),*((*`,long)->(int)),*((*`,*`)->(int)),*((*`,int,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,int)->(int)),*((*`,*`,int)->(int)),*((*`,int)->(int)),*((*`,int)->(int)),*((*`,long)->(int)),*((*`,int,int,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(int)),int)),int,*(struct(int,int,*(struct`),*(char),*(void),*(void),*(void),int))))
+;	O
+MPOOL	struct
+*	O
+c_mp	*(struct(struct(union(struct(int,int,int,int,int,short,short,struct`),array(char),long),union(struct(union`,union`,array(int),array(int),int,int,array(int)),array(char),long long),int,int,int,int,char),struct(int,int),int,struct(long,long),int,int,int,struct(long,long),int,int,struct(int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int)))
+,	O
+*	O
+mp	*(struct(struct(union(struct(int,int,int,int,int,short,short,struct`),array(char),long),union(struct(union`,union`,array(int),array(int),int,int,array(int)),array(char),long long),int,int,int,int,char),struct(int,int),int,struct(long,long),int,int,int,struct(long,long),int,int,struct(int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int)))
+;	O
+int	O
+ret	int
+,	O
+wrote	int
+;	O
+dbmp	*(struct(*(struct(union(struct`,array(char),long),union(struct`,array(char),long long),int,int,int,int,char)),struct(*(struct(struct`,int,*`,*`))),struct(*(struct(*`,struct`,int,int,struct`,*`,*`,*`,long,int)),*(*(struct`))),*(struct(*(struct`),*(char),*((*`,*`)->(void)),*((*`,int,int)->(void)),*((*`,int)->(void)),*((*`)->(int)),int,*(char),int,int,int,int,int,int,int,long,int,long,*(struct`),*(void),*(void),int,long,*((*`,*`,*`,enum(int,int,int,int),*`)->(int)),int,*(char),*(char),*(char),*(*`),int,int,int,*(void),*(struct`),long,*(void),*(void),*(void),*(void),*(*`),long,*(void),long,int,struct(*`,*`),int,*(struct`),*(void),*((*`,int)->(int)),*((*`,int,*`)->(void)),*((*`,*`)->(void)),*((*`,*`,int,int)->(int)),*((*`,*`,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(int)),*((*`,*`)->(int)),*((*`,*`)->(int)),*((*`,*`,long,long,int)->(int)),*((*`,long)->(int)),*((*`,*`)->(int)),*((*`,int,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,int)->(int)),*((*`,*`,int)->(int)),*((*`,int)->(int)),*((*`,int)->(int)),*((*`,long)->(int)),*((*`,int,int,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(int)),int)),int,*(struct(int,int,*(struct`),*(char),*(void),*(void),*(void),int))))
+=	O
+dbmfp	*(struct(*(struct(union(struct`,array(char),long),union(struct`,array(char),long long),int,int,int,int,char)),struct(int,int,char),int,int,struct(*(struct(*`,struct`,int,int,struct`,*`,*`,*`,long,int)),*(*(struct`))),*(struct(*(struct`),struct(*`),struct(*`,*`),*(struct`),int,*(struct`))),*(struct(struct(long,long),int,int,int,int,int,int,int,int,int,int,int,int,struct(*`,long,int,int,int,int,int,int),int)),*(void),long,int))
+->	O
+dbmp	*(struct(*(struct(union(struct`,array(char),long),union(struct`,array(char),long long),int,int,int,int,char)),struct(*(struct(struct`,int,*`,*`))),struct(*(struct(*`,struct`,int,int,struct`,*`,*`,*`,long,int)),*(*(struct`))),*(struct(*(struct`),*(char),*((*`,*`)->(void)),*((*`,int,int)->(void)),*((*`,int)->(void)),*((*`)->(int)),int,*(char),int,int,int,int,int,int,int,long,int,long,*(struct`),*(void),*(void),int,long,*((*`,*`,*`,enum(int,int,int,int),*`)->(int)),int,*(char),*(char),*(char),*(*`),int,int,int,*(void),*(struct`),long,*(void),*(void),*(void),*(void),*(*`),long,*(void),long,int,struct(*`,*`),int,*(struct`),*(void),*((*`,int)->(int)),*((*`,int,*`)->(void)),*((*`,*`)->(void)),*((*`,*`,int,int)->(int)),*((*`,*`,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(int)),*((*`,*`)->(int)),*((*`,*`)->(int)),*((*`,*`,long,long,int)->(int)),*((*`,long)->(int)),*((*`,*`)->(int)),*((*`,int,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,int)->(int)),*((*`,*`,int)->(int)),*((*`,int)->(int)),*((*`,int)->(int)),*((*`,long)->(int)),*((*`,int,int,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(int)),int)),int,*(struct(int,int,*(struct`),*(char),*(void),*(void),*(void),int))))
+;	O
+dbenv	*(struct(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(char),*((*(char),*(char))->(void)),*((*(struct`),int,int)->(void)),*((*(struct`),int)->(void)),*((*(struct`))->(int)),int,*(char),int,int,int,int,int,int,int,long,int,long,*(struct(*((*`,*`,int,*`,*`,*`)->(int)),*((*`,*`,int,*`,int,*`)->(int)),char,char,*(void))),*(void),*(void),int,long,*((*(struct`),*(struct`),*(struct`),enum(int,int,int,int),*(void))->(int)),int,*(char),*(char),*(char),*(*(char)),int,int,int,*(void),*(struct),long,*(void),*(void),*(void),*(void),*(*((*`,*`,*`,enum(int,int,int,int),*`)->(int))),long,*(void),long,int,struct(*(struct(*`,*`,*`,*`,*`,*`,int,*`,int,int,int,int,int,int,int,long,int,long,*`,*`,*`,int,long,*`,int,*`,*`,*`,*`,int,int,int,*`,*`,long,*`,*`,*`,*`,*`,long,*`,long,int,struct`,int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int)),*(*(struct`))),int,*(struct),*(void),*((*(struct`),int)->(int)),*((*(struct`),int,*(char))->(void)),*((*(struct`),*(char))->(void)),*((*(struct`),*(char),int,int)->(int)),*((*(struct`),*(char),int)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),*((*`,*`)->(void)))->(void)),*((*(struct`),*(struct`))->(void)),*((*(struct`),*(char))->(void)),*((*(struct`),*((*`,int,int)->(void)))->(int)),*((*(struct`),*((*`,int)->(void)))->(int)),*((*(struct`),*((*`)->(int)))->(int)),*((*(struct`),*(char),long,long,int)->(int)),*((*(struct`),long)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),int,int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),int)->(int)),*((*(struct`),*(char),int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),long)->(int)),*((*(struct`),int,int,int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),*((*`,*`,*`,enum(int,int,int,int),*`)->(int)))->(int)),*((*(struct`),*(long))->(int)),int))
+=	O
+dbmp	*(struct(*(struct(union(struct`,array(char),long),union(struct`,array(char),long long),int,int,int,int,char)),struct(*(struct(struct`,int,*`,*`))),struct(*(struct(*`,struct`,int,int,struct`,*`,*`,*`,long,int)),*(*(struct`))),*(struct(*(struct`),*(char),*((*`,*`)->(void)),*((*`,int,int)->(void)),*((*`,int)->(void)),*((*`)->(int)),int,*(char),int,int,int,int,int,int,int,long,int,long,*(struct`),*(void),*(void),int,long,*((*`,*`,*`,enum(int,int,int,int),*`)->(int)),int,*(char),*(char),*(char),*(*`),int,int,int,*(void),*(struct`),long,*(void),*(void),*(void),*(void),*(*`),long,*(void),long,int,struct(*`,*`),int,*(struct`),*(void),*((*`,int)->(int)),*((*`,int,*`)->(void)),*((*`,*`)->(void)),*((*`,*`,int,int)->(int)),*((*`,*`,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(int)),*((*`,*`)->(int)),*((*`,*`)->(int)),*((*`,*`,long,long,int)->(int)),*((*`,long)->(int)),*((*`,*`)->(int)),*((*`,int,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,int)->(int)),*((*`,*`,int)->(int)),*((*`,int)->(int)),*((*`,int)->(int)),*((*`,long)->(int)),*((*`,int,int,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(int)),int)),int,*(struct(int,int,*(struct`),*(char),*(void),*(void),*(void),int))))
+->	O
+dbenv	*(struct(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(char),*((*(char),*(char))->(void)),*((*(struct`),int,int)->(void)),*((*(struct`),int)->(void)),*((*(struct`))->(int)),int,*(char),int,int,int,int,int,int,int,long,int,long,*(struct(*((*`,*`,int,*`,*`,*`)->(int)),*((*`,*`,int,*`,int,*`)->(int)),char,char,*(void))),*(void),*(void),int,long,*((*(struct`),*(struct`),*(struct`),enum(int,int,int,int),*(void))->(int)),int,*(char),*(char),*(char),*(*(char)),int,int,int,*(void),*(struct),long,*(void),*(void),*(void),*(void),*(*((*`,*`,*`,enum(int,int,int,int),*`)->(int))),long,*(void),long,int,struct(*(struct(*`,*`,*`,*`,*`,*`,int,*`,int,int,int,int,int,int,int,long,int,long,*`,*`,*`,int,long,*`,int,*`,*`,*`,*`,int,int,int,*`,*`,long,*`,*`,*`,*`,*`,long,*`,long,int,struct`,int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int)),*(*(struct`))),int,*(struct),*(void),*((*(struct`),int)->(int)),*((*(struct`),int,*(char))->(void)),*((*(struct`),*(char))->(void)),*((*(struct`),*(char),int,int)->(int)),*((*(struct`),*(char),int)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),*((*`,*`)->(void)))->(void)),*((*(struct`),*(struct`))->(void)),*((*(struct`),*(char))->(void)),*((*(struct`),*((*`,int,int)->(void)))->(int)),*((*(struct`),*((*`,int)->(void)))->(int)),*((*(struct`),*((*`)->(int)))->(int)),*((*(struct`),*(char),long,long,int)->(int)),*((*(struct`),long)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),int,int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),int)->(int)),*((*(struct`),*(char),int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),long)->(int)),*((*(struct`),int,int,int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),*((*`,*`,*`,enum(int,int,int,int),*`)->(int)))->(int)),*((*(struct`),*(long))->(int)),int))
+;	O
+mp	*(struct(struct(union(struct(int,int,int,int,int,short,short,struct`),array(char),long),union(struct(union`,union`,array(int),array(int),int,int,array(int)),array(char),long long),int,int,int,int,char),struct(int,int),int,struct(long,long),int,int,int,struct(long,long),int,int,struct(int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int)))
+=	O
+dbmp	*(struct(*(struct(union(struct`,array(char),long),union(struct`,array(char),long long),int,int,int,int,char)),struct(*(struct(struct`,int,*`,*`))),struct(*(struct(*`,struct`,int,int,struct`,*`,*`,*`,long,int)),*(*(struct`))),*(struct(*(struct`),*(char),*((*`,*`)->(void)),*((*`,int,int)->(void)),*((*`,int)->(void)),*((*`)->(int)),int,*(char),int,int,int,int,int,int,int,long,int,long,*(struct`),*(void),*(void),int,long,*((*`,*`,*`,enum(int,int,int,int),*`)->(int)),int,*(char),*(char),*(char),*(*`),int,int,int,*(void),*(struct`),long,*(void),*(void),*(void),*(void),*(*`),long,*(void),long,int,struct(*`,*`),int,*(struct`),*(void),*((*`,int)->(int)),*((*`,int,*`)->(void)),*((*`,*`)->(void)),*((*`,*`,int,int)->(int)),*((*`,*`,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(int)),*((*`,*`)->(int)),*((*`,*`)->(int)),*((*`,*`,long,long,int)->(int)),*((*`,long)->(int)),*((*`,*`)->(int)),*((*`,int,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,int)->(int)),*((*`,*`,int)->(int)),*((*`,int)->(int)),*((*`,int)->(int)),*((*`,long)->(int)),*((*`,int,int,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(int)),int)),int,*(struct(int,int,*(struct`),*(char),*(void),*(void),*(void),int))))
+->	O
+reginfo	*(void)
+[	O
+0	int
+]	O
+.	O
+primary	int
+;	O
+PANIC_CHECK	O
+(	O
+dbenv	*(struct(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(char),*((*(char),*(char))->(void)),*((*(struct`),int,int)->(void)),*((*(struct`),int)->(void)),*((*(struct`))->(int)),int,*(char),int,int,int,int,int,int,int,long,int,long,*(struct(*((*`,*`,int,*`,*`,*`)->(int)),*((*`,*`,int,*`,int,*`)->(int)),char,char,*(void))),*(void),*(void),int,long,*((*(struct`),*(struct`),*(struct`),enum(int,int,int,int),*(void))->(int)),int,*(char),*(char),*(char),*(*(char)),int,int,int,*(void),*(struct),long,*(void),*(void),*(void),*(void),*(*((*`,*`,*`,enum(int,int,int,int),*`)->(int))),long,*(void),long,int,struct(*(struct(*`,*`,*`,*`,*`,*`,int,*`,int,int,int,int,int,int,int,long,int,long,*`,*`,*`,int,long,*`,int,*`,*`,*`,*`,int,int,int,*`,*`,long,*`,*`,*`,*`,*`,long,*`,long,int,struct`,int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int)),*(*(struct`))),int,*(struct),*(void),*((*(struct`),int)->(int)),*((*(struct`),int,*(char))->(void)),*((*(struct`),*(char))->(void)),*((*(struct`),*(char),int,int)->(int)),*((*(struct`),*(char),int)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),*((*`,*`)->(void)))->(void)),*((*(struct`),*(struct`))->(void)),*((*(struct`),*(char))->(void)),*((*(struct`),*((*`,int,int)->(void)))->(int)),*((*(struct`),*((*`,int)->(void)))->(int)),*((*(struct`),*((*`)->(int)))->(int)),*((*(struct`),*(char),long,long,int)->(int)),*((*(struct`),long)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),int,int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),int)->(int)),*((*(struct`),*(char),int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),long)->(int)),*((*(struct`),int,int,int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),*((*`,*`,*`,enum(int,int,int,int),*`)->(int)))->(int)),*((*(struct`),*(long))->(int)),int))
+)	O
+;	O
+if	O
+(	O
+flags	int
+)	O
+{	O
+if	O
+(	O
+(	O
+ret	int
+=	O
+CDB___db_fchk	(*(struct(*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(char),*((*`,*`)->(void)),*((*`,int,int)->(void)),*((*`,int)->(void)),*((*`)->(int)),int,*(char),int,int,int,int,int,int,int,long,int,long,*(struct(*`,*`,char,char,*`)),*(void),*(void),int,long,*((*`,*`,*`,enum(int,int,int,int),*`)->(int)),int,*(char),*(char),*(char),*(*(char)),int,int,int,*(void),*(struct(int,int,char)),long,*(void),*(void),*(void),*(void),*(*((*`,*`,*`,enum(int,int,int,int),*`)->(int))),long,*(void),long,int,struct(*(struct`),*(*`)),int,*(struct),*(void),*((*`,int)->(int)),*((*`,int,*`)->(void)),*((*`,*`)->(void)),*((*`,*`,int,int)->(int)),*((*`,*`,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(int)),*((*`,*`)->(int)),*((*`,*`)->(int)),*((*`,*`,long,long,int)->(int)),*((*`,long)->(int)),*((*`,*`)->(int)),*((*`,int,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,int)->(int)),*((*`,*`,int)->(int)),*((*`,int)->(int)),*((*`,int)->(int)),*((*`,long)->(int)),*((*`,int,int,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(int)),int)),*(char),int,int)->(int)
+(	O
+dbenv	*(struct(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(char),*((*(char),*(char))->(void)),*((*(struct`),int,int)->(void)),*((*(struct`),int)->(void)),*((*(struct`))->(int)),int,*(char),int,int,int,int,int,int,int,long,int,long,*(struct(*((*`,*`,int,*`,*`,*`)->(int)),*((*`,*`,int,*`,int,*`)->(int)),char,char,*(void))),*(void),*(void),int,long,*((*(struct`),*(struct`),*(struct`),enum(int,int,int,int),*(void))->(int)),int,*(char),*(char),*(char),*(*(char)),int,int,int,*(void),*(struct),long,*(void),*(void),*(void),*(void),*(*((*`,*`,*`,enum(int,int,int,int),*`)->(int))),long,*(void),long,int,struct(*(struct(*`,*`,*`,*`,*`,*`,int,*`,int,int,int,int,int,int,int,long,int,long,*`,*`,*`,int,long,*`,int,*`,*`,*`,*`,int,int,int,*`,*`,long,*`,*`,*`,*`,*`,long,*`,long,int,struct`,int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int)),*(*(struct`))),int,*(struct),*(void),*((*(struct`),int)->(int)),*((*(struct`),int,*(char))->(void)),*((*(struct`),*(char))->(void)),*((*(struct`),*(char),int,int)->(int)),*((*(struct`),*(char),int)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),*((*`,*`)->(void)))->(void)),*((*(struct`),*(struct`))->(void)),*((*(struct`),*(char))->(void)),*((*(struct`),*((*`,int,int)->(void)))->(int)),*((*(struct`),*((*`,int)->(void)))->(int)),*((*(struct`),*((*`)->(int)))->(int)),*((*(struct`),*(char),long,long,int)->(int)),*((*(struct`),long)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),int,int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),int)->(int)),*((*(struct`),*(char),int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),long)->(int)),*((*(struct`),int,int,int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),*((*`,*`,*`,enum(int,int,int,int),*`)->(int)))->(int)),*((*(struct`),*(long))->(int)),int))
+,	O
+"CDB_memp_fput"	*(char)
+,	O
+flags	int
+,	O
+DB_MPOOL_CLEAN	int
+|	O
+DB_MPOOL_DIRTY	int
+|	O
+DB_MPOOL_DISCARD	int
+)	O
+)	O
+!=	O
+0	int
+)	O
+return	O
+(	O
+ret	int
+)	O
+;	O
+if	O
+(	O
+(	O
+ret	int
+=	O
+CDB___db_fcchk	(*(struct(*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(char),*((*`,*`)->(void)),*((*`,int,int)->(void)),*((*`,int)->(void)),*((*`)->(int)),int,*(char),int,int,int,int,int,int,int,long,int,long,*(struct(*`,*`,char,char,*`)),*(void),*(void),int,long,*((*`,*`,*`,enum(int,int,int,int),*`)->(int)),int,*(char),*(char),*(char),*(*(char)),int,int,int,*(void),*(struct(int,int,char)),long,*(void),*(void),*(void),*(void),*(*((*`,*`,*`,enum(int,int,int,int),*`)->(int))),long,*(void),long,int,struct(*(struct`),*(*`)),int,*(struct),*(void),*((*`,int)->(int)),*((*`,int,*`)->(void)),*((*`,*`)->(void)),*((*`,*`,int,int)->(int)),*((*`,*`,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(int)),*((*`,*`)->(int)),*((*`,*`)->(int)),*((*`,*`,long,long,int)->(int)),*((*`,long)->(int)),*((*`,*`)->(int)),*((*`,int,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,int)->(int)),*((*`,*`,int)->(int)),*((*`,int)->(int)),*((*`,int)->(int)),*((*`,long)->(int)),*((*`,int,int,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(int)),int)),*(char),int,int,int)->(int)
+(	O
+dbenv	*(struct(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(char),*((*(char),*(char))->(void)),*((*(struct`),int,int)->(void)),*((*(struct`),int)->(void)),*((*(struct`))->(int)),int,*(char),int,int,int,int,int,int,int,long,int,long,*(struct(*((*`,*`,int,*`,*`,*`)->(int)),*((*`,*`,int,*`,int,*`)->(int)),char,char,*(void))),*(void),*(void),int,long,*((*(struct`),*(struct`),*(struct`),enum(int,int,int,int),*(void))->(int)),int,*(char),*(char),*(char),*(*(char)),int,int,int,*(void),*(struct),long,*(void),*(void),*(void),*(void),*(*((*`,*`,*`,enum(int,int,int,int),*`)->(int))),long,*(void),long,int,struct(*(struct(*`,*`,*`,*`,*`,*`,int,*`,int,int,int,int,int,int,int,long,int,long,*`,*`,*`,int,long,*`,int,*`,*`,*`,*`,int,int,int,*`,*`,long,*`,*`,*`,*`,*`,long,*`,long,int,struct`,int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int)),*(*(struct`))),int,*(struct),*(void),*((*(struct`),int)->(int)),*((*(struct`),int,*(char))->(void)),*((*(struct`),*(char))->(void)),*((*(struct`),*(char),int,int)->(int)),*((*(struct`),*(char),int)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),*((*`,*`)->(void)))->(void)),*((*(struct`),*(struct`))->(void)),*((*(struct`),*(char))->(void)),*((*(struct`),*((*`,int,int)->(void)))->(int)),*((*(struct`),*((*`,int)->(void)))->(int)),*((*(struct`),*((*`)->(int)))->(int)),*((*(struct`),*(char),long,long,int)->(int)),*((*(struct`),long)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),int,int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),int)->(int)),*((*(struct`),*(char),int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),long)->(int)),*((*(struct`),int,int,int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),*((*`,*`,*`,enum(int,int,int,int),*`)->(int)))->(int)),*((*(struct`),*(long))->(int)),int))
+,	O
+"CDB_memp_fput"	*(char)
+,	O
+flags	int
+,	O
+DB_MPOOL_CLEAN	int
+,	O
+DB_MPOOL_DIRTY	int
+)	O
+)	O
+!=	O
+0	int
+)	O
+return	O
+(	O
+ret	int
+)	O
+;	O
+if	O
+(	O
+LF_ISSET	O
+(	O
+DB_MPOOL_DIRTY	int
+)	O
+&&	O
+F_ISSET	O
+(	O
+dbmfp	*(struct(*(struct(union(struct`,array(char),long),union(struct`,array(char),long long),int,int,int,int,char)),struct(int,int,char),int,int,struct(*(struct(*`,struct`,int,int,struct`,*`,*`,*`,long,int)),*(*(struct`))),*(struct(*(struct`),struct(*`),struct(*`,*`),*(struct`),int,*(struct`))),*(struct(struct(long,long),int,int,int,int,int,int,int,int,int,int,int,int,struct(*`,long,int,int,int,int,int,int),int)),*(void),long,int))
+,	O
+MP_READONLY	int
+)	O
+)	O
+{	O
+CDB___db_err	(*(struct(*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(char),*((*`,*`)->(void)),*((*`,int,int)->(void)),*((*`,int)->(void)),*((*`)->(int)),int,*(char),int,int,int,int,int,int,int,long,int,long,*(struct(*`,*`,char,char,*`)),*(void),*(void),int,long,*((*`,*`,*`,enum(int,int,int,int),*`)->(int)),int,*(char),*(char),*(char),*(*(char)),int,int,int,*(void),*(struct(int,int,char)),long,*(void),*(void),*(void),*(void),*(*((*`,*`,*`,enum(int,int,int,int),*`)->(int))),long,*(void),long,int,struct(*(struct`),*(*`)),int,*(struct),*(void),*((*`,int)->(int)),*((*`,int,*`)->(void)),*((*`,*`)->(void)),*((*`,*`,int,int)->(int)),*((*`,*`,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(int)),*((*`,*`)->(int)),*((*`,*`)->(int)),*((*`,*`,long,long,int)->(int)),*((*`,long)->(int)),*((*`,*`)->(int)),*((*`,int,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,int)->(int)),*((*`,*`,int)->(int)),*((*`,int)->(int)),*((*`,int)->(int)),*((*`,long)->(int)),*((*`,int,int,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(int)),int)),*(char))->(void)
+(	O
+dbenv	*(struct(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(char),*((*(char),*(char))->(void)),*((*(struct`),int,int)->(void)),*((*(struct`),int)->(void)),*((*(struct`))->(int)),int,*(char),int,int,int,int,int,int,int,long,int,long,*(struct(*((*`,*`,int,*`,*`,*`)->(int)),*((*`,*`,int,*`,int,*`)->(int)),char,char,*(void))),*(void),*(void),int,long,*((*(struct`),*(struct`),*(struct`),enum(int,int,int,int),*(void))->(int)),int,*(char),*(char),*(char),*(*(char)),int,int,int,*(void),*(struct),long,*(void),*(void),*(void),*(void),*(*((*`,*`,*`,enum(int,int,int,int),*`)->(int))),long,*(void),long,int,struct(*(struct(*`,*`,*`,*`,*`,*`,int,*`,int,int,int,int,int,int,int,long,int,long,*`,*`,*`,int,long,*`,int,*`,*`,*`,*`,int,int,int,*`,*`,long,*`,*`,*`,*`,*`,long,*`,long,int,struct`,int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int)),*(*(struct`))),int,*(struct),*(void),*((*(struct`),int)->(int)),*((*(struct`),int,*(char))->(void)),*((*(struct`),*(char))->(void)),*((*(struct`),*(char),int,int)->(int)),*((*(struct`),*(char),int)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),*((*`,*`)->(void)))->(void)),*((*(struct`),*(struct`))->(void)),*((*(struct`),*(char))->(void)),*((*(struct`),*((*`,int,int)->(void)))->(int)),*((*(struct`),*((*`,int)->(void)))->(int)),*((*(struct`),*((*`)->(int)))->(int)),*((*(struct`),*(char),long,long,int)->(int)),*((*(struct`),long)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),int,int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),int)->(int)),*((*(struct`),*(char),int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),long)->(int)),*((*(struct`),int,int,int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),*((*`,*`,*`,enum(int,int,int,int),*`)->(int)))->(int)),*((*(struct`),*(long))->(int)),int))
+,	O
+"%s: dirty flag set for readonly file page"	*(char)
+,	O
+CDB___memp_fn	(*(struct(*(struct(union`,union`,int,int,int,int,char)),struct(int,int,char),int,int,struct(*(struct`),*(*`)),*(struct(*`,struct`,struct`,*`,int,*`)),*(struct(struct`,int,int,int,int,int,int,int,int,int,int,int,int,struct`,int)),*(void),long,int)))->(*(char))
+(	O
+dbmfp	*(struct(*(struct(union(struct`,array(char),long),union(struct`,array(char),long long),int,int,int,int,char)),struct(int,int,char),int,int,struct(*(struct(*`,struct`,int,int,struct`,*`,*`,*`,long,int)),*(*(struct`))),*(struct(*(struct`),struct(*`),struct(*`,*`),*(struct`),int,*(struct`))),*(struct(struct(long,long),int,int,int,int,int,int,int,int,int,int,int,int,struct(*`,long,int,int,int,int,int,int),int)),*(void),long,int))
+)	O
+)	O
+;	O
+return	O
+(	O
+EACCES	int
+)	O
+;	O
+}	O
+}	O
+R_LOCK	O
+(	O
+dbenv	*(struct(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(char),*((*(char),*(char))->(void)),*((*(struct`),int,int)->(void)),*((*(struct`),int)->(void)),*((*(struct`))->(int)),int,*(char),int,int,int,int,int,int,int,long,int,long,*(struct(*((*`,*`,int,*`,*`,*`)->(int)),*((*`,*`,int,*`,int,*`)->(int)),char,char,*(void))),*(void),*(void),int,long,*((*(struct`),*(struct`),*(struct`),enum(int,int,int,int),*(void))->(int)),int,*(char),*(char),*(char),*(*(char)),int,int,int,*(void),*(struct),long,*(void),*(void),*(void),*(void),*(*((*`,*`,*`,enum(int,int,int,int),*`)->(int))),long,*(void),long,int,struct(*(struct(*`,*`,*`,*`,*`,*`,int,*`,int,int,int,int,int,int,int,long,int,long,*`,*`,*`,int,long,*`,int,*`,*`,*`,*`,int,int,int,*`,*`,long,*`,*`,*`,*`,*`,long,*`,long,int,struct`,int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int)),*(*(struct`))),int,*(struct),*(void),*((*(struct`),int)->(int)),*((*(struct`),int,*(char))->(void)),*((*(struct`),*(char))->(void)),*((*(struct`),*(char),int,int)->(int)),*((*(struct`),*(char),int)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),*((*`,*`)->(void)))->(void)),*((*(struct`),*(struct`))->(void)),*((*(struct`),*(char))->(void)),*((*(struct`),*((*`,int,int)->(void)))->(int)),*((*(struct`),*((*`,int)->(void)))->(int)),*((*(struct`),*((*`)->(int)))->(int)),*((*(struct`),*(char),long,long,int)->(int)),*((*(struct`),long)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),int,int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),int)->(int)),*((*(struct`),*(char),int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),long)->(int)),*((*(struct`),int,int,int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),*((*`,*`,*`,enum(int,int,int,int),*`)->(int)))->(int)),*((*(struct`),*(long))->(int)),int))
+,	O
+dbmp	*(struct(*(struct(union(struct`,array(char),long),union(struct`,array(char),long long),int,int,int,int,char)),struct(*(struct(struct`,int,*`,*`))),struct(*(struct(*`,struct`,int,int,struct`,*`,*`,*`,long,int)),*(*(struct`))),*(struct(*(struct`),*(char),*((*`,*`)->(void)),*((*`,int,int)->(void)),*((*`,int)->(void)),*((*`)->(int)),int,*(char),int,int,int,int,int,int,int,long,int,long,*(struct`),*(void),*(void),int,long,*((*`,*`,*`,enum(int,int,int,int),*`)->(int)),int,*(char),*(char),*(char),*(*`),int,int,int,*(void),*(struct`),long,*(void),*(void),*(void),*(void),*(*`),long,*(void),long,int,struct(*`,*`),int,*(struct`),*(void),*((*`,int)->(int)),*((*`,int,*`)->(void)),*((*`,*`)->(void)),*((*`,*`,int,int)->(int)),*((*`,*`,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(int)),*((*`,*`)->(int)),*((*`,*`)->(int)),*((*`,*`,long,long,int)->(int)),*((*`,long)->(int)),*((*`,*`)->(int)),*((*`,int,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,int)->(int)),*((*`,*`,int)->(int)),*((*`,int)->(int)),*((*`,int)->(int)),*((*`,long)->(int)),*((*`,int,int,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(int)),int)),int,*(struct(int,int,*(struct`),*(char),*(void),*(void),*(void),int))))
+->	O
+reginfo	*(void)
+)	O
+;	O
+if	O
+(	O
+dbmfp	*(struct(*(struct(union(struct`,array(char),long),union(struct`,array(char),long long),int,int,int,int,char)),struct(int,int,char),int,int,struct(*(struct(*`,struct`,int,int,struct`,*`,*`,*`,long,int)),*(*(struct`))),*(struct(*(struct`),struct(*`),struct(*`,*`),*(struct`),int,*(struct`))),*(struct(struct(long,long),int,int,int,int,int,int,int,int,int,int,int,int,struct(*`,long,int,int,int,int,int,int),int)),*(void),long,int))
+->	O
+pinref	int
+==	O
+0	int
+)	O
+{	O
+CDB___db_err	(*(struct(*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(char),*((*`,*`)->(void)),*((*`,int,int)->(void)),*((*`,int)->(void)),*((*`)->(int)),int,*(char),int,int,int,int,int,int,int,long,int,long,*(struct(*`,*`,char,char,*`)),*(void),*(void),int,long,*((*`,*`,*`,enum(int,int,int,int),*`)->(int)),int,*(char),*(char),*(char),*(*(char)),int,int,int,*(void),*(struct(int,int,char)),long,*(void),*(void),*(void),*(void),*(*((*`,*`,*`,enum(int,int,int,int),*`)->(int))),long,*(void),long,int,struct(*(struct`),*(*`)),int,*(struct),*(void),*((*`,int)->(int)),*((*`,int,*`)->(void)),*((*`,*`)->(void)),*((*`,*`,int,int)->(int)),*((*`,*`,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(int)),*((*`,*`)->(int)),*((*`,*`)->(int)),*((*`,*`,long,long,int)->(int)),*((*`,long)->(int)),*((*`,*`)->(int)),*((*`,int,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,int)->(int)),*((*`,*`,int)->(int)),*((*`,int)->(int)),*((*`,int)->(int)),*((*`,long)->(int)),*((*`,int,int,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(int)),int)),*(char))->(void)
+(	O
+dbenv	*(struct(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(char),*((*(char),*(char))->(void)),*((*(struct`),int,int)->(void)),*((*(struct`),int)->(void)),*((*(struct`))->(int)),int,*(char),int,int,int,int,int,int,int,long,int,long,*(struct(*((*`,*`,int,*`,*`,*`)->(int)),*((*`,*`,int,*`,int,*`)->(int)),char,char,*(void))),*(void),*(void),int,long,*((*(struct`),*(struct`),*(struct`),enum(int,int,int,int),*(void))->(int)),int,*(char),*(char),*(char),*(*(char)),int,int,int,*(void),*(struct),long,*(void),*(void),*(void),*(void),*(*((*`,*`,*`,enum(int,int,int,int),*`)->(int))),long,*(void),long,int,struct(*(struct(*`,*`,*`,*`,*`,*`,int,*`,int,int,int,int,int,int,int,long,int,long,*`,*`,*`,int,long,*`,int,*`,*`,*`,*`,int,int,int,*`,*`,long,*`,*`,*`,*`,*`,long,*`,long,int,struct`,int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int)),*(*(struct`))),int,*(struct),*(void),*((*(struct`),int)->(int)),*((*(struct`),int,*(char))->(void)),*((*(struct`),*(char))->(void)),*((*(struct`),*(char),int,int)->(int)),*((*(struct`),*(char),int)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),*((*`,*`)->(void)))->(void)),*((*(struct`),*(struct`))->(void)),*((*(struct`),*(char))->(void)),*((*(struct`),*((*`,int,int)->(void)))->(int)),*((*(struct`),*((*`,int)->(void)))->(int)),*((*(struct`),*((*`)->(int)))->(int)),*((*(struct`),*(char),long,long,int)->(int)),*((*(struct`),long)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),int,int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),int)->(int)),*((*(struct`),*(char),int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),long)->(int)),*((*(struct`),int,int,int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),*((*`,*`,*`,enum(int,int,int,int),*`)->(int)))->(int)),*((*(struct`),*(long))->(int)),int))
+,	O
+"%s: more pages returned than retrieved"	*(char)
+,	O
+CDB___memp_fn	(*(struct(*(struct(union`,union`,int,int,int,int,char)),struct(int,int,char),int,int,struct(*(struct`),*(*`)),*(struct(*`,struct`,struct`,*`,int,*`)),*(struct(struct`,int,int,int,int,int,int,int,int,int,int,int,int,struct`,int)),*(void),long,int)))->(*(char))
+(	O
+dbmfp	*(struct(*(struct(union(struct`,array(char),long),union(struct`,array(char),long long),int,int,int,int,char)),struct(int,int,char),int,int,struct(*(struct(*`,struct`,int,int,struct`,*`,*`,*`,long,int)),*(*(struct`))),*(struct(*(struct`),struct(*`),struct(*`,*`),*(struct`),int,*(struct`))),*(struct(struct(long,long),int,int,int,int,int,int,int,int,int,int,int,int,struct(*`,long,int,int,int,int,int,int),int)),*(void),long,int))
+)	O
+)	O
+;	O
+R_UNLOCK	O
+(	O
+dbenv	*(struct(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(char),*((*(char),*(char))->(void)),*((*(struct`),int,int)->(void)),*((*(struct`),int)->(void)),*((*(struct`))->(int)),int,*(char),int,int,int,int,int,int,int,long,int,long,*(struct(*((*`,*`,int,*`,*`,*`)->(int)),*((*`,*`,int,*`,int,*`)->(int)),char,char,*(void))),*(void),*(void),int,long,*((*(struct`),*(struct`),*(struct`),enum(int,int,int,int),*(void))->(int)),int,*(char),*(char),*(char),*(*(char)),int,int,int,*(void),*(struct),long,*(void),*(void),*(void),*(void),*(*((*`,*`,*`,enum(int,int,int,int),*`)->(int))),long,*(void),long,int,struct(*(struct(*`,*`,*`,*`,*`,*`,int,*`,int,int,int,int,int,int,int,long,int,long,*`,*`,*`,int,long,*`,int,*`,*`,*`,*`,int,int,int,*`,*`,long,*`,*`,*`,*`,*`,long,*`,long,int,struct`,int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int)),*(*(struct`))),int,*(struct),*(void),*((*(struct`),int)->(int)),*((*(struct`),int,*(char))->(void)),*((*(struct`),*(char))->(void)),*((*(struct`),*(char),int,int)->(int)),*((*(struct`),*(char),int)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),*((*`,*`)->(void)))->(void)),*((*(struct`),*(struct`))->(void)),*((*(struct`),*(char))->(void)),*((*(struct`),*((*`,int,int)->(void)))->(int)),*((*(struct`),*((*`,int)->(void)))->(int)),*((*(struct`),*((*`)->(int)))->(int)),*((*(struct`),*(char),long,long,int)->(int)),*((*(struct`),long)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),int,int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),int)->(int)),*((*(struct`),*(char),int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),long)->(int)),*((*(struct`),int,int,int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),*((*`,*`,*`,enum(int,int,int,int),*`)->(int)))->(int)),*((*(struct`),*(long))->(int)),int))
+,	O
+dbmp	*(struct(*(struct(union(struct`,array(char),long),union(struct`,array(char),long long),int,int,int,int,char)),struct(*(struct(struct`,int,*`,*`))),struct(*(struct(*`,struct`,int,int,struct`,*`,*`,*`,long,int)),*(*(struct`))),*(struct(*(struct`),*(char),*((*`,*`)->(void)),*((*`,int,int)->(void)),*((*`,int)->(void)),*((*`)->(int)),int,*(char),int,int,int,int,int,int,int,long,int,long,*(struct`),*(void),*(void),int,long,*((*`,*`,*`,enum(int,int,int,int),*`)->(int)),int,*(char),*(char),*(char),*(*`),int,int,int,*(void),*(struct`),long,*(void),*(void),*(void),*(void),*(*`),long,*(void),long,int,struct(*`,*`),int,*(struct`),*(void),*((*`,int)->(int)),*((*`,int,*`)->(void)),*((*`,*`)->(void)),*((*`,*`,int,int)->(int)),*((*`,*`,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(int)),*((*`,*`)->(int)),*((*`,*`)->(int)),*((*`,*`,long,long,int)->(int)),*((*`,long)->(int)),*((*`,*`)->(int)),*((*`,int,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,int)->(int)),*((*`,*`,int)->(int)),*((*`,int)->(int)),*((*`,int)->(int)),*((*`,long)->(int)),*((*`,int,int,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(int)),int)),int,*(struct(int,int,*(struct`),*(char),*(void),*(void),*(void),int))))
+->	O
+reginfo	*(void)
+)	O
+;	O
+return	O
+(	O
+EINVAL	int
+)	O
+;	O
+}	O
+else	O
+--	O
+dbmfp	*(struct(*(struct(union(struct`,array(char),long),union(struct`,array(char),long long),int,int,int,int,char)),struct(int,int,char),int,int,struct(*(struct(*`,struct`,int,int,struct`,*`,*`,*`,long,int)),*(*(struct`))),*(struct(*(struct`),struct(*`),struct(*`,*`),*(struct`),int,*(struct`))),*(struct(struct(long,long),int,int,int,int,int,int,int,int,int,int,int,int,struct(*`,long,int,int,int,int,int,int),int)),*(void),long,int))
+->	O
+pinref	int
+;	O
+if	O
+(	O
+dbmfp	*(struct(*(struct(union(struct`,array(char),long),union(struct`,array(char),long long),int,int,int,int,char)),struct(int,int,char),int,int,struct(*(struct(*`,struct`,int,int,struct`,*`,*`,*`,long,int)),*(*(struct`))),*(struct(*(struct`),struct(*`),struct(*`,*`),*(struct`),int,*(struct`))),*(struct(struct(long,long),int,int,int,int,int,int,int,int,int,int,int,int,struct(*`,long,int,int,int,int,int,int),int)),*(void),long,int))
+->	O
+addr	*(void)
+!=	O
+NULL	O
+&&	O
+pgaddr	*(void)
+>=	O
+dbmfp	*(struct(*(struct(union(struct`,array(char),long),union(struct`,array(char),long long),int,int,int,int,char)),struct(int,int,char),int,int,struct(*(struct(*`,struct`,int,int,struct`,*`,*`,*`,long,int)),*(*(struct`))),*(struct(*(struct`),struct(*`),struct(*`,*`),*(struct`),int,*(struct`))),*(struct(struct(long,long),int,int,int,int,int,int,int,int,int,int,int,int,struct(*`,long,int,int,int,int,int,int),int)),*(void),long,int))
+->	O
+addr	*(void)
+&&	O
+(	O
+u_int8_t	char
+*	O
+)	O
+pgaddr	*(void)
+<=	O
+(	O
+u_int8_t	char
+*	O
+)	O
+dbmfp	*(struct(*(struct(union(struct`,array(char),long),union(struct`,array(char),long long),int,int,int,int,char)),struct(int,int,char),int,int,struct(*(struct(*`,struct`,int,int,struct`,*`,*`,*`,long,int)),*(*(struct`))),*(struct(*(struct`),struct(*`),struct(*`,*`),*(struct`),int,*(struct`))),*(struct(struct(long,long),int,int,int,int,int,int,int,int,int,int,int,int,struct(*`,long,int,int,int,int,int,int),int)),*(void),long,int))
+->	O
+addr	*(void)
++	O
+dbmfp	*(struct(*(struct(union(struct`,array(char),long),union(struct`,array(char),long long),int,int,int,int,char)),struct(int,int,char),int,int,struct(*(struct(*`,struct`,int,int,struct`,*`,*`,*`,long,int)),*(*(struct`))),*(struct(*(struct`),struct(*`),struct(*`,*`),*(struct`),int,*(struct`))),*(struct(struct(long,long),int,int,int,int,int,int,int,int,int,int,int,int,struct(*`,long,int,int,int,int,int,int),int)),*(void),long,int))
+->	O
+len	long
+)	O
+{	O
+R_UNLOCK	O
+(	O
+dbenv	*(struct(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(char),*((*(char),*(char))->(void)),*((*(struct`),int,int)->(void)),*((*(struct`),int)->(void)),*((*(struct`))->(int)),int,*(char),int,int,int,int,int,int,int,long,int,long,*(struct(*((*`,*`,int,*`,*`,*`)->(int)),*((*`,*`,int,*`,int,*`)->(int)),char,char,*(void))),*(void),*(void),int,long,*((*(struct`),*(struct`),*(struct`),enum(int,int,int,int),*(void))->(int)),int,*(char),*(char),*(char),*(*(char)),int,int,int,*(void),*(struct),long,*(void),*(void),*(void),*(void),*(*((*`,*`,*`,enum(int,int,int,int),*`)->(int))),long,*(void),long,int,struct(*(struct(*`,*`,*`,*`,*`,*`,int,*`,int,int,int,int,int,int,int,long,int,long,*`,*`,*`,int,long,*`,int,*`,*`,*`,*`,int,int,int,*`,*`,long,*`,*`,*`,*`,*`,long,*`,long,int,struct`,int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int)),*(*(struct`))),int,*(struct),*(void),*((*(struct`),int)->(int)),*((*(struct`),int,*(char))->(void)),*((*(struct`),*(char))->(void)),*((*(struct`),*(char),int,int)->(int)),*((*(struct`),*(char),int)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),*((*`,*`)->(void)))->(void)),*((*(struct`),*(struct`))->(void)),*((*(struct`),*(char))->(void)),*((*(struct`),*((*`,int,int)->(void)))->(int)),*((*(struct`),*((*`,int)->(void)))->(int)),*((*(struct`),*((*`)->(int)))->(int)),*((*(struct`),*(char),long,long,int)->(int)),*((*(struct`),long)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),int,int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),int)->(int)),*((*(struct`),*(char),int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),long)->(int)),*((*(struct`),int,int,int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),*((*`,*`,*`,enum(int,int,int,int),*`)->(int)))->(int)),*((*(struct`),*(long))->(int)),int))
+,	O
+dbmp	*(struct(*(struct(union(struct`,array(char),long),union(struct`,array(char),long long),int,int,int,int,char)),struct(*(struct(struct`,int,*`,*`))),struct(*(struct(*`,struct`,int,int,struct`,*`,*`,*`,long,int)),*(*(struct`))),*(struct(*(struct`),*(char),*((*`,*`)->(void)),*((*`,int,int)->(void)),*((*`,int)->(void)),*((*`)->(int)),int,*(char),int,int,int,int,int,int,int,long,int,long,*(struct`),*(void),*(void),int,long,*((*`,*`,*`,enum(int,int,int,int),*`)->(int)),int,*(char),*(char),*(char),*(*`),int,int,int,*(void),*(struct`),long,*(void),*(void),*(void),*(void),*(*`),long,*(void),long,int,struct(*`,*`),int,*(struct`),*(void),*((*`,int)->(int)),*((*`,int,*`)->(void)),*((*`,*`)->(void)),*((*`,*`,int,int)->(int)),*((*`,*`,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(int)),*((*`,*`)->(int)),*((*`,*`)->(int)),*((*`,*`,long,long,int)->(int)),*((*`,long)->(int)),*((*`,*`)->(int)),*((*`,int,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,int)->(int)),*((*`,*`,int)->(int)),*((*`,int)->(int)),*((*`,int)->(int)),*((*`,long)->(int)),*((*`,int,int,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(int)),int)),int,*(struct(int,int,*(struct`),*(char),*(void),*(void),*(void),int))))
+->	O
+reginfo	*(void)
+)	O
+;	O
+return	O
+(	O
+0	int
+)	O
+;	O
+}	O
+bhp	*(struct(struct(union(struct(int,int,int,int,int,short,short,struct`),array(char),long),union(struct(union`,union`,array(int),array(int),int,int,array(int)),array(char),long long),int,int,int,int,char),short,short,*(int),struct(long,long),struct(long,long),int,int,array(char)))
+=	O
+(	O
+BH	struct
+*	O
+)	O
+(	O
+(	O
+u_int8_t	char
+*	O
+)	O
+pgaddr	*(void)
+-	O
+SSZA	O
+(	O
+BH	struct
+,	O
+buf	*(char)
+)	O
+)	O
+;	O
+c_mp	*(struct(struct(union(struct(int,int,int,int,int,short,short,struct`),array(char),long),union(struct(union`,union`,array(int),array(int),int,int,array(int)),array(char),long long),int,int,int,int,char),struct(int,int),int,struct(long,long),int,int,int,struct(long,long),int,int,struct(int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int)))
+=	O
+BH_TO_CACHE	O
+(	O
+dbmp	*(struct(*(struct(union(struct`,array(char),long),union(struct`,array(char),long long),int,int,int,int,char)),struct(*(struct(struct`,int,*`,*`))),struct(*(struct(*`,struct`,int,int,struct`,*`,*`,*`,long,int)),*(*(struct`))),*(struct(*(struct`),*(char),*((*`,*`)->(void)),*((*`,int,int)->(void)),*((*`,int)->(void)),*((*`)->(int)),int,*(char),int,int,int,int,int,int,int,long,int,long,*(struct`),*(void),*(void),int,long,*((*`,*`,*`,enum(int,int,int,int),*`)->(int)),int,*(char),*(char),*(char),*(*`),int,int,int,*(void),*(struct`),long,*(void),*(void),*(void),*(void),*(*`),long,*(void),long,int,struct(*`,*`),int,*(struct`),*(void),*((*`,int)->(int)),*((*`,int,*`)->(void)),*((*`,*`)->(void)),*((*`,*`,int,int)->(int)),*((*`,*`,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(int)),*((*`,*`)->(int)),*((*`,*`)->(int)),*((*`,*`,long,long,int)->(int)),*((*`,long)->(int)),*((*`,*`)->(int)),*((*`,int,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,int)->(int)),*((*`,*`,int)->(int)),*((*`,int)->(int)),*((*`,int)->(int)),*((*`,long)->(int)),*((*`,int,int,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(int)),int)),int,*(struct(int,int,*(struct`),*(char),*(void),*(void),*(void),int))))
+,	O
+bhp	*(struct(struct(union(struct(int,int,int,int,int,short,short,struct`),array(char),long),union(struct(union`,union`,array(int),array(int),int,int,array(int)),array(char),long long),int,int,int,int,char),short,short,*(int),struct(long,long),struct(long,long),int,int,array(char)))
+)	O
+;	O
+if	O
+(	O
+LF_ISSET	O
+(	O
+DB_MPOOL_CLEAN	int
+)	O
+&&	O
+F_ISSET	O
+(	O
+bhp	*(struct(struct(union(struct(int,int,int,int,int,short,short,struct`),array(char),long),union(struct(union`,union`,array(int),array(int),int,int,array(int)),array(char),long long),int,int,int,int,char),short,short,*(int),struct(long,long),struct(long,long),int,int,array(char)))
+,	O
+BH_DIRTY	int
+)	O
+)	O
+{	O
+++	O
+c_mp	*(struct(struct(union(struct(int,int,int,int,int,short,short,struct`),array(char),long),union(struct(union`,union`,array(int),array(int),int,int,array(int)),array(char),long long),int,int,int,int,char),struct(int,int),int,struct(long,long),int,int,int,struct(long,long),int,int,struct(int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int)))
+->	O
+stat	*((*(struct(int,*((*`,int,int)->(void)),*((long)->(*`)),*((*`,long)->(*`)),*((*`,*`)->(int)),*(struct`),enum(int,int,int,int,int),*(struct`),*(void),array(char),int,int,*(struct`),long,*(struct`),struct(*`,*`),struct(*`,*`),struct(*`,*`),struct(*`,*`),*(void),*(void),*(void),*(void),*(void),*((*`,int)->(int)),*((*`,*`,*`,int)->(int)),*((*`,*`,*`,int)->(int)),*((*`,int,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(int)),*((*`,*`,*`,*`,int)->(int)),*((*`)->(int)),*((*`)->(enum(int,int,int,int,int))),*((*`,*`,*`,int)->(int)),*((*`,*`,*`,*`,int)->(int)),*((*`,*`,*`,enum(int,int,int,int,int),int,int)->(int)),*((*`,*`,*`,*`,int)->(int)),*((*`,*`,*`,int)->(int)),*((*`,*`,*`,*`,int)->(int)),*((*`,int,int,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(int)),*((*`,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(int)),*((*`,*`,*`,int)->(int)),*((*`,int)->(int)),*((*`,*`,int)->(int)),*((*`,*`,*`,*`,int)->(int)),*((*`,*`)->(int)),*((*`,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,int)->(int)),*((*`,int)->(int)),*((*`,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),int,int,char)),*(void),*((long)->(*(void))),int)->(int))
+.	O
+st_page_clean	int
+;	O
+--	O
+c_mp	*(struct(struct(union(struct(int,int,int,int,int,short,short,struct`),array(char),long),union(struct(union`,union`,array(int),array(int),int,int,array(int)),array(char),long long),int,int,int,int,char),struct(int,int),int,struct(long,long),int,int,int,struct(long,long),int,int,struct(int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int)))
+->	O
+stat	*((*(struct(int,*((*`,int,int)->(void)),*((long)->(*`)),*((*`,long)->(*`)),*((*`,*`)->(int)),*(struct`),enum(int,int,int,int,int),*(struct`),*(void),array(char),int,int,*(struct`),long,*(struct`),struct(*`,*`),struct(*`,*`),struct(*`,*`),struct(*`,*`),*(void),*(void),*(void),*(void),*(void),*((*`,int)->(int)),*((*`,*`,*`,int)->(int)),*((*`,*`,*`,int)->(int)),*((*`,int,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(int)),*((*`,*`,*`,*`,int)->(int)),*((*`)->(int)),*((*`)->(enum(int,int,int,int,int))),*((*`,*`,*`,int)->(int)),*((*`,*`,*`,*`,int)->(int)),*((*`,*`,*`,enum(int,int,int,int,int),int,int)->(int)),*((*`,*`,*`,*`,int)->(int)),*((*`,*`,*`,int)->(int)),*((*`,*`,*`,*`,int)->(int)),*((*`,int,int,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(int)),*((*`,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(int)),*((*`,*`,*`,int)->(int)),*((*`,int)->(int)),*((*`,*`,int)->(int)),*((*`,*`,*`,*`,int)->(int)),*((*`,*`)->(int)),*((*`,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,int)->(int)),*((*`,int)->(int)),*((*`,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),int,int,char)),*(void),*((long)->(*(void))),int)->(int))
+.	O
+st_page_dirty	int
+;	O
+F_CLR	O
+(	O
+bhp	*(struct(struct(union(struct(int,int,int,int,int,short,short,struct`),array(char),long),union(struct(union`,union`,array(int),array(int),int,int,array(int)),array(char),long long),int,int,int,int,char),short,short,*(int),struct(long,long),struct(long,long),int,int,array(char)))
+,	O
+BH_DIRTY	int
+)	O
+;	O
+}	O
+if	O
+(	O
+LF_ISSET	O
+(	O
+DB_MPOOL_DIRTY	int
+)	O
+&&	O
+!	O
+F_ISSET	O
+(	O
+bhp	*(struct(struct(union(struct(int,int,int,int,int,short,short,struct`),array(char),long),union(struct(union`,union`,array(int),array(int),int,int,array(int)),array(char),long long),int,int,int,int,char),short,short,*(int),struct(long,long),struct(long,long),int,int,array(char)))
+,	O
+BH_DIRTY	int
+)	O
+)	O
+{	O
+--	O
+c_mp	*(struct(struct(union(struct(int,int,int,int,int,short,short,struct`),array(char),long),union(struct(union`,union`,array(int),array(int),int,int,array(int)),array(char),long long),int,int,int,int,char),struct(int,int),int,struct(long,long),int,int,int,struct(long,long),int,int,struct(int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int)))
+->	O
+stat	*((*(struct(int,*((*`,int,int)->(void)),*((long)->(*`)),*((*`,long)->(*`)),*((*`,*`)->(int)),*(struct`),enum(int,int,int,int,int),*(struct`),*(void),array(char),int,int,*(struct`),long,*(struct`),struct(*`,*`),struct(*`,*`),struct(*`,*`),struct(*`,*`),*(void),*(void),*(void),*(void),*(void),*((*`,int)->(int)),*((*`,*`,*`,int)->(int)),*((*`,*`,*`,int)->(int)),*((*`,int,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(int)),*((*`,*`,*`,*`,int)->(int)),*((*`)->(int)),*((*`)->(enum(int,int,int,int,int))),*((*`,*`,*`,int)->(int)),*((*`,*`,*`,*`,int)->(int)),*((*`,*`,*`,enum(int,int,int,int,int),int,int)->(int)),*((*`,*`,*`,*`,int)->(int)),*((*`,*`,*`,int)->(int)),*((*`,*`,*`,*`,int)->(int)),*((*`,int,int,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(int)),*((*`,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(int)),*((*`,*`,*`,int)->(int)),*((*`,int)->(int)),*((*`,*`,int)->(int)),*((*`,*`,*`,*`,int)->(int)),*((*`,*`)->(int)),*((*`,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,int)->(int)),*((*`,int)->(int)),*((*`,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),int,int,char)),*(void),*((long)->(*(void))),int)->(int))
+.	O
+st_page_clean	int
+;	O
+++	O
+c_mp	*(struct(struct(union(struct(int,int,int,int,int,short,short,struct`),array(char),long),union(struct(union`,union`,array(int),array(int),int,int,array(int)),array(char),long long),int,int,int,int,char),struct(int,int),int,struct(long,long),int,int,int,struct(long,long),int,int,struct(int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int)))
+->	O
+stat	*((*(struct(int,*((*`,int,int)->(void)),*((long)->(*`)),*((*`,long)->(*`)),*((*`,*`)->(int)),*(struct`),enum(int,int,int,int,int),*(struct`),*(void),array(char),int,int,*(struct`),long,*(struct`),struct(*`,*`),struct(*`,*`),struct(*`,*`),struct(*`,*`),*(void),*(void),*(void),*(void),*(void),*((*`,int)->(int)),*((*`,*`,*`,int)->(int)),*((*`,*`,*`,int)->(int)),*((*`,int,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(int)),*((*`,*`,*`,*`,int)->(int)),*((*`)->(int)),*((*`)->(enum(int,int,int,int,int))),*((*`,*`,*`,int)->(int)),*((*`,*`,*`,*`,int)->(int)),*((*`,*`,*`,enum(int,int,int,int,int),int,int)->(int)),*((*`,*`,*`,*`,int)->(int)),*((*`,*`,*`,int)->(int)),*((*`,*`,*`,*`,int)->(int)),*((*`,int,int,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(int)),*((*`,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(int)),*((*`,*`,*`,int)->(int)),*((*`,int)->(int)),*((*`,*`,int)->(int)),*((*`,*`,*`,*`,int)->(int)),*((*`,*`)->(int)),*((*`,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,int)->(int)),*((*`,int)->(int)),*((*`,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),int,int,char)),*(void),*((long)->(*(void))),int)->(int))
+.	O
+st_page_dirty	int
+;	O
+F_SET	O
+(	O
+bhp	*(struct(struct(union(struct(int,int,int,int,int,short,short,struct`),array(char),long),union(struct(union`,union`,array(int),array(int),int,int,array(int)),array(char),long long),int,int,int,int,char),short,short,*(int),struct(long,long),struct(long,long),int,int,array(char)))
+,	O
+BH_DIRTY	int
+)	O
+;	O
+}	O
+if	O
+(	O
+LF_ISSET	O
+(	O
+DB_MPOOL_DISCARD	int
+)	O
+)	O
+F_SET	O
+(	O
+bhp	*(struct(struct(union(struct(int,int,int,int,int,short,short,struct`),array(char),long),union(struct(union`,union`,array(int),array(int),int,int,array(int)),array(char),long long),int,int,int,int,char),short,short,*(int),struct(long,long),struct(long,long),int,int,array(char)))
+,	O
+BH_DISCARD	int
+)	O
+;	O
+if	O
+(	O
+bhp	*(struct(struct(union(struct(int,int,int,int,int,short,short,struct`),array(char),long),union(struct(union`,union`,array(int),array(int),int,int,array(int)),array(char),long long),int,int,int,int,char),short,short,*(int),struct(long,long),struct(long,long),int,int,array(char)))
+->	O
+ref	int
+==	O
+0	int
+)	O
+{	O
+CDB___db_err	(*(struct(*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(char),*((*`,*`)->(void)),*((*`,int,int)->(void)),*((*`,int)->(void)),*((*`)->(int)),int,*(char),int,int,int,int,int,int,int,long,int,long,*(struct(*`,*`,char,char,*`)),*(void),*(void),int,long,*((*`,*`,*`,enum(int,int,int,int),*`)->(int)),int,*(char),*(char),*(char),*(*(char)),int,int,int,*(void),*(struct(int,int,char)),long,*(void),*(void),*(void),*(void),*(*((*`,*`,*`,enum(int,int,int,int),*`)->(int))),long,*(void),long,int,struct(*(struct`),*(*`)),int,*(struct),*(void),*((*`,int)->(int)),*((*`,int,*`)->(void)),*((*`,*`)->(void)),*((*`,*`,int,int)->(int)),*((*`,*`,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(int)),*((*`,*`)->(int)),*((*`,*`)->(int)),*((*`,*`,long,long,int)->(int)),*((*`,long)->(int)),*((*`,*`)->(int)),*((*`,int,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,int)->(int)),*((*`,*`,int)->(int)),*((*`,int)->(int)),*((*`,int)->(int)),*((*`,long)->(int)),*((*`,int,int,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(int)),int)),*(char))->(void)
+(	O
+dbenv	*(struct(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(char),*((*(char),*(char))->(void)),*((*(struct`),int,int)->(void)),*((*(struct`),int)->(void)),*((*(struct`))->(int)),int,*(char),int,int,int,int,int,int,int,long,int,long,*(struct(*((*`,*`,int,*`,*`,*`)->(int)),*((*`,*`,int,*`,int,*`)->(int)),char,char,*(void))),*(void),*(void),int,long,*((*(struct`),*(struct`),*(struct`),enum(int,int,int,int),*(void))->(int)),int,*(char),*(char),*(char),*(*(char)),int,int,int,*(void),*(struct),long,*(void),*(void),*(void),*(void),*(*((*`,*`,*`,enum(int,int,int,int),*`)->(int))),long,*(void),long,int,struct(*(struct(*`,*`,*`,*`,*`,*`,int,*`,int,int,int,int,int,int,int,long,int,long,*`,*`,*`,int,long,*`,int,*`,*`,*`,*`,int,int,int,*`,*`,long,*`,*`,*`,*`,*`,long,*`,long,int,struct`,int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int)),*(*(struct`))),int,*(struct),*(void),*((*(struct`),int)->(int)),*((*(struct`),int,*(char))->(void)),*((*(struct`),*(char))->(void)),*((*(struct`),*(char),int,int)->(int)),*((*(struct`),*(char),int)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),*((*`,*`)->(void)))->(void)),*((*(struct`),*(struct`))->(void)),*((*(struct`),*(char))->(void)),*((*(struct`),*((*`,int,int)->(void)))->(int)),*((*(struct`),*((*`,int)->(void)))->(int)),*((*(struct`),*((*`)->(int)))->(int)),*((*(struct`),*(char),long,long,int)->(int)),*((*(struct`),long)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),int,int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),int)->(int)),*((*(struct`),*(char),int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),long)->(int)),*((*(struct`),int,int,int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),*((*`,*`,*`,enum(int,int,int,int),*`)->(int)))->(int)),*((*(struct`),*(long))->(int)),int))
+,	O
+"%s: page %lu: unpinned page returned"	*(char)
+,	O
+CDB___memp_fn	(*(struct(*(struct(union`,union`,int,int,int,int,char)),struct(int,int,char),int,int,struct(*(struct`),*(*`)),*(struct(*`,struct`,struct`,*`,int,*`)),*(struct(struct`,int,int,int,int,int,int,int,int,int,int,int,int,struct`,int)),*(void),long,int)))->(*(char))
+(	O
+dbmfp	*(struct(*(struct(union(struct`,array(char),long),union(struct`,array(char),long long),int,int,int,int,char)),struct(int,int,char),int,int,struct(*(struct(*`,struct`,int,int,struct`,*`,*`,*`,long,int)),*(*(struct`))),*(struct(*(struct`),struct(*`),struct(*`,*`),*(struct`),int,*(struct`))),*(struct(struct(long,long),int,int,int,int,int,int,int,int,int,int,int,int,struct(*`,long,int,int,int,int,int,int),int)),*(void),long,int))
+)	O
+,	O
+(	O
+u_long	long
+)	O
+bhp	*(struct(struct(union(struct(int,int,int,int,int,short,short,struct`),array(char),long),union(struct(union`,union`,array(int),array(int),int,int,array(int)),array(char),long long),int,int,int,int,char),short,short,*(int),struct(long,long),struct(long,long),int,int,array(char)))
+->	O
+pgno	int
+)	O
+;	O
+R_UNLOCK	O
+(	O
+dbenv	*(struct(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(char),*((*(char),*(char))->(void)),*((*(struct`),int,int)->(void)),*((*(struct`),int)->(void)),*((*(struct`))->(int)),int,*(char),int,int,int,int,int,int,int,long,int,long,*(struct(*((*`,*`,int,*`,*`,*`)->(int)),*((*`,*`,int,*`,int,*`)->(int)),char,char,*(void))),*(void),*(void),int,long,*((*(struct`),*(struct`),*(struct`),enum(int,int,int,int),*(void))->(int)),int,*(char),*(char),*(char),*(*(char)),int,int,int,*(void),*(struct),long,*(void),*(void),*(void),*(void),*(*((*`,*`,*`,enum(int,int,int,int),*`)->(int))),long,*(void),long,int,struct(*(struct(*`,*`,*`,*`,*`,*`,int,*`,int,int,int,int,int,int,int,long,int,long,*`,*`,*`,int,long,*`,int,*`,*`,*`,*`,int,int,int,*`,*`,long,*`,*`,*`,*`,*`,long,*`,long,int,struct`,int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int)),*(*(struct`))),int,*(struct),*(void),*((*(struct`),int)->(int)),*((*(struct`),int,*(char))->(void)),*((*(struct`),*(char))->(void)),*((*(struct`),*(char),int,int)->(int)),*((*(struct`),*(char),int)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),*((*`,*`)->(void)))->(void)),*((*(struct`),*(struct`))->(void)),*((*(struct`),*(char))->(void)),*((*(struct`),*((*`,int,int)->(void)))->(int)),*((*(struct`),*((*`,int)->(void)))->(int)),*((*(struct`),*((*`)->(int)))->(int)),*((*(struct`),*(char),long,long,int)->(int)),*((*(struct`),long)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),int,int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),int)->(int)),*((*(struct`),*(char),int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),long)->(int)),*((*(struct`),int,int,int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),*((*`,*`,*`,enum(int,int,int,int),*`)->(int)))->(int)),*((*(struct`),*(long))->(int)),int))
+,	O
+dbmp	*(struct(*(struct(union(struct`,array(char),long),union(struct`,array(char),long long),int,int,int,int,char)),struct(*(struct(struct`,int,*`,*`))),struct(*(struct(*`,struct`,int,int,struct`,*`,*`,*`,long,int)),*(*(struct`))),*(struct(*(struct`),*(char),*((*`,*`)->(void)),*((*`,int,int)->(void)),*((*`,int)->(void)),*((*`)->(int)),int,*(char),int,int,int,int,int,int,int,long,int,long,*(struct`),*(void),*(void),int,long,*((*`,*`,*`,enum(int,int,int,int),*`)->(int)),int,*(char),*(char),*(char),*(*`),int,int,int,*(void),*(struct`),long,*(void),*(void),*(void),*(void),*(*`),long,*(void),long,int,struct(*`,*`),int,*(struct`),*(void),*((*`,int)->(int)),*((*`,int,*`)->(void)),*((*`,*`)->(void)),*((*`,*`,int,int)->(int)),*((*`,*`,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(int)),*((*`,*`)->(int)),*((*`,*`)->(int)),*((*`,*`,long,long,int)->(int)),*((*`,long)->(int)),*((*`,*`)->(int)),*((*`,int,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,int)->(int)),*((*`,*`,int)->(int)),*((*`,int)->(int)),*((*`,int)->(int)),*((*`,long)->(int)),*((*`,int,int,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(int)),int)),int,*(struct(int,int,*(struct`),*(char),*(void),*(void),*(void),int))))
+->	O
+reginfo	*(void)
+)	O
+;	O
+return	O
+(	O
+EINVAL	int
+)	O
+;	O
+}	O
+if	O
+(	O
+--	O
+bhp	*(struct(struct(union(struct(int,int,int,int,int,short,short,struct`),array(char),long),union(struct(union`,union`,array(int),array(int),int,int,array(int)),array(char),long long),int,int,int,int,char),short,short,*(int),struct(long,long),struct(long,long),int,int,array(char)))
+->	O
+ref	int
+>	O
+0	int
+)	O
+{	O
+R_UNLOCK	O
+(	O
+dbenv	*(struct(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(char),*((*(char),*(char))->(void)),*((*(struct`),int,int)->(void)),*((*(struct`),int)->(void)),*((*(struct`))->(int)),int,*(char),int,int,int,int,int,int,int,long,int,long,*(struct(*((*`,*`,int,*`,*`,*`)->(int)),*((*`,*`,int,*`,int,*`)->(int)),char,char,*(void))),*(void),*(void),int,long,*((*(struct`),*(struct`),*(struct`),enum(int,int,int,int),*(void))->(int)),int,*(char),*(char),*(char),*(*(char)),int,int,int,*(void),*(struct),long,*(void),*(void),*(void),*(void),*(*((*`,*`,*`,enum(int,int,int,int),*`)->(int))),long,*(void),long,int,struct(*(struct(*`,*`,*`,*`,*`,*`,int,*`,int,int,int,int,int,int,int,long,int,long,*`,*`,*`,int,long,*`,int,*`,*`,*`,*`,int,int,int,*`,*`,long,*`,*`,*`,*`,*`,long,*`,long,int,struct`,int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int)),*(*(struct`))),int,*(struct),*(void),*((*(struct`),int)->(int)),*((*(struct`),int,*(char))->(void)),*((*(struct`),*(char))->(void)),*((*(struct`),*(char),int,int)->(int)),*((*(struct`),*(char),int)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),*((*`,*`)->(void)))->(void)),*((*(struct`),*(struct`))->(void)),*((*(struct`),*(char))->(void)),*((*(struct`),*((*`,int,int)->(void)))->(int)),*((*(struct`),*((*`,int)->(void)))->(int)),*((*(struct`),*((*`)->(int)))->(int)),*((*(struct`),*(char),long,long,int)->(int)),*((*(struct`),long)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),int,int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),int)->(int)),*((*(struct`),*(char),int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),long)->(int)),*((*(struct`),int,int,int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),*((*`,*`,*`,enum(int,int,int,int),*`)->(int)))->(int)),*((*(struct`),*(long))->(int)),int))
+,	O
+dbmp	*(struct(*(struct(union(struct`,array(char),long),union(struct`,array(char),long long),int,int,int,int,char)),struct(*(struct(struct`,int,*`,*`))),struct(*(struct(*`,struct`,int,int,struct`,*`,*`,*`,long,int)),*(*(struct`))),*(struct(*(struct`),*(char),*((*`,*`)->(void)),*((*`,int,int)->(void)),*((*`,int)->(void)),*((*`)->(int)),int,*(char),int,int,int,int,int,int,int,long,int,long,*(struct`),*(void),*(void),int,long,*((*`,*`,*`,enum(int,int,int,int),*`)->(int)),int,*(char),*(char),*(char),*(*`),int,int,int,*(void),*(struct`),long,*(void),*(void),*(void),*(void),*(*`),long,*(void),long,int,struct(*`,*`),int,*(struct`),*(void),*((*`,int)->(int)),*((*`,int,*`)->(void)),*((*`,*`)->(void)),*((*`,*`,int,int)->(int)),*((*`,*`,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(int)),*((*`,*`)->(int)),*((*`,*`)->(int)),*((*`,*`,long,long,int)->(int)),*((*`,long)->(int)),*((*`,*`)->(int)),*((*`,int,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,int)->(int)),*((*`,*`,int)->(int)),*((*`,int)->(int)),*((*`,int)->(int)),*((*`,long)->(int)),*((*`,int,int,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(int)),int)),int,*(struct(int,int,*(struct`),*(char),*(void),*(void),*(void),int))))
+->	O
+reginfo	*(void)
+)	O
+;	O
+return	O
+(	O
+0	int
+)	O
+;	O
+}	O
+SH_TAILQ_REMOVE	O
+(	O
+&	O
+c_mp	*(struct(struct(union(struct(int,int,int,int,int,short,short,struct`),array(char),long),union(struct(union`,union`,array(int),array(int),int,int,array(int)),array(char),long long),int,int,int,int,char),struct(int,int),int,struct(long,long),int,int,int,struct(long,long),int,int,struct(int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int)))
+->	O
+bhq	struct(long,long)
+,	O
+bhp	*(struct(struct(union(struct(int,int,int,int,int,short,short,struct`),array(char),long),union(struct(union`,union`,array(int),array(int),int,int,array(int)),array(char),long long),int,int,int,int,char),short,short,*(int),struct(long,long),struct(long,long),int,int,array(char)))
+,	O
+q	struct(long,long)
+,	O
+__bh	struct(struct(union(struct(int,int,int,int,int,short,short,struct(*(struct`),*(struct`))),array(char),long),union(struct(union(long long,struct(int,int)),union(long long,struct(int,int)),array(int),array(int),int,int,array(int)),array(char),long long),int,int,int,int,char),short,short,*(int),struct(long,long),struct(long,long),int,int,array(char))
+)	O
+;	O
+if	O
+(	O
+F_ISSET	O
+(	O
+bhp	*(struct(struct(union(struct(int,int,int,int,int,short,short,struct`),array(char),long),union(struct(union`,union`,array(int),array(int),int,int,array(int)),array(char),long long),int,int,int,int,char),short,short,*(int),struct(long,long),struct(long,long),int,int,array(char)))
+,	O
+BH_DISCARD	int
+)	O
+)	O
+SH_TAILQ_INSERT_HEAD	O
+(	O
+&	O
+c_mp	*(struct(struct(union(struct(int,int,int,int,int,short,short,struct`),array(char),long),union(struct(union`,union`,array(int),array(int),int,int,array(int)),array(char),long long),int,int,int,int,char),struct(int,int),int,struct(long,long),int,int,int,struct(long,long),int,int,struct(int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int)))
+->	O
+bhq	struct(long,long)
+,	O
+bhp	*(struct(struct(union(struct(int,int,int,int,int,short,short,struct`),array(char),long),union(struct(union`,union`,array(int),array(int),int,int,array(int)),array(char),long long),int,int,int,int,char),short,short,*(int),struct(long,long),struct(long,long),int,int,array(char)))
+,	O
+q	struct(long,long)
+,	O
+__bh	struct(struct(union(struct(int,int,int,int,int,short,short,struct(*(struct`),*(struct`))),array(char),long),union(struct(union(long long,struct(int,int)),union(long long,struct(int,int)),array(int),array(int),int,int,array(int)),array(char),long long),int,int,int,int,char),short,short,*(int),struct(long,long),struct(long,long),int,int,array(char))
+)	O
+;	O
+else	O
+SH_TAILQ_INSERT_TAIL	O
+(	O
+&	O
+c_mp	*(struct(struct(union(struct(int,int,int,int,int,short,short,struct`),array(char),long),union(struct(union`,union`,array(int),array(int),int,int,array(int)),array(char),long long),int,int,int,int,char),struct(int,int),int,struct(long,long),int,int,int,struct(long,long),int,int,struct(int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int)))
+->	O
+bhq	struct(long,long)
+,	O
+bhp	*(struct(struct(union(struct(int,int,int,int,int,short,short,struct`),array(char),long),union(struct(union`,union`,array(int),array(int),int,int,array(int)),array(char),long long),int,int,int,int,char),short,short,*(int),struct(long,long),struct(long,long),int,int,array(char)))
+,	O
+q	struct(long,long)
+)	O
+;	O
+if	O
+(	O
+F_ISSET	O
+(	O
+bhp	*(struct(struct(union(struct(int,int,int,int,int,short,short,struct`),array(char),long),union(struct(union`,union`,array(int),array(int),int,int,array(int)),array(char),long long),int,int,int,int,char),short,short,*(int),struct(long,long),struct(long,long),int,int,array(char)))
+,	O
+BH_WRITE	int
+)	O
+)	O
+{	O
+if	O
+(	O
+F_ISSET	O
+(	O
+bhp	*(struct(struct(union(struct(int,int,int,int,int,short,short,struct`),array(char),long),union(struct(union`,union`,array(int),array(int),int,int,array(int)),array(char),long long),int,int,int,int,char),short,short,*(int),struct(long,long),struct(long,long),int,int,array(char)))
+,	O
+BH_DIRTY	int
+)	O
+)	O
+{	O
+if	O
+(	O
+CDB___memp_bhwrite	(*(struct(*(struct(union`,union`,int,int,int,int,char)),struct(*(struct`)),struct(*(struct`),*(*`)),*(struct(*`,*`,*`,*`,*`,*`,int,*`,int,int,int,int,int,int,int,long,int,long,*`,*`,*`,int,long,*`,int,*`,*`,*`,*`,int,int,int,*`,*`,long,*`,*`,*`,*`,*`,long,*`,long,int,struct`,int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int)),int,*(struct(int,int,*`,*`,*`,*`,*`,int)))),*(struct(struct(long,long),int,int,int,int,int,int,int,int,int,int,int,int,struct(*(char),long,int,int,int,int,int,int),int)),*(struct(struct(union(struct`,array(char),long),union(struct`,array(char),long long),int,int,int,int,char),short,short,*(int),struct(long,long),struct(long,long),int,int,array(char))),*(int),*(int))->(int)
+(	O
+dbmp	*(struct(*(struct(union(struct`,array(char),long),union(struct`,array(char),long long),int,int,int,int,char)),struct(*(struct(struct`,int,*`,*`))),struct(*(struct(*`,struct`,int,int,struct`,*`,*`,*`,long,int)),*(*(struct`))),*(struct(*(struct`),*(char),*((*`,*`)->(void)),*((*`,int,int)->(void)),*((*`,int)->(void)),*((*`)->(int)),int,*(char),int,int,int,int,int,int,int,long,int,long,*(struct`),*(void),*(void),int,long,*((*`,*`,*`,enum(int,int,int,int),*`)->(int)),int,*(char),*(char),*(char),*(*`),int,int,int,*(void),*(struct`),long,*(void),*(void),*(void),*(void),*(*`),long,*(void),long,int,struct(*`,*`),int,*(struct`),*(void),*((*`,int)->(int)),*((*`,int,*`)->(void)),*((*`,*`)->(void)),*((*`,*`,int,int)->(int)),*((*`,*`,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(int)),*((*`,*`)->(int)),*((*`,*`)->(int)),*((*`,*`,long,long,int)->(int)),*((*`,long)->(int)),*((*`,*`)->(int)),*((*`,int,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,int)->(int)),*((*`,*`,int)->(int)),*((*`,int)->(int)),*((*`,int)->(int)),*((*`,long)->(int)),*((*`,int,int,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(int)),int)),int,*(struct(int,int,*(struct`),*(char),*(void),*(void),*(void),int))))
+,	O
+dbmfp	*(struct(*(struct(union(struct`,array(char),long),union(struct`,array(char),long long),int,int,int,int,char)),struct(int,int,char),int,int,struct(*(struct(*`,struct`,int,int,struct`,*`,*`,*`,long,int)),*(*(struct`))),*(struct(*(struct`),struct(*`),struct(*`,*`),*(struct`),int,*(struct`))),*(struct(struct(long,long),int,int,int,int,int,int,int,int,int,int,int,int,struct(*`,long,int,int,int,int,int,int),int)),*(void),long,int))
+->	O
+mfp	*(struct)
+,	O
+bhp	*(struct(struct(union(struct(int,int,int,int,int,short,short,struct`),array(char),long),union(struct(union`,union`,array(int),array(int),int,int,array(int)),array(char),long long),int,int,int,int,char),short,short,*(int),struct(long,long),struct(long,long),int,int,array(char)))
+,	O
+NULL	O
+,	O
+&	O
+wrote	int
+)	O
+!=	O
+0	int
+||	O
+!	O
+wrote	int
+)	O
+F_SET	O
+(	O
+mp	*(struct(struct(union(struct(int,int,int,int,int,short,short,struct`),array(char),long),union(struct(union`,union`,array(int),array(int),int,int,array(int)),array(char),long long),int,int,int,int,char),struct(int,int),int,struct(long,long),int,int,int,struct(long,long),int,int,struct(int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int)))
+,	O
+MP_LSN_RETRY	int
+)	O
+;	O
+}	O
+else	O
+{	O
+F_CLR	O
+(	O
+bhp	*(struct(struct(union(struct(int,int,int,int,int,short,short,struct`),array(char),long),union(struct(union`,union`,array(int),array(int),int,int,array(int)),array(char),long long),int,int,int,int,char),short,short,*(int),struct(long,long),struct(long,long),int,int,array(char)))
+,	O
+BH_WRITE	int
+)	O
+;	O
+--	O
+mp	*(struct(struct(union(struct(int,int,int,int,int,short,short,struct`),array(char),long),union(struct(union`,union`,array(int),array(int),int,int,array(int)),array(char),long long),int,int,int,int,char),struct(int,int),int,struct(long,long),int,int,int,struct(long,long),int,int,struct(int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int)))
+->	O
+lsn_cnt	int
+;	O
+--	O
+dbmfp	*(struct(*(struct(union(struct`,array(char),long),union(struct`,array(char),long long),int,int,int,int,char)),struct(int,int,char),int,int,struct(*(struct(*`,struct`,int,int,struct`,*`,*`,*`,long,int)),*(*(struct`))),*(struct(*(struct`),struct(*`),struct(*`,*`),*(struct`),int,*(struct`))),*(struct(struct(long,long),int,int,int,int,int,int,int,int,int,int,int,int,struct(*`,long,int,int,int,int,int,int),int)),*(void),long,int))
+->	O
+mfp	*(struct)
+->	O
+lsn_cnt	int
+;	O
+}	O
+}	O
+R_UNLOCK	O
+(	O
+dbenv	*(struct(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(char),*((*(char),*(char))->(void)),*((*(struct`),int,int)->(void)),*((*(struct`),int)->(void)),*((*(struct`))->(int)),int,*(char),int,int,int,int,int,int,int,long,int,long,*(struct(*((*`,*`,int,*`,*`,*`)->(int)),*((*`,*`,int,*`,int,*`)->(int)),char,char,*(void))),*(void),*(void),int,long,*((*(struct`),*(struct`),*(struct`),enum(int,int,int,int),*(void))->(int)),int,*(char),*(char),*(char),*(*(char)),int,int,int,*(void),*(struct),long,*(void),*(void),*(void),*(void),*(*((*`,*`,*`,enum(int,int,int,int),*`)->(int))),long,*(void),long,int,struct(*(struct(*`,*`,*`,*`,*`,*`,int,*`,int,int,int,int,int,int,int,long,int,long,*`,*`,*`,int,long,*`,int,*`,*`,*`,*`,int,int,int,*`,*`,long,*`,*`,*`,*`,*`,long,*`,long,int,struct`,int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int)),*(*(struct`))),int,*(struct),*(void),*((*(struct`),int)->(int)),*((*(struct`),int,*(char))->(void)),*((*(struct`),*(char))->(void)),*((*(struct`),*(char),int,int)->(int)),*((*(struct`),*(char),int)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),*((*`,*`)->(void)))->(void)),*((*(struct`),*(struct`))->(void)),*((*(struct`),*(char))->(void)),*((*(struct`),*((*`,int,int)->(void)))->(int)),*((*(struct`),*((*`,int)->(void)))->(int)),*((*(struct`),*((*`)->(int)))->(int)),*((*(struct`),*(char),long,long,int)->(int)),*((*(struct`),long)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),int,int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),*(char))->(int)),*((*(struct`),int)->(int)),*((*(struct`),*(char),int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),long)->(int)),*((*(struct`),int,int,int)->(int)),*((*(struct`),int)->(int)),*((*(struct`),*((*`,*`,*`,enum(int,int,int,int),*`)->(int)))->(int)),*((*(struct`),*(long))->(int)),int))
+,	O
+dbmp	*(struct(*(struct(union(struct`,array(char),long),union(struct`,array(char),long long),int,int,int,int,char)),struct(*(struct(struct`,int,*`,*`))),struct(*(struct(*`,struct`,int,int,struct`,*`,*`,*`,long,int)),*(*(struct`))),*(struct(*(struct`),*(char),*((*`,*`)->(void)),*((*`,int,int)->(void)),*((*`,int)->(void)),*((*`)->(int)),int,*(char),int,int,int,int,int,int,int,long,int,long,*(struct`),*(void),*(void),int,long,*((*`,*`,*`,enum(int,int,int,int),*`)->(int)),int,*(char),*(char),*(char),*(*`),int,int,int,*(void),*(struct`),long,*(void),*(void),*(void),*(void),*(*`),long,*(void),long,int,struct(*`,*`),int,*(struct`),*(void),*((*`,int)->(int)),*((*`,int,*`)->(void)),*((*`,*`)->(void)),*((*`,*`,int,int)->(int)),*((*`,*`,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(void)),*((*`,*`)->(int)),*((*`,*`)->(int)),*((*`,*`)->(int)),*((*`,*`,long,long,int)->(int)),*((*`,long)->(int)),*((*`,*`)->(int)),*((*`,int,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,int)->(int)),*((*`,*`,int)->(int)),*((*`,int)->(int)),*((*`,int)->(int)),*((*`,long)->(int)),*((*`,int,int,int)->(int)),*((*`,int)->(int)),*((*`,*`)->(int)),*((*`,*`)->(int)),int)),int,*(struct(int,int,*(struct`),*(char),*(void),*(void),*(void),int))))
+->	O
+reginfo	*(void)
+)	O
+;	O
+return	O
+(	O
+0	int
+)	O
+;	O
+}	O

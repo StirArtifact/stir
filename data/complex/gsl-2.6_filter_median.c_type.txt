@@ -1,0 +1,154 @@
+gsl_filter_median_workspace	struct(*(struct(long,long,long,*(double),*(void),long)))
+*	O
+gsl_filter_median_alloc	(long)->(*(struct(*(struct(long,long,long,*`,*`,long)))))
+(	O
+const	O
+size_t	long
+K	long
+)	O
+{	O
+gsl_filter_median_workspace	struct(*(struct(long,long,long,*(double),*(void),long)))
+*	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+;	O
+size_t	long
+H	long
+=	O
+K	long
+/	O
+2	int
+;	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+=	O
+calloc	(long,long)->(*(void))
+(	O
+1	int
+,	O
+sizeof	O
+(	O
+gsl_filter_median_workspace	struct(*(struct(long,long,long,*(double),*(void),long)))
+)	O
+)	O
+;	O
+if	O
+(	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+==	O
+0	int
+)	O
+{	O
+GSL_ERROR_NULL	O
+(	O
+"failed to allocate space for workspace"	*(char)
+,	O
+GSL_ENOMEM	int
+)	O
+;	O
+}	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+movstat_workspace_p	*(struct(long,long,long,*(double),*(void),long))
+=	O
+gsl_movstat_alloc	(long)->(*(struct(long,long,long,*(double),*(void),long)))
+(	O
+2	int
+*	O
+H	long
++	O
+1	int
+)	O
+;	O
+if	O
+(	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+movstat_workspace_p	*(struct(long,long,long,*(double),*(void),long))
+==	O
+NULL	O
+)	O
+{	O
+gsl_filter_median_free	(*(struct(*(struct(long,long,long,*`,*`,long)))))->(void)
+(	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+)	O
+;	O
+GSL_ERROR_NULL	O
+(	O
+"failed to allocate space for movstat workspace"	*(char)
+,	O
+GSL_ENOMEM	int
+)	O
+;	O
+}	O
+return	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+;	O
+}	O
+void	O
+gsl_filter_median_free	(*(struct(*(struct(long,long,long,*`,*`,long)))))->(void)
+(	O
+gsl_filter_median_workspace	struct(*(struct(long,long,long,*(double),*(void),long)))
+*	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+)	O
+{	O
+if	O
+(	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+movstat_workspace_p	*(struct(long,long,long,*(double),*(void),long))
+)	O
+gsl_movstat_free	(*(struct(long,long,long,*(double),*(void),long)))->(void)
+(	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+movstat_workspace_p	*(struct(long,long,long,*(double),*(void),long))
+)	O
+;	O
+free	(*(void))->(void)
+(	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+)	O
+;	O
+}	O
+int	O
+gsl_filter_median	(enum(int,int,int),*(struct(long,long,*(double),*(struct(long,*`)),int)),*(struct(long,long,*(double),*(struct(long,*`)),int)),*(struct(*(struct(long,long,long,*`,*`,long)))))->(int)
+(	O
+const	O
+gsl_filter_end_t	enum(int,int,int)
+endtype	enum(int,int,int)
+,	O
+const	O
+gsl_vector	struct(long,long,*(double),*(struct(long,*(double))),int)
+*	O
+x	double
+,	O
+gsl_vector	struct(long,long,*(double),*(struct(long,*(double))),int)
+*	O
+y	double
+,	O
+gsl_filter_median_workspace	struct(*(struct(long,long,long,*(double),*(void),long)))
+*	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+)	O
+{	O
+int	O
+status	int
+=	O
+gsl_movstat_median	(enum(int,int,int),*(struct(long,long,*(double),*(struct(long,*`)),int)),*(struct(long,long,*(double),*(struct(long,*`)),int)),*(struct(long,long,long,*(double),*(void),long)))->(int)
+(	O
+endtype	enum(int,int,int)
+,	O
+x	double
+,	O
+y	double
+,	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+movstat_workspace_p	*(struct(long,long,long,*(double),*(void),long))
+)	O
+;	O
+return	O
+status	int
+;	O
+}	O

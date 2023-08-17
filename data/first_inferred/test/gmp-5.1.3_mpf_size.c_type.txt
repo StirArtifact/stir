@@ -1,0 +1,17 @@
+size_t	long
+mpf_size	function
+(	O
+mpf_srcptr	*
+f	*
+)	O
+__GMP_NOTHROW	O
+{	O
+return	O
+__GMP_ABS	function
+(	O
+f	*
+->	O
+_mp_size	O
+)	O
+;	O
+}	O

@@ -1,0 +1,15 @@
+void	O
+fseterr	(*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(void),long,int,array(char))))->(void)
+(	O
+FILE	struct
+*	O
+fp	*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(void),long,int,array(char)))
+)	O
+{	O
+fp	*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(void),long,int,array(char)))
+->	O
+_flags	int
+|=	O
+_IO_ERR_SEEN	int
+;	O
+}	O

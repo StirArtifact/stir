@@ -1,0 +1,22 @@
+int	O
+sql_auth_avail_p	(*(*(char)))->(int)
+(	O
+const	O
+char	O
+*	O
+*	O
+msg	*(char)
+)	O
+{	O
+*	O
+msg	*(char)
+=	O
+_	O
+(	O
+"Radiusd is compiled without SQL support"	*(char)
+)	O
+;	O
+return	O
+0	int
+;	O
+}	O

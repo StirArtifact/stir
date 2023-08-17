@@ -1,0 +1,9 @@
+static	O
+char	O
+const	O
+ao_ver_string	O
+[	O
+]	O
+=	O
+"42:1:17\n"	O
+;	O

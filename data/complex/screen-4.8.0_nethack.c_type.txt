@@ -1,0 +1,319 @@
+extern	O
+int	O
+nethackflag	int
+;	O
+struct	O
+nlstrans	struct(*(char),*(char))
+{	O
+char	O
+*	O
+from	*(char)
+;	O
+char	O
+*	O
+to	*(char)
+;	O
+}	O
+;	O
+static	O
+struct	O
+nlstrans	struct(*(char),*(char))
+nethacktrans	array(struct(*(char),*(char)))
+[	O
+]	O
+=	O
+{	O
+{	O
+"Cannot lock terminal - fork failed"	*(char)
+,	O
+"Cannot fork terminal - lock failed"	*(char)
+}	O
+,	O
+{	O
+"Got only %d bytes from %s"	*(char)
+,	O
+"You choke on your food: %d bytes from %s"	*(char)
+}	O
+,	O
+{	O
+"Copy mode - Column %d Line %d(+%d) (%d,%d)"	*(char)
+,	O
+"Welcome to hacker's treasure zoo - Column %d Line %d(+%d) (%d,%d)"	*(char)
+}	O
+,	O
+{	O
+"First mark set - Column %d Line %d"	*(char)
+,	O
+"You drop a magic marker - Column %d Line %d"	*(char)
+}	O
+,	O
+{	O
+"Copy mode aborted"	*(char)
+,	O
+"You escaped the dungeon."	*(char)
+}	O
+,	O
+{	O
+"Filter removed."	*(char)
+,	O
+"You have a sad feeling for a moment..."	*(char)
+}	O
+,	O
+{	O
+"Window %d (%s) killed."	*(char)
+,	O
+"You destroy poor window %d (%s)."	*(char)
+}	O
+,	O
+{	O
+"Window %d (%s) is now being monitored for all activity."	*(char)
+,	O
+"You feel like someone is watching you..."	*(char)
+}	O
+,	O
+{	O
+"Window %d (%s) is no longer being monitored for activity."	*(char)
+,	O
+"You no longer sense the watcher's presence."	*(char)
+}	O
+,	O
+{	O
+"empty buffer"	*(char)
+,	O
+"Nothing happens."	*(char)
+}	O
+,	O
+{	O
+"switched to audible bell."	*(char)
+,	O
+"Suddenly you can't see your bell!"	*(char)
+}	O
+,	O
+{	O
+"switched to visual bell."	*(char)
+,	O
+"Your bell is no longer invisible."	*(char)
+}	O
+,	O
+{	O
+"The window is now being monitored for %d sec. silence."	*(char)
+,	O
+"You feel like someone is waiting for %d sec. silence..."	*(char)
+}	O
+,	O
+{	O
+"The window is no longer being monitored for silence."	*(char)
+,	O
+"You no longer sense the watcher's silence."	*(char)
+}	O
+,	O
+{	O
+"No other window."	*(char)
+,	O
+"You cannot escape from window %d!"	*(char)
+}	O
+,	O
+{	O
+"Logfile \"%s\" closed."	*(char)
+,	O
+"You put away your scroll of logging named \"%s\"."	*(char)
+}	O
+,	O
+{	O
+"Error opening logfile \"%s\""	*(char)
+,	O
+"You don't seem to have a scroll of logging named \"%s\"."	*(char)
+}	O
+,	O
+{	O
+"Creating logfile \"%s\"."	*(char)
+,	O
+"You start writing on your scroll of logging named \"%s\"."	*(char)
+}	O
+,	O
+{	O
+"Appending to logfile \"%s\"."	*(char)
+,	O
+"You add to your scroll of logging named \"%s\"."	*(char)
+}	O
+,	O
+{	O
+"Detach aborted."	*(char)
+,	O
+"The blast of disintegration whizzes by you!"	*(char)
+}	O
+,	O
+{	O
+"Empty register."	*(char)
+,	O
+"Nothing happens."	*(char)
+}	O
+,	O
+{	O
+"[ Passwords don't match - checking turned off ]"	*(char)
+,	O
+"[ Passwords don't match - your armor crumbles away ]"	*(char)
+}	O
+,	O
+{	O
+"Aborted because of window size change."	*(char)
+,	O
+"KAABLAMM!!!  You triggered a land mine!"	*(char)
+}	O
+,	O
+{	O
+"Out of memory."	*(char)
+,	O
+"Who was that Maude person anyway?"	*(char)
+}	O
+,	O
+{	O
+"getpwuid() can't identify your account!"	*(char)
+,	O
+"An alarm sounds through the dungeon...\nThe Keystone Kops are after you!"	*(char)
+}	O
+,	O
+{	O
+"Must be connected to a terminal."	*(char)
+,	O
+"You must play from a terminal."	*(char)
+}	O
+,	O
+{	O
+"No Sockets found in %s.\n"	*(char)
+,	O
+"This room is empty (%s).\n"	*(char)
+}	O
+,	O
+{	O
+"New screen..."	*(char)
+,	O
+"Be careful!  New screen tonight."	*(char)
+}	O
+,	O
+{	O
+"Child has been stopped, restarting."	*(char)
+,	O
+"You regain consciousness."	*(char)
+}	O
+,	O
+{	O
+"There are screens on:"	*(char)
+,	O
+"Your inventory:"	*(char)
+}	O
+,	O
+{	O
+"There is a screen on:"	*(char)
+,	O
+"Your inventory:"	*(char)
+}	O
+,	O
+{	O
+"There are several screens on:"	*(char)
+,	O
+"Prove thyself worthy or perish:"	*(char)
+}	O
+,	O
+{	O
+"There is a suitable screen on:"	*(char)
+,	O
+"You see here a good looking screen:"	*(char)
+}	O
+,	O
+{	O
+"There are several suitable screens on:"	*(char)
+,	O
+"You may wish for a screen, what do you want?"	*(char)
+}	O
+,	O
+{	O
+"%d socket%s wiped out."	*(char)
+,	O
+"You hear %d distant explosion%s."	*(char)
+}	O
+,	O
+{	O
+"Remove dead screens with 'screen -wipe'."	*(char)
+,	O
+"The dead screen%s touch%s you. Try 'screen -wipe'."	*(char)
+}	O
+,	O
+{	O
+"Illegal reattach attempt from terminal %s."	*(char)
+,	O
+"'%s' tries to touch your session, but fails."	*(char)
+}	O
+,	O
+{	O
+"Could not write %s"	*(char)
+,	O
+"%s is too hard to dig in"	*(char)
+}	O
+,	O
+{	O
+0	int
+,	O
+0	int
+}	O
+}	O
+;	O
+const	O
+char	O
+*	O
+DoNLS	(*(char))->(*(char))
+(	O
+from	*(char)
+)	O
+const	O
+char	O
+*	O
+from	*(char)
+;	O
+{	O
+struct	O
+nlstrans	struct(*(char),*(char))
+*	O
+t	*(struct(*(char),*(char)))
+;	O
+if	O
+(	O
+nethackflag	int
+)	O
+{	O
+for	O
+(	O
+t	*(struct(*(char),*(char)))
+=	O
+nethacktrans	array(struct(*(char),*(char)))
+;	O
+t	*(struct(*(char),*(char)))
+->	O
+from	*(char)
+;	O
+t	*(struct(*(char),*(char)))
+++	O
+)	O
+if	O
+(	O
+strcmp	(*(char),*(char))->(int)
+(	O
+from	*(char)
+,	O
+t	*(struct(*(char),*(char)))
+->	O
+from	*(char)
+)	O
+==	O
+0	int
+)	O
+return	O
+t	*(struct(*(char),*(char)))
+->	O
+to	*(char)
+;	O
+}	O
+return	O
+from	*(char)
+;	O
+}	O

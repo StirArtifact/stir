@@ -1,0 +1,13 @@
+void	O
+gmp_randinit_default	O
+(	O
+gmp_randstate_t	array(struct(array(struct(int,int,*(long))),enum(int,int),union(*(void))))
+rstate	array(struct(array(struct(int,int,*(long))),enum(int,int),union(*(void))))
+)	O
+{	O
+gmp_randinit_mt	O
+(	O
+rstate	array(struct(array(struct(int,int,*(long))),enum(int,int),union(*(void))))
+)	O
+;	O
+}	O

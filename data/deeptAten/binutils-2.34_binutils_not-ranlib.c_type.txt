@@ -1,0 +1,5 @@
+int	O
+is_ranlib	int
+=	O
+0	int
+;	O

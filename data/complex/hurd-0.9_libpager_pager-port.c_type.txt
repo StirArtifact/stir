@@ -1,0 +1,16 @@
+mach_port_t	O
+pager_get_port	(*(struct(struct,*(struct),enum(int,int,int),int,int,*(struct(*`,*`,int,int,int,int,int)),*(struct(*`,*`,int,int,int,int)),int,int,int,int,int,int,int,*(short),int)))->(int)
+(	O
+struct	O
+pager	struct(struct,*(struct),enum(int,int,int),int,int,*(struct),*(struct),int,int,int,int,int,int,int,*(short),int)
+*	O
+p	*(struct(struct,*(struct),enum(int,int,int),int,int,*(struct(*(struct`),*(*`),int,int,int,int,int)),*(struct(*(struct`),*(*`),int,int,int,int)),int,int,int,int,int,int,int,*(short),int))
+)	O
+{	O
+return	O
+ports_get_right	()->(int)
+(	O
+p	*(struct(struct,*(struct),enum(int,int,int),int,int,*(struct(*(struct`),*(*`),int,int,int,int,int)),*(struct(*(struct`),*(*`),int,int,int,int)),int,int,int,int,int,int,int,*(short),int))
+)	O
+;	O
+}	O

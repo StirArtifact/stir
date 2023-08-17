@@ -1,0 +1,11 @@
+void	O
+pax_exit	()->(void)
+(	O
+)	O
+{	O
+exit	(int)->(void)
+(	O
+exit_status	int
+)	O
+;	O
+}	O

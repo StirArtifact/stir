@@ -1,0 +1,218 @@
+struct	O
+osip_cond	struct(union(struct(union(long long,struct(int,int)),union(long long,struct(int,int)),array(int),array(int),int,int,array(int)),array(char),long long))
+*	O
+osip_cond_init	()->(*(struct(union(struct(union`,union`,array(int),array(int),int,int,array(int)),array(char),long long))))
+(	O
+)	O
+{	O
+osip_cond_t	struct(union(struct(union(long long,struct(int,int)),union(long long,struct(int,int)),array(int),array(int),int,int,array(int)),array(char),long long))
+*	O
+cond	*(struct(union(struct(union(long long,struct`),union(long long,struct`),array(int),array(int),int,int,array(int)),array(char),long long)))
+=	O
+(	O
+osip_cond_t	struct(union(struct(union(long long,struct(int,int)),union(long long,struct(int,int)),array(int),array(int),int,int,array(int)),array(char),long long))
+*	O
+)	O
+osip_malloc	O
+(	O
+sizeof	O
+(	O
+osip_cond_t	struct(union(struct(union(long long,struct(int,int)),union(long long,struct(int,int)),array(int),array(int),int,int,array(int)),array(char),long long))
+)	O
+)	O
+;	O
+if	O
+(	O
+cond	*(struct(union(struct(union(long long,struct`),union(long long,struct`),array(int),array(int),int,int,array(int)),array(char),long long)))
+&&	O
+(	O
+pthread_cond_init	(*(union(struct(union(long long,struct`),union(long long,struct`),array(int),array(int),int,int,array(int)),array(char),long long)),*(union(array(char),int)))->(int)
+(	O
+&	O
+cond	*(struct(union(struct(union(long long,struct`),union(long long,struct`),array(int),array(int),int,int,array(int)),array(char),long long)))
+->	O
+cv	union(struct(union(long long,struct(int,int)),union(long long,struct(int,int)),array(int),array(int),int,int,array(int)),array(char),long long)
+,	O
+NULL	O
+)	O
+==	O
+0	int
+)	O
+)	O
+{	O
+return	O
+(	O
+struct	O
+osip_cond	struct(union(struct(union(long long,struct(int,int)),union(long long,struct(int,int)),array(int),array(int),int,int,array(int)),array(char),long long))
+*	O
+)	O
+(	O
+cond	*(struct(union(struct(union(long long,struct`),union(long long,struct`),array(int),array(int),int,int,array(int)),array(char),long long)))
+)	O
+;	O
+}	O
+osip_free	O
+(	O
+cond	*(struct(union(struct(union(long long,struct`),union(long long,struct`),array(int),array(int),int,int,array(int)),array(char),long long)))
+)	O
+;	O
+return	O
+NULL	O
+;	O
+}	O
+int	O
+osip_cond_destroy	(*(struct(union(struct(union`,union`,array(int),array(int),int,int,array(int)),array(char),long long))))->(int)
+(	O
+struct	O
+osip_cond	struct(union(struct(union(long long,struct(int,int)),union(long long,struct(int,int)),array(int),array(int),int,int,array(int)),array(char),long long))
+*	O
+_cond	*(struct(union(struct(union(long long,struct`),union(long long,struct`),array(int),array(int),int,int,array(int)),array(char),long long)))
+)	O
+{	O
+int	O
+ret	int
+;	O
+if	O
+(	O
+!	O
+_cond	*(struct(union(struct(union(long long,struct`),union(long long,struct`),array(int),array(int),int,int,array(int)),array(char),long long)))
+)	O
+return	O
+OSIP_BADPARAMETER	O
+;	O
+ret	int
+=	O
+pthread_cond_destroy	(*(union(struct(union(long long,struct`),union(long long,struct`),array(int),array(int),int,int,array(int)),array(char),long long)))->(int)
+(	O
+&	O
+_cond	*(struct(union(struct(union(long long,struct`),union(long long,struct`),array(int),array(int),int,int,array(int)),array(char),long long)))
+->	O
+cv	union(struct(union(long long,struct(int,int)),union(long long,struct(int,int)),array(int),array(int),int,int,array(int)),array(char),long long)
+)	O
+;	O
+osip_free	O
+(	O
+_cond	*(struct(union(struct(union(long long,struct`),union(long long,struct`),array(int),array(int),int,int,array(int)),array(char),long long)))
+)	O
+;	O
+return	O
+ret	int
+;	O
+}	O
+int	O
+osip_cond_signal	(*(struct(union(struct(union`,union`,array(int),array(int),int,int,array(int)),array(char),long long))))->(int)
+(	O
+struct	O
+osip_cond	struct(union(struct(union(long long,struct(int,int)),union(long long,struct(int,int)),array(int),array(int),int,int,array(int)),array(char),long long))
+*	O
+_cond	*(struct(union(struct(union(long long,struct`),union(long long,struct`),array(int),array(int),int,int,array(int)),array(char),long long)))
+)	O
+{	O
+if	O
+(	O
+!	O
+_cond	*(struct(union(struct(union(long long,struct`),union(long long,struct`),array(int),array(int),int,int,array(int)),array(char),long long)))
+)	O
+return	O
+OSIP_BADPARAMETER	O
+;	O
+return	O
+pthread_cond_signal	(*(union(struct(union(long long,struct`),union(long long,struct`),array(int),array(int),int,int,array(int)),array(char),long long)))->(int)
+(	O
+&	O
+_cond	*(struct(union(struct(union(long long,struct`),union(long long,struct`),array(int),array(int),int,int,array(int)),array(char),long long)))
+->	O
+cv	union(struct(union(long long,struct(int,int)),union(long long,struct(int,int)),array(int),array(int),int,int,array(int)),array(char),long long)
+)	O
+;	O
+}	O
+int	O
+osip_cond_wait	(*(struct(union(struct(union`,union`,array(int),array(int),int,int,array(int)),array(char),long long))),*(struct))->(int)
+(	O
+struct	O
+osip_cond	struct(union(struct(union(long long,struct(int,int)),union(long long,struct(int,int)),array(int),array(int),int,int,array(int)),array(char),long long))
+*	O
+_cond	*(struct(union(struct(union(long long,struct`),union(long long,struct`),array(int),array(int),int,int,array(int)),array(char),long long)))
+,	O
+struct	O
+osip_mutex	O
+*	O
+_mut	*(struct)
+)	O
+{	O
+if	O
+(	O
+!	O
+_cond	*(struct(union(struct(union(long long,struct`),union(long long,struct`),array(int),array(int),int,int,array(int)),array(char),long long)))
+)	O
+return	O
+OSIP_BADPARAMETER	O
+;	O
+return	O
+pthread_cond_wait	(*(union(struct(union(long long,struct`),union(long long,struct`),array(int),array(int),int,int,array(int)),array(char),long long)),*(union(struct(int,int,int,int,int,short,short,struct(*`,*`)),array(char),long)))->(int)
+(	O
+&	O
+_cond	*(struct(union(struct(union(long long,struct`),union(long long,struct`),array(int),array(int),int,int,array(int)),array(char),long long)))
+->	O
+cv	union(struct(union(long long,struct(int,int)),union(long long,struct(int,int)),array(int),array(int),int,int,array(int)),array(char),long long)
+,	O
+(	O
+pthread_mutex_t	union(struct(int,int,int,int,int,short,short,struct(*(struct(*`,*`)),*(struct(*`,*`)))),array(char),long)
+*	O
+)	O
+_mut	*(struct)
+)	O
+;	O
+}	O
+int	O
+osip_cond_timedwait	(*(struct(union(struct(union`,union`,array(int),array(int),int,int,array(int)),array(char),long long))),*(struct),*(struct(long,long)))->(int)
+(	O
+struct	O
+osip_cond	struct(union(struct(union(long long,struct(int,int)),union(long long,struct(int,int)),array(int),array(int),int,int,array(int)),array(char),long long))
+*	O
+_cond	*(struct(union(struct(union(long long,struct`),union(long long,struct`),array(int),array(int),int,int,array(int)),array(char),long long)))
+,	O
+struct	O
+osip_mutex	O
+*	O
+_mut	*(struct)
+,	O
+const	O
+struct	O
+timespec	struct(long,long)
+*	O
+abstime	*(struct(long,long))
+)	O
+{	O
+if	O
+(	O
+!	O
+_cond	*(struct(union(struct(union(long long,struct`),union(long long,struct`),array(int),array(int),int,int,array(int)),array(char),long long)))
+)	O
+return	O
+OSIP_BADPARAMETER	O
+;	O
+return	O
+pthread_cond_timedwait	(*(union(struct(union(long long,struct`),union(long long,struct`),array(int),array(int),int,int,array(int)),array(char),long long)),*(union(struct(int,int,int,int,int,short,short,struct(*`,*`)),array(char),long)),*(struct(long,long)))->(int)
+(	O
+&	O
+_cond	*(struct(union(struct(union(long long,struct`),union(long long,struct`),array(int),array(int),int,int,array(int)),array(char),long long)))
+->	O
+cv	union(struct(union(long long,struct(int,int)),union(long long,struct(int,int)),array(int),array(int),int,int,array(int)),array(char),long long)
+,	O
+(	O
+pthread_mutex_t	union(struct(int,int,int,int,int,short,short,struct(*(struct(*`,*`)),*(struct(*`,*`)))),array(char),long)
+*	O
+)	O
+_mut	*(struct)
+,	O
+(	O
+const	O
+struct	O
+timespec	struct(long,long)
+*	O
+)	O
+abstime	*(struct(long,long))
+)	O
+;	O
+}	O

@@ -1,0 +1,15 @@
+int	O
+gdbm_fdesc	(*(struct))->(int)
+(	O
+GDBM_FILE	*(struct)
+dbf	*(struct)
+)	O
+{	O
+return	O
+(	O
+dbf	*(struct)
+->	O
+desc	int
+)	O
+;	O
+}	O

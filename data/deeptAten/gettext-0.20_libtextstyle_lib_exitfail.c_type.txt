@@ -1,0 +1,6 @@
+int	O
+volatile	O
+exit_failure	O
+=	O
+EXIT_FAILURE	O
+;	O

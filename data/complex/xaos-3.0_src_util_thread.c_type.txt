@@ -1,0 +1,9 @@
+struct	O
+taskinfo	struct(int)
+definfo	struct(int)
+=	O
+{	O
+0	int
+,	O
+}	O
+;	O

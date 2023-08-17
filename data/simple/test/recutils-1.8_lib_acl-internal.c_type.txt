@@ -1,0 +1,10 @@
+void	O
+free_permission_context	function
+(	O
+struct	O
+permission_context	struct
+*	O
+ctx	pointer
+)	O
+{	O
+}	O

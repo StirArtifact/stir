@@ -1,0 +1,16 @@
+int	O
+dbm_pagfno	function
+(	O
+DBM	struct
+*	O
+dbm	pointer
+)	O
+{	O
+return	O
+dbm	pointer
+->	O
+file	pointer
+->	O
+desc	int
+;	O
+}	O

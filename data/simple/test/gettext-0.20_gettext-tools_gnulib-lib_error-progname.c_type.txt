@@ -1,0 +1,24 @@
+bool	bool
+error_with_progname	bool
+=	O
+true	int
+;	O
+void	O
+maybe_print_progname	function
+(	O
+)	O
+{	O
+if	O
+(	O
+error_with_progname	bool
+)	O
+fprintf	function
+(	O
+stderr	pointer
+,	O
+"%s: "	pointer
+,	O
+program_name	pointer
+)	O
+;	O
+}	O

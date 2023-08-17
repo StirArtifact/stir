@@ -1,0 +1,25 @@
+const	O
+char	O
+*	O
+azStatus	array(*(char))
+[	O
+]	O
+=	O
+{	O
+"Conversation complete"	*(char)
+,	O
+"Port unavailable"	*(char)
+,	O
+"Dial failed"	*(char)
+,	O
+"Login failed"	*(char)
+,	O
+"Handshake failed"	*(char)
+,	O
+"Call failed"	*(char)
+,	O
+"Talking"	*(char)
+,	O
+"Wrong time to call"	*(char)
+}	O
+;	O

@@ -1,0 +1,9 @@
+static	O
+char	O
+const	O
+ao_ver_string	array
+[	O
+]	O
+=	O
+"41:0:16\n"	*
+;	O

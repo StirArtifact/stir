@@ -1,0 +1,324 @@
+int	O
+main	()->(int)
+(	O
+void	O
+)	O
+{	O
+wget_iri	struct(*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),long,long,short,enum(int,int),bool,bool,bool,bool,bool,bool,bool)
+*	O
+uri	*(char)
+;	O
+wget_http_connection	struct
+*	O
+conn	*(struct)
+=	O
+NULL	O
+;	O
+wget_http_request	struct(*(struct),*(char),*((*(struct),*(void))->(int)),*((*(struct),*(void),*(char),long)->(int)),*(void),*(void),*(void),struct(*(char),long,long,bool,bool,bool),struct(*(char),long,long,bool,bool,bool),long,int,enum(int,int),array(char),array(char),array(char),bool,bool,long long,long long)
+*	O
+req	*(struct(*(struct),*(char),*((*(struct`),*(void))->(int)),*((*(struct`),*(void),*(char),long)->(int)),*(void),*(void),*(void),struct(*(char),long,long,bool,bool,bool),struct(*(char),long,long,bool,bool,bool),long,int,enum(int,int),array(char),array(char),array(char),bool,bool,long long,long long))
+;	O
+wget_cookie_db	struct
+*	O
+cookies	*(struct)
+;	O
+wget_logger_set_stream	(*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(void),long,int,array(char))))->(void)
+(	O
+wget_get_logger	(int)->(*(struct))
+(	O
+WGET_LOGGER_DEBUG	int
+)	O
+,	O
+stderr	*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(void),long,int,array(char)))
+)	O
+;	O
+wget_logger_set_stream	(*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(void),long,int,array(char))))->(void)
+(	O
+wget_get_logger	(int)->(*(struct))
+(	O
+WGET_LOGGER_ERROR	int
+)	O
+,	O
+stderr	*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(void),long,int,array(char)))
+)	O
+;	O
+wget_logger_set_stream	(*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,*`,int,int,long,short,char,array(char),*`,long,*`,*`,*`,*`,long,int,array(char))),*(void),long,int,array(char))))->(void)
+(	O
+wget_get_logger	(int)->(*(struct))
+(	O
+WGET_LOGGER_INFO	int
+)	O
+,	O
+stdout	*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),int,int,long,short,char,array(char),*(void),long,*(struct),*(struct),*(struct(int,*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),int,int,long,short,char,array(char),*(void),long,*(struct`),*(struct`),*(struct`),*(void),long,int,array(char))),*(void),long,int,array(char)))
+)	O
+;	O
+wget_net_init	()->(int)
+(	O
+)	O
+;	O
+uri	*(char)
+=	O
+wget_iri_parse	(*(char),*(char))->(*(struct(*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),long,long,short,enum(int,int),bool,bool,bool,bool,bool,bool,bool)))
+(	O
+"http://www.example.org"	*(char)
+,	O
+NULL	O
+)	O
+;	O
+req	*(struct(*(struct),*(char),*((*(struct`),*(void))->(int)),*((*(struct`),*(void),*(char),long)->(int)),*(void),*(void),*(void),struct(*(char),long,long,bool,bool,bool),struct(*(char),long,long,bool,bool,bool),long,int,enum(int,int),array(char),array(char),array(char),bool,bool,long long,long long))
+=	O
+wget_http_create_request	(*(struct(*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),long,long,short,enum(int,int),bool,bool,bool,bool,bool,bool,bool)),*(char))->(*(struct(*(struct),*(char),*((*`,*`)->(int)),*((*`,*`,*`,long)->(int)),*(void),*(void),*(void),struct(*(char),long,long,bool,bool,bool),struct(*(char),long,long,bool,bool,bool),long,int,enum(int,int),array(char),array(char),array(char),bool,bool,long long,long long)))
+(	O
+uri	*(char)
+,	O
+"GET"	*(char)
+)	O
+;	O
+wget_http_add_header	(*(struct(*(struct),*(char),*((*`,*`)->(int)),*((*`,*`,*`,long)->(int)),*(void),*(void),*(void),struct(*(char),long,long,bool,bool,bool),struct(*(char),long,long,bool,bool,bool),long,int,enum(int,int),array(char),array(char),array(char),bool,bool,long long,long long)),*(char),*(char))->(int)
+(	O
+req	*(struct(*(struct),*(char),*((*(struct`),*(void))->(int)),*((*(struct`),*(void),*(char),long)->(int)),*(void),*(void),*(void),struct(*(char),long,long,bool,bool,bool),struct(*(char),long,long,bool,bool,bool),long,int,enum(int,int),array(char),array(char),array(char),bool,bool,long long,long long))
+,	O
+"User-Agent"	*(char)
+,	O
+"TheUserAgent/0.5"	*(char)
+)	O
+;	O
+wget_http_add_header	(*(struct(*(struct),*(char),*((*`,*`)->(int)),*((*`,*`,*`,long)->(int)),*(void),*(void),*(void),struct(*(char),long,long,bool,bool,bool),struct(*(char),long,long,bool,bool,bool),long,int,enum(int,int),array(char),array(char),array(char),bool,bool,long long,long long)),*(char),*(char))->(int)
+(	O
+req	*(struct(*(struct),*(char),*((*(struct`),*(void))->(int)),*((*(struct`),*(void),*(char),long)->(int)),*(void),*(void),*(void),struct(*(char),long,long,bool,bool,bool),struct(*(char),long,long,bool,bool,bool),long,int,enum(int,int),array(char),array(char),array(char),bool,bool,long long,long long))
+,	O
+"Accept-Encoding"	*(char)
+,	O
+"gzip, deflate"	*(char)
+)	O
+;	O
+wget_http_add_header	(*(struct(*(struct),*(char),*((*`,*`)->(int)),*((*`,*`,*`,long)->(int)),*(void),*(void),*(void),struct(*(char),long,long,bool,bool,bool),struct(*(char),long,long,bool,bool,bool),long,int,enum(int,int),array(char),array(char),array(char),bool,bool,long long,long long)),*(char),*(char))->(int)
+(	O
+req	*(struct(*(struct),*(char),*((*(struct`),*(void))->(int)),*((*(struct`),*(void),*(char),long)->(int)),*(void),*(void),*(void),struct(*(char),long,long,bool,bool,bool),struct(*(char),long,long,bool,bool,bool),long,int,enum(int,int),array(char),array(char),array(char),bool,bool,long long,long long))
+,	O
+"Accept"	*(char)
+,	O
+"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"	*(char)
+)	O
+;	O
+wget_http_add_header	(*(struct(*(struct),*(char),*((*`,*`)->(int)),*((*`,*`,*`,long)->(int)),*(void),*(void),*(void),struct(*(char),long,long,bool,bool,bool),struct(*(char),long,long,bool,bool,bool),long,int,enum(int,int),array(char),array(char),array(char),bool,bool,long long,long long)),*(char),*(char))->(int)
+(	O
+req	*(struct(*(struct),*(char),*((*(struct`),*(void))->(int)),*((*(struct`),*(void),*(char),long)->(int)),*(void),*(void),*(void),struct(*(char),long,long,bool,bool,bool),struct(*(char),long,long,bool,bool,bool),long,int,enum(int,int),array(char),array(char),array(char),bool,bool,long long,long long))
+,	O
+"Accept-Language"	*(char)
+,	O
+"en-us,en;q=0.5"	*(char)
+)	O
+;	O
+wget_http_request_set_int	(*(struct(*(struct),*(char),*((*`,*`)->(int)),*((*`,*`,*`,long)->(int)),*(void),*(void),*(void),struct(*(char),long,long,bool,bool,bool),struct(*(char),long,long,bool,bool,bool),long,int,enum(int,int),array(char),array(char),array(char),bool,bool,long long,long long)),int,int)->(void)
+(	O
+req	*(struct(*(struct),*(char),*((*(struct`),*(void))->(int)),*((*(struct`),*(void),*(char),long)->(int)),*(void),*(void),*(void),struct(*(char),long,long,bool,bool,bool),struct(*(char),long,long,bool,bool,bool),long,int,enum(int,int),array(char),array(char),array(char),bool,bool,long long,long long))
+,	O
+WGET_HTTP_RESPONSE_KEEPHEADER	int
+,	O
+1	int
+)	O
+;	O
+const	O
+char	O
+*	O
+cookie_string	*(char)
+;	O
+cookies	*(struct)
+=	O
+wget_cookie_db_init	(*(struct))->(*(struct))
+(	O
+NULL	O
+)	O
+;	O
+wget_cookie_set_keep_session_cookies	(*(struct),int)->(void)
+(	O
+cookies	*(struct)
+,	O
+1	int
+)	O
+;	O
+wget_cookie_db_load_psl	(*(struct),*(char))->(int)
+(	O
+cookies	*(struct)
+,	O
+"public_suffixes.txt"	*(char)
+)	O
+;	O
+wget_cookie_db_load	(*(struct),*(char))->(int)
+(	O
+cookies	*(struct)
+,	O
+"cookies.txt"	*(char)
+)	O
+;	O
+if	O
+(	O
+(	O
+cookie_string	*(char)
+=	O
+wget_cookie_create_request_header	(*(struct),*(struct(*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),long,long,short,enum(int,int),bool,bool,bool,bool,bool,bool,bool)))->(*(char))
+(	O
+cookies	*(struct)
+,	O
+uri	*(char)
+)	O
+)	O
+)	O
+{	O
+wget_http_add_header	(*(struct(*(struct),*(char),*((*`,*`)->(int)),*((*`,*`,*`,long)->(int)),*(void),*(void),*(void),struct(*(char),long,long,bool,bool,bool),struct(*(char),long,long,bool,bool,bool),long,int,enum(int,int),array(char),array(char),array(char),bool,bool,long long,long long)),*(char),*(char))->(int)
+(	O
+req	*(struct(*(struct),*(char),*((*(struct`),*(void))->(int)),*((*(struct`),*(void),*(char),long)->(int)),*(void),*(void),*(void),struct(*(char),long,long,bool,bool,bool),struct(*(char),long,long,bool,bool,bool),long,int,enum(int,int),array(char),array(char),array(char),bool,bool,long long,long long))
+,	O
+"Cookie"	*(char)
+,	O
+cookie_string	*(char)
+)	O
+;	O
+wget_xfree	O
+(	O
+cookie_string	*(char)
+)	O
+;	O
+}	O
+wget_http_open	(*(*(struct)),*(struct(*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),long,long,short,enum(int,int),bool,bool,bool,bool,bool,bool,bool)))->(int)
+(	O
+&	O
+conn	*(struct)
+,	O
+uri	*(char)
+)	O
+;	O
+if	O
+(	O
+conn	*(struct)
+)	O
+{	O
+wget_http_response	struct
+*	O
+resp	*(*(struct(*(struct(*`,*`,*`,*`,*`,*`,*`,struct`,struct`,long,int,enum(int,int),array(char),array(char),array(char),bool,bool,long long,long long)),*(struct),*(struct),*(struct),*(struct),*(struct),*(char),*(char),*(char),*(char),*(char),*(struct(*`,long,long,bool,bool,bool)),*(struct(*`,long,long,bool,bool,bool)),long,long,long,long,long,array(char),int,short,short,short,enum(int,int),char,char,char,bool,bool,bool,long long)))
+;	O
+if	O
+(	O
+wget_http_send_request	(*(struct),*(struct(*(struct),*(char),*((*`,*`)->(int)),*((*`,*`,*`,long)->(int)),*(void),*(void),*(void),struct(*(char),long,long,bool,bool,bool),struct(*(char),long,long,bool,bool,bool),long,int,enum(int,int),array(char),array(char),array(char),bool,bool,long long,long long)))->(int)
+(	O
+conn	*(struct)
+,	O
+req	*(struct(*(struct),*(char),*((*(struct`),*(void))->(int)),*((*(struct`),*(void),*(char),long)->(int)),*(void),*(void),*(void),struct(*(char),long,long,bool,bool,bool),struct(*(char),long,long,bool,bool,bool),long,int,enum(int,int),array(char),array(char),array(char),bool,bool,long long,long long))
+)	O
+==	O
+0	int
+)	O
+{	O
+resp	*(*(struct(*(struct(*`,*`,*`,*`,*`,*`,*`,struct`,struct`,long,int,enum(int,int),array(char),array(char),array(char),bool,bool,long long,long long)),*(struct),*(struct),*(struct),*(struct),*(struct),*(char),*(char),*(char),*(char),*(char),*(struct(*`,long,long,bool,bool,bool)),*(struct(*`,long,long,bool,bool,bool)),long,long,long,long,long,array(char),int,short,short,short,enum(int,int),char,char,char,bool,bool,bool,long long)))
+=	O
+wget_http_get_response	(*(struct))->(*(struct(*(struct(*`,*`,*`,*`,*`,*`,*`,struct`,struct`,long,int,enum(int,int),array(char),array(char),array(char),bool,bool,long long,long long)),*(struct),*(struct),*(struct),*(struct),*(struct),*(char),*(char),*(char),*(char),*(char),*(struct(*`,long,long,bool,bool,bool)),*(struct(*`,long,long,bool,bool,bool)),long,long,long,long,long,array(char),int,short,short,short,enum(int,int),char,char,char,bool,bool,bool,long long)))
+(	O
+conn	*(struct)
+)	O
+;	O
+if	O
+(	O
+!	O
+resp	*(*(struct(*(struct(*`,*`,*`,*`,*`,*`,*`,struct`,struct`,long,int,enum(int,int),array(char),array(char),array(char),bool,bool,long long,long long)),*(struct),*(struct),*(struct),*(struct),*(struct),*(char),*(char),*(char),*(char),*(char),*(struct(*`,long,long,bool,bool,bool)),*(struct(*`,long,long,bool,bool,bool)),long,long,long,long,long,array(char),int,short,short,short,enum(int,int),char,char,char,bool,bool,bool,long long)))
+)	O
+goto	O
+out	*(*(char))
+;	O
+if	O
+(	O
+!	O
+resp	*(*(struct(*(struct(*`,*`,*`,*`,*`,*`,*`,struct`,struct`,long,int,enum(int,int),array(char),array(char),array(char),bool,bool,long long,long long)),*(struct),*(struct),*(struct),*(struct),*(struct),*(char),*(char),*(char),*(char),*(char),*(struct(*`,long,long,bool,bool,bool)),*(struct(*`,long,long,bool,bool,bool)),long,long,long,long,long,array(char),int,short,short,short,enum(int,int),char,char,char,bool,bool,bool,long long)))
+->	O
+keep_alive	char
+)	O
+wget_http_close	(*(*(struct)))->(void)
+(	O
+&	O
+conn	*(struct)
+)	O
+;	O
+wget_cookie_normalize_cookies	(*(struct(*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),long,long,short,enum(int,int),bool,bool,bool,bool,bool,bool,bool)),*(struct))->(void)
+(	O
+uri	*(char)
+,	O
+resp	*(*(struct(*(struct(*`,*`,*`,*`,*`,*`,*`,struct`,struct`,long,int,enum(int,int),array(char),array(char),array(char),bool,bool,long long,long long)),*(struct),*(struct),*(struct),*(struct),*(struct),*(char),*(char),*(char),*(char),*(char),*(struct(*`,long,long,bool,bool,bool)),*(struct(*`,long,long,bool,bool,bool)),long,long,long,long,long,array(char),int,short,short,short,enum(int,int),char,char,char,bool,bool,bool,long long)))
+->	O
+cookies	*(struct)
+)	O
+;	O
+wget_cookie_store_cookies	(*(struct),*(struct))->(void)
+(	O
+cookies	*(struct)
+,	O
+resp	*(*(struct(*(struct(*`,*`,*`,*`,*`,*`,*`,struct`,struct`,long,int,enum(int,int),array(char),array(char),array(char),bool,bool,long long,long long)),*(struct),*(struct),*(struct),*(struct),*(struct),*(char),*(char),*(char),*(char),*(char),*(struct(*`,long,long,bool,bool,bool)),*(struct(*`,long,long,bool,bool,bool)),long,long,long,long,long,array(char),int,short,short,short,enum(int,int),char,char,char,bool,bool,bool,long long)))
+->	O
+cookies	*(struct)
+)	O
+;	O
+wget_cookie_db_save	(*(struct),*(char))->(int)
+(	O
+cookies	*(struct)
+,	O
+"cookies.txt"	*(char)
+)	O
+;	O
+wget_info_printf	(*(char))->(void)
+(	O
+"%s%s\n"	*(char)
+,	O
+resp	*(*(struct(*(struct(*`,*`,*`,*`,*`,*`,*`,struct`,struct`,long,int,enum(int,int),array(char),array(char),array(char),bool,bool,long long,long long)),*(struct),*(struct),*(struct),*(struct),*(struct),*(char),*(char),*(char),*(char),*(char),*(struct(*`,long,long,bool,bool,bool)),*(struct(*`,long,long,bool,bool,bool)),long,long,long,long,long,array(char),int,short,short,short,enum(int,int),char,char,char,bool,bool,bool,long long)))
+->	O
+header	*(struct(*(char),long,long,bool,bool,bool))
+->	O
+data	*(void)
+,	O
+resp	*(*(struct(*(struct(*`,*`,*`,*`,*`,*`,*`,struct`,struct`,long,int,enum(int,int),array(char),array(char),array(char),bool,bool,long long,long long)),*(struct),*(struct),*(struct),*(struct),*(struct),*(char),*(char),*(char),*(char),*(char),*(struct(*`,long,long,bool,bool,bool)),*(struct(*`,long,long,bool,bool,bool)),long,long,long,long,long,array(char),int,short,short,short,enum(int,int),char,char,char,bool,bool,bool,long long)))
+->	O
+body	*(char)
+->	O
+data	*(void)
+)	O
+;	O
+wget_http_free_response	(*(*(struct(*(struct`),*(struct`),*(struct`),*(struct`),*(struct`),*(struct`),*(char),*(char),*(char),*(char),*(char),*(struct`),*(struct`),long,long,long,long,long,array(char),int,short,short,short,enum(int,int),char,char,char,bool,bool,bool,long long))))->(void)
+(	O
+&	O
+resp	*(*(struct(*(struct(*`,*`,*`,*`,*`,*`,*`,struct`,struct`,long,int,enum(int,int),array(char),array(char),array(char),bool,bool,long long,long long)),*(struct),*(struct),*(struct),*(struct),*(struct),*(char),*(char),*(char),*(char),*(char),*(struct(*`,long,long,bool,bool,bool)),*(struct(*`,long,long,bool,bool,bool)),long,long,long,long,long,array(char),int,short,short,short,enum(int,int),char,char,char,bool,bool,bool,long long)))
+)	O
+;	O
+}	O
+}	O
+out	*(*(char))
+:	O
+wget_cookie_db_free	(*(*(struct)))->(void)
+(	O
+&	O
+cookies	*(struct)
+)	O
+;	O
+wget_http_close	(*(*(struct)))->(void)
+(	O
+&	O
+conn	*(struct)
+)	O
+;	O
+wget_http_free_request	(*(*(struct(*(struct`),*(char),*((*`,*`)->(int)),*((*`,*`,*`,long)->(int)),*(void),*(void),*(void),struct(*`,long,long,bool,bool,bool),struct(*`,long,long,bool,bool,bool),long,int,enum(int,int),array(char),array(char),array(char),bool,bool,long long,long long))))->(void)
+(	O
+&	O
+req	*(struct(*(struct),*(char),*((*(struct`),*(void))->(int)),*((*(struct`),*(void),*(char),long)->(int)),*(void),*(void),*(void),struct(*(char),long,long,bool,bool,bool),struct(*(char),long,long,bool,bool,bool),long,int,enum(int,int),array(char),array(char),array(char),bool,bool,long long,long long))
+)	O
+;	O
+wget_iri_free	(*(*(struct(*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),*(char),long,long,short,enum(int,int),bool,bool,bool,bool,bool,bool,bool))))->(void)
+(	O
+&	O
+uri	*(char)
+)	O
+;	O
+wget_net_deinit	()->(int)
+(	O
+)	O
+;	O
+return	O
+0	int
+;	O
+}	O

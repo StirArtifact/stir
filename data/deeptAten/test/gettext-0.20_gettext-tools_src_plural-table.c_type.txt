@@ -1,0 +1,329 @@
+struct	O
+plural_table_entry	O
+plural_table	O
+[	O
+]	O
+=	O
+{	pointer
+{	pointer
+"ja"	struct
+,	O
+"Japanese"	pointer
+,	O
+"nplurals=1; plural=0;"	pointer
+}	O
+,	O
+{	O
+"vi"	O
+,	O
+"Vietnamese"	pointer
+,	O
+"nplurals=1; plural=0;"	pointer
+}	O
+,	O
+{	O
+"ko"	O
+,	O
+"Korean"	O
+,	O
+"nplurals=1; plural=0;"	int
+}	O
+,	O
+{	O
+"en"	O
+,	O
+"English"	O
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"de"	O
+,	O
+"German"	O
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"nl"	O
+,	O
+"Dutch"	O
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"sv"	O
+,	O
+"Swedish"	O
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"da"	O
+,	O
+"Danish"	O
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"no"	O
+,	O
+"Norwegian"	int
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"nb"	O
+,	O
+"Norwegian Bokmal"	pointer
+,	O
+"nplurals=2; plural=(n != 1);"	pointer
+}	O
+,	O
+{	O
+"nn"	O
+,	O
+"Norwegian Nynorsk"	O
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"fo"	O
+,	O
+"Faroese"	O
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"es"	O
+,	O
+"Spanish"	O
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"pt"	O
+,	O
+"Portuguese"	O
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"it"	O
+,	O
+"Italian"	O
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"bg"	O
+,	O
+"Bulgarian"	O
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"el"	O
+,	O
+"Greek"	O
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"fi"	O
+,	O
+"Finnish"	O
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"et"	O
+,	O
+"Estonian"	O
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"he"	O
+,	O
+"Hebrew"	O
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"eo"	struct
+,	O
+"Esperanto"	O
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"hu"	O
+,	O
+"Hungarian"	O
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"tr"	O
+,	O
+"Turkish"	O
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"pt_BR"	struct
+,	O
+"Brazilian"	O
+,	O
+"nplurals=2; plural=(n > 1);"	int
+}	O
+,	O
+{	O
+"fr"	struct
+,	O
+"French"	O
+,	O
+"nplurals=2; plural=(n > 1);"	int
+}	O
+,	O
+{	O
+"lv"	struct
+,	O
+"Latvian"	O
+,	O
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);"	int
+}	O
+,	O
+{	O
+"ga"	struct
+,	O
+"Irish"	O
+,	O
+"nplurals=3; plural=n==1 ? 0 : n==2 ? 1 : 2;"	int
+}	O
+,	O
+{	O
+"ro"	struct
+,	O
+"Romanian"	O
+,	O
+"nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2;"	int
+}	O
+,	O
+{	O
+"lt"	struct
+,	O
+"Lithuanian"	O
+,	O
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);"	int
+}	O
+,	O
+{	O
+"ru"	struct
+,	O
+"Russian"	O
+,	O
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);"	int
+}	O
+,	O
+{	O
+"uk"	struct
+,	O
+"Ukrainian"	O
+,	O
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);"	int
+}	O
+,	O
+{	O
+"be"	struct
+,	O
+"Belarusian"	O
+,	O
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);"	int
+}	O
+,	O
+{	O
+"sr"	struct
+,	O
+"Serbian"	O
+,	O
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);"	int
+}	O
+,	O
+{	O
+"hr"	struct
+,	O
+"Croatian"	O
+,	O
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);"	int
+}	O
+,	O
+{	O
+"cs"	struct
+,	O
+"Czech"	O
+,	O
+"nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;"	int
+}	O
+,	O
+{	O
+"sk"	struct
+,	O
+"Slovak"	O
+,	O
+"nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;"	int
+}	O
+,	O
+{	O
+"pl"	struct
+,	O
+"Polish"	O
+,	O
+"nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);"	int
+}	O
+,	O
+{	O
+"sl"	struct
+,	O
+"Slovenian"	O
+,	O
+"nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);"	int
+}	O
+}	O
+;	O
+const	O
+size_t	O
+plural_table_size	struct
+=	O
+sizeof	O
+(	O
+plural_table	struct
+)	O
+/	O
+sizeof	O
+(	O
+plural_table	O
+[	O
+0	int
+]	O
+)	O
+;	O

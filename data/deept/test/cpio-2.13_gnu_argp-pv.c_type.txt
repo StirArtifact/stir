@@ -1,0 +1,5 @@
+const	O
+char	O
+*	O
+argp_program_version	struct
+;	O

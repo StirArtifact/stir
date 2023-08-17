@@ -1,0 +1,11 @@
+int	O
+mu_getmaxfd	function
+(	O
+)	O
+{	O
+return	O
+__getmaxfd	O
+(	O
+)	O
+;	O
+}	O

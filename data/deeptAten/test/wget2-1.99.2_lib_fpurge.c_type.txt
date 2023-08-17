@@ -1,0 +1,17 @@
+int	O
+fpurge	O
+(	O
+FILE	O
+*	O
+fp	pointer
+)	O
+{	O
+__fpurge	O
+(	O
+fp	O
+)	O
+;	O
+return	O
+0	O
+;	O
+}	O

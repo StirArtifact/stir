@@ -1,0 +1,239 @@
+gsl_splinalg_itersolve	O
+*	O
+gsl_splinalg_itersolve_alloc	O
+(	O
+const	O
+gsl_splinalg_itersolve_type	O
+*	O
+T	O
+,	O
+const	O
+size_t	long
+n	int
+,	O
+const	O
+size_t	long
+m	*(struct(long,long,long,*(long double),*(struct(long,*(long double))),int))
+)	O
+{	O
+gsl_splinalg_itersolve	O
+*	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+;	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+=	O
+calloc	(long,long)->(*(void))
+(	O
+1	int
+,	O
+sizeof	O
+(	O
+gsl_splinalg_itersolve	O
+)	O
+)	O
+;	O
+if	O
+(	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+==	O
+NULL	O
+)	O
+{	O
+GSL_ERROR_NULL	O
+(	O
+"failed to allocate space for itersolve struct"	*(char)
+,	O
+GSL_ENOMEM	int
+)	O
+;	O
+}	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+type	O
+=	O
+T	O
+;	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+normr	O
+=	O
+0.0	int
+;	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+state	*(int)
+=	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+type	O
+->	O
+alloc	*((long,*(void))->(*(void)))
+(	O
+n	int
+,	O
+m	*(struct(long,long,long,*(long double),*(struct(long,*(long double))),int))
+)	O
+;	O
+if	O
+(	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+state	*(int)
+==	O
+NULL	O
+)	O
+{	O
+gsl_splinalg_itersolve_free	O
+(	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+)	O
+;	O
+GSL_ERROR_NULL	O
+(	O
+"failed to allocate space for itersolve state"	*(char)
+,	O
+GSL_ENOMEM	int
+)	O
+;	O
+}	O
+return	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+;	O
+}	O
+void	O
+gsl_splinalg_itersolve_free	O
+(	O
+gsl_splinalg_itersolve	O
+*	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+)	O
+{	O
+RETURN_IF_NULL	O
+(	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+)	O
+;	O
+if	O
+(	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+state	*(int)
+)	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+type	O
+->	O
+free	(*(void))->(void)
+(	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+state	*(int)
+)	O
+;	O
+free	(*(void))->(void)
+(	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+)	O
+;	O
+}	O
+const	O
+char	O
+*	O
+gsl_splinalg_itersolve_name	O
+(	O
+const	O
+gsl_splinalg_itersolve	O
+*	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+)	O
+{	O
+return	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+type	O
+->	O
+name	O
+;	O
+}	O
+int	O
+gsl_splinalg_itersolve_iterate	O
+(	O
+const	O
+gsl_spmatrix	O
+*	O
+A	*(float)
+,	O
+const	O
+gsl_vector	struct(long,long,*(double),*(struct(long,*(double))),int)
+*	O
+b	double
+,	O
+const	O
+double	O
+tol	O
+,	O
+gsl_vector	struct(long,long,*(double),*(struct(long,*(double))),int)
+*	O
+x	double
+,	O
+gsl_splinalg_itersolve	O
+*	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+)	O
+{	O
+int	O
+status	O
+=	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+type	O
+->	O
+iterate	O
+(	O
+A	*(float)
+,	O
+b	double
+,	O
+tol	O
+,	O
+x	double
+,	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+state	*(int)
+)	O
+;	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+normr	O
+=	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+type	O
+->	O
+normr	O
+(	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+state	*(int)
+)	O
+;	O
+return	O
+status	O
+;	O
+}	O
+double	O
+gsl_splinalg_itersolve_normr	O
+(	O
+const	O
+gsl_splinalg_itersolve	O
+*	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+)	O
+{	O
+return	O
+w	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+->	O
+normr	O
+;	O
+}	O

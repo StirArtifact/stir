@@ -1,0 +1,15 @@
+struct	O
+allocator	struct
+const	O
+stdlib_allocator	struct
+=	O
+{	O
+malloc	function
+,	O
+realloc	function
+,	O
+free	pointer
+,	O
+NULL	O
+}	O
+;	O

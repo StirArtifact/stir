@@ -1,0 +1,77 @@
+void	O
+help	()->(void)
+(	O
+void	O
+)	O
+{	O
+printf	(*(char))->(int)
+(	O
+"GNU OrgaDoc Copyright (C) 2017 - 2019  Adam Bilbrough\n"	*(char)
+)	O
+;	O
+printf	(*(char))->(int)
+(	O
+"This program comes with ABSOLUTELY NO WARRANTY;\n"	*(char)
+)	O
+;	O
+printf	(*(char))->(int)
+(	O
+"\nThis is free software, and you are welcome to redistribute it\n"	*(char)
+)	O
+;	O
+printf	(*(char))->(int)
+(	O
+"under certain conditions;  for details visit <https://www.gnu.org/licenses/>.\n"	*(char)
+)	O
+;	O
+printf	(*(char))->(int)
+(	O
+"\nUsage: orgadoc [Options] [File]\n"	*(char)
+)	O
+;	O
+printf	(*(char))->(int)
+(	O
+"Options:\n"	*(char)
+)	O
+;	O
+printf	(*(char))->(int)
+(	O
+"  -h, --help\t\tdisplay this help and exit\n"	*(char)
+)	O
+;	O
+printf	(*(char))->(int)
+(	O
+"  -v, --version\t\toutput version information and exit\n\n"	*(char)
+)	O
+;	O
+printf	(*(char))->(int)
+(	O
+"  -t, --html\t\tGenerate HTML output\n"	*(char)
+)	O
+;	O
+printf	(*(char))->(int)
+(	O
+"  -b, --bibtex\t\tGenerate BIBTEX output\n\n"	*(char)
+)	O
+;	O
+printf	(*(char))->(int)
+(	O
+"  -l, --latex\t\tGenerate LATEX output\n"	*(char)
+)	O
+;	O
+printf	(*(char))->(int)
+(	O
+"  -j, --json\t\tGenerate JSON output\n\n"	*(char)
+)	O
+;	O
+printf	(*(char))->(int)
+(	O
+"  -p, --text\t\tGenerate PLAIN TEXT output\n\n"	*(char)
+)	O
+;	O
+printf	(*(char))->(int)
+(	O
+"  -s, --search\t\tDisplays contents of readme.xml onto the terminal\n\n"	*(char)
+)	O
+;	O
+}	O

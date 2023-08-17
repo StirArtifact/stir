@@ -1,0 +1,12 @@
+char	O
+const	O
+*	O
+getprogname	function
+(	O
+void	O
+)	O
+{	O
+return	O
+program_invocation_short_name	pointer
+;	O
+}	O

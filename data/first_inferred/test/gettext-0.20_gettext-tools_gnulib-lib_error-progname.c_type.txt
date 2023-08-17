@@ -1,0 +1,24 @@
+bool	enum
+error_with_progname	O
+=	O
+true	int
+;	O
+void	O
+maybe_print_progname	function
+(	O
+)	O
+{	O
+if	O
+(	O
+error_with_progname	O
+)	O
+fprintf	function
+(	O
+stderr	O
+,	O
+"%s: "	*
+,	O
+program_name	*
+)	O
+;	O
+}	O

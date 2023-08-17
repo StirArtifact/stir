@@ -1,0 +1,82 @@
+double	O
+gsl_ran_flat	(*(struct(*(struct(*`,long,long,long,*`,*`,*`)),*(void))),double,double)->(double)
+(	O
+const	O
+gsl_rng	struct(*(struct(*(char),long,long,long,*((*`,long)->(void)),*((*`)->(long)),*((*`)->(double)))),*(void))
+*	O
+r	*(struct(*(struct(*(char),long,long,long,*((*`,long)->(void)),*((*`)->(long)),*((*`)->(double)))),*(void)))
+,	O
+const	O
+double	O
+a	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+,	O
+const	O
+double	O
+b	*(struct(long,*(long double)))
+)	O
+{	O
+double	O
+u	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+=	O
+gsl_rng_uniform	(*(struct(*(struct(*`,long,long,long,*`,*`,*`)),*(void))))->(double)
+(	O
+r	*(struct(*(struct(*(char),long,long,long,*((*`,long)->(void)),*((*`)->(long)),*((*`)->(double)))),*(void)))
+)	O
+;	O
+return	O
+a	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+*	O
+(	O
+1	int
+-	O
+u	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+)	O
++	O
+b	*(struct(long,*(long double)))
+*	O
+u	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+;	O
+}	O
+double	O
+gsl_ran_flat_pdf	(double,double,double)->(double)
+(	O
+double	O
+x	double
+,	O
+const	O
+double	O
+a	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+,	O
+const	O
+double	O
+b	*(struct(long,*(long double)))
+)	O
+{	O
+if	O
+(	O
+x	double
+<	O
+b	*(struct(long,*(long double)))
+&&	O
+x	double
+>=	O
+a	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+)	O
+{	O
+return	O
+1	int
+/	O
+(	O
+b	*(struct(long,*(long double)))
+-	O
+a	*(struct(long,long,*(long double),*(struct(long,*(long double))),int))
+)	O
+;	O
+}	O
+else	O
+{	O
+return	O
+0	int
+;	O
+}	O
+}	O

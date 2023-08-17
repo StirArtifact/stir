@@ -1,0 +1,5 @@
+int	O
+netfs_maxsymlinks	O
+=	O
+8	O
+;	O

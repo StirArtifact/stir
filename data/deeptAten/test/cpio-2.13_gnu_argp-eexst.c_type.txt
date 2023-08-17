@@ -1,0 +1,5 @@
+error_t	O
+argp_err_exit_status	O
+=	O
+EX_USAGE	O
+;	O
