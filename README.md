@@ -3,6 +3,7 @@ This artifact contains STIR, the implementation and evaluation program of the ES
 titled "Statistical Type Inference for Incomplete Program". It can be used to reproduce the evaluation results of the paper, and can also serve as a standalone application for general use of the algorithms discussed in the paper.
 
 This artifact is organized as follows:
+- `abstract.md`: the abstract of the artifact.
 - `main.py`: the main entry file.
 - `first_stage/`: the compile and encrypted source code of the first stage of STIR.
 - `second_stage/`: the compile and encrypted source code of the second stage of STIR.

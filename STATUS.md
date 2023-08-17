@@ -1,0 +1,4 @@
+We apply for the following badges:
+- **Evaluated - Functional**. This artifact is well documented to provide instructions on how to use it, and all the data and code needed to reproduce the results in the paper are available. The artifact is complete, and any missing components can be easily recreated by following the instructions. The artifact is consistent with the description in the paper, and the results are reproducible and can be easily validated.
+- **Evaluated - Reusable**. This artifact is very carefully documented and well-structured so that it can be easily reused by other researchers to replicate the results in the paper. Besides, all the resources needed to reproduce the results are available, and the user interface is intuitive and easy to use. 
+- **Available**. This artifact is available on [a public repository](https://github.com/StirArtifact/stir).
