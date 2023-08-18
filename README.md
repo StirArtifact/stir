@@ -11,7 +11,6 @@ The outline of this document is as follows:
   - [TL;DR: The fastest way to check the evaluation results](#tldr-the-fastest-way-to-check-the-evaluation-results)
   - [Detailed Usage of the `python main.py eval` Subcommand](#detailed-usage-of-the-python-mainpy-eval-subcommand)
 - [Use as a standalone application](#use-as-a-standalone-application)
-  - [Inferring](#inferring)
   - [Training](#training)
 - [Acquire the data](#acquire-the-data)
 
