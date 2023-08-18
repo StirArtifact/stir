@@ -1,14 +1,14 @@
 # Hardware environment
-The evaluation function of the code in this repository requires at least a computer with an x64 architecture CPU, 
+The evaluation section of the code in this repository requires a computer with an x64 architecture CPU, 
 while the training section can be run on the CPU or a GPU with support for NVIDIA CUDA. 
 
 # Software environment
 The code in this repository has been tested on both Windows and Linux platforms 
 and can run on any environment equipped with the necessary Python libraries. 
-The 'environment.yml' and 'requirements.txt' file in the root directory of the repository contains a list 
-describing all the required Python library versions, 
+The 'environment.yml' file in the root directory of the repository contains a list 
+describing the required all the required Python library with their versions, 
 and the 'Dockerfile' in the root directory can be used to build a Docker image with the required environment. 
-For detailed information on setting up the environment, please refer to the 'INSTALL.md' file.
+For detailed information on setting up the environment, please refer to [INSTALL.md](INSTALL.md).
 
 # Tested environment
 All code in this repository was developed and tested on a Windows 10 desktop and an Ubuntu 18.04 Docker image on it, 

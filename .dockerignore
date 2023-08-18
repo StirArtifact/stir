@@ -9,8 +9,8 @@ __pycache__
 .vscode
 
 # data files and pretrained models
-data/
-pretrained/
+# data/
+# pretrained/
 models/
 second/func_data
 

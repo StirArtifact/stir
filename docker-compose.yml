@@ -3,8 +3,6 @@ services:
     image: stir:latest
     build: .
     volumes:
-      - ./data:/stir/data/:ro
-      - ./pretrained:/stir/pretrained/:rw
       - ./models:/stir/models/:rw
 
   stir-gpu:
@@ -12,8 +10,6 @@ services:
     build:
       context: .
     volumes:
-      - ./data:/stir/data/:ro
-      - ./pretrained:/stir/pretrained/:rw
       - ./models:/stir/models/:rw
     deploy:
       resources:

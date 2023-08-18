@@ -168,12 +168,6 @@ class FirstStage:
         torch.manual_seed(1234)
         torch.cuda.manual_seed(1234)
         np.random.seed(1234)
-        # if model == 'ALL':
-        #     models = ['TRAINED', 'STIR', 'STIR_A', 'DeepTyper']
-        # elif model == 'PRETRAINED':
-        #     models = ['STIR', 'STIR_A', 'DeepTyper']
-        # else:
-        #     models = [model]
         
         model_path = {
             'TRAINED': './models/first/',
@@ -216,6 +210,7 @@ class FirstStage:
             infer_path = str(PurePath(model_path[model]) / 'out/test.infer.ner')
             vocab_path = str(PurePath(model_path[model]) / 'out/vocab.lf.data')
             print("Processsing Result...")
+            print("The accuracy for predicting type tags: ")
             print("SimpleType:")
             first.data_utils.check_result_multi_class(label_path, infer_path, vocab_path, mode='simple')
             print("ComplexType:")
@@ -232,9 +227,6 @@ class FirstStage:
             'DeepTyper': './pretrained/first/deeptyper/'
         }
         
-        # infer_best_path = str(PurePath(model_path[model]) / 'best/best.test.infer.ner')
-        # if not (os.path.exists(infer_best_path) and os.path.isfile(infer_best_path)):
-            # infer_best_path = str(PurePath(model_path[model]) / 'out/test.infer.ner')
         infer_best_path = str(PurePath(model_path[model]) / 'out/test.infer.ner')
         first_data_path = str(PurePath(data_path) / 'simple/test/')
         infer_data_path = str(PurePath(data_path) / 'first_inferred/test/')
@@ -442,8 +434,6 @@ class SecondStage:
         second.graph.fw_list = list()
         second.graph.gen_first_related(second.graph.first_trgt, second.graph.first_pred)
         second.graph.toTree(second.graph.trgt_path, second.graph.pred_path, check_ot=variant == '_O')
-        if variant != '_O':
-            second.graph.get_type_prefix_score(second.graph.trgt_path, second.graph.pred_path, second.graph.trgt_path_t, second.graph.pred_path_t)
 
     @staticmethod
     def train(data_path: str):
@@ -512,49 +502,6 @@ class SecondStage:
             print("Begin Inference:")
             second.main.infer(second.args.params, data_sub_path[model], str(PurePath(model_path[model]) / 'ubest/model.pt'))
             SecondStage.get_result(data_path, model_path[model], variant=model[model.find("_"):-1])
-
-    @staticmethod
-    def gen_result_file(data_path: str, model: str):
-        def read_data_file(path):
-            # read all the data files in the path, one file one item
-            data_list = []
-            for item in sorted_nt(os.listdir(path)):
-                name = str(PurePath(path) / item)
-                if(item[0] != '.' and os.path.isfile(name)): 
-                    with open(name, 'r') as file_r:
-                        data_f = file_r.read().strip()
-                    data_list.append(data_f)
-    
-            return data_list
-
-        def read_infer_file(path):
-            # read from the inferred file, one line one item
-            data_f = []
-            if(os.path.isfile(path)): 
-                with open(path, 'r') as file_r:
-                    data_f = file_r.read().strip().split('\n')
-            
-            return data_f
-
-        def gen_infer_file(r_path, w_path, t_list):
-            # generate the inferred file
-            write_str_list = []
-            data_list = read_infer_file(r_path)
-
-            for tokens in t_list:
-                str_list = []
-                for t in tokens:
-                    line = data_list.pop(0)
-                    pred = line.strip()
-                    str_list.append(t + "\t" + pred)
-
-                write_str_list.append('\n'.join(str_list))
-            
-            assert len(data_list) == 0
-
-            with open(w_path, mode='w', encoding='utf-8') as write_f:
-                write_f.write('\r\n'.join(write_str_list))
-                write_f.flush()
 
 def train(stage, data_path):
     if stage == 'first':

@@ -1,30 +1,34 @@
-# About this artifact
-This artifact contains STIR, the implementation and evaluation program of the ESEC/FSE 2023 paper 
+# Stir: Statical Type Inference for Incomplete Programs
+This repo contains the implementation and evaluation program of the ESEC/FSE 2023 paper 
 titled "Statistical Type Inference for Incomplete Program". It can be used to reproduce the evaluation results of the paper, and can also serve as a standalone application for general use of the algorithms discussed in the paper.
 
-This artifact is organized as follows:
-- `abstract.md`: the abstract of the artifact.
-- `main.py`: the main entry file.
-- `first_stage/`: the compile and encrypted source code of the first stage of STIR.
-- `second_stage/`: the compile and encrypted source code of the second stage of STIR.
-- `data/`: the data used in the evaluation.
-- `pretrained/`: the pretrained model used in the evaluation.
-- `Dockerfile`: Dockerfile for building the Docker image with the software environment to reproduce the evaluation results.
-- `environment.yml`: conda environment file for reproducing the evaluation results.
-- `INSTALL.md`: instructions for setting up the software environment.
-- `REQUIREMENTS.md`: requirements for the hardware and software environment.
-- `STATUS.md`: status of the artifact.
-- `LICENSE`: license of the artifact.
-- `README.md`: this file.
+The outline of this document is as follows:
+- [Getting Started](#getting-started)
+  - [Requirements](#requirements)
+  - [Obtaining the Artifact](#obtaining-the-artifact)
+  - [Setting up the Environment](#setting-up-the-environment)
+- [Reproduce the Evaluation Results](#reproduce-the-evaluation-results)
+  - [TL;DR: The fastest way to check the evaluation results](#tldr-the-fastest-way-to-check-the-evaluation-results)
+  - [Detailed Usage of the `python main.py eval` Subcommand](#detailed-usage-of-the-python-mainpy-eval-subcommand)
+- [Use as a standalone application](#use-as-a-standalone-application)
+  - [Inferring](#inferring)
+  - [Training](#training)
+- [Acquire the data](#acquire-the-data)
 
-# Obtain the artifact
+## Getting Started
 
-The artifact is available at [GitHub](https://github.com/yuanmt/stir).
+### Requirements
+For the hardware and software requirements of the artifact, please refer to [REQUIREMENTS.md](REQUIREMENTS.md).
 
-# Set up the environment
-See [INSTALL.md](INSTALL.md).
+### Obtaining the Artifact
 
-# Reproduce the evaluation results and train a model
+The artifact is available at [GitHub](https://github.com/StirArtifact/stir/tree/fse2023). Users can obtain the artifact by cloning the repository or downloading the source code as a compressed archive on the webpage.
+
+### Setting up the Environment
+For detailed instructions on setting up the environment, please refer to [INSTALL.md](INSTALL.md).
+
+
+## Reproduce the Evaluation Results
 The `main.py` file is the main entry file of the artifact which provides a command line interface for evaluating the 
 artifact. The detailed usage of the `main.py` file is described as follows. A brief help message can also be obtained by
 executing the following command in the root directory of the artifact:
@@ -33,9 +37,24 @@ executing the following command in the root directory of the artifact:
 python main.py --help
 
 ```
-## Evaluation
+To reproduce the evaluation results, follow the instructions below.
 
-To reproduce the results of the evaluation, run the following command in the root directory of the artifact:
+### TL;DR: The fastest way to check the evaluation results
+
+#### Research Question 1
+```shell
+python main.py eval RQ1
+```
+The output of the command corresponds to the results of the first research question in the paper, i.e. Table 7.
+#### Research Question 2 and 3
+```shell
+python main.py eval RQ2,RQ3
+```
+The output of the command corresponds to the results of the second and third research questions in the paper, i.e. Table 8 and 9. You might need to wait for a period of time (~20 min in our test environment) for the evaluation to complete.
+
+### Detailed Usage of the `python main.py eval` Subcommand
+
+The `eval` subcommand of the `main.py` file should be used in the following format:
 
 ```shell
 python main.py eval <RQ> [--data DATA --model MODEL]
@@ -75,7 +94,7 @@ The available models for each research question are as follows:
 - `RQ2,RQ3`: `STIR`, `STIR_OT`, `STIR_DT`, `STIR_GT`, `TRAINED`, `TRAINED_OT`, `TRAINED_DT`, `TRAINED_GT`
 
 where `STIR`, `STIR_A`, `DeepTyper`, `STIR_OT`, `STIR_DT` and `STIR_GT` correspond to the models described in each
-research question, and the `TRAINED` series corresponds to the model trained by users. `STIR_OT` and `TRAINED_OT` will not 
+research question, and the `TRAINED` series corresponds to the model trained by users (this will be explained later). `STIR_OT` and `TRAINED_OT` will not 
 be evaluated for RQ3, as explained in the paper. The default value of the `--model` argument is `STIR,STIR_A,DeepTyper` for `RQ1` and `STIR,STIR_OT,STIR_DT,STIR_GT` for `RQ2,RQ3`.
 
 For example, to reproduce the results of the first research question, the following command can be used:
@@ -94,8 +113,13 @@ of the combination of them and the data source used in their generation are cach
 `out/` directory in the respective model directory. If the hash value corresponding to the file to be generated is not changed, the
 file will not be generated again. Otherwise, the file will be generated again. 
 
-## Training
-To train a model, run the following command in the root directory of the artifact:
+## Use as a standalone application
+
+### Inferring
+To infer the type of a 
+
+### Training
+To train a model by yourself, run the following command in the root directory of the artifact:
 ```shell
 python main.py train <STAGE> [--data DATA]
 ```
@@ -128,7 +152,7 @@ directory of the artifact:
 python main.py train first --data data
 ```
 
-### Acquire the data
+## Acquire the data
 The data used in our evaluation and training process can be obtained from [the release page](https://github.com/yuanmt/stir/releases) as a compressed tar archive. To use the data, extract the archive to the `data/` directory in the root directory of the artifact.
 If you want to use your own
 data, you can place it in the `data/` directory. Each of the file in the `data/` directory should be a plain text file
