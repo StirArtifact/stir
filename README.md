@@ -115,9 +115,6 @@ file will not be generated again. Otherwise, the file will be generated again.
 
 ## Use as a standalone application
 
-### Inferring
-To infer the type of a 
-
 ### Training
 To train a model by yourself, run the following command in the root directory of the artifact:
 ```shell
