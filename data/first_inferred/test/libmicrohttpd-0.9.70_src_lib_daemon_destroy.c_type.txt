@@ -21,7 +21,7 @@ mhd_assert	O
 <	O
 daemon	function
 ->	O
-worker_pool_size	*
+worker_pool_size	pointer
 )	O
 ;	O
 mhd_assert	O
@@ -68,7 +68,7 @@ i	long
 {	O
 daemon	function
 ->	O
-worker_pool	*
+worker_pool	pointer
 [	O
 i	long
 ]	O
@@ -83,7 +83,7 @@ MHD_ITC_IS_VALID_	function
 (	O
 daemon	function
 ->	O
-worker_pool	*
+worker_pool	pointer
 [	O
 i	long
 ]	O
@@ -99,7 +99,7 @@ MHD_itc_activate_	function
 (	O
 daemon	function
 ->	O
-worker_pool	*
+worker_pool	pointer
 [	O
 i	long
 ]	O
@@ -113,7 +113,7 @@ MHD_PANIC	O
 (	O
 _	O
 (	O
-"Failed to signal shutdown via inter-thread communication channel."	*
+"Failed to signal shutdown via inter-thread communication channel."	pointer
 )	O
 )	O
 ;	O
@@ -168,7 +168,7 @@ MHD_daemon_destroy	function
 &	O
 daemon	function
 ->	O
-worker_pool	*
+worker_pool	pointer
 [	O
 i	long
 ]	O
@@ -179,12 +179,12 @@ free	function
 (	O
 daemon	function
 ->	O
-worker_pool	*
+worker_pool	pointer
 )	O
 ;	O
 daemon	function
 ->	O
-worker_pool	*
+worker_pool	pointer
 =	O
 NULL	O
 ;	O
@@ -194,7 +194,7 @@ MHD_ITC_IS_INVALID_	function
 (	O
 daemon	function
 ->	O
-itc	*
+itc	pointer
 )	O
 )	O
 ;	O
@@ -250,7 +250,7 @@ NULL	O
 !=	O
 daemon	function
 ->	O
-worker_pool	*
+worker_pool	pointer
 )	O
 {	O
 stop_workers	function
@@ -267,7 +267,7 @@ mhd_assert	O
 ==	O
 daemon	function
 ->	O
-worker_pool_size	*
+worker_pool_size	pointer
 )	O
 ;	O
 if	O
@@ -285,7 +285,7 @@ MHD_ITC_IS_VALID_	function
 (	O
 daemon	function
 ->	O
-itc	*
+itc	pointer
 )	O
 )	O
 {	O
@@ -296,7 +296,7 @@ MHD_itc_activate_	function
 (	O
 daemon	function
 ->	O
-itc	*
+itc	pointer
 ,	O
 "e"	int
 )	O
@@ -305,7 +305,7 @@ MHD_PANIC	O
 (	O
 _	O
 (	O
-"Failed to signal shutdown via inter-thread communication channel"	*
+"Failed to signal shutdown via inter-thread communication channel"	pointer
 )	O
 )	O
 ;	O
@@ -325,7 +325,7 @@ NULL	O
 ==	O
 daemon	function
 ->	O
-master	*
+master	pointer
 )	O
 (	O
 void	O
@@ -362,7 +362,7 @@ MHD_PANIC	O
 (	O
 _	O
 (	O
-"Failed to join a thread\n"	*
+"Failed to join a thread\n"	pointer
 )	O
 )	O
 ;	O
@@ -382,14 +382,14 @@ MHD_ITC_IS_VALID_	function
 (	O
 daemon	function
 ->	O
-itc	*
+itc	pointer
 )	O
 )	O
 MHD_itc_destroy_chk_	function
 (	O
 daemon	function
 ->	O
-itc	*
+itc	pointer
 )	O
 ;	O
 if	O
@@ -433,7 +433,7 @@ NULL	O
 !=	O
 daemon	function
 ->	O
-master	*
+master	pointer
 )	O
 return	O
 ;	O
@@ -445,14 +445,14 @@ fd	int
 )	O
 MHD_socket_close_chk_	O
 (	O
-fd	*
+fd	pointer
 )	O
 ;	O
 free	function
 (	O
 daemon	function
 ->	O
-nnc	*
+nnc	pointer
 )	O
 ;	O
 MHD_mutex_destroy_chk_	function

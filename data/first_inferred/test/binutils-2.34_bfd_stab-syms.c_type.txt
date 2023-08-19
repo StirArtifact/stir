@@ -12,7 +12,7 @@ switch	O
 code	int
 )	O
 {	O
-EXTRA_SYMBOLS	*
+EXTRA_SYMBOLS	pointer
 }	O
 return	O
 (	O

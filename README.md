@@ -45,11 +45,14 @@ To reproduce the evaluation results, follow the instructions below.
 python main.py eval RQ1
 ```
 The output of the command corresponds to the results of the first research question in the paper, i.e. Table 7.
+It will first prepare for some intermediate files and then begin inference and print the results for each model.
 #### Research Question 2 and 3
 ```shell
 python main.py eval RQ2,RQ3
 ```
-The output of the command corresponds to the results of the second and third research questions in the paper, i.e. Table 8 and 9. You might need to wait for a period of time (~20 min in our test environment) for the evaluation to complete.
+The output of the command corresponds to the results of the second and third research questions in the paper, i.e. Table 8 and 9. 
+It will first prepare for some intermediate files and then begin inference and print the evaluation results for each model.
+For each model, there will be a long process to calculate the evaluation result. You might need to wait for a period of time (~90 min in our test environment) for the whole evaluation to complete.
 
 ### Detailed Usage of the `python main.py eval` Subcommand
 

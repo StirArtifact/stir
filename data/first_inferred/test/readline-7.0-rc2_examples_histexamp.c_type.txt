@@ -10,7 +10,7 @@ argc	int
 char	O
 *	O
 *	O
-argv	*
+argv	pointer
 ;	O
 {	O
 char	O
@@ -20,14 +20,14 @@ line	array
 ]	O
 ,	O
 *	O
-t	*
+t	pointer
 ;	O
 int	O
 len	int
 ,	O
 done	int
 ;	O
-line	*
+line	pointer
 [	O
 0	int
 ]	O
@@ -50,12 +50,12 @@ done	int
 {	O
 printf	function
 (	O
-"history$ "	*
+"history$ "	pointer
 )	O
 ;	O
 fflush	function
 (	O
-stdout	*
+stdout	pointer
 )	O
 ;	O
 t	int
@@ -71,7 +71,7 @@ line	array
 -	O
 1	int
 ,	O
-stdin	*
+stdin	pointer
 )	O
 ;	O
 if	O
@@ -91,7 +91,7 @@ t	int
 ;	O
 if	O
 (	O
-t	*
+t	pointer
 [	O
 len	int
 -	O
@@ -100,7 +100,7 @@ len	int
 ==	O
 '\n'	O
 )	O
-t	*
+t	pointer
 [	O
 len	int
 -	O
@@ -119,7 +119,7 @@ strcpy	function
 (	O
 line	array
 ,	O
-"quit"	*
+"quit"	pointer
 )	O
 ;	O
 if	O
@@ -132,7 +132,7 @@ line	array
 {	O
 char	O
 *	O
-expansion	*
+expansion	pointer
 ;	O
 int	O
 result	int
@@ -157,11 +157,11 @@ result	int
 )	O
 fprintf	function
 (	O
-stderr	*
+stderr	pointer
 ,	O
-"%s\n"	*
+"%s\n"	pointer
 ,	O
-expansion	*
+expansion	pointer
 )	O
 ;	O
 if	O
@@ -177,7 +177,7 @@ result	int
 {	O
 free	function
 (	O
-expansion	*
+expansion	pointer
 )	O
 ;	O
 continue	O
@@ -185,14 +185,14 @@ continue	O
 }	O
 add_history	function
 (	O
-expansion	*
+expansion	pointer
 )	O
 ;	O
 strncpy	function
 (	O
 line	array
 ,	O
-expansion	*
+expansion	pointer
 ,	O
 sizeof	O
 (	O
@@ -204,7 +204,7 @@ line	array
 ;	O
 free	function
 (	O
-expansion	*
+expansion	pointer
 )	O
 ;	O
 }	O
@@ -212,9 +212,9 @@ if	O
 (	O
 strcmp	function
 (	O
-line	*
+line	pointer
 ,	O
-"quit"	*
+"quit"	pointer
 )	O
 ==	O
 0	int
@@ -228,16 +228,16 @@ if	O
 (	O
 strcmp	function
 (	O
-line	*
+line	pointer
 ,	O
-"save"	*
+"save"	pointer
 )	O
 ==	O
 0	int
 )	O
 write_history	function
 (	O
-"history_file"	*
+"history_file"	pointer
 )	O
 ;	O
 else	O
@@ -245,16 +245,16 @@ if	O
 (	O
 strcmp	function
 (	O
-line	*
+line	pointer
 ,	O
-"read"	*
+"read"	pointer
 )	O
 ==	O
 0	int
 )	O
 read_history	function
 (	O
-"history_file"	*
+"history_file"	pointer
 )	O
 ;	O
 else	O
@@ -262,9 +262,9 @@ if	O
 (	O
 strcmp	function
 (	O
-line	*
+line	pointer
 ,	O
-"list"	*
+"list"	pointer
 )	O
 ==	O
 0	int
@@ -274,7 +274,7 @@ register	O
 HIST_ENTRY	struct
 *	O
 *	O
-the_list	*
+the_list	pointer
 ;	O
 register	O
 int	O
@@ -289,7 +289,7 @@ timestr	array
 128	int
 ]	O
 ;	O
-the_list	*
+the_list	pointer
 =	O
 history_list	function
 (	O
@@ -297,7 +297,7 @@ history_list	function
 ;	O
 if	O
 (	O
-the_list	*
+the_list	pointer
 )	O
 for	O
 (	O
@@ -330,14 +330,14 @@ tt	int
 )	O
 strftime	function
 (	O
-timestr	*
+timestr	pointer
 ,	O
 sizeof	O
 (	O
-timestr	*
+timestr	pointer
 )	O
 ,	O
-"%a %R"	*
+"%a %R"	pointer
 ,	O
 localtime	function
 (	O
@@ -349,27 +349,27 @@ tt	int
 else	O
 strcpy	function
 (	O
-timestr	*
+timestr	pointer
 ,	O
-"??"	*
+"??"	pointer
 )	O
 ;	O
 printf	function
 (	O
-"%d: %s: %s\n"	*
+"%d: %s: %s\n"	pointer
 ,	O
 i	int
 +	O
 history_base	int
 ,	O
-timestr	*
+timestr	pointer
 ,	O
 the_list	array
 [	O
 i	int
 ]	O
 ->	O
-line	*
+line	pointer
 )	O
 ;	O
 }	O
@@ -379,9 +379,9 @@ if	O
 (	O
 strncmp	function
 (	O
-line	*
+line	pointer
 ,	O
-"delete"	*
+"delete"	pointer
 ,	O
 6	int
 )	O
@@ -397,11 +397,11 @@ if	O
 (	O
 sscanf	function
 (	O
-line	*
+line	pointer
 +	O
 6	int
 ,	O
-"%d"	*
+"%d"	pointer
 ,	O
 &	O
 which	int
@@ -413,11 +413,11 @@ which	int
 {	O
 HIST_ENTRY	struct
 *	O
-entry	*
+entry	pointer
 =	O
 remove_history	function
 (	O
-which	*
+which	pointer
 )	O
 ;	O
 if	O
@@ -427,25 +427,25 @@ entry	int
 )	O
 fprintf	function
 (	O
-stderr	*
+stderr	pointer
 ,	O
-"No such entry %d\n"	*
+"No such entry %d\n"	pointer
 ,	O
-which	*
+which	pointer
 )	O
 ;	O
 else	O
 {	O
 free	function
 (	O
-entry	*
+entry	pointer
 ->	O
-line	*
+line	pointer
 )	O
 ;	O
 free	function
 (	O
-entry	*
+entry	pointer
 )	O
 ;	O
 }	O
@@ -454,9 +454,9 @@ else	O
 {	O
 fprintf	function
 (	O
-stderr	*
+stderr	pointer
 ,	O
-"non-numeric arg given to `delete'\n"	*
+"non-numeric arg given to `delete'\n"	pointer
 )	O
 ;	O
 }	O

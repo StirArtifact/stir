@@ -1,17 +1,17 @@
 void	O
 ReportError	function
 (	O
-PINPUTBUF	*
-pibIn	*
+PINPUTBUF	pointer
+pibIn	pointer
 ,	O
 WORD	int
 wCode	int
 ,	O
-PSTR	*
-szMsg	*
+PSTR	pointer
+szMsg	pointer
 ,	O
-PSTR	*
-szAltMsg	*
+PSTR	pointer
+szAltMsg	pointer
 )	O
 {	O
 char	O
@@ -45,9 +45,9 @@ RE_WARNING	int
 if	O
 (	O
 !	O
-szMsg	*
+szMsg	pointer
 )	O
-szMsg	*
+szMsg	pointer
 =	O
 &	O
 cNull	char
@@ -63,23 +63,23 @@ bWarning	int
 )	O
 printf	function
 (	O
-"*** Warning: "	*
+"*** Warning: "	pointer
 )	O
 ;	O
 else	O
 {	O
 printf	function
 (	O
-"*** Error: "	*
+"*** Error: "	pointer
 )	O
 ;	O
 bFatal	int
 |=	O
 (	O
-pibIn	*
+pibIn	pointer
 &&	O
 (	O
-pibIn	*
+pibIn	pointer
 ->	O
 cErrors	int
 ++	O
@@ -92,25 +92,25 @@ MAX_ERRORS	int
 }	O
 if	O
 (	O
-pibIn	*
+pibIn	pointer
 )	O
 {	O
 if	O
 (	O
-pibIn	*
+pibIn	pointer
 ->	O
-pfileIn	*
+pfileIn	pointer
 ||	O
-pibIn	*
+pibIn	pointer
 ->	O
 iLNPrev	int
 )	O
 {	O
 printf	function
 (	O
-"line %d: "	*
+"line %d: "	pointer
 ,	O
-pibIn	*
+pibIn	pointer
 ->	O
 iLineNum	int
 )	O
@@ -139,15 +139,15 @@ MAX_LEX	int
 ;	O
 printf	function
 (	O
-"'%s'...\n  "	*
+"'%s'...\n  "	pointer
 ,	O
 strncpy	function
 (	O
 szTmp	array
 ,	O
-pibIn	*
+pibIn	pointer
 ->	O
-pbufOrg	*
+pbufOrg	pointer
 ,	O
 MAX_LEX	int
 -	O
@@ -172,11 +172,11 @@ default	O
 :	O
 printf	function
 (	O
-"Unknown error code %x: %s"	*
+"Unknown error code %x: %s"	pointer
 ,	O
 wCode	int
 ,	O
-szMsg	*
+szMsg	pointer
 )	O
 ;	O
 case	O
@@ -184,7 +184,7 @@ RE_INIT	int
 :	O
 printf	function
 (	O
-"Initialization error."	*
+"Initialization error."	pointer
 )	O
 ;	O
 break	O
@@ -194,9 +194,9 @@ RE_FILENOTFOUND	int
 :	O
 printf	function
 (	O
-"File not found \"%s\"."	*
+"File not found \"%s\"."	pointer
 ,	O
-szMsg	*
+szMsg	pointer
 )	O
 ;	O
 break	O
@@ -206,9 +206,9 @@ RE_CANNOTOPEN	int
 :	O
 printf	function
 (	O
-"Cannot open file \"%s\"."	*
+"Cannot open file \"%s\"."	pointer
 ,	O
-szMsg	*
+szMsg	pointer
 )	O
 ;	O
 break	O
@@ -218,10 +218,10 @@ RE_UNEXPECTED	int
 :	O
 printf	function
 (	O
-"Unexpected character '%c' in input file."	*
+"Unexpected character '%c' in input file."	pointer
 ,	O
 *	O
-szMsg	*
+szMsg	pointer
 )	O
 ;	O
 break	O
@@ -231,9 +231,9 @@ RE_UNEXPESCAPE	int
 :	O
 printf	function
 (	O
-"Unexpected escape sequence '%s' in input file."	*
+"Unexpected escape sequence '%s' in input file."	pointer
 ,	O
-szMsg	*
+szMsg	pointer
 )	O
 ;	O
 break	O
@@ -243,9 +243,9 @@ RE_UNEXPNUMBER	int
 :	O
 printf	function
 (	O
-"Unexpected number %s in input file."	*
+"Unexpected number %s in input file."	pointer
 ,	O
-szMsg	*
+szMsg	pointer
 )	O
 ;	O
 break	O
@@ -255,14 +255,14 @@ RE_EXPECTED	int
 :	O
 printf	function
 (	O
-"Expected '%c' before '%c'."	*
+"Expected '%c' before '%c'."	pointer
 ,	O
-szMsg	*
+szMsg	pointer
 [	O
 1	int
 ]	O
 ,	O
-szMsg	*
+szMsg	pointer
 [	O
 0	int
 ]	O
@@ -275,20 +275,20 @@ RE_LEXEXPECTED	int
 :	O
 printf	function
 (	O
-"Expected <%s>"	*
+"Expected <%s>"	pointer
 ,	O
-szMsg	*
+szMsg	pointer
 )	O
 ;	O
 if	O
 (	O
-szAltMsg	*
+szAltMsg	pointer
 )	O
 printf	function
 (	O
-" before '%s'"	*
+" before '%s'"	pointer
 ,	O
-szAltMsg	*
+szAltMsg	pointer
 )	O
 ;	O
 break	O
@@ -298,9 +298,9 @@ RE_BADCONTEXT	int
 :	O
 printf	function
 (	O
-"'%s' used in invalid context."	*
+"'%s' used in invalid context."	pointer
 ,	O
-szMsg	*
+szMsg	pointer
 )	O
 ;	O
 break	O
@@ -310,9 +310,9 @@ RE_DUPDECL	int
 :	O
 printf	function
 (	O
-"Duplicate declaration of model variable '%s'."	*
+"Duplicate declaration of model variable '%s'."	pointer
 ,	O
-szMsg	*
+szMsg	pointer
 )	O
 ;	O
 break	O
@@ -322,9 +322,9 @@ RE_DUPSECT	int
 :	O
 printf	function
 (	O
-"Only one '%s' section is allowed."	*
+"Only one '%s' section is allowed."	pointer
 ,	O
-szMsg	*
+szMsg	pointer
 )	O
 ;	O
 break	O
@@ -334,9 +334,9 @@ RE_OUTOFMEM	int
 :	O
 printf	function
 (	O
-"Out of memory in %s() !"	*
+"Out of memory in %s() !"	pointer
 ,	O
-szMsg	*
+szMsg	pointer
 )	O
 ;	O
 break	O
@@ -346,9 +346,9 @@ RE_REDEF	int
 :	O
 printf	function
 (	O
-"'%s' redefined."	*
+"'%s' redefined."	pointer
 ,	O
-szMsg	*
+szMsg	pointer
 )	O
 ;	O
 break	O
@@ -358,7 +358,7 @@ RE_EQNTOOLONG	int
 :	O
 printf	function
 (	O
-"Equation is too long.  Possibly missing terminator."	*
+"Equation is too long.  Possibly missing terminator."	pointer
 )	O
 ;	O
 break	O
@@ -368,9 +368,9 @@ RE_BADSTATE	int
 :	O
 printf	function
 (	O
-"Invalid state identifier '%s'."	*
+"Invalid state identifier '%s'."	pointer
 ,	O
-szMsg	*
+szMsg	pointer
 )	O
 ;	O
 break	O
@@ -380,9 +380,9 @@ RE_UNDEFINED	int
 :	O
 printf	function
 (	O
-"Undefined identifier '%s'."	*
+"Undefined identifier '%s'."	pointer
 ,	O
-szMsg	*
+szMsg	pointer
 )	O
 ;	O
 break	O
@@ -392,9 +392,9 @@ RE_NOINPDEF	int
 :	O
 printf	function
 (	O
-"Input '%s' is not initialized."	*
+"Input '%s' is not initialized."	pointer
 ,	O
-szMsg	*
+szMsg	pointer
 )	O
 ;	O
 break	O
@@ -404,9 +404,9 @@ RE_NODYNEQN	int
 :	O
 printf	function
 (	O
-"State variable '%s' has no dynamics."	*
+"State variable '%s' has no dynamics."	pointer
 ,	O
-szMsg	*
+szMsg	pointer
 )	O
 ;	O
 break	O
@@ -416,9 +416,9 @@ RE_NOOUTPUTEQN	int
 :	O
 printf	function
 (	O
-"Output variable '%s' is not computed anywhere."	*
+"Output variable '%s' is not computed anywhere."	pointer
 ,	O
-szMsg	*
+szMsg	pointer
 )	O
 ;	O
 break	O
@@ -428,15 +428,15 @@ RE_TOOMANYVARS	int
 :	O
 printf	function
 (	O
-"Too many %s declarations. Limit is %d."	*
+"Too many %s declarations. Limit is %d."	pointer
 ,	O
-szMsg	*
+szMsg	pointer
 ,	O
 *	O
 (	O
-PINT	*
+PINT	pointer
 )	O
-szAltMsg	*
+szAltMsg	pointer
 )	O
 ;	O
 break	O
@@ -446,7 +446,7 @@ RE_POSITIVE	int
 :	O
 printf	function
 (	O
-"Positive number expected."	*
+"Positive number expected."	pointer
 )	O
 ;	O
 break	O
@@ -456,11 +456,11 @@ RE_NAMETOOLONG	int
 :	O
 printf	function
 (	O
-"Name %s exceed %d characters."	*
+"Name %s exceed %d characters."	pointer
 ,	O
-szMsg	*
+szMsg	pointer
 ,	O
-MAX_NAME	*
+MAX_NAME	pointer
 )	O
 ;	O
 break	O
@@ -470,7 +470,7 @@ RE_UNBALPAR	int
 :	O
 printf	function
 (	O
-"Unbalanced () or equation too long at this line or above."	*
+"Unbalanced () or equation too long at this line or above."	pointer
 )	O
 ;	O
 break	O
@@ -480,9 +480,9 @@ RE_NOEND	int
 :	O
 printf	function
 (	O
-"End keyword is missing in file %s."	*
+"End keyword is missing in file %s."	pointer
 ,	O
-szMsg	*
+szMsg	pointer
 )	O
 ;	O
 break	O
@@ -490,12 +490,12 @@ break	O
 }	O
 printf	function
 (	O
-"\n"	*
+"\n"	pointer
 )	O
 ;	O
 if	O
 (	O
-szAltMsg	*
+szAltMsg	pointer
 &&	O
 wCode	int
 !=	O
@@ -503,9 +503,9 @@ RE_LEXEXPECTED	int
 )	O
 printf	function
 (	O
-"%s\n"	*
+"%s\n"	pointer
 ,	O
-szAltMsg	*
+szAltMsg	pointer
 )	O
 ;	O
 if	O
@@ -515,7 +515,7 @@ bFatal	int
 {	O
 printf	function
 (	O
-"One or more fatal errors: Exiting...\n\n"	*
+"One or more fatal errors: Exiting...\n\n"	pointer
 )	O
 ;	O
 exit	function

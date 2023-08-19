@@ -4,5 +4,5 @@ version_etc_copyright	array
 [	O
 ]	O
 =	O
-"Copyright %s %d Free Software Foundation, Inc."	*
+"Copyright %s %d Free Software Foundation, Inc."	pointer
 ;	O

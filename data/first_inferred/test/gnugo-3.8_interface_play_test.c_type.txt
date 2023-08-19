@@ -4,18 +4,18 @@ replay_node	function
 (	O
 SGFNode	struct
 *	O
-node	*
+node	pointer
 ,	O
 int	O
 color_to_test	int
 ,	O
 float	O
 *	O
-replay_score	*
+replay_score	pointer
 ,	O
 float	O
 *	O
-total_score	*
+total_score	pointer
 )	O
 ;	O
 void	O
@@ -23,7 +23,7 @@ play_replay	function
 (	O
 SGFTree	struct
 *	O
-tree	*
+tree	pointer
 ,	O
 int	O
 color_to_replay	int
@@ -31,12 +31,12 @@ color_to_replay	int
 {	O
 char	O
 *	O
-tmpc	*
+tmpc	pointer
 =	O
 NULL	O
 ;	O
 float	O
-replay_score	*
+replay_score	pointer
 =	O
 0.0	int
 ;	O
@@ -47,11 +47,11 @@ total_score	double
 ;	O
 SGFNode	struct
 *	O
-node	*
+node	pointer
 =	O
-tree	*
+tree	pointer
 ->	O
-root	*
+root	pointer
 ;	O
 clear_board	function
 (	O
@@ -65,7 +65,7 @@ quiet	int
 {	O
 printf	function
 (	O
-"Board Size:   %d\n"	*
+"Board Size:   %d\n"	pointer
 ,	O
 board_size	int
 )	O
@@ -74,9 +74,9 @@ if	O
 (	O
 sgfGetCharProperty	function
 (	O
-node	*
+node	pointer
 ,	O
-"HA"	*
+"HA"	pointer
 ,	O
 &	O
 tmpc	int
@@ -84,14 +84,14 @@ tmpc	int
 )	O
 printf	function
 (	O
-"Handicap:     %s\n"	*
+"Handicap:     %s\n"	pointer
 ,	O
 tmpc	int
 )	O
 ;	O
 printf	function
 (	O
-"Komi:         %.1f\n"	*
+"Komi:         %.1f\n"	pointer
 ,	O
 komi	int
 )	O
@@ -100,9 +100,9 @@ if	O
 (	O
 sgfGetCharProperty	function
 (	O
-node	*
+node	pointer
 ,	O
-"RU"	*
+"RU"	pointer
 ,	O
 &	O
 tmpc	int
@@ -110,18 +110,18 @@ tmpc	int
 )	O
 printf	function
 (	O
-"Ruleset:      %s\n"	*
+"Ruleset:      %s\n"	pointer
 ,	O
-tmpc	*
+tmpc	pointer
 )	O
 ;	O
 if	O
 (	O
 sgfGetCharProperty	function
 (	O
-node	*
+node	pointer
 ,	O
-"GN"	*
+"GN"	pointer
 ,	O
 &	O
 tmpc	int
@@ -129,18 +129,18 @@ tmpc	int
 )	O
 printf	function
 (	O
-"Game Name:    %s\n"	*
+"Game Name:    %s\n"	pointer
 ,	O
-tmpc	*
+tmpc	pointer
 )	O
 ;	O
 if	O
 (	O
 sgfGetCharProperty	function
 (	O
-node	*
+node	pointer
 ,	O
-"DT"	*
+"DT"	pointer
 ,	O
 &	O
 tmpc	int
@@ -148,18 +148,18 @@ tmpc	int
 )	O
 printf	function
 (	O
-"Game Date:    %s\n"	*
+"Game Date:    %s\n"	pointer
 ,	O
-tmpc	*
+tmpc	pointer
 )	O
 ;	O
 if	O
 (	O
 sgfGetCharProperty	function
 (	O
-node	*
+node	pointer
 ,	O
-"GC"	*
+"GC"	pointer
 ,	O
 &	O
 tmpc	int
@@ -167,18 +167,18 @@ tmpc	int
 )	O
 printf	function
 (	O
-"Game Comment: %s\n"	*
+"Game Comment: %s\n"	pointer
 ,	O
-tmpc	*
+tmpc	pointer
 )	O
 ;	O
 if	O
 (	O
 sgfGetCharProperty	function
 (	O
-node	*
+node	pointer
 ,	O
-"US"	*
+"US"	pointer
 ,	O
 &	O
 tmpc	int
@@ -186,18 +186,18 @@ tmpc	int
 )	O
 printf	function
 (	O
-"Game User:    %s\n"	*
+"Game User:    %s\n"	pointer
 ,	O
-tmpc	*
+tmpc	pointer
 )	O
 ;	O
 if	O
 (	O
 sgfGetCharProperty	function
 (	O
-node	*
+node	pointer
 ,	O
-"PB"	*
+"PB"	pointer
 ,	O
 &	O
 tmpc	int
@@ -205,18 +205,18 @@ tmpc	int
 )	O
 printf	function
 (	O
-"Black Player: %s\n"	*
+"Black Player: %s\n"	pointer
 ,	O
-tmpc	*
+tmpc	pointer
 )	O
 ;	O
 if	O
 (	O
 sgfGetCharProperty	function
 (	O
-node	*
+node	pointer
 ,	O
-"PW"	*
+"PW"	pointer
 ,	O
 &	O
 tmpc	int
@@ -224,18 +224,18 @@ tmpc	int
 )	O
 printf	function
 (	O
-"White Player: %s\n"	*
+"White Player: %s\n"	pointer
 ,	O
-tmpc	*
+tmpc	pointer
 )	O
 ;	O
 if	O
 (	O
 sgfGetCharProperty	function
 (	O
-node	*
+node	pointer
 ,	O
-"RE"	*
+"RE"	pointer
 ,	O
 &	O
 tmpc	int
@@ -243,38 +243,38 @@ tmpc	int
 )	O
 printf	function
 (	O
-"Result:       %s\n"	*
+"Result:       %s\n"	pointer
 ,	O
-tmpc	*
+tmpc	pointer
 )	O
 ;	O
 }	O
 while	O
 (	O
-node	*
+node	pointer
 )	O
 {	O
 replay_node	function
 (	O
-node	*
+node	pointer
 ,	O
-color_to_replay	*
+color_to_replay	pointer
 ,	O
 &	O
 replay_score	int
 ,	O
 &	O
-total_score	*
+total_score	pointer
 )	O
 ;	O
 sgffile_output	function
 (	O
-tree	*
+tree	pointer
 )	O
 ;	O
-node	*
+node	pointer
 =	O
-node	*
+node	pointer
 ->	O
 child	int
 ;	O
@@ -286,11 +286,11 @@ quiet	int
 )	O
 printf	function
 (	O
-"Global score: %.2f / %.2f\n"	*
+"Global score: %.2f / %.2f\n"	pointer
 ,	O
-replay_score	*
+replay_score	pointer
 ,	O
-total_score	*
+total_score	pointer
 )	O
 ;	O
 if	O
@@ -300,7 +300,7 @@ showtime	int
 {	O
 gprintf	function
 (	O
-"SLOWEST MOVE: %d at %1m "	*
+"SLOWEST MOVE: %d at %1m "	pointer
 ,	O
 slowest_movenum	int
 ,	O
@@ -309,18 +309,18 @@ slowest_move	int
 ;	O
 fprintf	function
 (	O
-stderr	*
+stderr	pointer
 ,	O
-"(%.2f seconds)\n"	*
+"(%.2f seconds)\n"	pointer
 ,	O
 slowest_time	double
 )	O
 ;	O
 fprintf	function
 (	O
-stderr	*
+stderr	pointer
 ,	O
-"AVERAGE TIME: %.2f seconds per move\n"	*
+"AVERAGE TIME: %.2f seconds per move\n"	pointer
 ,	O
 total_time	double
 /	O
@@ -329,9 +329,9 @@ movenum	int
 ;	O
 fprintf	function
 (	O
-stderr	*
+stderr	pointer
 ,	O
-"TOTAL TIME: %.2f seconds\n"	*
+"TOTAL TIME: %.2f seconds\n"	pointer
 ,	O
 total_time	double
 )	O
@@ -344,27 +344,27 @@ replay_node	function
 (	O
 SGFNode	struct
 *	O
-node	*
+node	pointer
 ,	O
 int	O
 color_to_replay	int
 ,	O
 float	O
 *	O
-replay_score	*
+replay_score	pointer
 ,	O
 float	O
 *	O
-total_score	*
+total_score	pointer
 )	O
 {	O
 SGFProperty	struct
 *	O
-sgf_prop	*
+sgf_prop	pointer
 ;	O
 SGFProperty	struct
 *	O
-move_prop	*
+move_prop	pointer
 =	O
 NULL	O
 ;	O
@@ -378,31 +378,31 @@ int	O
 new_move	int
 ;	O
 char	O
-buf	*
+buf	pointer
 [	O
 BUFSIZE	int
 ]	O
 ;	O
 for	O
 (	O
-sgf_prop	*
+sgf_prop	pointer
 =	O
-node	*
+node	pointer
 ->	O
-props	*
+props	pointer
 ;	O
-sgf_prop	*
+sgf_prop	pointer
 ;	O
-sgf_prop	*
+sgf_prop	pointer
 =	O
-sgf_prop	*
+sgf_prop	pointer
 ->	O
-next	*
+next	pointer
 )	O
 {	O
 switch	O
 (	O
-sgf_prop	*
+sgf_prop	pointer
 ->	O
 name	int
 )	O
@@ -414,7 +414,7 @@ add_stone	function
 (	O
 get_sgfmove	function
 (	O
-sgf_prop	*
+sgf_prop	pointer
 )	O
 ,	O
 BLACK	int
@@ -429,7 +429,7 @@ add_stone	function
 (	O
 get_sgfmove	function
 (	O
-sgf_prop	*
+sgf_prop	pointer
 )	O
 ,	O
 WHITE	int
@@ -443,9 +443,9 @@ SGFB	int
 case	O
 SGFW	int
 :	O
-move_prop	*
+move_prop	pointer
 =	O
-sgf_prop	*
+sgf_prop	pointer
 ;	O
 break	O
 ;	O
@@ -454,7 +454,7 @@ break	O
 if	O
 (	O
 !	O
-move_prop	*
+move_prop	pointer
 )	O
 return	O
 ;	O
@@ -462,15 +462,15 @@ old_move	int
 =	O
 get_sgfmove	function
 (	O
-move_prop	*
+move_prop	pointer
 )	O
 ;	O
-color	*
+color	pointer
 =	O
 (	O
-move_prop	*
+move_prop	pointer
 ->	O
-name	*
+name	pointer
 ==	O
 SGFW	int
 )	O
@@ -507,7 +507,7 @@ new_move	int
 =	O
 genmove	function
 (	O
-color	*
+color	pointer
 ,	O
 NULL	O
 ,	O
@@ -553,7 +553,7 @@ quiet	int
 {	O
 mprintf	function
 (	O
-"Move %d (%C): "	*
+"Move %d (%C): "	pointer
 ,	O
 movenum	int
 +	O
@@ -568,16 +568,16 @@ resign	int
 )	O
 printf	function
 (	O
-"GNU Go resigns "	*
+"GNU Go resigns "	pointer
 )	O
 ;	O
 else	O
 {	O
 mprintf	function
 (	O
-"GNU Go plays %1m "	*
+"GNU Go plays %1m "	pointer
 ,	O
-new_move	*
+new_move	pointer
 )	O
 ;	O
 if	O
@@ -588,17 +588,17 @@ PASS_MOVE	int
 )	O
 printf	function
 (	O
-"(%.2f) "	*
+"(%.2f) "	pointer
 ,	O
-new_move_value	*
+new_move_value	pointer
 )	O
 ;	O
 }	O
 mprintf	function
 (	O
-"- Game move %1m "	*
+"- Game move %1m "	pointer
 ,	O
-old_move	*
+old_move	pointer
 )	O
 ;	O
 if	O
@@ -613,25 +613,25 @@ old_move_value	int
 )	O
 printf	function
 (	O
-"(%.2f) "	*
+"(%.2f) "	pointer
 ,	O
-old_move_value	*
+old_move_value	pointer
 )	O
 ;	O
 printf	function
 (	O
-"\n"	*
+"\n"	pointer
 )	O
 ;	O
 *	O
-replay_score	*
+replay_score	pointer
 +=	O
 new_move_value	int
 -	O
 old_move_value	int
 ;	O
 *	O
-total_score	*
+total_score	pointer
 +=	O
 new_move_value	int
 ;	O
@@ -649,7 +649,7 @@ resign	int
 )	O
 gg_snprintf	function
 (	O
-buf	*
+buf	pointer
 ,	O
 BUFSIZE	int
 ,	O
@@ -657,7 +657,7 @@ BUFSIZE	int
 ,	O
 location_to_string	function
 (	O
-old_move	*
+old_move	pointer
 )	O
 ,	O
 old_move_value	int
@@ -667,7 +667,7 @@ else	O
 {	O
 gg_snprintf	function
 (	O
-buf	*
+buf	pointer
 ,	O
 BUFSIZE	int
 ,	O
@@ -675,14 +675,14 @@ BUFSIZE	int
 ,	O
 location_to_string	function
 (	O
-new_move	*
+new_move	pointer
 )	O
 ,	O
 new_move_value	int
 ,	O
 location_to_string	function
 (	O
-old_move	*
+old_move	pointer
 )	O
 ,	O
 old_move_value	int
@@ -696,16 +696,16 @@ PASS_MOVE	int
 )	O
 sgfCircle	function
 (	O
-node	*
+node	pointer
 ,	O
 I	O
 (	O
-new_move	*
+new_move	pointer
 )	O
 ,	O
 J	O
 (	O
-new_move	*
+new_move	pointer
 )	O
 )	O
 ;	O
@@ -714,7 +714,7 @@ new_move	*
 else	O
 gg_snprintf	function
 (	O
-buf	*
+buf	pointer
 ,	O
 BUFSIZE	int
 ,	O
@@ -722,7 +722,7 @@ BUFSIZE	int
 ,	O
 location_to_string	function
 (	O
-new_move	*
+new_move	pointer
 )	O
 ,	O
 new_move_value	int
@@ -730,14 +730,14 @@ new_move_value	int
 ;	O
 sgfAddComment	function
 (	O
-node	*
+node	pointer
 ,	O
-buf	*
+buf	pointer
 )	O
 ;	O
 sgffile_add_debuginfo	function
 (	O
-node	*
+node	pointer
 ,	O
 0.0	int
 )	O
@@ -745,7 +745,7 @@ node	*
 }	O
 play_move	function
 (	O
-old_move	*
+old_move	pointer
 ,	O
 color	int
 )	O

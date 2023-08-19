@@ -4,7 +4,7 @@ copy_acl	function
 const	O
 char	O
 *	O
-src_name	*
+src_name	pointer
 ,	O
 int	O
 source_desc	int
@@ -12,7 +12,7 @@ source_desc	int
 const	O
 char	O
 *	O
-dst_name	*
+dst_name	pointer
 ,	O
 int	O
 dest_desc	int
@@ -26,11 +26,11 @@ ret	int
 =	O
 qcopy_acl	function
 (	O
-src_name	*
+src_name	pointer
 ,	O
 source_desc	int
 ,	O
-dst_name	*
+dst_name	pointer
 ,	O
 dest_desc	int
 ,	O
@@ -52,11 +52,11 @@ error	function
 ,	O
 errno	O
 ,	O
-"%s"	*
+"%s"	pointer
 ,	O
 quote	function
 (	O
-src_name	*
+src_name	pointer
 )	O
 )	O
 ;	O
@@ -74,12 +74,12 @@ errno	O
 ,	O
 _	O
 (	O
-"preserving permissions for %s"	*
+"preserving permissions for %s"	pointer
 )	O
 ,	O
 quote	function
 (	O
-dst_name	*
+dst_name	pointer
 )	O
 )	O
 ;	O

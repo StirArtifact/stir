@@ -48,7 +48,7 @@ day	int
 (	O
 153	O
 *	O
-m	*
+m	pointer
 +	O
 2	int
 )	O

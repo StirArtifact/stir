@@ -19,15 +19,15 @@ stackoverflow_handler_continuation	function
 (	O
 void	O
 *	O
-arg1	*
+arg1	pointer
 ,	O
 void	O
 *	O
-arg2	*
+arg2	pointer
 ,	O
 void	O
 *	O
-arg3	*
+arg3	pointer
 )	O
 {	O
 int	O
@@ -39,7 +39,7 @@ int	O
 (	O
 long	O
 )	O
-arg1	*
+arg1	pointer
 ;	O
 longjmp	function
 (	O
@@ -55,11 +55,11 @@ stackoverflow_handler	function
 int	O
 emergency	int
 ,	O
-stackoverflow_context_t	*
-scp	*
+stackoverflow_context_t	pointer
+scp	pointer
 )	O
 {	O
-pass	*
+pass	pointer
 ++	O
 ;	O
 if	O
@@ -70,7 +70,7 @@ pass	enum
 )	O
 printf	function
 (	O
-"Stack overflow %d caught.\n"	*
+"Stack overflow %d caught.\n"	pointer
 ,	O
 pass	int
 )	O
@@ -79,7 +79,7 @@ else	O
 {	O
 printf	function
 (	O
-"Segmentation violation misdetected as stack overflow.\n"	*
+"Segmentation violation misdetected as stack overflow.\n"	pointer
 )	O
 ;	O
 exit	function
@@ -155,7 +155,7 @@ pass	int
 {	O
 printf	function
 (	O
-"Stack overflow %d missed.\n"	*
+"Stack overflow %d missed.\n"	pointer
 ,	O
 pass	int
 )	O
@@ -169,7 +169,7 @@ exit	function
 else	O
 printf	function
 (	O
-"Segmentation violation correctly detected.\n"	*
+"Segmentation violation correctly detected.\n"	pointer
 )	O
 ;	O
 sigprocmask	function
@@ -213,7 +213,7 @@ n	int
 volatile	O
 int	O
 *	O
-p	*
+p	pointer
 )	O
 {	O
 if	O
@@ -229,13 +229,13 @@ n	int
 +	O
 1	int
 ,	O
-p	*
+p	pointer
 )	O
 +=	O
 n	int
 ;	O
 return	O
-p	*
+p	pointer
 ;	O
 }	O
 int	O
@@ -267,7 +267,7 @@ prot_unwritable	int
 ;	O
 void	O
 *	O
-p	*
+p	pointer
 ;	O
 sigset_t	struct
 emptyset	struct
@@ -305,7 +305,7 @@ stackoverflow_install_handler	function
 &	O
 stackoverflow_handler	function
 ,	O
-mystack	*
+mystack	pointer
 ,	O
 SIGSTKSZ	int
 )	O
@@ -336,7 +336,7 @@ void	O
 ;	O
 if	O
 (	O
-p	*
+p	pointer
 ==	O
 (	O
 void	O
@@ -350,9 +350,9 @@ void	O
 {	O
 fprintf	function
 (	O
-stderr	*
+stderr	pointer
 ,	O
-"mmap_zeromap failed.\n"	*
+"mmap_zeromap failed.\n"	pointer
 )	O
 ;	O
 exit	function
@@ -388,9 +388,9 @@ prot_unwritable	int
 {	O
 fprintf	function
 (	O
-stderr	*
+stderr	pointer
 ,	O
-"mprotect failed.\n"	*
+"mprotect failed.\n"	pointer
 )	O
 ;	O
 exit	function
@@ -445,7 +445,7 @@ case	O
 :	O
 printf	function
 (	O
-"emergency exit\n"	*
+"emergency exit\n"	pointer
 )	O
 ;	O
 exit	function
@@ -461,7 +461,7 @@ case	O
 :	O
 printf	function
 (	O
-"Starting recursion pass %d.\n"	*
+"Starting recursion pass %d.\n"	pointer
 ,	O
 pass	int
 +	O
@@ -475,7 +475,7 @@ recurse	function
 ;	O
 printf	function
 (	O
-"no endless recursion?!\n"	*
+"no endless recursion?!\n"	pointer
 )	O
 ;	O
 exit	function
@@ -535,7 +535,7 @@ check_alternate_stack_no_overflow	function
 ;	O
 printf	function
 (	O
-"Test passed.\n"	*
+"Test passed.\n"	pointer
 )	O
 ;	O
 exit	function

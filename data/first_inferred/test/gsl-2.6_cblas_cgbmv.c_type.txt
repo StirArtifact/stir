@@ -35,7 +35,7 @@ alpha	enum
 const	O
 void	O
 *	O
-A	*
+A	pointer
 ,	O
 const	O
 int	O
@@ -44,7 +44,7 @@ lda	int
 const	O
 void	O
 *	O
-X	*
+X	pointer
 ,	O
 const	O
 int	O
@@ -57,7 +57,7 @@ beta	enum
 ,	O
 void	O
 *	O
-Y	*
+Y	pointer
 ,	O
 const	O
 int	O

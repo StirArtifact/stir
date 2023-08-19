@@ -1,5 +1,0 @@
-Xrm_dummy	function
-(	O
-)	O
-{	O
-}	O

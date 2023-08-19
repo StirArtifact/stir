@@ -2,7 +2,7 @@ static	O
 const	O
 char	O
 *	O
-file_name	*
+file_name	pointer
 ;	O
 void	O
 close_stdout_set_file_name	function
@@ -10,12 +10,12 @@ close_stdout_set_file_name	function
 const	O
 char	O
 *	O
-file	*
+file	pointer
 )	O
 {	O
-file_name	*
+file_name	pointer
 =	O
-file	*
+file	pointer
 ;	O
 }	O
 static	O
@@ -44,7 +44,7 @@ if	O
 (	O
 close_stream	function
 (	O
-stdout	*
+stdout	pointer
 )	O
 !=	O
 0	int
@@ -62,16 +62,16 @@ EPIPE	int
 char	O
 const	O
 *	O
-write_error	*
+write_error	pointer
 =	O
 _	O
 (	O
-"write error"	*
+"write error"	pointer
 )	O
 ;	O
 if	O
 (	O
-file_name	*
+file_name	pointer
 )	O
 error	function
 (	O
@@ -79,14 +79,14 @@ error	function
 ,	O
 errno	O
 ,	O
-"%s: %s"	*
+"%s: %s"	pointer
 ,	O
 quotearg_colon	function
 (	O
-file_name	*
+file_name	pointer
 )	O
 ,	O
-write_error	*
+write_error	pointer
 )	O
 ;	O
 else	O
@@ -96,9 +96,9 @@ error	function
 ,	O
 errno	O
 ,	O
-"%s"	*
+"%s"	pointer
 ,	O
-write_error	*
+write_error	pointer
 )	O
 ;	O
 _exit	function
@@ -111,7 +111,7 @@ if	O
 (	O
 close_stream	function
 (	O
-stderr	*
+stderr	pointer
 )	O
 !=	O
 0	int

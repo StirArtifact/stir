@@ -16,17 +16,17 @@ const	O
 struct	O
 timespec	struct
 *	O
-requested_delay	*
+requested_delay	pointer
 ,	O
 struct	O
 timespec	struct
 *	O
-remaining_delay	*
+remaining_delay	pointer
 )	O
 {	O
 if	O
 (	O
-requested_delay	*
+requested_delay	pointer
 ->	O
 tv_nsec	long
 <	O
@@ -34,7 +34,7 @@ tv_nsec	long
 ||	O
 BILLION	int
 <=	O
-requested_delay	*
+requested_delay	pointer
 ->	O
 tv_nsec	long
 )	O
@@ -80,7 +80,7 @@ limit	long
 time_t	long
 seconds	long
 =	O
-requested_delay	*
+requested_delay	pointer
 ->	O
 tv_sec	long
 ;	O
@@ -92,7 +92,7 @@ intermediate	struct
 .	O
 tv_nsec	long
 =	O
-requested_delay	*
+requested_delay	pointer
 ->	O
 tv_nsec	long
 ;	O
@@ -119,7 +119,7 @@ nanosleep	function
 &	O
 intermediate	struct
 ,	O
-remaining_delay	*
+remaining_delay	pointer
 )	O
 ;	O
 seconds	long
@@ -133,9 +133,9 @@ result	int
 {	O
 if	O
 (	O
-remaining_delay	*
+remaining_delay	pointer
 )	O
-remaining_delay	*
+remaining_delay	pointer
 ->	O
 tv_sec	long
 +=	O
@@ -164,7 +164,7 @@ nanosleep	function
 &	O
 intermediate	struct
 ,	O
-remaining_delay	*
+remaining_delay	pointer
 )	O
 ;	O
 }	O

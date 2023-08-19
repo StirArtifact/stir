@@ -5,7 +5,7 @@ acl_docstring	array
 =	O
 N_	O
 (	O
-"test access control lists"	*
+"test access control lists"	pointer
 )	O
 ;	O
 static	O
@@ -16,31 +16,31 @@ acl_args_doc	array
 =	O
 N_	O
 (	O
-"ADDRESS [ADDRESS...]"	*
+"ADDRESS [ADDRESS...]"	pointer
 )	O
 ;	O
 static	O
 char	O
 *	O
-input_file_name	*
+input_file_name	pointer
 ;	O
 static	O
 struct	O
 mu_sockaddr	struct
 *	O
-target_sa	*
+target_sa	pointer
 ;	O
 static	O
-mu_acl_t	*
-acl	*
+mu_acl_t	pointer
+acl	pointer
 ;	O
 static	O
 const	O
 char	O
 *	O
-path	*
+path	pointer
 =	O
-"acl"	*
+"acl"	pointer
 ;	O
 static	O
 struct	O
@@ -51,20 +51,20 @@ acl_options	array
 =	O
 {	O
 {	O
-"file"	*
+"file"	pointer
 ,	O
 'f'	O
 ,	O
 N_	O
 (	O
-"FILE"	*
+"FILE"	pointer
 )	O
 ,	O
 MU_OPTION_DEFAULT	int
 ,	O
 N_	O
 (	O
-"read ACLs from FILE"	*
+"read ACLs from FILE"	pointer
 )	O
 ,	O
 mu_c_string	int
@@ -74,26 +74,26 @@ input_file_name	int
 }	O
 ,	O
 {	O
-"path"	*
+"path"	pointer
 ,	O
 'p'	O
 ,	O
 N_	O
 (	O
-"PATH"	*
+"PATH"	pointer
 )	O
 ,	O
 MU_OPTION_DEFAULT	int
 ,	O
 N_	O
 (	O
-"path to the ACL in the configuration tree"	*
+"path to the ACL in the configuration tree"	pointer
 )	O
 ,	O
 mu_c_string	int
 ,	O
 &	O
-path	*
+path	pointer
 }	O
 ,	O
 {	O
@@ -110,12 +110,12 @@ acl_cfg_param	array
 =	O
 {	O
 {	O
-"acl"	*
+"acl"	pointer
 ,	O
 mu_cfg_section	int
 ,	O
 &	O
-acl	*
+acl	pointer
 ,	O
 0	int
 ,	O
@@ -138,7 +138,7 @@ argc	int
 char	O
 *	O
 *	O
-argv	*
+argv	pointer
 )	O
 {	O
 int	O
@@ -149,22 +149,22 @@ result	enum
 ;	O
 mu_cfg_tree_t	struct
 *	O
-tree	*
+tree	pointer
 =	O
 NULL	O
 ,	O
 *	O
-temp_tree	*
+temp_tree	pointer
 =	O
 NULL	O
 ;	O
 mu_cfg_node_t	struct
 *	O
-node	*
+node	pointer
 ;	O
 struct	O
 mu_cfg_parse_hints	struct
-hints	*
+hints	pointer
 ;	O
 mu_action_getopt	function
 (	O
@@ -172,13 +172,13 @@ mu_action_getopt	function
 argc	long
 ,	O
 &	O
-argv	*
+argv	pointer
 ,	O
-acl_options	*
+acl_options	pointer
 ,	O
-acl_docstring	*
+acl_docstring	pointer
 ,	O
-acl_args_doc	*
+acl_args_doc	pointer
 )	O
 ;	O
 if	O
@@ -192,7 +192,7 @@ mu_error	function
 (	O
 _	O
 (	O
-"not enough arguments"	*
+"not enough arguments"	pointer
 )	O
 )	O
 ;	O
@@ -203,27 +203,27 @@ return	O
 memset	function
 (	O
 &	O
-hints	*
+hints	pointer
 ,	O
 0	int
 ,	O
 sizeof	O
 (	O
-hints	*
+hints	pointer
 )	O
 )	O
 ;	O
-hints	*
+hints	pointer
 .	O
 flags	int
 =	O
 MU_CFHINT_CUSTOM_FILE	int
 ;	O
-hints	*
+hints	pointer
 .	O
-custom_file	*
+custom_file	pointer
 =	O
-input_file_name	*
+input_file_name	pointer
 ;	O
 mu_acl_cfg_init	function
 (	O
@@ -234,21 +234,21 @@ if	O
 mu_cfg_parse_config	function
 (	O
 &	O
-tree	*
+tree	pointer
 ,	O
 &	O
-hints	*
+hints	pointer
 )	O
 )	O
 exit	function
 (	O
-EX_CONFIG	*
+EX_CONFIG	pointer
 )	O
 ;	O
 if	O
 (	O
 !	O
-tree	*
+tree	pointer
 )	O
 return	O
 0	int
@@ -257,12 +257,12 @@ if	O
 (	O
 mu_cfg_find_node	function
 (	O
-tree	*
+tree	pointer
 ,	O
-path	*
+path	pointer
 ,	O
 &	O
-node	*
+node	pointer
 )	O
 )	O
 {	O
@@ -270,10 +270,10 @@ mu_error	function
 (	O
 _	O
 (	O
-"cannot find node: %s"	*
+"cannot find node: %s"	pointer
 )	O
 ,	O
-path	*
+path	pointer
 )	O
 ;	O
 return	O
@@ -288,20 +288,20 @@ temp_tree	struct
 ;	O
 mu_cfg_tree_add_node	function
 (	O
-temp_tree	*
+temp_tree	pointer
 ,	O
-node	*
+node	pointer
 )	O
 ;	O
 rc	int
 =	O
 mu_cfg_tree_reduce	function
 (	O
-temp_tree	*
+temp_tree	pointer
 ,	O
 NULL	O
 ,	O
-acl_cfg_param	*
+acl_cfg_param	pointer
 ,	O
 NULL	O
 )	O
@@ -316,14 +316,14 @@ return	O
 if	O
 (	O
 !	O
-acl	*
+acl	pointer
 )	O
 {	O
 mu_error	function
 (	O
 _	O
 (	O
-"No ACL found in config"	*
+"No ACL found in config"	pointer
 )	O
 )	O
 ;	O
@@ -340,10 +340,10 @@ argc	int
 const	O
 char	O
 *	O
-ap	*
+ap	pointer
 =	O
 *	O
-argv	*
+argv	pointer
 ++	O
 ;	O
 rc	int
@@ -351,9 +351,9 @@ rc	int
 mu_sockaddr_from_node	function
 (	O
 &	O
-target_sa	*
+target_sa	pointer
 ,	O
-ap	*
+ap	pointer
 ,	O
 NULL	O
 ,	O
@@ -367,7 +367,7 @@ rc	int
 {	O
 mu_error	function
 (	O
-"mu_sockaddr_from_node: %s"	*
+"mu_sockaddr_from_node: %s"	pointer
 ,	O
 mu_strerror	function
 (	O
@@ -383,32 +383,32 @@ exit	function
 }	O
 mu_printf	function
 (	O
-"Testing %s:\n"	*
+"Testing %s:\n"	pointer
 ,	O
-ap	*
+ap	pointer
 )	O
 ;	O
 rc	int
 =	O
 mu_acl_check_sockaddr	function
 (	O
-acl	*
+acl	pointer
 ,	O
-target_sa	*
+target_sa	pointer
 ->	O
 addr	int
 ,	O
-target_sa	*
+target_sa	pointer
 ->	O
 addrlen	int
 ,	O
 &	O
-result	*
+result	pointer
 )	O
 ;	O
 mu_sockaddr_free_list	function
 (	O
-target_sa	*
+target_sa	pointer
 )	O
 ;	O
 if	O
@@ -418,7 +418,7 @@ rc	int
 {	O
 mu_error	function
 (	O
-"mu_acl_check_sockaddr failed: %s"	*
+"mu_acl_check_sockaddr failed: %s"	pointer
 ,	O
 mu_strerror	function
 (	O
@@ -432,7 +432,7 @@ return	O
 }	O
 switch	O
 (	O
-result	*
+result	pointer
 )	O
 {	O
 case	O
@@ -440,9 +440,9 @@ mu_acl_result_undefined	int
 :	O
 mu_printf	function
 (	O
-"%s: undefined\n"	*
+"%s: undefined\n"	pointer
 ,	O
-ap	*
+ap	pointer
 )	O
 ;	O
 break	O
@@ -452,9 +452,9 @@ mu_acl_result_accept	int
 :	O
 mu_printf	function
 (	O
-"%s: accept\n"	*
+"%s: accept\n"	pointer
 ,	O
-ap	*
+ap	pointer
 )	O
 ;	O
 break	O
@@ -464,9 +464,9 @@ mu_acl_result_deny	int
 :	O
 mu_printf	function
 (	O
-"%s: deny\n"	*
+"%s: deny\n"	pointer
 ,	O
-ap	*
+ap	pointer
 )	O
 ;	O
 break	O
@@ -476,13 +476,13 @@ break	O
 mu_cfg_destroy_tree	function
 (	O
 &	O
-tree	*
+tree	pointer
 )	O
 ;	O
 mu_cfg_destroy_tree	function
 (	O
 &	O
-temp_tree	*
+temp_tree	pointer
 )	O
 ;	O
 return	O

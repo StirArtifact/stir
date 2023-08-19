@@ -20,6 +20,6 @@ void	O
 )	O
 {	O
 return	O
-testing	*
+testing	pointer
 ;	O
 }	O

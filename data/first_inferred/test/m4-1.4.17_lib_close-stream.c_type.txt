@@ -3,7 +3,7 @@ close_stream	function
 (	O
 FILE	struct
 *	O
-stream	*
+stream	pointer
 )	O
 {	O
 const	O
@@ -13,7 +13,7 @@ some_pending	bool
 (	O
 __fpending	function
 (	O
-stream	*
+stream	pointer
 )	O
 !=	O
 0	int
@@ -26,7 +26,7 @@ prev_fail	bool
 (	O
 ferror	function
 (	O
-stream	*
+stream	pointer
 )	O
 !=	O
 0	int
@@ -39,7 +39,7 @@ fclose_fail	bool
 (	O
 fclose	function
 (	O
-stream	*
+stream	pointer
 )	O
 !=	O
 0	int

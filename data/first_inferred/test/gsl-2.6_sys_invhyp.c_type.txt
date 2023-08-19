@@ -125,7 +125,7 @@ x	double
 )	O
 ;	O
 double	O
-s	*
+s	pointer
 =	O
 (	O
 x	double
@@ -148,7 +148,7 @@ GSL_SQRT_DBL_EPSILON	int
 )	O
 {	O
 return	O
-s	*
+s	pointer
 *	O
 (	O
 log	function
@@ -169,7 +169,7 @@ a	double
 )	O
 {	O
 return	O
-s	*
+s	pointer
 *	O
 log	function
 (	O
@@ -335,7 +335,7 @@ GSL_DBL_EPSILON	int
 )	O
 {	O
 return	O
-s	*
+s	pointer
 *	O
 0.5	int
 *	O

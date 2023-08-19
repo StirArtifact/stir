@@ -1,5 +1,0 @@
-int	O
-exit_status	int
-=	O
-PAXEXIT_SUCCESS	struct
-;	O

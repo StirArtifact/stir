@@ -58,7 +58,7 @@ _allow_interrupt	function
 (	O
 saved_sig_state	struct
 *	O
-ss	*
+ss	pointer
 ,	O
 int	O
 sig	int
@@ -78,13 +78,13 @@ new	struct
 ,	O
 sizeof	O
 (	O
-new	*
+new	pointer
 )	O
 )	O
 ;	O
 new	struct
 .	O
-sa_handler	*
+sa_handler	pointer
 =	O
 signal_handler	function
 ;	O
@@ -102,12 +102,12 @@ sigaction	struct
 sig	int
 ,	O
 &	O
-new	*
+new	pointer
 ,	O
 &	O
 ss	struct
 ->	O
-sa	*
+sa	pointer
 [	O
 slot	int
 ]	O
@@ -118,7 +118,7 @@ slot	int
 {	O
 perror	function
 (	O
-"sigaction"	*
+"sigaction"	pointer
 )	O
 ;	O
 exit	function
@@ -133,7 +133,7 @@ allow_interrupts	function
 (	O
 saved_sig_state	struct
 *	O
-ss	*
+ss	pointer
 )	O
 {	O
 _allow_interrupt	function
@@ -147,7 +147,7 @@ SIGINT	int
 ;	O
 _allow_interrupt	function
 (	O
-ss	*
+ss	pointer
 ,	O
 SIGINT	int
 ,	O
@@ -179,7 +179,7 @@ _restore_interrupt	function
 (	O
 saved_sig_state	struct
 *	O
-ss	*
+ss	pointer
 ,	O
 int	O
 sig	int
@@ -197,7 +197,7 @@ sig	int
 &	O
 ss	struct
 ->	O
-sa	*
+sa	pointer
 [	O
 slot	int
 ]	O
@@ -210,7 +210,7 @@ NULL	O
 {	O
 perror	function
 (	O
-"restore sigaction"	*
+"restore sigaction"	pointer
 )	O
 ;	O
 exit	function
@@ -225,7 +225,7 @@ restore_interrupts	function
 (	O
 saved_sig_state	struct
 *	O
-ss	*
+ss	pointer
 )	O
 {	O
 _restore_interrupt	function
@@ -239,7 +239,7 @@ SIGINT	int
 ;	O
 _restore_interrupt	function
 (	O
-ss	*
+ss	pointer
 ,	O
 SIGINT	int
 ,	O

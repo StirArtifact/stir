@@ -1,4 +1,4 @@
-pointer	*
+pointer	pointer
 xmalloc	function
 (	O
 c	long
@@ -7,10 +7,10 @@ size_t	long
 c	long
 ;	O
 {	O
-pointer	*
-pret	*
+pointer	pointer
+pret	pointer
 ;	O
-pret	*
+pret	pointer
 =	O
 malloc	function
 (	O
@@ -19,7 +19,7 @@ c	long
 ;	O
 if	O
 (	O
-pret	*
+pret	pointer
 ==	O
 NULL	O
 &&	O
@@ -31,10 +31,10 @@ ulog	function
 (	O
 LOG_FATAL	int
 ,	O
-"Out of memory"	*
+"Out of memory"	pointer
 )	O
 ;	O
 return	O
-pret	*
+pret	pointer
 ;	O
 }	O

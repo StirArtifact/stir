@@ -3,7 +3,7 @@ pty_fork	function
 (	O
 int	O
 *	O
-ptrfdm	*
+ptrfdm	pointer
 ,	O
 char	O
 *	O
@@ -13,19 +13,19 @@ const	O
 struct	O
 termios	struct
 *	O
-slave_termios	*
+slave_termios	pointer
 ,	O
 const	O
 struct	O
 winsize	struct
 *	O
-slave_winsize	*
+slave_winsize	pointer
 )	O
 {	O
 int	O
 fdm	int
 ,	O
-fds	*
+fds	pointer
 ;	O
 pid_t	int
 pid	int
@@ -43,7 +43,7 @@ fdm	int
 =	O
 ptym_open	function
 (	O
-pts_name	*
+pts_name	pointer
 )	O
 )	O
 <	O
@@ -51,14 +51,14 @@ pts_name	*
 )	O
 err_sys	function
 (	O
-"can't open master pty: %s"	*
+"can't open master pty: %s"	pointer
 ,	O
-pts_name	*
+pts_name	pointer
 )	O
 ;	O
 if	O
 (	O
-slave_name	*
+slave_name	pointer
 !=	O
 NULL	O
 )	O
@@ -66,7 +66,7 @@ strcpy	function
 (	O
 slave_name	array
 ,	O
-pts_name	*
+pts_name	pointer
 )	O
 ;	O
 if	O
@@ -105,19 +105,19 @@ setsid	function
 )	O
 err_sys	function
 (	O
-"setsid error"	*
+"setsid error"	pointer
 )	O
 ;	O
 if	O
 (	O
 (	O
-fds	*
+fds	pointer
 =	O
 ptys_open	function
 (	O
 fdm	int
 ,	O
-pts_name	*
+pts_name	pointer
 )	O
 )	O
 <	O
@@ -125,7 +125,7 @@ pts_name	*
 )	O
 err_sys	function
 (	O
-"can't open slave pty"	*
+"can't open slave pty"	pointer
 )	O
 ;	O
 close	function
@@ -135,7 +135,7 @@ fdm	int
 ;	O
 if	O
 (	O
-slave_termios	*
+slave_termios	pointer
 !=	O
 NULL	O
 )	O
@@ -144,7 +144,7 @@ if	O
 (	O
 tcsetattr	function
 (	O
-fds	*
+fds	pointer
 ,	O
 TCSANOW	int
 ,	O
@@ -155,13 +155,13 @@ slave_termios	int
 )	O
 err_sys	function
 (	O
-"tcsetattr error on slave pty"	*
+"tcsetattr error on slave pty"	pointer
 )	O
 ;	O
 }	O
 if	O
 (	O
-slave_winsize	*
+slave_winsize	pointer
 !=	O
 NULL	O
 )	O
@@ -170,7 +170,7 @@ if	O
 (	O
 ioctl	function
 (	O
-fds	*
+fds	pointer
 ,	O
 TIOCSWINSZ	int
 ,	O
@@ -181,7 +181,7 @@ slave_winsize	int
 )	O
 err_sys	function
 (	O
-"TIOCSWINSZ error on slave pty"	*
+"TIOCSWINSZ error on slave pty"	pointer
 )	O
 ;	O
 }	O
@@ -189,7 +189,7 @@ if	O
 (	O
 dup2	function
 (	O
-fds	*
+fds	pointer
 ,	O
 STDIN_FILENO	int
 )	O
@@ -198,14 +198,14 @@ STDIN_FILENO	int
 )	O
 err_sys	function
 (	O
-"dup2 error to stdin"	*
+"dup2 error to stdin"	pointer
 )	O
 ;	O
 if	O
 (	O
 dup2	function
 (	O
-fds	*
+fds	pointer
 ,	O
 STDOUT_FILENO	int
 )	O
@@ -214,14 +214,14 @@ STDOUT_FILENO	int
 )	O
 err_sys	function
 (	O
-"dup2 error to stdout"	*
+"dup2 error to stdout"	pointer
 )	O
 ;	O
 if	O
 (	O
 dup2	function
 (	O
-fds	*
+fds	pointer
 ,	O
 STDERR_FILENO	int
 )	O
@@ -230,18 +230,18 @@ STDERR_FILENO	int
 )	O
 err_sys	function
 (	O
-"dup2 error to stderr"	*
+"dup2 error to stderr"	pointer
 )	O
 ;	O
 if	O
 (	O
-fds	*
+fds	pointer
 >	O
 STDERR_FILENO	int
 )	O
-close	*
+close	pointer
 (	O
-fds	*
+fds	pointer
 )	O
 ;	O
 return	O
@@ -253,7 +253,7 @@ return	O
 else	O
 {	O
 *	O
-ptrfdm	*
+ptrfdm	pointer
 =	O
 fdm	int
 ;	O

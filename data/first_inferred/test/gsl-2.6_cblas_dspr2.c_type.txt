@@ -22,7 +22,7 @@ alpha	enum
 const	O
 double	O
 *	O
-X	*
+X	pointer
 ,	O
 const	O
 int	O
@@ -31,7 +31,7 @@ incX	int
 const	O
 double	O
 *	O
-Y	*
+Y	pointer
 ,	O
 const	O
 int	O
@@ -39,7 +39,7 @@ incY	int
 ,	O
 double	O
 *	O
-Ap	*
+Ap	pointer
 )	O
 {	O
 }	O

@@ -12,11 +12,11 @@ c	double
 ,	O
 gsl_complex	struct
 *	O
-z0	*
+z0	pointer
 ,	O
 gsl_complex	struct
 *	O
-z1	*
+z1	pointer
 )	O
 {	O
 double	O
@@ -55,7 +55,7 @@ else	O
 GSL_REAL	O
 (	O
 *	O
-z0	*
+z0	pointer
 )	O
 =	O
 -	O
@@ -66,7 +66,7 @@ b	double
 GSL_IMAG	O
 (	O
 *	O
-z0	*
+z0	pointer
 )	O
 =	O
 0	int
@@ -109,7 +109,7 @@ a	double
 GSL_REAL	O
 (	O
 *	O
-z0	*
+z0	pointer
 )	O
 =	O
 -	O
@@ -118,7 +118,7 @@ s	double
 GSL_IMAG	O
 (	O
 *	O
-z0	*
+z0	pointer
 )	O
 =	O
 0	int
@@ -126,7 +126,7 @@ z0	*
 GSL_REAL	O
 (	O
 *	O
-z1	*
+z1	pointer
 )	O
 =	O
 s	double
@@ -134,7 +134,7 @@ s	double
 GSL_IMAG	O
 (	O
 *	O
-z1	*
+z1	pointer
 )	O
 =	O
 0	int
@@ -197,7 +197,7 @@ r2	double
 GSL_REAL	O
 (	O
 *	O
-z0	*
+z0	pointer
 )	O
 =	O
 r1	double
@@ -205,7 +205,7 @@ r1	double
 GSL_IMAG	O
 (	O
 *	O
-z0	*
+z0	pointer
 )	O
 =	O
 0	int
@@ -213,7 +213,7 @@ z0	*
 GSL_REAL	O
 (	O
 *	O
-z1	*
+z1	pointer
 )	O
 =	O
 r2	double
@@ -221,7 +221,7 @@ r2	double
 GSL_IMAG	O
 (	O
 *	O
-z1	*
+z1	pointer
 )	O
 =	O
 0	int
@@ -232,7 +232,7 @@ else	O
 GSL_REAL	O
 (	O
 *	O
-z0	*
+z0	pointer
 )	O
 =	O
 r2	double
@@ -240,7 +240,7 @@ r2	double
 GSL_IMAG	O
 (	O
 *	O
-z0	*
+z0	pointer
 )	O
 =	O
 0	int
@@ -248,7 +248,7 @@ z0	*
 GSL_REAL	O
 (	O
 *	O
-z1	*
+z1	pointer
 )	O
 =	O
 r1	double
@@ -256,7 +256,7 @@ r1	double
 GSL_IMAG	O
 (	O
 *	O
-z1	*
+z1	pointer
 )	O
 =	O
 0	int
@@ -278,7 +278,7 @@ disc	double
 GSL_REAL	O
 (	O
 *	O
-z0	*
+z0	pointer
 )	O
 =	O
 -	O
@@ -291,7 +291,7 @@ a	double
 GSL_IMAG	O
 (	O
 *	O
-z0	*
+z0	pointer
 )	O
 =	O
 0	int
@@ -299,7 +299,7 @@ z0	*
 GSL_REAL	O
 (	O
 *	O
-z1	*
+z1	pointer
 )	O
 =	O
 -	O
@@ -312,7 +312,7 @@ a	double
 GSL_IMAG	O
 (	O
 *	O
-z1	*
+z1	pointer
 )	O
 =	O
 0	int
@@ -342,7 +342,7 @@ a	double
 GSL_REAL	O
 (	O
 *	O
-z0	*
+z0	pointer
 )	O
 =	O
 -	O
@@ -355,7 +355,7 @@ a	double
 GSL_IMAG	O
 (	O
 *	O
-z0	*
+z0	pointer
 )	O
 =	O
 -	O
@@ -364,7 +364,7 @@ s	double
 GSL_REAL	O
 (	O
 *	O
-z1	*
+z1	pointer
 )	O
 =	O
 -	O
@@ -377,7 +377,7 @@ a	double
 GSL_IMAG	O
 (	O
 *	O
-z1	*
+z1	pointer
 )	O
 =	O
 s	double

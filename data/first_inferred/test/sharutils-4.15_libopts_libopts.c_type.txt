@@ -5,5 +5,5 @@ ao_ver_string	array
 [	O
 ]	O
 =	O
-"41:0:16\n"	*
+"41:0:16\n"	pointer
 ;	O

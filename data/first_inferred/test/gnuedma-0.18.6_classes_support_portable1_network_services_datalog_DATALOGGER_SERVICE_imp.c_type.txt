@@ -33,7 +33,7 @@ edma_met3	function
 (	O
 id	int
 ,	O
-"recv"	*
+"recv"	pointer
 ,	O
 &	O
 rbuf	struct
@@ -51,9 +51,9 @@ edma_printf_obj	function
 (	O
 IdObj	int
 ,	O
-"%s"	*
+"%s"	pointer
 ,	O
-"[ERROR] receviving data"	*
+"[ERROR] receviving data"	pointer
 )	O
 ;	O
 return	O
@@ -63,21 +63,21 @@ return	O
 }	O
 printf	function
 (	O
-"%s"	*
+"%s"	pointer
 ,	O
-"--------------------------------\n"	*
+"--------------------------------\n"	pointer
 )	O
 ;	O
 printf	function
 (	O
-"[%ld bytes received]\n"	*
+"[%ld bytes received]\n"	pointer
 ,	O
 len	int
 )	O
 ;	O
 printf	function
 (	O
-"%s"	*
+"%s"	pointer
 ,	O
 (	O
 char	O
@@ -85,14 +85,14 @@ char	O
 )	O
 rbuf	struct
 .	O
-dat	*
+dat	pointer
 )	O
 ;	O
 printf	function
 (	O
-"%s"	*
+"%s"	pointer
 ,	O
-"--------------------------------\n"	*
+"--------------------------------\n"	pointer
 )	O
 ;	O
 edma_buffer_free	function

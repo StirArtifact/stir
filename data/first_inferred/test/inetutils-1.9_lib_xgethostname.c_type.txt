@@ -7,7 +7,7 @@ void	O
 {	O
 char	O
 *	O
-hostname	*
+hostname	pointer
 =	O
 NULL	O
 ;	O
@@ -24,11 +24,11 @@ while	O
 size_t	long
 size_1	long
 ;	O
-hostname	*
+hostname	pointer
 =	O
 x2realloc	function
 (	O
-hostname	*
+hostname	pointer
 ,	O
 &	O
 size	long
@@ -40,7 +40,7 @@ size	long
 -	O
 1	int
 ;	O
-hostname	*
+hostname	pointer
 [	O
 size_1	long
 -	O
@@ -57,7 +57,7 @@ if	O
 (	O
 gethostname	function
 (	O
-hostname	*
+hostname	pointer
 ,	O
 size_1	long
 )	O
@@ -68,7 +68,7 @@ size_1	long
 if	O
 (	O
 !	O
-hostname	*
+hostname	pointer
 [	O
 size_1	long
 -	O
@@ -105,7 +105,7 @@ errno	O
 ;	O
 free	function
 (	O
-hostname	*
+hostname	pointer
 )	O
 ;	O
 errno	O
@@ -118,6 +118,6 @@ NULL	O
 }	O
 }	O
 return	O
-hostname	*
+hostname	pointer
 ;	O
 }	O

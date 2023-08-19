@@ -4,7 +4,7 @@ gsl_ran_pareto	function
 const	O
 gsl_rng	struct
 *	O
-r	*
+r	pointer
 ,	O
 double	O
 a	double
@@ -19,7 +19,7 @@ x	double
 =	O
 gsl_rng_uniform_pos	function
 (	O
-r	*
+r	pointer
 )	O
 ;	O
 double	O

@@ -22,11 +22,11 @@ sfd	int
 struct	O
 ifconfig	struct
 *	O
-ifp	*
+ifp	pointer
 ;	O
 set_program_name	function
 (	O
-argv	*
+argv	pointer
 [	O
 0	int
 ]	O
@@ -36,7 +36,7 @@ parse_cmdline	function
 (	O
 argc	int
 ,	O
-argv	*
+argv	pointer
 )	O
 ;	O
 sfd	int
@@ -63,7 +63,7 @@ error	function
 ,	O
 errno	O
 ,	O
-"socket error"	*
+"socket error"	pointer
 )	O
 ;	O
 exit	function
@@ -74,17 +74,17 @@ EXIT_FAILURE	int
 }	O
 for	O
 (	O
-ifp	*
+ifp	pointer
 =	O
-ifs	*
+ifs	pointer
 ;	O
-ifp	*
+ifp	pointer
 <	O
 ifs	int
 +	O
 nifs	int
 ;	O
-ifp	*
+ifp	pointer
 ++	O
 )	O
 {	O
@@ -94,7 +94,7 @@ configure_if	function
 (	O
 sfd	int
 ,	O
-ifp	*
+ifp	pointer
 )	O
 ;	O
 if	O
@@ -104,7 +104,7 @@ err	int
 break	O
 ;	O
 }	O
-close	*
+close	pointer
 (	O
 sfd	int
 )	O

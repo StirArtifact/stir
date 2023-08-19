@@ -8,7 +8,7 @@ if	O
 (	O
 fwriteerror_no_ebadf	function
 (	O
-stdout	*
+stdout	pointer
 )	O
 )	O
 error	function
@@ -17,11 +17,11 @@ EXIT_FAILURE	int
 ,	O
 errno	O
 ,	O
-"%s"	*
+"%s"	pointer
 ,	O
 _	O
 (	O
-"write error"	*
+"write error"	pointer
 )	O
 )	O
 ;	O
@@ -33,18 +33,18 @@ if	O
 (	O
 ferror	function
 (	O
-stderr	*
+stderr	pointer
 )	O
 ||	O
 fflush	function
 (	O
-stderr	*
+stderr	pointer
 )	O
 )	O
 {	O
 fclose	function
 (	O
-stderr	*
+stderr	pointer
 )	O
 ;	O
 exit	function
@@ -57,7 +57,7 @@ if	O
 (	O
 fclose	function
 (	O
-stderr	*
+stderr	pointer
 )	O
 &&	O
 errno	O

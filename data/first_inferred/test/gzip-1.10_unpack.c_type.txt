@@ -75,7 +75,7 @@ b	int
 )	O
 gzip_error	function
 (	O
-"invalid compressed data -- unexpected end of file"	*
+"invalid compressed data -- unexpected end of file"	pointer
 )	O
 ;	O
 return	O
@@ -166,8 +166,8 @@ MAX_BITLEN	int
 )	O
 gzip_error	function
 (	O
-"invalid compressed data -- "	*
-"Huffman code bit length out of range"	*
+"invalid compressed data -- "	pointer
+"Huffman code bit length out of range"	pointer
 )	O
 ;	O
 n	int
@@ -214,13 +214,13 @@ len	int
 )	O
 gzip_error	function
 (	O
-"too many leaves in Huffman tree"	*
+"too many leaves in Huffman tree"	pointer
 )	O
 ;	O
 max_leaves	int
 =	O
 (	O
-max_leaves	*
+max_leaves	pointer
 -	O
 leaves	array
 [	O
@@ -251,20 +251,20 @@ n	int
 {	O
 gzip_error	function
 (	O
-"too many leaves in Huffman tree"	*
+"too many leaves in Huffman tree"	pointer
 )	O
 ;	O
 }	O
 Trace	function
 (	O
 (	O
-stderr	*
+stderr	pointer
 ,	O
-"orig_len %lu, max_len %d, leaves %d\n"	*
+"orig_len %lu, max_len %d, leaves %d\n"	pointer
 ,	O
 orig_len	long
 ,	O
-max_len	*
+max_len	pointer
 ,	O
 n	int
 )	O
@@ -299,7 +299,7 @@ lit_base	array
 len	int
 ]	O
 =	O
-base	*
+base	pointer
 ;	O
 for	O
 (	O
@@ -353,7 +353,7 @@ len	int
 ;	O
 uch	char
 *	O
-prefixp	*
+prefixp	pointer
 ;	O
 for	O
 (	O
@@ -373,12 +373,12 @@ nodes	int
 >>=	O
 1	int
 ;	O
-parents	*
+parents	pointer
 [	O
 len	int
 ]	O
 =	O
-nodes	*
+nodes	pointer
 ;	O
 lit_base	array
 [	O
@@ -407,14 +407,14 @@ nodes	int
 )	O
 gzip_error	function
 (	O
-"too few leaves in Huffman tree"	*
+"too few leaves in Huffman tree"	pointer
 )	O
 ;	O
 peek_bits	int
 =	O
 MIN	O
 (	O
-max_len	*
+max_len	pointer
 ,	O
 MAX_PEEK	int
 )	O
@@ -488,14 +488,14 @@ prefixp	int
 int	O
 unpack	function
 (	O
-in	*
+in	pointer
 ,	O
-out	*
+out	pointer
 )	O
 int	O
 in	int
 ,	O
-out	*
+out	pointer
 ;	O
 {	O
 int	O
@@ -553,13 +553,13 @@ max_len	int
 Trace	function
 (	O
 (	O
-stderr	*
+stderr	pointer
 ,	O
-"eob %d %x\n"	*
+"eob %d %x\n"	pointer
 ,	O
-max_len	*
+max_len	pointer
 ,	O
-eob	*
+eob	pointer
 )	O
 )	O
 ;	O
@@ -571,9 +571,9 @@ for	O
 {	O
 look_bits	function
 (	O
-peek	*
+peek	pointer
 ,	O
-peek_bits	*
+peek_bits	pointer
 ,	O
 peek_mask	int
 )	O
@@ -614,7 +614,7 @@ while	O
 (	O
 peek	int
 <	O
-parents	*
+parents	pointer
 [	O
 len	int
 ]	O
@@ -635,7 +635,7 @@ mask	int
 ;	O
 look_bits	function
 (	O
-peek	*
+peek	pointer
 ,	O
 len	int
 ,	O
@@ -672,19 +672,19 @@ len	int
 Tracev	function
 (	O
 (	O
-stderr	*
+stderr	pointer
 ,	O
-"%02d %04x %c\n"	*
+"%02d %04x %c\n"	pointer
 ,	O
 len	int
 ,	O
-peek	*
+peek	pointer
 ,	O
 literal	array
 [	O
-peek	*
+peek	pointer
 +	O
-lit_base	*
+lit_base	pointer
 [	O
 len	int
 ]	O
@@ -718,7 +718,7 @@ bytes_out	long
 {	O
 gzip_error	function
 (	O
-"invalid compressed data--length error"	*
+"invalid compressed data--length error"	pointer
 )	O
 ;	O
 }	O

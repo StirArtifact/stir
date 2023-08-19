@@ -1,7 +1,7 @@
 const	O
 char	O
 *	O
-argp_program_version	*
+argp_program_version	pointer
 =	O
 STANDARD_HURD_VERSION	function
 (	O
@@ -13,11 +13,11 @@ message_demuxer	function
 (	O
 mach_msg_header_t	O
 *	O
-inp	*
+inp	pointer
 ,	O
 mach_msg_header_t	O
 *	O
-outp	*
+outp	pointer
 )	O
 {	O
 mig_routine_t	O
@@ -30,7 +30,7 @@ routine	O
 =	O
 process_server_routine	function
 (	O
-inp	*
+inp	pointer
 )	O
 )	O
 ||	O
@@ -39,7 +39,7 @@ routine	O
 =	O
 notify_server_routine	function
 (	O
-inp	*
+inp	pointer
 )	O
 )	O
 ||	O
@@ -48,7 +48,7 @@ routine	O
 =	O
 ports_interrupt_server_routine	function
 (	O
-inp	*
+inp	pointer
 )	O
 )	O
 ||	O
@@ -57,7 +57,7 @@ routine	O
 =	O
 proc_exc_server_routine	function
 (	O
-inp	*
+inp	pointer
 )	O
 )	O
 ||	O
@@ -66,7 +66,7 @@ routine	O
 =	O
 task_notify_server_routine	function
 (	O
-inp	*
+inp	pointer
 )	O
 )	O
 )	O
@@ -74,7 +74,7 @@ inp	*
 pthread_mutex_lock	function
 (	O
 &	O
-global_lock	*
+global_lock	pointer
 )	O
 ;	O
 (	O
@@ -82,9 +82,9 @@ global_lock	*
 routine	O
 )	O
 (	O
-inp	*
+inp	pointer
 ,	O
-outp	*
+outp	pointer
 )	O
 ;	O
 pthread_mutex_unlock	function
@@ -151,9 +151,9 @@ err	int
 =	O
 host_processor_set_priv	function
 (	O
-_hurd_host_priv	*
+_hurd_host_priv	pointer
 ,	O
-pset	*
+pset	pointer
 ,	O
 &	O
 psetcntl	O
@@ -174,7 +174,7 @@ mach_thread_self	function
 (	O
 )	O
 ,	O
-psetcntl	*
+psetcntl	pointer
 ,	O
 0	int
 )	O
@@ -256,12 +256,12 @@ argc	int
 char	O
 *	O
 *	O
-argv	*
+argv	pointer
 ,	O
 char	O
 *	O
 *	O
-envp	*
+envp	pointer
 )	O
 {	O
 mach_port_t	O
@@ -272,10 +272,10 @@ err	O
 ;	O
 void	O
 *	O
-genport	*
+genport	pointer
 ;	O
 process_t	O
-startup_port	*
+startup_port	pointer
 ;	O
 mach_port_t	O
 startup	int
@@ -301,7 +301,7 @@ argp	struct
 ,	O
 argc	int
 ,	O
-argv	*
+argv	pointer
 ,	O
 0	int
 ,	O
@@ -343,7 +343,7 @@ error	function
 ,	O
 0	int
 ,	O
-"proc server can only be run by startup during boot"	*
+"proc server can only be run by startup during boot"	pointer
 )	O
 ;	O
 proc_bucket	O
@@ -374,14 +374,14 @@ exc_class	O
 =	O
 ports_create_class	function
 (	O
-exc_clean	*
+exc_clean	pointer
 ,	O
 0	int
 )	O
 ;	O
 ports_create_port	function
 (	O
-generic_port_class	*
+generic_port_class	pointer
 ,	O
 proc_bucket	O
 ,	O
@@ -399,10 +399,10 @@ generic_port	O
 =	O
 ports_get_right	function
 (	O
-genport	*
+genport	pointer
 )	O
 ;	O
-init_proc	*
+init_proc	pointer
 =	O
 create_init_proc	function
 (	O
@@ -415,7 +415,7 @@ allocate_proc	function
 MACH_PORT_NULL	O
 )	O
 ;	O
-startup_proc	*
+startup_proc	pointer
 ->	O
 p_deadmsg	int
 =	O
@@ -423,12 +423,12 @@ p_deadmsg	int
 ;	O
 complete_proc	function
 (	O
-startup_proc	*
+startup_proc	pointer
 ,	O
 HURD_PID_STARTUP	int
 )	O
 ;	O
-self_proc	*
+self_proc	pointer
 =	O
 allocate_proc	function
 (	O
@@ -444,16 +444,16 @@ self_proc	int
 ;	O
 complete_proc	function
 (	O
-self_proc	*
+self_proc	pointer
 ,	O
-HURD_PID_PROC	*
+HURD_PID_PROC	pointer
 )	O
 ;	O
 startup_port	int
 =	O
 ports_get_send_right	function
 (	O
-startup_proc	*
+startup_proc	pointer
 )	O
 ;	O
 err	int
@@ -462,10 +462,10 @@ startup_procinit	function
 (	O
 boot	struct
 ,	O
-startup_port	*
+startup_port	pointer
 ,	O
 &	O
-startup_proc	*
+startup_proc	pointer
 ->	O
 p_task	O
 ,	O
@@ -528,31 +528,31 @@ boot	O
 ;	O
 proc_death_notify	function
 (	O
-startup_proc	*
+startup_proc	pointer
 )	O
 ;	O
 add_proc_to_hash	function
 (	O
-startup_proc	*
+startup_proc	pointer
 )	O
 ;	O
-self_proc	*
+self_proc	pointer
 ->	O
-p_argv	*
+p_argv	pointer
 =	O
 (	O
 vm_address_t	O
 )	O
-argv	*
+argv	pointer
 ;	O
-self_proc	*
+self_proc	pointer
 ->	O
 p_envp	int
 =	O
 (	O
 vm_address_t	O
 )	O
-envp	*
+envp	pointer
 ;	O
 err	int
 =	O
@@ -574,14 +574,14 @@ error	function
 ,	O
 err	int
 ,	O
-"Increasing priority failed"	*
+"Increasing priority failed"	pointer
 )	O
 ;	O
 err	O
 =	O
 register_new_task_notification	function
 (	O
-_hurd_host_priv	*
+_hurd_host_priv	pointer
 ,	O
 generic_port	O
 ,	O
@@ -598,7 +598,7 @@ error	function
 ,	O
 err	O
 ,	O
-"Registering task notifications failed"	*
+"Registering task notifications failed"	pointer
 )	O
 ;	O
 {	O
@@ -615,7 +615,7 @@ D_READ	O
 |	O
 D_WRITE	O
 ,	O
-"console"	*
+"console"	pointer
 ,	O
 &	O
 cons	O
@@ -632,7 +632,7 @@ mach_open_devstream	function
 (	O
 cons	O
 ,	O
-"r"	*
+"r"	pointer
 )	O
 ;	O
 stdout	O
@@ -643,7 +643,7 @@ mach_open_devstream	function
 (	O
 cons	O
 ,	O
-"w"	*
+"w"	pointer
 )	O
 ;	O
 mach_port_deallocate	function
@@ -660,7 +660,7 @@ startup	O
 =	O
 file_name_lookup	function
 (	O
-_SERVERS_STARTUP	*
+_SERVERS_STARTUP	pointer
 ,	O
 0	int
 ,	O
@@ -687,9 +687,9 @@ mach_task_self	function
 ,	O
 MACH_PORT_NULL	O
 ,	O
-"proc"	*
+"proc"	pointer
 ,	O
-_hurd_host_priv	*
+_hurd_host_priv	pointer
 )	O
 ;	O
 if	O
@@ -730,7 +730,7 @@ ports_manage_port_operations_multithread	function
 (	O
 proc_bucket	O
 ,	O
-message_demuxer	*
+message_demuxer	pointer
 ,	O
 0	int
 ,	O

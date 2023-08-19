@@ -21,13 +21,13 @@ one_hundred	array
 ]	O
 =	O
 {	O
-"Continue"	*
+"Continue"	pointer
 ,	O
-"Switching Protocols"	*
+"Switching Protocols"	pointer
 ,	O
-"Processing"	*
+"Processing"	pointer
 ,	O
-"Early Hints"	*
+"Early Hints"	pointer
 }	O
 ;	O
 static	O
@@ -40,59 +40,59 @@ two_hundred	array
 ]	O
 =	O
 {	O
-"OK"	*
+"OK"	pointer
 ,	O
-"Created"	*
+"Created"	pointer
 ,	O
-"Accepted"	*
+"Accepted"	pointer
 ,	O
-"Non-Authoritative Information"	*
+"Non-Authoritative Information"	pointer
 ,	O
-"No Content"	*
+"No Content"	pointer
 ,	O
-"Reset Content"	*
+"Reset Content"	pointer
 ,	O
-"Partial Content"	*
+"Partial Content"	pointer
 ,	O
-"Multi-Status"	*
+"Multi-Status"	pointer
 ,	O
-"Already Reported"	*
+"Already Reported"	pointer
 ,	O
-"Unknown"	*
+"Unknown"	pointer
 ,	O
-"Unknown"	*
+"Unknown"	pointer
 ,	O
-"Unknown"	*
+"Unknown"	pointer
 ,	O
-"Unknown"	*
+"Unknown"	pointer
 ,	O
-"Unknown"	*
+"Unknown"	pointer
 ,	O
-"Unknown"	*
+"Unknown"	pointer
 ,	O
-"Unknown"	*
+"Unknown"	pointer
 ,	O
-"Unknown"	*
+"Unknown"	pointer
 ,	O
-"Unknown"	*
+"Unknown"	pointer
 ,	O
-"Unknown"	*
+"Unknown"	pointer
 ,	O
-"Unknown"	*
+"Unknown"	pointer
 ,	O
-"Unknown"	*
+"Unknown"	pointer
 ,	O
-"Unknown"	*
+"Unknown"	pointer
 ,	O
-"Unknown"	*
+"Unknown"	pointer
 ,	O
-"Unknown"	*
+"Unknown"	pointer
 ,	O
-"Unknown"	*
+"Unknown"	pointer
 ,	O
-"Unknown"	*
+"Unknown"	pointer
 ,	O
-"IM Used"	*
+"IM Used"	pointer
 }	O
 ;	O
 static	O
@@ -105,23 +105,23 @@ three_hundred	array
 ]	O
 =	O
 {	O
-"Multiple Choices"	*
+"Multiple Choices"	pointer
 ,	O
-"Moved Permanently"	*
+"Moved Permanently"	pointer
 ,	O
-"Found"	*
+"Found"	pointer
 ,	O
-"See Other"	*
+"See Other"	pointer
 ,	O
-"Not Modified"	*
+"Not Modified"	pointer
 ,	O
-"Use Proxy"	*
+"Use Proxy"	pointer
 ,	O
-"Switch Proxy"	*
+"Switch Proxy"	pointer
 ,	O
-"Temporary Redirect"	*
+"Temporary Redirect"	pointer
 ,	O
-"Permanent Redirect"	*
+"Permanent Redirect"	pointer
 }	O
 ;	O
 static	O
@@ -134,109 +134,109 @@ four_hundred	array
 ]	O
 =	O
 {	O
-"Bad Request"	*
+"Bad Request"	pointer
 ,	O
-"Unauthorized"	*
+"Unauthorized"	pointer
 ,	O
-"Payment Required"	*
+"Payment Required"	pointer
 ,	O
-"Forbidden"	*
+"Forbidden"	pointer
 ,	O
-"Not Found"	*
+"Not Found"	pointer
 ,	O
-"Method Not Allowed"	*
+"Method Not Allowed"	pointer
 ,	O
-"Not Acceptable"	*
+"Not Acceptable"	pointer
 ,	O
-"Proxy Authentication Required"	*
+"Proxy Authentication Required"	pointer
 ,	O
-"Request Timeout"	*
+"Request Timeout"	pointer
 ,	O
-"Conflict"	*
+"Conflict"	pointer
 ,	O
-"Gone"	*
+"Gone"	pointer
 ,	O
-"Length Required"	*
+"Length Required"	pointer
 ,	O
-"Precondition Failed"	*
+"Precondition Failed"	pointer
 ,	O
-"Payload Too Large"	*
+"Payload Too Large"	pointer
 ,	O
-"URI Too Long"	*
+"URI Too Long"	pointer
 ,	O
-"Unsupported Media Type"	*
+"Unsupported Media Type"	pointer
 ,	O
-"Range Not Satisfiable"	*
+"Range Not Satisfiable"	pointer
 ,	O
-"Expectation Failed"	*
+"Expectation Failed"	pointer
 ,	O
-"Unknown"	*
+"Unknown"	pointer
 ,	O
-"Unknown"	*
+"Unknown"	pointer
 ,	O
-"Unknown"	*
+"Unknown"	pointer
 ,	O
-"Misdirected Request"	*
+"Misdirected Request"	pointer
 ,	O
-"Unprocessable Entity"	*
+"Unprocessable Entity"	pointer
 ,	O
-"Locked"	*
+"Locked"	pointer
 ,	O
-"Failed Dependency"	*
+"Failed Dependency"	pointer
 ,	O
-"Too Early"	*
+"Too Early"	pointer
 ,	O
-"Upgrade Required"	*
+"Upgrade Required"	pointer
 ,	O
-"Unknown"	*
+"Unknown"	pointer
 ,	O
-"Precondition Required"	*
+"Precondition Required"	pointer
 ,	O
-"Too Many Requests"	*
+"Too Many Requests"	pointer
 ,	O
-"Unknown"	*
+"Unknown"	pointer
 ,	O
-"Request Header Fields Too Large"	*
+"Request Header Fields Too Large"	pointer
 ,	O
-"Unknown"	*
+"Unknown"	pointer
 ,	O
-"Unknown"	*
+"Unknown"	pointer
 ,	O
-"Unknown"	*
+"Unknown"	pointer
 ,	O
-"Unknown"	*
+"Unknown"	pointer
 ,	O
-"Unknown"	*
+"Unknown"	pointer
 ,	O
-"Unknown"	*
+"Unknown"	pointer
 ,	O
-"Unknown"	*
+"Unknown"	pointer
 ,	O
-"Unknown"	*
+"Unknown"	pointer
 ,	O
-"Unknown"	*
+"Unknown"	pointer
 ,	O
-"Unknown"	*
+"Unknown"	pointer
 ,	O
-"Unknown"	*
+"Unknown"	pointer
 ,	O
-"Unknown"	*
+"Unknown"	pointer
 ,	O
-"Unknown"	*
+"Unknown"	pointer
 ,	O
-"Unknown"	*
+"Unknown"	pointer
 ,	O
-"Unknown"	*
+"Unknown"	pointer
 ,	O
-"Unknown"	*
+"Unknown"	pointer
 ,	O
-"Unknown"	*
+"Unknown"	pointer
 ,	O
-"Reply With"	*
+"Reply With"	pointer
 ,	O
-"Blocked by Windows Parental Controls"	*
+"Blocked by Windows Parental Controls"	pointer
 ,	O
-"Unavailable For Legal Reasons"	*
+"Unavailable For Legal Reasons"	pointer
 }	O
 ;	O
 static	O
@@ -249,29 +249,29 @@ five_hundred	array
 ]	O
 =	O
 {	O
-"Internal Server Error"	*
+"Internal Server Error"	pointer
 ,	O
-"Not Implemented"	*
+"Not Implemented"	pointer
 ,	O
-"Bad Gateway"	*
+"Bad Gateway"	pointer
 ,	O
-"Service Unavailable"	*
+"Service Unavailable"	pointer
 ,	O
-"Gateway Timeout"	*
+"Gateway Timeout"	pointer
 ,	O
-"HTTP Version Not Supported"	*
+"HTTP Version Not Supported"	pointer
 ,	O
-"Variant Also Negotiates"	*
+"Variant Also Negotiates"	pointer
 ,	O
-"Insufficient Storage"	*
+"Insufficient Storage"	pointer
 ,	O
-"Loop Detected"	*
+"Loop Detected"	pointer
 ,	O
-"Bandwidth Limit Exceeded"	*
+"Bandwidth Limit Exceeded"	pointer
 ,	O
-"Not Extended"	*
+"Not Extended"	pointer
 ,	O
-"Network Authentication Required"	*
+"Network Authentication Required"	pointer
 }	O
 ;	O
 struct	O
@@ -285,7 +285,7 @@ char	O
 *	O
 const	O
 *	O
-data	*
+data	pointer
 ;	O
 }	O
 ;	O
@@ -300,12 +300,12 @@ reasons	array
 {	O
 BLOCK	O
 (	O
-invalid_hundred	*
+invalid_hundred	pointer
 )	O
 ,	O
 BLOCK	O
 (	O
-one_hundred	*
+one_hundred	pointer
 )	O
 ,	O
 BLOCK	O
@@ -325,7 +325,7 @@ four_hundred	int
 ,	O
 BLOCK	O
 (	O
-five_hundred	*
+five_hundred	pointer
 )	O
 ,	O
 }	O
@@ -379,7 +379,7 @@ code	int
 100	int
 ]	O
 .	O
-data	*
+data	pointer
 [	O
 code	int
 %	O
@@ -387,6 +387,6 @@ code	int
 ]	O
 ;	O
 return	O
-"Unknown"	*
+"Unknown"	pointer
 ;	O
 }	O

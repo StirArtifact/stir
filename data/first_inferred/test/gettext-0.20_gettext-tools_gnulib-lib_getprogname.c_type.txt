@@ -7,6 +7,6 @@ void	O
 )	O
 {	O
 return	O
-program_invocation_short_name	*
+program_invocation_short_name	pointer
 ;	O
 }	O

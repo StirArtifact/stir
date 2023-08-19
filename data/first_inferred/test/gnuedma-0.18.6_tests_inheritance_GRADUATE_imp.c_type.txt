@@ -1,8 +1,8 @@
 typedef	O
 struct	O
 {	O
-EPChar	*
-degree	*
+EPChar	pointer
+degree	pointer
 ;	O
 }	O
 DtGRADUATE	struct
@@ -17,9 +17,9 @@ IdObj	int
 {	O
 DtGRADUATE	struct
 *	O
-m	*
+m	pointer
 ;	O
-m	*
+m	pointer
 =	O
 (	O
 DtGRADUATE	struct
@@ -32,9 +32,9 @@ IdObj	int
 ;	O
 if	O
 (	O
-m	*
+m	pointer
 ->	O
-degree	*
+degree	pointer
 ==	O
 NULL	O
 )	O
@@ -42,25 +42,25 @@ edma_wprop3	function
 (	O
 IdObj	int
 ,	O
-"degree"	*
+"degree"	pointer
 ,	O
-""	*
+""	pointer
 )	O
 ;	O
 edma_met3	function
 (	O
 IdObj	int
 ,	O
-"PERSON>display"	*
+"PERSON>display"	pointer
 )	O
 ;	O
 printf	function
 (	O
-" %s"	*
+" %s"	pointer
 ,	O
-m	*
+m	pointer
 ->	O
-degree	*
+degree	pointer
 )	O
 ;	O
 return	O

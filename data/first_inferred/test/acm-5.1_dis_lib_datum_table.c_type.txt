@@ -6,7 +6,7 @@ id	enum
 ;	O
 char	O
 *	O
-name	*
+name	pointer
 ;	O
 }	O
 dis_datum_info	struct
@@ -29,7 +29,7 @@ i	int
 =	O
 0	int
 ;	O
-lookup	*
+lookup	pointer
 [	O
 i	int
 ]	O
@@ -44,7 +44,7 @@ i	int
 {	O
 if	O
 (	O
-lookup	*
+lookup	pointer
 [	O
 i	int
 ]	O
@@ -55,12 +55,12 @@ id	int
 )	O
 {	O
 return	O
-lookup	*
+lookup	pointer
 [	O
 i	int
 ]	O
 .	O
-name	*
+name	pointer
 ;	O
 }	O
 }	O

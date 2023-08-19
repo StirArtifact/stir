@@ -7,7 +7,7 @@ argc	int
 char	O
 *	O
 *	O
-argv	*
+argv	pointer
 )	O
 {	O
 int	O
@@ -15,22 +15,22 @@ rc	int
 ;	O
 char	O
 *	O
-filename	*
+filename	pointer
 =	O
 NULL	O
 ;	O
 size_t	long
 sz	long
 ;	O
-dico_stream_t	*
-in	*
+dico_stream_t	pointer
+in	pointer
 ,	O
-out	*
+out	pointer
 ,	O
-s	*
+s	pointer
 ;	O
 char	O
-buf	*
+buf	pointer
 [	O
 512	int
 ]	O
@@ -54,7 +54,7 @@ buffered	int
 ;	O
 dico_set_program_name	function
 (	O
-argv	*
+argv	pointer
 [	O
 0	int
 ]	O
@@ -68,28 +68,28 @@ argc	int
 {	O
 char	O
 *	O
-arg	*
+arg	pointer
 =	O
 *	O
 ++	O
-argv	*
+argv	pointer
 ;	O
 if	O
 (	O
 strncmp	function
 (	O
-arg	*
+arg	pointer
 ,	O
-"-file="	*
+"-file="	pointer
 ,	O
 6	int
 )	O
 ==	O
 0	int
 )	O
-filename	*
+filename	pointer
 =	O
-arg	*
+arg	pointer
 +	O
 6	int
 ;	O
@@ -98,9 +98,9 @@ if	O
 (	O
 strcmp	function
 (	O
-arg	*
+arg	pointer
 ,	O
-"-in"	*
+"-in"	pointer
 )	O
 ==	O
 0	int
@@ -114,9 +114,9 @@ if	O
 (	O
 strcmp	function
 (	O
-arg	*
+arg	pointer
 ,	O
-"-out"	*
+"-out"	pointer
 )	O
 ==	O
 0	int
@@ -130,9 +130,9 @@ if	O
 (	O
 strncmp	function
 (	O
-arg	*
+arg	pointer
 ,	O
-"-bufsize="	*
+"-bufsize="	pointer
 ,	O
 9	int
 )	O
@@ -146,7 +146,7 @@ out_bufsize	int
 =	O
 atoi	function
 (	O
-arg	*
+arg	pointer
 +	O
 9	int
 )	O
@@ -163,9 +163,9 @@ if	O
 (	O
 strncmp	function
 (	O
-arg	*
+arg	pointer
 ,	O
-"-outbufsize="	*
+"-outbufsize="	pointer
 ,	O
 12	int
 )	O
@@ -177,7 +177,7 @@ out_bufsize	int
 =	O
 atoi	function
 (	O
-arg	*
+arg	pointer
 +	O
 12	int
 )	O
@@ -192,9 +192,9 @@ if	O
 (	O
 strncmp	function
 (	O
-arg	*
+arg	pointer
 ,	O
-"-inbufsize="	*
+"-inbufsize="	pointer
 ,	O
 11	int
 )	O
@@ -205,7 +205,7 @@ in_bufsize	int
 |=	O
 atoi	function
 (	O
-arg	*
+arg	pointer
 +	O
 11	int
 )	O
@@ -215,9 +215,9 @@ if	O
 (	O
 strcmp	function
 (	O
-arg	*
+arg	pointer
 ,	O
-"--"	*
+"--"	pointer
 )	O
 ==	O
 0	int
@@ -227,13 +227,13 @@ arg	*
 argc	int
 ;	O
 ++	O
-argv	*
+argv	pointer
 ;	O
 }	O
 else	O
 if	O
 (	O
-arg	*
+arg	pointer
 [	O
 0	int
 ]	O
@@ -247,9 +247,9 @@ L_ERR	int
 ,	O
 0	int
 ,	O
-"unknown option '%s'"	*
+"unknown option '%s'"	pointer
 ,	O
-arg	*
+arg	pointer
 )	O
 ;	O
 return	O
@@ -267,11 +267,11 @@ argc	int
 {	O
 fprintf	function
 (	O
-stderr	*
+stderr	pointer
 ,	O
-"Usage: %s [-file=S]\n"	*
+"Usage: %s [-file=S]\n"	pointer
 ,	O
-dico_program_name	*
+dico_program_name	pointer
 )	O
 ;	O
 return	O
@@ -280,14 +280,14 @@ return	O
 }	O
 if	O
 (	O
-filename	*
+filename	pointer
 )	O
 {	O
-in	*
+in	pointer
 =	O
 dico_mapfile_stream_create	function
 (	O
-filename	*
+filename	pointer
 ,	O
 DICO_STREAM_READ	int
 )	O
@@ -295,7 +295,7 @@ DICO_STREAM_READ	int
 if	O
 (	O
 !	O
-in	*
+in	pointer
 )	O
 {	O
 dico_log	function
@@ -304,9 +304,9 @@ L_ERR	int
 ,	O
 errno	O
 ,	O
-"cannot create stream `%s'"	*
+"cannot create stream `%s'"	pointer
 ,	O
-filename	*
+filename	pointer
 )	O
 ;	O
 return	O
@@ -316,7 +316,7 @@ return	O
 }	O
 else	O
 {	O
-in	*
+in	pointer
 =	O
 dico_fd_stream_create	function
 (	O
@@ -330,7 +330,7 @@ DICO_STREAM_READ	int
 if	O
 (	O
 !	O
-in	*
+in	pointer
 )	O
 {	O
 dico_log	function
@@ -339,7 +339,7 @@ L_ERR	int
 ,	O
 errno	O
 ,	O
-"cannot create stdin stream"	*
+"cannot create stdin stream"	pointer
 )	O
 ;	O
 return	O
@@ -351,7 +351,7 @@ rc	int
 =	O
 dico_stream_open	function
 (	O
-in	*
+in	pointer
 )	O
 ;	O
 if	O
@@ -365,17 +365,17 @@ L_ERR	int
 ,	O
 0	int
 ,	O
-"cannot open stream `%s': %s"	*
+"cannot open stream `%s': %s"	pointer
 ,	O
-filename	*
+filename	pointer
 ?	O
-filename	*
+filename	pointer
 :	O
-"<stdin>"	*
+"<stdin>"	pointer
 ,	O
 dico_stream_strerror	function
 (	O
-in	*
+in	pointer
 ,	O
 rc	int
 )	O
@@ -392,11 +392,11 @@ flags	int
 CRLF_IN	int
 )	O
 {	O
-s	*
+s	pointer
 =	O
 dico_crlf_stream	function
 (	O
-in	*
+in	pointer
 ,	O
 DICO_STREAM_READ	int
 ,	O
@@ -406,7 +406,7 @@ DICO_STREAM_READ	int
 if	O
 (	O
 !	O
-s	*
+s	pointer
 )	O
 {	O
 dico_log	function
@@ -415,7 +415,7 @@ L_ERR	int
 ,	O
 errno	O
 ,	O
-"cannot create filter stream"	*
+"cannot create filter stream"	pointer
 )	O
 ;	O
 return	O
@@ -424,7 +424,7 @@ return	O
 }	O
 if	O
 (	O
-filename	*
+filename	pointer
 ||	O
 (	O
 buffered	int
@@ -434,19 +434,19 @@ CRLF_IN	int
 )	O
 dico_stream_set_buffer	function
 (	O
-s	*
+s	pointer
 ,	O
-dico_buffer_full	*
+dico_buffer_full	pointer
 ,	O
-in_bufsize	*
+in_bufsize	pointer
 )	O
 ;	O
-in	*
+in	pointer
 =	O
-s	*
+s	pointer
 ;	O
 }	O
-out	*
+out	pointer
 =	O
 dico_fd_stream_create	function
 (	O
@@ -460,7 +460,7 @@ DICO_STREAM_WRITE	int
 if	O
 (	O
 !	O
-out	*
+out	pointer
 )	O
 {	O
 dico_log	function
@@ -469,7 +469,7 @@ L_ERR	int
 ,	O
 errno	O
 ,	O
-"cannot create stdout stream"	*
+"cannot create stdout stream"	pointer
 )	O
 ;	O
 return	O
@@ -480,7 +480,7 @@ rc	int
 =	O
 dico_stream_open	function
 (	O
-out	*
+out	pointer
 )	O
 ;	O
 if	O
@@ -494,13 +494,13 @@ L_ERR	int
 ,	O
 0	int
 ,	O
-"cannot open stream `%s': %s"	*
+"cannot open stream `%s': %s"	pointer
 ,	O
-"<stdout>"	*
+"<stdout>"	pointer
 ,	O
 dico_stream_strerror	function
 (	O
-out	*
+out	pointer
 ,	O
 rc	int
 )	O
@@ -517,11 +517,11 @@ flags	int
 CRLF_OUT	int
 )	O
 {	O
-s	*
+s	pointer
 =	O
 dico_crlf_stream	function
 (	O
-out	*
+out	pointer
 ,	O
 DICO_STREAM_WRITE	int
 ,	O
@@ -531,7 +531,7 @@ DICO_STREAM_WRITE	int
 if	O
 (	O
 !	O
-s	*
+s	pointer
 )	O
 {	O
 dico_log	function
@@ -540,7 +540,7 @@ L_ERR	int
 ,	O
 errno	O
 ,	O
-"cannot create filter stream"	*
+"cannot create filter stream"	pointer
 )	O
 ;	O
 return	O
@@ -549,7 +549,7 @@ return	O
 }	O
 if	O
 (	O
-filename	*
+filename	pointer
 ||	O
 (	O
 buffered	int
@@ -559,16 +559,16 @@ CRLF_OUT	int
 )	O
 dico_stream_set_buffer	function
 (	O
-s	*
+s	pointer
 ,	O
-dico_buffer_full	*
+dico_buffer_full	pointer
 ,	O
-out_bufsize	*
+out_bufsize	pointer
 )	O
 ;	O
-out	*
+out	pointer
 =	O
-s	*
+s	pointer
 ;	O
 }	O
 while	O
@@ -578,13 +578,13 @@ rc	int
 =	O
 dico_stream_read	function
 (	O
-in	*
+in	pointer
 ,	O
-buf	*
+buf	pointer
 ,	O
 sizeof	O
 (	O
-buf	*
+buf	pointer
 )	O
 ,	O
 &	O
@@ -601,9 +601,9 @@ rc	int
 =	O
 dico_stream_write	function
 (	O
-out	*
+out	pointer
 ,	O
-buf	*
+buf	pointer
 ,	O
 sz	long
 )	O
@@ -619,11 +619,11 @@ L_ERR	int
 ,	O
 0	int
 ,	O
-"write error: %s"	*
+"write error: %s"	pointer
 ,	O
 dico_stream_strerror	function
 (	O
-out	*
+out	pointer
 ,	O
 rc	int
 )	O
@@ -636,7 +636,7 @@ return	O
 }	O
 dico_stream_close	function
 (	O
-out	*
+out	pointer
 )	O
 ;	O
 return	O

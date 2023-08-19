@@ -41,11 +41,11 @@ VIdentMatrix	function
 (	O
 VMatrix	struct
 *	O
-Mtx	*
+Mtx	pointer
 )	O
 {	O
 *	O
-Mtx	*
+Mtx	pointer
 =	O
 ident	int
 ;	O

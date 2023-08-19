@@ -3,7 +3,7 @@ dbm_delete	function
 (	O
 DBM	struct
 *	O
-dbm	*
+dbm	pointer
 ,	O
 datum	struct
 key	struct
@@ -14,9 +14,9 @@ rc	int
 =	O
 gdbm_delete	function
 (	O
-dbm	*
+dbm	pointer
 ->	O
-file	*
+file	pointer
 ,	O
 key	struct
 )	O
@@ -27,7 +27,7 @@ rc	int
 )	O
 __gdbm_error_to_ndbm	O
 (	O
-dbm	*
+dbm	pointer
 )	O
 ;	O
 return	O

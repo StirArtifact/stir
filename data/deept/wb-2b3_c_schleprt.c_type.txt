@@ -1,4 +1,0 @@
-FILE	struct
-*	O
-diagout	pointer
-;	O

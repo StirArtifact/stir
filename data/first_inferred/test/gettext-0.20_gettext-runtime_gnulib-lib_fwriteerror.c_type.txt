@@ -4,7 +4,7 @@ do_fwriteerror	function
 (	O
 FILE	struct
 *	O
-fp	*
+fp	pointer
 ,	O
 bool	bool
 ignore_ebadf	bool
@@ -18,9 +18,9 @@ false	int
 ;	O
 if	O
 (	O
-fp	*
+fp	pointer
 ==	O
-stdout	*
+stdout	pointer
 )	O
 {	O
 if	O
@@ -43,7 +43,7 @@ if	O
 (	O
 ferror	function
 (	O
-fp	*
+fp	pointer
 )	O
 )	O
 {	O
@@ -51,7 +51,7 @@ if	O
 (	O
 fflush	function
 (	O
-fp	*
+fp	pointer
 )	O
 )	O
 goto	O
@@ -63,7 +63,7 @@ fputc	function
 (	O
 '\0'	O
 ,	O
-fp	*
+fp	pointer
 )	O
 ==	O
 EOF	O
@@ -75,7 +75,7 @@ if	O
 (	O
 fflush	function
 (	O
-fp	*
+fp	pointer
 )	O
 )	O
 goto	O
@@ -98,7 +98,7 @@ if	O
 (	O
 fflush	function
 (	O
-fp	*
+fp	pointer
 )	O
 )	O
 goto	O
@@ -108,7 +108,7 @@ if	O
 (	O
 fclose	function
 (	O
-fp	*
+fp	pointer
 )	O
 &&	O
 errno	O
@@ -125,7 +125,7 @@ if	O
 (	O
 fclose	function
 (	O
-fp	*
+fp	pointer
 )	O
 )	O
 goto	O
@@ -145,7 +145,7 @@ errno	O
 ;	O
 fclose	function
 (	O
-fp	*
+fp	pointer
 )	O
 ;	O
 errno	O
@@ -175,13 +175,13 @@ fwriteerror	function
 (	O
 FILE	struct
 *	O
-fp	*
+fp	pointer
 )	O
 {	O
 return	O
 do_fwriteerror	function
 (	O
-fp	*
+fp	pointer
 ,	O
 false	int
 )	O
@@ -192,13 +192,13 @@ fwriteerror_no_ebadf	function
 (	O
 FILE	struct
 *	O
-fp	*
+fp	pointer
 )	O
 {	O
 return	O
 do_fwriteerror	function
 (	O
-fp	*
+fp	pointer
 ,	O
 true	int
 )	O

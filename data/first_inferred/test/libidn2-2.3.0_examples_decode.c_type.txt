@@ -15,30 +15,30 @@ int	O
 rc	int
 ;	O
 char	O
-src	*
+src	pointer
 [	O
 BUFSIZ	int
 ]	O
 ;	O
 char	O
 *	O
-decoded	*
+decoded	pointer
 ;	O
 setlocale	function
 (	O
 LC_ALL	O
 ,	O
-""	*
+""	pointer
 )	O
 ;	O
 printf	function
 (	O
-"Enter (possibly non-ASCII) domain name to decode: "	*
+"Enter (possibly non-ASCII) domain name to decode: "	pointer
 )	O
 ;	O
 fflush	function
 (	O
-stdout	*
+stdout	pointer
 )	O
 ;	O
 if	O
@@ -46,31 +46,31 @@ if	O
 !	O
 fgets	function
 (	O
-src	*
+src	pointer
 ,	O
 sizeof	O
 (	O
-src	*
+src	pointer
 )	O
 ,	O
-stdin	*
+stdin	pointer
 )	O
 )	O
 {	O
 perror	function
 (	O
-"fgets"	*
+"fgets"	pointer
 )	O
 ;	O
 return	O
 1	int
 ;	O
 }	O
-src	*
+src	pointer
 [	O
 strlen	function
 (	O
-src	*
+src	pointer
 )	O
 -	O
 1	int
@@ -82,10 +82,10 @@ rc	int
 =	O
 idn2_to_unicode_lzlz	function
 (	O
-src	*
+src	pointer
 ,	O
 &	O
-decoded	*
+decoded	pointer
 ,	O
 0	int
 )	O
@@ -99,9 +99,9 @@ IDN2_OK	int
 {	O
 fprintf	function
 (	O
-stderr	*
+stderr	pointer
 ,	O
-"error: %s (%s, %d)\n"	*
+"error: %s (%s, %d)\n"	pointer
 ,	O
 idn2_strerror	function
 (	O
@@ -122,14 +122,14 @@ return	O
 }	O
 printf	function
 (	O
-"Decoded domain name: %s\n"	*
+"Decoded domain name: %s\n"	pointer
 ,	O
-decoded	*
+decoded	pointer
 )	O
 ;	O
 free	function
 (	O
-decoded	*
+decoded	pointer
 )	O
 ;	O
 return	O

@@ -1,10 +1,10 @@
 int	O
 mpz_divisible_p	O
 (	O
-mpz_srcptr	*
+mpz_srcptr	pointer
 a	int
 ,	O
-mpz_srcptr	*
+mpz_srcptr	pointer
 d	int
 )	O
 {	O

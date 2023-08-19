@@ -12,7 +12,7 @@ BUFSIZ	int
 ;	O
 char	O
 *	O
-p	*
+p	pointer
 ;	O
 int	O
 rc	int
@@ -29,12 +29,12 @@ buf	array
 ,	O
 BUFSIZ	int
 ,	O
-stdin	*
+stdin	pointer
 )	O
 )	O
 perror	function
 (	O
-"fgets"	*
+"fgets"	pointer
 )	O
 ;	O
 buf	array
@@ -51,7 +51,7 @@ buf	array
 ;	O
 printf	function
 (	O
-"Read string (length %ld): "	*
+"Read string (length %ld): "	pointer
 ,	O
 (	O
 long	O
@@ -81,7 +81,7 @@ i	long
 )	O
 printf	function
 (	O
-"%02x "	*
+"%02x "	pointer
 ,	O
 (	O
 unsigned	O
@@ -96,17 +96,17 @@ i	long
 ;	O
 printf	function
 (	O
-"\n"	*
+"\n"	pointer
 )	O
 ;	O
 rc	int
 =	O
 idn2_to_unicode_8z8z	function
 (	O
-buf	*
+buf	pointer
 ,	O
 &	O
-p	*
+p	pointer
 ,	O
 0	int
 )	O
@@ -120,7 +120,7 @@ IDNA_SUCCESS	int
 {	O
 printf	function
 (	O
-"ToUnicode() failed (%d): %s\n"	*
+"ToUnicode() failed (%d): %s\n"	pointer
 ,	O
 rc	int
 ,	O
@@ -136,7 +136,7 @@ EXIT_FAILURE	int
 }	O
 printf	function
 (	O
-"ACE label (length %ld): '%s'\n"	*
+"ACE label (length %ld): '%s'\n"	pointer
 ,	O
 (	O
 long	O
@@ -144,15 +144,15 @@ int	O
 )	O
 strlen	function
 (	O
-p	*
+p	pointer
 )	O
 ,	O
-p	*
+p	pointer
 )	O
 ;	O
 free	function
 (	O
-p	*
+p	pointer
 )	O
 ;	O
 return	O

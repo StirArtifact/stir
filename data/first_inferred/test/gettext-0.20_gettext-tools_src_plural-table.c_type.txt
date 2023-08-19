@@ -6,159 +6,159 @@ plural_table	array
 =	O
 {	O
 {	O
-"ja"	*
+"ja"	pointer
 ,	O
-"Japanese"	*
-,	O
-"nplurals=1; plural=0;"	int
-}	O
-,	O
-{	O
-"vi"	*
-,	O
-"Vietnamese"	*
+"Japanese"	pointer
 ,	O
 "nplurals=1; plural=0;"	int
 }	O
 ,	O
 {	O
-"ko"	*
+"vi"	pointer
 ,	O
-"Korean"	*
+"Vietnamese"	pointer
 ,	O
 "nplurals=1; plural=0;"	int
 }	O
 ,	O
 {	O
-"en"	*
+"ko"	pointer
 ,	O
-"English"	*
+"Korean"	pointer
+,	O
+"nplurals=1; plural=0;"	int
+}	O
+,	O
+{	O
+"en"	pointer
+,	O
+"English"	pointer
 ,	O
 "nplurals=2; plural=(n != 1);"	int
 }	O
 ,	O
 {	O
-"de"	*
+"de"	pointer
 ,	O
-"German"	*
-,	O
-"nplurals=2; plural=(n != 1);"	int
-}	O
-,	O
-{	O
-"nl"	*
-,	O
-"Dutch"	*
+"German"	pointer
 ,	O
 "nplurals=2; plural=(n != 1);"	int
 }	O
 ,	O
 {	O
-"sv"	*
+"nl"	pointer
 ,	O
-"Swedish"	*
-,	O
-"nplurals=2; plural=(n != 1);"	int
-}	O
-,	O
-{	O
-"da"	*
-,	O
-"Danish"	*
+"Dutch"	pointer
 ,	O
 "nplurals=2; plural=(n != 1);"	int
 }	O
 ,	O
 {	O
-"no"	*
+"sv"	pointer
 ,	O
-"Norwegian"	*
-,	O
-"nplurals=2; plural=(n != 1);"	int
-}	O
-,	O
-{	O
-"nb"	*
-,	O
-"Norwegian Bokmal"	*
+"Swedish"	pointer
 ,	O
 "nplurals=2; plural=(n != 1);"	int
 }	O
 ,	O
 {	O
-"nn"	*
+"da"	pointer
 ,	O
-"Norwegian Nynorsk"	*
-,	O
-"nplurals=2; plural=(n != 1);"	int
-}	O
-,	O
-{	O
-"fo"	*
-,	O
-"Faroese"	*
+"Danish"	pointer
 ,	O
 "nplurals=2; plural=(n != 1);"	int
 }	O
 ,	O
 {	O
-"es"	*
+"no"	pointer
 ,	O
-"Spanish"	*
-,	O
-"nplurals=2; plural=(n != 1);"	int
-}	O
-,	O
-{	O
-"pt"	*
-,	O
-"Portuguese"	*
+"Norwegian"	pointer
 ,	O
 "nplurals=2; plural=(n != 1);"	int
 }	O
 ,	O
 {	O
-"it"	*
+"nb"	pointer
 ,	O
-"Italian"	*
-,	O
-"nplurals=2; plural=(n != 1);"	int
-}	O
-,	O
-{	O
-"bg"	*
-,	O
-"Bulgarian"	*
+"Norwegian Bokmal"	pointer
 ,	O
 "nplurals=2; plural=(n != 1);"	int
 }	O
 ,	O
 {	O
-"el"	*
+"nn"	pointer
 ,	O
-"Greek"	*
-,	O
-"nplurals=2; plural=(n != 1);"	int
-}	O
-,	O
-{	O
-"fi"	*
-,	O
-"Finnish"	*
+"Norwegian Nynorsk"	pointer
 ,	O
 "nplurals=2; plural=(n != 1);"	int
 }	O
 ,	O
 {	O
-"et"	*
+"fo"	pointer
 ,	O
-"Estonian"	*
+"Faroese"	pointer
 ,	O
 "nplurals=2; plural=(n != 1);"	int
 }	O
 ,	O
 {	O
-"he"	*
+"es"	pointer
+,	O
+"Spanish"	pointer
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"pt"	pointer
+,	O
+"Portuguese"	pointer
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"it"	pointer
+,	O
+"Italian"	pointer
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"bg"	pointer
+,	O
+"Bulgarian"	pointer
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"el"	pointer
+,	O
+"Greek"	pointer
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"fi"	pointer
+,	O
+"Finnish"	pointer
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"et"	pointer
+,	O
+"Estonian"	pointer
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"he"	pointer
 ,	O
 "Hebrew"	int
 ,	O
@@ -166,137 +166,137 @@ plural_table	array
 }	O
 ,	O
 {	O
-"eo"	*
+"eo"	pointer
 ,	O
-"Esperanto"	*
-,	O
-"nplurals=2; plural=(n != 1);"	int
-}	O
-,	O
-{	O
-"hu"	*
-,	O
-"Hungarian"	*
+"Esperanto"	pointer
 ,	O
 "nplurals=2; plural=(n != 1);"	int
 }	O
 ,	O
 {	O
-"tr"	*
+"hu"	pointer
 ,	O
-"Turkish"	*
+"Hungarian"	pointer
 ,	O
 "nplurals=2; plural=(n != 1);"	int
 }	O
 ,	O
 {	O
-"pt_BR"	*
+"tr"	pointer
 ,	O
-"Brazilian"	*
+"Turkish"	pointer
+,	O
+"nplurals=2; plural=(n != 1);"	int
+}	O
+,	O
+{	O
+"pt_BR"	pointer
+,	O
+"Brazilian"	pointer
 ,	O
 "nplurals=2; plural=(n > 1);"	int
 }	O
 ,	O
 {	O
-"fr"	*
+"fr"	pointer
 ,	O
-"French"	*
+"French"	pointer
 ,	O
 "nplurals=2; plural=(n > 1);"	int
 }	O
 ,	O
 {	O
-"lv"	*
+"lv"	pointer
 ,	O
-"Latvian"	*
+"Latvian"	pointer
 ,	O
 "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);"	int
 }	O
 ,	O
 {	O
-"ga"	*
+"ga"	pointer
 ,	O
-"Irish"	*
+"Irish"	pointer
 ,	O
 "nplurals=3; plural=n==1 ? 0 : n==2 ? 1 : 2;"	int
 }	O
 ,	O
 {	O
-"ro"	*
+"ro"	pointer
 ,	O
-"Romanian"	*
+"Romanian"	pointer
 ,	O
 "nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2;"	int
 }	O
 ,	O
 {	O
-"lt"	*
+"lt"	pointer
 ,	O
-"Lithuanian"	*
+"Lithuanian"	pointer
 ,	O
 "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);"	int
 }	O
 ,	O
 {	O
-"ru"	*
+"ru"	pointer
 ,	O
-"Russian"	*
-,	O
-"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);"	int
-}	O
-,	O
-{	O
-"uk"	*
-,	O
-"Ukrainian"	*
+"Russian"	pointer
 ,	O
 "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);"	int
 }	O
 ,	O
 {	O
-"be"	*
+"uk"	pointer
 ,	O
-"Belarusian"	*
-,	O
-"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);"	int
-}	O
-,	O
-{	O
-"sr"	*
-,	O
-"Serbian"	*
+"Ukrainian"	pointer
 ,	O
 "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);"	int
 }	O
 ,	O
 {	O
-"hr"	*
+"be"	pointer
 ,	O
-"Croatian"	*
+"Belarusian"	pointer
 ,	O
 "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);"	int
 }	O
 ,	O
 {	O
-"cs"	*
+"sr"	pointer
 ,	O
-"Czech"	*
+"Serbian"	pointer
+,	O
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);"	int
+}	O
+,	O
+{	O
+"hr"	pointer
+,	O
+"Croatian"	pointer
+,	O
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);"	int
+}	O
+,	O
+{	O
+"cs"	pointer
+,	O
+"Czech"	pointer
 ,	O
 "nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;"	int
 }	O
 ,	O
 {	O
-"sk"	*
+"sk"	pointer
 ,	O
-"Slovak"	*
+"Slovak"	pointer
 ,	O
 "nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;"	int
 }	O
 ,	O
 {	O
-"pl"	*
+"pl"	pointer
 ,	O
-"Polish"	*
+"Polish"	pointer
 ,	O
 "nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);"	int
 }	O

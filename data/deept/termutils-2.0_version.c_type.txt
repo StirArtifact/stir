@@ -1,6 +1,0 @@
-char	O
-*	O
-version_string	pointer
-=	O
-"2.0"	pointer
-;	O

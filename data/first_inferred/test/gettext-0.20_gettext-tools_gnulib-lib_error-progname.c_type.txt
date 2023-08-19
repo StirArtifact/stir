@@ -16,9 +16,9 @@ fprintf	function
 (	O
 stderr	O
 ,	O
-"%s: "	*
+"%s: "	pointer
 ,	O
-program_name	*
+program_name	pointer
 )	O
 ;	O
 }	O

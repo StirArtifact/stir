@@ -6,7 +6,7 @@ info_doc	array
 =	O
 N_	O
 (	O
-"show Mailutils configuration"	*
+"show Mailutils configuration"	pointer
 )	O
 ;	O
 static	O
@@ -17,7 +17,7 @@ info_args_doc	array
 =	O
 N_	O
 (	O
-"[capa...]"	*
+"[capa...]"	pointer
 )	O
 ;	O
 static	O
@@ -33,7 +33,7 @@ info_options	array
 =	O
 {	O
 {	O
-"verbose"	*
+"verbose"	pointer
 ,	O
 'v'	O
 ,	O
@@ -43,7 +43,7 @@ MU_OPTION_DEFAULT	int
 ,	O
 N_	O
 (	O
-"increase output verbosity"	*
+"increase output verbosity"	pointer
 )	O
 ,	O
 mu_c_bool	int
@@ -64,7 +64,7 @@ argc	int
 char	O
 *	O
 *	O
-argv	*
+argv	pointer
 )	O
 {	O
 mu_action_getopt	function
@@ -73,13 +73,13 @@ mu_action_getopt	function
 argc	long
 ,	O
 &	O
-argv	*
+argv	pointer
 ,	O
-info_options	*
+info_options	pointer
 ,	O
-info_doc	*
+info_doc	pointer
 ,	O
-info_args_doc	*
+info_args_doc	pointer
 )	O
 ;	O
 if	O
@@ -90,7 +90,7 @@ argc	long
 )	O
 mu_format_options	function
 (	O
-mu_strout	*
+mu_strout	pointer
 ,	O
 verbose	int
 )	O
@@ -122,11 +122,11 @@ const	O
 struct	O
 mu_conf_option	struct
 *	O
-opt	*
+opt	pointer
 =	O
 mu_check_option	function
 (	O
-argv	*
+argv	pointer
 [	O
 i	int
 ]	O
@@ -134,7 +134,7 @@ i	int
 ;	O
 if	O
 (	O
-opt	*
+opt	pointer
 )	O
 {	O
 found	int
@@ -142,9 +142,9 @@ found	int
 ;	O
 mu_format_conf_option	function
 (	O
-mu_strout	*
+mu_strout	pointer
 ,	O
-opt	*
+opt	pointer
 ,	O
 verbose	int
 )	O

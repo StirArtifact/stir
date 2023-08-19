@@ -1,12 +1,12 @@
 boolean	int
 fsysdep_file_exists	function
 (	O
-zfile	*
+zfile	pointer
 )	O
 const	O
 char	O
 *	O
-zfile	*
+zfile	pointer
 ;	O
 {	O
 struct	O
@@ -20,7 +20,7 @@ stat	struct
 char	O
 *	O
 )	O
-zfile	*
+zfile	pointer
 ,	O
 &	O
 s	struct

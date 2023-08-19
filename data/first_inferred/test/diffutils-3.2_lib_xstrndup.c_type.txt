@@ -5,7 +5,7 @@ xstrndup	function
 const	O
 char	O
 *	O
-string	*
+string	pointer
 ,	O
 size_t	long
 n	long
@@ -17,7 +17,7 @@ s	long
 =	O
 strndup	function
 (	O
-string	*
+string	pointer
 ,	O
 n	long
 )	O

@@ -10,238 +10,238 @@ flat_blurb	function
 (	O
 FILE	struct
 *	O
-file	*
+file	pointer
 )	O
 {	O
 fputs	function
 (	O
-"\n"	*
+"\n"	pointer
 ,	O
-file	*
+file	pointer
 )	O
 ;	O
 fputs	function
 (	O
-" %         the percentage of the total running time of the\n"	*
+" %         the percentage of the total running time of the\n"	pointer
 ,	O
-file	*
+file	pointer
 )	O
 ;	O
 fputs	function
 (	O
-"time       program used by this function.\n"	*
+"time       program used by this function.\n"	pointer
 ,	O
-file	*
+file	pointer
 )	O
 ;	O
 fputs	function
 (	O
-"\n"	*
+"\n"	pointer
 ,	O
-file	*
+file	pointer
 )	O
 ;	O
 fputs	function
 (	O
-"cumulative a running sum of the number of seconds accounted\n"	*
+"cumulative a running sum of the number of seconds accounted\n"	pointer
 ,	O
-file	*
+file	pointer
 )	O
 ;	O
 fputs	function
 (	O
-" seconds   for by this function and those listed above it.\n"	*
+" seconds   for by this function and those listed above it.\n"	pointer
 ,	O
-file	*
+file	pointer
 )	O
 ;	O
 fputs	function
 (	O
-"\n"	*
+"\n"	pointer
 ,	O
-file	*
+file	pointer
 )	O
 ;	O
 fputs	function
 (	O
-" self      the number of seconds accounted for by this\n"	*
+" self      the number of seconds accounted for by this\n"	pointer
 ,	O
-file	*
+file	pointer
 )	O
 ;	O
 fputs	function
 (	O
-"seconds    function alone.  This is the major sort for this\n"	*
+"seconds    function alone.  This is the major sort for this\n"	pointer
 ,	O
-file	*
+file	pointer
 )	O
 ;	O
 fputs	function
 (	O
-"           listing.\n"	*
+"           listing.\n"	pointer
 ,	O
-file	*
+file	pointer
 )	O
 ;	O
 fputs	function
 (	O
-"\n"	*
+"\n"	pointer
 ,	O
-file	*
+file	pointer
 )	O
 ;	O
 fputs	function
 (	O
-"calls      the number of times this function was invoked, if\n"	*
+"calls      the number of times this function was invoked, if\n"	pointer
 ,	O
-file	*
+file	pointer
 )	O
 ;	O
 fputs	function
 (	O
-"           this function is profiled, else blank.\n"	*
+"           this function is profiled, else blank.\n"	pointer
 ,	O
-file	*
+file	pointer
 )	O
 ;	O
 fputs	function
 (	O
-"\n"	*
+"\n"	pointer
 ,	O
-file	*
+file	pointer
 )	O
 ;	O
 fputs	function
 (	O
-" self      the average number of milliseconds spent in this\n"	*
+" self      the average number of milliseconds spent in this\n"	pointer
 ,	O
-file	*
+file	pointer
 )	O
 ;	O
 fputs	function
 (	O
-"ms/call    function per call, if this function is profiled,\n"	*
+"ms/call    function per call, if this function is profiled,\n"	pointer
 ,	O
-file	*
+file	pointer
 )	O
 ;	O
 fputs	function
 (	O
-"	   else blank.\n"	*
+"	   else blank.\n"	pointer
 ,	O
-file	*
+file	pointer
 )	O
 ;	O
 fputs	function
 (	O
-"\n"	*
+"\n"	pointer
 ,	O
-file	*
+file	pointer
 )	O
 ;	O
 fputs	function
 (	O
-" total     the average number of milliseconds spent in this\n"	*
+" total     the average number of milliseconds spent in this\n"	pointer
 ,	O
-file	*
+file	pointer
 )	O
 ;	O
 fputs	function
 (	O
-"ms/call    function and its descendents per call, if this\n"	*
+"ms/call    function and its descendents per call, if this\n"	pointer
 ,	O
-file	*
+file	pointer
 )	O
 ;	O
 fputs	function
 (	O
-"	   function is profiled, else blank.\n"	*
+"	   function is profiled, else blank.\n"	pointer
 ,	O
-file	*
+file	pointer
 )	O
 ;	O
 fputs	function
 (	O
-"\n"	*
+"\n"	pointer
 ,	O
-file	*
+file	pointer
 )	O
 ;	O
 fputs	function
 (	O
-"name       the name of the function.  This is the minor sort\n"	*
+"name       the name of the function.  This is the minor sort\n"	pointer
 ,	O
-file	*
+file	pointer
 )	O
 ;	O
 fputs	function
 (	O
-"           for this listing. The index shows the location of\n"	*
+"           for this listing. The index shows the location of\n"	pointer
 ,	O
-file	*
+file	pointer
 )	O
 ;	O
 fputs	function
 (	O
-"	   the function in the gprof listing. If the index is\n"	*
+"	   the function in the gprof listing. If the index is\n"	pointer
 ,	O
-file	*
+file	pointer
 )	O
 ;	O
 fputs	function
 (	O
-"	   in parenthesis it shows where it would appear in\n"	*
+"	   in parenthesis it shows where it would appear in\n"	pointer
 ,	O
-file	*
+file	pointer
 )	O
 ;	O
 fputs	function
 (	O
-"	   the gprof listing if it were to be printed.\n"	*
+"	   the gprof listing if it were to be printed.\n"	pointer
 ,	O
-file	*
+file	pointer
 )	O
 ;	O
 fputs	function
 (	O
-"\n"	*
+"\n"	pointer
 ,	O
-file	*
+file	pointer
 )	O
 ;	O
 fputs	function
 (	O
-"Copyright (C) 2012-2020 Free Software Foundation, Inc.\n"	*
+"Copyright (C) 2012-2020 Free Software Foundation, Inc.\n"	pointer
 ,	O
-file	*
+file	pointer
 )	O
 ;	O
 fputs	function
 (	O
-"\n"	*
+"\n"	pointer
 ,	O
-file	*
+file	pointer
 )	O
 ;	O
 fputs	function
 (	O
-"Copying and distribution of this file, with or without modification,\n"	*
+"Copying and distribution of this file, with or without modification,\n"	pointer
 ,	O
-file	*
+file	pointer
 )	O
 ;	O
 fputs	function
 (	O
-"are permitted in any medium without royalty provided the copyright\n"	*
+"are permitted in any medium without royalty provided the copyright\n"	pointer
 ,	O
-file	*
+file	pointer
 )	O
 ;	O
 fputs	function
 (	O
-"notice and this notice are preserved.\n"	*
+"notice and this notice are preserved.\n"	pointer
 ,	O
-file	*
+file	pointer
 )	O
 ;	O
 }	O

@@ -8,7 +8,7 @@ UNUSED	O
 char	O
 *	O
 *	O
-argv	*
+argv	pointer
 UNUSED	O
 )	O
 {	O
@@ -19,7 +19,7 @@ for	O
 )	O
 {	O
 uint8_t	char
-buffer	*
+buffer	pointer
 [	O
 CHUNK_SIZE	int
 ]	O
@@ -42,18 +42,18 @@ nbytes	int
 =	O
 fread	function
 (	O
-buffer	*
+buffer	pointer
 ,	O
 1	int
 ,	O
 CHUNK_SIZE	int
 ,	O
-stdin	*
+stdin	pointer
 )	O
 ;	O
 base16_encode_update	O
 (	O
-result	*
+result	pointer
 ,	O
 nbytes	int
 ,	O
@@ -67,7 +67,7 @@ BASE16_ENCODE_LENGTH	O
 nbytes	int
 )	O
 ;	O
-result	*
+result	pointer
 [	O
 encoded_bytes	int
 ++	O
@@ -86,13 +86,13 @@ if	O
 (	O
 ferror	function
 (	O
-stdin	*
+stdin	pointer
 )	O
 )	O
 {	O
 werror	function
 (	O
-"Error reading file: %s\n"	*
+"Error reading file: %s\n"	pointer
 ,	O
 strerror	function
 (	O
@@ -109,7 +109,7 @@ if	O
 !	O
 write_data	function
 (	O
-stdout	*
+stdout	pointer
 ,	O
 encoded_bytes	int
 ,	O
@@ -118,7 +118,7 @@ result	array
 ||	O
 fflush	function
 (	O
-stdout	*
+stdout	pointer
 )	O
 !=	O
 0	int
@@ -126,7 +126,7 @@ stdout	*
 {	O
 werror	function
 (	O
-"Error writing file: %s\n"	*
+"Error writing file: %s\n"	pointer
 ,	O
 strerror	function
 (	O
@@ -147,7 +147,7 @@ if	O
 !	O
 write_data	function
 (	O
-stdout	*
+stdout	pointer
 ,	O
 encoded_bytes	int
 ,	O
@@ -157,7 +157,7 @@ result	array
 {	O
 werror	function
 (	O
-"Error writing file: %s\n"	*
+"Error writing file: %s\n"	pointer
 ,	O
 strerror	function
 (	O

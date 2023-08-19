@@ -13,7 +13,7 @@ k	int
 {	O
 gsl_multiset	struct
 *	O
-c	*
+c	pointer
 ;	O
 if	O
 (	O
@@ -24,7 +24,7 @@ n	long
 {	O
 GSL_ERROR_VAL	O
 (	O
-"multiset parameter n must be positive integer"	*
+"multiset parameter n must be positive integer"	pointer
 ,	O
 GSL_EDOM	int
 ,	O
@@ -32,7 +32,7 @@ GSL_EDOM	int
 )	O
 ;	O
 }	O
-c	*
+c	pointer
 =	O
 (	O
 gsl_multiset	struct
@@ -55,7 +55,7 @@ c	int
 {	O
 GSL_ERROR_VAL	O
 (	O
-"failed to allocate space for multiset struct"	*
+"failed to allocate space for multiset struct"	pointer
 ,	O
 GSL_ENOMEM	int
 ,	O
@@ -70,9 +70,9 @@ k	long
 0	int
 )	O
 {	O
-c	*
+c	pointer
 ->	O
-data	*
+data	pointer
 =	O
 (	O
 size_t	long
@@ -90,21 +90,21 @@ size_t	long
 ;	O
 if	O
 (	O
-c	*
+c	pointer
 ->	O
-data	*
+data	pointer
 ==	O
 0	int
 )	O
 {	O
 free	function
 (	O
-c	*
+c	pointer
 )	O
 ;	O
 GSL_ERROR_VAL	O
 (	O
-"failed to allocate space for multiset data"	*
+"failed to allocate space for multiset data"	pointer
 ,	O
 GSL_ENOMEM	int
 ,	O
@@ -115,20 +115,20 @@ GSL_ENOMEM	int
 }	O
 else	O
 {	O
-c	*
+c	pointer
 ->	O
-data	*
+data	pointer
 =	O
 0	int
 ;	O
 }	O
-c	*
+c	pointer
 ->	O
 n	long
 =	O
 n	long
 ;	O
-c	*
+c	pointer
 ->	O
 k	long
 =	O
@@ -156,7 +156,7 @@ i	long
 ;	O
 gsl_multiset	struct
 *	O
-c	*
+c	pointer
 =	O
 gsl_multiset_alloc	function
 (	O
@@ -188,9 +188,9 @@ i	long
 ++	O
 )	O
 {	O
-c	*
+c	pointer
 ->	O
-data	*
+data	pointer
 [	O
 i	long
 ]	O
@@ -207,14 +207,14 @@ gsl_multiset_init_first	function
 (	O
 gsl_multiset	struct
 *	O
-c	*
+c	pointer
 )	O
 {	O
 const	O
 size_t	long
 k	long
 =	O
-c	*
+c	pointer
 ->	O
 k	long
 ;	O
@@ -235,9 +235,9 @@ i	long
 ++	O
 )	O
 {	O
-c	*
+c	pointer
 ->	O
-data	*
+data	pointer
 [	O
 i	long
 ]	O
@@ -251,14 +251,14 @@ gsl_multiset_init_last	function
 (	O
 gsl_multiset	struct
 *	O
-c	*
+c	pointer
 )	O
 {	O
 const	O
 size_t	long
 k	long
 =	O
-c	*
+c	pointer
 ->	O
 k	long
 ;	O
@@ -268,7 +268,7 @@ i	long
 size_t	long
 n	long
 =	O
-c	*
+c	pointer
 ->	O
 n	long
 ;	O
@@ -286,9 +286,9 @@ i	long
 ++	O
 )	O
 {	O
-c	*
+c	pointer
 ->	O
-data	*
+data	pointer
 [	O
 i	long
 ]	O
@@ -304,17 +304,17 @@ gsl_multiset_free	function
 (	O
 gsl_multiset	struct
 *	O
-c	*
+c	pointer
 )	O
 {	O
 RETURN_IF_NULL	O
 (	O
-c	*
+c	pointer
 )	O
 ;	O
 if	O
 (	O
-c	*
+c	pointer
 ->	O
 k	long
 >	O
@@ -322,14 +322,14 @@ k	long
 )	O
 free	function
 (	O
-c	*
+c	pointer
 ->	O
-data	*
+data	pointer
 )	O
 ;	O
 free	function
 (	O
-c	*
+c	pointer
 )	O
 ;	O
 }	O

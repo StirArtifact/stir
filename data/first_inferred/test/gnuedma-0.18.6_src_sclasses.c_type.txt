@@ -8,12 +8,12 @@ cid	int
 ;	O
 edma_log	function
 (	O
-"Registering System Classes..."	*
+"Registering System Classes..."	pointer
 )	O
 ;	O
 edma_log	function
 (	O
-"  Adding EDMA_EXCEPTION class..."	*
+"  Adding EDMA_EXCEPTION class..."	pointer
 )	O
 ;	O
 cid	long
@@ -43,7 +43,7 @@ EDMA_LOCAL_REPO	int
 ;	O
 edma_log	function
 (	O
-"System Classes Registerd"	*
+"System Classes Registerd"	pointer
 )	O
 ;	O
 return	O

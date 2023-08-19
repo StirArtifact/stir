@@ -11,11 +11,11 @@ sockfd	int
 struct	O
 sockaddr	struct
 *	O
-serv	*
+serv	pointer
 )	O
 {	O
 char	O
-p	*
+p	pointer
 [	O
 9	int
 +	O
@@ -24,24 +24,24 @@ p	*
 ;	O
 memset	function
 (	O
-p	*
+p	pointer
 ,	O
 0	int
 ,	O
 sizeof	O
 (	O
-p	*
+p	pointer
 )	O
 )	O
 ;	O
-p	*
+p	pointer
 [	O
 0	int
 ]	O
 =	O
 4	int
 ;	O
-p	*
+p	pointer
 [	O
 1	int
 ]	O
@@ -55,7 +55,7 @@ int	O
 *	O
 )	O
 (	O
-p	*
+p	pointer
 +	O
 2	int
 )	O
@@ -71,7 +71,7 @@ struct	O
 sockaddr_in	struct
 *	O
 )	O
-serv	*
+serv	pointer
 )	O
 ->	O
 sin_port	short
@@ -84,7 +84,7 @@ in_addr	struct
 *	O
 )	O
 (	O
-p	*
+p	pointer
 +	O
 4	int
 )	O
@@ -95,18 +95,18 @@ struct	O
 sockaddr_in	struct
 *	O
 )	O
-serv	*
+serv	pointer
 )	O
 ->	O
 sin_addr	struct
 ;	O
 memmove	function
 (	O
-p	*
+p	pointer
 +	O
 8	int
 ,	O
-SOCKS4USER	*
+SOCKS4USER	pointer
 ,	O
 9	int
 )	O
@@ -117,7 +117,7 @@ write	function
 (	O
 sockfd	int
 ,	O
-p	*
+p	pointer
 ,	O
 10	int
 )	O
@@ -131,7 +131,7 @@ read	function
 (	O
 sockfd	int
 ,	O
-p	*
+p	pointer
 ,	O
 8	int
 )	O
@@ -142,7 +142,7 @@ p	*
 if	O
 (	O
 (	O
-p	*
+p	pointer
 [	O
 0	int
 ]	O
@@ -151,7 +151,7 @@ p	*
 )	O
 &&	O
 (	O
-p	*
+p	pointer
 [	O
 1	int
 ]	O
@@ -165,20 +165,20 @@ return	O
 else	O
 fprintf	function
 (	O
-stderr	*
+stderr	pointer
 ,	O
-"%s %s: s4con:SOCKS4 server error reply:%02X %02X\n"	*
+"%s %s: s4con:SOCKS4 server error reply:%02X %02X\n"	pointer
 ,	O
-progname	*
+progname	pointer
 ,	O
 __FILE__	O
 ,	O
-p	*
+p	pointer
 [	O
 0	int
 ]	O
 ,	O
-p	*
+p	pointer
 [	O
 1	int
 ]	O
@@ -200,7 +200,7 @@ sockfd	int
 struct	O
 sockaddr	struct
 *	O
-addr	*
+addr	pointer
 )	O
 {	O
 int	O
@@ -212,7 +212,7 @@ offset	int
 ;	O
 char	O
 *	O
-p	*
+p	pointer
 ;	O
 ret	array
 =	O
@@ -249,11 +249,11 @@ ret	array
 {	O
 fprintf	function
 (	O
-stderr	*
+stderr	pointer
 ,	O
-"%s %s: CONVIASOCKS4_MAIN:connect:Connect to myaddr\n"	*
+"%s %s: CONVIASOCKS4_MAIN:connect:Connect to myaddr\n"	pointer
 ,	O
-progname	*
+progname	pointer
 ,	O
 __FILE__	O
 )	O
@@ -274,12 +274,12 @@ SOCKS4_CONNECT	int
 {	O
 fprintf	function
 (	O
-stderr	*
+stderr	pointer
 ,	O
-"%s %s: "	*
-"CONVIASOCKS4_MAIN:error method!This message shouldn't be printed!\n"	*
+"%s %s: "	pointer
+"CONVIASOCKS4_MAIN:error method!This message shouldn't be printed!\n"	pointer
 ,	O
-progname	*
+progname	pointer
 ,	O
 __FILE__	O
 )	O
@@ -300,7 +300,7 @@ struct	O
 sockaddr	struct
 *	O
 )	O
-addr	*
+addr	pointer
 )	O
 ;	O
 if	O
@@ -327,12 +327,12 @@ sockfd	int
 struct	O
 timeval	struct
 *	O
-start	*
+start	pointer
 ,	O
 struct	O
 timeval	struct
 *	O
-end	*
+end	pointer
 ,	O
 struct	O
 thread_mem	struct
@@ -349,7 +349,7 @@ offset	int
 ;	O
 char	O
 *	O
-p	*
+p	pointer
 ;	O
 ret	array
 =	O
@@ -386,11 +386,11 @@ ret	array
 {	O
 fprintf	function
 (	O
-stderr	*
+stderr	pointer
 ,	O
-"%s %s: CONVIASOCKS4:connect:Connect to myaddr\n"	*
+"%s %s: CONVIASOCKS4:connect:Connect to myaddr\n"	pointer
 ,	O
-progname	*
+progname	pointer
 ,	O
 __FILE__	O
 )	O
@@ -411,12 +411,12 @@ SOCKS4_CONNECT	int
 {	O
 fprintf	function
 (	O
-stderr	*
+stderr	pointer
 ,	O
-"%s %s: "	*
-" CONVIASOCKS4:error method!This message shouldn't be printed!\n"	*
+"%s %s: "	pointer
+" CONVIASOCKS4:error method!This message shouldn't be printed!\n"	pointer
 ,	O
-progname	*
+progname	pointer
 ,	O
 __FILE__	O
 )	O
@@ -428,7 +428,7 @@ abort	function
 }	O
 gettimeofday	function
 (	O
-start	*
+start	pointer
 ,	O
 NULL	O
 )	O
@@ -467,7 +467,7 @@ return	O
 ;	O
 gettimeofday	function
 (	O
-end	*
+end	pointer
 ,	O
 NULL	O
 )	O
@@ -485,17 +485,17 @@ sockfd	int
 struct	O
 timeval	struct
 *	O
-start_CON	*
+start_CON	pointer
 ,	O
 struct	O
 timeval	struct
 *	O
-end_CON	*
+end_CON	pointer
 ,	O
 struct	O
 timeval	struct
 *	O
-start_GET	*
+start_GET	pointer
 ,	O
 struct	O
 thread_mem	struct
@@ -508,7 +508,7 @@ ret	int
 ;	O
 gettimeofday	function
 (	O
-start_CON	*
+start_CON	pointer
 ,	O
 NULL	O
 )	O
@@ -545,7 +545,7 @@ return	O
 ;	O
 gettimeofday	function
 (	O
-end_CON	*
+end_CON	pointer
 ,	O
 NULL	O
 )	O
@@ -555,7 +555,7 @@ GET	function
 (	O
 sockfd	int
 ,	O
-start_GET	*
+start_GET	pointer
 ,	O
 thread_mem	struct
 )	O

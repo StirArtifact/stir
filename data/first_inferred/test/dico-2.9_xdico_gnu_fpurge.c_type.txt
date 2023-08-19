@@ -3,12 +3,12 @@ fpurge	function
 (	O
 FILE	struct
 *	O
-fp	*
+fp	pointer
 )	O
 {	O
 __fpurge	function
 (	O
-fp	*
+fp	pointer
 )	O
 ;	O
 return	O

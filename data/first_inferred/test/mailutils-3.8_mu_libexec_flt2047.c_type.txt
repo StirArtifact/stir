@@ -5,7 +5,7 @@ flt2047_docstring	array
 =	O
 N_	O
 (	O
-"decode/encode email message headers"	*
+"decode/encode email message headers"	pointer
 )	O
 ;	O
 static	O
@@ -16,7 +16,7 @@ flt2047_args_doc	array
 =	O
 N_	O
 (	O
-"[text]"	*
+"[text]"	pointer
 )	O
 ;	O
 static	O
@@ -35,17 +35,17 @@ static	O
 const	O
 char	O
 *	O
-charset	*
+charset	pointer
 =	O
-"iso-8859-1"	*
+"iso-8859-1"	pointer
 ;	O
 static	O
 const	O
 char	O
 *	O
-encoding	*
+encoding	pointer
 =	O
-"quoted-printable"	*
+"quoted-printable"	pointer
 ;	O
 static	O
 void	O
@@ -54,17 +54,17 @@ set_encode_mode	function
 struct	O
 mu_parseopt	struct
 *	O
-po	*
+po	pointer
 ,	O
 struct	O
 mu_option	struct
 *	O
-opt	*
+opt	pointer
 ,	O
 char	O
 const	O
 *	O
-arg	*
+arg	pointer
 )	O
 {	O
 decode_mode	int
@@ -81,7 +81,7 @@ flt2047_options	array
 =	O
 {	O
 {	O
-"encode"	*
+"encode"	pointer
 ,	O
 'e'	O
 ,	O
@@ -91,7 +91,7 @@ MU_OPTION_DEFAULT	int
 ,	O
 N_	O
 (	O
-"encode the input (default)"	*
+"encode the input (default)"	pointer
 )	O
 ,	O
 mu_c_string	int
@@ -102,7 +102,7 @@ set_encode_mode	function
 }	O
 ,	O
 {	O
-"decode"	*
+"decode"	pointer
 ,	O
 'd'	O
 ,	O
@@ -112,7 +112,7 @@ MU_OPTION_DEFAULT	int
 ,	O
 N_	O
 (	O
-"decode the input"	*
+"decode the input"	pointer
 )	O
 ,	O
 mu_c_bool	int
@@ -122,7 +122,7 @@ decode_mode	int
 }	O
 ,	O
 {	O
-"newline"	*
+"newline"	pointer
 ,	O
 'n'	O
 ,	O
@@ -132,7 +132,7 @@ MU_OPTION_DEFAULT	int
 ,	O
 N_	O
 (	O
-"print additional newline"	*
+"print additional newline"	pointer
 )	O
 ,	O
 mu_c_bool	int
@@ -142,49 +142,49 @@ newline_option	int
 }	O
 ,	O
 {	O
-"charset"	*
+"charset"	pointer
 ,	O
 'c'	O
 ,	O
 N_	O
 (	O
-"NAME"	*
+"NAME"	pointer
 )	O
 ,	O
 MU_OPTION_DEFAULT	int
 ,	O
 N_	O
 (	O
-"set charset (default: iso-8859-1)"	*
+"set charset (default: iso-8859-1)"	pointer
 )	O
 ,	O
 mu_c_string	int
 ,	O
 &	O
-charset	*
+charset	pointer
 }	O
 ,	O
 {	O
-"encoding"	*
+"encoding"	pointer
 ,	O
 'E'	O
 ,	O
 N_	O
 (	O
-"NAME"	*
+"NAME"	pointer
 )	O
 ,	O
 MU_OPTION_DEFAULT	int
 ,	O
 N_	O
 (	O
-"set encoding (default: quoted-printable)"	*
+"set encoding (default: quoted-printable)"	pointer
 )	O
 ,	O
 mu_c_string	int
 ,	O
 &	O
-encoding	*
+encoding	pointer
 }	O
 ,	O
 MU_OPTION_END	O
@@ -199,7 +199,7 @@ argc	int
 char	O
 *	O
 *	O
-argv	*
+argv	pointer
 )	O
 {	O
 int	O
@@ -207,7 +207,7 @@ rc	int
 ;	O
 char	O
 *	O
-p	*
+p	pointer
 ;	O
 mu_action_getopt	function
 (	O
@@ -215,13 +215,13 @@ mu_action_getopt	function
 argc	long
 ,	O
 &	O
-argv	*
+argv	pointer
 ,	O
-flt2047_options	*
+flt2047_options	pointer
 ,	O
-flt2047_docstring	*
+flt2047_docstring	pointer
 ,	O
-flt2047_args_doc	*
+flt2047_args_doc	pointer
 )	O
 ;	O
 if	O
@@ -231,7 +231,7 @@ argc	long
 {	O
 char	O
 *	O
-p	*
+p	pointer
 ;	O
 while	O
 (	O
@@ -242,26 +242,26 @@ argc	long
 const	O
 char	O
 *	O
-text	*
+text	pointer
 =	O
 *	O
-argv	*
+argv	pointer
 ++	O
 ;	O
 if	O
 (	O
-decode_mode	*
+decode_mode	pointer
 )	O
 rc	int
 =	O
 mu_rfc2047_decode	function
 (	O
-charset	*
+charset	pointer
 ,	O
-text	*
+text	pointer
 ,	O
 &	O
-p	*
+p	pointer
 )	O
 ;	O
 else	O
@@ -269,14 +269,14 @@ rc	int
 =	O
 mu_rfc2047_encode	function
 (	O
-charset	*
+charset	pointer
 ,	O
-encoding	*
+encoding	pointer
 ,	O
-text	*
+text	pointer
 ,	O
 &	O
-p	*
+p	pointer
 )	O
 ;	O
 if	O
@@ -286,7 +286,7 @@ rc	int
 {	O
 mu_error	function
 (	O
-"%s"	*
+"%s"	pointer
 ,	O
 mu_strerror	function
 (	O
@@ -300,9 +300,9 @@ return	O
 }	O
 mu_printf	function
 (	O
-"%s\n"	*
+"%s\n"	pointer
 ,	O
-p	*
+p	pointer
 )	O
 ;	O
 }	O
@@ -318,7 +318,7 @@ n	long
 ;	O
 char	O
 *	O
-buf	*
+buf	pointer
 =	O
 NULL	O
 ;	O
@@ -329,10 +329,10 @@ rc	int
 =	O
 mu_stream_getline	function
 (	O
-mu_strin	*
+mu_strin	pointer
 ,	O
 &	O
-buf	*
+buf	pointer
 ,	O
 &	O
 size	long
@@ -351,7 +351,7 @@ n	long
 {	O
 mu_rtrim_class	function
 (	O
-buf	*
+buf	pointer
 ,	O
 MU_CTYPE_SPACE	int
 )	O
@@ -364,12 +364,12 @@ rc	int
 =	O
 mu_rfc2047_decode	function
 (	O
-charset	*
+charset	pointer
 ,	O
-buf	*
+buf	pointer
 ,	O
 &	O
-p	*
+p	pointer
 )	O
 ;	O
 else	O
@@ -377,14 +377,14 @@ rc	int
 =	O
 mu_rfc2047_encode	function
 (	O
-charset	*
+charset	pointer
 ,	O
-encoding	*
+encoding	pointer
 ,	O
-buf	*
+buf	pointer
 ,	O
 &	O
-p	*
+p	pointer
 )	O
 ;	O
 if	O
@@ -394,7 +394,7 @@ rc	int
 {	O
 mu_error	function
 (	O
-"%s"	*
+"%s"	pointer
 ,	O
 mu_strerror	function
 (	O
@@ -408,16 +408,16 @@ return	O
 }	O
 mu_printf	function
 (	O
-"%s\n"	*
+"%s\n"	pointer
 ,	O
-p	*
+p	pointer
 )	O
 ;	O
 }	O
 }	O
 mu_stream_flush	function
 (	O
-mu_strout	*
+mu_strout	pointer
 )	O
 ;	O
 return	O

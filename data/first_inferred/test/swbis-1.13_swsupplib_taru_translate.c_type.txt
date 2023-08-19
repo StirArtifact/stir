@@ -32,13 +32,13 @@ ret	int
 ;	O
 DEFER	struct
 *	O
-defer	*
+defer	pointer
 =	O
 NULL	O
 ;	O
 TARU	struct
 *	O
-taru	*
+taru	pointer
 =	O
 taru_create	function
 (	O
@@ -49,7 +49,7 @@ pipe	function
 fpipe	struct
 )	O
 ;	O
-parent	*
+parent	pointer
 =	O
 swfork	function
 (	O
@@ -64,12 +64,12 @@ NULL	O
 ;	O
 if	O
 (	O
-parent	*
+parent	pointer
 ==	O
 0	int
 )	O
 {	O
-close	*
+close	pointer
 (	O
 fpipe	array
 [	O
@@ -101,7 +101,7 @@ parent	int
 0	int
 )	O
 {	O
-close	*
+close	pointer
 (	O
 fpipe	array
 [	O
@@ -113,7 +113,7 @@ ret	int
 =	O
 taru_process_copy_out	function
 (	O
-taru	*
+taru	pointer
 ,	O
 fpipe	array
 [	O
@@ -151,7 +151,7 @@ waitpid	function
 (	O
 pid_t	int
 )	O
-parent	*
+parent	pointer
 ,	O
 &	O
 status	int

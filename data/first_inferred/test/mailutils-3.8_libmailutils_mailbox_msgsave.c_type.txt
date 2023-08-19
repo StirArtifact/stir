@@ -1,13 +1,13 @@
 int	O
 mu_message_save_to_mailbox	function
 (	O
-mu_message_t	*
-msg	*
+mu_message_t	pointer
+msg	pointer
 ,	O
 const	O
 char	O
 *	O
-toname	*
+toname	pointer
 ,	O
 int	O
 perms	int
@@ -18,8 +18,8 @@ rc	int
 =	O
 0	int
 ;	O
-mu_mailbox_t	*
-to	*
+mu_mailbox_t	pointer
+to	pointer
 =	O
 0	int
 ;	O
@@ -31,9 +31,9 @@ rc	int
 mu_mailbox_create_default	function
 (	O
 &	O
-to	*
+to	pointer
 ,	O
-toname	*
+toname	pointer
 )	O
 )	O
 )	O
@@ -45,9 +45,9 @@ MU_DEBCAT_MESSAGE	int
 MU_DEBUG_ERROR	int
 ,	O
 (	O
-"mu_mailbox_create_default (%s) failed: %s\n"	*
+"mu_mailbox_create_default (%s) failed: %s\n"	pointer
 ,	O
-toname	*
+toname	pointer
 ,	O
 mu_strerror	function
 (	O
@@ -67,7 +67,7 @@ rc	int
 =	O
 mu_mailbox_open	function
 (	O
-to	*
+to	pointer
 ,	O
 MU_STREAM_APPEND	int
 |	O
@@ -89,9 +89,9 @@ MU_DEBCAT_MESSAGE	int
 MU_DEBUG_ERROR	int
 ,	O
 (	O
-"mu_mailbox_open (%s) failed: %s"	*
+"mu_mailbox_open (%s) failed: %s"	pointer
 ,	O
-toname	*
+toname	pointer
 ,	O
 mu_strerror	function
 (	O
@@ -111,9 +111,9 @@ rc	int
 =	O
 mu_mailbox_append_message	function
 (	O
-to	*
+to	pointer
 ,	O
-msg	*
+msg	pointer
 )	O
 )	O
 )	O
@@ -125,9 +125,9 @@ MU_DEBCAT_MESSAGE	int
 MU_DEBUG_ERROR	int
 ,	O
 (	O
-"mu_mailbox_append_message (%s) failed: %s"	*
+"mu_mailbox_append_message (%s) failed: %s"	pointer
 ,	O
-toname	*
+toname	pointer
 ,	O
 mu_strerror	function
 (	O
@@ -140,7 +140,7 @@ goto	O
 end	O
 ;	O
 }	O
-end	*
+end	pointer
 :	O
 if	O
 (	O
@@ -155,7 +155,7 @@ rc	int
 =	O
 mu_mailbox_close	function
 (	O
-to	*
+to	pointer
 )	O
 )	O
 )	O
@@ -166,9 +166,9 @@ MU_DEBCAT_MESSAGE	int
 MU_DEBUG_ERROR	int
 ,	O
 (	O
-"mu_mailbox_close (%s) failed: %s"	*
+"mu_mailbox_close (%s) failed: %s"	pointer
 ,	O
-toname	*
+toname	pointer
 ,	O
 mu_strerror	function
 (	O
@@ -181,13 +181,13 @@ rc	int
 else	O
 mu_mailbox_close	function
 (	O
-to	*
+to	pointer
 )	O
 ;	O
 mu_mailbox_destroy	function
 (	O
 &	O
-to	*
+to	pointer
 )	O
 ;	O
 return	O

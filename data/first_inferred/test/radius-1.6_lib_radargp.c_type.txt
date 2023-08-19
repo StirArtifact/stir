@@ -1,11 +1,11 @@
 const	O
 char	O
 *	O
-argp_program_bug_address	*
+argp_program_bug_address	pointer
 =	O
-"<"	*
-PACKAGE_BUGREPORT	*
-">"	*
+"<"	pointer
+PACKAGE_BUGREPORT	pointer
+">"	pointer
 ;	O
 static	O
 struct	O
@@ -16,27 +16,27 @@ rad_common_argp_option	array
 =	O
 {	O
 {	O
-"directory"	*
+"directory"	pointer
 ,	O
 'd'	O
 ,	O
 N_	O
 (	O
-"DIR"	*
+"DIR"	pointer
 )	O
 ,	O
 0	int
 ,	O
 N_	O
 (	O
-"Set path to the configuration directory"	*
+"Set path to the configuration directory"	pointer
 )	O
 ,	O
 0	int
 }	O
 ,	O
 {	O
-"license"	*
+"license"	pointer
 ,	O
 'L'	O
 ,	O
@@ -46,7 +46,7 @@ NULL	O
 ,	O
 N_	O
 (	O
-"print license and exit"	*
+"print license and exit"	pointer
 )	O
 ,	O
 0	int
@@ -76,12 +76,12 @@ key	int
 ,	O
 char	O
 *	O
-arg	*
+arg	pointer
 ,	O
 struct	O
 argp_state	struct
 *	O
-state	*
+state	pointer
 )	O
 ;	O
 struct	O
@@ -89,7 +89,7 @@ argp	struct
 grad_common_argp	struct
 =	O
 {	O
-rad_common_argp_option	*
+rad_common_argp_option	pointer
 ,	O
 rad_common_argp_parser	function
 ,	O
@@ -119,7 +119,7 @@ grad_common_argp	struct
 ,	O
 N_	O
 (	O
-"Common options"	*
+"Common options"	pointer
 )	O
 ,	O
 1	int
@@ -138,17 +138,17 @@ __argp_base_name	function
 const	O
 char	O
 *	O
-arg	*
+arg	pointer
 )	O
 {	O
 const	O
 char	O
 *	O
-p	*
+p	pointer
 =	O
 strrchr	function
 (	O
-arg	*
+arg	pointer
 ,	O
 '/'	O
 )	O
@@ -156,14 +156,14 @@ arg	*
 if	O
 (	O
 !	O
-p	*
+p	pointer
 )	O
-p	*
+p	pointer
 =	O
-arg	*
+arg	pointer
 ;	O
 else	O
-p	*
+p	pointer
 ++	O
 ;	O
 return	O
@@ -171,7 +171,7 @@ return	O
 char	O
 *	O
 )	O
-p	*
+p	pointer
 ;	O
 }	O
 static	O
@@ -182,20 +182,20 @@ license_text	array
 =	O
 N_	O
 (	O
-"   This program is free software; you can redistribute it and/or modify\n"	*
-"   it under the terms of the GNU General Public License as published by\n"	*
-"   the Free Software Foundation; either version 3, or (at your option)\n"	*
-"   any later version.\n"	*
-"\n"	*
-"   This program is distributed in the hope that it will be useful,\n"	*
-"   but WITHOUT ANY WARRANTY; without even the implied warranty of\n"	*
-"   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"	*
-"   GNU General Public License for more details.\n"	*
-"\n"	*
-"   You should have received a copy of the GNU General Public License\n"	*
-"   along with GNU Radius; if not, write to the Free Software Foundation,\n"	*
-"   Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.\n"	*
-"\n"	*
+"   This program is free software; you can redistribute it and/or modify\n"	pointer
+"   it under the terms of the GNU General Public License as published by\n"	pointer
+"   the Free Software Foundation; either version 3, or (at your option)\n"	pointer
+"   any later version.\n"	pointer
+"\n"	pointer
+"   This program is distributed in the hope that it will be useful,\n"	pointer
+"   but WITHOUT ANY WARRANTY; without even the implied warranty of\n"	pointer
+"   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"	pointer
+"   GNU General Public License for more details.\n"	pointer
+"\n"	pointer
+"   You should have received a copy of the GNU General Public License\n"	pointer
+"   along with GNU Radius; if not, write to the Free Software Foundation,\n"	pointer
+"   Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.\n"	pointer
+"\n"	pointer
 )	O
 ;	O
 static	O
@@ -207,12 +207,12 @@ key	int
 ,	O
 char	O
 *	O
-arg	*
+arg	pointer
 ,	O
 struct	O
 argp_state	struct
 *	O
-state	*
+state	pointer
 )	O
 {	O
 switch	O
@@ -223,9 +223,9 @@ key	int
 case	O
 'd'	O
 :	O
-grad_config_dir	*
+grad_config_dir	pointer
 =	O
-arg	*
+arg	pointer
 ;	O
 break	O
 ;	O
@@ -234,11 +234,11 @@ case	O
 :	O
 printf	function
 (	O
-"%s"	*
+"%s"	pointer
 ,	O
 _	O
 (	O
-license_text	*
+license_text	pointer
 )	O
 )	O
 ;	O
@@ -273,11 +273,11 @@ const	O
 struct	O
 argp	struct
 *	O
-argp	*
+argp	pointer
 ,	O
 int	O
 *	O
-pargc	*
+pargc	pointer
 ,	O
 char	O
 *	O
@@ -295,7 +295,7 @@ arg_index	int
 ,	O
 void	O
 *	O
-input	*
+input	pointer
 )	O
 {	O
 error_t	int
@@ -305,13 +305,13 @@ program_invocation_name	int
 =	O
 (	O
 *	O
-pargv	*
+pargv	pointer
 [	O
 0	int
 ]	O
 )	O
 ;	O
-program_invocation_short_name	*
+program_invocation_short_name	pointer
 =	O
 strrchr	function
 (	O
@@ -323,14 +323,14 @@ program_invocation_name	int
 if	O
 (	O
 !	O
-program_invocation_short_name	*
+program_invocation_short_name	pointer
 )	O
-program_invocation_short_name	*
+program_invocation_short_name	pointer
 =	O
 program_invocation_name	int
 ;	O
 else	O
-program_invocation_short_name	*
+program_invocation_short_name	pointer
 ++	O
 ;	O
 ret	int
@@ -340,16 +340,16 @@ argp_parse	function
 argp	struct
 ,	O
 *	O
-pargc	*
+pargc	pointer
 ,	O
 *	O
-pargv	*
+pargv	pointer
 ,	O
 flags	int
 ,	O
 arg_index	int
 ,	O
-input	*
+input	pointer
 )	O
 ;	O
 return	O

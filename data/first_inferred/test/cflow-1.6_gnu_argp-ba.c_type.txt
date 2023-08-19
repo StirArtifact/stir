@@ -1,5 +1,5 @@
 const	O
 char	O
 *	O
-argp_program_bug_address	*
+argp_program_bug_address	pointer
 ;	O

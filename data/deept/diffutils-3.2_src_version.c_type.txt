@@ -1,7 +1,0 @@
-char	O
-const	O
-*	O
-Version	pointer
-=	O
-"3.2"	pointer
-;	O

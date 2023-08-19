@@ -9,7 +9,7 @@ swlex_definition_file	int
 SW_INFO	int
 ;	O
 YYSTYPE	enum
-yylval	*
+yylval	pointer
 ;	O
 static	O
 int	O
@@ -51,7 +51,7 @@ typestring	array
 ;	O
 char	O
 *	O
-progname	*
+progname	pointer
 ;	O
 int	O
 posix_ignores	int
@@ -62,9 +62,9 @@ swparse_atlevel	int
 =	O
 0	int
 ;	O
-progname	*
+progname	pointer
 =	O
-argv	*
+argv	pointer
 [	O
 0	int
 ]	O
@@ -79,7 +79,7 @@ SWPARSE_FORM_MKUP	int
 ;	O
 yylval	struct
 .	O
-strb	*
+strb	pointer
 =	O
 strob_open	function
 (	O
@@ -89,16 +89,16 @@ strob_open	function
 if	O
 (	O
 !	O
-yylval	*
+yylval	pointer
 .	O
-strb	*
+strb	pointer
 )	O
 {	O
 fprintf	function
 (	O
-stderr	*
+stderr	pointer
 ,	O
-" swparse: object allocation error.\n"	*
+" swparse: object allocation error.\n"	pointer
 )	O
 ;	O
 exit	function
@@ -116,7 +116,7 @@ argc	int
 {	O
 usage	function
 (	O
-progname	*
+progname	pointer
 )	O
 ;	O
 exit	function
@@ -144,7 +144,7 @@ long_options	array
 =	O
 {	O
 {	O
-"indent"	*
+"indent"	pointer
 ,	O
 0	int
 ,	O
@@ -154,7 +154,7 @@ long_options	array
 }	O
 ,	O
 {	O
-"index"	*
+"index"	pointer
 ,	O
 0	int
 ,	O
@@ -164,7 +164,7 @@ long_options	array
 }	O
 ,	O
 {	O
-"info"	*
+"info"	pointer
 ,	O
 0	int
 ,	O
@@ -174,7 +174,7 @@ long_options	array
 }	O
 ,	O
 {	O
-"psf"	*
+"psf"	pointer
 ,	O
 0	int
 ,	O
@@ -184,7 +184,7 @@ long_options	array
 }	O
 ,	O
 {	O
-"option"	*
+"option"	pointer
 ,	O
 0	int
 ,	O
@@ -194,7 +194,7 @@ long_options	array
 }	O
 ,	O
 {	O
-"psfi"	*
+"psfi"	pointer
 ,	O
 0	int
 ,	O
@@ -204,7 +204,7 @@ long_options	array
 }	O
 ,	O
 {	O
-"PSF"	*
+"PSF"	pointer
 ,	O
 0	int
 ,	O
@@ -214,7 +214,7 @@ long_options	array
 }	O
 ,	O
 {	O
-"INFO"	*
+"INFO"	pointer
 ,	O
 0	int
 ,	O
@@ -224,7 +224,7 @@ long_options	array
 }	O
 ,	O
 {	O
-"INDEX"	*
+"INDEX"	pointer
 ,	O
 0	int
 ,	O
@@ -234,7 +234,7 @@ long_options	array
 }	O
 ,	O
 {	O
-"debug"	*
+"debug"	pointer
 ,	O
 0	int
 ,	O
@@ -244,7 +244,7 @@ long_options	array
 }	O
 ,	O
 {	O
-"level"	*
+"level"	pointer
 ,	O
 1	int
 ,	O
@@ -254,7 +254,7 @@ long_options	array
 }	O
 ,	O
 {	O
-"installed"	*
+"installed"	pointer
 ,	O
 0	int
 ,	O
@@ -264,7 +264,7 @@ long_options	array
 }	O
 ,	O
 {	O
-"INSTALLED"	*
+"INSTALLED"	pointer
 ,	O
 0	int
 ,	O
@@ -274,7 +274,7 @@ long_options	array
 }	O
 ,	O
 {	O
-"with-line-lengths"	*
+"with-line-lengths"	pointer
 ,	O
 0	int
 ,	O
@@ -284,7 +284,7 @@ long_options	array
 }	O
 ,	O
 {	O
-"posix-ignores"	*
+"posix-ignores"	pointer
 ,	O
 0	int
 ,	O
@@ -294,7 +294,7 @@ long_options	array
 }	O
 ,	O
 {	O
-"help"	*
+"help"	pointer
 ,	O
 0	int
 ,	O
@@ -318,11 +318,11 @@ c	int
 =	O
 ugetopt_long	function
 (	O
-argc	*
+argc	pointer
 ,	O
-argv	*
+argv	pointer
 ,	O
-"hdbiopvgl:n_"	*
+"hdbiopvgl:n_"	pointer
 ,	O
 long_options	array
 ,	O
@@ -367,9 +367,9 @@ SW_PSF_INCL	int
 ;	O
 strncpy	function
 (	O
-typestring	*
+typestring	pointer
 ,	O
-"PSFi"	*
+"PSFi"	pointer
 ,	O
 5	int
 )	O
@@ -385,9 +385,9 @@ SW_INSTALLED	int
 ;	O
 strcpy	function
 (	O
-typestring	*
+typestring	pointer
 ,	O
-"INSTALLED"	*
+"INSTALLED"	pointer
 )	O
 ;	O
 break	O
@@ -401,9 +401,9 @@ SW_INDEX	int
 ;	O
 strncpy	function
 (	O
-typestring	*
+typestring	pointer
 ,	O
-"INDEX"	*
+"INDEX"	pointer
 ,	O
 6	int
 )	O
@@ -432,9 +432,9 @@ SW_INFO	int
 ;	O
 strncpy	function
 (	O
-typestring	*
+typestring	pointer
 ,	O
-"INFO"	*
+"INFO"	pointer
 ,	O
 5	int
 )	O
@@ -450,9 +450,9 @@ SW_OPTION	int
 ;	O
 strcpy	function
 (	O
-typestring	*
+typestring	pointer
 ,	O
-"OPTION"	*
+"OPTION"	pointer
 )	O
 ;	O
 break	O
@@ -466,9 +466,9 @@ SW_PSF	int
 ;	O
 strncpy	function
 (	O
-typestring	*
+typestring	pointer
 ,	O
-"PSF"	*
+"PSF"	pointer
 ,	O
 4	int
 )	O
@@ -481,18 +481,18 @@ case	O
 if	O
 (	O
 !	O
-optarg	*
+optarg	pointer
 )	O
 usage	function
 (	O
-progname	*
+progname	pointer
 )	O
 ;	O
 swparse_atlevel	int
 =	O
 atoi	function
 (	O
-optarg	*
+optarg	pointer
 )	O
 ;	O
 break	O
@@ -533,7 +533,7 @@ case	O
 :	O
 usage	function
 (	O
-progname	*
+progname	pointer
 )	O
 ;	O
 break	O
@@ -543,7 +543,7 @@ case	O
 :	O
 usage	function
 (	O
-progname	*
+progname	pointer
 )	O
 ;	O
 break	O
@@ -553,7 +553,7 @@ case	O
 :	O
 usage	function
 (	O
-progname	*
+progname	pointer
 )	O
 ;	O
 break	O
@@ -562,7 +562,7 @@ default	O
 :	O
 usage	function
 (	O
-progname	*
+progname	pointer
 )	O
 ;	O
 break	O
@@ -580,7 +580,7 @@ fd	int
 =	O
 open	function
 (	O
-argv	*
+argv	pointer
 [	O
 optind	int
 ]	O
@@ -597,11 +597,11 @@ fd	int
 {	O
 fprintf	function
 (	O
-stderr	*
+stderr	pointer
 ,	O
-"%s : %s\n"	*
+"%s : %s\n"	pointer
 ,	O
-argv	*
+argv	pointer
 [	O
 optind	int
 ]	O
@@ -644,7 +644,7 @@ swlib_strncpy	function
 (	O
 swlex_filename	array
 ,	O
-"stdin"	*
+"stdin"	pointer
 ,	O
 sizeof	O
 (	O
@@ -679,9 +679,9 @@ if	O
 (	O
 uxfio_fcntl	function
 (	O
-swlex_inputfd	*
+swlex_inputfd	pointer
 ,	O
-UXFIO_F_SET_BUFACTIVE	*
+UXFIO_F_SET_BUFACTIVE	pointer
 ,	O
 0	int
 )	O
@@ -689,9 +689,9 @@ UXFIO_F_SET_BUFACTIVE	*
 {	O
 fprintf	function
 (	O
-stderr	*
+stderr	pointer
 ,	O
-" error in uxfio_fcntl.\n"	*
+" error in uxfio_fcntl.\n"	pointer
 )	O
 ;	O
 }	O
@@ -713,9 +713,9 @@ swparse_outputfd	int
 {	O
 fprintf	function
 (	O
-stderr	*
+stderr	pointer
 ,	O
-" error in uxfio_open.\n"	*
+" error in uxfio_open.\n"	pointer
 )	O
 ;	O
 exit	function
@@ -728,9 +728,9 @@ if	O
 (	O
 uxfio_fcntl	function
 (	O
-swparse_outputfd	*
+swparse_outputfd	pointer
 ,	O
-UXFIO_F_SET_BUFACTIVE	*
+UXFIO_F_SET_BUFACTIVE	pointer
 ,	O
 0	int
 )	O
@@ -738,9 +738,9 @@ UXFIO_F_SET_BUFACTIVE	*
 {	O
 fprintf	function
 (	O
-stderr	*
+stderr	pointer
 ,	O
-" error in uxfio_fcntl.\n"	*
+" error in uxfio_fcntl.\n"	pointer
 )	O
 ;	O
 }	O
@@ -748,11 +748,11 @@ ret	int
 =	O
 sw_yyparse	function
 (	O
-swlex_inputfd	*
+swlex_inputfd	pointer
 ,	O
-swparse_outputfd	*
+swparse_outputfd	pointer
 ,	O
-typestring	*
+typestring	pointer
 ,	O
 0	int
 ,	O
@@ -763,7 +763,7 @@ strob_close	function
 (	O
 yylval	struct
 .	O
-strb	*
+strb	pointer
 )	O
 ;	O
 _exit	function
@@ -778,42 +778,42 @@ usage	function
 (	O
 char	O
 *	O
-progname	*
+progname	pointer
 )	O
 {	O
 fprintf	function
 (	O
-stderr	*
+stderr	pointer
 ,	O
-"A POSIX-7.2 Metadata parser (A de-facto Implementation Extension utility).\n"	*
+"A POSIX-7.2 Metadata parser (A de-facto Implementation Extension utility).\n"	pointer
 )	O
 ;	O
 fprintf	function
 (	O
-stderr	*
+stderr	pointer
 ,	O
-"Copyright (C) 2005 James Lowe, Jr.\n"	*
+"Copyright (C) 2005 James Lowe, Jr.\n"	pointer
 )	O
 ;	O
 fprintf	function
 (	O
-stderr	*
+stderr	pointer
 ,	O
-"This software is distributed under the GNU GPLv2.\n"	*
+"This software is distributed under the GNU GPLv2.\n"	pointer
 )	O
 ;	O
 fprintf	function
 (	O
-stderr	*
+stderr	pointer
 ,	O
-"Usage: sw_parse {--installed|-i,--index|-o,--info|-p,--psf|-d,--option}\n"	*
+"Usage: sw_parse {--installed|-i,--index|-o,--info|-p,--psf|-d,--option}\n"	pointer
 )	O
 ;	O
 fprintf	function
 (	O
-stderr	*
+stderr	pointer
 ,	O
-"       [-level|-l level] [-with-line-lengths|-n] [-b|beautify][file]\n"	*
+"       [-level|-l level] [-with-line-lengths|-n] [-b|beautify][file]\n"	pointer
 )	O
 ;	O
 exit	function

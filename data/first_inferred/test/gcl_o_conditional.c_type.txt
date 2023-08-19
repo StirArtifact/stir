@@ -184,7 +184,7 @@ t_cons	O
 )	O
 FEerror	function
 (	O
-"~S is an illegal COND clause."	*
+"~S is an illegal COND clause."	pointer
 ,	O
 1	int
 ,	O
@@ -381,7 +381,7 @@ t_cons	O
 )	O
 FEerror	function
 (	O
-"~S is an illegal CASE clause."	*
+"~S is an illegal CASE clause."	pointer
 ,	O
 1	int
 ,	O
@@ -469,7 +469,7 @@ sLotherwise	int
 ||	O
 eql	function
 (	O
-key	*
+key	pointer
 ,	O
 top	O
 [	O
@@ -814,35 +814,35 @@ void	O
 {	O
 make_special_form	function
 (	O
-"IF"	*
+"IF"	pointer
 ,	O
 Fif	int
 )	O
 ;	O
 make_special_form	function
 (	O
-"COND"	*
+"COND"	pointer
 ,	O
 Fcond	int
 )	O
 ;	O
 make_special_form	function
 (	O
-"CASE"	*
+"CASE"	pointer
 ,	O
 Fcase	int
 )	O
 ;	O
 make_special_form	function
 (	O
-"WHEN"	*
+"WHEN"	pointer
 ,	O
 Fwhen	int
 )	O
 ;	O
 make_special_form	function
 (	O
-"UNLESS"	*
+"UNLESS"	pointer
 ,	O
 Funless	int
 )	O
@@ -851,7 +851,7 @@ sLotherwise	int
 =	O
 make_ordinary	function
 (	O
-"OTHERWISE"	*
+"OTHERWISE"	pointer
 )	O
 ;	O
 enter_mark_origin	function

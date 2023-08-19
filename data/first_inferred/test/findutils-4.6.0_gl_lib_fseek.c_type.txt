@@ -3,7 +3,7 @@ fseek	function
 (	O
 FILE	struct
 *	O
-fp	*
+fp	pointer
 ,	O
 long	O
 offset	long
@@ -15,7 +15,7 @@ whence	int
 return	O
 fseeko	function
 (	O
-fp	*
+fp	pointer
 ,	O
 (	O
 off_t	long

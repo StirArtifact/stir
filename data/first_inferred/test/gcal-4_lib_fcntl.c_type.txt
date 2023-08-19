@@ -313,7 +313,7 @@ default	O
 {	O
 void	O
 *	O
-p	*
+p	pointer
 =	O
 va_arg	O
 (	O
@@ -331,7 +331,7 @@ fd	int
 ,	O
 action	int
 ,	O
-p	*
+p	pointer
 )	O
 ;	O
 break	O

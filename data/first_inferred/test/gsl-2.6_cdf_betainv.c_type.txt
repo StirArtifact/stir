@@ -146,7 +146,7 @@ P	double
 {	O
 CDF_ERROR	O
 (	O
-"P must be in range 0 < P < 1"	*
+"P must be in range 0 < P < 1"	pointer
 ,	O
 GSL_EDOM	int
 )	O
@@ -161,7 +161,7 @@ a	double
 {	O
 CDF_ERROR	O
 (	O
-"a < 0"	*
+"a < 0"	pointer
 ,	O
 GSL_EDOM	int
 )	O
@@ -176,7 +176,7 @@ b	double
 {	O
 CDF_ERROR	O
 (	O
-"b < 0"	*
+"b < 0"	pointer
 ,	O
 GSL_EDOM	int
 )	O
@@ -354,9 +354,9 @@ bisect	function
 (	O
 x	double
 ,	O
-P	*
+P	pointer
 ,	O
-a	*
+a	pointer
 ,	O
 b	double
 ,	O
@@ -579,11 +579,11 @@ P	double
 {	O
 GSL_ERROR_VAL	O
 (	O
-"inverse failed to converge"	*
+"inverse failed to converge"	pointer
 ,	O
 GSL_EFAILED	int
 ,	O
-GSL_NAN	*
+GSL_NAN	pointer
 )	O
 ;	O
 }	O
@@ -621,7 +621,7 @@ Q	double
 {	O
 CDF_ERROR	O
 (	O
-"Q must be inside range 0 < Q < 1"	*
+"Q must be inside range 0 < Q < 1"	pointer
 ,	O
 GSL_EDOM	int
 )	O
@@ -636,7 +636,7 @@ a	double
 {	O
 CDF_ERROR	O
 (	O
-"a < 0"	*
+"a < 0"	pointer
 ,	O
 GSL_EDOM	int
 )	O
@@ -651,7 +651,7 @@ b	double
 {	O
 CDF_ERROR	O
 (	O
-"b < 0"	*
+"b < 0"	pointer
 ,	O
 GSL_EDOM	int
 )	O

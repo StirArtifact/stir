@@ -4,7 +4,7 @@ uuname_rcsid	array
 [	O
 ]	O
 =	O
-"$Id: uuname.c,v 1.24 2002/03/05 19:10:42 ian Rel $"	*
+"$Id: uuname.c,v 1.24 2002/03/05 19:10:42 ian Rel $"	pointer
 ;	O
 static	O
 void	O
@@ -36,7 +36,7 @@ asNlongopts	array
 =	O
 {	O
 {	O
-"aliases"	*
+"aliases"	pointer
 ,	O
 no_argument	int
 ,	O
@@ -46,7 +46,7 @@ NULL	O
 }	O
 ,	O
 {	O
-"local"	*
+"local"	pointer
 ,	O
 no_argument	int
 ,	O
@@ -56,7 +56,7 @@ NULL	O
 }	O
 ,	O
 {	O
-"config"	*
+"config"	pointer
 ,	O
 required_argument	int
 ,	O
@@ -66,7 +66,7 @@ NULL	O
 }	O
 ,	O
 {	O
-"debug"	*
+"debug"	pointer
 ,	O
 required_argument	int
 ,	O
@@ -76,7 +76,7 @@ NULL	O
 }	O
 ,	O
 {	O
-"version"	*
+"version"	pointer
 ,	O
 no_argument	int
 ,	O
@@ -86,7 +86,7 @@ NULL	O
 }	O
 ,	O
 {	O
-"help"	*
+"help"	pointer
 ,	O
 no_argument	int
 ,	O
@@ -111,7 +111,7 @@ main	function
 (	O
 argc	int
 ,	O
-argv	*
+argv	pointer
 )	O
 int	O
 argc	int
@@ -119,7 +119,7 @@ argc	int
 char	O
 *	O
 *	O
-argv	*
+argv	pointer
 ;	O
 {	O
 boolean	int
@@ -135,22 +135,22 @@ FALSE	O
 const	O
 char	O
 *	O
-zconfig	*
+zconfig	pointer
 =	O
 NULL	O
 ;	O
 int	O
 iopt	int
 ;	O
-pointer	*
-puuconf	*
+pointer	pointer
+puuconf	pointer
 ;	O
 int	O
 iuuconf	int
 ;	O
-zProgram	*
+zProgram	pointer
 =	O
-argv	*
+argv	pointer
 [	O
 0	int
 ]	O
@@ -164,11 +164,11 @@ getopt_long	function
 (	O
 argc	int
 ,	O
-argv	*
+argv	pointer
 ,	O
-"alI:vx:"	*
+"alI:vx:"	pointer
 ,	O
-asNlongopts	*
+asNlongopts	pointer
 ,	O
 (	O
 int	O
@@ -211,12 +211,12 @@ if	O
 (	O
 fsysdep_other_config	function
 (	O
-optarg	*
+optarg	pointer
 )	O
 )	O
-zconfig	*
+zconfig	pointer
 =	O
-optarg	*
+optarg	pointer
 ;	O
 break	O
 ;	O
@@ -227,7 +227,7 @@ iDebug	int
 |=	O
 idebug_parse	function
 (	O
-optarg	*
+optarg	pointer
 )	O
 ;	O
 break	O
@@ -237,24 +237,24 @@ case	O
 :	O
 printf	function
 (	O
-"uuname (Taylor UUCP) %s\n"	*
+"uuname (Taylor UUCP) %s\n"	pointer
 ,	O
-VERSION	*
+VERSION	pointer
 )	O
 ;	O
 printf	function
 (	O
-"Copyright (C) 1991, 92, 93, 94, 1995, 2002 Ian Lance Taylor\n"	*
+"Copyright (C) 1991, 92, 93, 94, 1995, 2002 Ian Lance Taylor\n"	pointer
 )	O
 ;	O
 printf	function
 (	O
-"This program is free software; you may redistribute it under the terms of\n"	*
+"This program is free software; you may redistribute it under the terms of\n"	pointer
 )	O
 ;	O
 printf	function
 (	O
-"the GNU General Public LIcense.  This program has ABSOLUTELY NO WARRANTY.\n"	*
+"the GNU General Public LIcense.  This program has ABSOLUTELY NO WARRANTY.\n"	pointer
 )	O
 ;	O
 exit	function
@@ -302,7 +302,7 @@ iuuconf	int
 uuconf_init	function
 (	O
 &	O
-puuconf	*
+puuconf	pointer
 ,	O
 (	O
 const	O
@@ -311,7 +311,7 @@ char	O
 )	O
 NULL	O
 ,	O
-zconfig	*
+zconfig	pointer
 )	O
 ;	O
 if	O
@@ -324,7 +324,7 @@ ulog_uuconf	function
 (	O
 LOG_FATAL	int
 ,	O
-puuconf	*
+puuconf	pointer
 ,	O
 iuuconf	int
 )	O
@@ -333,16 +333,16 @@ iuuconf	int
 const	O
 char	O
 *	O
-zdebug	*
+zdebug	pointer
 ;	O
 iuuconf	int
 =	O
 uuconf_debuglevel	function
 (	O
-puuconf	*
+puuconf	pointer
 ,	O
 &	O
-zdebug	*
+zdebug	pointer
 )	O
 ;	O
 if	O
@@ -355,14 +355,14 @@ ulog_uuconf	function
 (	O
 LOG_FATAL	int
 ,	O
-puuconf	*
+puuconf	pointer
 ,	O
 iuuconf	int
 )	O
 ;	O
 if	O
 (	O
-zdebug	*
+zdebug	pointer
 !=	O
 NULL	O
 )	O
@@ -370,13 +370,13 @@ iDebug	int
 |=	O
 idebug_parse	function
 (	O
-zdebug	*
+zdebug	pointer
 )	O
 ;	O
 }	O
 usysdep_initialize	function
 (	O
-puuconf	*
+puuconf	pointer
 ,	O
 INIT_SUID	O
 |	O
@@ -391,16 +391,16 @@ flocal	int
 const	O
 char	O
 *	O
-zlocalname	*
+zlocalname	pointer
 ;	O
 iuuconf	int
 =	O
 uuconf_localname	function
 (	O
-puuconf	*
+puuconf	pointer
 ,	O
 &	O
-zlocalname	*
+zlocalname	pointer
 )	O
 ;	O
 if	O
@@ -410,7 +410,7 @@ iuuconf	int
 UUCONF_NOT_FOUND	O
 )	O
 {	O
-zlocalname	*
+zlocalname	pointer
 =	O
 zsysdep_localname	function
 (	O
@@ -418,7 +418,7 @@ zsysdep_localname	function
 ;	O
 if	O
 (	O
-zlocalname	*
+zlocalname	pointer
 ==	O
 NULL	O
 )	O
@@ -439,16 +439,16 @@ ulog_uuconf	function
 (	O
 LOG_FATAL	int
 ,	O
-puuconf	*
+puuconf	pointer
 ,	O
 iuuconf	int
 )	O
 ;	O
 printf	function
 (	O
-"%s\n"	*
+"%s\n"	pointer
 ,	O
-zlocalname	*
+zlocalname	pointer
 )	O
 ;	O
 }	O
@@ -457,20 +457,20 @@ else	O
 char	O
 *	O
 *	O
-pznames	*
+pznames	pointer
 ,	O
 *	O
 *	O
-pz	*
+pz	pointer
 ;	O
 iuuconf	int
 =	O
 uuconf_system_names	function
 (	O
-puuconf	*
+puuconf	pointer
 ,	O
 &	O
-pznames	*
+pznames	pointer
 ,	O
 falias	int
 )	O
@@ -485,31 +485,31 @@ ulog_uuconf	function
 (	O
 LOG_FATAL	int
 ,	O
-puuconf	*
+puuconf	pointer
 ,	O
 iuuconf	int
 )	O
 ;	O
 for	O
 (	O
-pz	*
+pz	pointer
 =	O
-pznames	*
+pznames	pointer
 ;	O
 *	O
-pz	*
+pz	pointer
 !=	O
 NULL	O
 ;	O
-pz	*
+pz	pointer
 ++	O
 )	O
 printf	function
 (	O
-"%s\n"	*
+"%s\n"	pointer
 ,	O
 *	O
-pz	*
+pz	pointer
 )	O
 ;	O
 }	O
@@ -530,20 +530,20 @@ unusage	function
 {	O
 fprintf	function
 (	O
-stderr	*
+stderr	pointer
 ,	O
-"Usage: %s [-a] [-l] [-I file]\n"	*
+"Usage: %s [-a] [-l] [-I file]\n"	pointer
 ,	O
-zProgram	*
+zProgram	pointer
 )	O
 ;	O
 fprintf	function
 (	O
-stderr	*
+stderr	pointer
 ,	O
-"Use %s --help for help\n"	*
+"Use %s --help for help\n"	pointer
 ,	O
-zProgram	*
+zProgram	pointer
 )	O
 ;	O
 exit	function
@@ -560,46 +560,46 @@ unhelp	function
 {	O
 printf	function
 (	O
-"Taylor UUCP %s, copyright (C) 1991, 92, 93, 94, 1995, 2002 Ian Lance Taylor\n"	*
+"Taylor UUCP %s, copyright (C) 1991, 92, 93, 94, 1995, 2002 Ian Lance Taylor\n"	pointer
 ,	O
-VERSION	*
+VERSION	pointer
 )	O
 ;	O
 printf	function
 (	O
-"Usage: %s [-a] [-l] [-I file]\n"	*
+"Usage: %s [-a] [-l] [-I file]\n"	pointer
 ,	O
-zProgram	*
+zProgram	pointer
 )	O
 ;	O
 printf	function
 (	O
-" -a,--aliases: display aliases\n"	*
+" -a,--aliases: display aliases\n"	pointer
 )	O
 ;	O
 printf	function
 (	O
-" -l,--local: print local name\n"	*
+" -l,--local: print local name\n"	pointer
 )	O
 ;	O
 printf	function
 (	O
-" -I,--config file: Set configuration file to use\n"	*
+" -I,--config file: Set configuration file to use\n"	pointer
 )	O
 ;	O
 printf	function
 (	O
-" -v,--version: Print version and exit\n"	*
+" -v,--version: Print version and exit\n"	pointer
 )	O
 ;	O
 printf	function
 (	O
-" --help: Print help and exit\n"	*
+" --help: Print help and exit\n"	pointer
 )	O
 ;	O
 printf	function
 (	O
-"Report bugs to taylor-uucp@gnu.org\n"	*
+"Report bugs to taylor-uucp@gnu.org\n"	pointer
 )	O
 ;	O
 }	O

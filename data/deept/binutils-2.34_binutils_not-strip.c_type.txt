@@ -1,5 +1,0 @@
-int	O
-is_strip	int
-=	O
-0	int
-;	O

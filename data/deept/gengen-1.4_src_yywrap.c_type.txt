@@ -1,9 +1,0 @@
-int	O
-yywrap	function
-(	O
-)	O
-{	O
-return	O
-1	int
-;	O
-}	O

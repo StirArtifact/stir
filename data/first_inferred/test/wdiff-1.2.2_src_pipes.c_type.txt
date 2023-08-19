@@ -7,14 +7,14 @@ dir	int
 ,	O
 char	O
 *	O
-progname	*
+progname	pointer
 ,	O
 va_list	array
-ap	*
+ap	pointer
 )	O
 {	O
 int	O
-fds	*
+fds	pointer
 [	O
 2	int
 ]	O
@@ -37,7 +37,7 @@ argno	int
 ++	O
 ]	O
 =	O
-progname	*
+progname	pointer
 ;	O
 while	O
 (	O
@@ -50,7 +50,7 @@ argno	int
 =	O
 va_arg	O
 (	O
-ap	*
+ap	pointer
 ,	O
 char	O
 *	O
@@ -64,7 +64,7 @@ if	O
 (	O
 pipe	function
 (	O
-fds	*
+fds	pointer
 )	O
 ==	O
 -	O
@@ -83,9 +83,9 @@ fork	function
 case	O
 0	int
 :	O
-close	*
+close	pointer
 (	O
-fds	*
+fds	pointer
 [	O
 1	int
 -	O
@@ -97,12 +97,12 @@ if	O
 (	O
 dup2	function
 (	O
-fds	*
+fds	pointer
 [	O
 dir	int
 ]	O
 ,	O
-dir	*
+dir	pointer
 )	O
 ==	O
 -	O
@@ -117,7 +117,7 @@ errno	O
 ,	O
 _	O
 (	O
-"error redirecting stream"	*
+"error redirecting stream"	pointer
 )	O
 )	O
 ;	O
@@ -145,10 +145,10 @@ errno	O
 ,	O
 _	O
 (	O
-"failed to execute %s"	*
+"failed to execute %s"	pointer
 )	O
 ,	O
-progname	*
+progname	pointer
 )	O
 ;	O
 _exit	function
@@ -167,14 +167,14 @@ default	O
 :	O
 close	function
 (	O
-fds	*
+fds	pointer
 [	O
 dir	int
 ]	O
 )	O
 ;	O
 return	O
-fds	*
+fds	pointer
 [	O
 1	int
 -	O
@@ -189,7 +189,7 @@ readpipe	function
 (	O
 char	O
 *	O
-progname	*
+progname	pointer
 ,	O
 ...	O
 )	O
@@ -204,7 +204,7 @@ va_start	O
 (	O
 ap	array
 ,	O
-progname	*
+progname	pointer
 )	O
 ;	O
 fd	int
@@ -213,9 +213,9 @@ openpipe	function
 (	O
 1	int
 ,	O
-progname	*
+progname	pointer
 ,	O
-ap	*
+ap	pointer
 )	O
 ;	O
 va_end	O
@@ -228,7 +228,7 @@ fdopen	function
 (	O
 fd	int
 ,	O
-"r"	*
+"r"	pointer
 )	O
 ;	O
 }	O
@@ -238,7 +238,7 @@ writepipe	function
 (	O
 char	O
 *	O
-progname	*
+progname	pointer
 ,	O
 ...	O
 )	O
@@ -253,7 +253,7 @@ va_start	O
 (	O
 ap	array
 ,	O
-progname	*
+progname	pointer
 )	O
 ;	O
 fd	int
@@ -262,9 +262,9 @@ openpipe	function
 (	O
 0	int
 ,	O
-progname	*
+progname	pointer
 ,	O
-ap	*
+ap	pointer
 )	O
 ;	O
 va_end	O
@@ -277,7 +277,7 @@ fdopen	function
 (	O
 fd	int
 ,	O
-"w"	*
+"w"	pointer
 )	O
 ;	O
 }	O

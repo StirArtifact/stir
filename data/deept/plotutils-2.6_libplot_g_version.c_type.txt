@@ -1,9 +1,0 @@
-const	O
-char	O
-pl_libplot_ver	array
-[	O
-8	int
-]	O
-=	O
-PL_LIBPLOT_VER_STRING	pointer
-;	O

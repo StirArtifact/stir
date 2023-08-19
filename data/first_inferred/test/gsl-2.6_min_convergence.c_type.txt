@@ -57,7 +57,7 @@ epsrel	double
 )	O
 GSL_ERROR	O
 (	O
-"relative tolerance is negative"	*
+"relative tolerance is negative"	pointer
 ,	O
 GSL_EBADTOL	int
 )	O
@@ -70,7 +70,7 @@ epsabs	double
 )	O
 GSL_ERROR	O
 (	O
-"absolute tolerance is negative"	*
+"absolute tolerance is negative"	pointer
 ,	O
 GSL_EBADTOL	int
 )	O
@@ -83,7 +83,7 @@ upper	int
 )	O
 GSL_ERROR	O
 (	O
-"lower bound larger than upper_bound"	*
+"lower bound larger than upper_bound"	pointer
 ,	O
 GSL_EINVAL	int
 )	O
@@ -115,7 +115,7 @@ min_abs	double
 =	O
 GSL_MIN_DBL	function
 (	O
-abs_lower	*
+abs_lower	pointer
 ,	O
 abs_upper	double
 )	O

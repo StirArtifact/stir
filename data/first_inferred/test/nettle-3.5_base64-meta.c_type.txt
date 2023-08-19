@@ -43,7 +43,7 @@ nettle_base64	struct
 =	O
 _NETTLE_ARMOR	O
 (	O
-base64	*
+base64	pointer
 ,	O
 BASE64	O
 )	O

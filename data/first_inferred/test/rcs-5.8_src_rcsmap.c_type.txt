@@ -528,7 +528,7 @@ checkidentifier	function
 char	O
 const	O
 *	O
-id	*
+id	pointer
 ,	O
 int	O
 delimiter	int
@@ -542,7 +542,7 @@ register	O
 char	O
 const	O
 *	O
-temp	*
+temp	pointer
 ;	O
 register	O
 char	O
@@ -688,7 +688,7 @@ id	int
 ;	O
 PFATAL	O
 (	O
-"invalid %s `%.*s'"	*
+"invalid %s `%.*s'"	pointer
 ,	O
 dotok	int
 ?	O
@@ -705,7 +705,7 @@ id	int
 temp	int
 )	O
 ,	O
-temp	*
+temp	pointer
 )	O
 ;	O
 }	O
@@ -721,7 +721,7 @@ checkid	function
 char	O
 const	O
 *	O
-id	*
+id	pointer
 ,	O
 int	O
 delimiter	int
@@ -746,7 +746,7 @@ checksym	function
 char	O
 const	O
 *	O
-sym	*
+sym	pointer
 ,	O
 int	O
 delimiter	int
@@ -755,7 +755,7 @@ delimiter	int
 return	O
 checkidentifier	function
 (	O
-sym	*
+sym	pointer
 ,	O
 delimiter	int
 ,	O
@@ -786,12 +786,12 @@ checkssym	function
 char	O
 const	O
 *	O
-sym	*
+sym	pointer
 )	O
 {	O
 checksym	function
 (	O
-sym	*
+sym	pointer
 ,	O
 0	int
 )	O

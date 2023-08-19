@@ -4,7 +4,7 @@ adler32	function
 (	O
 adler	long
 ,	O
-buf	*
+buf	pointer
 ,	O
 len	int
 )	O
@@ -14,7 +14,7 @@ adler	long
 const	O
 Bytef	char
 *	O
-buf	*
+buf	pointer
 ;	O
 uInt	int
 len	int
@@ -45,7 +45,7 @@ k	int
 ;	O
 if	O
 (	O
-buf	*
+buf	pointer
 ==	O
 Z_NULL	int
 )	O
@@ -82,10 +82,10 @@ k	int
 {	O
 DO16	O
 (	O
-buf	*
+buf	pointer
 )	O
 ;	O
-buf	*
+buf	pointer
 +=	O
 16	int
 ;	O
@@ -105,12 +105,12 @@ do	O
 s1	long
 +=	O
 *	O
-buf	*
+buf	pointer
 ++	O
 ;	O
-s2	*
+s2	pointer
 +=	O
-s1	*
+s1	pointer
 ;	O
 }	O
 while	O
@@ -119,11 +119,11 @@ while	O
 k	long
 )	O
 ;	O
-s1	*
+s1	pointer
 %=	O
 BASE	int
 ;	O
-s2	*
+s2	pointer
 %=	O
 BASE	int
 ;	O
@@ -135,6 +135,6 @@ s2	double
 16	int
 )	O
 |	O
-s1	*
+s1	pointer
 ;	O
 }	O

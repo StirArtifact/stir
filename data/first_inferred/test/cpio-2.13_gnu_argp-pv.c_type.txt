@@ -1,5 +1,5 @@
 const	O
 char	O
 *	O
-argp_program_version	*
+argp_program_version	pointer
 ;	O

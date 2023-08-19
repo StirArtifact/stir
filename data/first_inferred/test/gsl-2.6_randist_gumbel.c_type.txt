@@ -4,7 +4,7 @@ gsl_ran_gumbel1	function
 const	O
 gsl_rng	struct
 *	O
-r	*
+r	pointer
 ,	O
 const	O
 double	O
@@ -20,7 +20,7 @@ x	double
 =	O
 gsl_rng_uniform_pos	function
 (	O
-r	*
+r	pointer
 )	O
 ;	O
 double	O
@@ -101,7 +101,7 @@ gsl_ran_gumbel2	function
 const	O
 gsl_rng	struct
 *	O
-r	*
+r	pointer
 ,	O
 const	O
 double	O
@@ -117,7 +117,7 @@ x	double
 =	O
 gsl_rng_uniform_pos	function
 (	O
-r	*
+r	pointer
 )	O
 ;	O
 double	O

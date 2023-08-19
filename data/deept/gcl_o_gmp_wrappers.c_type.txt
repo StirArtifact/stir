@@ -1,5 +1,0 @@
-int	O
-jmp_gmp	int
-=	O
-0	int
-;	O

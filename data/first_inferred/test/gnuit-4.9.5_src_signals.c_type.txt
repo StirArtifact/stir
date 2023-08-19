@@ -174,7 +174,7 @@ static	O
 RETSIGTYPE	function
 suspend	O
 (	O
-signum	*
+signum	pointer
 )	O
 int	O
 signum	int
@@ -220,7 +220,7 @@ suspend_requested	int
 ;	O
 install_handler	function
 (	O
-signum	*
+signum	pointer
 )	O
 ;	O
 }	O
@@ -228,7 +228,7 @@ static	O
 RETSIGTYPE	bool
 window_change	function
 (	O
-signum	*
+signum	pointer
 )	O
 int	O
 signum	int
@@ -249,7 +249,7 @@ tty_io_clear	function
 ;	O
 refresh	function
 (	O
-signum	*
+signum	pointer
 )	O
 ;	O
 refresh_requested	int
@@ -264,7 +264,7 @@ refresh_requested	int
 ;	O
 install_handler	function
 (	O
-signum	*
+signum	pointer
 )	O
 ;	O
 }	O
@@ -272,7 +272,7 @@ static	O
 RETSIGTYPE	bool
 resume	function
 (	O
-signum	*
+signum	pointer
 )	O
 int	O
 signum	int
@@ -285,7 +285,7 @@ refresh_at_SIGCONT	int
 {	O
 refresh	function
 (	O
-signum	*
+signum	pointer
 )	O
 ;	O
 refresh_requested	int
@@ -295,7 +295,7 @@ refresh_requested	int
 }	O
 install_handler	function
 (	O
-signum	*
+signum	pointer
 )	O
 ;	O
 }	O
@@ -303,7 +303,7 @@ static	O
 RETSIGTYPE	bool
 time_change	function
 (	O
-signum	*
+signum	pointer
 )	O
 int	O
 signum	int
@@ -326,7 +326,7 @@ tm_sec	int
 )	O
 clock_refresh	function
 (	O
-signum	*
+signum	pointer
 )	O
 ;	O
 tty_key_print_async	function
@@ -345,7 +345,7 @@ alarm_requested	int
 ;	O
 install_handler	function
 (	O
-signum	*
+signum	pointer
 )	O
 ;	O
 alarm	function
@@ -364,7 +364,7 @@ static	O
 RETSIGTYPE	function
 panic	function
 (	O
-signum	*
+signum	pointer
 )	O
 int	O
 signum	int
@@ -372,7 +372,7 @@ signum	int
 {	O
 signal	function
 (	O
-signum	*
+signum	pointer
 ,	O
 panic	function
 )	O
@@ -386,15 +386,15 @@ static	O
 void	O
 install_handler	function
 (	O
-signum	*
+signum	pointer
 )	O
 int	O
-signum	*
+signum	pointer
 ;	O
 {	O
 switch	O
 (	O
-signum	*
+signum	pointer
 )	O
 {	O
 case	O
@@ -416,7 +416,7 @@ signal	function
 (	O
 SIGCONT	int
 ,	O
-resume	*
+resume	pointer
 )	O
 ;	O
 break	O
@@ -540,7 +540,7 @@ signals_init	function
 (	O
 )	O
 {	O
-job_control	*
+job_control	pointer
 =	O
 (	O
 signal	function
@@ -571,14 +571,14 @@ signal	function
 (	O
 SIGSEGV	int
 ,	O
-fatal_signal	*
+fatal_signal	pointer
 )	O
 ;	O
 signal	function
 (	O
 SIGHUP	int
 ,	O
-fatal_signal	*
+fatal_signal	pointer
 )	O
 ;	O
 signal	function

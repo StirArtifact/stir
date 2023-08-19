@@ -16,7 +16,7 @@ i	int
 ;	O
 FILE	struct
 *	O
-out	*
+out	pointer
 ;	O
 if	O
 (	O
@@ -27,30 +27,30 @@ argc	int
 return	O
 0	int
 ;	O
-out	*
+out	pointer
 =	O
 fopen	function
 (	O
-argv	*
+argv	pointer
 [	O
 argc	int
 -	O
 1	int
 ]	O
 ,	O
-"a+b"	*
+"a+b"	pointer
 )	O
 ;	O
 if	O
 (	O
-out	*
+out	pointer
 ==	O
 0	int
 )	O
 {	O
 perror	function
 (	O
-"cant open"	*
+"cant open"	pointer
 )	O
 ;	O
 return	O
@@ -75,7 +75,7 @@ i	int
 {	O
 FILE	struct
 *	O
-fp	*
+fp	pointer
 =	O
 fopen	function
 (	O
@@ -84,7 +84,7 @@ argv	array
 i	int
 ]	O
 ,	O
-"rb"	*
+"rb"	pointer
 )	O
 ;	O
 int	O
@@ -92,14 +92,14 @@ ch	int
 ;	O
 if	O
 (	O
-fp	*
+fp	pointer
 ==	O
 0	int
 )	O
 {	O
 perror	function
 (	O
-"cant open"	*
+"cant open"	pointer
 )	O
 ;	O
 return	O
@@ -115,7 +115,7 @@ ch	int
 =	O
 getc	function
 (	O
-fp	*
+fp	pointer
 )	O
 ;	O
 if	O
@@ -126,13 +126,13 @@ EOF	O
 &&	O
 feof	function
 (	O
-fp	*
+fp	pointer
 )	O
 )	O
 {	O
 fclose	function
 (	O
-fp	*
+fp	pointer
 )	O
 ;	O
 break	O
@@ -143,14 +143,14 @@ putc	function
 (	O
 ch	int
 ,	O
-out	*
+out	pointer
 )	O
 ;	O
 }	O
 }	O
 fclose	function
 (	O
-out	*
+out	pointer
 )	O
 ;	O
 return	O

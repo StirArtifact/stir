@@ -6,22 +6,22 @@ usage	function
 const	O
 char	O
 *	O
-myname	*
+myname	pointer
 )	O
 {	O
 error_printf_exit	O
 (	O
-"\nUsage: %s [options] file...\n"	*
-"  --base <URI>          Default base for relative URIs, default: http://www.example.com\n"	*
-"  --encoding <Encoding> Default file character encoding, default: iso-8859-1\n"	*
-"\n"	*
-"  Examples:\n"	*
-"    %s --base http://www.mydomain.com x.css\n"	*
-"    cat x.css | %s --base http://www.mydomain.com -\n"	*
-"    %s http://www.example.com\n"	*
-"\n"	*
-"  Print URIs as found (without a base):\n"	*
-"    %s --base \"\" x.css\n\n"	*
+"\nUsage: %s [options] file...\n"	pointer
+"  --base <URI>          Default base for relative URIs, default: http://www.example.com\n"	pointer
+"  --encoding <Encoding> Default file character encoding, default: iso-8859-1\n"	pointer
+"\n"	pointer
+"  Examples:\n"	pointer
+"    %s --base http://www.mydomain.com x.css\n"	pointer
+"    cat x.css | %s --base http://www.mydomain.com -\n"	pointer
+"    %s http://www.example.com\n"	pointer
+"\n"	pointer
+"  Print URIs as found (without a base):\n"	pointer
+"    %s --base \"\" x.css\n\n"	pointer
 ,	O
 myname	int
 ,	O
@@ -45,20 +45,20 @@ const	O
 char	O
 *	O
 *	O
-argv	*
+argv	pointer
 )	O
 {	O
 const	O
 char	O
 *	O
-base	*
+base	pointer
 =	O
 NULL	O
 ;	O
 const	O
 char	O
 *	O
-local_encoding	*
+local_encoding	pointer
 =	O
 wget_local_charset_encoding	function
 (	O
@@ -66,12 +66,12 @@ wget_local_charset_encoding	function
 ;	O
 wget_iri	struct
 *	O
-base_uri	*
+base_uri	pointer
 ;	O
 const	O
 char	O
 *	O
-css_encoding	*
+css_encoding	pointer
 =	O
 NULL	O
 ;	O
@@ -85,7 +85,7 @@ wget_get_logger	function
 WGET_LOGGER_ERROR	int
 )	O
 ,	O
-stderr	*
+stderr	pointer
 )	O
 ;	O
 wget_logger_set_stream	function
@@ -95,7 +95,7 @@ wget_get_logger	function
 WGET_LOGGER_INFO	int
 )	O
 ,	O
-stdout	*
+stdout	pointer
 )	O
 ;	O
 for	O
@@ -117,12 +117,12 @@ if	O
 !	O
 strcmp	function
 (	O
-argv	*
+argv	pointer
 [	O
 argpos	int
 ]	O
 ,	O
-"--base"	*
+"--base"	pointer
 )	O
 &&	O
 argc	int
@@ -132,9 +132,9 @@ argpos	int
 1	int
 )	O
 {	O
-base	*
+base	pointer
 =	O
-argv	*
+argv	pointer
 [	O
 ++	O
 argpos	int
@@ -142,9 +142,9 @@ argpos	int
 ;	O
 info_printf	function
 (	O
-"Local URI encoding = '%s'\n"	*
+"Local URI encoding = '%s'\n"	pointer
 ,	O
-local_encoding	*
+local_encoding	pointer
 )	O
 ;	O
 }	O
@@ -154,12 +154,12 @@ if	O
 !	O
 strcmp	function
 (	O
-argv	*
+argv	pointer
 [	O
 argpos	int
 ]	O
 ,	O
-"--encoding"	*
+"--encoding"	pointer
 )	O
 &&	O
 argc	int
@@ -169,9 +169,9 @@ argpos	int
 1	int
 )	O
 {	O
-css_encoding	*
+css_encoding	pointer
 =	O
-argv	*
+argv	pointer
 [	O
 ++	O
 argpos	int
@@ -184,12 +184,12 @@ if	O
 !	O
 strcmp	function
 (	O
-argv	*
+argv	pointer
 [	O
 argpos	int
 ]	O
 ,	O
-"--"	*
+"--"	pointer
 )	O
 )	O
 {	O
@@ -202,7 +202,7 @@ break	O
 else	O
 if	O
 (	O
-argv	*
+argv	pointer
 [	O
 argpos	int
 ]	O
@@ -215,7 +215,7 @@ argpos	int
 {	O
 usage	function
 (	O
-argv	*
+argv	pointer
 [	O
 0	int
 ]	O
@@ -226,15 +226,15 @@ else	O
 break	O
 ;	O
 }	O
-base_uri	*
+base_uri	pointer
 =	O
-base	*
+base	pointer
 ?	O
 wget_iri_parse	function
 (	O
 base	int
 ,	O
-local_encoding	*
+local_encoding	pointer
 )	O
 :	O
 NULL	O
@@ -252,16 +252,16 @@ argpos	int
 {	O
 wget_vector	struct
 *	O
-css_urls	*
+css_urls	pointer
 =	O
 wget_css_get_urls_from_localfile	function
 (	O
-argv	*
+argv	pointer
 [	O
 argpos	int
 ]	O
 ,	O
-base_uri	*
+base_uri	pointer
 ,	O
 &	O
 css_encoding	O
@@ -271,7 +271,7 @@ if	O
 (	O
 wget_vector_size	function
 (	O
-css_urls	*
+css_urls	pointer
 )	O
 >	O
 0	int
@@ -279,9 +279,9 @@ css_urls	*
 {	O
 info_printf	function
 (	O
-"URL encoding for %s is '%s':\n"	*
+"URL encoding for %s is '%s':\n"	pointer
 ,	O
-argv	*
+argv	pointer
 [	O
 argpos	int
 ]	O
@@ -313,48 +313,48 @@ it	int
 {	O
 wget_css_parsed_url	struct
 *	O
-css_url	*
+css_url	pointer
 =	O
 wget_vector_get	function
 (	O
-css_urls	*
+css_urls	pointer
 ,	O
 it	int
 )	O
 ;	O
 if	O
 (	O
-css_url	*
+css_url	pointer
 ->	O
-abs_url	*
+abs_url	pointer
 )	O
 info_printf	function
 (	O
-"  %s -> %s\n"	*
+"  %s -> %s\n"	pointer
 ,	O
-css_url	*
+css_url	pointer
 ->	O
-url	*
+url	pointer
 ,	O
-css_url	*
+css_url	pointer
 ->	O
-abs_url	*
+abs_url	pointer
 )	O
 ;	O
 else	O
 info_printf	function
 (	O
-"  %s\n"	*
+"  %s\n"	pointer
 ,	O
-css_url	*
+css_url	pointer
 ->	O
-url	*
+url	pointer
 )	O
 ;	O
 }	O
 info_printf	function
 (	O
-"\n"	*
+"\n"	pointer
 )	O
 ;	O
 }	O
@@ -368,7 +368,7 @@ css_urls	int
 wget_iri_free	function
 (	O
 &	O
-base_uri	*
+base_uri	pointer
 )	O
 ;	O
 return	O

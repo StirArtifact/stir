@@ -1,7 +1,0 @@
-const	O
-char	O
-*	O
-gsl_version	pointer
-=	O
-GSL_VERSION	pointer
-;	O

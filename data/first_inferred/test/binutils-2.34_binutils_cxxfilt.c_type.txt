@@ -24,7 +24,7 @@ long_options	array
 =	O
 {	O
 {	O
-"strip-underscore"	*
+"strip-underscore"	pointer
 ,	O
 no_argument	int
 ,	O
@@ -34,7 +34,7 @@ NULL	O
 }	O
 ,	O
 {	O
-"format"	*
+"format"	pointer
 ,	O
 required_argument	int
 ,	O
@@ -44,7 +44,7 @@ NULL	O
 }	O
 ,	O
 {	O
-"help"	*
+"help"	pointer
 ,	O
 no_argument	int
 ,	O
@@ -54,7 +54,7 @@ NULL	O
 }	O
 ,	O
 {	O
-"no-params"	*
+"no-params"	pointer
 ,	O
 no_argument	int
 ,	O
@@ -64,7 +64,7 @@ NULL	O
 }	O
 ,	O
 {	O
-"no-strip-underscores"	*
+"no-strip-underscores"	pointer
 ,	O
 no_argument	int
 ,	O
@@ -74,7 +74,7 @@ NULL	O
 }	O
 ,	O
 {	O
-"no-verbose"	*
+"no-verbose"	pointer
 ,	O
 no_argument	int
 ,	O
@@ -84,7 +84,7 @@ NULL	O
 }	O
 ,	O
 {	O
-"types"	*
+"types"	pointer
 ,	O
 no_argument	int
 ,	O
@@ -94,7 +94,7 @@ NULL	O
 }	O
 ,	O
 {	O
-"version"	*
+"version"	pointer
 ,	O
 no_argument	int
 ,	O
@@ -104,7 +104,7 @@ NULL	O
 }	O
 ,	O
 {	O
-"recurse-limit"	*
+"recurse-limit"	pointer
 ,	O
 no_argument	int
 ,	O
@@ -114,7 +114,7 @@ NULL	O
 }	O
 ,	O
 {	O
-"recursion-limit"	*
+"recursion-limit"	pointer
 ,	O
 no_argument	int
 ,	O
@@ -124,7 +124,7 @@ NULL	O
 }	O
 ,	O
 {	O
-"no-recurse-limit"	*
+"no-recurse-limit"	pointer
 ,	O
 no_argument	int
 ,	O
@@ -134,7 +134,7 @@ NULL	O
 }	O
 ,	O
 {	O
-"no-recursion-limit"	*
+"no-recursion-limit"	pointer
 ,	O
 no_argument	int
 ,	O
@@ -160,12 +160,12 @@ demangle_it	function
 (	O
 char	O
 *	O
-mangled_name	*
+mangled_name	pointer
 )	O
 {	O
 char	O
 *	O
-result	*
+result	pointer
 ;	O
 unsigned	O
 int	O
@@ -206,28 +206,28 @@ skip_first	int
 ++	O
 skip_first	int
 ;	O
-result	*
+result	pointer
 =	O
 cplus_demangle	function
 (	O
 mangled_name	int
 +	O
-skip_first	*
+skip_first	pointer
 ,	O
 flags	int
 )	O
 ;	O
 if	O
 (	O
-result	*
+result	pointer
 ==	O
 NULL	O
 )	O
 printf	function
 (	O
-"%s"	*
+"%s"	pointer
 ,	O
-mangled_name	*
+mangled_name	pointer
 )	O
 ;	O
 else	O
@@ -248,14 +248,14 @@ putchar	function
 ;	O
 printf	function
 (	O
-"%s"	*
+"%s"	pointer
 ,	O
-result	*
+result	pointer
 )	O
 ;	O
 free	function
 (	O
-result	*
+result	pointer
 )	O
 ;	O
 }	O
@@ -266,35 +266,35 @@ print_demangler_list	function
 (	O
 FILE	struct
 *	O
-stream	*
+stream	pointer
 )	O
 {	O
 const	O
 struct	O
 demangler_engine	struct
 *	O
-demangler	*
+demangler	pointer
 ;	O
 fprintf	function
 (	O
-stream	*
+stream	pointer
 ,	O
-"{%s"	*
+"{%s"	pointer
 ,	O
-libiberty_demanglers	*
+libiberty_demanglers	pointer
 ->	O
-demangling_style_name	*
+demangling_style_name	pointer
 )	O
 ;	O
 for	O
 (	O
 demangler	int
 =	O
-libiberty_demanglers	*
+libiberty_demanglers	pointer
 +	O
 1	int
 ;	O
-demangler	*
+demangler	pointer
 ->	O
 demangling_style	int
 !=	O
@@ -305,20 +305,20 @@ demangler	int
 )	O
 fprintf	function
 (	O
-stream	*
+stream	pointer
 ,	O
-",%s"	*
+",%s"	pointer
 ,	O
-demangler	*
+demangler	pointer
 ->	O
-demangling_style_name	*
+demangling_style_name	pointer
 )	O
 ;	O
 fprintf	function
 (	O
-stream	*
+stream	pointer
 ,	O
-"}"	*
+"}"	pointer
 )	O
 ;	O
 }	O
@@ -329,7 +329,7 @@ usage	function
 (	O
 FILE	struct
 *	O
-stream	*
+stream	pointer
 ,	O
 int	O
 status	int
@@ -337,63 +337,63 @@ status	int
 {	O
 fprintf	function
 (	O
-stream	*
+stream	pointer
 ,	O
-"Usage: %s [options] [mangled names]\n"	*
+"Usage: %s [options] [mangled names]\n"	pointer
 ,	O
-program_name	*
+program_name	pointer
 )	O
 ;	O
 fprintf	function
 (	O
-stream	*
+stream	pointer
 ,	O
-"Options are:\n  [-_|--strip-underscore]     Ignore first leading underscore%s\n"	*
+"Options are:\n  [-_|--strip-underscore]     Ignore first leading underscore%s\n"	pointer
 ,	O
 TARGET_PREPENDS_UNDERSCORE	int
 ?	O
 " (default)"	int
 :	O
-""	*
+""	pointer
 )	O
 ;	O
 fprintf	function
 (	O
-stream	*
+stream	pointer
 ,	O
-"  [-n|--no-strip-underscore]  Do not ignore a leading underscore%s\n"	*
+"  [-n|--no-strip-underscore]  Do not ignore a leading underscore%s\n"	pointer
 ,	O
-TARGET_PREPENDS_UNDERSCORE	*
+TARGET_PREPENDS_UNDERSCORE	pointer
 ?	O
-""	*
+""	pointer
 :	O
-" (default)"	*
+" (default)"	pointer
 )	O
 ;	O
 fprintf	function
 (	O
-stream	*
+stream	pointer
 ,	O
-"  [-p|--no-params]            Do not display function arguments\n  [-i|--no-verbose]           Do not show implementation details (if any)\n  [-R|--recurse-limit]        Enable a limit on recursion whilst demangling.  [Default]\n  ]-r|--no-recurse-limit]     Disable a limit on recursion whilst demangling\n  [-t|--types]                Also attempt to demangle type encodings\n  [-s|--format "	*
+"  [-p|--no-params]            Do not display function arguments\n  [-i|--no-verbose]           Do not show implementation details (if any)\n  [-R|--recurse-limit]        Enable a limit on recursion whilst demangling.  [Default]\n  ]-r|--no-recurse-limit]     Disable a limit on recursion whilst demangling\n  [-t|--types]                Also attempt to demangle type encodings\n  [-s|--format "	pointer
 )	O
 ;	O
 print_demangler_list	function
 (	O
-stream	*
+stream	pointer
 )	O
 ;	O
 fprintf	function
 (	O
-stream	*
+stream	pointer
 ,	O
-"]\n"	*
+"]\n"	pointer
 )	O
 ;	O
 fprintf	function
 (	O
-stream	*
+stream	pointer
 ,	O
-"  [@<file>]                   Read extra options from <file>\n  [-h|--help]                 Display this information\n  [-v|--version]              Show the version information\nDemangled names are displayed to stdout.\nIf a name cannot be demangled it is just echoed to stdout.\nIf no names are provided on the command line, stdin is read.\n"	*
+"  [@<file>]                   Read extra options from <file>\n  [-h|--help]                 Display this information\n  [-v|--version]              Show the version information\nDemangled names are displayed to stdout.\nIf a name cannot be demangled it is just echoed to stdout.\nIf no names are provided on the command line, stdin is read.\n"	pointer
 )	O
 ;	O
 if	O
@@ -409,14 +409,14 @@ status	int
 )	O
 fprintf	function
 (	O
-stream	*
+stream	pointer
 ,	O
 _	O
 (	O
-"Report bugs to %s.\n"	*
+"Report bugs to %s.\n"	pointer
 )	O
 ,	O
-REPORT_BUGS_TO	*
+REPORT_BUGS_TO	pointer
 )	O
 ;	O
 exit	function
@@ -458,7 +458,7 @@ argc	int
 char	O
 *	O
 *	O
-argv	*
+argv	pointer
 )	O
 {	O
 int	O
@@ -467,7 +467,7 @@ c	int
 const	O
 char	O
 *	O
-valid_symbols	*
+valid_symbols	pointer
 ;	O
 enum	O
 demangling_styles	enum
@@ -475,21 +475,21 @@ style	enum
 =	O
 auto_demangling	int
 ;	O
-program_name	*
+program_name	pointer
 =	O
-argv	*
+argv	pointer
 [	O
 0	int
 ]	O
 ;	O
 xmalloc_set_program_name	function
 (	O
-program_name	*
+program_name	pointer
 )	O
 ;	O
 bfd_set_error_program_name	function
 (	O
-program_name	*
+program_name	pointer
 )	O
 ;	O
 expandargv	function
@@ -498,7 +498,7 @@ expandargv	function
 argc	int
 ,	O
 &	O
-argv	*
+argv	pointer
 )	O
 ;	O
 while	O
@@ -512,7 +512,7 @@ argc	int
 ,	O
 argv	array
 ,	O
-"_hinprRs:tv"	*
+"_hinprRs:tv"	pointer
 ,	O
 long_options	array
 ,	O
@@ -537,7 +537,7 @@ case	O
 :	O
 usage	function
 (	O
-stderr	*
+stderr	pointer
 ,	O
 1	int
 )	O
@@ -549,7 +549,7 @@ case	O
 :	O
 usage	function
 (	O
-stdout	*
+stdout	pointer
 ,	O
 0	int
 )	O
@@ -616,7 +616,7 @@ case	O
 :	O
 print_version	function
 (	O
-"c++filt"	*
+"c++filt"	pointer
 )	O
 ;	O
 return	O
@@ -634,11 +634,11 @@ break	O
 case	O
 's'	O
 :	O
-style	*
+style	pointer
 =	O
 cplus_demangle_name_to_style	function
 (	O
-optarg	*
+optarg	pointer
 )	O
 ;	O
 if	O
@@ -650,13 +650,13 @@ unknown_demangling	int
 {	O
 fprintf	function
 (	O
-stderr	*
+stderr	pointer
 ,	O
-"%s: unknown demangling style `%s'\n"	*
+"%s: unknown demangling style `%s'\n"	pointer
 ,	O
-program_name	*
+program_name	pointer
 ,	O
-optarg	*
+optarg	pointer
 )	O
 ;	O
 return	O
@@ -665,7 +665,7 @@ return	O
 }	O
 cplus_demangle_set_style	O
 (	O
-style	*
+style	pointer
 )	O
 ;	O
 break	O
@@ -692,7 +692,7 @@ optind	int
 {	O
 demangle_it	function
 (	O
-argv	*
+argv	pointer
 [	O
 optind	int
 ]	O
@@ -731,7 +731,7 @@ dlang_demangling	int
 case	O
 rust_demangling	int
 :	O
-valid_symbols	*
+valid_symbols	pointer
 =	O
 standard_symbol_characters	function
 (	O
@@ -785,7 +785,7 @@ c	int
 ||	O
 strchr	function
 (	O
-valid_symbols	*
+valid_symbols	pointer
 ,	O
 c	int
 )	O
@@ -836,7 +836,7 @@ i	int
 ;	O
 demangle_it	function
 (	O
-mbuffer	*
+mbuffer	pointer
 )	O
 ;	O
 }	O
@@ -861,13 +861,13 @@ c	int
 )	O
 fflush	function
 (	O
-stdout	*
+stdout	pointer
 )	O
 ;	O
 }	O
 fflush	function
 (	O
-stdout	*
+stdout	pointer
 )	O
 ;	O
 return	O

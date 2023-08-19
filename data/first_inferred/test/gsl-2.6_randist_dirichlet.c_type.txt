@@ -5,7 +5,7 @@ ran_dirichlet_small	function
 const	O
 gsl_rng	struct
 *	O
-r	*
+r	pointer
 ,	O
 const	O
 size_t	long
@@ -29,7 +29,7 @@ gsl_ran_dirichlet	function
 const	O
 gsl_rng	struct
 *	O
-r	*
+r	pointer
 ,	O
 const	O
 size_t	long
@@ -76,7 +76,7 @@ i	long
 =	O
 gsl_ran_gamma	function
 (	O
-r	*
+r	pointer
 ,	O
 alpha	double
 [	O
@@ -101,7 +101,7 @@ i	long
 ++	O
 )	O
 {	O
-norm	*
+norm	pointer
 +=	O
 theta	array
 [	O
@@ -118,7 +118,7 @@ GSL_SQRT_DBL_MIN	int
 {	O
 ran_dirichlet_small	function
 (	O
-r	*
+r	pointer
 ,	O
 K	int
 ,	O
@@ -160,7 +160,7 @@ ran_dirichlet_small	function
 const	O
 gsl_rng	struct
 *	O
-r	*
+r	pointer
 ,	O
 const	O
 size_t	long
@@ -205,13 +205,13 @@ i	long
 )	O
 {	O
 double	O
-u	*
+u	pointer
 =	O
 log	function
 (	O
 gsl_rng_uniform_pos	function
 (	O
-r	*
+r	pointer
 )	O
 )	O
 /	O
@@ -229,7 +229,7 @@ u	double
 ;	O
 if	O
 (	O
-u	*
+u	pointer
 >	O
 umax	int
 ||	O
@@ -238,9 +238,9 @@ i	long
 0	int
 )	O
 {	O
-umax	*
+umax	pointer
 =	O
-u	*
+u	pointer
 ;	O
 }	O
 }	O
@@ -300,7 +300,7 @@ i	long
 *	O
 gsl_ran_gamma	function
 (	O
-r	*
+r	pointer
 ,	O
 alpha	double
 [	O
@@ -327,7 +327,7 @@ i	long
 ++	O
 )	O
 {	O
-norm	*
+norm	pointer
 +=	O
 theta	array
 [	O
@@ -485,7 +485,7 @@ log_p	double
 +=	O
 gsl_sf_lngamma	function
 (	O
-sum_alpha	*
+sum_alpha	pointer
 )	O
 ;	O
 for	O

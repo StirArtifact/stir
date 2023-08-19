@@ -1,8 +1,8 @@
 void	O
 mpz_set_si	O
 (	O
-mpz_ptr	*
-dest	*
+mpz_ptr	pointer
+dest	pointer
 ,	O
 signed	O
 long	O
@@ -32,7 +32,7 @@ val	long
 ;	O
 PTR	O
 (	O
-dest	*
+dest	pointer
 )	O
 [	O
 0	int
@@ -50,7 +50,7 @@ vl	long
 ;	O
 SIZ	O
 (	O
-dest	*
+dest	pointer
 )	O
 =	O
 val	long

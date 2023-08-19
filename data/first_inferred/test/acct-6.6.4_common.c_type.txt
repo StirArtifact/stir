@@ -1,14 +1,14 @@
 extern	O
 char	O
 *	O
-program_name	*
+program_name	pointer
 ;	O
 void	O
 fatal	function
 (	O
 char	O
 *	O
-s	*
+s	pointer
 )	O
 {	O
 (	O
@@ -16,13 +16,13 @@ void	O
 )	O
 fprintf	function
 (	O
-stderr	*
+stderr	pointer
 ,	O
-"%s: %s\n"	*
+"%s: %s\n"	pointer
 ,	O
-program_name	*
+program_name	pointer
 ,	O
-s	*
+s	pointer
 )	O
 ;	O
 exit	function
@@ -37,7 +37,7 @@ file_open	function
 (	O
 char	O
 *	O
-file_name	*
+file_name	pointer
 ,	O
 int	O
 write_flag	int
@@ -45,13 +45,13 @@ write_flag	int
 {	O
 FILE	struct
 *	O
-fp	*
+fp	pointer
 =	O
 NULL	O
 ;	O
 if	O
 (	O
-file_name	*
+file_name	pointer
 ==	O
 NULL	O
 )	O
@@ -64,32 +64,32 @@ if	O
 (	O
 strcmp	function
 (	O
-file_name	*
+file_name	pointer
 ,	O
-"-"	*
+"-"	pointer
 )	O
 ==	O
 0	int
 )	O
 return	O
-write_flag	*
+write_flag	pointer
 ?	O
-stdout	*
+stdout	pointer
 :	O
-stdin	*
+stdin	pointer
 ;	O
 if	O
 (	O
 (	O
-fp	*
+fp	pointer
 =	O
 fopen	function
 (	O
-file_name	*
+file_name	pointer
 ,	O
-write_flag	*
+write_flag	pointer
 ?	O
-"wb"	*
+"wb"	pointer
 :	O
 "rb"	function
 )	O
@@ -100,7 +100,7 @@ NULL	O
 {	O
 char	O
 *	O
-tmp	*
+tmp	pointer
 =	O
 (	O
 char	O
@@ -116,7 +116,7 @@ char	O
 (	O
 strlen	function
 (	O
-file_name	*
+file_name	pointer
 )	O
 +	O
 30	int
@@ -130,19 +130,19 @@ sprintf	function
 (	O
 tmp	array
 ,	O
-"couldn't open file '%s'"	*
+"couldn't open file '%s'"	pointer
 ,	O
-file_name	*
+file_name	pointer
 )	O
 ;	O
 perror	function
 (	O
-tmp	*
+tmp	pointer
 )	O
 ;	O
 }	O
 return	O
-fp	*
+fp	pointer
 ;	O
 }	O
 void	O
@@ -156,9 +156,9 @@ void	O
 )	O
 printf	function
 (	O
-"\nThe system's default login accounting file is %s.\n"	*
+"\nThe system's default login accounting file is %s.\n"	pointer
 ,	O
-WTMP_FILE_LOC	*
+WTMP_FILE_LOC	pointer
 )	O
 ;	O
 }	O
@@ -173,9 +173,9 @@ void	O
 )	O
 printf	function
 (	O
-"\nThe system's default process accounting file is %s.\n"	*
+"\nThe system's default process accounting file is %s.\n"	pointer
 ,	O
-ACCT_FILE_LOC	*
+ACCT_FILE_LOC	pointer
 )	O
 ;	O
 }	O
@@ -190,7 +190,7 @@ void	O
 )	O
 printf	function
 (	O
-"The system's default process accounting files are:\n\n"	*
+"The system's default process accounting files are:\n\n"	pointer
 )	O
 ;	O
 (	O
@@ -198,9 +198,9 @@ void	O
 )	O
 printf	function
 (	O
-"  raw process accounting data: %s\n"	*
+"  raw process accounting data: %s\n"	pointer
 ,	O
-ACCT_FILE_LOC	*
+ACCT_FILE_LOC	pointer
 )	O
 ;	O
 (	O
@@ -208,9 +208,9 @@ void	O
 )	O
 printf	function
 (	O
-"      summary by command name: %s\n"	*
+"      summary by command name: %s\n"	pointer
 ,	O
-SAVACCT_FILE_LOC	*
+SAVACCT_FILE_LOC	pointer
 )	O
 ;	O
 (	O
@@ -218,9 +218,9 @@ void	O
 )	O
 printf	function
 (	O
-"          summary by username: %s\n\n"	*
+"          summary by username: %s\n\n"	pointer
 ,	O
-USRACCT_FILE_LOC	*
+USRACCT_FILE_LOC	pointer
 )	O
 ;	O
 }	O

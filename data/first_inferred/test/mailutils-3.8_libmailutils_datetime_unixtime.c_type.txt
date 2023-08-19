@@ -9,7 +9,7 @@ tm	struct
 struct	O
 mu_timezone	struct
 *	O
-tz	*
+tz	pointer
 )	O
 {	O
 int	O
@@ -41,7 +41,7 @@ jd	int
 JD_OF_EPOCH	int
 )	O
 *	O
-SECS_PER_DAY	*
+SECS_PER_DAY	pointer
 +	O
 (	O
 tm	struct
@@ -62,9 +62,9 @@ tm	struct
 tm_sec	int
 -	O
 (	O
-tz	*
+tz	pointer
 ?	O
-tz	*
+tz	pointer
 ->	O
 utc_offset	int
 :	O

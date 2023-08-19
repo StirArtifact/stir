@@ -1,7 +1,7 @@
 Ring	struct
 ttyoring	struct
 ,	O
-ttyiring	*
+ttyiring	pointer
 ;	O
 unsigned	O
 char	O
@@ -36,10 +36,10 @@ ring_init	function
 &	O
 ttyoring	struct
 ,	O
-ttyobuf	*
+ttyobuf	pointer
 ,	O
 sizeof	O
-ttyobuf	*
+ttyobuf	pointer
 )	O
 !=	O
 1	int
@@ -58,10 +58,10 @@ ring_init	function
 &	O
 ttyiring	struct
 ,	O
-ttyibuf	*
+ttyibuf	pointer
 ,	O
 sizeof	O
-ttyibuf	*
+ttyibuf	pointer
 )	O
 !=	O
 1	int
@@ -73,7 +73,7 @@ EXIT_FAILURE	int
 )	O
 ;	O
 }	O
-autoflush	*
+autoflush	pointer
 =	O
 TerminalAutoFlush	function
 (	O
@@ -142,7 +142,7 @@ char	O
 )	O
 ttyoring	struct
 .	O
-consume	*
+consume	pointer
 ,	O
 n	int
 )	O
@@ -169,7 +169,7 @@ Dump	function
 ,	O
 ttyoring	struct
 .	O
-consume	*
+consume	pointer
 ,	O
 n	int
 )	O
@@ -207,7 +207,7 @@ char	O
 )	O
 ttyoring	struct
 .	O
-bottom	*
+bottom	pointer
 ,	O
 n1	long
 )	O

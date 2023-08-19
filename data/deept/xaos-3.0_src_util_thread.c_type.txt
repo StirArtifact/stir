@@ -1,9 +1,0 @@
-struct	O
-taskinfo	struct
-definfo	struct
-=	O
-{	O
-0	int
-,	O
-}	O
-;	O

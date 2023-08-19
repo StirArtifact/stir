@@ -1,8 +1,0 @@
-const	O
-char	O
-version_etc_copyright	array
-[	O
-]	O
-=	O
-"Copyright %s %d Free Software Foundation, Inc."	struct
-;	O

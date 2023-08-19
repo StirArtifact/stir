@@ -242,7 +242,7 @@ outfilename	array
 128	int
 ]	O
 =	O
-""	*
+""	pointer
 ;	O
 int	O
 output_flags	int
@@ -455,7 +455,7 @@ number_of_dragons	int
 struct	O
 dragon_data2	struct
 *	O
-dragon2	*
+dragon2	pointer
 =	O
 NULL	O
 ;	O

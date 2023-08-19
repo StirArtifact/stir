@@ -4,7 +4,7 @@ version_etc_copyright	array
 [	O
 ]	O
 =	O
-"Copyright (C) 2011-2016  Simon Josefsson"	*
+"Copyright (C) 2011-2016  Simon Josefsson"	pointer
 ;	O
 const	O
 char	O
@@ -14,25 +14,25 @@ idn2_check_version	function
 const	O
 char	O
 *	O
-req_version	*
+req_version	pointer
 )	O
 {	O
 if	O
 (	O
 !	O
-req_version	*
+req_version	pointer
 ||	O
 strverscmp	function
 (	O
-req_version	*
+req_version	pointer
 ,	O
-IDN2_VERSION	*
+IDN2_VERSION	pointer
 )	O
 <=	O
 0	int
 )	O
 return	O
-IDN2_VERSION	*
+IDN2_VERSION	pointer
 ;	O
 return	O
 NULL	O

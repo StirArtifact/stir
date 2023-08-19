@@ -4,7 +4,7 @@ salsa20_set_key	O
 struct	O
 salsa20_ctx	struct
 *	O
-ctx	*
+ctx	pointer
 ,	O
 size_t	long
 length	long
@@ -12,7 +12,7 @@ length	long
 const	O
 uint8_t	char
 *	O
-key	*
+key	pointer
 )	O
 {	O
 switch	O
@@ -25,9 +25,9 @@ SALSA20_128_KEY_SIZE	int
 :	O
 salsa20_128_set_key	O
 (	O
-ctx	*
+ctx	pointer
 ,	O
-key	*
+key	pointer
 )	O
 ;	O
 break	O
@@ -37,9 +37,9 @@ SALSA20_256_KEY_SIZE	int
 :	O
 salsa20_256_set_key	O
 (	O
-ctx	*
+ctx	pointer
 ,	O
-key	*
+key	pointer
 )	O
 ;	O
 break	O

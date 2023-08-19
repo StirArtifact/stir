@@ -2,7 +2,7 @@ static	O
 const	O
 char	O
 *	O
-file_name	*
+file_name	pointer
 ;	O
 void	O
 close_stdin_set_file_name	function
@@ -10,12 +10,12 @@ close_stdin_set_file_name	function
 const	O
 char	O
 *	O
-file	*
+file	pointer
 )	O
 {	O
-file_name	*
+file_name	pointer
 =	O
-file	*
+file	pointer
 ;	O
 }	O
 void	O
@@ -33,7 +33,7 @@ if	O
 (	O
 freadahead	function
 (	O
-stdin	*
+stdin	pointer
 )	O
 >	O
 0	int
@@ -43,7 +43,7 @@ if	O
 (	O
 fseeko	function
 (	O
-stdin	*
+stdin	pointer
 ,	O
 0	int
 ,	O
@@ -54,7 +54,7 @@ SEEK_CUR	int
 &&	O
 fflush	function
 (	O
-stdin	*
+stdin	pointer
 )	O
 !=	O
 0	int
@@ -68,7 +68,7 @@ if	O
 (	O
 close_stream	function
 (	O
-stdin	*
+stdin	pointer
 )	O
 !=	O
 0	int
@@ -85,16 +85,16 @@ fail	bool
 char	O
 const	O
 *	O
-close_error	*
+close_error	pointer
 =	O
 _	O
 (	O
-"error closing file"	*
+"error closing file"	pointer
 )	O
 ;	O
 if	O
 (	O
-file_name	*
+file_name	pointer
 )	O
 error	function
 (	O
@@ -102,14 +102,14 @@ error	function
 ,	O
 errno	O
 ,	O
-"%s: %s"	*
+"%s: %s"	pointer
 ,	O
 quotearg_colon	function
 (	O
-file_name	*
+file_name	pointer
 )	O
 ,	O
-close_error	*
+close_error	pointer
 )	O
 ;	O
 else	O
@@ -119,9 +119,9 @@ error	function
 ,	O
 errno	O
 ,	O
-"%s"	*
+"%s"	pointer
 ,	O
-close_error	*
+close_error	pointer
 )	O
 ;	O
 }	O

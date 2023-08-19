@@ -19,7 +19,7 @@ itime	long
 struct	O
 tm	struct
 *	O
-q	*
+q	pointer
 ;	O
 {	O
 time_t	long
@@ -33,7 +33,7 @@ time_t	long
 itime	long
 ;	O
 *	O
-q	*
+q	pointer
 =	O
 *	O
 localtime	function

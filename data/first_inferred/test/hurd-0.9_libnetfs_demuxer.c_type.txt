@@ -3,11 +3,11 @@ netfs_demuxer	function
 (	O
 mach_msg_header_t	O
 *	O
-inp	*
+inp	pointer
 ,	O
 mach_msg_header_t	O
 *	O
-outp	*
+outp	pointer
 )	O
 {	O
 mig_routine_t	O
@@ -20,7 +20,7 @@ routine	O
 =	O
 netfs_io_server_routine	function
 (	O
-inp	*
+inp	pointer
 )	O
 )	O
 ||	O
@@ -29,7 +29,7 @@ routine	O
 =	O
 netfs_fs_server_routine	function
 (	O
-inp	*
+inp	pointer
 )	O
 )	O
 ||	O
@@ -38,7 +38,7 @@ routine	O
 =	O
 ports_notify_server_routine	function
 (	O
-inp	*
+inp	pointer
 )	O
 )	O
 ||	O
@@ -47,7 +47,7 @@ routine	O
 =	O
 netfs_fsys_server_routine	function
 (	O
-inp	*
+inp	pointer
 )	O
 )	O
 ||	O
@@ -56,7 +56,7 @@ routine	O
 =	O
 ports_interrupt_server_routine	function
 (	O
-inp	*
+inp	pointer
 )	O
 )	O
 ||	O
@@ -65,7 +65,7 @@ routine	O
 =	O
 netfs_ifsock_server_routine	function
 (	O
-inp	*
+inp	pointer
 )	O
 )	O
 )	O
@@ -75,9 +75,9 @@ inp	*
 routine	O
 )	O
 (	O
-inp	*
+inp	pointer
 ,	O
-outp	*
+outp	pointer
 )	O
 ;	O
 return	O

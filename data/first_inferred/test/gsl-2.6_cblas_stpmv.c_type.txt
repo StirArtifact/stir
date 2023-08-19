@@ -28,11 +28,11 @@ N	int
 const	O
 float	O
 *	O
-Ap	*
+Ap	pointer
 ,	O
 float	O
 *	O
-X	*
+X	pointer
 ,	O
 const	O
 int	O

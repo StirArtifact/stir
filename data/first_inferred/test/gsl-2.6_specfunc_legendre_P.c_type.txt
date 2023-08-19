@@ -8,7 +8,7 @@ lmax	long
 ,	O
 double	O
 *	O
-array	*
+array	pointer
 )	O
 ;	O
 size_t	long
@@ -50,7 +50,7 @@ nlm	long
 =	O
 gsl_sf_legendre_nlm	function
 (	O
-lmax	*
+lmax	pointer
 )	O
 ;	O
 size_t	long
@@ -58,13 +58,13 @@ nsqrt	long
 =	O
 2	int
 *	O
-lmax	*
+lmax	pointer
 +	O
 2	int
 ;	O
 return	O
 (	O
-nlm	*
+nlm	pointer
 +	O
 nsqrt	double
 )	O
@@ -108,7 +108,7 @@ lmax	long
 ,	O
 double	O
 *	O
-array	*
+array	pointer
 )	O
 {	O
 size_t	long
@@ -131,7 +131,7 @@ lmax	long
 ++	O
 l	long
 )	O
-array	*
+array	pointer
 [	O
 l	long
 ]	O

@@ -7,7 +7,7 @@ N	int
 ,	O
 float	O
 *	O
-X	*
+X	pointer
 ,	O
 const	O
 int	O
@@ -15,7 +15,7 @@ incX	int
 ,	O
 float	O
 *	O
-Y	*
+Y	pointer
 ,	O
 const	O
 int	O

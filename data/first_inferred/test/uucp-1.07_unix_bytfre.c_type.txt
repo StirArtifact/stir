@@ -1,12 +1,12 @@
 long	O
 csysdep_bytes_free	function
 (	O
-zfile	*
+zfile	pointer
 )	O
 const	O
 char	O
 *	O
-zfile	*
+zfile	pointer
 ;	O
 {	O
 struct	O
@@ -21,7 +21,7 @@ get_fs_usage	function
 char	O
 *	O
 )	O
-zfile	*
+zfile	pointer
 ,	O
 (	O
 char	O

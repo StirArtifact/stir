@@ -4,7 +4,7 @@ str2short	function
 (	O
 char	O
 *	O
-str	*
+str	pointer
 )	O
 ;	O
 static	O
@@ -13,17 +13,17 @@ str2short	function
 (	O
 char	O
 *	O
-str	*
+str	pointer
 )	O
 {	O
 return	O
 (	O
-str	*
+str	pointer
 [	O
 0	int
 ]	O
 |	O
-str	*
+str	pointer
 [	O
 1	int
 ]	O
@@ -51,7 +51,7 @@ MAX_LINE	int
 ]	O
 ;	O
 char	O
-comment	*
+comment	pointer
 [	O
 MAX_LINE	int
 ]	O
@@ -63,11 +63,11 @@ while	O
 (	O
 fgets	function
 (	O
-instring	*
+instring	pointer
 ,	O
-MAX_LINE	*
+MAX_LINE	pointer
 ,	O
-stdin	*
+stdin	pointer
 )	O
 )	O
 {	O
@@ -75,7 +75,7 @@ i	int
 =	O
 strlen	function
 (	O
-instring	*
+instring	pointer
 )	O
 -	O
 1	int
@@ -114,9 +114,9 @@ if	O
 (	O
 strcmp	function
 (	O
-instring	*
+instring	pointer
 ,	O
-""	*
+""	pointer
 )	O
 ==	O
 0	int
@@ -124,9 +124,9 @@ instring	*
 {	O
 fprintf	function
 (	O
-stdout	*
+stdout	pointer
 ,	O
-"\n"	*
+"\n"	pointer
 )	O
 ;	O
 continue	O
@@ -134,20 +134,20 @@ continue	O
 }	O
 sscanf	function
 (	O
-instring	*
+instring	pointer
 ,	O
-"%4s %75s"	*
+"%4s %75s"	pointer
 ,	O
-sgf_tag	*
+sgf_tag	pointer
 ,	O
-comment	*
+comment	pointer
 )	O
 ;	O
 strncpy	function
 (	O
 sgf_tag	array
 ,	O
-instring	*
+instring	pointer
 ,	O
 4	int
 )	O
@@ -156,16 +156,16 @@ if	O
 (	O
 strlen	function
 (	O
-instring	*
+instring	pointer
 )	O
 >	O
 4	int
 )	O
 strncpy	function
 (	O
-comment	*
+comment	pointer
 ,	O
-instring	*
+instring	pointer
 +	O
 4	int
 ,	O
@@ -177,9 +177,9 @@ MAX_LINE	int
 else	O
 strcpy	function
 (	O
-comment	*
+comment	pointer
 ,	O
-""	*
+""	pointer
 )	O
 ;	O
 if	O
@@ -249,11 +249,11 @@ sgf_tag	array
 {	O
 fprintf	function
 (	O
-stdout	*
+stdout	pointer
 ,	O
-"/* %s */\n"	*
+"/* %s */\n"	pointer
 ,	O
-instring	*
+instring	pointer
 )	O
 ;	O
 continue	O
@@ -265,29 +265,29 @@ if	O
 (	O
 strlen	function
 (	O
-comment	*
+comment	pointer
 )	O
 )	O
 fprintf	function
 (	O
-stdout	*
+stdout	pointer
 ,	O
-"     /* %s */\n"	*
+"     /* %s */\n"	pointer
 ,	O
-comment	*
+comment	pointer
 )	O
 ;	O
 fprintf	function
 (	O
-stdout	*
+stdout	pointer
 ,	O
-"#define SGF%s %5d\n"	*
+"#define SGF%s %5d\n"	pointer
 ,	O
-sgf_tag	*
+sgf_tag	pointer
 ,	O
 str2short	function
 (	O
-sgf_tag	*
+sgf_tag	pointer
 )	O
 )	O
 ;	O

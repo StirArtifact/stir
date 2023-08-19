@@ -1,8 +1,8 @@
 typedef	O
 struct	O
 {	O
-EPChar	*
-degree	*
+EPChar	pointer
+degree	pointer
 ;	O
 }	O
 DtGRADUATE_INNER	struct
@@ -17,9 +17,9 @@ IdObj	int
 {	O
 DtGRADUATE_INNER	struct
 *	O
-m	*
+m	pointer
 ;	O
-m	*
+m	pointer
 =	O
 (	O
 DtGRADUATE_INNER	struct
@@ -34,11 +34,11 @@ edma_printf_obj	function
 (	O
 IdObj	int
 ,	O
-"Side Display: %s"	*
+"Side Display: %s"	pointer
 ,	O
-m	*
+m	pointer
 ->	O
-degree	*
+degree	pointer
 )	O
 ;	O
 return	O
@@ -55,12 +55,12 @@ IdObj	int
 {	O
 DtGRADUATE_INNER	struct
 *	O
-m	*
+m	pointer
 ;	O
 OBJID	int
 e	int
 ;	O
-m	*
+m	pointer
 =	O
 (	O
 DtGRADUATE_INNER	struct
@@ -73,9 +73,9 @@ IdObj	int
 ;	O
 if	O
 (	O
-m	*
+m	pointer
 ->	O
-degree	*
+degree	pointer
 ==	O
 NULL	O
 )	O
@@ -83,9 +83,9 @@ edma_wprop3	function
 (	O
 IdObj	int
 ,	O
-"degree"	*
+"degree"	pointer
 ,	O
-"Mr"	*
+"Mr"	pointer
 )	O
 ;	O
 EDMA_TRY	O
@@ -94,7 +94,7 @@ edma_met3	function
 (	O
 IdObj	int
 ,	O
-"INNER<.display"	*
+"INNER<.display"	pointer
 )	O
 ;	O
 }	O
@@ -108,11 +108,11 @@ EDMA_TRY_END	O
 ;	O
 printf	function
 (	O
-"%s "	*
+"%s "	pointer
 ,	O
-m	*
+m	pointer
 ->	O
-degree	*
+degree	pointer
 )	O
 ;	O
 return	O

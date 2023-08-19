@@ -4,7 +4,7 @@ free_permission_context	function
 struct	O
 permission_context	struct
 *	O
-ctx	*
+ctx	pointer
 )	O
 {	O
 }	O

@@ -378,17 +378,17 @@ def toTree(trgt_p, pred_p, check_ot=False, cmd=None):
 
     print("Graph similarity for complex types: ")
     # if check_unseen:
-    print('Pointer: %.2f%%' % (ptr_sim / ptr_num))
-    print('Structure: %.2f%%' % (stru_sim / stru_num))
-    print('Function: %.2f%%' % (func_sim / func_num))
-    print('Macro Avg: %.2f%%' % (total_sim / num))
+    print('Pointer: {:.2%}'.format(ptr_sim / ptr_num))
+    print('Structure: {:.2%}'.format(stru_sim / stru_num))
+    print('Function: {:.2%}'.format(func_sim / func_num))
+    print('Macro Avg: {:.2%}'.format(total_sim / num))
 
     if not check_ot:
         print("\nGraph similarity for zero-shot types: ")
-        print('Pointer: %.2f%%' % (uptr_sim / uptr_num))
-        print('Structure: %.2f%%' % (ustru_sim / ustru_num))
-        print('Function: %.2f%%' % (ufunc_sim / ufunc_num))
-        print('Macro Avg: %.2f%%' % (unseen_sim / unseen_num))
+        print('Pointer: {:.2%}'.format(uptr_sim / uptr_num))
+        print('Structure: {:.2%}'.format(ustru_sim / ustru_num))
+        print('Function: {:.2%}'.format(ufunc_sim / ufunc_num))
+        print('Macro Avg: {:.2%}'.format(unseen_sim / unseen_num))
 
 def type_prefix_score(target_list, predicated_list, average=False):
     smaller_len = min(len(target_list), len(predicated_list))

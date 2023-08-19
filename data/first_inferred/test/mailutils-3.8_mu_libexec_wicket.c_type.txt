@@ -5,7 +5,7 @@ wicket_docstring	array
 =	O
 N_	O
 (	O
-"scan wickets for matching URLs"	*
+"scan wickets for matching URLs"	pointer
 )	O
 ;	O
 static	O
@@ -16,15 +16,15 @@ wicket_args_doc	array
 =	O
 N_	O
 (	O
-"URL"	*
+"URL"	pointer
 )	O
 ;	O
 static	O
 char	O
 *	O
-wicket_file	*
+wicket_file	pointer
 =	O
-"~/.mu-tickets"	*
+"~/.mu-tickets"	pointer
 ;	O
 static	O
 int	O
@@ -39,17 +39,17 @@ clear_wicket_verbose	function
 struct	O
 mu_parseopt	struct
 *	O
-po	*
+po	pointer
 ,	O
 struct	O
 mu_option	struct
 *	O
-opt	*
+opt	pointer
 ,	O
 char	O
 const	O
 *	O
-arg	*
+arg	pointer
 )	O
 {	O
 wicket_verbose	int
@@ -66,20 +66,20 @@ wicket_options	array
 =	O
 {	O
 {	O
-"file"	*
+"file"	pointer
 ,	O
 'f'	O
 ,	O
 N_	O
 (	O
-"FILE"	*
+"FILE"	pointer
 )	O
 ,	O
 MU_OPTION_DEFAULT	int
 ,	O
 N_	O
 (	O
-"use FILE instead of ~/.mu-tickets"	*
+"use FILE instead of ~/.mu-tickets"	pointer
 )	O
 ,	O
 mu_c_string	int
@@ -89,7 +89,7 @@ wicket_file	int
 }	O
 ,	O
 {	O
-"verbose"	*
+"verbose"	pointer
 ,	O
 'v'	O
 ,	O
@@ -99,7 +99,7 @@ MU_OPTION_DEFAULT	int
 ,	O
 N_	O
 (	O
-"increase output verbosity"	*
+"increase output verbosity"	pointer
 )	O
 ,	O
 mu_c_string	int
@@ -109,7 +109,7 @@ wicket_verbose	int
 }	O
 ,	O
 {	O
-"quiet"	*
+"quiet"	pointer
 ,	O
 'q'	O
 ,	O
@@ -119,7 +119,7 @@ MU_OPTION_DEFAULT	int
 ,	O
 N_	O
 (	O
-"suppress any output"	*
+"suppress any output"	pointer
 )	O
 ,	O
 mu_c_string	int
@@ -138,13 +138,13 @@ static	O
 int	O
 wicket_match	function
 (	O
-mu_stream_t	*
-stream	*
+mu_stream_t	pointer
+stream	pointer
 ,	O
 const	O
 char	O
 *	O
-str	*
+str	pointer
 )	O
 {	O
 int	O
@@ -152,10 +152,10 @@ rc	int
 ,	O
 ret	int
 ;	O
-mu_url_t	*
-u	*
+mu_url_t	pointer
+u	pointer
 ,	O
-url	*
+url	pointer
 ;	O
 struct	O
 mu_locus_point	struct
@@ -182,9 +182,9 @@ rc	int
 mu_url_create	function
 (	O
 &	O
-u	*
+u	pointer
 ,	O
-str	*
+str	pointer
 )	O
 ;	O
 if	O
@@ -196,9 +196,9 @@ mu_diag_funcall	function
 (	O
 MU_DIAG_ERROR	O
 ,	O
-"mu_url_create"	*
+"mu_url_create"	pointer
 ,	O
-str	*
+str	pointer
 ,	O
 rc	int
 )	O
@@ -211,7 +211,7 @@ rc	int
 =	O
 mu_stream_seek	function
 (	O
-stream	*
+stream	pointer
 ,	O
 0	int
 ,	O
@@ -229,9 +229,9 @@ mu_diag_funcall	function
 (	O
 MU_DIAG_ERROR	O
 ,	O
-"mu_stream_seek"	*
+"mu_stream_seek"	pointer
 ,	O
-"0"	*
+"0"	pointer
 ,	O
 rc	int
 )	O
@@ -240,11 +240,11 @@ return	O
 2	int
 ;	O
 }	O
-loc	*
+loc	pointer
 .	O
-mu_file	*
+mu_file	pointer
 =	O
-wicket_file	*
+wicket_file	pointer
 ;	O
 loc	struct
 .	O
@@ -256,17 +256,17 @@ rc	int
 =	O
 mu_wicket_stream_match_url	function
 (	O
-stream	*
+stream	pointer
 ,	O
 &	O
-loc	*
+loc	pointer
 ,	O
-u	*
+u	pointer
 ,	O
 flags	int
 ,	O
 &	O
-url	*
+url	pointer
 )	O
 ;	O
 switch	O
@@ -283,20 +283,20 @@ ret	int
 ;	O
 if	O
 (	O
-wicket_verbose	*
+wicket_verbose	pointer
 )	O
 {	O
 mu_printf	function
 (	O
-"%s: %s:%d"	*
+"%s: %s:%d"	pointer
 ,	O
-str	*
+str	pointer
 ,	O
-loc	*
+loc	pointer
 .	O
-mu_file	*
+mu_file	pointer
 ,	O
-loc	*
+loc	pointer
 .	O
 mu_line	int
 )	O
@@ -309,17 +309,17 @@ wicket_verbose	int
 )	O
 mu_printf	function
 (	O
-": %s"	*
+": %s"	pointer
 ,	O
 mu_url_to_string	function
 (	O
-url	*
+url	pointer
 )	O
 )	O
 ;	O
 mu_printf	function
 (	O
-"\n"	*
+"\n"	pointer
 )	O
 ;	O
 }	O
@@ -334,13 +334,13 @@ wicket_verbose	int
 )	O
 mu_printf	function
 (	O
-"%s: %s\n"	*
+"%s: %s\n"	pointer
 ,	O
-str	*
+str	pointer
 ,	O
 _	O
 (	O
-"not found"	*
+"not found"	pointer
 )	O
 )	O
 ;	O
@@ -356,9 +356,9 @@ mu_diag_funcall	function
 (	O
 MU_DIAG_ERROR	O
 ,	O
-"mu_wicket_stream_match_url"	*
+"mu_wicket_stream_match_url"	pointer
 ,	O
-str	*
+str	pointer
 ,	O
 rc	int
 )	O
@@ -381,11 +381,11 @@ argc	long
 char	O
 *	O
 *	O
-argv	*
+argv	pointer
 )	O
 {	O
-mu_stream_t	*
-stream	*
+mu_stream_t	pointer
+stream	pointer
 ;	O
 int	O
 rc	int
@@ -400,13 +400,13 @@ mu_action_getopt	function
 argc	long
 ,	O
 &	O
-argv	*
+argv	pointer
 ,	O
-wicket_options	*
+wicket_options	pointer
 ,	O
-wicket_docstring	*
+wicket_docstring	pointer
 ,	O
-wicket_args_doc	*
+wicket_args_doc	pointer
 )	O
 ;	O
 if	O
@@ -420,7 +420,7 @@ mu_error	function
 (	O
 _	O
 (	O
-"not enough arguments"	*
+"not enough arguments"	pointer
 )	O
 )	O
 ;	O
@@ -428,11 +428,11 @@ return	O
 1	int
 ;	O
 }	O
-wicket_file	*
+wicket_file	pointer
 =	O
 mu_tilde_expansion	function
 (	O
-wicket_file	*
+wicket_file	pointer
 ,	O
 MU_HIERARCHY_DELIMITER	char
 ,	O
@@ -442,16 +442,16 @@ NULL	O
 if	O
 (	O
 !	O
-wicket_file	*
+wicket_file	pointer
 )	O
 {	O
 mu_diag_funcall	function
 (	O
 MU_DIAG_ERROR	O
 ,	O
-"mu_tilde_expansion"	*
+"mu_tilde_expansion"	pointer
 ,	O
-wicket_file	*
+wicket_file	pointer
 ,	O
 ENOMEM	int
 )	O
@@ -465,9 +465,9 @@ rc	int
 mu_file_stream_create	function
 (	O
 &	O
-stream	*
+stream	pointer
 ,	O
-wicket_file	*
+wicket_file	pointer
 ,	O
 MU_STREAM_READ	int
 )	O
@@ -481,10 +481,10 @@ mu_error	function
 (	O
 _	O
 (	O
-"cannot open input file %s: %s"	*
+"cannot open input file %s: %s"	pointer
 )	O
 ,	O
-wicket_file	*
+wicket_file	pointer
 ,	O
 mu_strerror	function
 (	O
@@ -518,9 +518,9 @@ rc	int
 =	O
 wicket_match	function
 (	O
-stream	*
+stream	pointer
 ,	O
-argv	*
+argv	pointer
 [	O
 i	int
 ]	O
@@ -544,7 +544,7 @@ rc	int
 if	O
 (	O
 !	O
-wicket_verbose	*
+wicket_verbose	pointer
 )	O
 break	O
 ;	O
@@ -553,10 +553,10 @@ break	O
 mu_stream_destroy	function
 (	O
 &	O
-stream	*
+stream	pointer
 )	O
 ;	O
 return	O
-exit_code	*
+exit_code	pointer
 ;	O
 }	O

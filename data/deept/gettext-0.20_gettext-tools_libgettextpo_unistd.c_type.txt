@@ -1,4 +1,0 @@
-typedef	O
-int	O
-dummy	O
-;	O

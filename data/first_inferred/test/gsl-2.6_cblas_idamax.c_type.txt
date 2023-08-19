@@ -8,7 +8,7 @@ N	int
 const	O
 double	O
 *	O
-X	*
+X	pointer
 ,	O
 const	O
 int	O

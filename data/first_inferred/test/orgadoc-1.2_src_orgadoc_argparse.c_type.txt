@@ -8,7 +8,7 @@ long_options	array
 =	O
 {	O
 {	O
-"help"	*
+"help"	pointer
 ,	O
 0	int
 ,	O
@@ -18,7 +18,7 @@ opt_help	int
 }	O
 ,	O
 {	O
-"version"	*
+"version"	pointer
 ,	O
 0	int
 ,	O
@@ -28,7 +28,7 @@ opt_version	int
 }	O
 ,	O
 {	O
-"html"	*
+"html"	pointer
 ,	O
 0	int
 ,	O
@@ -38,7 +38,7 @@ opt_generate_html	int
 }	O
 ,	O
 {	O
-"bibtex"	*
+"bibtex"	pointer
 ,	O
 0	int
 ,	O
@@ -48,7 +48,7 @@ opt_generate_bibtex	int
 }	O
 ,	O
 {	O
-"latex"	*
+"latex"	pointer
 ,	O
 0	int
 ,	O
@@ -58,7 +58,7 @@ opt_generate_latex	int
 }	O
 ,	O
 {	O
-"json"	*
+"json"	pointer
 ,	O
 0	int
 ,	O
@@ -68,7 +68,7 @@ opt_generate_json	int
 }	O
 ,	O
 {	O
-"text"	*
+"text"	pointer
 ,	O
 0	int
 ,	O
@@ -78,7 +78,7 @@ opt_generate_text	int
 }	O
 ,	O
 {	O
-"search"	*
+"search"	pointer
 ,	O
 0	int
 ,	O
@@ -105,7 +105,7 @@ short_options	array
 [	O
 ]	O
 =	O
-"hvtbljps"	*
+"hvtbljps"	pointer
 ;	O
 void	O
 parse_args	function
@@ -116,7 +116,7 @@ argc	int
 char	O
 *	O
 *	O
-argv	*
+argv	pointer
 )	O
 {	O
 int	O
@@ -124,18 +124,18 @@ c	int
 ;	O
 char	O
 *	O
-readme	*
+readme	pointer
 =	O
-argv	*
+argv	pointer
 [	O
 2	int
 ]	O
 ;	O
 char	O
 *	O
-file	*
+file	pointer
 =	O
-argv	*
+argv	pointer
 [	O
 2	int
 ]	O
@@ -151,7 +151,7 @@ argc	int
 ,	O
 argv	array
 ,	O
-short_options	*
+short_options	pointer
 ,	O
 long_options	array
 ,	O
@@ -209,7 +209,7 @@ orgadoc_html_start_tags	function
 ;	O
 orgadoc_xml_parser	function
 (	O
-readme	*
+readme	pointer
 )	O
 ;	O
 orgadoc_html_end_tags	function
@@ -234,7 +234,7 @@ orgadoc_bibtex_start_tags	function
 ;	O
 orgadoc_xml_parser	function
 (	O
-readme	*
+readme	pointer
 )	O
 ;	O
 orgadoc_bibtex_end_tags	function
@@ -259,7 +259,7 @@ orgadoc_latex_start_tags	function
 ;	O
 orgadoc_xml_parser	function
 (	O
-readme	*
+readme	pointer
 )	O
 ;	O
 orgadoc_latex_end_tags	function
@@ -284,7 +284,7 @@ orgadoc_json_start_tags	function
 ;	O
 orgadoc_xml_parser	function
 (	O
-readme	*
+readme	pointer
 )	O
 ;	O
 orgadoc_json_end_tags	function
@@ -299,7 +299,7 @@ EXIT_SUCCESS	int
 case	O
 opt_generate_text	int
 :	O
-text	*
+text	pointer
 =	O
 1	int
 ;	O
@@ -309,7 +309,7 @@ orgadoc_text_start_tags	function
 ;	O
 orgadoc_xml_parser	function
 (	O
-readme	*
+readme	pointer
 )	O
 ;	O
 orgadoc_text_end_tags	function
@@ -326,7 +326,7 @@ opt_search_file	int
 :	O
 orgadoc_search	function
 (	O
-file	*
+file	pointer
 )	O
 ;	O
 exit	function

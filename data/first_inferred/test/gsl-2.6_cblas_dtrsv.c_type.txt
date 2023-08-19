@@ -28,7 +28,7 @@ N	int
 const	O
 double	O
 *	O
-A	*
+A	pointer
 ,	O
 const	O
 int	O
@@ -36,7 +36,7 @@ lda	int
 ,	O
 double	O
 *	O
-X	*
+X	pointer
 ,	O
 const	O
 int	O

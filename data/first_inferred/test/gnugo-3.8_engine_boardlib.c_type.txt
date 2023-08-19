@@ -4,7 +4,7 @@ board_size	int
 DEFAULT_BOARD_SIZE	int
 ;	O
 Intersection	struct
-board	*
+board	pointer
 [	O
 BOARDSIZE	int
 ]	O
@@ -45,7 +45,7 @@ move_history_pos	array
 MAX_MOVE_HISTORY	int
 ]	O
 ;	O
-Hash_data	*
+Hash_data	pointer
 move_history_hash	array
 [	O
 MAX_MOVE_HISTORY	int
@@ -86,8 +86,8 @@ shadow	array
 BOARDMAX	O
 ]	O
 ;	O
-Hash_data	*
-board_hash	*
+Hash_data	pointer
+board_hash	pointer
 ;	O
 int	O
 stackp	int
@@ -97,7 +97,7 @@ position_number	int
 ;	O
 struct	O
 stats_data	struct
-stats	*
+stats	pointer
 ;	O
 int	O
 count_variations	int
@@ -106,7 +106,7 @@ count_variations	int
 ;	O
 SGFTree	struct
 *	O
-sgf_dumptree	*
+sgf_dumptree	pointer
 =	O
 NULL	O
 ;	O

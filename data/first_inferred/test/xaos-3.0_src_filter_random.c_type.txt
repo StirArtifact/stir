@@ -1,7 +1,7 @@
 static	O
 long	O
 int	O
-state	*
+state	pointer
 ;	O
 void	O
 XaoS_srandom	function
@@ -11,7 +11,7 @@ int	O
 x	int
 )	O
 {	O
-state	*
+state	pointer
 =	O
 x	double
 ;	O
@@ -23,11 +23,11 @@ XaoS_random	function
 void	O
 )	O
 {	O
-state	*
+state	pointer
 =	O
 (	O
 (	O
-state	*
+state	pointer
 *	O
 1103515245	int
 )	O
@@ -38,6 +38,6 @@ state	*
 MYLONG_MAX	int
 ;	O
 return	O
-state	*
+state	pointer
 ;	O
 }	O

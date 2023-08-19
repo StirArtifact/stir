@@ -1,6 +1,0 @@
-const	O
-int	O
-_libtextstyle_version	O
-=	O
-_LIBTEXTSTYLE_VERSION	O
-;	O

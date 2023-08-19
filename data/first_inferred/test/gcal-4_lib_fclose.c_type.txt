@@ -3,7 +3,7 @@ rpl_fclose	function
 (	O
 FILE	struct
 *	O
-fp	*
+fp	pointer
 )	O
 {	O
 int	O
@@ -23,7 +23,7 @@ fd	array
 =	O
 fileno	function
 (	O
-fp	*
+fp	pointer
 )	O
 ;	O
 if	O
@@ -35,7 +35,7 @@ fd	array
 return	O
 fclose_nothrow	O
 (	O
-fp	*
+fp	pointer
 )	O
 ;	O
 if	O
@@ -44,14 +44,14 @@ if	O
 !	O
 freading	O
 (	O
-fp	*
+fp	pointer
 )	O
 ||	O
 lseek	function
 (	O
 fileno	function
 (	O
-fp	*
+fp	pointer
 )	O
 ,	O
 0	int
@@ -65,7 +65,7 @@ SEEK_CUR	int
 &&	O
 fflush	function
 (	O
-fp	*
+fp	pointer
 )	O
 )	O
 saved_errno	int
@@ -76,7 +76,7 @@ result	int
 =	O
 fclose_nothrow	O
 (	O
-fp	*
+fp	pointer
 )	O
 ;	O
 if	O
@@ -90,7 +90,7 @@ errno	O
 =	O
 saved_errno	int
 ;	O
-result	*
+result	pointer
 =	O
 EOF	O
 ;	O

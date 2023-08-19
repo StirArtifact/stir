@@ -186,7 +186,7 @@ char	O
 _libplot_color_to_svg_color	function
 (	O
 plColor	struct
-color_48	*
+color_48	pointer
 ,	O
 char	O
 charbuf	array
@@ -209,7 +209,7 @@ false	int
 const	O
 char	O
 *	O
-svg_color	*
+svg_color	pointer
 ;	O
 color_24	struct
 .	O
@@ -301,7 +301,7 @@ color_24	struct
 .	O
 blue	int
 ==	O
-_svg_colornames	*
+_svg_colornames	pointer
 [	O
 i	int
 ]	O
@@ -328,15 +328,15 @@ _svg_colornames	array
 i	int
 ]	O
 .	O
-name	*
+name	pointer
 ;	O
 else	O
 {	O
 sprintf	function
 (	O
-charbuf	*
+charbuf	pointer
 ,	O
-"#%02x%02x%02x"	*
+"#%02x%02x%02x"	pointer
 ,	O
 color_24	struct
 .	O
@@ -357,6 +357,6 @@ charbuf	int
 ;	O
 }	O
 return	O
-svg_color	*
+svg_color	pointer
 ;	O
 }	O

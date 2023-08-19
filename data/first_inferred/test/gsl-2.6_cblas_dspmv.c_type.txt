@@ -22,12 +22,12 @@ alpha	enum
 const	O
 double	O
 *	O
-Ap	*
+Ap	pointer
 ,	O
 const	O
 double	O
 *	O
-X	*
+X	pointer
 ,	O
 const	O
 int	O
@@ -39,7 +39,7 @@ beta	enum
 ,	O
 double	O
 *	O
-Y	*
+Y	pointer
 ,	O
 const	O
 int	O

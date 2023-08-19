@@ -8,9 +8,9 @@ n	long
 {	O
 void	O
 *	O
-p	*
+p	pointer
 ;	O
-p	*
+p	pointer
 =	O
 mmalloca	function
 (	O
@@ -19,7 +19,7 @@ n	long
 ;	O
 if	O
 (	O
-p	*
+p	pointer
 ==	O
 NULL	O
 )	O
@@ -28,6 +28,6 @@ xalloc_die	function
 )	O
 ;	O
 return	O
-p	*
+p	pointer
 ;	O
 }	O

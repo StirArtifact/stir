@@ -1,37 +1,37 @@
 static	O
 char	O
 *	O
-top_left_string	*
+top_left_string	pointer
 ;	O
 static	O
 char	O
 *	O
-top_centre_string	*
+top_centre_string	pointer
 ;	O
 static	O
 char	O
 *	O
-top_right_string	*
+top_right_string	pointer
 ;	O
 static	O
 char	O
 *	O
-bottom_left_string	*
+bottom_left_string	pointer
 ;	O
 static	O
 char	O
 *	O
-bottom_centre_string	*
+bottom_centre_string	pointer
 ;	O
 static	O
 char	O
 *	O
-bottom_right_string	*
+bottom_right_string	pointer
 ;	O
 static	O
 char	O
 *	O
-message_string	*
+message_string	pointer
 ;	O
 void	O
 setup_headers	function
@@ -39,17 +39,17 @@ setup_headers	function
 void	O
 )	O
 {	O
-top_left_string	*
+top_left_string	pointer
 =	O
 NULL	O
 ;	O
 string_option	function
 (	O
-"X"	*
+"X"	pointer
 ,	O
-"left-header"	*
+"left-header"	pointer
 ,	O
-"%L"	*
+"%L"	pointer
 ,	O
 &	O
 top_left_string	O
@@ -58,22 +58,22 @@ NULL	O
 ,	O
 NULL	O
 ,	O
-OPT_PAGE_FURNITURE	*
+OPT_PAGE_FURNITURE	pointer
 ,	O
-"specify string for left side of header"	*
+"specify string for left side of header"	pointer
 )	O
 ;	O
-bottom_left_string	*
+bottom_left_string	pointer
 =	O
 NULL	O
 ;	O
 string_option	function
 (	O
-"x"	*
+"x"	pointer
 ,	O
-"left-footer"	*
+"left-footer"	pointer
 ,	O
-"%L"	*
+"%L"	pointer
 ,	O
 &	O
 bottom_left_string	O
@@ -82,22 +82,22 @@ NULL	O
 ,	O
 NULL	O
 ,	O
-OPT_PAGE_FURNITURE	*
+OPT_PAGE_FURNITURE	pointer
 ,	O
-"specify string for left side of footer"	*
+"specify string for left side of footer"	pointer
 )	O
 ;	O
-top_centre_string	*
+top_centre_string	pointer
 =	O
 NULL	O
 ;	O
 string_option	function
 (	O
-"Y"	*
+"Y"	pointer
 ,	O
-"center-header"	*
+"center-header"	pointer
 ,	O
-"%N"	*
+"%N"	pointer
 ,	O
 &	O
 top_centre_string	O
@@ -106,22 +106,22 @@ NULL	O
 ,	O
 NULL	O
 ,	O
-OPT_PAGE_FURNITURE	*
+OPT_PAGE_FURNITURE	pointer
 ,	O
-"specify string for center of header"	*
+"specify string for center of header"	pointer
 )	O
 ;	O
-bottom_centre_string	*
+bottom_centre_string	pointer
 =	O
 NULL	O
 ;	O
 string_option	function
 (	O
-"y"	*
+"y"	pointer
 ,	O
-"center-footer"	*
+"center-footer"	pointer
 ,	O
-"%n %p"	*
+"%n %p"	pointer
 ,	O
 &	O
 bottom_centre_string	O
@@ -130,22 +130,22 @@ NULL	O
 ,	O
 NULL	O
 ,	O
-OPT_PAGE_FURNITURE	*
+OPT_PAGE_FURNITURE	pointer
 ,	O
-"specify string for center of footer"	*
+"specify string for center of footer"	pointer
 )	O
 ;	O
-top_right_string	*
+top_right_string	pointer
 =	O
 NULL	O
 ;	O
 string_option	function
 (	O
-"Z"	*
+"Z"	pointer
 ,	O
-"right-header"	*
+"right-header"	pointer
 ,	O
-"Page %P of %F"	*
+"Page %P of %F"	pointer
 ,	O
 &	O
 top_right_string	O
@@ -154,22 +154,22 @@ NULL	O
 ,	O
 NULL	O
 ,	O
-OPT_PAGE_FURNITURE	*
+OPT_PAGE_FURNITURE	pointer
 ,	O
-"specify string for right side of header"	*
+"specify string for right side of header"	pointer
 )	O
 ;	O
-bottom_right_string	*
+bottom_right_string	pointer
 =	O
 NULL	O
 ;	O
 string_option	function
 (	O
-"z"	*
+"z"	pointer
 ,	O
-"right-footer"	*
+"right-footer"	pointer
 ,	O
-"Page %P of %F"	*
+"Page %P of %F"	pointer
 ,	O
 &	O
 bottom_right_string	O
@@ -178,20 +178,20 @@ NULL	O
 ,	O
 NULL	O
 ,	O
-OPT_PAGE_FURNITURE	*
+OPT_PAGE_FURNITURE	pointer
 ,	O
-"specify string for right side of footer"	*
+"specify string for right side of footer"	pointer
 )	O
 ;	O
-message_string	*
+message_string	pointer
 =	O
 NULL	O
 ;	O
 string_option	function
 (	O
-"m"	*
+"m"	pointer
 ,	O
-"message"	*
+"message"	pointer
 ,	O
 NULL	O
 ,	O
@@ -202,9 +202,9 @@ NULL	O
 ,	O
 NULL	O
 ,	O
-OPT_PAGE_FURNITURE	*
+OPT_PAGE_FURNITURE	pointer
 ,	O
-"message to be printed over page"	*
+"message to be printed over page"	pointer
 )	O
 ;	O
 }	O
@@ -220,23 +220,23 @@ total_pages	long
 {	O
 PS_startpage	function
 (	O
-top_left_string	*
+top_left_string	pointer
 ,	O
-top_centre_string	*
+top_centre_string	pointer
 ,	O
-top_right_string	*
+top_right_string	pointer
 ,	O
-bottom_left_string	*
+bottom_left_string	pointer
 ,	O
-bottom_centre_string	*
+bottom_centre_string	pointer
 ,	O
-bottom_right_string	*
+bottom_right_string	pointer
 ,	O
-message_string	*
+message_string	pointer
 ,	O
 page_number	long
 ,	O
-total_pages	*
+total_pages	pointer
 ,	O
 FALSE	O
 )	O
@@ -257,30 +257,30 @@ page_no_string	array
 ;	O
 sprintf	function
 (	O
-page_no_string	*
+page_no_string	pointer
 ,	O
-"Page %ld"	*
+"Page %ld"	pointer
 ,	O
-page_no	*
+page_no	pointer
 )	O
 ;	O
 PS_startpage	function
 (	O
-"%L"	*
+"%L"	pointer
 ,	O
-"File Index"	*
+"File Index"	pointer
 ,	O
-page_no_string	*
+page_no_string	pointer
 ,	O
-"%L"	*
+"%L"	pointer
 ,	O
-"File Index"	*
+"File Index"	pointer
 ,	O
-page_no_string	*
+page_no_string	pointer
 ,	O
-message_string	*
+message_string	pointer
 ,	O
-page_no	*
+page_no	pointer
 ,	O
 0	int
 ,	O
@@ -303,30 +303,30 @@ page_no_string	array
 ;	O
 sprintf	function
 (	O
-page_no_string	*
+page_no_string	pointer
 ,	O
-"Page %ld"	*
+"Page %ld"	pointer
 ,	O
-page_no	*
+page_no	pointer
 )	O
 ;	O
 PS_startpage	function
 (	O
-"%L"	*
+"%L"	pointer
 ,	O
-"Function Index"	*
+"Function Index"	pointer
 ,	O
-page_no_string	*
+page_no_string	pointer
 ,	O
-"%L"	*
+"%L"	pointer
 ,	O
-"Function Index"	*
+"Function Index"	pointer
 ,	O
-page_no_string	*
+page_no_string	pointer
 ,	O
-message_string	*
+message_string	pointer
 ,	O
-page_no	*
+page_no	pointer
 ,	O
 0	int
 ,	O

@@ -2,11 +2,11 @@ public	O
 void	O
 match_brac	function
 (	O
-obrac	*
+obrac	pointer
 ,	O
-cbrac	*
+cbrac	pointer
 ,	O
-forwdir	*
+forwdir	pointer
 ,	O
 n	int
 )	O
@@ -35,7 +35,7 @@ pos	long
 int	O
 (	O
 *	O
-chget	*
+chget	pointer
 )	O
 (	O
 )	O
@@ -60,7 +60,7 @@ forwdir	int
 ?	O
 TOP	O
 :	O
-BOTTOM	*
+BOTTOM	pointer
 )	O
 ;	O
 if	O
@@ -81,7 +81,7 @@ forwdir	int
 )	O
 error	function
 (	O
-"Nothing in top line"	*
+"Nothing in top line"	pointer
 ,	O
 NULL_PARG	O
 )	O
@@ -89,7 +89,7 @@ NULL_PARG	O
 else	O
 error	function
 (	O
-"Nothing in bottom line"	*
+"Nothing in bottom line"	pointer
 ,	O
 NULL_PARG	O
 )	O
@@ -122,7 +122,7 @@ forwdir	int
 )	O
 error	function
 (	O
-"No bracket in top line"	*
+"No bracket in top line"	pointer
 ,	O
 NULL_PARG	O
 )	O
@@ -130,7 +130,7 @@ NULL_PARG	O
 else	O
 error	function
 (	O
-"No bracket in bottom line"	*
+"No bracket in bottom line"	pointer
 ,	O
 NULL_PARG	O
 )	O
@@ -154,7 +154,7 @@ n	int
 if	O
 (	O
 !	O
-forwdir	*
+forwdir	pointer
 )	O
 (	O
 void	O
@@ -166,7 +166,7 @@ ch_back_get	function
 chget	int
 =	O
 (	O
-forwdir	*
+forwdir	pointer
 )	O
 ?	O
 ch_forw_get	int
@@ -184,7 +184,7 @@ c	int
 =	O
 (	O
 *	O
-chget	*
+chget	pointer
 )	O
 (	O
 )	O
@@ -235,7 +235,7 @@ return	O
 }	O
 error	function
 (	O
-"No matching bracket"	*
+"No matching bracket"	pointer
 ,	O
 NULL_PARG	O
 )	O

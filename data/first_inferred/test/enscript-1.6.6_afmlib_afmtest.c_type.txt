@@ -7,7 +7,7 @@ usage	function
 static	O
 char	O
 *	O
-program	*
+program	pointer
 ;	O
 int	O
 main	function
@@ -22,31 +22,31 @@ argv	array
 ]	O
 )	O
 {	O
-AFMHandle	*
-afm	*
+AFMHandle	pointer
+afm	pointer
 ;	O
-AFMFont	*
-font	*
+AFMFont	pointer
+font	pointer
 ;	O
 AFMError	int
 error	int
 ;	O
-AFMNumber	*
-width	*
+AFMNumber	pointer
+width	pointer
 ,	O
 height	int
 ;	O
 char	O
-buf	*
+buf	pointer
 [	O
 256	int
 ]	O
 ;	O
-program	*
+program	pointer
 =	O
 strrchr	function
 (	O
-argv	*
+argv	pointer
 [	O
 0	int
 ]	O
@@ -56,15 +56,15 @@ argv	*
 ;	O
 if	O
 (	O
-program	*
+program	pointer
 )	O
-program	*
+program	pointer
 ++	O
 ;	O
 else	O
-program	*
+program	pointer
 =	O
-argv	*
+argv	pointer
 [	O
 0	int
 ]	O
@@ -78,12 +78,12 @@ NULL	O
 0	int
 ,	O
 &	O
-afm	*
+afm	pointer
 )	O
 ;	O
 HANDLE_ERROR	O
 (	O
-"couldn't create library"	*
+"couldn't create library"	pointer
 )	O
 ;	O
 if	O
@@ -107,12 +107,12 @@ if	O
 (	O
 strcmp	function
 (	O
-argv	*
+argv	pointer
 [	O
 1	int
 ]	O
 ,	O
-"dump"	*
+"dump"	pointer
 )	O
 ==	O
 0	int
@@ -126,17 +126,17 @@ error	int
 =	O
 afm_open_file	function
 (	O
-afm	*
+afm	pointer
 ,	O
-AFM_I_ALL	*
+AFM_I_ALL	pointer
 ,	O
-argv	*
+argv	pointer
 [	O
 2	int
 ]	O
 ,	O
 &	O
-font	*
+font	pointer
 )	O
 ;	O
 if	O
@@ -148,13 +148,13 @@ AFM_SUCCESS	int
 {	O
 fprintf	function
 (	O
-stderr	*
+stderr	pointer
 ,	O
-"%s: couldn't open font \"%s\", using default\n"	*
+"%s: couldn't open font \"%s\", using default\n"	pointer
 ,	O
-program	*
+program	pointer
 ,	O
-argv	*
+argv	pointer
 [	O
 2	int
 ]	O
@@ -164,35 +164,35 @@ error	int
 =	O
 afm_open_default_font	function
 (	O
-afm	*
+afm	pointer
 ,	O
 &	O
-font	*
+font	pointer
 )	O
 ;	O
 HANDLE_ERROR	O
 (	O
-"couldn't open default font"	*
+"couldn't open default font"	pointer
 )	O
 ;	O
 }	O
 afm_font_dump	function
 (	O
-stdout	*
+stdout	pointer
 ,	O
-font	*
+font	pointer
 )	O
 ;	O
 error	int
 =	O
 afm_close_font	function
 (	O
-font	*
+font	pointer
 )	O
 ;	O
 HANDLE_ERROR	O
 (	O
-"couldn't close font"	*
+"couldn't close font"	pointer
 )	O
 ;	O
 }	O
@@ -201,12 +201,12 @@ if	O
 (	O
 strcmp	function
 (	O
-argv	*
+argv	pointer
 [	O
 1	int
 ]	O
 ,	O
-"stringwidth"	*
+"stringwidth"	pointer
 )	O
 ==	O
 0	int
@@ -220,62 +220,62 @@ error	int
 =	O
 afm_open_file	function
 (	O
-afm	*
+afm	pointer
 ,	O
-AFM_I_ALL	*
+AFM_I_ALL	pointer
 ,	O
-argv	*
+argv	pointer
 [	O
 2	int
 ]	O
 ,	O
 &	O
-font	*
+font	pointer
 )	O
 ;	O
 HANDLE_ERROR	O
 (	O
-"couldn't open font"	*
+"couldn't open font"	pointer
 )	O
 ;	O
 error	int
 =	O
 afm_font_encoding	function
 (	O
-font	*
+font	pointer
 ,	O
-AFM_ENCODING_ISO_8859_1	*
+AFM_ENCODING_ISO_8859_1	pointer
 ,	O
 0	int
 )	O
 ;	O
 HANDLE_ERROR	O
 (	O
-"couldn't encode font"	*
+"couldn't encode font"	pointer
 )	O
 ;	O
 error	int
 =	O
 afm_font_stringwidth	function
 (	O
-font	*
+font	pointer
 ,	O
 atof	function
 (	O
-argv	*
+argv	pointer
 [	O
 3	int
 ]	O
 )	O
 ,	O
-argv	*
+argv	pointer
 [	O
 4	int
 ]	O
 ,	O
 strlen	function
 (	O
-argv	*
+argv	pointer
 [	O
 4	int
 ]	O
@@ -290,7 +290,7 @@ height	int
 ;	O
 printf	function
 (	O
-"stringwidth is [%g %g]\n"	*
+"stringwidth is [%g %g]\n"	pointer
 ,	O
 width	int
 ,	O
@@ -301,12 +301,12 @@ error	int
 =	O
 afm_close_font	function
 (	O
-font	*
+font	pointer
 )	O
 ;	O
 HANDLE_ERROR	O
 (	O
-"couldn't close font"	*
+"couldn't close font"	pointer
 )	O
 ;	O
 }	O
@@ -315,12 +315,12 @@ if	O
 (	O
 strcmp	function
 (	O
-argv	*
+argv	pointer
 [	O
 1	int
 ]	O
 ,	O
-"chardump"	*
+"chardump"	pointer
 )	O
 ==	O
 0	int
@@ -353,17 +353,17 @@ error	int
 =	O
 afm_open_file	function
 (	O
-afm	*
+afm	pointer
 ,	O
-AFM_I_COMPOSITES	*
+AFM_I_COMPOSITES	pointer
 ,	O
-argv	*
+argv	pointer
 [	O
 i	int
 ]	O
 ,	O
 &	O
-font	*
+font	pointer
 )	O
 ;	O
 if	O
@@ -377,23 +377,23 @@ afm_error_to_string	function
 (	O
 error	int
 ,	O
-buf	*
+buf	pointer
 )	O
 ;	O
 fprintf	function
 (	O
-stderr	*
+stderr	pointer
 ,	O
-"%s: couldn't open AFM file \"%s\": %s\n"	*
+"%s: couldn't open AFM file \"%s\": %s\n"	pointer
 ,	O
-program	*
+program	pointer
 ,	O
-argv	*
+argv	pointer
 [	O
 i	int
 ]	O
 ,	O
-buf	*
+buf	pointer
 )	O
 ;	O
 continue	O
@@ -407,7 +407,7 @@ j	int
 ;	O
 j	int
 <	O
-font	*
+font	pointer
 ->	O
 num_character_metrics	int
 ;	O
@@ -417,12 +417,12 @@ j	int
 {	O
 AFMIndividualCharacterMetrics	struct
 *	O
-cm	*
+cm	pointer
 ;	O
-cm	*
+cm	pointer
 =	O
 &	O
-font	*
+font	pointer
 ->	O
 character_metrics	array
 [	O
@@ -431,21 +431,21 @@ j	int
 ;	O
 printf	function
 (	O
-"/%-30s %3ld glyph %s\n"	*
+"/%-30s %3ld glyph %s\n"	pointer
 ,	O
-cm	*
+cm	pointer
 ->	O
-name	*
+name	pointer
 ,	O
-cm	*
+cm	pointer
 ->	O
-character_code	*
+character_code	pointer
 ,	O
-font	*
+font	pointer
 ->	O
 global_info	struct
 .	O
-FontName	*
+FontName	pointer
 )	O
 ;	O
 }	O
@@ -457,7 +457,7 @@ j	int
 ;	O
 j	int
 <	O
-font	*
+font	pointer
 ->	O
 num_composites	int
 ;	O
@@ -467,31 +467,31 @@ j	int
 {	O
 AFMComposite	struct
 *	O
-cc	*
+cc	pointer
 ;	O
 cc	int
 =	O
 &	O
-font	*
+font	pointer
 ->	O
-composites	*
+composites	pointer
 [	O
 j	int
 ]	O
 ;	O
 printf	function
 (	O
-"/%-30s -1 composite %s\n"	*
+"/%-30s -1 composite %s\n"	pointer
 ,	O
-cc	*
+cc	pointer
 ->	O
-name	*
+name	pointer
 ,	O
-font	*
+font	pointer
 ->	O
 global_info	struct
 .	O
-FontName	*
+FontName	pointer
 )	O
 ;	O
 }	O
@@ -500,7 +500,7 @@ void	O
 )	O
 afm_close_font	function
 (	O
-font	*
+font	pointer
 )	O
 ;	O
 }	O
@@ -529,17 +529,17 @@ usage	function
 {	O
 fprintf	function
 (	O
-stderr	*
+stderr	pointer
 ,	O
-"Usage: %s dump file\n"	*
-"       %s stringwidth file ptsize string\n"	*
-"       %s chardump file [file ...]\n"	*
+"Usage: %s dump file\n"	pointer
+"       %s stringwidth file ptsize string\n"	pointer
+"       %s chardump file [file ...]\n"	pointer
 ,	O
-program	*
+program	pointer
 ,	O
-program	*
+program	pointer
 ,	O
-program	*
+program	pointer
 )	O
 ;	O
 }	O

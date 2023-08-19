@@ -4,7 +4,7 @@ gettime	function
 struct	O
 timespec	struct
 *	O
-ts	*
+ts	pointer
 )	O
 {	O
 if	O
@@ -13,7 +13,7 @@ clock_gettime	function
 (	O
 CLOCK_REALTIME	int
 ,	O
-ts	*
+ts	pointer
 )	O
 ==	O
 0	int
@@ -33,7 +33,7 @@ tv	struct
 NULL	O
 )	O
 ;	O
-ts	*
+ts	pointer
 ->	O
 tv_sec	long
 =	O
@@ -41,7 +41,7 @@ tv	struct
 .	O
 tv_sec	long
 ;	O
-ts	*
+ts	pointer
 ->	O
 tv_nsec	long
 =	O

@@ -4,7 +4,7 @@ open_safer	function
 char	O
 const	O
 *	O
-file	*
+file	pointer
 ,	O
 int	O
 flags	int
@@ -54,7 +54,7 @@ fd_safer	function
 (	O
 open	function
 (	O
-file	*
+file	pointer
 ,	O
 flags	int
 ,	O

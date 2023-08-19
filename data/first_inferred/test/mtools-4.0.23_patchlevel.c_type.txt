@@ -1,21 +1,21 @@
 const	O
 char	O
 *	O
-mversion	*
+mversion	pointer
 =	O
-"4.0.23"	*
+"4.0.23"	pointer
 ;	O
 const	O
 char	O
 *	O
-mdate	*
+mdate	pointer
 =	O
-"December 9th, 2018"	*
+"December 9th, 2018"	pointer
 ;	O
 const	O
 char	O
 *	O
-mformat_banner	*
+mformat_banner	pointer
 =	O
-"MTOO4023"	*
+"MTOO4023"	pointer
 ;	O

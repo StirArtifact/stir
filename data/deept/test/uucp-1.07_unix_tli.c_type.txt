@@ -1,8 +1,0 @@
-const	O
-char	O
-tli_rcsid	array
-[	O
-]	O
-=	O
-"$Id: tli.c,v 1.8 2002/03/05 19:10:42 ian Rel $"	struct
-;	O

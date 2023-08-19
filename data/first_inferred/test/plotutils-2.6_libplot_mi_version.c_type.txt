@@ -5,5 +5,5 @@ mi_libxmi_ver	array
 8	int
 ]	O
 =	O
-MI_LIBXMI_VER_STRING	*
+MI_LIBXMI_VER_STRING	pointer
 ;	O

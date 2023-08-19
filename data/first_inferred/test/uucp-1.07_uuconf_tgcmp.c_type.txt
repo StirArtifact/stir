@@ -4,7 +4,7 @@ _uuconf_tgcmp_rcsid	array
 [	O
 ]	O
 =	O
-"$Id: tgcmp.c,v 1.6 2002/03/05 19:10:43 ian Rel $"	*
+"$Id: tgcmp.c,v 1.6 2002/03/05 19:10:43 ian Rel $"	pointer
 ;	O
 int	O
 _uuconf_itime_grade_cmp	function

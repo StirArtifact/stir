@@ -4,7 +4,7 @@ gsl_ran_chisq	function
 const	O
 gsl_rng	struct
 *	O
-r	*
+r	pointer
 ,	O
 const	O
 double	O
@@ -18,7 +18,7 @@ chisq	int
 *	O
 gsl_ran_gamma	function
 (	O
-r	*
+r	pointer
 ,	O
 nu	double
 /	O

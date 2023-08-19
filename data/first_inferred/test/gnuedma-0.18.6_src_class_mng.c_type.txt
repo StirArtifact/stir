@@ -2,7 +2,7 @@ CLASSID	int
 EDMAPROC	O
 edma_class_register	function
 (	O
-EDMA_REPO	*
+EDMA_REPO	pointer
 repo	int
 )	O
 {	O
@@ -92,7 +92,7 @@ Status	int
 =	O
 CLASS_ILOADED	int
 ;	O
-ProcMapTable	*
+ProcMapTable	pointer
 [	O
 class_id	int
 ]	O
@@ -121,7 +121,7 @@ Status	int
 =	O
 CLASS_DEF	int
 ;	O
-ProcMapTable	*
+ProcMapTable	pointer
 [	O
 class_id	int
 ]	O
@@ -141,7 +141,7 @@ CLASSID	int
 class_id	int
 )	O
 {	O
-ProcMapTable	*
+ProcMapTable	pointer
 [	O
 class_id	int
 ]	O
@@ -173,8 +173,8 @@ edma_class_set_int	function
 CLASSID	int
 class_id	int
 ,	O
-EDMA_CLASS_INTERFACE	*
-class_int	*
+EDMA_CLASS_INTERFACE	pointer
+class_int	pointer
 )	O
 {	O
 return	O
@@ -189,8 +189,8 @@ edma_class_set_impl	function
 CLASSID	int
 class_id	int
 ,	O
-EDMA_CLASS_IMPLEMENTATION	*
-class_int	*
+EDMA_CLASS_IMPLEMENTATION	pointer
+class_int	pointer
 )	O
 {	O
 return	O

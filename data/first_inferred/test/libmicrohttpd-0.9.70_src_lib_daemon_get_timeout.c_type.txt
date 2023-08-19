@@ -39,11 +39,11 @@ MHD_DLOG	function
 (	O
 daemon	function
 ,	O
-MHD_SC_CONFIGURATION_MISMATCH_FOR_GET_TIMEOUT	*
+MHD_SC_CONFIGURATION_MISMATCH_FOR_GET_TIMEOUT	pointer
 ,	O
 _	O
 (	O
-"Illegal call to MHD_get_timeout\n"	*
+"Illegal call to MHD_get_timeout\n"	pointer
 )	O
 )	O
 ;	O
@@ -55,7 +55,7 @@ if	O
 (	O
 daemon	function
 ->	O
-data_already_pending	*
+data_already_pending	pointer
 )	O
 {	O
 *	O
@@ -83,13 +83,13 @@ NULL	O
 !=	O
 daemon	function
 ->	O
-eready_head	*
+eready_head	pointer
 )	O
 )	O
 )	O
 {	O
 *	O
-timeout	*
+timeout	pointer
 =	O
 0	int
 ;	O
@@ -111,7 +111,7 @@ pos	long
 =	O
 daemon	function
 ->	O
-manual_timeout_tail	*
+manual_timeout_tail	pointer
 ;	O
 NULL	O
 !=	O
@@ -137,7 +137,7 @@ if	O
 (	O
 (	O
 !	O
-have_timeout	*
+have_timeout	pointer
 )	O
 ||	O
 (	O
@@ -172,7 +172,7 @@ pos	long
 =	O
 daemon	function
 ->	O
-normal_timeout_tail	*
+normal_timeout_tail	pointer
 ;	O
 if	O
 (	O
@@ -195,7 +195,7 @@ if	O
 (	O
 (	O
 !	O
-have_timeout	*
+have_timeout	pointer
 )	O
 ||	O
 (	O
@@ -228,7 +228,7 @@ true	int
 if	O
 (	O
 !	O
-have_timeout	*
+have_timeout	pointer
 )	O
 return	O
 MHD_SC_NO_TIMEOUT	int
@@ -275,11 +275,11 @@ ULLONG_MAX	int
 ;	O
 else	O
 *	O
-timeout	*
+timeout	pointer
 =	O
 1000LL	int
 *	O
-second_left	*
+second_left	pointer
 ;	O
 }	O
 return	O

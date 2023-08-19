@@ -1,7 +1,7 @@
 static	O
 int	O
 *	O
-_cond_stack	*
+_cond_stack	pointer
 ;	O
 static	O
 int	O
@@ -59,10 +59,10 @@ val	int
 if	O
 (	O
 !	O
-_cond_stack	*
+_cond_stack	pointer
 )	O
 {	O
-_cond_stack	*
+_cond_stack	pointer
 =	O
 calloc	function
 (	O
@@ -98,11 +98,11 @@ _cond_stack_size	int
 +=	O
 COND_STK_INCR	int
 ;	O
-_cond_stack	*
+_cond_stack	pointer
 =	O
 realloc	function
 (	O
-_cond_stack	*
+_cond_stack	pointer
 ,	O
 sizeof	O
 (	O
@@ -112,7 +112,7 @@ _cond_stack	array
 ]	O
 )	O
 *	O
-_cond_stack_size	*
+_cond_stack_size	pointer
 )	O
 ;	O
 }	O
@@ -126,7 +126,7 @@ mu_error	function
 (	O
 _	O
 (	O
-"Not enough memory"	*
+"Not enough memory"	pointer
 )	O
 )	O
 ;	O
@@ -161,7 +161,7 @@ mu_error	function
 (	O
 _	O
 (	O
-"Internal error: condition stack underflow"	*
+"Internal error: condition stack underflow"	pointer
 )	O
 )	O
 ;	O
@@ -187,12 +187,12 @@ argc	int
 char	O
 *	O
 *	O
-argv	*
+argv	pointer
 )	O
 {	O
 char	O
 *	O
-mode	*
+mode	pointer
 ;	O
 int	O
 cond	enum
@@ -208,7 +208,7 @@ mu_error	function
 (	O
 _	O
 (	O
-"if requires an argument: s | r | t"	*
+"if requires an argument: s | r | t"	pointer
 )	O
 )	O
 ;	O
@@ -218,7 +218,7 @@ return	O
 }	O
 if	O
 (	O
-argv	*
+argv	pointer
 [	O
 1	int
 ]	O
@@ -233,7 +233,7 @@ mu_error	function
 (	O
 _	O
 (	O
-"Valid if arguments are: s | r | t"	*
+"Valid if arguments are: s | r | t"	pointer
 )	O
 )	O
 ;	O
@@ -292,9 +292,9 @@ cond	enum
 =	O
 strcmp	function
 (	O
-mode	*
+mode	pointer
 ,	O
-"send"	*
+"send"	pointer
 )	O
 ==	O
 0	int
@@ -308,9 +308,9 @@ cond	enum
 =	O
 strcmp	function
 (	O
-mode	*
+mode	pointer
 ,	O
-"read"	*
+"read"	pointer
 )	O
 ==	O
 0	int
@@ -320,13 +320,13 @@ break	O
 case	O
 't'	O
 :	O
-cond	*
+cond	pointer
 =	O
 isatty	function
 (	O
 fileno	function
 (	O
-stdout	*
+stdout	pointer
 )	O
 )	O
 ;	O
@@ -338,7 +338,7 @@ mu_error	function
 (	O
 _	O
 (	O
-"Valid if arguments are: s | r | t"	*
+"Valid if arguments are: s | r | t"	pointer
 )	O
 )	O
 ;	O
@@ -349,7 +349,7 @@ return	O
 }	O
 _cond_push	function
 (	O
-cond	*
+cond	pointer
 )	O
 ;	O
 return	O
@@ -366,7 +366,7 @@ MU_ARG_UNUSED	O
 char	O
 *	O
 *	O
-argv	*
+argv	pointer
 MU_ARG_UNUSED	O
 )	O
 {	O
@@ -384,7 +384,7 @@ mu_error	function
 (	O
 _	O
 (	O
-"else without matching if"	*
+"else without matching if"	pointer
 )	O
 )	O
 ;	O
@@ -392,7 +392,7 @@ return	O
 1	int
 ;	O
 }	O
-cond	*
+cond	pointer
 =	O
 _cond_pop	function
 (	O
@@ -411,7 +411,7 @@ cond	enum
 ;	O
 _cond_push	function
 (	O
-cond	*
+cond	pointer
 )	O
 ;	O
 return	O
@@ -428,7 +428,7 @@ MU_ARG_UNUSED	O
 char	O
 *	O
 *	O
-argv	*
+argv	pointer
 MU_ARG_UNUSED	O
 )	O
 {	O
@@ -443,7 +443,7 @@ mu_error	function
 (	O
 _	O
 (	O
-"endif without matching if"	*
+"endif without matching if"	pointer
 )	O
 )	O
 ;	O

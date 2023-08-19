@@ -1,5 +1,0 @@
-int	O
-netfs_maxsymlinks	int
-=	O
-8	int
-;	O

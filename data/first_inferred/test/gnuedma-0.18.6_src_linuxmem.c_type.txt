@@ -93,7 +93,7 @@ SOCK_STREAM	int
 {	O
 perror	function
 (	O
-"socket"	*
+"socket"	pointer
 )	O
 ;	O
 return	O
@@ -103,7 +103,7 @@ return	O
 }	O
 printf	function
 (	O
-"Trying to connect to EDMA Shared Allocator Agent ..."	*
+"Trying to connect to EDMA Shared Allocator Agent ..."	pointer
 )	O
 ;	O
 remote	struct
@@ -118,7 +118,7 @@ remote	struct
 .	O
 sun_path	array
 ,	O
-SOCK_PATH	*
+SOCK_PATH	pointer
 )	O
 ;	O
 len	long
@@ -160,7 +160,7 @@ len	long
 {	O
 perror	function
 (	O
-"connect"	*
+"connect"	pointer
 )	O
 ;	O
 close	function
@@ -175,8 +175,8 @@ _sally	int
 ;	O
 printf	function
 (	O
-"\n-- Connection failed. Falling back to local shared memory "	*
-"allocator...\n"	*
+"\n-- Connection failed. Falling back to local shared memory "	pointer
+"allocator...\n"	pointer
 )	O
 ;	O
 return	O
@@ -186,12 +186,12 @@ return	O
 }	O
 printf	function
 (	O
-" CONNECTED\n"	*
+" CONNECTED\n"	pointer
 )	O
 ;	O
 printf	function
 (	O
-"++ Using Sally Shared Allocator\n"	*
+"++ Using Sally Shared Allocator\n"	pointer
 )	O
 ;	O
 return	O
@@ -216,7 +216,7 @@ buffer	array
 ]	O
 ;	O
 key_t	struct
-_the_key	*
+_the_key	pointer
 ;	O
 int	O
 len	int
@@ -225,7 +225,7 @@ len	int
 =	O
 snprintf	function
 (	O
-buffer	*
+buffer	pointer
 ,	O
 1024	int
 ,	O
@@ -238,16 +238,16 @@ n	int
 ;	O
 write	function
 (	O
-_sally	*
+_sally	pointer
 ,	O
-buffer	*
+buffer	pointer
 ,	O
 len	int
 )	O
 ;	O
 memset	function
 (	O
-buffer	*
+buffer	pointer
 ,	O
 0	int
 ,	O
@@ -258,18 +258,18 @@ len	int
 =	O
 read	function
 (	O
-_sally	*
+_sally	pointer
 ,	O
-buffer	*
+buffer	pointer
 ,	O
 1024	int
 )	O
 ;	O
 sscanf	function
 (	O
-buffer	*
+buffer	pointer
 ,	O
-"+SALLOC %d\n"	*
+"+SALLOC %d\n"	pointer
 ,	O
 &	O
 _the_key	int
@@ -286,7 +286,7 @@ edma_salloc	function
 EUint32	long
 size	long
 ,	O
-EPChar	*
+EPChar	pointer
 n	long
 )	O
 {	O
@@ -295,7 +295,7 @@ a	long
 ,	O
 shmflg	long
 ,	O
-f	*
+f	pointer
 ;	O
 EChar	char
 name	array
@@ -342,22 +342,22 @@ else	O
 {	O
 snprintf	function
 (	O
-name	*
+name	pointer
 ,	O
-EDMA_PATH_LEN	*
+EDMA_PATH_LEN	pointer
 ,	O
-"%s/%s"	*
+"%s/%s"	pointer
 ,	O
-TMPDIR	*
+TMPDIR	pointer
 ,	O
 n	long
 )	O
 ;	O
-f	*
+f	pointer
 =	O
 open	function
 (	O
-name	*
+name	pointer
 ,	O
 O_WRONLY	int
 |	O
@@ -368,7 +368,7 @@ O_TRUNC	int
 ;	O
 if	O
 (	O
-f	*
+f	pointer
 ==	O
 -	O
 1	int
@@ -383,7 +383,7 @@ EEXIST	int
 {	O
 perror	function
 (	O
-"Create File"	*
+"Create File"	pointer
 )	O
 ;	O
 return	O
@@ -394,7 +394,7 @@ return	O
 }	O
 chmod	function
 (	O
-name	*
+name	pointer
 ,	O
 S_IRWXU	O
 |	O
@@ -410,7 +410,7 @@ k	int
 =	O
 ftok	function
 (	O
-name	*
+name	pointer
 ,	O
 0	int
 )	O
@@ -422,7 +422,7 @@ name	*
 {	O
 perror	function
 (	O
-"[edma_salloc] (ftok)"	*
+"[edma_salloc] (ftok)"	pointer
 )	O
 ;	O
 return	O
@@ -435,11 +435,11 @@ shmflg	int
 =	O
 0	int
 ;	O
-a	*
+a	pointer
 =	O
 shmget	function
 (	O
-k	*
+k	pointer
 ,	O
 size	long
 ,	O
@@ -466,9 +466,9 @@ EEXIST	int
 {	O
 printf	function
 (	O
-"\n[edma_salloc] ERROR in shared block : %s (key:%d|size:%ld)"	*
+"\n[edma_salloc] ERROR in shared block : %s (key:%d|size:%ld)"	pointer
 ,	O
-name	*
+name	pointer
 ,	O
 k	int
 ,	O
@@ -477,12 +477,12 @@ size	long
 ;	O
 printf	function
 (	O
-"\n "	*
+"\n "	pointer
 )	O
 ;	O
 perror	function
 (	O
-"[edma_salloc] (shmget):"	*
+"[edma_salloc] (shmget):"	pointer
 )	O
 ;	O
 return	O
@@ -496,7 +496,7 @@ _sally	int
 <=	O
 0	int
 )	O
-close	*
+close	pointer
 (	O
 f	int
 )	O
@@ -506,22 +506,22 @@ return	O
 (	O
 HMEM	long
 )	O
-a	*
+a	pointer
 )	O
 ;	O
 }	O
-EPVoid	*
+EPVoid	pointer
 EDMAPROC	O
 edma_sget	function
 (	O
 HMEM	long
-a	*
+a	pointer
 )	O
 {	O
-EPVoid	*
-p	*
+EPVoid	pointer
+p	pointer
 ;	O
-p	*
+p	pointer
 =	O
 shmat	function
 (	O
@@ -532,7 +532,7 @@ a	int
 ,	O
 0	int
 ,	O
-SHM_RND	*
+SHM_RND	pointer
 )	O
 ;	O
 if	O
@@ -548,27 +548,27 @@ p	int
 {	O
 perror	function
 (	O
-"[edma_sget] :"	*
+"[edma_sget] :"	pointer
 )	O
 ;	O
 return	O
 (	O
-EPVoid	*
+EPVoid	pointer
 )	O
 -	O
 1	int
 ;	O
 }	O
 return	O
-p	*
+p	pointer
 ;	O
 }	O
-EPVoid	*
+EPVoid	pointer
 EDMAPROC	O
 edma_sunget	function
 (	O
-EPVoid	*
-p	*
+EPVoid	pointer
+p	pointer
 )	O
 {	O
 EUint32	long
@@ -578,7 +578,7 @@ i	int
 =	O
 shmdt	function
 (	O
-p	*
+p	pointer
 )	O
 ;	O
 if	O
@@ -591,19 +591,19 @@ i	int
 {	O
 perror	function
 (	O
-"[edma_sunget] :"	*
+"[edma_sunget] :"	pointer
 )	O
 ;	O
 return	O
 (	O
-EPVoid	*
+EPVoid	pointer
 )	O
 -	O
 1	int
 ;	O
 }	O
 return	O
-p	*
+p	pointer
 ;	O
 }	O
 void	O
@@ -613,8 +613,8 @@ edma_sfree	function
 HMEM	long
 i	long
 ,	O
-EPVoid	*
-p	*
+EPVoid	pointer
+p	pointer
 )	O
 {	O
 ESint32	long
@@ -622,7 +622,7 @@ a	long
 ;	O
 struct	O
 shmid_ds	struct
-buf	*
+buf	pointer
 ;	O
 if	O
 (	O
@@ -631,16 +631,16 @@ _sally	int
 0	int
 )	O
 {	O
-a	*
+a	pointer
 =	O
 shmctl	function
 (	O
-i	*
+i	pointer
 ,	O
-IPC_RMID	*
+IPC_RMID	pointer
 ,	O
 &	O
-buf	*
+buf	pointer
 )	O
 ;	O
 if	O
@@ -653,7 +653,7 @@ a	int
 {	O
 perror	function
 (	O
-"[edma_sfree] (IPC_RMID):"	*
+"[edma_sfree] (IPC_RMID):"	pointer
 )	O
 ;	O
 return	O
@@ -669,32 +669,32 @@ EUint32	long
 size	long
 )	O
 {	O
-EPVoid	*
-p	*
+EPVoid	pointer
+p	pointer
 ;	O
-EPChar	*
-t	*
+EPChar	pointer
+t	pointer
 ;	O
 EUint32	long
 i	long
 ;	O
-p	*
+p	pointer
 =	O
 malloc	function
 (	O
 size	long
 )	O
 ;	O
-t	*
+t	pointer
 =	O
 (	O
-EPChar	*
+EPChar	pointer
 )	O
-p	*
+p	pointer
 ;	O
 if	O
 (	O
-p	*
+p	pointer
 !=	O
 NULL	O
 )	O
@@ -713,7 +713,7 @@ i	long
 )	O
 *	O
 (	O
-t	*
+t	pointer
 +	O
 i	long
 )	O
@@ -728,7 +728,7 @@ return	O
 (	O
 HMEM	long
 )	O
-p	*
+p	pointer
 )	O
 ;	O
 }	O
@@ -753,10 +753,10 @@ n_palloc	long
 ++	O
 ;	O
 else	O
-n_prealloc	*
+n_prealloc	pointer
 ++	O
 ;	O
-a	*
+a	pointer
 =	O
 (	O
 HMEM	long
@@ -764,33 +764,33 @@ HMEM	long
 realloc	function
 (	O
 (	O
-EPVoid	*
+EPVoid	pointer
 )	O
-a	*
+a	pointer
 ,	O
 new_size	long
 )	O
 ;	O
 return	O
-a	*
+a	pointer
 ;	O
 }	O
-EPVoid	*
+EPVoid	pointer
 EDMAPROC	O
 edma_pget	function
 (	O
 HMEM	long
-a	*
+a	pointer
 )	O
 {	O
-n_pget	*
+n_pget	pointer
 ++	O
 ;	O
 return	O
 (	O
-EPVoid	*
+EPVoid	pointer
 )	O
-a	*
+a	pointer
 ;	O
 }	O
 void	O
@@ -798,18 +798,18 @@ EDMAPROC	O
 edma_pfree	function
 (	O
 HMEM	long
-a	*
+a	pointer
 ,	O
-EPVoid	*
-p	*
+EPVoid	pointer
+p	pointer
 )	O
 {	O
-n_pfree	*
+n_pfree	pointer
 ++	O
 ;	O
 if	O
 (	O
-p	*
+p	pointer
 ==	O
 NULL	O
 )	O
@@ -817,7 +817,7 @@ return	O
 ;	O
 free	function
 (	O
-p	*
+p	pointer
 )	O
 ;	O
 }	O
@@ -829,30 +829,30 @@ edma_show_pmem	function
 {	O
 printf	function
 (	O
-"palloc   : %ld times\n"	*
+"palloc   : %ld times\n"	pointer
 ,	O
-n_palloc	*
+n_palloc	pointer
 )	O
 ;	O
 printf	function
 (	O
-"pget     : %ld times\n"	*
+"pget     : %ld times\n"	pointer
 ,	O
-n_pget	*
+n_pget	pointer
 )	O
 ;	O
 printf	function
 (	O
-"prealloc : %ld times\n"	*
+"prealloc : %ld times\n"	pointer
 ,	O
-n_prealloc	*
+n_prealloc	pointer
 )	O
 ;	O
 printf	function
 (	O
-"pfree    : %ld times\n"	*
+"pfree    : %ld times\n"	pointer
 ,	O
-n_pfree	*
+n_pfree	pointer
 )	O
 ;	O
 }	O

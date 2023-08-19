@@ -24,7 +24,7 @@ J	long
 ,	O
 double	O
 *	O
-window	*
+window	pointer
 )	O
 {	O
 if	O
@@ -38,7 +38,7 @@ size	long
 {	O
 GSL_ERROR_VAL	O
 (	O
-"window center index must be between 0 and n - 1"	*
+"window center index must be between 0 and n - 1"	pointer
 ,	O
 GSL_EDOM	int
 ,	O
@@ -190,7 +190,7 @@ endtype	enum
 ==	O
 GSL_MOVSTAT_END_PADZERO	int
 )	O
-window	*
+window	pointer
 [	O
 widx	int
 ]	O
@@ -204,7 +204,7 @@ endtype	enum
 ==	O
 GSL_MOVSTAT_END_PADVALUE	int
 )	O
-window	*
+window	pointer
 [	O
 widx	int
 ]	O
@@ -231,7 +231,7 @@ endtype	enum
 ==	O
 GSL_MOVSTAT_END_PADZERO	int
 )	O
-window	*
+window	pointer
 [	O
 widx	int
 ]	O
@@ -245,7 +245,7 @@ endtype	enum
 ==	O
 GSL_MOVSTAT_END_PADVALUE	int
 )	O
-window	*
+window	pointer
 [	O
 widx	int
 ]	O
@@ -262,7 +262,7 @@ n	long
 }	O
 else	O
 {	O
-window	*
+window	pointer
 [	O
 widx	int
 ]	O

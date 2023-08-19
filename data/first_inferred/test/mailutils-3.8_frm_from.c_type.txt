@@ -3,11 +3,11 @@ count_only	int
 ;	O
 char	O
 *	O
-sender_option	*
+sender_option	pointer
 ;	O
 char	O
 *	O
-mailbox_name	*
+mailbox_name	pointer
 ;	O
 static	O
 struct	O
@@ -18,7 +18,7 @@ from_options	array
 =	O
 {	O
 {	O
-"count"	*
+"count"	pointer
 ,	O
 'c'	O
 ,	O
@@ -28,7 +28,7 @@ MU_OPTION_DEFAULT	int
 ,	O
 N_	O
 (	O
-"just print a count of messages and exit"	*
+"just print a count of messages and exit"	pointer
 )	O
 ,	O
 mu_c_bool	int
@@ -38,20 +38,20 @@ count_only	int
 }	O
 ,	O
 {	O
-"sender"	*
+"sender"	pointer
 ,	O
 's'	O
 ,	O
 N_	O
 (	O
-"ADDRESS"	*
+"ADDRESS"	pointer
 )	O
 ,	O
 MU_OPTION_DEFAULT	int
 ,	O
 N_	O
 (	O
-"print only mail from addresses containing the supplied string"	*
+"print only mail from addresses containing the supplied string"	pointer
 )	O
 ,	O
 mu_c_string	int
@@ -61,20 +61,20 @@ sender_option	int
 }	O
 ,	O
 {	O
-"file"	*
+"file"	pointer
 ,	O
 'f'	O
 ,	O
 N_	O
 (	O
-"FILE"	*
+"FILE"	pointer
 )	O
 ,	O
 MU_OPTION_DEFAULT	int
 ,	O
 N_	O
 (	O
-"read mail from FILE"	*
+"read mail from FILE"	pointer
 )	O
 ,	O
 mu_c_string	int
@@ -84,7 +84,7 @@ mailbox_name	int
 }	O
 ,	O
 {	O
-"debug"	*
+"debug"	pointer
 ,	O
 'd'	O
 ,	O
@@ -94,7 +94,7 @@ MU_OPTION_DEFAULT	int
 ,	O
 N_	O
 (	O
-"enable debugging output"	*
+"enable debugging output"	pointer
 )	O
 ,	O
 mu_c_incr	int
@@ -112,7 +112,7 @@ options	array
 ]	O
 =	O
 {	O
-from_options	*
+from_options	pointer
 ,	O
 NULL	O
 }	O
@@ -129,12 +129,12 @@ NULL	O
 ,	O
 N_	O
 (	O
-"GNU from -- display from and subject."	*
+"GNU from -- display from and subject."	pointer
 )	O
 ,	O
 N_	O
 (	O
-"[OPTIONS] [USER]"	*
+"[OPTIONS] [USER]"	pointer
 )	O
 ,	O
 }	O
@@ -142,16 +142,16 @@ N_	O
 static	O
 char	O
 *	O
-capa	*
+capa	pointer
 [	O
 ]	O
 =	O
 {	O
-"debug"	*
+"debug"	pointer
 ,	O
-"mailbox"	*
+"mailbox"	pointer
 ,	O
-"locking"	*
+"locking"	pointer
 ,	O
 NULL	O
 }	O
@@ -163,20 +163,20 @@ from_select	function
 size_t	long
 index	function
 ,	O
-mu_message_t	*
-msg	*
+mu_message_t	pointer
+msg	pointer
 )	O
 {	O
 if	O
 (	O
-count_only	*
+count_only	pointer
 )	O
 return	O
 0	int
 ;	O
 if	O
 (	O
-sender_option	*
+sender_option	pointer
 )	O
 {	O
 int	O
@@ -184,33 +184,33 @@ rc	int
 =	O
 0	int
 ;	O
-mu_header_t	*
-hdr	*
+mu_header_t	pointer
+hdr	pointer
 =	O
 NULL	O
 ;	O
 char	O
 *	O
-sender	*
+sender	pointer
 ;	O
 mu_message_get_header	function
 (	O
-msg	*
+msg	pointer
 ,	O
 &	O
-hdr	*
+hdr	pointer
 )	O
 ;	O
 if	O
 (	O
 mu_header_aget_value_unfold	function
 (	O
-hdr	*
+hdr	pointer
 ,	O
-MU_HEADER_FROM	*
+MU_HEADER_FROM	pointer
 ,	O
 &	O
-sender	*
+sender	pointer
 )	O
 ==	O
 0	int
@@ -220,9 +220,9 @@ if	O
 (	O
 strstr	function
 (	O
-sender	*
+sender	pointer
 ,	O
-sender_option	*
+sender_option	pointer
 )	O
 )	O
 rc	int
@@ -231,7 +231,7 @@ rc	int
 ;	O
 free	function
 (	O
-sender	*
+sender	pointer
 )	O
 ;	O
 }	O
@@ -252,7 +252,7 @@ argc	int
 char	O
 *	O
 *	O
-argv	*
+argv	pointer
 )	O
 {	O
 size_t	long
@@ -276,12 +276,12 @@ mu_cli	function
 (	O
 argc	long
 ,	O
-argv	*
+argv	pointer
 ,	O
 &	O
 cli	struct
 ,	O
-capa	*
+capa	pointer
 ,	O
 NULL	O
 ,	O
@@ -289,7 +289,7 @@ NULL	O
 argc	long
 ,	O
 &	O
-argv	*
+argv	pointer
 )	O
 ;	O
 if	O
@@ -303,7 +303,7 @@ mu_error	function
 (	O
 _	O
 (	O
-"too many arguments"	*
+"too many arguments"	pointer
 )	O
 )	O
 ;	O
@@ -330,7 +330,7 @@ mu_error	function
 (	O
 _	O
 (	O
-"both --from option and user name are specified"	*
+"both --from option and user name are specified"	pointer
 )	O
 )	O
 ;	O
@@ -340,13 +340,13 @@ exit	function
 )	O
 ;	O
 }	O
-mailbox_name	*
+mailbox_name	pointer
 =	O
 mu_alloc	function
 (	O
 strlen	function
 (	O
-argv	*
+argv	pointer
 [	O
 0	int
 ]	O
@@ -355,7 +355,7 @@ argv	*
 2	int
 )	O
 ;	O
-mailbox_name	*
+mailbox_name	pointer
 [	O
 0	int
 ]	O
@@ -364,11 +364,11 @@ mailbox_name	*
 ;	O
 strcpy	function
 (	O
-mailbox_name	*
+mailbox_name	pointer
 +	O
 1	int
 ,	O
-argv	*
+argv	pointer
 [	O
 0	int
 ]	O
@@ -382,9 +382,9 @@ init_output	function
 ;	O
 frm_scan	function
 (	O
-mailbox_name	*
+mailbox_name	pointer
 ,	O
-from_select	*
+from_select	pointer
 ,	O
 &	O
 total	long
@@ -399,9 +399,9 @@ mu_printf	function
 (	O
 ngettext	function
 (	O
-"There is %lu message in your incoming mailbox.\n"	*
+"There is %lu message in your incoming mailbox.\n"	pointer
 ,	O
-"There are %lu messages in your incoming mailbox.\n"	*
+"There are %lu messages in your incoming mailbox.\n"	pointer
 ,	O
 total	long
 )	O

@@ -4,7 +4,7 @@ nettle_cipher	struct
 nettle_aes128	struct
 =	O
 {	O
-"aes128"	*
+"aes128"	pointer
 ,	O
 sizeof	O
 (	O

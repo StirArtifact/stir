@@ -72,7 +72,7 @@ struct	O
 mu_tls_config	struct
 const	O
 *	O
-conf	*
+conf	pointer
 ,	O
 int	O
 verbose	int
@@ -88,18 +88,18 @@ MU_TLS_CONFIG_NULL	int
 ;	O
 if	O
 (	O
-conf	*
+conf	pointer
 ->	O
-cert_file	*
+cert_file	pointer
 )	O
 {	O
 rc	int
 =	O
 mu_file_safety_check	function
 (	O
-conf	*
+conf	pointer
 ->	O
-cert_file	*
+cert_file	pointer
 ,	O
 mu_tls_cert_file_checks	int
 ,	O
@@ -120,11 +120,11 @@ verbose	int
 )	O
 mu_error	function
 (	O
-"%s: %s"	*
+"%s: %s"	pointer
 ,	O
-conf	*
+conf	pointer
 ->	O
-cert_file	*
+cert_file	pointer
 ,	O
 mu_strerror	function
 (	O
@@ -146,7 +146,7 @@ MU_TLS_CONFIG_OK	int
 }	O
 if	O
 (	O
-conf	*
+conf	pointer
 ->	O
 key_file	int
 )	O
@@ -155,7 +155,7 @@ rc	int
 =	O
 mu_file_safety_check	function
 (	O
-conf	*
+conf	pointer
 ->	O
 key_file	int
 ,	O
@@ -178,11 +178,11 @@ verbose	int
 )	O
 mu_error	function
 (	O
-"%s: %s"	*
+"%s: %s"	pointer
 ,	O
-conf	*
+conf	pointer
 ->	O
-key_file	*
+key_file	pointer
 ,	O
 mu_strerror	function
 (	O
@@ -204,16 +204,16 @@ MU_TLS_CONFIG_OK	int
 }	O
 if	O
 (	O
-conf	*
+conf	pointer
 ->	O
-ca_file	*
+ca_file	pointer
 )	O
 {	O
 rc	int
 =	O
 mu_file_safety_check	function
 (	O
-conf	*
+conf	pointer
 ->	O
 ca_file	int
 ,	O
@@ -236,11 +236,11 @@ verbose	int
 )	O
 mu_error	function
 (	O
-"%s: %s"	*
+"%s: %s"	pointer
 ,	O
-conf	*
+conf	pointer
 ->	O
-ca_file	*
+ca_file	pointer
 ,	O
 mu_strerror	function
 (	O
@@ -262,7 +262,7 @@ MU_TLS_CONFIG_OK	int
 }	O
 if	O
 (	O
-conf	*
+conf	pointer
 ->	O
 priorities	int
 )	O

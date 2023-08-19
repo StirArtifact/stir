@@ -15,14 +15,14 @@ index_file	array
 [	O
 ]	O
 =	O
-LOCALSTATEDIR	*
-"/state/misc/nfsd.index"	*
+LOCALSTATEDIR	pointer
+"/state/misc/nfsd.index"	pointer
 ;	O
 char	O
 *	O
 index_file_name	O
 =	O
-index_file	*
+index_file	pointer
 ;	O
 static	O
 void	O
@@ -66,7 +66,7 @@ error	function
 ,	O
 fail	int
 ,	O
-"Creating main server thread"	*
+"Creating main server thread"	pointer
 )	O
 ;	O
 fail	int
@@ -99,7 +99,7 @@ argc	long
 char	O
 *	O
 *	O
-argv	*
+argv	pointer
 )	O
 {	O
 int	O
@@ -117,11 +117,11 @@ argc	int
 {	O
 fprintf	function
 (	O
-stderr	*
+stderr	pointer
 ,	O
-"%s [num-threads]\n"	*
+"%s [num-threads]\n"	pointer
 ,	O
-argv	*
+argv	pointer
 [	O
 0	int
 ]	O
@@ -148,7 +148,7 @@ nthreads	int
 =	O
 atoi	function
 (	O
-argv	*
+argv	pointer
 [	O
 1	int
 ]	O
@@ -176,7 +176,7 @@ maptime_map	function
 0	int
 ,	O
 &	O
-mapped_time	*
+mapped_time	pointer
 )	O
 ;	O
 main_address	struct
@@ -321,7 +321,7 @@ init_filesystems	function
 ;	O
 create_server_thread	function
 (	O
-pmap_udp_socket	*
+pmap_udp_socket	pointer
 )	O
 ;	O
 while	O

@@ -1,7 +1,0 @@
-void	O
-ecoff_generate_asm_lineno	function
-(	O
-void	O
-)	O
-{	O
-}	O

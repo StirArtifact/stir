@@ -7,7 +7,7 @@ fd	int
 const	O
 void	O
 *	O
-buf	*
+buf	pointer
 ,	O
 size_t	long
 count	long
@@ -21,14 +21,14 @@ total	long
 const	O
 char	O
 *	O
-ptr	*
+ptr	pointer
 =	O
 (	O
 const	O
 char	O
 *	O
 )	O
-buf	*
+buf	pointer
 ;	O
 while	O
 (	O
@@ -44,7 +44,7 @@ safe_rw	O
 (	O
 fd	int
 ,	O
-ptr	*
+ptr	pointer
 ,	O
 count	long
 )	O
@@ -79,7 +79,7 @@ total	long
 +=	O
 n_rw	long
 ;	O
-ptr	*
+ptr	pointer
 +=	O
 n_rw	long
 ;	O

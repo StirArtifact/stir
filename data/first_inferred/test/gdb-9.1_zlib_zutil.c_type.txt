@@ -13,70 +13,70 @@ z_const	O
 char	O
 *	O
 )	O
-"need dictionary"	*
+"need dictionary"	pointer
 ,	O
 (	O
 z_const	O
 char	O
 *	O
 )	O
-"stream end"	*
+"stream end"	pointer
 ,	O
 (	O
 z_const	O
 char	O
 *	O
 )	O
-""	*
+""	pointer
 ,	O
 (	O
 z_const	O
 char	O
 *	O
 )	O
-"file error"	*
+"file error"	pointer
 ,	O
 (	O
 z_const	O
 char	O
 *	O
 )	O
-"stream error"	*
+"stream error"	pointer
 ,	O
 (	O
 z_const	O
 char	O
 *	O
 )	O
-"data error"	*
+"data error"	pointer
 ,	O
 (	O
 z_const	O
 char	O
 *	O
 )	O
-"insufficient memory"	*
+"insufficient memory"	pointer
 ,	O
 (	O
 z_const	O
 char	O
 *	O
 )	O
-"buffer error"	*
+"buffer error"	pointer
 ,	O
 (	O
 z_const	O
 char	O
 *	O
 )	O
-"incompatible version"	*
+"incompatible version"	pointer
 ,	O
 (	O
 z_const	O
 char	O
 *	O
 )	O
-""	*
+""	pointer
 }	O
 ;	O
 const	O
@@ -88,7 +88,7 @@ zlibVersion	function
 )	O
 {	O
 return	O
-ZLIB_VERSION	*
+ZLIB_VERSION	pointer
 ;	O
 }	O
 uLong	long
@@ -204,7 +204,7 @@ int	O
 (	O
 sizeof	O
 (	O
-voidpf	*
+voidpf	pointer
 )	O
 )	O
 )	O
@@ -317,18 +317,18 @@ err	int
 )	O
 ;	O
 }	O
-voidpf	*
+voidpf	pointer
 ZLIB_INTERNAL	O
 zcalloc	function
 (	O
-opaque	*
+opaque	pointer
 ,	O
 items	int
 ,	O
 size	int
 )	O
-voidpf	*
-opaque	*
+voidpf	pointer
+opaque	pointer
 ;	O
 unsigned	O
 items	int
@@ -340,7 +340,7 @@ size	int
 (	O
 void	O
 )	O
-opaque	*
+opaque	pointer
 ;	O
 return	O
 sizeof	O
@@ -351,7 +351,7 @@ uInt	int
 2	int
 ?	O
 (	O
-voidpf	*
+voidpf	pointer
 )	O
 malloc	function
 (	O
@@ -361,7 +361,7 @@ size	int
 )	O
 :	O
 (	O
-voidpf	*
+voidpf	pointer
 )	O
 calloc	function
 (	O
@@ -375,25 +375,25 @@ void	O
 ZLIB_INTERNAL	O
 zcfree	function
 (	O
-opaque	*
+opaque	pointer
 ,	O
-ptr	*
+ptr	pointer
 )	O
-voidpf	*
-opaque	*
+voidpf	pointer
+opaque	pointer
 ;	O
-voidpf	*
-ptr	*
+voidpf	pointer
+ptr	pointer
 ;	O
 {	O
 (	O
 void	O
 )	O
-opaque	*
+opaque	pointer
 ;	O
 free	function
 (	O
-ptr	*
+ptr	pointer
 )	O
 ;	O
 }	O

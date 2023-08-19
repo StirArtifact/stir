@@ -9,7 +9,7 @@ _GL_UNUSED_PARAMETER	O
 {	O
 message	function
 (	O
-"Connection closing. Exiting"	*
+"Connection closing. Exiting"	pointer
 )	O
 ;	O
 quit	function
@@ -134,7 +134,7 @@ COLS	int
 ;	O
 my_win	struct
 .	O
-x_win	*
+x_win	pointer
 =	O
 newwin	function
 (	O
@@ -144,7 +144,7 @@ x_nlines	int
 ,	O
 my_win	struct
 .	O
-x_ncols	*
+x_ncols	pointer
 ,	O
 0	int
 ,	O
@@ -155,7 +155,7 @@ scrollok	function
 (	O
 my_win	struct
 .	O
-x_win	*
+x_win	pointer
 ,	O
 FALSE	O
 )	O
@@ -164,7 +164,7 @@ wclear	function
 (	O
 my_win	struct
 .	O
-x_win	*
+x_win	pointer
 )	O
 ;	O
 his_win	struct
@@ -185,7 +185,7 @@ COLS	int
 ;	O
 his_win	struct
 .	O
-x_win	*
+x_win	pointer
 =	O
 newwin	function
 (	O
@@ -210,7 +210,7 @@ scrollok	function
 (	O
 his_win	struct
 .	O
-x_win	*
+x_win	pointer
 ,	O
 FALSE	O
 )	O
@@ -219,10 +219,10 @@ wclear	function
 (	O
 his_win	struct
 .	O
-x_win	*
+x_win	pointer
 )	O
 ;	O
-line_win	*
+line_win	pointer
 =	O
 newwin	function
 (	O
@@ -239,7 +239,7 @@ x_nlines	int
 ;	O
 box	function
 (	O
-line_win	*
+line_win	pointer
 ,	O
 '-'	O
 ,	O
@@ -248,12 +248,12 @@ line_win	*
 ;	O
 wrefresh	function
 (	O
-line_win	*
+line_win	pointer
 )	O
 ;	O
-current_state	*
+current_state	pointer
 =	O
-"No connection yet"	*
+"No connection yet"	pointer
 ;	O
 return	O
 0	int
@@ -269,7 +269,7 @@ int	O
 cc	int
 ;	O
 char	O
-buf	*
+buf	pointer
 [	O
 3	int
 ]	O
@@ -282,7 +282,7 @@ cc_t	struct
 disable	int
 =	O
 (	O
-cc_t	*
+cc_t	pointer
 )	O
 -	O
 1	int
@@ -390,7 +390,7 @@ kill	enum
 =	O
 kill	int
 ;	O
-buf	*
+buf	pointer
 [	O
 0	int
 ]	O
@@ -399,7 +399,7 @@ my_win	struct
 .	O
 cerase	char
 ;	O
-buf	*
+buf	pointer
 [	O
 1	int
 ]	O
@@ -408,7 +408,7 @@ my_win	struct
 .	O
 kill	short
 ;	O
-buf	*
+buf	pointer
 [	O
 2	int
 ]	O
@@ -437,12 +437,12 @@ cc	int
 !=	O
 sizeof	O
 (	O
-buf	*
+buf	pointer
 )	O
 )	O
 p_error	function
 (	O
-"Lost the connection"	*
+"Lost the connection"	pointer
 )	O
 ;	O
 cc	O
@@ -465,19 +465,19 @@ cc	int
 !=	O
 sizeof	O
 (	O
-buf	*
+buf	pointer
 )	O
 )	O
 p_error	function
 (	O
-"Lost the connection"	*
+"Lost the connection"	pointer
 )	O
 ;	O
 his_win	struct
 .	O
 cerase	char
 =	O
-buf	*
+buf	pointer
 [	O
 0	int
 ]	O
@@ -486,7 +486,7 @@ his_win	struct
 .	O
 kill	short
 =	O
-buf	*
+buf	pointer
 [	O
 1	int
 ]	O
@@ -495,7 +495,7 @@ his_win	struct
 .	O
 werase	function
 =	O
-buf	*
+buf	pointer
 [	O
 2	int
 ]	O
@@ -519,7 +519,7 @@ wmove	function
 (	O
 his_win	struct
 .	O
-x_win	*
+x_win	pointer
 ,	O
 his_win	struct
 .	O
@@ -534,14 +534,14 @@ wclrtoeol	function
 (	O
 his_win	struct
 .	O
-x_win	*
+x_win	pointer
 )	O
 ;	O
 wrefresh	function
 (	O
 his_win	struct
 .	O
-x_win	*
+x_win	pointer
 )	O
 ;	O
 endwin	function

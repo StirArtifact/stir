@@ -16,7 +16,7 @@ size	long
 {	O
 register	O
 __ptr_t	O
-result	*
+result	pointer
 =	O
 malloc	function
 (	O
@@ -27,7 +27,7 @@ size	int
 ;	O
 if	O
 (	O
-result	*
+result	pointer
 !=	O
 NULL	O
 )	O
@@ -36,7 +36,7 @@ void	O
 )	O
 memset	function
 (	O
-result	*
+result	pointer
 ,	O
 0	int
 ,	O

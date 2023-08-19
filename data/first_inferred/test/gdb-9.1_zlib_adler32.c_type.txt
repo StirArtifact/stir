@@ -21,7 +21,7 @@ adler32_z	function
 (	O
 adler	long
 ,	O
-buf	*
+buf	pointer
 ,	O
 len	int
 )	O
@@ -31,7 +31,7 @@ adler	long
 const	O
 Bytef	char
 *	O
-buf	*
+buf	pointer
 ;	O
 z_size_t	long
 len	int
@@ -67,7 +67,7 @@ len	int
 {	O
 adler	long
 +=	O
-buf	*
+buf	pointer
 [	O
 0	int
 ]	O
@@ -108,7 +108,7 @@ sum2	long
 }	O
 if	O
 (	O
-buf	*
+buf	pointer
 ==	O
 Z_NULL	int
 )	O
@@ -131,7 +131,7 @@ len	int
 adler	long
 +=	O
 *	O
-buf	*
+buf	pointer
 ++	O
 ;	O
 sum2	long
@@ -185,10 +185,10 @@ do	O
 {	O
 DO16	O
 (	O
-buf	*
+buf	pointer
 )	O
 ;	O
-buf	*
+buf	pointer
 +=	O
 16	int
 ;	O
@@ -228,10 +228,10 @@ len	int
 ;	O
 DO16	O
 (	O
-buf	*
+buf	pointer
 )	O
 ;	O
-buf	*
+buf	pointer
 +=	O
 16	int
 ;	O
@@ -245,7 +245,7 @@ len	int
 adler	long
 +=	O
 *	O
-buf	*
+buf	pointer
 ++	O
 ;	O
 sum2	long
@@ -280,7 +280,7 @@ adler32	function
 (	O
 adler	long
 ,	O
-buf	*
+buf	pointer
 ,	O
 len	int
 )	O
@@ -290,7 +290,7 @@ adler	long
 const	O
 Bytef	char
 *	O
-buf	*
+buf	pointer
 ;	O
 uInt	int
 len	int
@@ -301,7 +301,7 @@ adler32_z	function
 (	O
 adler	long
 ,	O
-buf	*
+buf	pointer
 ,	O
 len	int
 )	O

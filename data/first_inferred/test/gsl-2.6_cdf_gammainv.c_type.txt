@@ -325,11 +325,11 @@ P	double
 {	O
 GSL_ERROR_VAL	O
 (	O
-"inverse failed to converge"	*
+"inverse failed to converge"	pointer
 ,	O
 GSL_EFAILED	int
 ,	O
-GSL_NAN	*
+GSL_NAN	pointer
 )	O
 ;	O
 }	O

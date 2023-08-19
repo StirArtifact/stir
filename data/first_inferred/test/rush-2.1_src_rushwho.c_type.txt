@@ -1,13 +1,13 @@
 char	O
 *	O
-base_name	*
+base_name	pointer
 =	O
 RUSH_DB	O
 ;	O
 struct	O
 rush_wtmp	struct
 *	O
-wtmp	*
+wtmp	pointer
 =	O
 NULL	O
 ;	O
@@ -18,7 +18,7 @@ display_header	int
 ;	O
 char	O
 *	O
-format	*
+format	pointer
 ;	O
 void	O
 xalloc_die	function
@@ -33,7 +33,7 @@ error	function
 ,	O
 _	O
 (	O
-"not enough memory"	*
+"not enough memory"	pointer
 )	O
 )	O
 ;	O
@@ -44,14 +44,14 @@ abort	function
 }	O
 char	O
 *	O
-default_format	*
+default_format	pointer
 =	O
-"(user 10 Login) "	*
-"(rule 8 Rule) "	*
-"(start-time 0 Start) "	*
-"(duration 10 Time) "	*
-"(pid 10 PID) "	*
-"(command 28 Command)"	*
+"(user 10 Login) "	pointer
+"(rule 8 Rule) "	pointer
+"(start-time 0 Start) "	pointer
+"(duration 10 Time) "	pointer
+"(pid 10 PID) "	pointer
+"(command 28 Command)"	pointer
 ;	O
 int	O
 main	function
@@ -62,18 +62,18 @@ argc	int
 char	O
 *	O
 *	O
-argv	*
+argv	pointer
 )	O
 {	O
 int	O
 status	int
 ;	O
-rushdb_format_t	*
-form	*
+rushdb_format_t	pointer
+form	pointer
 ;	O
 rush_set_program_name	function
 (	O
-argv	*
+argv	pointer
 [	O
 0	int
 ]	O
@@ -83,34 +83,34 @@ rush_i18n_init	function
 (	O
 )	O
 ;	O
-format	*
+format	pointer
 =	O
 getenv	function
 (	O
-"RUSHWHO_FORMAT"	*
+"RUSHWHO_FORMAT"	pointer
 )	O
 ;	O
 if	O
 (	O
 !	O
-format	*
+format	pointer
 )	O
-format	*
+format	pointer
 =	O
-default_format	*
+default_format	pointer
 ;	O
 get_options	function
 (	O
 argc	int
 ,	O
-argv	*
+argv	pointer
 )	O
 ;	O
 argc	int
 -=	O
 optind	int
 ;	O
-argv	*
+argv	pointer
 +=	O
 optind	int
 ;	O
@@ -126,39 +126,39 @@ error	function
 ,	O
 _	O
 (	O
-"extra arguments"	*
+"extra arguments"	pointer
 )	O
 )	O
 ;	O
 if	O
 (	O
-format	*
+format	pointer
 [	O
 0	int
 ]	O
 ==	O
 '@'	O
 )	O
-format	*
+format	pointer
 =	O
 rush_read_format	function
 (	O
-format	*
+format	pointer
 +	O
 1	int
 )	O
 ;	O
-form	*
+form	pointer
 =	O
 rushdb_compile_format	function
 (	O
-format	*
+format	pointer
 )	O
 ;	O
 if	O
 (	O
 !	O
-form	*
+form	pointer
 )	O
 error	function
 (	O
@@ -168,17 +168,17 @@ error	function
 ,	O
 _	O
 (	O
-"invalid format: %s"	*
+"invalid format: %s"	pointer
 )	O
 ,	O
-rushdb_error_string	*
+rushdb_error_string	pointer
 )	O
 ;	O
 switch	O
 (	O
 rushdb_open	function
 (	O
-base_name	*
+base_name	pointer
 ,	O
 0	int
 )	O
@@ -200,7 +200,7 @@ exit	function
 case	O
 rushdb_result_fail	int
 :	O
-error	*
+error	pointer
 (	O
 1	int
 ,	O
@@ -208,10 +208,10 @@ errno	O
 ,	O
 _	O
 (	O
-"cannot open database file %s"	*
+"cannot open database file %s"	pointer
 )	O
 ,	O
-base_name	*
+base_name	pointer
 )	O
 ;	O
 }	O
@@ -221,7 +221,7 @@ display_header	int
 )	O
 rushdb_print_header	function
 (	O
-form	*
+form	pointer
 )	O
 ;	O
 while	O
@@ -230,14 +230,14 @@ rush_utmp_read	function
 (	O
 RUSH_STATUS_MAP_BIT	function
 (	O
-RUSH_STATUS_INUSE	*
+RUSH_STATUS_INUSE	pointer
 )	O
 ,	O
 &	O
 status	int
 ,	O
 &	O
-wtmp	*
+wtmp	pointer
 )	O
 ==	O
 rushdb_result_ok	int
@@ -245,16 +245,16 @@ rushdb_result_ok	int
 {	O
 rushdb_print	function
 (	O
-form	*
+form	pointer
 ,	O
-wtmp	*
+wtmp	pointer
 ,	O
 1	int
 )	O
 ;	O
 free	function
 (	O
-wtmp	*
+wtmp	pointer
 )	O
 ;	O
 }	O

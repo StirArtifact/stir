@@ -1,8 +1,8 @@
 int	O
 __gmp_extract_double	function
 (	O
-mp_ptr	*
-rp	*
+mp_ptr	pointer
+rp	pointer
 ,	O
 double	O
 d	double
@@ -37,7 +37,7 @@ d	long
 {	O
 MPN_ZERO	O
 (	O
-rp	*
+rp	pointer
 ,	O
 LIMBS_PER_DOUBLE	O
 )	O
@@ -186,7 +186,7 @@ sc	int
 0	int
 )	O
 {	O
-rp	*
+rp	pointer
 [	O
 1	int
 ]	O
@@ -199,7 +199,7 @@ GMP_LIMB_BITS	int
 sc	int
 )	O
 ;	O
-rp	*
+rp	pointer
 [	O
 0	int
 ]	O
@@ -211,14 +211,14 @@ sc	int
 }	O
 else	O
 {	O
-rp	*
+rp	pointer
 [	O
 1	int
 ]	O
 =	O
 manl	O
 ;	O
-rp	*
+rp	pointer
 [	O
 0	int
 ]	O

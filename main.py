@@ -536,8 +536,8 @@ def eval(RQ, data_path, model):
             FirstStage.vocab(0, data_path, str(PurePath(model_path[model_]) / 'out'))
             FirstStage.vocab(1, data_path, str(PurePath(model_path[model_]) / 'out'))
         FirstStage.eval(data_path, models)
-        for model_ in models:
-            FirstStage.gen_data_for_second(data_path, model_)
+        if 'STIR' in model:
+            FirstStage.gen_data_for_second(data_path, 'STIR')
     elif RQ == 'RQ2,RQ3':
         if set(models).intersection(set(['TRAINED', 'TRAINED_OT', 'TRAINED_DT', 'TRAINED_GT'])):
             SecondStage.target(data_path, './models/second/out/')

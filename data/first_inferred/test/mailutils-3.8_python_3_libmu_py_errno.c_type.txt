@@ -6,7 +6,7 @@ moduledef	struct
 {	O
 PyModuleDef_HEAD_INIT	O
 ,	O
-PY_MODULE	*
+PY_MODULE	pointer
 ,	O
 NULL	O
 ,	O
@@ -52,7 +52,7 @@ i	int
 const	O
 char	O
 *	O
-en	*
+en	pointer
 =	O
 mu_errname	function
 (	O
@@ -63,7 +63,7 @@ PyModule_AddIntConstant	function
 (	O
 module	O
 ,	O
-en	*
+en	pointer
 ,	O
 i	int
 )	O

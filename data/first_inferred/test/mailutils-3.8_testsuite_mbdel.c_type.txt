@@ -7,14 +7,14 @@ argc	int
 char	O
 *	O
 *	O
-argv	*
+argv	pointer
 )	O
 {	O
 int	O
 rc	int
 ;	O
-mu_mailbox_t	*
-mbox	*
+mu_mailbox_t	pointer
+mbox	pointer
 ;	O
 if	O
 (	O
@@ -25,11 +25,11 @@ argc	int
 {	O
 fprintf	function
 (	O
-stderr	*
+stderr	pointer
 ,	O
-"usage: %s URL\n"	*
+"usage: %s URL\n"	pointer
 ,	O
-argv	*
+argv	pointer
 [	O
 0	int
 ]	O
@@ -48,9 +48,9 @@ MU_ASSERT	O
 mu_mailbox_create	function
 (	O
 &	O
-mbox	*
+mbox	pointer
 ,	O
-argv	*
+argv	pointer
 [	O
 1	int
 ]	O
@@ -61,7 +61,7 @@ rc	int
 =	O
 mu_mailbox_remove	function
 (	O
-mbox	*
+mbox	pointer
 )	O
 ;	O
 if	O
@@ -78,7 +78,7 @@ ENOTEMPTY	int
 {	O
 printf	function
 (	O
-"mailbox removed, but has subfolders\n"	*
+"mailbox removed, but has subfolders\n"	pointer
 )	O
 ;	O
 rc	int
@@ -89,9 +89,9 @@ rc	int
 else	O
 fprintf	function
 (	O
-stderr	*
+stderr	pointer
 ,	O
-"%s\n"	*
+"%s\n"	pointer
 ,	O
 mu_strerror	function
 (	O
@@ -103,7 +103,7 @@ rc	int
 mu_mailbox_destroy	function
 (	O
 &	O
-mbox	*
+mbox	pointer
 )	O
 ;	O
 return	O

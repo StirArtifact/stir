@@ -1,8 +1,8 @@
 void	O
 _gdbm_unlock_file	function
 (	O
-GDBM_FILE	*
-dbf	*
+GDBM_FILE	pointer
+dbf	pointer
 )	O
 {	O
 struct	O
@@ -11,7 +11,7 @@ fl	struct
 ;	O
 switch	O
 (	O
-dbf	*
+dbf	pointer
 ->	O
 lock_type	int
 )	O
@@ -21,7 +21,7 @@ LOCKING_FLOCK	int
 :	O
 flock	O
 (	O
-dbf	*
+dbf	pointer
 ->	O
 desc	int
 ,	O
@@ -35,7 +35,7 @@ LOCKING_LOCKF	int
 :	O
 lockf	function
 (	O
-dbf	*
+dbf	pointer
 ->	O
 desc	int
 ,	O
@@ -79,7 +79,7 @@ off_t	long
 ;	O
 fcntl	function
 (	O
-dbf	*
+dbf	pointer
 ->	O
 desc	int
 ,	O
@@ -97,7 +97,7 @@ LOCKING_NONE	int
 break	O
 ;	O
 }	O
-dbf	*
+dbf	pointer
 ->	O
 lock_type	int
 =	O
@@ -107,8 +107,8 @@ LOCKING_NONE	int
 int	O
 _gdbm_lock_file	function
 (	O
-GDBM_FILE	*
-dbf	*
+GDBM_FILE	pointer
+dbf	pointer
 )	O
 {	O
 struct	O
@@ -123,7 +123,7 @@ lock_val	int
 ;	O
 if	O
 (	O
-dbf	*
+dbf	pointer
 ->	O
 read_write	int
 ==	O
@@ -133,7 +133,7 @@ lock_val	int
 =	O
 flock	O
 (	O
-dbf	*
+dbf	pointer
 ->	O
 desc	int
 ,	O
@@ -147,7 +147,7 @@ lock_val	int
 =	O
 flock	O
 (	O
-dbf	*
+dbf	pointer
 ->	O
 desc	int
 ,	O
@@ -172,7 +172,7 @@ EWOULDBLOCK	O
 )	O
 )	O
 {	O
-dbf	*
+dbf	pointer
 ->	O
 lock_type	int
 =	O
@@ -191,7 +191,7 @@ lock_val	int
 1	int
 )	O
 {	O
-dbf	*
+dbf	pointer
 ->	O
 lock_type	int
 =	O
@@ -205,7 +205,7 @@ lock_val	int
 =	O
 lockf	function
 (	O
-dbf	*
+dbf	pointer
 ->	O
 desc	int
 ,	O
@@ -233,7 +233,7 @@ EDEADLK	int
 )	O
 )	O
 {	O
-dbf	*
+dbf	pointer
 ->	O
 lock_type	int
 =	O
@@ -252,7 +252,7 @@ lock_val	int
 1	int
 )	O
 {	O
-dbf	*
+dbf	pointer
 ->	O
 lock_type	int
 =	O
@@ -264,7 +264,7 @@ lock_val	int
 }	O
 if	O
 (	O
-dbf	*
+dbf	pointer
 ->	O
 read_write	int
 ==	O
@@ -306,7 +306,7 @@ lock_val	int
 =	O
 fcntl	function
 (	O
-dbf	*
+dbf	pointer
 ->	O
 desc	int
 ,	O
@@ -323,7 +323,7 @@ lock_val	int
 -	O
 1	int
 )	O
-dbf	*
+dbf	pointer
 ->	O
 lock_type	int
 =	O
@@ -336,7 +336,7 @@ lock_val	int
 -	O
 1	int
 )	O
-dbf	*
+dbf	pointer
 ->	O
 lock_type	int
 =	O

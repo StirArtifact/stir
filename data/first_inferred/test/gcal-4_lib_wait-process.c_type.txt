@@ -23,7 +23,7 @@ static	O
 slaves_entry_t	struct
 *	O
 volatile	O
-slaves	*
+slaves	pointer
 =	O
 static_slaves	array
 ;	O
@@ -78,7 +78,7 @@ n	long
 ;	O
 if	O
 (	O
-slaves	*
+slaves	pointer
 [	O
 n	long
 ]	O
@@ -89,7 +89,7 @@ used	int
 pid_t	int
 slave	int
 =	O
-slaves	*
+slaves	pointer
 [	O
 n	long
 ]	O
@@ -145,11 +145,11 @@ slaves_entry_t	struct
 *	O
 s	long
 =	O
-slaves	*
+slaves	pointer
 ;	O
 slaves_entry_t	struct
 *	O
-s_end	*
+s_end	pointer
 =	O
 s	long
 +	O
@@ -160,7 +160,7 @@ for	O
 ;	O
 s	long
 <	O
-s_end	*
+s_end	pointer
 ;	O
 s	long
 ++	O
@@ -198,9 +198,9 @@ slaves_allocated	long
 {	O
 slaves_entry_t	struct
 *	O
-old_slaves	*
+old_slaves	pointer
 =	O
-slaves	*
+slaves	pointer
 ;	O
 size_t	long
 new_slaves_allocated	long
@@ -211,7 +211,7 @@ slaves_allocated	long
 ;	O
 slaves_entry_t	struct
 *	O
-new_slaves	*
+new_slaves	pointer
 =	O
 (	O
 slaves_entry_t	struct
@@ -229,7 +229,7 @@ slaves_entry_t	struct
 ;	O
 if	O
 (	O
-new_slaves	*
+new_slaves	pointer
 ==	O
 NULL	O
 )	O
@@ -248,9 +248,9 @@ xalloc_die	function
 }	O
 memcpy	function
 (	O
-new_slaves	*
+new_slaves	pointer
 ,	O
-old_slaves	*
+old_slaves	pointer
 ,	O
 slaves_allocated	long
 *	O
@@ -260,9 +260,9 @@ slaves_entry_t	struct
 )	O
 )	O
 ;	O
-slaves	*
+slaves	pointer
 =	O
-new_slaves	*
+new_slaves	pointer
 ;	O
 slaves_allocated	long
 =	O
@@ -270,17 +270,17 @@ new_slaves_allocated	long
 ;	O
 if	O
 (	O
-old_slaves	*
+old_slaves	pointer
 !=	O
 static_slaves	array
 )	O
 free	function
 (	O
-old_slaves	*
+old_slaves	pointer
 )	O
 ;	O
 }	O
-slaves	*
+slaves	pointer
 [	O
 slaves_count	int
 ]	O
@@ -289,7 +289,7 @@ child	int
 =	O
 child	int
 ;	O
-slaves	*
+slaves	pointer
 [	O
 slaves_count	int
 ]	O
@@ -314,11 +314,11 @@ slaves_entry_t	struct
 *	O
 s	long
 =	O
-slaves	*
+slaves	pointer
 ;	O
 slaves_entry_t	struct
 *	O
-s_end	*
+s_end	pointer
 =	O
 s	long
 +	O
@@ -329,7 +329,7 @@ for	O
 ;	O
 s	long
 <	O
-s_end	*
+s_end	pointer
 ;	O
 s	long
 ++	O
@@ -362,7 +362,7 @@ child	int
 const	O
 char	O
 *	O
-progname	*
+progname	pointer
 ,	O
 bool	bool
 ignore_sigpipe	bool
@@ -378,7 +378,7 @@ exit_on_error	bool
 ,	O
 int	O
 *	O
-termsigp	*
+termsigp	pointer
 )	O
 {	O
 int	O
@@ -386,12 +386,12 @@ status	int
 ;	O
 if	O
 (	O
-termsigp	*
+termsigp	pointer
 !=	O
 NULL	O
 )	O
 *	O
-termsigp	*
+termsigp	pointer
 =	O
 0	int
 ;	O
@@ -452,10 +452,10 @@ errno	O
 ,	O
 _	O
 (	O
-"%s subprocess"	*
+"%s subprocess"	pointer
 )	O
 ,	O
-progname	*
+progname	pointer
 )	O
 ;	O
 return	O
@@ -492,12 +492,12 @@ status	int
 {	O
 if	O
 (	O
-termsigp	*
+termsigp	pointer
 !=	O
 NULL	O
 )	O
 *	O
-termsigp	*
+termsigp	pointer
 =	O
 WTERMSIG	O
 (	O
@@ -526,7 +526,7 @@ exit_on_error	bool
 !	O
 null_stderr	bool
 &&	O
-termsigp	*
+termsigp	pointer
 ==	O
 NULL	O
 )	O
@@ -543,10 +543,10 @@ EXIT_FAILURE	int
 ,	O
 _	O
 (	O
-"%s subprocess got fatal signal %d"	*
+"%s subprocess got fatal signal %d"	pointer
 )	O
 ,	O
-progname	*
+progname	pointer
 ,	O
 (	O
 int	O
@@ -602,10 +602,10 @@ EXIT_FAILURE	int
 ,	O
 _	O
 (	O
-"%s subprocess failed"	*
+"%s subprocess failed"	pointer
 )	O
 ,	O
-progname	*
+progname	pointer
 )	O
 ;	O
 return	O

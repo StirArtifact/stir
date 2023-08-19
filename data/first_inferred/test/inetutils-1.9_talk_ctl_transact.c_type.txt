@@ -13,7 +13,7 @@ type	int
 ,	O
 CTL_RESPONSE	struct
 *	O
-rp	*
+rp	pointer
 )	O
 {	O
 int	O
@@ -24,7 +24,7 @@ cc	int
 fd_set	struct
 read_mask	struct
 ,	O
-ctl_mask	*
+ctl_mask	pointer
 ;	O
 struct	O
 timeval	struct
@@ -132,7 +132,7 @@ continue	O
 ;	O
 p_error	function
 (	O
-"Error on write to talk daemon"	*
+"Error on write to talk daemon"	pointer
 )	O
 ;	O
 }	O
@@ -174,7 +174,7 @@ continue	O
 ;	O
 p_error	function
 (	O
-"Error waiting for daemon response"	*
+"Error waiting for daemon response"	pointer
 )	O
 ;	O
 }	O
@@ -198,12 +198,12 @@ ctl_sockt	int
 char	O
 *	O
 )	O
-rp	*
+rp	pointer
 ,	O
 sizeof	O
 (	O
 *	O
-rp	*
+rp	pointer
 )	O
 ,	O
 0	int
@@ -226,7 +226,7 @@ continue	O
 ;	O
 p_error	function
 (	O
-"Error on read from talk daemon"	*
+"Error on read from talk daemon"	pointer
 )	O
 ;	O
 }	O
@@ -265,13 +265,13 @@ nready	int
 0	int
 &&	O
 (	O
-rp	*
+rp	pointer
 ->	O
 vers	char
 !=	O
 TALK_VERSION	int
 ||	O
-rp	*
+rp	pointer
 ->	O
 type	char
 !=	O
@@ -282,31 +282,31 @@ type	int
 }	O
 while	O
 (	O
-rp	*
+rp	pointer
 ->	O
 vers	char
 !=	O
 TALK_VERSION	int
 ||	O
-rp	*
+rp	pointer
 ->	O
 type	char
 !=	O
 type	int
 )	O
 ;	O
-rp	*
+rp	pointer
 ->	O
 id_num	int
 =	O
 ntohl	function
 (	O
-rp	*
+rp	pointer
 ->	O
 id_num	int
 )	O
 ;	O
-rp	*
+rp	pointer
 ->	O
 addr	struct
 .	O
@@ -314,7 +314,7 @@ sa_family	short
 =	O
 ntohs	function
 (	O
-rp	*
+rp	pointer
 ->	O
 addr	struct
 .	O

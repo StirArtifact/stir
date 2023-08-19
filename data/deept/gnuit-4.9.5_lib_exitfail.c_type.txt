@@ -1,6 +1,0 @@
-int	O
-volatile	O
-exit_failure	int
-=	O
-EXIT_FAILURE	int
-;	O

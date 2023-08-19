@@ -16,12 +16,12 @@ struct	O
 option	struct
 const	O
 *	O
-long_options	*
+long_options	pointer
 ,	O
 char	O
 const	O
 *	O
-arg	*
+arg	pointer
 ,	O
 int	O
 exit_status	int
@@ -30,14 +30,14 @@ exit_status	int
 char	O
 const	O
 *	O
-hyphens	*
+hyphens	pointer
 =	O
-"--"	*
+"--"	pointer
 ;	O
 char	O
 const	O
 *	O
-msgid	*
+msgid	pointer
 ;	O
 char	O
 const	O
@@ -64,11 +64,11 @@ abort	function
 case	O
 LONGINT_INVALID	int
 :	O
-msgid	*
+msgid	pointer
 =	O
 N_	O
 (	O
-"invalid %s%s argument '%s'"	*
+"invalid %s%s argument '%s'"	pointer
 )	O
 ;	O
 break	O
@@ -79,11 +79,11 @@ LONGINT_INVALID_SUFFIX_CHAR	int
 case	O
 LONGINT_INVALID_SUFFIX_CHAR_WITH_OVERFLOW	int
 :	O
-msgid	*
+msgid	pointer
 =	O
 N_	O
 (	O
-"invalid suffix in %s%s argument '%s'"	*
+"invalid suffix in %s%s argument '%s'"	pointer
 )	O
 ;	O
 break	O
@@ -91,11 +91,11 @@ break	O
 case	O
 LONGINT_OVERFLOW	int
 :	O
-msgid	*
+msgid	pointer
 =	O
 N_	O
 (	O
-"%s%s argument '%s' too large"	*
+"%s%s argument '%s' too large"	pointer
 )	O
 ;	O
 break	O
@@ -108,7 +108,7 @@ opt_idx	int
 0	int
 )	O
 {	O
-hyphens	*
+hyphens	pointer
 -=	O
 opt_idx	int
 ;	O
@@ -134,12 +134,12 @@ option_buffer	array
 else	O
 option	struct
 =	O
-long_options	*
+long_options	pointer
 [	O
 opt_idx	int
 ]	O
 .	O
-name	*
+name	pointer
 ;	O
 error	function
 (	O
@@ -149,14 +149,14 @@ exit_status	int
 ,	O
 gettext	function
 (	O
-msgid	*
+msgid	pointer
 )	O
 ,	O
-hyphens	*
+hyphens	pointer
 ,	O
 option	struct
 ,	O
-arg	*
+arg	pointer
 )	O
 ;	O
 }	O
@@ -177,12 +177,12 @@ struct	O
 option	struct
 const	O
 *	O
-long_options	*
+long_options	pointer
 ,	O
 char	O
 const	O
 *	O
-arg	*
+arg	pointer
 )	O
 {	O
 xstrtol_error	function
@@ -193,9 +193,9 @@ opt_idx	int
 ,	O
 c	char
 ,	O
-long_options	*
+long_options	pointer
 ,	O
-arg	*
+arg	pointer
 ,	O
 exit_failure	int
 )	O

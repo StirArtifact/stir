@@ -1,9 +1,0 @@
-const	O
-char	O
-mi_libxmi_ver	array
-[	O
-8	int
-]	O
-=	O
-MI_LIBXMI_VER_STRING	struct
-;	O

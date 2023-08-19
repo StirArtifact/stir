@@ -211,6 +211,6 @@ Xaw_viewportWidgetClass	function
 )	O
 {	O
 return	O
-viewportWidgetClass	*
+viewportWidgetClass	pointer
 ;	O
 }	O

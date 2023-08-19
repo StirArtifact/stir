@@ -3,7 +3,7 @@ typeinfo_t	O
 iconv_ostream_typeinfo	O
 =	O
 {	O
-"iconv_ostream"	*
+"iconv_ostream"	pointer
 }	O
 ;	O
 static	O
@@ -16,20 +16,20 @@ iconv_ostream_superclasses	array
 ]	O
 =	O
 {	O
-iconv_ostream_SUPERCLASSES	*
+iconv_ostream_SUPERCLASSES	pointer
 }	O
 ;	O
 static	O
 void	O
 iconv_ostream__write_mem	function
 (	O
-iconv_ostream_t	*
-stream	*
+iconv_ostream_t	pointer
+stream	pointer
 ,	O
 const	O
 void	O
 *	O
-data	*
+data	pointer
 ,	O
 size_t	long
 len	long
@@ -65,11 +65,11 @@ inbufcount	int
 )	O
 memcpy	function
 (	O
-inbuffer	*
+inbuffer	pointer
 ,	O
-stream	*
+stream	pointer
 ->	O
-buf	*
+buf	pointer
 ,	O
 inbufcount	int
 )	O
@@ -95,7 +95,7 @@ len	long
 :	O
 BUFFERSIZE	int
 -	O
-inbufcount	*
+inbufcount	pointer
 )	O
 ;	O
 if	O
@@ -107,26 +107,26 @@ n	long
 {	O
 memcpy	function
 (	O
-inbuffer	*
+inbuffer	pointer
 +	O
 inbufcount	O
 ,	O
-data	*
+data	pointer
 ,	O
 n	long
 )	O
 ;	O
-data	*
+data	pointer
 =	O
 (	O
 char	O
 *	O
 )	O
-data	*
+data	pointer
 +	O
 n	long
 ;	O
-inbufcount	*
+inbufcount	pointer
 +=	O
 n	long
 ;	O
@@ -142,7 +142,7 @@ outbuffer	array
 [	O
 8	int
 *	O
-BUFFERSIZE	*
+BUFFERSIZE	pointer
 ]	O
 ;	O
 const	O
@@ -240,7 +240,7 @@ EXIT_FAILURE	int
 ,	O
 _	O
 (	O
-"%s: cannot convert from %s to %s"	*
+"%s: cannot convert from %s to %s"	pointer
 )	O
 ,	O
 "iconv_ostream"	O
@@ -251,7 +251,7 @@ from_encoding	O
 ,	O
 stream	int
 ->	O
-to_encoding	*
+to_encoding	pointer
 )	O
 ;	O
 if	O
@@ -271,7 +271,7 @@ stream	int
 ->	O
 destination	int
 ,	O
-outbuffer	*
+outbuffer	pointer
 ,	O
 sizeof	O
 (	O
@@ -295,7 +295,7 @@ EXIT_FAILURE	int
 ,	O
 _	O
 (	O
-"%s: shift sequence too long"	*
+"%s: shift sequence too long"	pointer
 )	O
 ,	O
 "iconv_ostream"	O
@@ -318,7 +318,7 @@ memcpy	function
 (	O
 stream	int
 ->	O
-buf	*
+buf	pointer
 ,	O
 inptr	O
 ,	O
@@ -342,7 +342,7 @@ insize	int
 )	O
 memmove	function
 (	O
-inbuffer	*
+inbuffer	pointer
 ,	O
 inptr	O
 ,	O
@@ -361,8 +361,8 @@ static	O
 void	O
 iconv_ostream__flush	function
 (	O
-iconv_ostream_t	*
-stream	*
+iconv_ostream_t	pointer
+stream	pointer
 ,	O
 ostream_flush_scope_t	O
 scope	int
@@ -388,8 +388,8 @@ static	O
 void	O
 iconv_ostream__free	function
 (	O
-iconv_ostream_t	*
-stream	*
+iconv_ostream_t	pointer
+stream	pointer
 )	O
 {	O
 {	O
@@ -453,7 +453,7 @@ EXIT_FAILURE	int
 ,	O
 _	O
 (	O
-"%s: cannot convert from %s to %s"	*
+"%s: cannot convert from %s to %s"	pointer
 )	O
 ,	O
 "iconv_ostream"	O
@@ -484,7 +484,7 @@ stream	int
 ->	O
 destination	int
 ,	O
-outbuffer	*
+outbuffer	pointer
 ,	O
 sizeof	O
 (	O
@@ -518,7 +518,7 @@ to_encoding	O
 ;	O
 free	function
 (	O
-stream	*
+stream	pointer
 )	O
 ;	O
 }	O
@@ -528,19 +528,19 @@ iconv_ostream_create	function
 const	O
 char	O
 *	O
-from_encoding	*
+from_encoding	pointer
 ,	O
 const	O
 char	O
 *	O
-to_encoding	*
+to_encoding	pointer
 ,	O
 ostream_t	O
 destination	int
 )	O
 {	O
-iconv_ostream_t	*
-stream	*
+iconv_ostream_t	pointer
+stream	pointer
 =	O
 XMALLOC	O
 (	O
@@ -552,7 +552,7 @@ stream	int
 ->	O
 base	O
 .	O
-vtable	*
+vtable	pointer
 =	O
 &	O
 iconv_ostream_vtable	function
@@ -565,31 +565,31 @@ destination	int
 ;	O
 stream	int
 ->	O
-from_encoding	*
+from_encoding	pointer
 =	O
 xstrdup	function
 (	O
-from_encoding	*
+from_encoding	pointer
 )	O
 ;	O
 stream	int
 ->	O
-to_encoding	*
+to_encoding	pointer
 =	O
 xstrdup	function
 (	O
-to_encoding	*
+to_encoding	pointer
 )	O
 ;	O
 stream	int
 ->	O
-cd	*
+cd	pointer
 =	O
 iconv_open	function
 (	O
-to_encoding	*
+to_encoding	pointer
 ,	O
-from_encoding	*
+from_encoding	pointer
 )	O
 ;	O
 if	O
@@ -632,7 +632,7 @@ EXIT_FAILURE	int
 ,	O
 _	O
 (	O
-"%s does not support conversion from %s"	*
+"%s does not support conversion from %s"	pointer
 )	O
 ,	O
 "iconv"	int
@@ -651,7 +651,7 @@ to_encoding	int
 )	O
 ==	O
 (	O
-iconv_t	*
+iconv_t	pointer
 )	O
 (	O
 -	O
@@ -666,10 +666,10 @@ EXIT_FAILURE	int
 ,	O
 _	O
 (	O
-"%s does not support conversion to %s"	*
+"%s does not support conversion to %s"	pointer
 )	O
 ,	O
-"iconv"	*
+"iconv"	pointer
 ,	O
 to_encoding	int
 )	O
@@ -683,10 +683,10 @@ EXIT_FAILURE	int
 ,	O
 _	O
 (	O
-"%s does not support conversion from %s to %s"	*
+"%s does not support conversion from %s to %s"	pointer
 )	O
 ,	O
-"iconv"	*
+"iconv"	pointer
 ,	O
 from_encoding	int
 ,	O
@@ -710,7 +710,7 @@ iconv_ostream_implementation	struct
 iconv_ostream_vtable	struct
 =	O
 {	O
-iconv_ostream_superclasses	*
+iconv_ostream_superclasses	pointer
 ,	O
 sizeof	O
 (	O
@@ -748,7 +748,7 @@ first_arg	int
 const	O
 void	O
 *	O
-data	*
+data	pointer
 ,	O
 size_t	long
 len	long
@@ -758,7 +758,7 @@ const	O
 struct	O
 iconv_ostream_implementation	struct
 *	O
-vtable	*
+vtable	pointer
 =	O
 (	O
 (	O
@@ -774,15 +774,15 @@ iconv_ostream_representation	struct
 first_arg	int
 )	O
 ->	O
-vtable	*
+vtable	pointer
 ;	O
-vtable	*
+vtable	pointer
 ->	O
 write_mem	O
 (	O
 first_arg	int
 ,	O
-data	*
+data	pointer
 ,	O
 len	int
 )	O
@@ -802,7 +802,7 @@ const	O
 struct	O
 iconv_ostream_implementation	struct
 *	O
-vtable	*
+vtable	pointer
 =	O
 (	O
 (	O
@@ -818,9 +818,9 @@ iconv_ostream_representation	struct
 first_arg	int
 )	O
 ->	O
-vtable	*
+vtable	pointer
 ;	O
-vtable	*
+vtable	pointer
 ->	O
 flush	O
 (	O
@@ -841,7 +841,7 @@ const	O
 struct	O
 iconv_ostream_implementation	struct
 *	O
-vtable	*
+vtable	pointer
 =	O
 (	O
 (	O
@@ -857,9 +857,9 @@ iconv_ostream_representation	struct
 first_arg	int
 )	O
 ->	O
-vtable	*
+vtable	pointer
 ;	O
-vtable	*
+vtable	pointer
 ->	O
 free	function
 (	O

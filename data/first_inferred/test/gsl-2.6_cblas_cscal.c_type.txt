@@ -12,7 +12,7 @@ alpha	enum
 ,	O
 void	O
 *	O
-X	*
+X	pointer
 ,	O
 const	O
 int	O

@@ -1,5 +1,0 @@
-error_t	O
-argp_err_exit_status	struct
-=	O
-EX_USAGE	struct
-;	O

@@ -4,14 +4,14 @@ gsl_poly_complex_solve	function
 const	O
 double	O
 *	O
-a	*
+a	pointer
 ,	O
 size_t	long
 n	long
 ,	O
 gsl_poly_complex_workspace	struct
 *	O
-w	*
+w	pointer
 ,	O
 gsl_complex_packed_ptr	double
 z	double
@@ -22,7 +22,7 @@ status	int
 ;	O
 double	O
 *	O
-m	*
+m	pointer
 ;	O
 if	O
 (	O
@@ -33,7 +33,7 @@ n	int
 {	O
 GSL_ERROR	O
 (	O
-"number of terms must be a positive integer"	*
+"number of terms must be a positive integer"	pointer
 ,	O
 GSL_EINVAL	int
 )	O
@@ -48,7 +48,7 @@ n	int
 {	O
 GSL_ERROR	O
 (	O
-"cannot solve for only one term"	*
+"cannot solve for only one term"	pointer
 ,	O
 GSL_EINVAL	int
 )	O
@@ -56,7 +56,7 @@ GSL_EINVAL	int
 }	O
 if	O
 (	O
-a	*
+a	pointer
 [	O
 n	int
 -	O
@@ -68,7 +68,7 @@ n	int
 {	O
 GSL_ERROR	O
 (	O
-"leading term of polynomial must be non-zero"	*
+"leading term of polynomial must be non-zero"	pointer
 ,	O
 GSL_EINVAL	int
 )	O
@@ -76,7 +76,7 @@ GSL_EINVAL	int
 }	O
 if	O
 (	O
-w	*
+w	pointer
 ->	O
 nc	int
 !=	O
@@ -87,17 +87,17 @@ n	int
 {	O
 GSL_ERROR	O
 (	O
-"size of workspace does not match polynomial"	*
+"size of workspace does not match polynomial"	pointer
 ,	O
 GSL_EINVAL	int
 )	O
 ;	O
 }	O
-m	*
+m	pointer
 =	O
-w	*
+w	pointer
 ->	O
-matrix	*
+matrix	pointer
 ;	O
 set_companion_matrix	function
 (	O
@@ -107,12 +107,12 @@ n	int
 -	O
 1	int
 ,	O
-m	*
+m	pointer
 )	O
 ;	O
 balance_companion_matrix	function
 (	O
-m	*
+m	pointer
 ,	O
 n	int
 -	O
@@ -123,7 +123,7 @@ status	int
 =	O
 qr_companion	function
 (	O
-m	*
+m	pointer
 ,	O
 n	int
 -	O
@@ -139,7 +139,7 @@ status	int
 {	O
 GSL_ERROR	O
 (	O
-"root solving qr method failed to converge"	*
+"root solving qr method failed to converge"	pointer
 ,	O
 GSL_EFAILED	int
 )	O

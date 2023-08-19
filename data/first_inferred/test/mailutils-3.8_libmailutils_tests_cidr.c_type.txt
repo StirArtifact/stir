@@ -5,7 +5,7 @@ print_bytes	function
 unsigned	O
 char	O
 *	O
-b	*
+b	pointer
 ,	O
 size_t	long
 l	long
@@ -24,15 +24,15 @@ b	int
 )	O
 printf	function
 (	O
-" %02x"	*
+" %02x"	pointer
 ,	O
 *	O
-b	*
+b	pointer
 )	O
 ;	O
 printf	function
 (	O
-"\n"	*
+"\n"	pointer
 )	O
 ;	O
 }	O
@@ -45,7 +45,7 @@ argc	int
 char	O
 *	O
 *	O
-argv	*
+argv	pointer
 )	O
 {	O
 int	O
@@ -55,7 +55,7 @@ flags	int
 ;	O
 mu_set_program_name	function
 (	O
-argv	*
+argv	pointer
 [	O
 0	int
 ]	O
@@ -70,9 +70,9 @@ argc	long
 {	O
 mu_error	function
 (	O
-"usage: %s [-sS] CIDR [CIDR...]"	*
+"usage: %s [-sS] CIDR [CIDR...]"	pointer
 ,	O
-argv	*
+argv	pointer
 [	O
 0	int
 ]	O
@@ -90,30 +90,30 @@ argc	long
 {	O
 char	O
 *	O
-arg	*
+arg	pointer
 =	O
 *	O
 ++	O
-argv	*
+argv	pointer
 ;	O
 struct	O
 mu_cidr	struct
-cidr	*
+cidr	pointer
 ;	O
 int	O
 rc	int
 ;	O
 char	O
 *	O
-str	*
+str	pointer
 ;	O
 if	O
 (	O
 strcmp	function
 (	O
-arg	*
+arg	pointer
 ,	O
-"-s"	*
+"-s"	pointer
 )	O
 ==	O
 0	int
@@ -131,9 +131,9 @@ if	O
 (	O
 strcmp	function
 (	O
-arg	*
+arg	pointer
 ,	O
-"-S"	*
+"-S"	pointer
 )	O
 ==	O
 0	int
@@ -152,9 +152,9 @@ rc	int
 mu_cidr_from_string	function
 (	O
 &	O
-cidr	*
+cidr	pointer
 ,	O
-arg	*
+arg	pointer
 )	O
 ;	O
 if	O
@@ -164,9 +164,9 @@ rc	int
 {	O
 mu_error	function
 (	O
-"%s: %s"	*
+"%s: %s"	pointer
 ,	O
-arg	*
+arg	pointer
 ,	O
 mu_strerror	function
 (	O
@@ -179,57 +179,57 @@ continue	O
 }	O
 printf	function
 (	O
-"%s:\n"	*
+"%s:\n"	pointer
 ,	O
-arg	*
+arg	pointer
 )	O
 ;	O
 printf	function
 (	O
-"family = %d\n"	*
+"family = %d\n"	pointer
 ,	O
-cidr	*
+cidr	pointer
 .	O
 family	int
 )	O
 ;	O
 printf	function
 (	O
-"len = %d\n"	*
+"len = %d\n"	pointer
 ,	O
-cidr	*
+cidr	pointer
 .	O
 len	long
 )	O
 ;	O
 printf	function
 (	O
-"address ="	*
+"address ="	pointer
 )	O
 ;	O
 print_bytes	function
 (	O
-cidr	*
+cidr	pointer
 .	O
 address	array
 ,	O
-cidr	*
+cidr	pointer
 .	O
 len	int
 )	O
 ;	O
 printf	function
 (	O
-"netmask ="	*
+"netmask ="	pointer
 )	O
 ;	O
 print_bytes	function
 (	O
-cidr	*
+cidr	pointer
 .	O
 netmask	array
 ,	O
-cidr	*
+cidr	pointer
 .	O
 len	int
 )	O
@@ -239,12 +239,12 @@ rc	int
 mu_cidr_format	function
 (	O
 &	O
-cidr	*
+cidr	pointer
 ,	O
 flags	int
 ,	O
 &	O
-str	*
+str	pointer
 )	O
 ;	O
 if	O
@@ -254,7 +254,7 @@ rc	int
 {	O
 mu_error	function
 (	O
-"cannot covert to string: %s"	*
+"cannot covert to string: %s"	pointer
 ,	O
 mu_strerror	function
 (	O
@@ -268,14 +268,14 @@ return	O
 }	O
 printf	function
 (	O
-"string = %s\n"	*
+"string = %s\n"	pointer
 ,	O
-str	*
+str	pointer
 )	O
 ;	O
 free	function
 (	O
-str	*
+str	pointer
 )	O
 ;	O
 }	O

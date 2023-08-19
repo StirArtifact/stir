@@ -88,7 +88,7 @@ sockt	int
 )	O
 p_error	function
 (	O
-"Bad socket"	*
+"Bad socket"	pointer
 )	O
 ;	O
 if	O
@@ -115,7 +115,7 @@ my_addr	struct
 )	O
 p_error	function
 (	O
-"Binding local socket"	*
+"Binding local socket"	pointer
 )	O
 ;	O
 length	int
@@ -148,7 +148,7 @@ length	int
 )	O
 p_error	function
 (	O
-"Bad address for socket"	*
+"Bad address for socket"	pointer
 )	O
 ;	O
 return	O
@@ -195,7 +195,7 @@ ctl_sockt	int
 )	O
 p_error	function
 (	O
-"Bad socket"	*
+"Bad socket"	pointer
 )	O
 ;	O
 if	O
@@ -222,7 +222,7 @@ ctl_addr	struct
 )	O
 p_error	function
 (	O
-"Couldn't bind to control socket"	*
+"Couldn't bind to control socket"	pointer
 )	O
 ;	O
 length	int
@@ -255,7 +255,7 @@ length	int
 )	O
 p_error	function
 (	O
-"Bad address for ctl socket"	*
+"Bad address for ctl socket"	pointer
 )	O
 ;	O
 return	O

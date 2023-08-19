@@ -1,7 +1,0 @@
-static	O
-char	O
-*	O
-version_string	pointer
-=	O
-"\n$Version: GNU termcap 1.3 $\n"	pointer
-;	O

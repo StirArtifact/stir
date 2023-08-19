@@ -1,15 +1,15 @@
 int	O
 mpz_kronecker_si	function
 (	O
-mpz_srcptr	*
-a	*
+mpz_srcptr	pointer
+a	pointer
 ,	O
 long	O
 b	long
 )	O
 {	O
-mp_srcptr	*
-a_ptr	*
+mp_srcptr	pointer
+a_ptr	pointer
 ;	O
 mp_size_t	long
 a_size	long
@@ -60,7 +60,7 @@ long	O
 b	long
 )	O
 ;	O
-a_ptr	*
+a_ptr	pointer
 =	O
 PTR	O
 (	O
@@ -81,7 +81,7 @@ b_limb	int
 mp_limb_t	long
 a_low	long
 =	O
-a_ptr	*
+a_ptr	pointer
 [	O
 0	int
 ]	O
@@ -170,7 +170,7 @@ result_bit1	int
 ,	O
 a_rem	long
 ,	O
-a_ptr	*
+a_ptr	pointer
 ,	O
 a_size	long
 ,	O

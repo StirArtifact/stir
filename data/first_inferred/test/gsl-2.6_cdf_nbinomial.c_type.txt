@@ -37,7 +37,7 @@ p	double
 {	O
 CDF_ERROR	O
 (	O
-"p < 0 or p > 1"	*
+"p < 0 or p > 1"	pointer
 ,	O
 GSL_EDOM	int
 )	O
@@ -52,7 +52,7 @@ n	int
 {	O
 CDF_ERROR	O
 (	O
-"n < 0"	*
+"n < 0"	pointer
 ,	O
 GSL_EDOM	int
 )	O
@@ -128,7 +128,7 @@ p	double
 {	O
 CDF_ERROR	O
 (	O
-"p < 0 or p > 1"	*
+"p < 0 or p > 1"	pointer
 ,	O
 GSL_EDOM	int
 )	O
@@ -143,7 +143,7 @@ n	int
 {	O
 CDF_ERROR	O
 (	O
-"n < 0"	*
+"n < 0"	pointer
 ,	O
 GSL_EDOM	int
 )	O

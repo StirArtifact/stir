@@ -7,7 +7,7 @@ errnum	int
 ,	O
 char	O
 *	O
-buf	*
+buf	pointer
 ,	O
 size_t	long
 buflen	long
@@ -19,7 +19,7 @@ safe_copy	function
 (	O
 char	O
 *	O
-buf	*
+buf	pointer
 ,	O
 size_t	long
 buflen	long
@@ -27,7 +27,7 @@ buflen	long
 const	O
 char	O
 *	O
-msg	*
+msg	pointer
 )	O
 {	O
 size_t	long
@@ -35,7 +35,7 @@ len	long
 =	O
 strlen	function
 (	O
-msg	*
+msg	pointer
 )	O
 ;	O
 size_t	long
@@ -53,14 +53,14 @@ buflen	long
 ;	O
 memmove	function
 (	O
-buf	*
+buf	pointer
 ,	O
-msg	*
+msg	pointer
 ,	O
 moved	long
 )	O
 ;	O
-buf	*
+buf	pointer
 [	O
 moved	long
 ]	O
@@ -85,7 +85,7 @@ errnum	int
 ,	O
 char	O
 *	O
-buf	*
+buf	pointer
 ,	O
 size_t	long
 buflen	long
@@ -103,7 +103,7 @@ if	O
 buflen	long
 )	O
 *	O
-buf	*
+buf	pointer
 =	O
 '\0'	O
 ;	O
@@ -112,7 +112,7 @@ ERANGE	int
 ;	O
 }	O
 *	O
-buf	*
+buf	pointer
 =	O
 '\0'	O
 ;	O
@@ -120,7 +120,7 @@ buf	*
 char	O
 const	O
 *	O
-msg	*
+msg	pointer
 =	O
 strerror_override	O
 (	O
@@ -129,16 +129,16 @@ errnum	int
 ;	O
 if	O
 (	O
-msg	*
+msg	pointer
 )	O
 return	O
 safe_copy	function
 (	O
-buf	*
+buf	pointer
 ,	O
 buflen	long
 ,	O
-msg	*
+msg	pointer
 )	O
 ;	O
 }	O
@@ -158,7 +158,7 @@ __xpg_strerror_r	function
 (	O
 errnum	int
 ,	O
-buf	*
+buf	pointer
 ,	O
 buflen	long
 )	O
@@ -177,12 +177,12 @@ if	O
 (	O
 !	O
 *	O
-buf	*
+buf	pointer
 )	O
 {	O
 safe_copy	function
 (	O
-buf	*
+buf	pointer
 ,	O
 buflen	long
 ,	O
@@ -190,7 +190,7 @@ strerror_r	function
 (	O
 errnum	int
 ,	O
-buf	*
+buf	pointer
 ,	O
 buflen	long
 )	O
@@ -206,16 +206,16 @@ EINVAL	int
 &&	O
 !	O
 *	O
-buf	*
+buf	pointer
 )	O
 {	O
 snprintf	function
 (	O
-buf	*
+buf	pointer
 ,	O
 buflen	long
 ,	O
-"Unknown error %d"	*
+"Unknown error %d"	pointer
 ,	O
 errnum	int
 )	O

@@ -4,13 +4,13 @@ file_has_acl	function
 char	O
 const	O
 *	O
-name	*
+name	pointer
 ,	O
 struct	O
 stat	struct
 const	O
 *	O
-sb	*
+sb	pointer
 )	O
 {	O
 return	O

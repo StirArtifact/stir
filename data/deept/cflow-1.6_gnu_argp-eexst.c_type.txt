@@ -1,5 +1,0 @@
-error_t	int
-argp_err_exit_status	int
-=	O
-EX_USAGE	int
-;	O

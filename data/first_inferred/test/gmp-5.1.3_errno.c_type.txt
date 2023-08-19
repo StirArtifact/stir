@@ -33,7 +33,7 @@ void	O
 {	O
 __gmp_exception	function
 (	O
-GMP_ERROR_SQRT_OF_NEGATIVE	*
+GMP_ERROR_SQRT_OF_NEGATIVE	pointer
 )	O
 ;	O
 }	O
@@ -45,7 +45,7 @@ void	O
 {	O
 __gmp_exception	function
 (	O
-GMP_ERROR_DIVISION_BY_ZERO	*
+GMP_ERROR_DIVISION_BY_ZERO	pointer
 )	O
 ;	O
 }	O

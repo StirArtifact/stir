@@ -7,7 +7,7 @@ v	struct
 ,	O
 VPoint	struct
 *	O
-p	*
+p	pointer
 ,	O
 int	O
 *	O
@@ -24,7 +24,7 @@ valid	int
 ;	O
 if	O
 (	O
-p	*
+p	pointer
 ->	O
 z	double
 >	O
@@ -51,11 +51,11 @@ Scale	struct
 .	O
 x	double
 *	O
-p	*
+p	pointer
 ->	O
 x	double
 /	O
-p	*
+p	pointer
 ->	O
 z	double
 )	O
@@ -83,11 +83,11 @@ Scale	struct
 .	O
 y	double
 *	O
-p	*
+p	pointer
 ->	O
 y	double
 /	O
-p	*
+p	pointer
 ->	O
 z	double
 )	O

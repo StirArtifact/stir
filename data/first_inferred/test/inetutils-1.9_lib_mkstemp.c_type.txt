@@ -3,13 +3,13 @@ mkstemp	function
 (	O
 char	O
 *	O
-xtemplate	*
+xtemplate	pointer
 )	O
 {	O
 return	O
 __gen_tempname	O
 (	O
-xtemplate	*
+xtemplate	pointer
 ,	O
 0	int
 ,	O

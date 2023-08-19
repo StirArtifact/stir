@@ -1,8 +1,8 @@
 typedef	O
 struct	O
 {	O
-EPChar	*
-Id	*
+EPChar	pointer
+Id	pointer
 ;	O
 }	O
 DtAP_TEST	struct
@@ -17,9 +17,9 @@ IdObj	int
 {	O
 DtAP_TEST	struct
 *	O
-m	*
+m	pointer
 ;	O
-m	*
+m	pointer
 =	O
 (	O
 DtAP_TEST	struct
@@ -34,9 +34,9 @@ edma_printf_obj	function
 (	O
 IdObj	int
 ,	O
-"Id: %s"	*
+"Id: %s"	pointer
 ,	O
-m	*
+m	pointer
 ->	O
 Id	int
 )	O

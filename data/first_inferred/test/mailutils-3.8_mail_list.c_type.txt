@@ -8,7 +8,7 @@ MU_ARG_UNUSED	O
 char	O
 *	O
 *	O
-argv	*
+argv	pointer
 MU_ARG_UNUSED	O
 )	O
 {	O

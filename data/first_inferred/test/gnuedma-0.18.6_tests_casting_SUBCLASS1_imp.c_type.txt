@@ -20,9 +20,9 @@ IdObj	int
 {	O
 DtSUBCLASS1	struct
 *	O
-m	*
+m	pointer
 ;	O
-m	*
+m	pointer
 =	O
 (	O
 DtSUBCLASS1	struct
@@ -37,7 +37,7 @@ edma_printf_obj	function
 (	O
 IdObj	int
 ,	O
-"Running method Met1"	*
+"Running method Met1"	pointer
 )	O
 ;	O
 return	O
@@ -54,9 +54,9 @@ IdObj	int
 {	O
 DtSUBCLASS1	struct
 *	O
-m	*
+m	pointer
 ;	O
-m	*
+m	pointer
 =	O
 (	O
 DtSUBCLASS1	struct
@@ -71,7 +71,7 @@ edma_printf_obj	function
 (	O
 IdObj	int
 ,	O
-"Running method Met4"	*
+"Running method Met4"	pointer
 )	O
 ;	O
 return	O

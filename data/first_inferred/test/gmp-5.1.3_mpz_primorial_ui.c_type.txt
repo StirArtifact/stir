@@ -45,8 +45,8 @@ n	long
 void	O
 mpz_primorial_ui	O
 (	O
-mpz_ptr	*
-x	*
+mpz_ptr	pointer
+x	pointer
 ,	O
 unsigned	O
 long	O
@@ -104,7 +104,7 @@ n	long
 ;	O
 SIZ	O
 (	O
-x	*
+x	pointer
 )	O
 =	O
 1	int
@@ -114,10 +114,10 @@ else	O
 {	O
 mp_limb_t	long
 *	O
-sieve	*
+sieve	pointer
 ,	O
 *	O
-factors	*
+factors	pointer
 ;	O
 mp_size_t	long
 size	long
@@ -156,11 +156,11 @@ n	long
 )	O
 )	O
 ;	O
-sieve	*
+sieve	pointer
 =	O
 MPZ_REALLOC	O
 (	O
-x	*
+x	pointer
 ,	O
 size	long
 )	O
@@ -170,7 +170,7 @@ size	long
 (	O
 gmp_primesieve	function
 (	O
-sieve	*
+sieve	pointer
 ,	O
 n	long
 )	O
@@ -187,7 +187,7 @@ n	long
 ;	O
 TMP_MARK	O
 ;	O
-factors	*
+factors	pointer
 =	O
 TMP_ALLOC_LIMBS	O
 (	O
@@ -198,7 +198,7 @@ j	long
 =	O
 0	int
 ;	O
-prod	*
+prod	pointer
 =	O
 table	array
 [	O
@@ -241,7 +241,7 @@ n	long
 ,	O
 0	int
 ,	O
-sieve	*
+sieve	pointer
 )	O
 ;	O
 FACTOR_LIST_STORE	O
@@ -252,7 +252,7 @@ prod	long
 ,	O
 max_prod	long
 ,	O
-factors	*
+factors	pointer
 ,	O
 j	long
 )	O
@@ -267,7 +267,7 @@ j	long
 0	int
 )	O
 {	O
-factors	*
+factors	pointer
 [	O
 j	long
 ++	O
@@ -277,9 +277,9 @@ prod	long
 ;	O
 mpz_prodlimbs	O
 (	O
-x	*
+x	pointer
 ,	O
-factors	*
+factors	pointer
 ,	O
 j	long
 )	O
@@ -289,7 +289,7 @@ else	O
 {	O
 PTR	O
 (	O
-x	*
+x	pointer
 )	O
 [	O
 0	int
@@ -299,7 +299,7 @@ prod	long
 ;	O
 SIZ	O
 (	O
-x	*
+x	pointer
 )	O
 =	O
 1	int

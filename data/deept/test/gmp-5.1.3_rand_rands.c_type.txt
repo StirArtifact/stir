@@ -1,8 +1,0 @@
-char	O
-__gmp_rands_initialized	int
-=	O
-0	int
-;	O
-gmp_randstate_t	O
-__gmp_rands	O
-;	O

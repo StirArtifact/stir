@@ -10,7 +10,7 @@ n	int
 struct	O
 dynvec	struct
 *	O
-dv	*
+dv	pointer
 =	O
 xmalloc	function
 (	O
@@ -25,7 +25,7 @@ dynvec	struct
 ;	O
 dv	struct
 ->	O
-dv_vec	*
+dv_vec	pointer
 =	O
 xmalloc	function
 (	O
@@ -67,7 +67,7 @@ free	function
 (	O
 dv	struct
 ->	O
-dv_vec	*
+dv_vec	pointer
 )	O
 ;	O
 free	function
@@ -107,13 +107,13 @@ dv_fill	int
 ;	O
 dv	struct
 ->	O
-dv_vec	*
+dv_vec	pointer
 =	O
 xrealloc	function
 (	O
 dv	struct
 ->	O
-dv_vec	*
+dv_vec	pointer
 ,	O
 sizeof	O
 (	O
@@ -123,7 +123,7 @@ void	O
 *	O
 dv	struct
 ->	O
-dv_capacity	*
+dv_capacity	pointer
 )	O
 ;	O
 }	O
@@ -137,7 +137,7 @@ dv	struct
 ,	O
 void	O
 *	O
-element	*
+element	pointer
 )	O
 {	O
 if	O
@@ -159,13 +159,13 @@ dv_capacity	char
 ;	O
 dv	struct
 ->	O
-dv_vec	*
+dv_vec	pointer
 =	O
 xrealloc	function
 (	O
 dv	struct
 ->	O
-dv_vec	*
+dv_vec	pointer
 ,	O
 sizeof	O
 (	O
@@ -189,6 +189,6 @@ dv_fill	int
 ++	O
 ]	O
 =	O
-element	*
+element	pointer
 ;	O
 }	O

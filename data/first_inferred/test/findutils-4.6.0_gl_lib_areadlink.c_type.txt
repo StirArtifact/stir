@@ -8,11 +8,11 @@ fd	int
 char	O
 const	O
 *	O
-filename	*
+filename	pointer
 ,	O
 char	O
 *	O
-buffer	*
+buffer	pointer
 ,	O
 size_t	long
 buffer_size	long
@@ -31,9 +31,9 @@ abort	function
 return	O
 readlink	function
 (	O
-filename	*
+filename	pointer
 ,	O
-buffer	*
+buffer	pointer
 ,	O
 buffer_size	long
 )	O
@@ -46,7 +46,7 @@ areadlink	function
 char	O
 const	O
 *	O
-filename	*
+filename	pointer
 )	O
 {	O
 return	O
@@ -54,7 +54,7 @@ careadlinkat	function
 (	O
 AT_FDCWD	O
 ,	O
-filename	*
+filename	pointer
 ,	O
 NULL	O
 ,	O

@@ -5,17 +5,17 @@ set_stderr	function
 struct	O
 mu_parseopt	struct
 *	O
-po	*
+po	pointer
 ,	O
 struct	O
 mu_option	struct
 *	O
-opt	*
+opt	pointer
 ,	O
 char	O
 const	O
 *	O
-arg	*
+arg	pointer
 )	O
 {	O
 mu_log_syslog	int
@@ -35,12 +35,12 @@ MU_OPTION_GROUP	function
 (	O
 N_	O
 (	O
-"General options"	*
+"General options"	pointer
 )	O
 )	O
 ,	O
 {	O
-"stderr"	*
+"stderr"	pointer
 ,	O
 0	int
 ,	O
@@ -50,14 +50,14 @@ MU_OPTION_DEFAULT	int
 ,	O
 N_	O
 (	O
-"log to standard error"	*
+"log to standard error"	pointer
 )	O
 ,	O
 mu_c_string	int
 ,	O
 NULL	O
 ,	O
-set_stderr	*
+set_stderr	pointer
 }	O
 ,	O
 MU_OPTION_END	O
@@ -69,7 +69,7 @@ options	array
 ]	O
 =	O
 {	O
-mda_options	*
+mda_options	pointer
 ,	O
 NULL	O
 }	O
@@ -77,32 +77,32 @@ NULL	O
 static	O
 char	O
 *	O
-capa	*
+capa	pointer
 [	O
 ]	O
 =	O
 {	O
-"auth"	*
+"auth"	pointer
 ,	O
-"debug"	*
+"debug"	pointer
 ,	O
-"logging"	*
+"logging"	pointer
 ,	O
-"mailbox"	*
+"mailbox"	pointer
 ,	O
-"locking"	*
+"locking"	pointer
 ,	O
-"mailer"	*
+"mailer"	pointer
 ,	O
-"sieve"	*
+"sieve"	pointer
 ,	O
-"deliver"	*
+"deliver"	pointer
 ,	O
-"forward"	*
+"forward"	pointer
 ,	O
-"quota"	*
+"quota"	pointer
 ,	O
-"script"	*
+"script"	pointer
 ,	O
 NULL	O
 }	O
@@ -113,11 +113,11 @@ cb_stderr	function
 (	O
 void	O
 *	O
-data	*
+data	pointer
 ,	O
 mu_config_value_t	struct
 *	O
-val	*
+val	pointer
 )	O
 {	O
 int	O
@@ -143,7 +143,7 @@ val	int
 ->	O
 v	union
 .	O
-string	*
+string	pointer
 ,	O
 mu_c_bool	int
 ,	O
@@ -157,7 +157,7 @@ mu_error	function
 (	O
 _	O
 (	O
-"not a boolean"	*
+"not a boolean"	pointer
 )	O
 )	O
 ;	O
@@ -165,7 +165,7 @@ else	O
 mu_log_syslog	int
 =	O
 !	O
-res	*
+res	pointer
 ;	O
 return	O
 0	int
@@ -179,7 +179,7 @@ mda_cfg_param	array
 =	O
 {	O
 {	O
-"stderr"	*
+"stderr"	pointer
 ,	O
 mu_cfg_callback	int
 ,	O
@@ -187,16 +187,16 @@ NULL	O
 ,	O
 0	int
 ,	O
-cb_stderr	*
+cb_stderr	pointer
 ,	O
 N_	O
 (	O
-"Log to stderr instead of syslog."	*
+"Log to stderr instead of syslog."	pointer
 )	O
 ,	O
 N_	O
 (	O
-"arg: bool"	*
+"arg: bool"	pointer
 )	O
 }	O
 ,	O
@@ -212,16 +212,16 @@ cli	struct
 {	O
 options	array
 ,	O
-mda_cfg_param	*
+mda_cfg_param	pointer
 ,	O
 N_	O
 (	O
-"mda -- the GNU local mail delivery agent."	*
+"mda -- the GNU local mail delivery agent."	pointer
 )	O
 ,	O
 N_	O
 (	O
-"[recipient...]"	*
+"[recipient...]"	pointer
 )	O
 ,	O
 }	O
@@ -233,29 +233,29 @@ version_hook	function
 struct	O
 mu_parseopt	struct
 *	O
-po	*
+po	pointer
 ,	O
-mu_stream_t	*
-stream	*
+mu_stream_t	pointer
+stream	pointer
 )	O
 {	O
 mu_version_hook	function
 (	O
-po	*
+po	pointer
 ,	O
-stream	*
+stream	pointer
 )	O
 ;	O
 mu_stream_printf	function
 (	O
-stream	*
+stream	pointer
 ,	O
-"%s\n"	*
+"%s\n"	pointer
 ,	O
 _	O
 (	O
-"THIS BINARY IS COMPILED ONLY FOR TESTING MAILUTILS."	*
-"  DON'T USE IT IN PRODUCTION!"	*
+"THIS BINARY IS COMPILED ONLY FOR TESTING MAILUTILS."	pointer
+"  DON'T USE IT IN PRODUCTION!"	pointer
 )	O
 )	O
 ;	O
@@ -269,12 +269,12 @@ argc	int
 char	O
 *	O
 *	O
-argv	*
+argv	pointer
 )	O
 {	O
 struct	O
 mu_parseopt	struct
-pohint	*
+pohint	pointer
 ;	O
 struct	O
 mu_cfg_parse_hints	struct
@@ -345,9 +345,9 @@ po_flags	int
 ;	O
 pohint	struct
 .	O
-po_package_name	*
+po_package_name	pointer
 =	O
-PACKAGE_NAME	*
+PACKAGE_NAME	pointer
 ;	O
 pohint	struct
 .	O
@@ -369,9 +369,9 @@ MU_PARSEOPT_PACKAGE_URL	int
 ;	O
 pohint	struct
 .	O
-po_bug_address	*
+po_bug_address	pointer
 =	O
-PACKAGE_BUGREPORT	*
+PACKAGE_BUGREPORT	pointer
 ;	O
 pohint	struct
 .	O
@@ -437,7 +437,7 @@ mu_cli_ext	function
 (	O
 argc	int
 ,	O
-argv	*
+argv	pointer
 ,	O
 &	O
 cli	struct
@@ -448,7 +448,7 @@ pohint	struct
 &	O
 cfhint	O
 ,	O
-capa	*
+capa	pointer
 ,	O
 NULL	O
 ,	O
@@ -456,7 +456,7 @@ NULL	O
 argc	int
 ,	O
 &	O
-argv	*
+argv	pointer
 )	O
 ;	O
 if	O
@@ -470,7 +470,7 @@ mu_error	function
 (	O
 _	O
 (	O
-"recipients not given"	*
+"recipients not given"	pointer
 )	O
 )	O
 ;	O
@@ -484,17 +484,17 @@ mu_log_syslog	int
 ?	O
 MU_STRERR_SYSLOG	int
 :	O
-MU_STRERR_STDERR	*
+MU_STRERR_STDERR	pointer
 )	O
 ;	O
 return	O
 mda_run_delivery	function
 (	O
-mda_deliver_to_user	*
+mda_deliver_to_user	pointer
 ,	O
 argc	int
 ,	O
-argv	*
+argv	pointer
 )	O
 ;	O
 }	O

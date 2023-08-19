@@ -2,12 +2,12 @@ unsigned	O
 int	O
 ixsysdep_file_mode	function
 (	O
-zfile	*
+zfile	pointer
 )	O
 const	O
 char	O
 *	O
-zfile	*
+zfile	pointer
 ;	O
 {	O
 struct	O
@@ -22,7 +22,7 @@ stat	struct
 char	O
 *	O
 )	O
-zfile	*
+zfile	pointer
 ,	O
 &	O
 s	struct
@@ -35,9 +35,9 @@ ulog	function
 (	O
 LOG_ERROR	int
 ,	O
-"stat (%s): %s"	*
+"stat (%s): %s"	pointer
 ,	O
-zfile	*
+zfile	pointer
 ,	O
 strerror	function
 (	O

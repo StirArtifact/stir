@@ -7,7 +7,7 @@ void	O
 {	O
 char	O
 *	O
-cwd	*
+cwd	pointer
 =	O
 getcwd	function
 (	O
@@ -19,7 +19,7 @@ NULL	O
 if	O
 (	O
 !	O
-cwd	*
+cwd	pointer
 &&	O
 errno	O
 ==	O
@@ -30,6 +30,6 @@ xalloc_die	function
 )	O
 ;	O
 return	O
-cwd	*
+cwd	pointer
 ;	O
 }	O

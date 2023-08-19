@@ -54,9 +54,9 @@ refs	int
 )	O
 fprintf	function
 (	O
-stderr	*
+stderr	pointer
 ,	O
-"Streamcache allocation problem:%c %d\n"	*
+"Streamcache allocation problem:%c %d\n"	pointer
 ,	O
 i	int
 ,	O
@@ -140,12 +140,12 @@ flags	int
 ,	O
 int	O
 *	O
-isRop	*
+isRop	pointer
 )	O
 {	O
 Stream_t	struct
 *	O
-Fs	*
+Fs	pointer
 ;	O
 init_streamcache	function
 (	O
@@ -160,21 +160,21 @@ drive	char
 ;	O
 if	O
 (	O
-fss	*
+fss	pointer
 [	O
 drive	int
 ]	O
 )	O
-Fs	*
+Fs	pointer
 =	O
-fss	*
+fss	pointer
 [	O
 drive	int
 ]	O
 ;	O
 else	O
 {	O
-Fs	*
+Fs	pointer
 =	O
 fs_init	function
 (	O
@@ -188,14 +188,14 @@ isRop	int
 if	O
 (	O
 !	O
-Fs	*
+Fs	pointer
 )	O
 {	O
 fprintf	function
 (	O
-stderr	*
+stderr	pointer
 ,	O
-"Cannot initialize '%c:'\n"	*
+"Cannot initialize '%c:'\n"	pointer
 ,	O
 drive	char
 )	O
@@ -209,13 +209,13 @@ fss	array
 drive	int
 ]	O
 =	O
-Fs	*
+Fs	pointer
 ;	O
 }	O
 return	O
 OpenRoot	function
 (	O
-Fs	*
+Fs	pointer
 )	O
 ;	O
 }	O

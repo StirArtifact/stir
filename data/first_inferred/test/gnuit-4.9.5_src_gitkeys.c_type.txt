@@ -13,9 +13,9 @@ new_term	struct
 ;	O
 char	O
 *	O
-copyright	*
+copyright	pointer
 =	O
-"%s %s - Display key sequence utility\nGIT is free software; you can redistribute it and/or modify it under the\nterms of the GNU General Public License as published by the Free Software\nFoundation; either version 2, or (at your option) any later version.\nCopyright (C) 1993-1998 Free Software Foundation, Inc.\nWritten by Tudor Hulubei and Andrei Pitis, students at PUB, Romania\n\nPress SPACE when done.\n\n"	*
+"%s %s - Display key sequence utility\nGIT is free software; you can redistribute it and/or modify it under the\nterms of the GNU General Public License as published by the Free Software\nFoundation; either version 2, or (at your option) any later version.\nCopyright (C) 1993-1998 Free Software Foundation, Inc.\nWritten by Tudor Hulubei and Andrei Pitis, students at PUB, Romania\n\nPress SPACE when done.\n\n"	pointer
 ;	O
 extern	O
 RETSIGTYPE	struct
@@ -35,7 +35,7 @@ tty_init	function
 {	O
 tcgetattr	function
 (	O
-TTY_OUTPUT	*
+TTY_OUTPUT	pointer
 ,	O
 &	O
 old_term	struct
@@ -254,9 +254,9 @@ TCXONC	int
 ;	O
 tcflow	function
 (	O
-TTY_OUTPUT	*
+TTY_OUTPUT	pointer
 ,	O
-TCOON	*
+TCOON	pointer
 )	O
 ;	O
 }	O
@@ -268,7 +268,7 @@ tty_end	function
 {	O
 tcsetattr	function
 (	O
-TTY_OUTPUT	*
+TTY_OUTPUT	pointer
 ,	O
 TCSADRAIN	int
 ,	O
@@ -280,7 +280,7 @@ old_term	O
 RETSIGTYPE	void
 do_exit	function
 (	O
-signum	*
+signum	pointer
 )	O
 int	O
 signum	int
@@ -288,7 +288,7 @@ signum	int
 {	O
 signal	function
 (	O
-signum	*
+signum	pointer
 ,	O
 do_exit	int
 )	O
@@ -313,11 +313,11 @@ c	int
 ;	O
 printf	function
 (	O
-copyright	*
+copyright	pointer
 ,	O
-PRODUCT	*
+PRODUCT	pointer
 ,	O
-VERSION	*
+VERSION	pointer
 )	O
 ;	O
 signal	function
@@ -371,7 +371,7 @@ break	O
 ;	O
 printf	function
 (	O
-"%x "	*
+"%x "	pointer
 ,	O
 (	O
 unsigned	O
@@ -382,7 +382,7 @@ c	int
 ;	O
 fflush	function
 (	O
-stdout	*
+stdout	pointer
 )	O
 ;	O
 }	O
@@ -392,7 +392,7 @@ tty_end	function
 ;	O
 printf	function
 (	O
-"\n"	*
+"\n"	pointer
 )	O
 ;	O
 return	O

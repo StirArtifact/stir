@@ -26,7 +26,7 @@ void	O
 {	O
 std_control_state_t	struct
 *	O
-s	*
+s	pointer
 =	O
 (	O
 std_control_state_t	struct
@@ -42,21 +42,21 @@ std_control_state_t	struct
 ;	O
 if	O
 (	O
-s	*
+s	pointer
 ==	O
 0	int
 )	O
 {	O
 GSL_ERROR_NULL	O
 (	O
-"failed to allocate space for std_control_state"	*
+"failed to allocate space for std_control_state"	pointer
 ,	O
 GSL_ENOMEM	int
 )	O
 ;	O
 }	O
 return	O
-s	*
+s	pointer
 ;	O
 }	O
 static	O
@@ -65,7 +65,7 @@ std_control_init	function
 (	O
 void	O
 *	O
-vstate	*
+vstate	pointer
 ,	O
 double	O
 eps_abs	double
@@ -82,13 +82,13 @@ a_dydt	double
 {	O
 std_control_state_t	struct
 *	O
-s	*
+s	pointer
 =	O
 (	O
 std_control_state_t	struct
 *	O
 )	O
-vstate	*
+vstate	pointer
 ;	O
 if	O
 (	O
@@ -99,7 +99,7 @@ eps_abs	double
 {	O
 GSL_ERROR	O
 (	O
-"eps_abs is negative"	*
+"eps_abs is negative"	pointer
 ,	O
 GSL_EINVAL	int
 )	O
@@ -115,7 +115,7 @@ eps_rel	double
 {	O
 GSL_ERROR	O
 (	O
-"eps_rel is negative"	*
+"eps_rel is negative"	pointer
 ,	O
 GSL_EINVAL	int
 )	O
@@ -131,7 +131,7 @@ a_y	double
 {	O
 GSL_ERROR	O
 (	O
-"a_y is negative"	*
+"a_y is negative"	pointer
 ,	O
 GSL_EINVAL	int
 )	O
@@ -147,31 +147,31 @@ a_dydt	double
 {	O
 GSL_ERROR	O
 (	O
-"a_dydt is negative"	*
+"a_dydt is negative"	pointer
 ,	O
 GSL_EINVAL	int
 )	O
 ;	O
 }	O
-s	*
+s	pointer
 ->	O
 eps_rel	double
 =	O
 eps_rel	double
 ;	O
-s	*
+s	pointer
 ->	O
 eps_abs	double
 =	O
 eps_abs	double
 ;	O
-s	*
+s	pointer
 ->	O
 a_y	double
 =	O
 a_y	double
 ;	O
-s	*
+s	pointer
 ->	O
 a_dydt	double
 =	O
@@ -187,7 +187,7 @@ std_control_hadjust	function
 (	O
 void	O
 *	O
-vstate	*
+vstate	pointer
 ,	O
 size_t	long
 dim	long
@@ -221,19 +221,19 @@ h	double
 {	O
 std_control_state_t	struct
 *	O
-state	*
+state	pointer
 =	O
 (	O
 std_control_state_t	struct
 *	O
 )	O
-vstate	*
+vstate	pointer
 ;	O
 const	O
 double	O
 eps_abs	double
 =	O
-state	*
+state	pointer
 ->	O
 eps_abs	double
 ;	O
@@ -241,7 +241,7 @@ const	O
 double	O
 eps_rel	double
 =	O
-state	*
+state	pointer
 ->	O
 eps_rel	double
 ;	O
@@ -249,7 +249,7 @@ const	O
 double	O
 a_y	double
 =	O
-state	*
+state	pointer
 ->	O
 a_y	double
 ;	O
@@ -257,7 +257,7 @@ const	O
 double	O
 a_dydt	double
 =	O
-state	*
+state	pointer
 ->	O
 a_dydt	double
 ;	O
@@ -467,22 +467,22 @@ std_control_free	function
 (	O
 void	O
 *	O
-vstate	*
+vstate	pointer
 )	O
 {	O
 std_control_state_t	struct
 *	O
-state	*
+state	pointer
 =	O
 (	O
 std_control_state_t	struct
 *	O
 )	O
-vstate	*
+vstate	pointer
 ;	O
 free	function
 (	O
-state	*
+state	pointer
 )	O
 ;	O
 }	O
@@ -492,7 +492,7 @@ gsl_odeiv_control_type	struct
 std_control_type	struct
 =	O
 {	O
-"standard"	*
+"standard"	pointer
 ,	O
 &	O
 std_control_alloc	function
@@ -510,7 +510,7 @@ std_control_free	function
 const	O
 gsl_odeiv_control_type	struct
 *	O
-gsl_odeiv_control_standard	*
+gsl_odeiv_control_standard	pointer
 =	O
 &	O
 std_control_type	struct
@@ -534,11 +534,11 @@ a_dydt	double
 {	O
 gsl_odeiv_control	struct
 *	O
-c	*
+c	pointer
 =	O
 gsl_odeiv_control_alloc	function
 (	O
-gsl_odeiv_control_standard	*
+gsl_odeiv_control_standard	pointer
 )	O
 ;	O
 int	O
@@ -546,7 +546,7 @@ status	int
 =	O
 gsl_odeiv_control_init	function
 (	O
-c	*
+c	pointer
 ,	O
 eps_abs	double
 ,	O
@@ -566,19 +566,19 @@ GSL_SUCCESS	int
 {	O
 gsl_odeiv_control_free	function
 (	O
-c	*
+c	pointer
 )	O
 ;	O
 GSL_ERROR_NULL	O
 (	O
-"error trying to initialize control"	*
+"error trying to initialize control"	pointer
 ,	O
 status	int
 )	O
 ;	O
 }	O
 return	O
-c	*
+c	pointer
 ;	O
 }	O
 gsl_odeiv_control	struct

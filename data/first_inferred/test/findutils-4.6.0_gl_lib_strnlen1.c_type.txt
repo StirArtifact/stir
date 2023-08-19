@@ -4,7 +4,7 @@ strnlen1	function
 const	O
 char	O
 *	O
-string	*
+string	pointer
 ,	O
 size_t	long
 maxlen	long
@@ -13,7 +13,7 @@ maxlen	long
 const	O
 char	O
 *	O
-end	*
+end	pointer
 =	O
 (	O
 const	O
@@ -22,7 +22,7 @@ char	O
 )	O
 memchr	function
 (	O
-string	*
+string	pointer
 ,	O
 '\0'	O
 ,	O
@@ -31,14 +31,14 @@ maxlen	long
 ;	O
 if	O
 (	O
-end	*
+end	pointer
 !=	O
 NULL	O
 )	O
 return	O
-end	*
+end	pointer
 -	O
-string	*
+string	pointer
 +	O
 1	int
 ;	O
