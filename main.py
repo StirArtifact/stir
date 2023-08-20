@@ -49,7 +49,6 @@ class FirstStage:
         # param: mode
         # 0 for word, 1 for label
 
-
         vocab_path = first.args.WORD_VOC if mode == 0 else first.args.NER_LABEL
         vocab_path = str(PurePath(out_path) / PurePath(vocab_path))
         train_path = str(PurePath(data_path) / 'simple/')
@@ -68,22 +67,12 @@ class FirstStage:
 
         vocab_set = set()
 
-        def change_file_code(files_name):
-            try:
-                cache_data = linecache.getlines(files_name)
-                with open(files_name, 'wb') as out_file:
-                    for line in range(len(cache_data)):
-                        out_file.write(cache_data[line].encode('utf-8'))
-            except Exception as e:
-                print(str(e))
-
         def scan_file(path):
             for item in sorted_nt(os.listdir(path)):
                 name = str(PurePath(path) / item)
                 temp_set = set()
                 line_num = 0
                 if os.path.isfile(name):
-                    # change_file_code(name)
                     try:
                         file_r = open(name, 'r', encoding='utf-8')
                         for line in file_r:
@@ -146,26 +135,29 @@ class FirstStage:
             file_w.write(get_hash([str(dir_path)], [target_file_path]))
 
     @staticmethod
-    def train(data_path: str):
+    def train(data_path: str, out_subdir="out"):
         torch.manual_seed(1234)
         torch.cuda.manual_seed(1234)
         np.random.seed(1234)
         first.args.MAIN_PATH = data_path
-        first.main.DATA_PATH = './models/first/out/'
+        first.main.DATA_PATH = str(PurePath('./models/first/') / out_subdir)
         first.main.LABEL_FILE_INFER = str(PurePath(first.main.DATA_PATH) / 'test.lf.data')
         first.main.NER_FILE_INFER = str(PurePath(first.main.DATA_PATH) / 'test.infer.ner')
-        first.main.WORD_VOCAB_FILE = str(PurePath('./models/first/out/') / PurePath(first.args.WORD_VOC))
-        first.main.LABEL_VOCAB_FILE = str(PurePath('./models/first/out/') / PurePath(first.args.NER_LABEL))
-        first.main.INFER_PRECISION = './models/first/infer_precision'
-        first.main.LOSS_RECORD = './models/first/loss_record'
+        first.main.WORD_VOCAB_FILE = str(PurePath('./models/first/') / out_subdir / first.args.WORD_VOC)
+        first.main.LABEL_VOCAB_FILE = str(PurePath('./models/first/') / out_subdir / first.args.NER_LABEL)
+        first.main.INFER_PRECISION = str(PurePath('./models/first') / out_subdir / 'infer_precision')
+        first.main.LOSS_RECORD = str(PurePath('./models/first') / out_subdir / 'loss_record')
         first.main.SAVE_PATH = str(PurePath('./models/first/') / 'model.pt')
         first.main.src_vocab, first.main.tgt_vocab, first.main.tgt_vocab_rev = first.data_utils.gen_vocab(first.main.WORD_VOCAB_FILE, first.main.LABEL_VOCAB_FILE)
+        first.args.params.batch_size = 64
+        first.args.params.need_atten = False
+        first.args.params.unit_type = first.args.RNN_UNIT_TYPE_LSTM
         first.args.params.out_dir = './models/first/'
         print("Begin Training:")
         first.main.train(first.args.params)
 
     @staticmethod
-    def eval(data_path: str, models):
+    def eval(data_path: str, models, out_subdir="eval"):
         torch.manual_seed(1234)
         torch.cuda.manual_seed(1234)
         np.random.seed(1234)
@@ -190,25 +182,23 @@ class FirstStage:
                 continue
             printr("Evaluating model: [bold]" + model + "[/bold]")
             first.args.MAIN_PATH = data_path
-            # first.args.WORD_VOC = str(PurePath(model_path[model]) / 'out/vocab.na.data')
-            # first.args.NER_LABEL = str(PurePath(model_path[model]) / 'out/vocab.lf.data')
-            first.main.DATA_PATH = str(PurePath(model_path[model]) / 'out/')
+            first.main.DATA_PATH = str(PurePath(model_path[model]) / out_subdir)
             first.main.LABEL_FILE_INFER = str(PurePath(first.main.DATA_PATH) / 'test.lf.data')
             first.main.NER_FILE_INFER = str(PurePath(first.main.DATA_PATH) / 'test.infer.ner')
-            first.main.WORD_VOCAB_FILE = str(PurePath(model_path[model]) / 'out' / first.args.WORD_VOC)
-            first.main.LABEL_VOCAB_FILE = str(PurePath(model_path[model]) / 'out' / first.args.NER_LABEL)
-            first.main.INFER_PRECISION = str(PurePath(model_path[model]) / 'infer_precision')
-            first.main.LOSS_RECORD = str(PurePath(model_path[model]) / 'loss_record')
+            first.main.WORD_VOCAB_FILE = str(PurePath(model_path[model]) / out_subdir / first.args.WORD_VOC)
+            first.main.LABEL_VOCAB_FILE = str(PurePath(model_path[model]) / out_subdir / first.args.NER_LABEL)
+            first.main.INFER_PRECISION = str(PurePath(model_path[model]) / out_subdir / 'infer_precision')
+            first.main.LOSS_RECORD = str(PurePath(model_path[model]) / out_subdir / 'loss_record')
             first.main.SAVE_PATH = str(PurePath(model_path[model]) / 'best/model.pt')
             first.main.src_vocab, first.main.tgt_vocab, first.main.tgt_vocab_rev = first.data_utils.gen_vocab(first.main.WORD_VOCAB_FILE, first.main.LABEL_VOCAB_FILE)
             first.args.params.batch_size = model_batch_size[model]
-            first.args.params.need_atten = model != 'STIR'
+            first.args.params.need_atten = model != 'STIR' and model != 'TRAINED'
             first.args.params.unit_type = first.args.RNN_UNIT_TYPE_GRU if model == 'DeepTyper' else first.args.RNN_UNIT_TYPE_LSTM
             first.main.infer(first.args.params)
 
-            label_path = str(PurePath(model_path[model]) / 'out/test.lf.data')
-            infer_path = str(PurePath(model_path[model]) / 'out/test.infer.ner')
-            vocab_path = str(PurePath(model_path[model]) / 'out/vocab.lf.data')
+            label_path = str(PurePath(model_path[model]) / out_subdir / 'test.lf.data')
+            infer_path = str(PurePath(model_path[model]) / out_subdir / 'test.infer.ner')
+            vocab_path = str(PurePath(model_path[model]) / out_subdir / 'vocab.lf.data')
             printr("[dim]Processsing Result...[/dim]")
             print("The accuracy for predicting type tags: ")
             print("SimpleType:")
@@ -231,7 +221,7 @@ class FirstStage:
                 printr('    Accuracy: [bold]{:.2%}[/bold]'.format(all_res))
     
     @staticmethod
-    def gen_data_for_second(data_path: str, model: str):
+    def gen_data_for_second(data_path: str, model: str, out_subdir='eval', transfer_subdir='first_inferred', inferred_file='test.infer.ner'):
         printr("[dim]Processing results of the first stage...[/dim]")
         model_path = {
             'TRAINED': './models/first/',
@@ -240,9 +230,11 @@ class FirstStage:
             'DeepTyper': './pretrained/first/deeptyper/'
         }
         
-        infer_best_path = str(PurePath(model_path[model]) / 'out/test.infer.ner')
+        infer_best_path = str(PurePath(model_path[model]) / out_subdir / inferred_file)
         first_data_path = str(PurePath(data_path) / 'simple/test/')
-        infer_data_path = str(PurePath(data_path) / 'first_inferred/test/')
+        infer_data_path = str(PurePath(data_path) / transfer_subdir / 'test/')
+        if not os.path.exists(infer_data_path):
+            os.makedirs(infer_data_path)
 
         inferred_result_list = []
         if os.path.isfile(infer_best_path):
@@ -386,14 +378,14 @@ class SecondStage:
             file_w.write(get_hash([dir_path], [target_file_path]))
     
     @staticmethod
-    def get_result(data_path: str, model_path: str, variant=''):
-        target_file_path = str(PurePath(model_path) / 'out/test.lf.data_')
-        infer_file_path = str(PurePath(model_path) / f'out/test.infer.ner{variant}')
-        target_file_PCFG_path = str(PurePath(model_path) / 'out/test_lf_data_PCFG.txt')
-        infer_file_PCFG_path = str(PurePath(model_path) / f'out/test_infer_ner{variant}_PCFG.txt')
+    def get_result(data_path: str, model_path: str, variant='', out_subdir='eval'):
+        target_file_path = str(PurePath(model_path) / out_subdir / 'test.lf.data_')
+        infer_file_path = str(PurePath(model_path) / out_subdir / f'test.infer.ner{variant}')
+        target_file_PCFG_path = str(PurePath(model_path) / out_subdir / 'test_lf_data_PCFG.txt')
+        infer_file_PCFG_path = str(PurePath(model_path) / out_subdir / f'test_infer_ner{variant}_PCFG.txt')
 
-        pcfg_target_hash_dir = str(PurePath(model_path) / 'out/pcfg_target_hash.txt')
-        pcfg_infer_hash_dir = str(PurePath(model_path) / f'out/pcfg_infer{variant}_hash.txt')
+        pcfg_target_hash_dir = str(PurePath(model_path) / out_subdir / 'pcfg_target_hash.txt')
+        pcfg_infer_hash_dir = str(PurePath(model_path) / out_subdir / f'pcfg_infer{variant}_hash.txt')
         if not os.path.exists(pcfg_target_hash_dir):
             printr("[dim]Building PCFG file for target...[/dim]")
             second.transfer.recover_data(target_file_path, target_file_path, target_file_PCFG_path)
@@ -446,19 +438,20 @@ class SecondStage:
         second.graph.toTree(second.graph.trgt_path, second.graph.pred_path, check_ot=variant == '_O', underline=variant == '_G')
 
     @staticmethod
-    def train(data_path: str):
+    def train(data_path: str, out_subdir='out'):
         torch.manual_seed(1234)
         torch.cuda.manual_seed(1234)
         np.random.seed(1234)
         second.args.MAIN_PATH = data_path
-        second.main.DATA_PATH = './models/second/out/'
+        second.main.DATA_PATH = str(PurePath('./models/second/') / out_subdir)
         second.main.LABEL_FILE_INFER = str(PurePath(second.main.DATA_PATH) / 'test.lf.data_')
         second.main.NER_FILE_INFER = str(PurePath(second.main.DATA_PATH) / 'test.infer.ner')
-        second.main.WORD_VOCAB_FILE = str(PurePath('./models/second/out/') / PurePath(second.args.WORD_VOC))
-        second.main.LABEL_VOCAB_FILE = str(PurePath('./models/second/out/') / PurePath(second.args.NER_LABEL))
-        second.main.INFER_PRECISION = './models/second/infer_precision'
-        second.main.LOSS_RECORD = './models/second/loss_record'
+        second.main.WORD_VOCAB_FILE = str(PurePath('./models/second/') / out_subdir / second.args.WORD_VOC)
+        second.main.LABEL_VOCAB_FILE = str(PurePath('./models/second/') / out_subdir / second.args.NER_LABEL)
+        second.main.INFER_PRECISION = str(PurePath('./models/second/') / out_subdir / 'infer_precision')
+        second.main.LOSS_RECORD = str(PurePath('./models/second/') / out_subdir / 'loss_record')
         second.main.SAVE_PATH = str(PurePath('./models/second') / 'model.pt')
+        second.data_utils.has_simple = True
         second.main.src_vocab, second.main.tgt_vocab, second.main.tgt_vocab_rev = second.data_utils.gen_vocab(second.main.WORD_VOCAB_FILE, second.main.LABEL_VOCAB_FILE)
         _, second.main.ulist = second.graph.gen_not_seen(str(PurePath(second.args.MAIN_PATH) / 'complex/'), str(PurePath(second.args.MAIN_PATH) / 'complex/test/'))
         second.args.params.out_dir = './models/second/'
@@ -466,7 +459,7 @@ class SecondStage:
         second.main.train(second.args.params)
 
     @staticmethod
-    def eval(data_path: str, models: str, zero_shot: bool):
+    def eval(data_path: str, models: str, zero_shot: bool, out_subdir='eval'):
         torch.manual_seed(1234)
         torch.cuda.manual_seed(1234)
         np.random.seed(1234)
@@ -483,7 +476,7 @@ class SecondStage:
         }
 
         data_sub_path = {
-            'TRAINED': 'first_inferred/test',
+            'TRAINED': 'first_inferred_trained/test',
             'TRAINED_OT': 'simple/test',
             'TRAINED_DT': 'deeptAten/test',
             'TRAINED_GT': 'simple/test',
@@ -499,19 +492,19 @@ class SecondStage:
                 continue
             printr("Evaluating model: [bold]" + model + "[/bold]")
             second.args.MAIN_PATH = data_path
-            second.main.DATA_PATH = str(PurePath(model_path[model]) / 'out/')
+            second.main.DATA_PATH = str(PurePath(model_path[model]) / out_subdir)
             second.main.LABEL_FILE_INFER = str(PurePath(second.main.DATA_PATH) / 'test.lf.data_')
             second.main.NER_FILE_INFER = str(PurePath(second.main.DATA_PATH) / f'test.infer.ner{model[model.find("_"):-1]}')
-            second.main.WORD_VOCAB_FILE = str(PurePath(model_path[model]) / 'out' / PurePath(second.args.WORD_VOC))
-            second.main.LABEL_VOCAB_FILE = str(PurePath(model_path[model]) / 'out' / PurePath(second.args.NER_LABEL))
-            second.main.INFER_PRECISION = str(PurePath(model_path[model]) / 'infer_precision')
-            second.main.LOSS_RECORD = str(PurePath(model_path[model]) / 'loss_record')
+            second.main.WORD_VOCAB_FILE = str(PurePath(model_path[model]) / out_subdir / PurePath(second.args.WORD_VOC))
+            second.main.LABEL_VOCAB_FILE = str(PurePath(model_path[model]) / out_subdir / PurePath(second.args.NER_LABEL))
+            second.main.INFER_PRECISION = str(PurePath(model_path[model]) / out_subdir / 'infer_precision')
+            second.main.LOSS_RECORD = str(PurePath(model_path[model]) / out_subdir / 'loss_record')
             second.data_utils.has_simple = False if model[-2:] == 'OT' else True
             second.main.src_vocab, second.main.tgt_vocab, second.main.tgt_vocab_rev = second.data_utils.gen_vocab(second.main.WORD_VOCAB_FILE, second.main.LABEL_VOCAB_FILE)
             _, second.main.ulist = second.graph.gen_not_seen(str(PurePath(data_path) / 'complex/'), str(PurePath(data_path) / 'complex/test/'))
             print("Begin Inference:")
             second.main.infer(second.args.params, data_sub_path[model], str(PurePath(model_path[model]) / 'ubest/model.pt'))
-            SecondStage.get_result(data_path, model_path[model], variant=model[model.find("_"):-1])
+            SecondStage.get_result(data_path, model_path[model], variant=model[model.find("_"):-1], out_subdir=out_subdir)
 
 def train(stage, data_path):
     if stage == 'first':
@@ -522,6 +515,7 @@ def train(stage, data_path):
         FirstStage.vocab(1, data_path, './models/first/out/')
         FirstStage.train(data_path)
     elif stage == 'second':
+        FirstStage.gen_data_for_second(data_path, 'TRAINED', out_subdir='best', transfer_subdir='first_inferred_trained', inferred_file='best.test.infer.ner')
         if not os.path.exists('./models/second/out/'):
             os.makedirs('./models/second/out/')
         SecondStage.target(data_path, './models/second/out/')
@@ -542,24 +536,58 @@ def eval(RQ, data_path, model):
         }
         for model_ in models:
             printr("[dim]Preparing model: " + model_ + "[/dim]")
-            FirstStage.target(data_path, str(PurePath(model_path[model_]) / 'out'))
-            FirstStage.vocab(0, data_path, str(PurePath(model_path[model_]) / 'out'))
-            FirstStage.vocab(1, data_path, str(PurePath(model_path[model_]) / 'out'))
+            FirstStage.target(data_path, str(PurePath(model_path[model_]) / 'eval'))
+            FirstStage.vocab(0, data_path, str(PurePath(model_path[model_]) / 'eval'))
+            FirstStage.vocab(1, data_path, str(PurePath(model_path[model_]) / 'eval'))
         FirstStage.eval(data_path, models)
         if 'STIR' in model:
             FirstStage.gen_data_for_second(data_path, 'STIR')
+        if 'TRAINED' in model:
+            FirstStage.gen_data_for_second(data_path, 'TRAINED', transfer_subdir='first_inferred_trained')
     elif RQ == 'RQ2,RQ3':
         if set(models).intersection(set(['TRAINED', 'TRAINED_OT', 'TRAINED_DT', 'TRAINED_GT'])):
-            SecondStage.target(data_path, './models/second/out/')
-            SecondStage.vocab(0, data_path, './models/second/out/')
-            SecondStage.vocab(1, data_path, './models/second/out/')
+            SecondStage.target(data_path, './models/second/eval/')
+            SecondStage.vocab(0, data_path, './models/second/eval/')
+            SecondStage.vocab(1, data_path, './models/second/eval/')
         if set(models).intersection(set(['STIR', 'STIR_OT', 'STIR_DT', 'STIR_GT'])):
-            SecondStage.target(data_path, './pretrained/second/stir/out/')
-            SecondStage.vocab(0, data_path, './pretrained/second/stir/out/')
-            SecondStage.vocab(1, data_path, './pretrained/second/stir/out/')
+            SecondStage.target(data_path, './pretrained/second/stir/eval/')
+            SecondStage.vocab(0, data_path, './pretrained/second/stir/eval/')
+            SecondStage.vocab(1, data_path, './pretrained/second/stir/eval/')
         SecondStage.eval(data_path, models, True)
     else:
         assert False, "RQ not support now."
+
+def test(stage, data_path, model):
+    models = model.split(',')
+    if stage == 'first':
+        model_path = {
+            'TRAINED': './models/first/',
+            'STIR': './pretrained/first/stir/',
+            'STIR_A': './pretrained/first/stir_a/',
+            'DeepTyper': './pretrained/first/deeptyper/'
+        }
+        for model_ in models:
+            printr("[dim]Preparing model: " + model_ + "[/dim]")
+            FirstStage.target(data_path, str(PurePath(model_path[model_]) / 'out'))
+            FirstStage.vocab(0, data_path, str(PurePath(model_path[model_]) / 'out'))
+            FirstStage.vocab(1, data_path, str(PurePath(model_path[model_]) / 'out'))
+        FirstStage.eval(data_path, models, out_subdir='out')
+        if 'STIR' in model:
+            FirstStage.gen_data_for_second(data_path, 'STIR', out_subdir='out', transfer_subdir='first_inferred')
+        if 'TRAINED' in model:
+            FirstStage.gen_data_for_second(data_path, 'TRAINED', out_subdir='out', transfer_subdir='first_inferred_trained')
+    elif stage == 'second':
+        if set(models).intersection(set(['TRAINED', 'TRAINED_OT', 'TRAINED_GT'])):
+            SecondStage.target(data_path, './models/second/out/')
+            SecondStage.vocab(0, data_path, './models/second/out/')
+            SecondStage.vocab(1, data_path, './models/second/out/')
+        if set(models).intersection(set(['STIR', 'STIR_OT', 'STIR_GT'])):
+            SecondStage.target(data_path, './pretrained/second/stir/out/')
+            SecondStage.vocab(0, data_path, './pretrained/second/stir/out/')
+            SecondStage.vocab(1, data_path, './pretrained/second/stir/out/')
+        SecondStage.eval(data_path, models, True, out_subdir='out')
+    else:
+        assert False, "Stage not support now."
 
 cli_args = argparse.Namespace()
 
@@ -574,11 +602,9 @@ def main():
     parser_train = subparsers.add_parser("train", help="train the model")
     parser_train_stage = parser_train.add_subparsers(help="stage of STIR", dest="stage")
     parser_train_stage1 = parser_train_stage.add_parser("first", help="stage 1: predicting type tags")
-    # parser_train_stage1.add_argument("--data", type=str, default=str(PurePath("first/data")), help="path to the data folder")
-    parser_train_stage1.add_argument("--data", type=str, default=str(PurePath("data")), help="path to the data folder")
+    parser_train_stage1.add_argument("--data", type=str, default=str(PurePath("user_data")), help="path to the data folder")
     parser_train_stage2 = parser_train_stage.add_parser("second", help="stage 2: inferring complex types")
-    # parser_train_stage2.add_argument("--data", type=str, default=str(PurePath("second/data")), help="path to the data folder")
-    parser_train_stage2.add_argument("--data", type=str, default=str(PurePath("data")), help="path to the data folder")
+    parser_train_stage2.add_argument("--data", type=str, default=str(PurePath("user_data")), help="path to the data folder")
 
     parser_eval = subparsers.add_parser("eval", help="evaluate the model")
     parser_eval_parsers = parser_eval.add_subparsers(help="research questions", dest="rq")
@@ -589,9 +615,14 @@ def main():
     parser_eval_rq3.add_argument("--data", type=str, default=str(PurePath("data")), help="path to the data folder")
     parser_eval_rq3.add_argument("--model", type=str, default="STIR,STIR_OT,STIR_DT,STIR_GT", help="name of the model")
 
-    # parser_transfer = subparsers.add_parser("transfer", help="manually transfer the result of first stage")
-    # parser_transfer.add_argument("--data", type=str, default=str(PurePath("data")), help="path to the data folder")
-    # parser_transfer.add_argument("--model", type=str, default="TRAINED", choices=['TRAINED', 'STIR', 'STIR_A', 'DeepTyper'], help="name of the model")
+    parser_test = subparsers.add_parser("test", help="test with your own files")
+    parser_test_stage = parser_test.add_subparsers(help="stage of STIR", dest="stage")
+    parser_test_stage1 = parser_test_stage.add_parser("first", help="stage 1: predicting type tags")
+    parser_test_stage1.add_argument("--data", type=str, default=str(PurePath("user_data")), help="path to the data folder")
+    parser_test_stage1.add_argument("--model", type=str, default="TRAINED", help="name of the model")
+    parser_test_stage2 = parser_test_stage.add_parser("second", help="stage 2: inferring complex types")
+    parser_test_stage2.add_argument("--data", type=str, default=str(PurePath("user_data")), help="path to the data folder")
+    parser_test_stage2.add_argument("--model", type=str, default="TRAINED,TRAINED_OT,TRAINED_GT", help="name of the model")
 
     cli_args = parser.parse_args()
 
@@ -599,8 +630,8 @@ def main():
         train(cli_args.stage, cli_args.data)
     elif cli_args.operation == "eval":
         eval(cli_args.rq, cli_args.data, cli_args.model)
-    # elif cli_args.operation == "transfer":
-    #     FirstStage.gen_data_for_second(cli_args.data, cli_args.model)
+    elif cli_args.operation == "test":
+        test(cli_args.stage, cli_args.data, cli_args.model)
 
 if __name__ == "__main__" or __name__ == "main":
     main()

@@ -110,7 +110,7 @@ def train(params):
             epoch_avg_loss = []
             # save model
             torch.save(model.state_dict(), SAVE_PATH)
-            infer_test, unseen_test= infer(params, 'first_inferred/test/', SAVE_PATH)
+            infer_test, unseen_test= infer(params, 'first_inferred_trained/test/', SAVE_PATH)
             if(infer_test >= infer_acc):
                 infer_acc = infer_test
                 torch.save(model.state_dict(), str(PurePath(best_path) / 'model.pt'))

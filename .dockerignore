@@ -11,6 +11,7 @@ __pycache__
 # data files and pretrained models
 # data/
 # pretrained/
+user_data/
 models/
 second/func_data
 

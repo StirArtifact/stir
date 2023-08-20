@@ -3,4 +3,5 @@ __pycache__/
 .idea/
 
 # data/
+user_data/
 models/
