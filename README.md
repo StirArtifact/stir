@@ -21,7 +21,7 @@ For the hardware and software requirements of the artifact, please refer to [REQ
 
 ### Obtaining the Artifact
 
-The artifact is available at [GitHub](https://github.com/StirArtifact/stir/tree/fse2023). Users can obtain the artifact by cloning the repository or downloading the source code as a compressed archive on the webpage.
+The artifact is available at [GitHub](https://github.com/StirArtifact/stir/tree/pre-fse2023). Users can obtain the artifact by cloning the repository or downloading the source code as a compressed archive on the webpage.
 
 ### Setting up the Environment
 For detailed instructions on setting up the environment, please refer to [INSTALL.md](INSTALL.md).
