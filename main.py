@@ -497,7 +497,7 @@ class SecondStage:
             if model[0:7] == 'TRAINED' and not os.path.exists('./models/second/ubest/model.pt' if zero_shot else './models/second/best/model.pt'):
                 printr("[red bold]Self-trained model not found, please train a model before evaluating...[/red bold]")
                 continue
-            print("Evaluating model: [bold]" + model + "[/bold]")
+            printr("Evaluating model: [bold]" + model + "[/bold]")
             second.args.MAIN_PATH = data_path
             second.main.DATA_PATH = str(PurePath(model_path[model]) / 'out/')
             second.main.LABEL_FILE_INFER = str(PurePath(second.main.DATA_PATH) / 'test.lf.data_')

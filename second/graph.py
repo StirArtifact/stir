@@ -379,28 +379,28 @@ def toTree(trgt_p, pred_p, check_ot=False, underline=False):
 
     print("Graph similarity for complex types: ")
     if underline:
-        print('Pointer: [bold underline]{:.2%}[/bold underline]'.format(ptr_sim / ptr_num))
-        print('Structure: [bold underline]{:.2%}[/bold underline]'.format(stru_sim / stru_num))
-        print('Function: [bold underline]{:.2%}[/bold underline]'.format(func_sim / func_num))
-        print('Macro Avg: [bold underline]{:.2%}[/bold underline]'.format(total_sim / num))
+        printr('Pointer: [bold underline]{:.2%}[/bold underline]'.format(ptr_sim / ptr_num))
+        printr('Structure: [bold underline]{:.2%}[/bold underline]'.format(stru_sim / stru_num))
+        printr('Function: [bold underline]{:.2%}[/bold underline]'.format(func_sim / func_num))
+        printr('Macro Avg: [bold underline]{:.2%}[/bold underline]'.format(total_sim / num))
     else:
-        print('Pointer: [bold]{:.2%}[/bold]'.format(ptr_sim / ptr_num))
-        print('Structure: [bold]{:.2%}[/bold]'.format(stru_sim / stru_num))
-        print('Function: [bold]{:.2%}[/bold]'.format(func_sim / func_num))
-        print('Macro Avg: [bold]{:.2%}[/bold]'.format(total_sim / num))
+        printr('Pointer: [bold]{:.2%}[/bold]'.format(ptr_sim / ptr_num))
+        printr('Structure: [bold]{:.2%}[/bold]'.format(stru_sim / stru_num))
+        printr('Function: [bold]{:.2%}[/bold]'.format(func_sim / func_num))
+        printr('Macro Avg: [bold]{:.2%}[/bold]'.format(total_sim / num))
 
     if not check_ot:
         print("\nGraph similarity for zero-shot types: ")
         if underline:
-            print('Pointer: [bold underline]{:.2%}[/bold underline]'.format(uptr_sim / uptr_num))
-            print('Structure: [bold underline]{:.2%}[/bold underline]'.format(ustru_sim / ustru_num))
-            print('Function: [bold underline]{:.2%}[/bold underline]'.format(ufunc_sim / ufunc_num))
-            print('Macro Avg: [bold underline]{:.2%}[/bold underline]'.format(unseen_sim / unseen_num))
+            printr('Pointer: [bold underline]{:.2%}[/bold underline]'.format(uptr_sim / uptr_num))
+            printr('Structure: [bold underline]{:.2%}[/bold underline]'.format(ustru_sim / ustru_num))
+            printr('Function: [bold underline]{:.2%}[/bold underline]'.format(ufunc_sim / ufunc_num))
+            printr('Macro Avg: [bold underline]{:.2%}[/bold underline]'.format(unseen_sim / unseen_num))
         else:
-            print('Pointer: [bold]{:.2%}[/bold]'.format(uptr_sim / uptr_num))
-            print('Structure: [bold]{:.2%}[/bold]'.format(ustru_sim / ustru_num))
-            print('Function: [bold]{:.2%}[/bold]'.format(ufunc_sim / ufunc_num))
-            print('Macro Avg: [bold]{:.2%}[/bold]'.format(unseen_sim / unseen_num))
+            printr('Pointer: [bold]{:.2%}[/bold]'.format(uptr_sim / uptr_num))
+            printr('Structure: [bold]{:.2%}[/bold]'.format(ustru_sim / ustru_num))
+            printr('Function: [bold]{:.2%}[/bold]'.format(ufunc_sim / ufunc_num))
+            printr('Macro Avg: [bold]{:.2%}[/bold]'.format(unseen_sim / unseen_num))
 
 def type_prefix_score(target_list, predicated_list, average=False):
     smaller_len = min(len(target_list), len(predicated_list))
