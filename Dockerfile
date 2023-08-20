@@ -3,8 +3,7 @@ SHELL ["/bin/bash", "-c"]
 
 ARG PYTHON_VERSION=3.7.9
 # Set the following arg if you need
-# ARG PYPI_REGISTRY_URL=https://pypi.org/simple
-# ARG CONDA_INSTALL_URL=https://repo.anaconda.com/miniconda
+ARG CONDA_INSTALL_URL=https://repo.anaconda.com/miniconda
 
 WORKDIR /stir
 COPY environment.yml /stir/environment.yml

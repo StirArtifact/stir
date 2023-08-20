@@ -3,6 +3,7 @@ import re
 import subprocess
 from copy import deepcopy
 from pathlib import PurePath
+from rich import print as printr
 
 from grakel.kernels import WeisfeilerLehman, VertexHistogram
 from grakel import Graph
@@ -276,7 +277,7 @@ def toGraph(trgt_p, pred_p):
     print('average zero-shot function sim: ', ufunc_sim / len(set(func_list) & set(ulist)))
     # print('average zero-shot first wrong sim: ', ufw_sim / len(set(fw_list) & set(ulist)))
 
-def toTree(trgt_p, pred_p, check_ot=False, cmd=None):
+def toTree(trgt_p, pred_p, check_ot=False, underline=False):
     total_sim = 0.0
     unseen_sim = 0.0
     prim_sim = 0.0
@@ -377,18 +378,29 @@ def toTree(trgt_p, pred_p, check_ot=False, cmd=None):
     assert len(lines3) == len(lines4) == 0
 
     print("Graph similarity for complex types: ")
-    # if check_unseen:
-    print('Pointer: {:.2%}'.format(ptr_sim / ptr_num))
-    print('Structure: {:.2%}'.format(stru_sim / stru_num))
-    print('Function: {:.2%}'.format(func_sim / func_num))
-    print('Macro Avg: {:.2%}'.format(total_sim / num))
+    if underline:
+        print('Pointer: [bold underline]{:.2%}[/bold underline]'.format(ptr_sim / ptr_num))
+        print('Structure: [bold underline]{:.2%}[/bold underline]'.format(stru_sim / stru_num))
+        print('Function: [bold underline]{:.2%}[/bold underline]'.format(func_sim / func_num))
+        print('Macro Avg: [bold underline]{:.2%}[/bold underline]'.format(total_sim / num))
+    else:
+        print('Pointer: [bold]{:.2%}[/bold]'.format(ptr_sim / ptr_num))
+        print('Structure: [bold]{:.2%}[/bold]'.format(stru_sim / stru_num))
+        print('Function: [bold]{:.2%}[/bold]'.format(func_sim / func_num))
+        print('Macro Avg: [bold]{:.2%}[/bold]'.format(total_sim / num))
 
     if not check_ot:
         print("\nGraph similarity for zero-shot types: ")
-        print('Pointer: {:.2%}'.format(uptr_sim / uptr_num))
-        print('Structure: {:.2%}'.format(ustru_sim / ustru_num))
-        print('Function: {:.2%}'.format(ufunc_sim / ufunc_num))
-        print('Macro Avg: {:.2%}'.format(unseen_sim / unseen_num))
+        if underline:
+            print('Pointer: [bold underline]{:.2%}[/bold underline]'.format(uptr_sim / uptr_num))
+            print('Structure: [bold underline]{:.2%}[/bold underline]'.format(ustru_sim / ustru_num))
+            print('Function: [bold underline]{:.2%}[/bold underline]'.format(ufunc_sim / ufunc_num))
+            print('Macro Avg: [bold underline]{:.2%}[/bold underline]'.format(unseen_sim / unseen_num))
+        else:
+            print('Pointer: [bold]{:.2%}[/bold]'.format(uptr_sim / uptr_num))
+            print('Structure: [bold]{:.2%}[/bold]'.format(ustru_sim / ustru_num))
+            print('Function: [bold]{:.2%}[/bold]'.format(ufunc_sim / ufunc_num))
+            print('Macro Avg: [bold]{:.2%}[/bold]'.format(unseen_sim / unseen_num))
 
 def type_prefix_score(target_list, predicated_list, average=False):
     smaller_len = min(len(target_list), len(predicated_list))

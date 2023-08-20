@@ -5,6 +5,7 @@ import os
 import codecs
 import hashlib
 from pathlib import PurePath
+from rich import print as printr
 
 import torch
 import torch.cuda
@@ -61,9 +62,9 @@ class FirstStage:
             with open(hash_dir, 'r') as file_r:
                 hash = file_r.read().strip()
                 if get_hash([train_path, test_path], [vocab_path]) == hash:
-                    print(f"Data not changed, skip building vocab file for {['word', 'label'][mode]}...")
+                    printr(f"[dim]Data not changed, skip building vocab file for {['word', 'label'][mode]}...[/dim]")
                     return
-        print(f"Building vocab file for {['word', 'label'][mode]}...")
+        printr(f"[dim]Building vocab file for {['word', 'label'][mode]}...[/dim]")
 
         vocab_set = set()
 
@@ -122,9 +123,9 @@ class FirstStage:
             with open(hash_dir, 'r') as file_r:
                 hash = file_r.read().strip()
                 if get_hash([str(dir_path)], [target_file_path]) == hash:
-                    print("Data not changed, skip building target file...")
+                    printr("[dim]Data not changed, skip building target file...[/dim]")
                     return
-        print("Building target file for test...")
+        printr("[dim]Building target file for test...[/dim]")
         with codecs.open(target_file_path, mode='w', encoding='utf-8') as file_w:
             items = sorted_nt(os.listdir(dir_path))
             for item in items:
@@ -187,7 +188,7 @@ class FirstStage:
             if model == 'TRAINED' and not os.path.exists('./models/first/model.pt'):
                 print("Self-trained model not found, please train a model before evaluating...")
                 continue
-            print("Evaluating model: " + model)
+            printr("Evaluating model: [bold]" + model + "[/bold]")
             first.args.MAIN_PATH = data_path
             # first.args.WORD_VOC = str(PurePath(model_path[model]) / 'out/vocab.na.data')
             # first.args.NER_LABEL = str(PurePath(model_path[model]) / 'out/vocab.lf.data')
@@ -203,23 +204,35 @@ class FirstStage:
             first.args.params.batch_size = model_batch_size[model]
             first.args.params.need_atten = model != 'STIR'
             first.args.params.unit_type = first.args.RNN_UNIT_TYPE_GRU if model == 'DeepTyper' else first.args.RNN_UNIT_TYPE_LSTM
-            print("Begin Inference:")
             first.main.infer(first.args.params)
 
             label_path = str(PurePath(model_path[model]) / 'out/test.lf.data')
             infer_path = str(PurePath(model_path[model]) / 'out/test.infer.ner')
             vocab_path = str(PurePath(model_path[model]) / 'out/vocab.lf.data')
-            print("Processsing Result...")
+            printr("[dim]Processsing Result...[/dim]")
             print("The accuracy for predicting type tags: ")
             print("SimpleType:")
-            first.data_utils.check_result_multi_class(label_path, infer_path, vocab_path, mode='simple')
+            simple_res = first.data_utils.check_result_multi_class(label_path, infer_path, vocab_path, mode='simple')
+            if model == 'STIR':
+                printr('    Accuracy: [bold underline]{:.2%}[/bold underline]'.format(simple_res))
+            else:
+                printr('    Accuracy: [bold]{:.2%}[/bold]'.format(simple_res))
             print("ComplexType:")
-            first.data_utils.check_result_multi_class(label_path, infer_path, vocab_path, mode='complex')
+            complex_res = first.data_utils.check_result_multi_class(label_path, infer_path, vocab_path, mode='complex')
+            if model == 'STIR':
+                printr('    Accuracy: [bold underline]{:.2%}[/bold underline]'.format(complex_res))
+            else:
+                printr('    Accuracy: [bold]{:.2%}[/bold]'.format(complex_res))
             print("AllType:")
-            first.data_utils.check_result_multi_class(label_path, infer_path, vocab_path, mode='all')
+            all_res = first.data_utils.check_result_multi_class(label_path, infer_path, vocab_path, mode='all')
+            if model == 'STIR':
+                printr('    Accuracy: [bold underline]{:.2%}[/bold underline]'.format(all_res))
+            else:
+                printr('    Accuracy: [bold]{:.2%}[/bold]'.format(all_res))
     
     @staticmethod
     def gen_data_for_second(data_path: str, model: str):
+        printr("[dim]Processing results of the first stage...[/dim]")
         model_path = {
             'TRAINED': './models/first/',
             'STIR': './pretrained/first/stir/',
@@ -282,9 +295,9 @@ class SecondStage:
                 hash = file_r.read().strip()
                 getted_hash = get_hash([train_path, test_path], [vocab_path])
                 if getted_hash == hash:
-                    print("Data not changed, skip building vocab file for " + ['word', 'label'][mode] + "...")
+                    printr("[dim]Data not changed, skip building vocab file for " + ['word', 'label'][mode] + "...[/dim]")
                     return
-        print("Building vocab file for " + ['word', 'label'][mode] + "...")
+        printr("[dim]Building vocab file for " + ['word', 'label'][mode] + "...[/dim]")
 
         vocab_set = set()
 
@@ -314,9 +327,6 @@ class SecondStage:
                                 processed = []
                                 for item in second.data_utils.proc_label(splits[1]):
                                     processed.append(second.data_utils.proc_casing(item))
-                                if 'long long' in processed:
-                                    print(f'name: {name}, line: {line}, splits: {splits}, processed: {processed}')
-                                # temp_set.update(second.data_utils.proc_label(processed))
                                 temp_set.update(processed)
                             else:
                                 temp_set.add(splits[0])
@@ -354,9 +364,9 @@ class SecondStage:
             with open(PurePath(out_path) / 'target_hash.txt', 'r') as file_r:
                 hash = file_r.read().strip()
                 if get_hash([dir_path], [target_file_path]) == hash:
-                    print("Data not changed, skip building target file...")
+                    printr("[dim]Data not changed, skip building target file...[/dim]")
                     return
-        print("Building target file for test...")
+        printr("[dim]Building target file for test...[/dim]")
         with codecs.open(target_file_path, mode='w', encoding='utf-8') as file_w:
             items = sorted_nt(os.listdir(dir_path))
             for item in items:
@@ -385,7 +395,7 @@ class SecondStage:
         pcfg_target_hash_dir = str(PurePath(model_path) / 'out/pcfg_target_hash.txt')
         pcfg_infer_hash_dir = str(PurePath(model_path) / f'out/pcfg_infer{variant}_hash.txt')
         if not os.path.exists(pcfg_target_hash_dir):
-            print("Building PCFG file for target...")
+            printr("[dim]Building PCFG file for target...[/dim]")
             second.transfer.recover_data(target_file_path, target_file_path, target_file_PCFG_path)
             with open(pcfg_target_hash_dir, 'w') as file_w:
                 file_w.write(get_hash([], [target_file_path, target_file_PCFG_path]))
@@ -393,15 +403,15 @@ class SecondStage:
             with open(pcfg_target_hash_dir, 'r') as file_r:
                 hash = file_r.read().strip()
                 if get_hash([], [target_file_path, target_file_PCFG_path]) == hash:
-                    print("Data not changed, skip building PCFG file for target...")
+                    printr("[dim]Data not changed, skip building PCFG file for target...[/dim]")
                 else:
-                    print("Building PCFG file for target...")
+                    printr("[dim]Building PCFG file for target...[/dim]")
                     second.transfer.recover_data(target_file_path, target_file_path, target_file_PCFG_path)
                     with open(pcfg_target_hash_dir, 'w') as file_w:
                         file_w.write(get_hash([], [target_file_path, target_file_PCFG_path]))
 
         if not os.path.exists(pcfg_infer_hash_dir):
-            print("Building PCFG file for inferred result...")
+            printr("[dim]Building PCFG file for inferred result...[/dim]")
             second.transfer.recover_data(target_file_path, infer_file_path, infer_file_PCFG_path)
             with open(pcfg_infer_hash_dir, 'w') as file_w:
                 file_w.write(get_hash([], [target_file_path, infer_file_path, infer_file_PCFG_path]))
@@ -409,9 +419,9 @@ class SecondStage:
             with open(pcfg_infer_hash_dir, 'r') as file_r:
                 hash = file_r.read().strip()
                 if get_hash([], [target_file_path, infer_file_path, infer_file_PCFG_path]) == hash:
-                    print("Data not changed, skip building PCFG file for inferred result...")
+                    printr("[dim]Data not changed, skip building PCFG file for inferred result...[/dim]")
                 else:
-                    print("Building PCFG file for inferred result...")
+                    printr("[dim]Building PCFG file for inferred result...[/dim]")
                     second.transfer.recover_data(target_file_path, infer_file_path, infer_file_PCFG_path)
                     with open(pcfg_infer_hash_dir, 'w') as file_w:
                         file_w.write(get_hash([], [target_file_path, infer_file_path, infer_file_PCFG_path]))
@@ -425,7 +435,7 @@ class SecondStage:
         second.graph.first_pred = str(PurePath(data_path) / 'simple/test/')
         second.graph.train_dir = str(PurePath(data_path) / 'complex/')
         second.graph.test_dir = str(PurePath(data_path) / 'complex/test/')
-        print("Processsing Result, this may take a while...")
+        printr("[dim]Processsing Result, this may take a while...[/dim]")
         second.graph.uset, second.graph.ulist = second.graph.gen_not_seen(second.graph.train_dir, second.graph.test_dir)
         second.graph.prim_list = list()
         second.graph.ptr_list = list()
@@ -433,7 +443,7 @@ class SecondStage:
         second.graph.func_list = list()
         second.graph.fw_list = list()
         second.graph.gen_first_related(second.graph.first_trgt, second.graph.first_pred)
-        second.graph.toTree(second.graph.trgt_path, second.graph.pred_path, check_ot=variant == '_O')
+        second.graph.toTree(second.graph.trgt_path, second.graph.pred_path, check_ot=variant == '_O', underline=variant == '_G')
 
     @staticmethod
     def train(data_path: str):
@@ -485,9 +495,9 @@ class SecondStage:
 
         for model in models:
             if model[0:7] == 'TRAINED' and not os.path.exists('./models/second/ubest/model.pt' if zero_shot else './models/second/best/model.pt'):
-                print("Self-trained model not found, please train a model before evaluating...")
+                printr("[red bold]Self-trained model not found, please train a model before evaluating...[/red bold]")
                 continue
-            print("Evaluating model: " + model)
+            print("Evaluating model: [bold]" + model + "[/bold]")
             second.args.MAIN_PATH = data_path
             second.main.DATA_PATH = str(PurePath(model_path[model]) / 'out/')
             second.main.LABEL_FILE_INFER = str(PurePath(second.main.DATA_PATH) / 'test.lf.data_')
@@ -531,7 +541,7 @@ def eval(RQ, data_path, model):
             'DeepTyper': './pretrained/first/deeptyper/'
         }
         for model_ in models:
-            print("Preparing model: " + model_)
+            printr("[dim]Preparing model: " + model_ + "[/dim]")
             FirstStage.target(data_path, str(PurePath(model_path[model_]) / 'out'))
             FirstStage.vocab(0, data_path, str(PurePath(model_path[model_]) / 'out'))
             FirstStage.vocab(1, data_path, str(PurePath(model_path[model_]) / 'out'))

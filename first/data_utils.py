@@ -287,7 +287,7 @@ def check_result_multi_class(label_path, pred_path, vocab_path, mode="all"):
     pred = [vocab[l.strip()] for l in lines2]
 
     res = precision_score(true, pred, average='micro', labels=include, zero_division=1)
-    print('    Accuracy: %.2f%%' % (res * 100))
+    # print('    Accuracy: {:.2%}'.format(res))
     
     return res
 

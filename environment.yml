@@ -10,7 +10,7 @@ dependencies:
   - pytorch==1.6.0
   - pip
   - pip:
-    - --index-url https://pypi.tuna.tsinghua.edu.cn/simple
     - pytorch-crf==0.7.2
     - tqdm==4.55.1
     - grakel==0.1.8
+    - rich==13.5.2
