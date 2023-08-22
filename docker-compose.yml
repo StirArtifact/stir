@@ -4,6 +4,7 @@ services:
     build: .
     volumes:
       - ./models:/stir/models/:rw
+      - ./user_data:/stir/user_data/:rw
 
   stir-gpu:
     image: stir:latest
@@ -11,6 +12,7 @@ services:
       context: .
     volumes:
       - ./models:/stir/models/:rw
+      - ./user_data:/stir/user_data/:rw
     deploy:
       resources:
         reservations:

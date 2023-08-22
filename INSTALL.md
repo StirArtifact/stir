@@ -8,7 +8,7 @@ To install Docker, follow the instructions here: https://docs.docker.com/get-doc
 
 ## Step 1: Get the image
 ### Method 1: Import the image from a tar archive
-Download the compressed tar archive of the Docker image from [the release page](https://github.com/StirArtifact/stir/releases/tag/pre-fse2023) and import it with the following command:
+Download the compressed tar archive of the Docker image from [the release page](https://github.com/StirArtifact/stir/releases/tag/fse2023) and import it with the following command:
 ```shell
 docker load -i <path_to_tar_archive>
 ```
@@ -26,6 +26,7 @@ Start a shell in the container with the following commands:
 ```shell
 docker run -it \
     --volume <absolute_path_to_save_trained_models>:/stir/models \
+    --volume <absolute_path_to_user_data>:/stir/user_data \
     <image_name> /bin/bash
 ```
 If you need to run the code with a GPU, please add the `--gpus all` flag to the above command.

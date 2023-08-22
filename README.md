@@ -24,7 +24,7 @@ For the hardware and software requirements of the artifact, please refer to [REQ
 
 ### Obtaining the Artifact
 
-The artifact is available at [GitHub](https://github.com/StirArtifact/stir/tree/pre-fse2023). Users can obtain the artifact by cloning the repository or downloading the source code as a compressed archive on the webpage.
+The artifact is available at [GitHub](https://github.com/StirArtifact/stir/tree/fse2023). Users can obtain the artifact by cloning the repository or downloading the source code as a compressed archive on the webpage.
 
 ### Setting up the Environment
 For detailed instructions on setting up the environment, please refer to [INSTALL.md](INSTALL.md).
@@ -130,7 +130,7 @@ where the `--data` argument points to the directory containing the dataset.
 Please note that our training was performed on an NVIDIA GeForce RTX 2080 Ti, and different hardware conditions may result in differences in the training results.
 
 ### Acquiring the data
-The data used in our evaluation and training process is included in the [GitHub repository](https://github.com/StirArtifact/stir/pre-fse2023) in the `data/` directory, and can also be obtained from [the release page](https://github.com/StirArtifact/stir/releases/pre-fse2023) as a compressed tar archive.
+The data used in our evaluation and training process is included in the [GitHub repository](https://github.com/StirArtifact/stir/tree/fse2023) in the `data/` directory, and can also be obtained from [the release page](https://github.com/StirArtifact/stir/releases/fse2023) as a compressed tar archive.
 
 The data used in our evaluation and training process is obtained from [GNU](https://www.gnu.org/), processed by a modified version of [Clang](https://clang.llvm.org/), which is shipped with the artifact as prebuilt binaries. For more details, see below.
 
@@ -164,7 +164,7 @@ which is shipped with this artifact in the `utils/` directory as prebuilt binari
 firstclang -Xclang -ast-dump <SOURCE_FILE>
 firstclang -Xclang -dump-tokens <SOURCE_FILE>
 ```
-where `<SOURCE_FILE>` is the path to the C source file. Then, the generated data file will be in the working directory. The filename of the generated data file is constructed by substituting the `/` characters in `<SOURCE_FILE>` with `_`, then appending the `_type.txt` suffix. 
+where `<SOURCE_FILE>` is the path to the C source file. Then, the generated data file will be in the working directory. The filename of the generated data file is constructed by substituting the `/` characters in `<SOURCE_FILE>` with `_`, then appending the `_type.txt` suffix. The generated files with `_compile.txt` suffix are the intermediate files, which can be safely deleted after the generation of the data file.
 
 The rules for the token and type are as follows.
 - The type tag for variables, constants and functions used in first stage should be their type names.
