@@ -12,7 +12,7 @@ To install Docker, follow the instructions here: https://docs.docker.com/get-doc
 ### Method 1: Import the image from a tar archive
 Download the compressed tar archive of the Docker image from [the release page](https://github.com/StirArtifact/stir/releases/tag/fse2023) and import it with the following command:
 ```shell
-docker load -i <path_to_tar_archive>
+tar -x -M -O -f stir_latest.1.tar -f stir_latest.2.tar -f stir_latest.3.tar | docker load
 ```
 Using this method, the name and tag of the image will be `stir:latest`.
 ### Method 2: Build the image from the Dockerfile
