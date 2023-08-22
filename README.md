@@ -119,7 +119,7 @@ of the combination of them and the data source used in their generation are cach
 file will not be generated again. Otherwise, the file will be generated again. 
 
 ### Replicating Pretrained Models
-The pretrained models we provide can be replicated by training models using the dataset provided by us. The training process can be performed by the following command:
+The pretrained models we provide can be replicated by training models using the dataset provided by us. The training process can be performed by the following commands:
 
 ```shell
 python main.py train first [--data DATA]
@@ -159,12 +159,14 @@ where each line of the file contains a token and its type in the corresponding c
 Files longer than 1000 tokens will be ignored in the training process. 
 
 As mentioned before, the data used in our evaluation and training process is processed by a modified version of [Clang](https://clang.llvm.org/), 
-which is shipped with this artifact in the `utils/` directory as prebuilt binaries. The `utils/firstclang` and `utils/secondclang` files are the modified versions of Clang executable for the first and second stages, respectively. For example, to generate a data file from a C source file, run the following command in the root directory of the artifact:
+which is shipped with this artifact in the `utils/` directory as prebuilt binaries. The `utils/firstclang` and `utils/secondclang` files are the modified versions of Clang executable for the first and second stages, respectively. For example, to generate data files from a C source file, run the following commands in the root directory of the artifact:
 ```shell
 firstclang -Xclang -ast-dump <SOURCE_FILE>
 firstclang -Xclang -dump-tokens <SOURCE_FILE>
+secondclang -Xclang -ast-dump <SOURCE_FILE>
+secondclang -Xclang -dump-tokens <SOURCE_FILE>
 ```
-where `<SOURCE_FILE>` is the path to the C source file. Then, the generated data file will be in the working directory. The filename of the generated data file is constructed by substituting the `/` characters in `<SOURCE_FILE>` with `_`, then appending the `_type.txt` suffix. The generated files with `_compile.txt` suffix are the intermediate files, which can be safely deleted after the generation of the data file.
+where `<SOURCE_FILE>` is the path to the C source file. Then, the generated data file will be in the working directory. The filename of the generated data file is constructed by substituting the `/` characters in `<SOURCE_FILE>` with `_`, then appending the `_type.first` or `_type.second` suffix. The generated files with `_compile.first` or `_compile.second` suffix are the intermediate files, which can be safely deleted after the generation of the data file.
 
 The rules for the token and type are as follows.
 - The type tag for variables, constants and functions used in first stage should be their type names.

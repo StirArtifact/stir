@@ -1,0 +1,2 @@
+firstclang filter=lfs diff=lfs merge=lfs -text
+secondclang filter=lfs diff=lfs merge=lfs -text
