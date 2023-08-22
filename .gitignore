@@ -5,3 +5,8 @@ __pycache__/
 # data/
 user_data/
 models/
+
+# packaged files
+*.tar.gz
+*.tar.xz
+*.tar

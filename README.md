@@ -7,12 +7,15 @@ The outline of this document is as follows.
   - [Requirements](#requirements)
   - [Obtaining the Artifact](#obtaining-the-artifact)
   - [Setting up the Environment](#setting-up-the-environment)
-- [Reproduce the Evaluation Results](#reproduce-the-evaluation-results)
+- [Reproduce the Evaluation Results](#reproducing-the-evaluation-results)
   - [TL;DR: The fastest way to check the evaluation results](#tldr-the-fastest-way-to-check-the-evaluation-results)
   - [Detailed Usage of the `python main.py eval` Subcommand](#detailed-usage-of-the-python-mainpy-eval-subcommand)
-- [Use as a standalone application](#use-as-a-standalone-application)
+  - [Replicating Pretrained Models](#replicating-pretrained-models)
+  - [Acquiring the data](#acquiring-the-data)
+- [Using Your Own Data](#using-your-own-data)
+  - [Creating the Dataset](#creating-the-dataset)
   - [Training](#training)
-- [Acquire the data](#acquire-the-data)
+  - [Testing](#testing)
 
 ## Getting Started
 
@@ -27,7 +30,7 @@ The artifact is available at [GitHub](https://github.com/StirArtifact/stir/tree/
 For detailed instructions on setting up the environment, please refer to [INSTALL.md](INSTALL.md).
 
 
-## Reproduce the Evaluation Results
+## Reproducing the Evaluation Results
 The `main.py` file is the main entry file of the artifact, which provides a command line interface to evaluate the 
 artifact. The detailed usage of the `main.py` file is described as follows. A brief help message can also be obtained by
 executing the following command in the root directory of the artifact:
@@ -115,20 +118,28 @@ of the combination of them and the data source used in their generation are cach
 `out/` directory in the respective model directory. If the hash value corresponding to the file to be generated is not changed, the
 file will not be generated again. Otherwise, the file will be generated again. 
 
-## Use Your Own Data
+### Replicating Pretrained Models
+The pretrained models we provide can be replicated by training models using the dataset provided by us. The training process can be performed by the following command:
 
-### Training
-To train a model by yourself, run the following command in the root directory of the artifact:
 ```shell
-python main.py train <STAGE> [--data DATA]
+python main.py train first [--data DATA]
+python main.py train second [--data DATA]
 ```
-where the `<STAGE>` argument specifies the stage to be trained, and the optional `--data` argument
-specify the data to be used in the training. The `<STAGE>` argument can be one of `first`
-and `second`, which correspond to the first or the second stage of the approach described in the paper. Note that to train the second stage, the first stage must be trained first.
 
-The `--data` argument specifies the data to be used in the training, which should be organized as follows.
+where the `--data` argument points to the directory containing the dataset. 
+Please note that our training was performed on an NVIDIA GeForce RTX 2080 Ti, and different hardware conditions may result in differences in the training results.
+
+### Acquiring the data
+The data used in our evaluation and training process is included in the [GitHub repository](https://github.com/StirArtifact/stir/pre-fse2023) in the `data/` directory, and can also be obtained from [the release page](https://github.com/StirArtifact/stir/releases/pre-fse2023) as a compressed tar archive.
+
+The data used in our evaluation and training process is obtained from [GNU](https://www.gnu.org/), processed by a modified version of [Clang](https://clang.llvm.org/), which is shipped with the artifact as prebuilt binaries. For more details, see below.
+
+## Using Your Own Data
+
+### Creating the Dataset
+Stir assumes that the data is organized as follows, as described in [Detailed Usage of the `python main.py eval` Subcommand](#detailed-usage-of-the-python-mainpy-eval-subcommand).
 ```text
-user_data/
+data/
 ├── simple
 │   ├── test
 │   │   ├── first_stage_test_files
@@ -142,18 +153,52 @@ user_data/
 │   second_stage_train_files
 │   ...
 ```
-where the `simple` and `complex` directories contain the data for the first and second stages of the training,
-respectively. The `test` directories contain the data for the test set. The default value of the `--data` argument is
+where the `simple` and `complex` directories contain the data for the first and second stages.
+Each of the file should be a plain text file containing tokens and corresponding types of a program, 
+where each line of the file contains a token and its type in the corresponding code file, separated by a tab character. 
+Files longer than 1000 tokens will be ignored in the training process. 
+
+As mentioned before, the data used in our evaluation and training process is processed by a modified version of [Clang](https://clang.llvm.org/), 
+which is shipped with this artifact in the `utils/` directory as prebuilt binaries. The `utils/firstclang` and `utils/secondclang` files are the modified versions of Clang executable for the first and second stages, respectively. For example, to generate a data file from a C source file, run the following command in the root directory of the artifact:
+```shell
+firstclang -Xclang -ast-dump <SOURCE_FILE>
+firstclang -Xclang -dump-tokens <SOURCE_FILE>
+```
+where `<SOURCE_FILE>` is the path to the C source file. Then, the generated data file will be in the working directory. The filename of the generated data file is constructed by substituting the `/` characters in `<SOURCE_FILE>` with `_`, then appending the `_type.txt` suffix. 
+
+The rules for the token and type are as follows.
+- The type tag for variables, constants and functions used in first stage should be their type names.
+- The type label for variables, constants and functions used in second stage should be their type expressions. The
+  expression of simple types should be the same as their type names, and the expression of complex types should be
+  enclosed in parentheses and separated by commas, e.g., `struct(int,int)`, `(int,int)->(int)`, `*(int)`. 
+- The type tag for any other tokens should be a special type tag which is not a valid type name or type expression
+  to distinguish them from variables, constants and functions, e.g., `O`.
+- As mentioned in the paper, recursive types are not supported in the current version of STIR. Therefore, recursive
+  types have to be treated specifically. The type label for recursive types should just include the category of the 
+  type and ends the list of its children with a `` ` ``, e.g., ``struct(`)``.
+
+Users may create their own data by themselves, as long as the generated data conforms to the above rules. 
+
+### Training
+To train a model by yourself, run the following command in the root directory of the artifact:
+```shell
+python main.py train <STAGE> [--data DATA]
+```
+where the `<STAGE>` argument specifies the stage to be trained, and the optional `--data` argument
+specify the data to be used in the training. The `<STAGE>` argument can be one of `first`
+and `second`, which correspond to the first or the second stage of the approach described in the paper. Note that to train the second stage, the first stage must be trained first.
+
+The `--data` argument specifies the data to be used in the training. The default value of the `--data` argument is
 `user_data`.
 
-For example, to train the first stage of the approach described in the paper, run the following command in the root
+For example, to train the model of the first stage, run the following command in the root
 directory of the artifact:
 ```shell
 python main.py train first --data data
 ```
 
 ### Testing
-To test a model on your own, run the following command in the root directory of the artifact:
+To test a model by yourself, run the following command in the root directory of the artifact:
 ```shell
 python main.py test <STAGE> [--data DATA --model MODEL]
 ```
@@ -165,23 +210,3 @@ The difference between this command and the `eval` subcommand is that
 1. The `--data` parameter defaults to `user_data` in the `test` command.
 2. the `test` command uses the self-trained models by default, and
 3. The directory containing intermediate files differs between the two commands.
-
-## Acquire the data
-The data used in our evaluation and training process can be obtained from [the release page](https://github.com/yuanmt/stir/releases) as a compressed tar archive. To use the data, extract the archive to the `data/` directory in the root directory of the artifact.
-If you want to use your own
-data, you can place it in the `data/` directory. Each of the file in the `data/` directory should be a plain text file
-containing tokens and corresponding types of a program, where each line of the file contains a token and its type in the
-corresponding code file, separated by a tab character. The rules for the token and type are as follows.
-- The type tag for variables, constants and functions used in first stage should be their type names.
-- The type label for variables, constants and functions used in second stage should be their type expressions. The
-  expression of simple types should be the same as their type names, and the expression of complex types should be
-  enclosed in parentheses and separated by commas, e.g., `struct(int,int)`, `(int,int)->(int)`, `*(int)`. 
-- The type tag for any other tokens should be a special type tag which is not a valid type name or type expression
-  to distinguish them from variables, constants and functions, e.g., `O`.
-- As mentioned in the paper, recursive types are not supported in the current version of STIR. Therefore, recursive
-  types have to be treated specifically. The type label for recursive types should just include the category of the 
-  type and ends the list of its children with a `` ` ``, e.g., ``struct(`)``.
-
-Files longer than 1000 tokens will be ignored in the training process. The data used in our evaluation and training process is obtained from
-[GNU](https://www.gnu.org/), processed by a modified version of [Clang](https://clang.llvm.org/). Users may create
-their own data by themselves, as long as the generated data conforms to the above rules. 

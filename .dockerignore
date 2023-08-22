@@ -20,6 +20,7 @@ Dockerfile
 docker-compose.yml
 .dockerignore
 
-# remember to delete
-gen_hash.py
-todo.md
+# packaged files
+*.tar.gz
+*.tar.xz
+*.tar
