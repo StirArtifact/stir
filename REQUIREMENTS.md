@@ -8,6 +8,7 @@ and can run on any environment equipped with the necessary Python libraries.
 The 'environment.yml' file in the root directory of the repository contains a list 
 describing the required all the required Python library with their versions, 
 and the 'Dockerfile' in the root directory can be used to build a Docker image with the required environment. 
+This repository contains large files stored using [Git LFS](https://git-lfs.com/), so you need to install Git LFS before cloning the repository.
 For detailed information on setting up the environment, please refer to [INSTALL.md](INSTALL.md).
 
 # Tested environment

@@ -2,6 +2,8 @@ This file describes how to set up the environment to run the code.
 Note that the following instructions may not work on any machine, as they have only been tested on limited number of machines (see [tested environments](REQUIREMENTS.md#tested-environment)).
 If you encounter any issues, please contact us.
 
+This repository contains large files stored using [Git LFS](https://git-lfs.com/), so you need to install Git LFS before cloning the repository.
+
 # Install with Docker (recommended)
 The easiest way to install and run the code is to use Docker. 
 To install Docker, follow the instructions here: https://docs.docker.com/get-docker/. 
