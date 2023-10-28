@@ -378,50 +378,51 @@ class SecondStage:
             file_w.write(get_hash([dir_path], [target_file_path]))
     
     @staticmethod
-    def get_result(data_path: str, model_path: str, variant='', out_subdir='eval'):
+    def get_result(data_path: str, model_path: str, jobs: int, variant='', out_subdir='eval'):
         target_file_path = str(PurePath(model_path) / out_subdir / 'test.lf.data_')
         infer_file_path = str(PurePath(model_path) / out_subdir / f'test.infer.ner{variant}')
-        target_file_PCFG_path = str(PurePath(model_path) / out_subdir / 'test_lf_data_PCFG.txt')
-        infer_file_PCFG_path = str(PurePath(model_path) / out_subdir / f'test_infer_ner{variant}_PCFG.txt')
+        # target_file_PCFG_path = str(PurePath(model_path) / out_subdir / 'test_lf_data_PCFG.txt')
+        # infer_file_PCFG_path = str(PurePath(model_path) / out_subdir / f'test_infer_ner{variant}_PCFG.txt')
 
-        pcfg_target_hash_dir = str(PurePath(model_path) / out_subdir / 'pcfg_target_hash.txt')
-        pcfg_infer_hash_dir = str(PurePath(model_path) / out_subdir / f'pcfg_infer{variant}_hash.txt')
-        if not os.path.exists(pcfg_target_hash_dir):
-            printr("[dim]Building PCFG file for target...[/dim]")
-            second.transfer.recover_data(target_file_path, target_file_path, target_file_PCFG_path)
-            with open(pcfg_target_hash_dir, 'w') as file_w:
-                file_w.write(get_hash([], [target_file_path, target_file_PCFG_path]))
-        else:
-            with open(pcfg_target_hash_dir, 'r') as file_r:
-                hash = file_r.read().strip()
-                if get_hash([], [target_file_path, target_file_PCFG_path]) == hash:
-                    printr("[dim]Data not changed, skip building PCFG file for target...[/dim]")
-                else:
-                    printr("[dim]Building PCFG file for target...[/dim]")
-                    second.transfer.recover_data(target_file_path, target_file_path, target_file_PCFG_path)
-                    with open(pcfg_target_hash_dir, 'w') as file_w:
-                        file_w.write(get_hash([], [target_file_path, target_file_PCFG_path]))
+        # pcfg_target_hash_dir = str(PurePath(model_path) / out_subdir / 'pcfg_target_hash.txt')
+        # pcfg_infer_hash_dir = str(PurePath(model_path) / out_subdir / f'pcfg_infer{variant}_hash.txt')
+        # if not os.path.exists(pcfg_target_hash_dir):
+        #     printr("[dim]Building PCFG file for target...[/dim]")
+        #     second.transfer.recover_data(target_file_path, target_file_path, target_file_PCFG_path)
+        #     with open(pcfg_target_hash_dir, 'w') as file_w:
+        #         file_w.write(get_hash([], [target_file_path, target_file_PCFG_path]))
+        # else:
+        #     with open(pcfg_target_hash_dir, 'r') as file_r:
+        #         hash = file_r.read().strip()
+        #         if get_hash([], [target_file_path, target_file_PCFG_path]) == hash:
+        #             printr("[dim]Data not changed, skip building PCFG file for target...[/dim]")
+        #         else:
+        #             printr("[dim]Building PCFG file for target...[/dim]")
+        #             second.transfer.recover_data(target_file_path, target_file_path, target_file_PCFG_path)
+        #             with open(pcfg_target_hash_dir, 'w') as file_w:
+        #                 file_w.write(get_hash([], [target_file_path, target_file_PCFG_path]))
 
-        if not os.path.exists(pcfg_infer_hash_dir):
-            printr("[dim]Building PCFG file for inferred result...[/dim]")
-            second.transfer.recover_data(target_file_path, infer_file_path, infer_file_PCFG_path)
-            with open(pcfg_infer_hash_dir, 'w') as file_w:
-                file_w.write(get_hash([], [target_file_path, infer_file_path, infer_file_PCFG_path]))
-        else:
-            with open(pcfg_infer_hash_dir, 'r') as file_r:
-                hash = file_r.read().strip()
-                if get_hash([], [target_file_path, infer_file_path, infer_file_PCFG_path]) == hash:
-                    printr("[dim]Data not changed, skip building PCFG file for inferred result...[/dim]")
-                else:
-                    printr("[dim]Building PCFG file for inferred result...[/dim]")
-                    second.transfer.recover_data(target_file_path, infer_file_path, infer_file_PCFG_path)
-                    with open(pcfg_infer_hash_dir, 'w') as file_w:
-                        file_w.write(get_hash([], [target_file_path, infer_file_path, infer_file_PCFG_path]))
+        # if not os.path.exists(pcfg_infer_hash_dir):
+        #     printr("[dim]Building PCFG file for inferred result...[/dim]")
+        #     second.transfer.recover_data(target_file_path, infer_file_path, infer_file_PCFG_path)
+        #     with open(pcfg_infer_hash_dir, 'w') as file_w:
+        #         file_w.write(get_hash([], [target_file_path, infer_file_path, infer_file_PCFG_path]))
+        # else:
+        #     with open(pcfg_infer_hash_dir, 'r') as file_r:
+        #         hash = file_r.read().strip()
+        #         if get_hash([], [target_file_path, infer_file_path, infer_file_PCFG_path]) == hash:
+        #             printr("[dim]Data not changed, skip building PCFG file for inferred result...[/dim]")
+        #         else:
+        #             printr("[dim]Building PCFG file for inferred result...[/dim]")
+        #             second.transfer.recover_data(target_file_path, infer_file_path, infer_file_PCFG_path)
+        #             with open(pcfg_infer_hash_dir, 'w') as file_w:
+        #                 file_w.write(get_hash([], [target_file_path, infer_file_path, infer_file_PCFG_path]))
 
+        second.graph.jobs = jobs
         second.graph.trgt_path = target_file_path
         second.graph.pred_path = infer_file_path
-        second.graph.trgt_path_t = target_file_PCFG_path
-        second.graph.pred_path_t = infer_file_PCFG_path
+        # second.graph.trgt_path_t = target_file_PCFG_path
+        # second.graph.pred_path_t = infer_file_PCFG_path
         second.graph.first_trgt = str(PurePath(data_path) / 'simple/test/')
         # second.graph.first_pred = str(PurePath(data_path) / 'first_inferred/test/')
         second.graph.first_pred = str(PurePath(data_path) / 'simple/test/')
@@ -459,7 +460,7 @@ class SecondStage:
         second.main.train(second.args.params)
 
     @staticmethod
-    def eval(data_path: str, models: str, zero_shot: bool, out_subdir='eval'):
+    def eval(data_path: str, models: str, zero_shot: bool, jobs: int, out_subdir='eval'):
         torch.manual_seed(1234)
         torch.cuda.manual_seed(1234)
         np.random.seed(1234)
@@ -504,7 +505,7 @@ class SecondStage:
             _, second.main.ulist = second.graph.gen_not_seen(str(PurePath(data_path) / 'complex/'), str(PurePath(data_path) / 'complex/test/'))
             print("Begin Inference:")
             second.main.infer(second.args.params, data_sub_path[model], str(PurePath(model_path[model]) / 'ubest/model.pt'))
-            SecondStage.get_result(data_path, model_path[model], variant=model[model.find("_"):-1], out_subdir=out_subdir)
+            SecondStage.get_result(data_path, model_path[model], jobs, variant=model[model.find("_"):-1], out_subdir=out_subdir)
 
 def train(stage, data_path):
     if stage == 'first':
@@ -525,7 +526,7 @@ def train(stage, data_path):
     else:
         assert False, "Stage not support now."
 
-def eval(RQ, data_path, model):
+def eval(RQ, data_path, model, jobs):
     models = model.split(',')
     if RQ == 'RQ1':
         model_path = {
@@ -553,11 +554,11 @@ def eval(RQ, data_path, model):
             SecondStage.target(data_path, './pretrained/second/stir/eval/')
             SecondStage.vocab(0, data_path, './pretrained/second/stir/eval/')
             SecondStage.vocab(1, data_path, './pretrained/second/stir/eval/')
-        SecondStage.eval(data_path, models, True)
+        SecondStage.eval(data_path, models, True, jobs)
     else:
         assert False, "RQ not support now."
 
-def test(stage, data_path, model):
+def test(stage, data_path, model, jobs):
     models = model.split(',')
     if stage == 'first':
         model_path = {
@@ -585,7 +586,7 @@ def test(stage, data_path, model):
             SecondStage.target(data_path, './pretrained/second/stir/out/')
             SecondStage.vocab(0, data_path, './pretrained/second/stir/out/')
             SecondStage.vocab(1, data_path, './pretrained/second/stir/out/')
-        SecondStage.eval(data_path, models, True, out_subdir='out')
+        SecondStage.eval(data_path, models, True, jobs, out_subdir='out')
     else:
         assert False, "Stage not support now."
 
@@ -614,6 +615,7 @@ def main():
     parser_eval_rq3 = parser_eval_parsers.add_parser("RQ2,RQ3", help="RQ2: Inferring Complex Types; RQ3: Inferring Zero-Shot Types")
     parser_eval_rq3.add_argument("--data", type=str, default=str(PurePath("data")), help="path to the data folder")
     parser_eval_rq3.add_argument("--model", type=str, default="STIR,STIR_OT,STIR_DT,STIR_GT", help="name of the model")
+    parser_eval_rq3.add_argument("-j", "--jobs", type=int, default=1, help="number of jobs to run in parallel")
 
     parser_test = subparsers.add_parser("test", help="test with your own files")
     parser_test_stage = parser_test.add_subparsers(help="stage of STIR", dest="stage")
@@ -623,15 +625,16 @@ def main():
     parser_test_stage2 = parser_test_stage.add_parser("second", help="stage 2: inferring complex types")
     parser_test_stage2.add_argument("--data", type=str, default=str(PurePath("user_data")), help="path to the data folder")
     parser_test_stage2.add_argument("--model", type=str, default="TRAINED,TRAINED_OT,TRAINED_GT", help="name of the model")
+    parser_test_stage2.add_argument("-j", "--jobs", type=int, default=1, help="number of jobs to run in parallel")
 
     cli_args = parser.parse_args()
 
     if cli_args.operation == "train":
         train(cli_args.stage, cli_args.data)
     elif cli_args.operation == "eval":
-        eval(cli_args.rq, cli_args.data, cli_args.model)
+        eval(cli_args.rq, cli_args.data, cli_args.model, cli_args.jobs)
     elif cli_args.operation == "test":
-        test(cli_args.stage, cli_args.data, cli_args.model)
+        test(cli_args.stage, cli_args.data, cli_args.model, cli_args.jobs)
 
 if __name__ == "__main__" or __name__ == "main":
     main()

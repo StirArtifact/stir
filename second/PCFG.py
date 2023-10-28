@@ -82,12 +82,12 @@ def get_tree(s):
             for x in range(total_grammar): 
                 best_path[i][j][x] = {'prob': 0.0, 'path': {'split': None, 'rule': None}}
 
-    for j in range(len(word_list)):
+    for j in range(len(word_list)): # range: 0~len(word_list)-1, double closed interval
         for x in range(type1_grammar, total_grammar):
             if Grammar[x]['first'] == word_list[j]:
                 best_path[j][j+1][Grammar_dict[Grammar[x]['Name']]] = {'prob':Grammar[x]['prob'], 'path':{'split':None, 'rule':x}}
-        for i in range(j-1, -1, -1):
-            for k in range(i+1, j+1):
+        for i in range(j-1, -1, -1): # range: j-1~0
+            for k in range(i+1, j+1): # range: i+1~j
                 for x in range(type1_grammar):
                     if(best_path[i][j+1][Grammar_dict[Grammar[x]['Name']]]['prob'] < Grammar[x]['prob'] * best_path[i][k][Grammar_dict[Grammar[x]['first']]]['prob'] * best_path[k][j+1][Grammar_dict[Grammar[x]['second']]]['prob']):
                         best_path[i][j+1][Grammar_dict[Grammar[x]['Name']]] = {'prob':Grammar[x]['prob'] * best_path[i][k][Grammar_dict[Grammar[x]['first']]]['prob'] * best_path[k][j+1][Grammar_dict[Grammar[x]['second']]]['prob'], 'path':{'split':k,'rule':x}}
@@ -97,3 +97,10 @@ def get_tree(s):
     Top = 1
     
     return dic, lst
+
+if __name__ == '__main__':
+    init()
+    s = input()
+    dic, lst = get_tree(s)
+    print(dic)
+    print(lst)

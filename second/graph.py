@@ -1,15 +1,21 @@
 import os
 import re
+import sys
 import subprocess
 from copy import deepcopy
+
 from pathlib import PurePath
 from rich import print as printr
+from tqdm import tqdm
 
 from grakel.kernels import WeisfeilerLehman, VertexHistogram
 from grakel import Graph
 
-import second.PCFG as PCFG
+# import second.PCFG as PCFG
+import second.pcfg.pcfg_repair_mp as PCFG
 from second.data_utils import sorted_nt 
+
+jobs = 1
 
 labelDict = {'O':0, 'int':1, '*':2, 'struct':3, 'char':4, \
 'double':5, 'array':6, 'void':7, 'enum':8, 'short':9, \
@@ -301,47 +307,69 @@ def toTree(trgt_p, pred_p, check_ot=False, underline=False):
 
     lines1 = open(trgt_p, 'r', encoding='utf-8').readlines()
     lines2 = open(pred_p, 'r', encoding='utf-8').readlines()
-    lines3 = open(trgt_path_t, 'r', encoding='utf-8').readlines()
-    lines4 = open(pred_path_t, 'r', encoding='utf-8').readlines()
+    # lines3 = open(trgt_path_t, 'r', encoding='utf-8').readlines()
+    # lines4 = open(pred_path_t, 'r', encoding='utf-8').readlines()
+    PCFG.set_num_threads(jobs)
 
-    PCFG.init()
+    # PCFG.init()
+    with open("second/pcfg/grammar.erronly.O.RMSE0.00905285.txt", 'r', encoding='utf-8') as f:
+        grammar = f.read()
+    parser = PCFG.Parser(grammar)
 
+    with open("second/pcfg/grammar.erreos.O.RMSE0.00491918.txt", "r", encoding="utf-8") as f:
+        grammar_loose = f.read()
+    parser_loose = PCFG.Parser(grammar_loose)
+
+    # print("PCFG parser initialized.")
     assert len(lines1) == len(lines2)
-    assert len(lines3) == len(lines4)
-    for i, (l1, l2) in enumerate(zip(lines1, lines2)):
+    # assert len(lines3) == len(lines4)
+    for i, (l1, l2) in tqdm(enumerate(zip(lines1, lines2)), total=len(lines1), ncols=80):
+    # for i, (l1, l2) in enumerate(zip(lines1, lines2)):
         l1 = l1.strip()
         l2 = l2.strip()   
         if l1 == 'O' or i in prim_list:
             continue
+        
+        if l1.find('->') >= 0:
+            l1 = l1.replace('->', 'func')
+        if l1.find('*') >= 0:
+            l1 = l1.replace('*', 'ptr')
+        if l1.find('O') >= 0:
+            l1 = l1.replace('O', 'o')
+        if l2.find('->') >= 0:
+            l2 = l2.replace('->', 'func')
+        if l2.find('*') >= 0:
+            l2 = l2.replace('*', 'ptr')
+        if l2.find('O') >= 0:
+            l2 = l2.replace('O', 'o')
 
         splits1 = l1.split('\t')
-        splits2 = l2.split('\t')
         
-        # if l1.find('(') == -1:
         if len(splits1) == 1:
             sim = 1.0 if l1 == l2 else 0.0
         else:
-            t_str = lines3.pop(0).strip()
-            p_str = lines4.pop(0).strip()
-            # splits1 = splits1[:10] + ['<eos>'] * 10
-            # splits2 = splits2[:10] + ['<eos>'] * 10
-            # data1 = '\t'.join(splits1) + '\n'
-            # data2 = '\t'.join(splits2) + '\n'
-            # t_str = subprocess.check_output(cmd, stderr=subprocess.STDOUT, input=data1.encode('utf-8')).decode('utf-8')
-            # p_str = subprocess.check_output(cmd, stderr=subprocess.STDOUT, input=data2.encode('utf-8')).decode('utf-8')
-            lg1_nodes, lg1_edges = PCFG.get_tree(t_str)
-            try:
-                lg2_nodes, lg2_edges = PCFG.get_tree(p_str)
-            except:
-                # print(p_str)
-                pass
-            assert len(lg1_edges) != 0 and len(lg2_edges) != 0
+            if len(splits1) > 10:
+                splits1 = splits1[:10]
+            data1 = '\t'.join(splits1)
+            data2 = l2
+
+            # print("line %d " % i, end="")
+            # print(data1, data2)
+            lg1_nodes, lg1_edges = parser.get_tree(data1, ignore_err_nodes=False, err_to_tree=True)
+            lg2_nodes, lg2_edges = parser.get_tree(data2, ignore_err_nodes=False, err_to_tree=True)
+            if len(lg1_edges) == 0 or len(lg2_edges) == 0:
+                # print("try strict grammar without error nodes failed")
+                lg1_nodes, lg1_edges = parser.get_tree(data1, ignore_err_nodes=False, err_to_tree=False)
+                lg2_nodes, lg2_edges = parser.get_tree(data2, ignore_err_nodes=False, err_to_tree=False) # try strict grammar with error nodes
+
+            assert len(lg1_edges) != 0 and len(lg2_edges) != 0, (l1, l2)
             
             G1 = Graph(lg1_edges, node_labels=lg1_nodes)
             G2 = Graph(lg2_edges, node_labels=lg2_nodes)
             wl_kernel = WeisfeilerLehman(n_iter=1, base_graph_kernel=VertexHistogram, normalize=True)
             wl_kernel.fit_transform([G1])
             sim = wl_kernel.transform([G2]).item()
+            # print(i, sim)
 
         if not check_ot:
             if i in ulist and i not in prim_list:
@@ -375,7 +403,7 @@ def toTree(trgt_p, pred_p, check_ot=False, underline=False):
         else:
             prim_sim += sim
 
-    assert len(lines3) == len(lines4) == 0
+    # assert len(lines3) == len(lines4) == 0
 
     print("Graph similarity for complex types: ")
     if underline:

@@ -2,15 +2,17 @@ name: stir
 channels:
   - defaults
   - pytorch
+  - conda-forge
 dependencies:
   - python=3.7.9
   - ipython
   - cudatoolkit=10.2
   - torchvision==0.7.0
   - pytorch==1.6.0
+  - tqdm==4.55.1
+  - rich==12.5.1
+  - libstdcxx-ng=13.2.0
   - pip
   - pip:
     - pytorch-crf==0.7.2
-    - tqdm==4.55.1
     - grakel==0.1.8
-    - rich==13.5.2
